@@ -1,7 +1,7 @@
-import CoreClasses from "./package/CoreClasses";
-import { getEffectiveStyle } from "./package/StyleUtil";
-import UtilityClasses from "./package/UtilityClasses";
-import StyledComponentsClasses from "./package/StyledComponentsClasses";
+import CoreClasses from "./CoreClasses";
+import { getEffectiveStyle } from "./StyleUtil";
+import UtilityClasses from "./UtilityClasses";
+import StyledComponentsClasses from "./StyledComponentsClasses";
 import {
   ENV_DEV_MODE,
   ENV_STAGE_MODE,
@@ -11,7 +11,8 @@ import {
   LARGE_WINDOW_WIDTH,
   X_LARGE_WINDOW_WIDTH,
   XX_LARGE_WINDOW_WIDTH,
-} from "./package/config/constants";
+} from "./config/constants";
+
 export {
   /**
    * Style Classes Constants

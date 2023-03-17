@@ -1,8 +1,7 @@
 import {
   XX_LARGE_WINDOW_WIDTH,
   X_LARGE_WINDOW_WIDTH,
-} from "../../config/constants";
-// import { xLargeAppStyles } from "../../../styles/XLargeAppStyles";
+} from "../config/constants";
 import { xLargeSCStyles } from "../styledComponents/XLargeSCStyles";
 import { defaultUtilityStyles } from "../utility/DefaultUtilityStyles";
 import { xLargeUtilityStyles } from "../utility/XLargeUtilityStyles";

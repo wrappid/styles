@@ -1,8 +1,4 @@
-import {
-  LARGE_WINDOW_WIDTH,
-  MEDIUM_WINDOW_WIDTH,
-} from "../../config/constants";
-// import { mediumAppStyles } from "../../../styles/MediumAppStyles";
+import { LARGE_WINDOW_WIDTH, MEDIUM_WINDOW_WIDTH } from "../config/constants";
 import { mediumSCStyles } from "../styledComponents/MediumSCStyles";
 import {
   defaultUtilityStyles,

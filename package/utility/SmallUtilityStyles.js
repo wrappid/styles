@@ -1,9 +1,45 @@
-import { DEFAULT_MARGIN, DEFAULT_PADDING, IMPORTANT } from "./DefaultUtilityStyles";
+import {
+  DEFAULT_MARGIN,
+  DEFAULT_PADDING,
+  DEFAULT_SPACING,
+  IMPORTANT,
+} from "./DefaultUtilityStyles";
 
 export const SMALL_MARGIN = DEFAULT_MARGIN;
 export const SMALL_PADDING = DEFAULT_PADDING;
+export const SMALL_SPACING = DEFAULT_SPACING;
 
 export const smallUtilityStyles = {
+  /**************************************************
+   * Alignment
+   *************************************************/
+  smAlignItemsStart: { display: "flex", alignItems: "flex-start" + IMPORTANT },
+  smAlignItemsEnd: { display: "flex", alignItems: "flex-end" + IMPORTANT },
+  smAlignItemsCenter: { display: "flex", alignItems: "center" + IMPORTANT },
+  smAlignItemsBaseline: { display: "flex", alignItems: "baseline" + IMPORTANT },
+  smAlignItemsStretch: { display: "flex", alignItems: "stretch" + IMPORTANT },
+
+  smAlignContentStart: { display: "flex", alignContent: "flex-start" + IMPORTANT },
+  smAlignContentEnd: { display: "flex", alignContent: "flex-end" + IMPORTANT },
+  smAlignContentCenter: { display: "flex", alignContent: "center" + IMPORTANT },
+  smAlignContentBetween: { display: "flex", alignContent: "space-between" + IMPORTANT },
+  smAlignContentAround: { display: "flex", alignContent: "space-around" + IMPORTANT },
+  smAlignContentStretch: { display: "flex", alignContent: "stretch" + IMPORTANT },
+
+  smAlignSelfAuto: { display: "flex", alignSelf: "auto" + IMPORTANT },
+  smAlignSelfStart: { display: "flex", alignSelf: "flex-start" + IMPORTANT },
+  smAlignSelfEnd: { display: "flex", alignSelf: "flex-end" + IMPORTANT },
+  smAlignSelfCenter: { display: "flex", alignSelf: "center" + IMPORTANT },
+  smAlignSelfBaseline: { display: "flex", alignSelf: "baseline" + IMPORTANT },
+  smAlignSelfStretch: { display: "flex", alignSelf: "stretch" + IMPORTANT },
+
+  smJustifyContentCenter: { display: "flex", justifyContent: "center" + IMPORTANT },
+  smJustifyContentFlexStart: { display: "flex", justifyContent: "flex-start" + IMPORTANT },
+  smJustifyContentFlexEnd: { display: "flex", justifyContent: "flex-end" + IMPORTANT },
+  smJustifyContentSpaceBetween: { display: "flex", justifyContent: "space-between" + IMPORTANT },
+  smJustifyContentSpaceAround: { display: "flex", justifyContent: "space-around" + IMPORTANT },
+  smJustifyContentSpaceEvenly: { display: "flex", justifyContent: "space-evenly" + IMPORTANT },
+
   /**************************************************
    * Background
    *************************************************/
@@ -112,220 +148,240 @@ export const smallUtilityStyles = {
   /**************************************************
    * Sizing
    *************************************************/
+  //NO SCREEN SIZE SPECIFIC STYLE AVAILABLE
 
   /**************************************************
    * Spacing
    *************************************************/
+  /*-------------------------------------------------
+   * Padding
+   *-----------------------------------------------*/
+  smP0: { padding: 0 + IMPORTANT },
+  smP1: { padding: SMALL_PADDING + IMPORTANT },
+  smP2: { padding: SMALL_PADDING * 2 + IMPORTANT },
+  smP3: { padding: SMALL_PADDING * 3 + IMPORTANT },
+  smP4: { padding: SMALL_PADDING * 4 + IMPORTANT },
+  smP5: { padding: SMALL_PADDING * 5 + IMPORTANT },
+
+  smPt0: { paddingTop: 0 + IMPORTANT },
+  smPt1: { paddingTop: SMALL_PADDING + IMPORTANT },
+  smPt2: { paddingTop: SMALL_PADDING * 2 + IMPORTANT },
+  smPt3: { paddingTop: SMALL_PADDING * 3 + IMPORTANT },
+  smPt4: { paddingTop: SMALL_PADDING * 4 + IMPORTANT },
+  smPt5: { paddingTop: SMALL_PADDING * 5 + IMPORTANT },
+
+  smPr0: { paddingRight: 0 + IMPORTANT },
+  smPr1: { paddingRight: SMALL_PADDING + IMPORTANT },
+  smPr2: { paddingRight: SMALL_PADDING * 2 + IMPORTANT },
+  smPr3: { paddingRight: SMALL_PADDING * 3 + IMPORTANT },
+  smPr4: { paddingRight: SMALL_PADDING * 4 + IMPORTANT },
+  smPr5: { paddingRight: SMALL_PADDING * 5 + IMPORTANT },
+
+  smPb0: { paddingBottom: 0 + IMPORTANT },
+  smPb1: { paddingBottom: SMALL_PADDING + IMPORTANT },
+  smPb2: { paddingBottom: SMALL_PADDING * 2 + IMPORTANT },
+  smPb3: { paddingBottom: SMALL_PADDING * 3 + IMPORTANT },
+  smPb4: { paddingBottom: SMALL_PADDING * 4 + IMPORTANT },
+  smPb5: { paddingBottom: SMALL_PADDING * 5 + IMPORTANT },
+
+  smPl0: { paddingLeft: 0 + IMPORTANT },
+  smPl1: { paddingLeft: SMALL_PADDING + IMPORTANT },
+  smPl2: { paddingLeft: SMALL_PADDING * 2 + IMPORTANT },
+  smPl3: { paddingLeft: SMALL_PADDING * 3 + IMPORTANT },
+  smPl4: { paddingLeft: SMALL_PADDING * 4 + IMPORTANT },
+  smPl5: { paddingLeft: SMALL_PADDING * 5 + IMPORTANT },
+
+  smPx0: { paddingLeft: 0 + IMPORTANT, paddingRight: 0 + IMPORTANT },
+  smPx1: {
+    paddingLeft: SMALL_PADDING * 1 + IMPORTANT,
+    paddingRight: SMALL_PADDING * 1 + IMPORTANT,
+  },
+  smPx2: {
+    paddingLeft: SMALL_PADDING * 2 + IMPORTANT,
+    paddingRight: SMALL_PADDING * 2 + IMPORTANT,
+  },
+  smPx3: {
+    paddingLeft: SMALL_PADDING * 3 + IMPORTANT,
+    paddingRight: SMALL_PADDING * 3 + IMPORTANT,
+  },
+  smPx4: {
+    paddingLeft: SMALL_PADDING * 4 + IMPORTANT,
+    paddingRight: SMALL_PADDING * 4 + IMPORTANT,
+  },
+  smPx5: {
+    paddingLeft: SMALL_PADDING * 5 + IMPORTANT,
+    paddingRight: SMALL_PADDING * 5 + IMPORTANT,
+  },
+
+  smPy0: { paddingTop: 0 + IMPORTANT, paddingBottom: 0 + IMPORTANT },
+  smPy1: {
+    paddingTop: SMALL_PADDING * 1 + IMPORTANT,
+    paddingBottom: SMALL_PADDING * 1 + IMPORTANT,
+  },
+  smPy2: {
+    paddingTop: SMALL_PADDING * 2 + IMPORTANT,
+    paddingBottom: SMALL_PADDING * 2 + IMPORTANT,
+  },
+  smPy3: {
+    paddingTop: SMALL_PADDING * 3 + IMPORTANT,
+    paddingBottom: SMALL_PADDING * 3 + IMPORTANT,
+  },
+  smPy4: {
+    paddingTop: SMALL_PADDING * 4 + IMPORTANT,
+    paddingBottom: SMALL_PADDING * 4 + IMPORTANT,
+  },
+  smPy5: {
+    paddingTop: SMALL_PADDING * 5 + IMPORTANT,
+    paddingBottom: SMALL_PADDING * 5 + IMPORTANT,
+  },
+
+  /*-------------------------------------------------
+   * Margin
+   *-----------------------------------------------*/
+  smM0: { margin: 0 + IMPORTANT },
+  smM1: { margin: SMALL_MARGIN + IMPORTANT },
+  smM2: { margin: SMALL_MARGIN * 2 + IMPORTANT },
+  smM3: { margin: SMALL_MARGIN * 3 + IMPORTANT },
+  smM4: { margin: SMALL_MARGIN * 4 + IMPORTANT },
+  smM5: { margin: SMALL_MARGIN * 5 + IMPORTANT },
+  smMAuto: { margin: "auto" + IMPORTANT },
+
+  smMt0: { marginTop: 0 + IMPORTANT },
+  smMt1: { marginTop: SMALL_MARGIN + IMPORTANT },
+  smMt2: { marginTop: SMALL_MARGIN * 2 + IMPORTANT },
+  smMt3: { marginTop: SMALL_MARGIN * 3 + IMPORTANT },
+  smMt4: { marginTop: SMALL_MARGIN * 4 + IMPORTANT },
+  smMt5: { marginTop: SMALL_MARGIN * 5 + IMPORTANT },
+  smMtAuto: { marginTop: "auto" + IMPORTANT },
+
+  smMr0: { marginRight: 0 + IMPORTANT },
+  smMr1: { marginRight: SMALL_MARGIN + IMPORTANT },
+  smMr2: { marginRight: SMALL_MARGIN * 2 + IMPORTANT },
+  smMr3: { marginRight: SMALL_MARGIN * 3 + IMPORTANT },
+  smMr4: { marginRight: SMALL_MARGIN * 4 + IMPORTANT },
+  smMr5: { marginRight: SMALL_MARGIN * 5 + IMPORTANT },
+  smMrAuto: { marginRight: "auto" + IMPORTANT },
+
+  smMb0: { marginBottom: 0 + IMPORTANT },
+  smMb1: { marginBottom: SMALL_MARGIN + IMPORTANT },
+  smMb2: { marginBottom: SMALL_MARGIN * 2 + IMPORTANT },
+  smMb3: { marginBottom: SMALL_MARGIN * 3 + IMPORTANT },
+  smMb4: { marginBottom: SMALL_MARGIN * 4 + IMPORTANT },
+  smMb5: { marginBottom: SMALL_MARGIN * 5 + IMPORTANT },
+  smMbAuto: { marginBottom: "auto" + IMPORTANT },
+
+  smMl0: { marginLeft: 0 + IMPORTANT },
+  smMl1: { marginLeft: SMALL_MARGIN + IMPORTANT },
+  smMl2: { marginLeft: SMALL_MARGIN * 2 + IMPORTANT },
+  smMl3: { marginLeft: SMALL_MARGIN * 3 + IMPORTANT },
+  smMl4: { marginLeft: SMALL_MARGIN * 4 + IMPORTANT },
+  smMl5: { marginLeft: SMALL_MARGIN * 5 + IMPORTANT },
+  smMlAuto: { marginLeft: "auto" + IMPORTANT },
+
+  smMx0: { marginLeft: 0 + IMPORTANT, marginRight: 0 + IMPORTANT },
+  smMx1: { marginLeft: SMALL_MARGIN * 1 + IMPORTANT, marginRight: SMALL_MARGIN * 1 + IMPORTANT },
+  smMx2: { marginLeft: SMALL_MARGIN * 2 + IMPORTANT, marginRight: SMALL_MARGIN * 2 + IMPORTANT },
+  smMx3: { marginLeft: SMALL_MARGIN * 3 + IMPORTANT, marginRight: SMALL_MARGIN * 3 + IMPORTANT },
+  smMx4: { marginLeft: SMALL_MARGIN * 4 + IMPORTANT, marginRight: SMALL_MARGIN * 4 + IMPORTANT },
+  smMx5: { marginLeft: SMALL_MARGIN * 5 + IMPORTANT, marginRight: SMALL_MARGIN * 5 + IMPORTANT },
+  smMxAuto: { marginLeft: "auto" + IMPORTANT, marginRight: "auto" + IMPORTANT },
+
+  smMy0: { marginTop: 0 + IMPORTANT, marginBottom: 0 + IMPORTANT },
+  smMy1: { marginTop: SMALL_MARGIN * 1 + IMPORTANT, marginBottom: SMALL_MARGIN * 1 + IMPORTANT },
+  smMy2: { marginTop: SMALL_MARGIN * 2 + IMPORTANT, marginBottom: SMALL_MARGIN * 2 + IMPORTANT },
+  smMy3: { marginTop: SMALL_MARGIN * 3 + IMPORTANT, marginBottom: SMALL_MARGIN * 3 + IMPORTANT },
+  smMy4: { marginTop: SMALL_MARGIN * 4 + IMPORTANT, marginBottom: SMALL_MARGIN * 4 + IMPORTANT },
+  smMy5: { marginTop: SMALL_MARGIN * 5 + IMPORTANT, marginBottom: SMALL_MARGIN * 5 + IMPORTANT },
+  smMyAuto: { marginTop: "auto" + IMPORTANT, marginBottom: "auto" + IMPORTANT },
+
+  smMN1: { margin: SMALL_MARGIN * -1 + IMPORTANT },
+  smMN2: { margin: SMALL_MARGIN * -2 + IMPORTANT },
+  smMN3: { margin: SMALL_MARGIN * -3 + IMPORTANT },
+  smMN4: { margin: SMALL_MARGIN * -4 + IMPORTANT },
+  smMN5: { margin: SMALL_MARGIN * -5 + IMPORTANT },
+
+  smMtN1: { marginTop: SMALL_MARGIN * -1 + IMPORTANT },
+  smMtN2: { marginTop: SMALL_MARGIN * -2 + IMPORTANT },
+  smMtN3: { marginTop: SMALL_MARGIN * -3 + IMPORTANT },
+  smMtN4: { marginTop: SMALL_MARGIN * -4 + IMPORTANT },
+  smMtN5: { marginTop: SMALL_MARGIN * -5 + IMPORTANT },
+
+  smMrN1: { marginRight: SMALL_MARGIN * -1 + IMPORTANT },
+  smMrN2: { marginRight: SMALL_MARGIN * -2 + IMPORTANT },
+  smMrN3: { marginRight: SMALL_MARGIN * -3 + IMPORTANT },
+  smMrN4: { marginRight: SMALL_MARGIN * -4 + IMPORTANT },
+  smMrN5: { marginRight: SMALL_MARGIN * -5 + IMPORTANT },
+
+  smMbN1: { marginBottom: SMALL_MARGIN * -1 + IMPORTANT },
+  smMbN2: { marginBottom: SMALL_MARGIN * -2 + IMPORTANT },
+  smMbN3: { marginBottom: SMALL_MARGIN * -3 + IMPORTANT },
+  smMbN4: { marginBottom: SMALL_MARGIN * -4 + IMPORTANT },
+  smMbN5: { marginBottom: SMALL_MARGIN * -5 + IMPORTANT },
+
+  smMlN1: { marginLeft: SMALL_MARGIN * -1 + IMPORTANT },
+  smMlN2: { marginLeft: SMALL_MARGIN * -2 + IMPORTANT },
+  smMlN3: { marginLeft: SMALL_MARGIN * -3 + IMPORTANT },
+  smMlN4: { marginLeft: SMALL_MARGIN * -4 + IMPORTANT },
+  smMlN5: { marginLeft: SMALL_MARGIN * -5 + IMPORTANT },
+
+  smMxN1: { marginLeft: SMALL_MARGIN * -1 + IMPORTANT, marginRight: SMALL_MARGIN * -1 + IMPORTANT },
+  smMxN2: { marginLeft: SMALL_MARGIN * -2 + IMPORTANT, marginRight: SMALL_MARGIN * -2 + IMPORTANT },
+  smMxN3: { marginLeft: SMALL_MARGIN * -3 + IMPORTANT, marginRight: SMALL_MARGIN * -3 + IMPORTANT },
+  smMxN4: { marginLeft: SMALL_MARGIN * -4 + IMPORTANT, marginRight: SMALL_MARGIN * -4 + IMPORTANT },
+  smMxN5: { marginLeft: SMALL_MARGIN * -5 + IMPORTANT, marginRight: SMALL_MARGIN * -5 + IMPORTANT },
+
+  smMyN1: { marginTop: SMALL_MARGIN * -1 + IMPORTANT, marginBottom: SMALL_MARGIN * -1 + IMPORTANT },
+  smMyN2: { marginTop: SMALL_MARGIN * -2 + IMPORTANT, marginBottom: SMALL_MARGIN * -2 + IMPORTANT },
+  smMyN3: { marginTop: SMALL_MARGIN * -3 + IMPORTANT, marginBottom: SMALL_MARGIN * -3 + IMPORTANT },
+  smMyN4: { marginTop: SMALL_MARGIN * -4 + IMPORTANT, marginBottom: SMALL_MARGIN * -4 + IMPORTANT },
+  smMyN5: { marginTop: SMALL_MARGIN * -5 + IMPORTANT, marginBottom: SMALL_MARGIN * -5 + IMPORTANT },
+
+  /*-------------------------------------------------
+   * Gap
+   *-----------------------------------------------*/
+  smGap0: { gap: "0" + IMPORTANT },
+  smGap1: { gap: SMALL_SPACING * 1 + IMPORTANT },
+  smGap2: { gap: SMALL_SPACING * 2 + IMPORTANT },
+  smGap3: { gap: SMALL_SPACING * 3 + IMPORTANT },
+  smGap4: { gap: SMALL_SPACING * 4 + IMPORTANT },
+  smGap5: { gap: SMALL_SPACING * 5 + IMPORTANT },
+
+  smRowGap0: { rowGap: "0" + IMPORTANT },
+  smRowGap1: { rowGap: SMALL_SPACING * 1 + IMPORTANT },
+  smRowGap2: { rowGap: SMALL_SPACING * 2 + IMPORTANT },
+  smRowGap3: { rowGap: SMALL_SPACING * 3 + IMPORTANT },
+  smRowGap4: { rowGap: SMALL_SPACING * 4 + IMPORTANT },
+  smRowGap5: { rowGap: SMALL_SPACING * 5 + IMPORTANT },
+
+  smColGap0: { columnGap: "0" + IMPORTANT },
+  smColGap1: { columnGap: SMALL_SPACING * 1 + IMPORTANT },
+  smColGap2: { columnGap: SMALL_SPACING * 2 + IMPORTANT },
+  smColGap3: { columnGap: SMALL_SPACING * 3 + IMPORTANT },
+  smColGap4: { columnGap: SMALL_SPACING * 4 + IMPORTANT },
+  smColGap5: { columnGap: SMALL_SPACING * 5 + IMPORTANT },
 
   /**************************************************
    * Text
    *************************************************/
-  textStart: { textAlign: "left !important" },
-  textEnd: { textAlign: "right !important" },
-  textCenter: { textAlign: "center !important" },
-  textJustify: { textAlign: "justify !important" },
+  smTextStart: { textAlign: "left" + IMPORTANT },
+  smTextEnd: { textAlign: "right" + IMPORTANT },
+  smTextCenter: { textAlign: "center" + IMPORTANT },
+  smTextJustify: { textAlign: "justify" + IMPORTANT },
 
-  textWeightBold: { fontWeight: "bold" },
-  textWeightLight: { fontWeight: "lighter" },
-  textWeightNormal: { fontWeight: "normal" },
-
-  textDecorationNone: { textDecoration: "none !important" },
-  textDecorationUnderline: { textDecoration: "underline !important" },
-  textDecorationLineThrough: { textDecoration: "line-through !important" },
-
-  textLowercase: { textTransform: "lowercase !important" },
-  textUppercase: { textTransform: "uppercase !important" },
-  textCapitalize: { textTransform: "capitalize !important" },
-
-  textWrap: { whiteSpace: "normal !important" },
-  textNowrap: { whiteSpace: "nowrap !important" },
-  textBreak: { wordWrap: "break-word !important", wordBreak: "break-word !important" },
-  textTruncate: { overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" },
+  //NO OTHER SCREEN SIZE SPECIFIC STYLE NEEDED
 
   /**************************************************
    * Vertical Align
    *************************************************/
+  //NO SCREEN SIZE SPECIFIC STYLE AVAILABLE
 
   /**************************************************
    * Visibility
    *************************************************/
+  //NO SCREEN SIZE SPECIFIC STYLE AVAILABLE
 
   /**************************************************
    * zindex
    *************************************************/
-
-  // ------------------------------------------
-  //  Alignments
-  // ------------------------------------------
-  alignItemsStart: { alignItems: "flex-start !important" },
-  alignItemsEnd: { alignItems: "flex-end !important" },
-  alignItemsCenter: { alignItems: "center !important" },
-  alignItemsBaseline: { alignItems: "baseline !important" },
-  alignItemsStretch: { alignItems: "stretch !important" },
-
-  alignContentStart: { alignContent: "flex-start !important" },
-  alignContentEnd: { alignContent: "flex-end !important" },
-  alignContentCenter: { alignContent: "center !important" },
-  alignContentBetween: { alignContent: "space-between !important" },
-  alignContentAround: { alignContent: "space-around !important" },
-  alignContentStretch: { alignContent: "stretch !important" },
-
-  alignSelfAuto: { alignSelf: "auto !important" },
-  alignSelfStart: { alignSelf: "flex-start !important" },
-  alignSelfEnd: { alignSelf: "flex-end !important" },
-  alignSelfCenter: { alignSelf: "center !important" },
-  alignSelfBaseline: { alignSelf: "baseline !important" },
-  alignSelfStretch: { alignSelf: "stretch !important" },
-
-  justifyContentCenter: { display: "flex", justifyContent: "center" },
-  justifyContentFlexStart: { display: "flex", justifyContent: "flex-start" },
-  justifyContentFlexEnd: { display: "flex", justifyContent: "flex-end" },
-  justifyContentSpaceBetween: { display: "flex", justifyContent: "space-between" },
-  justifyContentSpaceAround: { display: "flex", justifyContent: "space-around" },
-  justifyContentSpaceEvenly: { display: "flex", justifyContent: "space-evenly" },
-
-  /**************************************************
-   * Overflow
-   *************************************************/
-  overflowAuto: { overflow: "auto" },
-  overflowHidden: { overflow: "hidden" },
-  overflowVisible: { overflow: "visible" },
-  overflowScroll: { overflow: "scroll" },
-  overflowXAuto: { overflowX: "auto" },
-  overflowXHidden: { overflowX: "hidden" },
-  overflowXVisible: { overflowX: "visible" },
-  overflowXScroll: { overflowX: "scroll" },
-  overflowYAuto: { overflowY: "auto" },
-  overflowYHidden: { overflowY: "hidden" },
-  overflowYVisible: { overflowY: "visible" },
-  overflowYScroll: { overflowY: "scroll" },
-
-  /**************************************************
-   * Height
-   *************************************************/
-  h25: { height: "25%" },
-  h50: { height: "50%" },
-  h75: { height: "75%" },
-  h100: { height: "100%" },
-  hAuto: { height: "auto" },
-
-  /**************************************************
-   * Width
-   *************************************************/
-  w25: { width: "25%" },
-  w50: { width: "50%" },
-  w75: { width: "75%" },
-  w100: { width: "100%" },
-  wAuto: { width: "auto" },
-
-  /**************************************************
-   * Padding
-   *************************************************/
-  p0: { padding: 0 },
-  p1: { padding: SMALL_PADDING },
-  p2: { padding: SMALL_PADDING * 2 },
-  p3: { padding: SMALL_PADDING * 3 },
-  p4: { padding: SMALL_PADDING * 4 },
-  p5: { padding: SMALL_PADDING * 5 },
-
-  pt0: { paddingTop: 0 },
-  pt1: { paddingTop: SMALL_PADDING },
-  pt2: { paddingTop: SMALL_PADDING * 2 },
-  pt3: { paddingTop: SMALL_PADDING * 3 },
-  pt4: { paddingTop: SMALL_PADDING * 4 },
-  pt5: { paddingTop: SMALL_PADDING * 5 },
-
-  pr0: { paddingRight: 0 },
-  pr1: { paddingRight: SMALL_PADDING },
-  pr2: { paddingRight: SMALL_PADDING * 2 },
-  pr3: { paddingRight: SMALL_PADDING * 3 },
-  pr4: { paddingRight: SMALL_PADDING * 4 },
-  pr5: { paddingRight: SMALL_PADDING * 5 },
-
-  pb0: { paddingBottom: 0 },
-  pb1: { paddingBottom: SMALL_PADDING },
-  pb2: { paddingBottom: SMALL_PADDING * 2 },
-  pb3: { paddingBottom: SMALL_PADDING * 3 },
-  pb4: { paddingBottom: SMALL_PADDING * 4 },
-  pb5: { paddingBottom: SMALL_PADDING * 5 },
-
-  pl0: { paddingLeft: 0 },
-  pl1: { paddingLeft: SMALL_PADDING },
-  pl2: { paddingLeft: SMALL_PADDING * 2 },
-  pl3: { paddingLeft: SMALL_PADDING * 3 },
-  pl4: { paddingLeft: SMALL_PADDING * 4 },
-  pl5: { paddingLeft: SMALL_PADDING * 5 },
-
-  px0: { paddingLeft: 0, paddingRight: 0 },
-  px1: { paddingLeft: SMALL_PADDING * 1, paddingRight: SMALL_PADDING * 1 },
-  px2: { paddingLeft: SMALL_PADDING * 2, paddingRight: SMALL_PADDING * 2 },
-  px3: { paddingLeft: SMALL_PADDING * 3, paddingRight: SMALL_PADDING * 3 },
-  px4: { paddingLeft: SMALL_PADDING * 4, paddingRight: SMALL_PADDING * 4 },
-  px5: { paddingLeft: SMALL_PADDING * 5, paddingRight: SMALL_PADDING * 5 },
-
-  py0: { paddingTop: 0, paddingBottom: 0 },
-  py1: { paddingTop: SMALL_PADDING * 1, paddingBottom: SMALL_PADDING * 1 },
-  py2: { paddingTop: SMALL_PADDING * 2, paddingBottom: SMALL_PADDING * 2 },
-  py3: { paddingTop: SMALL_PADDING * 3, paddingBottom: SMALL_PADDING * 3 },
-  py4: { paddingTop: SMALL_PADDING * 4, paddingBottom: SMALL_PADDING * 4 },
-  py5: { paddingTop: SMALL_PADDING * 5, paddingBottom: SMALL_PADDING * 5 },
-
-  /**************************************************
-   * Margin
-   *************************************************/
-  m0: { margin: 0 },
-  m1: { margin: SMALL_MARGIN },
-  m2: { margin: SMALL_MARGIN * 2 },
-  m3: { margin: SMALL_MARGIN * 3 },
-  m4: { margin: SMALL_MARGIN * 4 },
-  m5: { margin: SMALL_MARGIN * 5 },
-  mAuto: { margin: "auto" },
-
-  mt0: { marginTop: 0 },
-  mt1: { marginTop: SMALL_MARGIN },
-  mt2: { marginTop: SMALL_MARGIN * 2 },
-  mt3: { marginTop: SMALL_MARGIN * 3 },
-  mt4: { marginTop: SMALL_MARGIN * 4 },
-  mt5: { marginTop: SMALL_MARGIN * 5 },
-  mtAuto: { marginTop: "auto" },
-
-  mr0: { marginRight: 0 },
-  mr1: { marginRight: SMALL_MARGIN },
-  mr2: { marginRight: SMALL_MARGIN * 2 },
-  mr3: { marginRight: SMALL_MARGIN * 3 },
-  mr4: { marginRight: SMALL_MARGIN * 4 },
-  mr5: { marginRight: SMALL_MARGIN * 5 },
-  mrAuto: { marginRight: "auto" },
-
-  mb0: { marginBottom: 0 },
-  mb1: { marginBottom: SMALL_MARGIN },
-  mb2: { marginBottom: SMALL_MARGIN * 2 },
-  mb3: { marginBottom: SMALL_MARGIN * 3 },
-  mb4: { marginBottom: SMALL_MARGIN * 4 },
-  mb5: { marginBottom: SMALL_MARGIN * 5 },
-  mbAuto: { marginBottom: "auto" },
-
-  ml0: { marginLeft: 0 },
-  ml1: { marginLeft: SMALL_MARGIN },
-  ml2: { marginLeft: SMALL_MARGIN * 2 },
-  ml3: { marginLeft: SMALL_MARGIN * 3 },
-  ml4: { marginLeft: SMALL_MARGIN * 4 },
-  ml5: { marginLeft: SMALL_MARGIN * 5 },
-  mlAuto: { marginLeft: "auto" },
-
-  mx0: { marginLeft: 0, marginRight: 0 },
-  mx1: { marginLeft: SMALL_MARGIN * 1, marginRight: SMALL_MARGIN * 1 },
-  mx2: { marginLeft: SMALL_MARGIN * 2, marginRight: SMALL_MARGIN * 2 },
-  mx3: { marginLeft: SMALL_MARGIN * 3, marginRight: SMALL_MARGIN * 3 },
-  mx4: { marginLeft: SMALL_MARGIN * 4, marginRight: SMALL_MARGIN * 4 },
-  mx5: { marginLeft: SMALL_MARGIN * 5, marginRight: SMALL_MARGIN * 5 },
-  mxAuto: { marginLeft: "auto", marginRight: "auto" },
-
-  my0: { marginTop: 0, marginBottom: 0 },
-  my1: { marginTop: SMALL_MARGIN * 1, marginBottom: SMALL_MARGIN * 1 },
-  my2: { marginTop: SMALL_MARGIN * 2, marginBottom: SMALL_MARGIN * 2 },
-  my3: { marginTop: SMALL_MARGIN * 3, marginBottom: SMALL_MARGIN * 3 },
-  my4: { marginTop: SMALL_MARGIN * 4, marginBottom: SMALL_MARGIN * 4 },
-  my5: { marginTop: SMALL_MARGIN * 5, marginBottom: SMALL_MARGIN * 5 },
-  myAuto: { marginTop: "auto", marginBottom: "auto" },
+  //NO SCREEN SIZE SPECIFIC STYLE AVAILABLE
 };

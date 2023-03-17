@@ -1,11 +1,10 @@
-import config from "../../config/config";
-import { SMALL_WINDOW_WIDTH } from "../../config/constants";
-// import { defaultAppStyles } from "../../styles/DefaultAppStyles";
+import { SMALL_WINDOW_WIDTH } from "../config/constants";
 import { defaultSCStyles } from "../styledComponents/DefaultSCStyles";
 import { theme } from "../theme/theme";
 import {
   defaultUtilityStyles,
   DEFAULT_PADDING,
+  IMPORTANT,
 } from "../utility/DefaultUtilityStyles";
 
 const MIN_WIDTH = 0;
@@ -64,19 +63,6 @@ export const defaultCoreStyles = {
   /**
    * Others
    */
-  appBarLoggedIn: {
-    zIndex: theme.zIndex.drawer + 1,
-    backgroundColor: config.color.defaultBackgroundColor,
-    boxShadow: "none",
-    // borderBottomStyle: "solid",
-    // borderBottomWidth: "1px",
-    // borderBottomColor: config.color.contrastBackgroundColorLight,
-  },
-  appBarLoggedOut: {
-    zIndex: theme.zIndex.drawer + 1,
-    backgroundColor: config.color.defaultBackgroundColor,
-    boxShadow: "none",
-  },
   scAppDiv: {
     /**
      * DO NOT TOUCH THIS STYLE WITHOUT DISCUSSION
@@ -146,102 +132,11 @@ export const defaultCoreStyles = {
     borderStyle: "solid",
     borderColor: theme.palette.primary.light,
   },
-  avatarSmall: { height: 24, width: 24 },
-  avatarMedium: { height: 48, width: 48 },
-  avatarLarge: { height: 72, width: 72 },
-  avatarXLarge: { height: 96, width: 96 },
-  avatarXXLarge: { height: 120, width: 120 },
-
-  textAlignCenter: { textAlign: "center" },
-  textAlignRight: { textAlign: "right" },
-  verticalHorizontalCenter: {
-    height: "100%",
-    width: "100%",
-    flexDirection: "row",
-    justifyContent: "center",
-    alignItems: "center",
-    alignContents: "center",
-    display: "flex",
-  },
-  linkStyle: {
-    cursor: "pointer",
-    display: "inline-block",
-    color: theme.palette.primary.main,
-  },
-  authBanner: {},
-  spacedRowElements: {
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-between",
-  },
-  gridPadding: {
-    // paddingLeft: 10,
-  },
-  noMarginP: {
-    marginTop: -10,
-  },
-  appBarIconsContainer: {
-    justifyContent: "end",
-  },
-  appDrawerText: {
-    overflow: "hidden",
-    textOverflow: "ellipsis",
-    whiteSpace: "nowrap",
-    color: "rgb(88, 88, 88) !important",
-  },
-  boldText: {
-    fontWeight: 600,
-  },
-  profilebarSection: {
-    width: "26%",
-    minWidth: "26%",
-    padding: "35px",
-  },
-  profileCardName: {
-    fontSize: "20px",
-  },
-  profileCardContact: {
-    fontSize: "12px",
-  },
-  profileCardLink: {
-    fontWeight: "600",
-    fontSize: "16px",
-  },
-  profileCardTokenDetail: {
-    backgroundColor: config.color.contrastBackgroundColorLight,
-    borderRadius: "10px",
-  },
-  profileCardTokenAmount: {
-    color: config.color.contrastBackgroundColorDark,
-    fontSize: "18px",
-    fontWeight: "600",
-  },
-  profileCardTokenText: {
-    fontSize: "12px",
-  },
-  medicineText: {
-    fontSize: "12px",
-  },
-  headingTopMargin: {
-    marginTop: HEADING_TOP_MARGIN,
-  },
-  profileBar: {
-    marginTop: "8px",
-  },
-  profileBarWidth: {
-    maxWidth: "80vw",
-  },
-  borderBottomWidth: {
-    borderBottom: "1px solid",
-    borderColor: theme.palette.grey,
-  },
-
-  buttonMargin: {
-    marginLeft: 10,
-  },
-  margin0: {
-    margin: "0 !important",
-  },
+  avatarSmall: { height: "24px" + IMPORTANT, width: "24px" + IMPORTANT },
+  avatarMedium: { height: "48px" + IMPORTANT, width: "48px" + IMPORTANT },
+  avatarLarge: { height: "72px" + IMPORTANT, width: "72px" + IMPORTANT },
+  avatarXLarge: { height: "96px" + IMPORTANT, width: "96px" + IMPORTANT },
+  avatarXXLarge: { height: "120px" + IMPORTANT, width: "120px" + IMPORTANT },
 
   miniDrawerListItemButton: {
     // minHeight: 48,
@@ -462,36 +357,5 @@ export const defaultCoreStyles = {
     borderLeft: `1px solid ${theme.palette.primary.light}`,
     margin: "8px",
     paddingLeft: "8px",
-  },
-  // ---------Business Entity Comp---------------
-
-  //--------------RX----------------
-  rxCashCard: {
-    color: config.color.secondaryTextColor,
-    cursor: "pointer",
-    border: `1px solid ${config.color.secondaryTextColor}`,
-  },
-  rxCashCardCash: {
-    backgroundColor: config.color.lightBackgroundColor,
-  },
-  rxRechargeDisclaimer: {
-    fontWeight: "100",
-    fontSize: "13px",
-  },
-  rxRechargeDisclaimerTermsAndConditions: {
-    fontSize: "13px",
-    color: config.color.secondaryTextColor,
-  },
-  rxAlertWalletIcon: { height: "50px" },
-  rxSuccessAmountCard: {
-    border: "1px dashed",
-    width: "43%",
-    borderRadius: "5%",
-    marginLeft: "29%",
-  },
-  rxSuccessAmount: {
-    marginTop: "-5%",
-    fontSize: "20px",
-    fontWeight: "500",
   },
 };

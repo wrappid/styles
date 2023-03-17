@@ -7,6 +7,7 @@ import {
   XX_LARGE_WINDOW_WIDTH,
   X_LARGE_WINDOW_WIDTH,
 } from "./config/constants";
+import CoreClasses from "./CoreClasses";
 import { defaultCoreStyles } from "./default/DefaultCoreStyles";
 import { largeCoreStyles } from "./default/LargeCoreStyles";
 import { mediumCoreStyles } from "./default/MediumCoreStyles";

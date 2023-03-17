@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx babel package --out-dir dist --copy-files",
     "test": "echo testing not yet implemented"
   },
   "repository": {
@@ -22,20 +21,9 @@
     "url": "https://github.com/wrappid/styles/issues"
   },
   "homepage": "https://github.com/wrappid/styles#readme",
-  "babel": {
-    "presets": [
-      "@babel/preset-react"
-    ]
-  },
-  "dependencies": {
-    "@mui/material": "^5.10.2",
-    "@wrapped/styles": "^0.0.2"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.21.0",
-    "@babel/core": "^7.21.0",
-    "@babel/polyfill": "^7.12.1",
-    "@babel/preset-env": "^7.20.2",
-    "@babel/preset-react": "^7.18.6"
+  "peerDependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
+    "@mui/material": "^5.10.2"
   }
 }
