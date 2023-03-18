@@ -35,6 +35,6 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run build
-      - run: npm publish dist
+      - run: npm publish dist --registry=https://npm.pkg.github.com --scope=@wrappid
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
