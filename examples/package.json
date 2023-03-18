@@ -1,5 +1,5 @@
 {
-  "name": "@wrappid/styles-examples",
+  "name": "wrappid-styles-examples",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -15,7 +15,8 @@
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "@wrappid/styles": "^0.0.1"
   },
   "eslintConfig": {
     "extends": [
