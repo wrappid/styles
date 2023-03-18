@@ -28,8 +28,7 @@
     ]
   },
   "dependencies": {
-    "@mui/material": "^5.10.2",
-    "@wrapped/styles": "^0.0.2"
+    "@mui/material": "^5.10.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.21.0",
