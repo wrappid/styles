@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://techoneel: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@github.com/wrappid/styles.git"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "keywords": [
     "css-in-js",
     "react",

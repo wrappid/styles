@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "echo testing not yet implemented",
     "build": "npx babel package --out-dir dist --copy-files",
-    "test": "echo testing not yet implemented"
+    "publish": "npm publish ./dist --registry=https://npm.pkg.github.com --scope=@wrappid"
   },
   "repository": {
     "type": "git",
