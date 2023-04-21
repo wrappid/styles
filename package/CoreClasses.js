@@ -93,6 +93,7 @@ const CoreClasses = {
   CORE_APP_BAR: {
     APP_BAR_LOGO: "appBarLogo",
   },
+  CORE_DRAWER: { PAPER_HEIGHT: "appDrawerPaperHeight" },
   MENU: {
     MINI_DRAWER_LIST_ITEM_BUTTON: "miniDrawerListItemButton",
     MINI_DRAWER_LIST_ITEM_ICON: "miniDrawerListItemIcon",
