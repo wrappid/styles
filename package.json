@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo testing not yet implemented",
     "build": "npx babel package --out-dir dist --copy-files",
+    "build-app": "npx babel package --out-dir ../test/wrappid-mobile/node_modules/@wrappid/styles --copy-files",
     "publish": "npm publish ./dist --registry=https://npm.pkg.github.com --scope=@wrappid"
   },
   "repository": {
