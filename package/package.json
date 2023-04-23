@@ -1,6 +1,6 @@
 {
   "name": "@wrappid/styles",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,7 @@
     "url": "https://github.com/wrappid/styles/issues"
   },
   "homepage": "https://github.com/wrappid/styles#readme",
-  "peerDependencies": {
+  "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "@mui/material": "^5.10.2"
