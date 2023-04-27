@@ -1,13 +1,12 @@
 {
   "name": "@wrappid/styles",
-  "version": "0.0.5-alpha.0",
+  "version": "0.0.6",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo testing not yet implemented",
     "build": "npx babel package --out-dir dist --copy-files",
     "build-app": "npx babel package --out-dir ../test/wrappid-mobile/node_modules/@wrappid/styles --copy-files",
-    "publish-old": "npm publish ./package --registry=https://npm.pkg.github.com --scope=@wrappid",
     "publish": "npm publish ./dist --registry=https://npm.pkg.github.com --scope=@wrappid"
   },
   "repository": {
