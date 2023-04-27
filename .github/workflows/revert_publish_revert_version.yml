@@ -1,0 +1,67 @@
+name: Undo Publish and Decrease Version
+on:
+  workflow_dispatch:
+  repository_dispatch:
+
+jobs:
+  delete-package-latest-version:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      
+
+      - name: Fetch Package Details
+        run: bash .github/scripts/get_latest_package_details.sh ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Read Fetched Details
+        id: package-details
+        run: |
+          echo "package_id=$(cat id.txt)" >> "$GITHUB_OUTPUT"
+          echo "package_version=$(cat name.txt)" >> "$GITHUB_OUTPUT"
+
+          
+      - name: Delete ${{steps.package-details.outputs.package_version}}
+        uses: actions/delete-package-versions@v4
+        with: 
+          owner: 'wrappid'
+          package-version-ids: '${{steps.package-details.outputs.package_id}}'
+          package-name: 'styles'
+          package-type: 'npm'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          #min-versions-to-keep: 10
+          #num-old-versions-to-delete: 1
+
+
+  revert-version-bump:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: decrease Version
+        id: decrease-version
+        run: echo "commit_message=$(bash .github/scripts/version_revert.sh)" >> "$GITHUB_OUTPUT"
+        # env:
+        #   NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+
+      - name: setup git config
+        run: |
+          # setup the username and email.
+          git config user.name "Github Action Bot"
+          git config user.email "antaghosh@gmail.com"
+
+      - name: commit
+        run: |
+          # Stage the file, commit and push
+          git pull
+          git add package.json package/package.json
+          git commit -m "${{steps.decrease-version.outputs.commit_message}}"
+          git push origin main

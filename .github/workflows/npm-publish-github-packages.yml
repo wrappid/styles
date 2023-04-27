@@ -39,3 +39,34 @@ jobs:
       - run: npm run publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+#new config by Ananta
+  version-bump:
+    needs: publish-gpr
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Bump Version
+        id: bump-version
+        run: echo "commit_message=$(bash .github/scripts/version_bump.sh)" >> "$GITHUB_OUTPUT"
+        # env:
+        #   NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+
+      - name: setup git config
+        run: |
+          # setup the username and email.
+          git config user.name "Github Action Bot"
+          git config user.email "antaghosh@gmail.com"
+
+      - name: commit
+        run: |
+          # Pull, stage the file, commit and push
+          git pull
+          git add package.json package/package.json
+          git commit -m "${{steps.bump-version.outputs.commit_message}}"
+          git push origin main
