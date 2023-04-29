@@ -110,12 +110,12 @@ export const defaultCoreStyles = {
     },
   },
   alignRight: {
-    display: "flex",
-    justifyContent: "end",
+    // display: "flex",
+    // justifyContent: "end",
   },
   alignLeft: {
-    display: "flex",
-    justifyContent: "start",
+    // display: "flex",
+    // justifyContent: "start",
   },
   horizontalCenter: {
     display: "flex",
