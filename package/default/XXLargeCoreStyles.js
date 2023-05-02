@@ -7,22 +7,20 @@ const MIN_WIDTH = XX_LARGE_WINDOW_WIDTH;
 const MAX_WIDTH = Number.MAX_VALUE; // setting value to very large number
 
 export const xXLargeCoreStyles = {
-  devBorder: {
-    ...defaultUtilityStyles.borderSecondary,
-  },
+	devBorder: { ...defaultUtilityStyles.borderSecondary },
 
-  /**************************************************
+	/**************************************************
    * Styled Components Styles - XXLarge Screen
    *************************************************/
-  ...xXLargeSCStyles,
+	...xXLargeSCStyles,
 
-  /**************************************************
+	/**************************************************
    * Utility Styles - XXLarge Screen
    *************************************************/
-  ...xXLargeUtilityStyles,
+	...xXLargeUtilityStyles,
 
-  /**************************************************
+	/**************************************************
    * App Styles - XXLarge Screen
    *************************************************/
-  // ...xXLargeAppStyles,
+	// ...xXLargeAppStyles,
 };

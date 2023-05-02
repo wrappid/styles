@@ -1,9 +1,11 @@
 {
   "name": "@wrappid/styles",
-  "version": "0.0.8",
+  "version": "0.0.10",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "code:lint": "eslint --ignore-path .gitignore .",
+    "code:format": "eslint --ignore-path .gitignore . --fix",
     "test": "echo testing not yet implemented",
     "build": "npx babel package --out-dir dist --copy-files",
     "build-app": "npx babel package --out-dir ../test/wrappid-mobile/node_modules/@wrappid/styles --copy-files",
@@ -29,15 +31,17 @@
     ]
   },
   "dependencies": {
-    "@mui/material": "^5.10.2",
     "@emotion/react": "^11.10.0",
-    "@emotion/styled": "^11.10.0"
+    "@emotion/styled": "^11.10.0",
+    "@mui/material": "^5.10.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.21.0",
     "@babel/core": "^7.21.0",
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.20.2",
-    "@babel/preset-react": "^7.18.6"
+    "@babel/preset-react": "^7.18.6",
+    "eslint": "^8.39.0",
+    "eslint-plugin-react": "^7.32.2"
   }
 }
