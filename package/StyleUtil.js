@@ -17,6 +17,9 @@ import { getConfigurationObject } from "./helper/helper";
 
 const { innerWidth: windowWidth, innerHeight: windowHeight } = window;
 
+const UNITS = ["!important"];
+const EXCEPTIONS = ["flexGrow", "flexShrink"];
+
 const sanitizeClassNames = (classNames) => {
   // using set() method to create collections of unique values,
   // hence remove duplicates
@@ -26,6 +29,36 @@ const sanitizeClassNames = (classNames) => {
     ),
   ];
 };
+
+export function addFlavor(styleObject) {
+  let config = getConfigurationObject();
+  if (config.platform === "mobile") {
+    let keys = Object.keys(styleObject);
+    for (let i = 0; i < keys.length; i++) {
+      let key = keys[i];
+      let val = styleObject[key];
+      for (let j = 0; j < UNITS.length; j++) {
+        if (val && typeof val === "string") {
+          val = val.replace(UNITS[j], "");
+        }
+      }
+      try {
+        val = Number(val);
+        if (isNaN(val)) {
+          continue;
+        }
+
+        if (!EXCEPTIONS.includes(key)) val = val + "px";
+      } catch (err) {
+        continue;
+      }
+      console.log("KEY:", key, "VAL:", val);
+      styleObject[key] = val;
+    }
+  }
+
+  return styleObject;
+}
 
 export function getEffectiveStyle(classNames) {
   /**
@@ -118,7 +151,7 @@ export function getEffectiveStyle(classNames) {
   // console.log("Combined ==");
   // console.log(styleObject);
 
-  return styleObject;
+  return addFlavor(styleObject);
 }
 
 const getDefaultStyle = (className) => {

@@ -69,54 +69,54 @@ export const DEFAULT_THEME = {
 export function overrideThemeConfiguration() {
   let finalTheme = { ...DEFAULT_THEME };
   let configuration = getConfigurationObject();
-  if (configuration.fontFamily) {
-    finalTheme.typography.fontFamily = configuration.fontFamily;
+  if (configuration.theme.fontFamily) {
+    finalTheme.typography.fontFamily = configuration.theme.fontFamily;
   }
-  if (configuration.buttonTextTransform) {
+  if (configuration.theme.buttonTextTransform) {
     finalTheme.typography.button.textTransform =
-      configuration.buttonTextTransform;
+      configuration.theme.buttonTextTransform;
   }
-  if (configuration.paletteType) {
-    finalTheme.palette.type = configuration.paletteType;
+  if (configuration.theme.paletteType) {
+    finalTheme.palette.type = configuration.theme.paletteType;
   }
-  if (configuration.defaultBackgroundColor) {
+  if (configuration.theme.defaultBackgroundColor) {
     finalTheme.palette.background.default =
-      configuration.defaultBackgroundColor;
+      configuration.theme.defaultBackgroundColor;
   }
 
-  if (configuration.primaryMainColor) {
-    finalTheme.palette.primary.main = configuration.primaryMainColor;
+  if (configuration.theme.primaryMainColor) {
+    finalTheme.palette.primary.main = configuration.theme.primaryMainColor;
   }
-  if (configuration.primaryLightColor) {
-    finalTheme.palette.primary.light = configuration.primarylightColor;
+  if (configuration.theme.primaryLightColor) {
+    finalTheme.palette.primary.light = configuration.theme.primarylightColor;
   }
-  if (configuration.primaryDarkColor) {
-    finalTheme.palette.primary.dark = configuration.primaryDarkColor;
+  if (configuration.theme.primaryDarkColor) {
+    finalTheme.palette.primary.dark = configuration.theme.primaryDarkColor;
   }
-  if (configuration.primaryContrastTextColor) {
+  if (configuration.theme.primaryContrastTextColor) {
     finalTheme.palette.primary.contrastText =
-      configuration.primaryContrastTextColor;
+      configuration.theme.primaryContrastTextColor;
   }
 
-  if (configuration.secondaryMainColor) {
-    finalTheme.palette.secondary.main = configuration.secondaryMainColor;
+  if (configuration.theme.secondaryMainColor) {
+    finalTheme.palette.secondary.main = configuration.theme.secondaryMainColor;
   }
-  if (configuration.secondaryLightColor) {
-    finalTheme.palette.secondary.light = configuration.secondarylightColor;
+  if (configuration.theme.secondaryLightColor) {
+    finalTheme.palette.secondary.light = configuration.theme.secondarylightColor;
   }
-  if (configuration.secondaryDarkColor) {
-    finalTheme.palette.secondary.dark = configuration.secondaryDarkColor;
+  if (configuration.theme.secondaryDarkColor) {
+    finalTheme.palette.secondary.dark = configuration.theme.secondaryDarkColor;
   }
-  if (configuration.secondaryTransparentLightColor) {
+  if (configuration.theme.secondaryTransparentLightColor) {
     finalTheme.palette.secondary.transparentLight =
-      configuration.secondaryTransparentLightColor;
+      configuration.theme.secondaryTransparentLightColor;
   }
-  if (configuration.secondaryTransparentDarkColor) {
+  if (configuration.theme.secondaryTransparentDarkColor) {
     finalTheme.palette.secondary.transparentDark =
-      configuration.secondaryTransparentDarkColor;
+      configuration.theme.secondaryTransparentDarkColor;
   }
 
   return finalTheme;
 }
 
-export const theme = overrideThemeConfiguration(DEFAULT_THEME);
+export const theme = overrideThemeConfiguration();
