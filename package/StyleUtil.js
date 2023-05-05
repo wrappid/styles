@@ -1,4 +1,3 @@
-import config from "./config/config";
 import {
   ENV_DEV_MODE,
   LARGE_WINDOW_WIDTH,
@@ -14,13 +13,18 @@ import { mediumCoreStyles } from "./default/MediumCoreStyles";
 import { smallCoreStyles } from "./default/SmallCoreStyles";
 import { xLargeCoreStyles } from "./default/XLargeCoreStyles";
 import { xXLargeCoreStyles } from "./default/XXLargeCoreStyles";
+import { getConfigurationObject } from "./helper/helper";
 
 const { innerWidth: windowWidth, innerHeight: windowHeight } = window;
 
 const sanitizeClassNames = (classNames) => {
   // using set() method to create collections of unique values,
   // hence remove duplicates
-  return [...new Set(classNames && Array.isArray(classNames) ? classNames : [classNames])];
+  return [
+    ...new Set(
+      classNames && Array.isArray(classNames) ? classNames : [classNames]
+    ),
+  ];
 };
 
 export function getEffectiveStyle(classNames) {
@@ -28,7 +32,7 @@ export function getEffectiveStyle(classNames) {
    * Step 1: Get default styles(xs) for className
    * Step 2: Get all styles object filter by classNames and window.width
    */
-
+  let config = getConfigurationObject();
   classNames = sanitizeClassNames(classNames);
 
   if (config.environment === ENV_DEV_MODE) {
