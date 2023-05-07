@@ -1,19 +1,13 @@
-import StyledComponentsClasses from "./StyledComponentsClasses";
-import UtilityClasses from "./UtilityClasses";
+import StyledComponentsClasses from "../styledComponents/StyledComponentsClasses";
+import UtilityClasses from "../utility/UtilityClasses";
 
 const CoreClasses = {
 	DEV_BORDER: "devBorder",
 	SC_APP_DIV: "scAppDiv",
 	/**************************************************
-   * App Level Styles
-   *************************************************/
-	APP       : {
-		// ...AppClasses,
-	},
-	/**************************************************
    * Styled Components Level Styles
    *************************************************/
-	SC    : { ...StyledComponentsClasses },
+	SC        : { ...StyledComponentsClasses },
 	/**************************************************
    * Utility Styles
    *************************************************/
@@ -21,7 +15,7 @@ const CoreClasses = {
 	/**************************************************
    * Layout
    **************************************************/
-	LAYOUT: {
+	LAYOUT    : {
 		/*
      * Container related classes
      */

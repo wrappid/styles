@@ -1,7 +1,3 @@
-export const ENV_DEV_MODE = "DEV";
-export const ENV_STAGE_MODE = "STAGE";
-export const ENV_PROD_MODE = "PROD";
-
 // bootstrap - BREAKPOINTS
 // export const SMALL_WINDOW_WIDTH = "576";
 // export const MEDIUM_WINDOW_WIDTH = "768";

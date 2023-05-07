@@ -2,8 +2,7 @@
  * styleClass names for Utility Styles
  *************************************************/
 const StyledComponentsClasses = {
-	APPBAR_HEIGHT: "appbarHeight",
-	INPUTS       : {
+	INPUTS: {
 		BUTTON            : "scInputsButton",
 		TEXT_FIELD        : "scInputsTextField",
 		DATE_PICKER       : "scInputsDatePicker",
