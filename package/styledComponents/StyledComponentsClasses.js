@@ -88,7 +88,52 @@ const StyledComponentsClasses = {
 		PAPER            : "scSurfacesPaper",
 		TOOLBAR          : "scSurfacesToolbar",
 	},
+
+	/**
+	 * Moved from core
+	 */
 	UTILS: { FADE: "", MODAL: "", POPOVER: "" },
+	APP_BAR: { APP_BAR_LOGO: "appBarLogo" },
+	DRAWER : { PAPER_HEIGHT: "appDrawerPaperHeight" },
+	MODAL: {
+		MODAL_CONTAINER: "modalContainer",
+		MODAL_HEADER   : "modalHeader",
+		MODAL_BODY     : "modalBody",
+	},
+	
+	/**
+	 * @todo Have to remove this. This is here as it is used in menuUtil
+	 * when we creae seperae component for menu items this should be replaced
+	 */
+	
+	MENU        : {
+		MINI_DRAWER_LIST_ITEM_BUTTON: "miniDrawerListItemButton",
+		MINI_DRAWER_LIST_ITEM_ICON  : "miniDrawerListItemIcon",
+		LIST_ITEM                   : "listItem",
+		LIST_ITEM_BUTTON            : "listItemButton",
+		LIST_ITEM_ICON              : "listItemIcon",
+		LIST_ITEM_TEXT              : "listItemText",
+
+		HEADER_BUTTON_ITEM: "headerButtonItem",
+		HEADER_ICON_ITEM  : "headerIconItem",
+		HEADER_TEXT_ITEM  : "headerTextItem",
+		HEADER_ITEM       : "headerItem",
+
+		PARENT_BUTTON_ITEM: "parentButtonItem",
+		PARENT_ICON_ITEM  : "parentIconItem",
+		PARENT_TEXT_ITEM  : "parentTextItem",
+		PARENT_ITEM       : "parentItem",
+
+		SEPERATOR_BUTTON_ITEM: "seperatorButtonItem",
+		SEPERATOR_ICON_ITEM  : "seperatorIconItem",
+		SEPERATOR_TEXT_ITEM  : "seperatorTextItem",
+		SEPERATOR_ITEM       : "seperatorItem",
+
+		MENU_ITEM_BUTTON_ITEM: "menuItemButtonItem",
+		MENU_ITEM_ICON_ITEM  : "menuItemIconItem",
+		MENU_ITEM_TEXT_ITEM  : "menuItemTextItem",
+		MENU_ITEM            : "menuItem",
+	},
 };
 
 export default StyledComponentsClasses;

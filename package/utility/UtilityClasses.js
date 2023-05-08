@@ -2,6 +2,8 @@
  * styleClass names for Utility Styles
  *************************************************/
 const UtilityClasses = {
+	DEV_BORDER: "devBorder",
+
 	/**************************************************
    * Alignment
    *************************************************/

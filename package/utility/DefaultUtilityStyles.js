@@ -48,6 +48,7 @@ export const defaultUtilityStyles = {
 	alignSelfStretch : { alignSelf: "stretch" + IMPORTANT, display: "flex" },
     
 	bgBlack: { backgroundColor: "black" },
+	bgDefault: { backgroundColor: theme.palette.background.default},
     
 	bgError: { backgroundColor: theme.palette.error.main },
     

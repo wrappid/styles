@@ -1,6 +1,8 @@
 import { theme } from "../theme/theme";
 import { defaultUtilityStyles } from "../utility/DefaultUtilityStyles";
 
+const HEADING_TOP_MARGIN = "56px";
+
 export const defaultSCStyles = {
 	/**************************************************
    * INPUTS
@@ -95,4 +97,71 @@ export const defaultSCStyles = {
    *************************************************/
 	scFormFormControlLabel      : {},
 	scFormFormGroup             : {},
+
+	/**
+	 * Moved from core
+	 */
+	
+	/**
+   * Core App Bar Styles
+   */
+	appbarHeight        : { top: HEADING_TOP_MARGIN },
+	appDrawerPaperHeight: { height: `calc(100% - ${HEADING_TOP_MARGIN})` },
+	appBarLogo          : { height: "30px" },
+
+	/**
+	 * @todo Have to remove this. This is here as it is used in menuUtil
+	 * when we creae seperae component for menu items this should be replaced
+	 */
+	
+	miniDrawerListItemButton: {
+		// minHeight: 48,
+		// paddingTop: 2,
+		// paddingBottom: 2,
+	},
+	miniDrawerListItemIcon: { minWidth: 0 },
+
+	listItem      : {},
+	listItemButton: {
+		// paddingTop: 2,
+		// paddingBottom: 2,
+	},
+	listItemIcon: {},
+	listItemText: {},
+
+	headerItem: {
+		padding: 0,
+		// backgroundColor: theme.palette.secondary.light,
+	},
+	headerButtonItem: {},
+	headerIconItem  : {},
+	headerTextItem  : {},
+
+	parentItem: {
+		padding: 0,
+		// backgroundColor: theme.palette.secondary.light,
+	},
+	parentButtonItem: {},
+	parentIconItem  : {},
+	parentTextItem  : {},
+
+	seperatorItem: {
+		padding: 0,
+		// backgroundColor: theme.palette.secondary.light,
+	},
+	seperatorButtonItem: {
+		height   : 0,
+		minHeight: 0,
+		// backgroundColor: "gray"
+	},
+	seperatorIconItem: { height: 0, minHeight: 0, display: "none" },
+	seperatorTextItem: { height: 0, minHeight: 0 },
+
+	menuItem: {
+		padding: 0,
+		// backgroundColor: theme.palette.secondary.light,
+	},
+	menuItemButtonItem: {},
+	menuItemTextItem  : {},
+	menuItemIconItem  : {},
 };
