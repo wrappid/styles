@@ -34,5 +34,6 @@ export function getConfigurationObject() {
     }
   } catch (err) {
     console.log(".env file or config.json not found");
+    return {theme:{}}
   }
 }
