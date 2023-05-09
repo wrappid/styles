@@ -93,7 +93,7 @@ const StyledComponentsClasses = {
 	 * Moved from core
 	 */
 	UTILS: { FADE: "", MODAL: "", POPOVER: "" },
-	APP_BAR: { APP_BAR_LOGO: "appBarLogo" },
+	APP_BAR: { HEIGHT: "appbarHeight", APP_BAR_LOGO: "appBarLogo" },
 	DRAWER : { PAPER_HEIGHT: "appDrawerPaperHeight" },
 	MODAL: {
 		MODAL_CONTAINER: "modalContainer",
