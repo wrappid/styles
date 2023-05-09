@@ -14,7 +14,13 @@ import { smallSCStyles } from "./styledComponents/SmallSCStyles";
 import { xLargeSCStyles } from "./styledComponents/XLargeSCStyles";
 import { xXLargeSCStyles } from "./styledComponents/XXLargeSCStyles";
 import { appStyles, coreStyles } from "./StylesProvider";
+import { defaultUtilityStyles } from "./utility/DefaultUtilityStyles";
+import { largeUtilityStyles } from "./utility/LargeUtilityStyles";
+import { mediumUtilityStyles } from "./utility/MediumUtilityStyles";
+import { smallUtilityStyles } from "./utility/SmallUtilityStyles";
 import UtilityClasses from "./utility/UtilityClasses";
+import { xLargeUtilityStyles } from "./utility/XLargeUtilityStyles";
+import { xXLargeUtilityStyles } from "./utility/XXLargeUtilityStyles";
 
 const { innerWidth: windowWidth, innerHeight: windowHeight } = window;
 
@@ -24,32 +30,38 @@ const EXCEPTIONS = ["flexGrow", "flexShrink"];
 let mergedDefaultStyles = {
 	...appStyles?.styles?.default,
 	...coreStyles?.styles?.default,
+  ...defaultUtilityStyles,
 	...defaultSCStyles
   }
 
   let mergedSmallStyles = {
 	...appStyles?.styles?.small,
 	...coreStyles?.styles?.small,
+  ...smallUtilityStyles,
 	...smallSCStyles
   }
   let mergedMediumStyles = {
 	...appStyles?.styles?.medium,
 	...coreStyles?.styles?.medium,
+  ...mediumUtilityStyles,
 	...mediumSCStyles
   }
   let mergedLargeStyles = {
 	...appStyles?.styles?.large,
 	...coreStyles?.styles?.large,
+  ...largeUtilityStyles,
 	...largeSCStyles
   }
   let mergedXLargeStyles = {
 	...appStyles?.styles?.xLarge,
 	...coreStyles?.styles?.xLarge,
+  ...xLargeUtilityStyles,
 	...xLargeSCStyles
   }
   let mergedXXLargeStyles = {
 	...appStyles?.styles?.xxLarge,
 	...coreStyles?.styles?.xxLarge,
+  ...xXLargeUtilityStyles,
 	...xXLargeSCStyles
   }
 
@@ -75,20 +87,21 @@ export function addFlavor(styleObject) {
       let val = styleObject[key];
 
       for (let j = 0; j < UNITS.length; j++) {
+        console.log("UNIT", UNITS[j]);
         if (val && typeof val === "string") {
           val = val.replace(UNITS[j], "");
         }
       }
-      try {
-        val = Number(val);
-        if (isNaN(val)) {
-          continue;
-        }
 
-        if (!EXCEPTIONS.includes(key)) val = val + "px";
-      } catch (err) {
-        continue;
+      if (!isNaN(val) && !EXCEPTIONS.includes(key)) {
+        val = val + "px";
       }
+
+      if(key === "display" && (val === "flex"||val==="flex ")){
+        key = "flex"
+        val = 1
+      }
+
       // eslint-disable-next-line no-console
       console.log("KEY:", key, "VAL:", val);
       styleObject[key] = val;
@@ -104,10 +117,10 @@ export function getEffectiveStyle(classNames) {
    * Step 2: Get all styles object filter by classNames and window.width
    */
 
-  console.log(
-    "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\nAPP STYLES\n&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&",
-    appStyles
-  );
+  // console.log(
+  //   "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\nAPP STYLES\n&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&",
+  //   appStyles
+  // );
 
   let config = getConfigurationObject();
 
@@ -196,8 +209,11 @@ export function getEffectiveStyle(classNames) {
 
   // console.log("Combined ==");
   // console.log(styleObject);
+  let ob = addFlavor(styleObject);
 
-  return addFlavor(styleObject);
+  // console.log("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\nAPP STYLES\n&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&", ob, classNames);
+  
+  return ob
 }
 
 const getDefaultStyle = (className) => {

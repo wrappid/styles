@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 /* eslint-disable no-undef */
 const NODE_ENV = process?.env?.NODE_ENV;
+import customConfig from "../../../../src/config.json";
 
 export function getConfigurationObject() {
   if (process.env && Object.keys(process.env).length > 1) {
@@ -20,20 +21,18 @@ export function getConfigurationObject() {
     return config;
   }
 
-  let customConfig = null;
-
   try {
-    let path = "../../../../src/config.json";
+    // let path = "../../../../src/config.json";
 
-    console.log("PATH ", path);
-    customConfig = require(p);
+    // console.log("PATH ", path);
+    // customConfig = require(p);
     if (customConfig && customConfig[NODE_ENV]) {
       return customConfig[NODE_ENV];
     } else {
       return customConfig;
     }
   } catch (err) {
-    console.log(".env file or config.json not found");
+    console.log(".env file or config.json not found", err);
     return {theme:{}}
   }
 }
