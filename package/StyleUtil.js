@@ -25,7 +25,7 @@ import { xXLargeUtilityStyles } from "./utility/XXLargeUtilityStyles";
 const { innerWidth: windowWidth, innerHeight: windowHeight } = window;
 
 const UNITS = ["!important"];
-const EXCEPTIONS = ["flexGrow", "flexShrink"];
+const EXCEPTIONS = ["flexGrow", "flexShrink", "opacity", 'top', 'bottom', "left", "right"];
 
 let mergedDefaultStyles = {
 	...appStyles?.styles?.default,
@@ -100,6 +100,9 @@ export function addFlavor(styleObject) {
       if(key === "display" && (val === "flex"||val==="flex ")){
         key = "flex"
         val = 1
+      }
+      if(key === "position" && (val === "fixed"||val==="fixed ")){
+        val = "absolute"
       }
 
       // eslint-disable-next-line no-console

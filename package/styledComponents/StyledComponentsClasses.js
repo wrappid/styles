@@ -134,6 +134,10 @@ const StyledComponentsClasses = {
 		MENU_ITEM_TEXT_ITEM  : "menuItemTextItem",
 		MENU_ITEM            : "menuItem",
 	},
+
+	NAVIGATION		:{
+		APP_DRAWER_TEXT          : "appDrawerText"
+	}
 };
 
 export default StyledComponentsClasses;

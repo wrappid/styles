@@ -164,4 +164,10 @@ export const defaultSCStyles = {
 	menuItemButtonItem: {},
 	menuItemTextItem  : {},
 	menuItemIconItem  : {},
+	appDrawerText: {
+        color       : "rgb(88, 88, 88) !important",
+        overflow    : "hidden",
+        textOverflow: "ellipsis",
+        whiteSpace  : "nowrap",
+    },
 };
