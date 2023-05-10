@@ -35,9 +35,6 @@ jobs:
           registry-url: https://npm.pkg.github.com/
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: npm ci
-      - run: npm test
-      - run: npm run build
       ##publish
       - name: Extract version
         id: extract_version
@@ -58,8 +55,14 @@ jobs:
           #body_path: ./release_notes.md
           draft: false
           prerelease: false
+      
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+
         ##publish
-      - run: npm run publish
+      - name: Publish
+        run: npm run publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
