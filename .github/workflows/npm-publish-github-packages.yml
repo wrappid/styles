@@ -24,7 +24,7 @@ jobs:
   release_publish-gpr:
     needs: build
     runs-on: ubuntu-latest
-#     permissions:
+    permissions: write-all
 #       contents: read
 #       packages: write
     steps:
