@@ -25,46 +25,53 @@ import { xXLargeUtilityStyles } from "./utility/XXLargeUtilityStyles";
 const { innerWidth: windowWidth, innerHeight: windowHeight } = window;
 
 const UNITS = ["!important"];
-const EXCEPTIONS = ["flexGrow", "flexShrink", "opacity", 'top', 'bottom', "left", "right"];
+const EXCEPTIONS = [
+  "flexGrow",
+  "flexShrink",
+  "opacity",
+  "top",
+  "bottom",
+  "left",
+  "right",
+];
 
 let mergedDefaultStyles = {
-	...appStyles?.styles?.default,
-	...coreStyles?.styles?.default,
+  ...appStyles?.styles?.default,
+  ...coreStyles?.styles?.default,
   ...defaultUtilityStyles,
-	...defaultSCStyles
-  }
+  ...defaultSCStyles,
+};
 
-  let mergedSmallStyles = {
-	...appStyles?.styles?.small,
-	...coreStyles?.styles?.small,
+let mergedSmallStyles = {
+  ...appStyles?.styles?.small,
+  ...coreStyles?.styles?.small,
   ...smallUtilityStyles,
-	...smallSCStyles
-  }
-  let mergedMediumStyles = {
-	...appStyles?.styles?.medium,
-	...coreStyles?.styles?.medium,
+  ...smallSCStyles,
+};
+let mergedMediumStyles = {
+  ...appStyles?.styles?.medium,
+  ...coreStyles?.styles?.medium,
   ...mediumUtilityStyles,
-	...mediumSCStyles
-  }
-  let mergedLargeStyles = {
-	...appStyles?.styles?.large,
-	...coreStyles?.styles?.large,
+  ...mediumSCStyles,
+};
+let mergedLargeStyles = {
+  ...appStyles?.styles?.large,
+  ...coreStyles?.styles?.large,
   ...largeUtilityStyles,
-	...largeSCStyles
-  }
-  let mergedXLargeStyles = {
-	...appStyles?.styles?.xLarge,
-	...coreStyles?.styles?.xLarge,
+  ...largeSCStyles,
+};
+let mergedXLargeStyles = {
+  ...appStyles?.styles?.xLarge,
+  ...coreStyles?.styles?.xLarge,
   ...xLargeUtilityStyles,
-	...xLargeSCStyles
-  }
-  let mergedXXLargeStyles = {
-	...appStyles?.styles?.xxLarge,
-	...coreStyles?.styles?.xxLarge,
+  ...xLargeSCStyles,
+};
+let mergedXXLargeStyles = {
+  ...appStyles?.styles?.xxLarge,
+  ...coreStyles?.styles?.xxLarge,
   ...xXLargeUtilityStyles,
-	...xXLargeSCStyles
-  }
-
+  ...xXLargeSCStyles,
+};
 
 const sanitizeClassNames = (classNames) => {
   // using set() method to create collections of unique values,
@@ -97,12 +104,16 @@ export function addFlavor(styleObject) {
         val = val + "px";
       }
 
-      if(key === "display" && (val === "flex"||val==="flex ")){
-        key = "flex"
-        val = 1
+      if (key === "display" && (val === "flex" || val === "flex ")) {
+        key = "flex";
+        val = 1;
       }
-      if(key === "position" && (val === "fixed"||val==="fixed ")){
-        val = "absolute"
+      if (key === "position" && (val === "fixed" || val === "fixed ")) {
+        val = "absolute";
+      }
+      if (key === "border" && (val === "unset" || val === "unset ")) {
+        key = "border";
+        val = "0px";
       }
 
       // eslint-disable-next-line no-console
@@ -134,7 +145,6 @@ export function getEffectiveStyle(classNames) {
   }
 
   let styleObject = {};
-  
 
   classNames.forEach((className) => {
     /**
@@ -215,8 +225,8 @@ export function getEffectiveStyle(classNames) {
   let ob = addFlavor(styleObject);
 
   // console.log("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\nAPP STYLES\n&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&", ob, classNames);
-  
-  return ob
+
+  return ob;
 }
 
 const getDefaultStyle = (className) => {
