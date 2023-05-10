@@ -4,8 +4,8 @@
 name: Publish Package
 
 on:
-  release:
-    types: [created]
+#   release:
+#     types: [created]
   workflow_dispatch:
   repository_dispatch:
 
@@ -21,7 +21,7 @@ jobs:
       - run: npm test
       - run: npm run build
 
-  publish-gpr:
+  release_publish-gpr:
     needs: build
     runs-on: ubuntu-latest
     permissions:
@@ -36,13 +36,39 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run build
+      ##publish
+      - name: Extract version
+        id: extract_version
+        uses: Saionaro/extract-package-version@v1.0.6
+      
+      - name: Print version
+        run: echo ${{ steps.extract_version.outputs.version }}
+      
+      - name: Creating release artifacts
+        uses: montudor/action-zip@v1
+        with:
+          args: zip -qq -r release-v-${{ steps.extract_version.outputs.version }}.zip build
+      
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: v-${{ steps.extract_version.outputs.version }}
+          release_name: v-${{ steps.extract_version.outputs.version }}
+          artifacts: "release-v-${{ steps.extract_version.outputs.version }}.zip"
+          #body_path: ./release_notes.md
+          draft: false
+          prerelease: false
+        ##publish
       - run: npm run publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
 #new config by Ananta
   version-bump:
-    needs: publish-gpr
+    needs: release_publish-gpr
     runs-on: ubuntu-latest
     permissions:
       contents: write
