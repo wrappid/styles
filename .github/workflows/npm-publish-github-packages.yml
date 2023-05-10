@@ -33,6 +33,8 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: npm ci
       - run: npm test
       - run: npm run build
