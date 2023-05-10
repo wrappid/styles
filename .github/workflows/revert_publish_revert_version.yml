@@ -7,7 +7,6 @@ jobs:
 
 
   delete-release:
-    needs: delete-package-latest-version
     runs-on: ubuntu-latest
     permissions:
       contents: write
