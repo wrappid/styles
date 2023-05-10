@@ -1,10 +1,10 @@
-name: Undo Publish and Decrease Version
+name: Undo Publish, Release and Decrease Version
 on:
   workflow_dispatch:
   repository_dispatch:
 
 jobs:
-  delete-package-latest-version:
+  release-package-latest-version:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -36,8 +36,24 @@ jobs:
           #min-versions-to-keep: 10
           #num-old-versions-to-delete: 1
 
+  delete-release:
+    needs: release-package-latest-version
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    
+      - uses: actions/github-script@v4
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            const { owner, repo } = context.repo
+            const { data: { id } } = await github.repos.getLatestRelease({ owner, repo })
+            await github.repos.deleteRelease({ owner, repo, release_id: id })
+
 
   revert-version-bump:
+    needs: delete-release
     runs-on: ubuntu-latest
     permissions:
       contents: write
