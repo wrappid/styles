@@ -4,7 +4,25 @@ on:
   repository_dispatch:
 
 jobs:
+
+
+  delete-release:
+    needs: delete-package-latest-version
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    
+      - uses: actions/github-script@v4
+        with:
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            const { owner, repo } = context.repo
+            const { data: { id } } = await github.repos.getLatestRelease({ owner, repo })
+            await github.repos.deleteRelease({ owner, repo, release_id: id })
+            
   delete-package-latest-version:
+    needs: delete-release
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -36,24 +54,9 @@ jobs:
           #min-versions-to-keep: 10
           #num-old-versions-to-delete: 1
 
-  delete-release:
-    needs: delete-package-latest-version
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-    
-      - uses: actions/github-script@v4
-        with:
-          github-token: ${{secrets.GITHUB_TOKEN}}
-          script: |
-            const { owner, repo } = context.repo
-            const { data: { id } } = await github.repos.getLatestRelease({ owner, repo })
-            await github.repos.deleteRelease({ owner, repo, release_id: id })
-
 
   revert-version-bump:
-    needs: delete-release
+    needs: delete-package-latest-version
     runs-on: ubuntu-latest
     permissions:
       contents: write
