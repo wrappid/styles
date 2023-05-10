@@ -4,7 +4,7 @@ on:
   repository_dispatch:
 
 jobs:
-  release-package-latest-version:
+  delete-package-latest-version:
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -37,7 +37,7 @@ jobs:
           #num-old-versions-to-delete: 1
 
   delete-release:
-    needs: release-package-latest-version
+    needs: delete-package-latest-version
     runs-on: ubuntu-latest
     permissions:
       contents: write
