@@ -236,20 +236,26 @@ export function getEffectiveStyle(classNames) {
 }
 
 const getDefaultStyle = (className) => {
+  console.log("getDefaultStyle", mergedDefaultStyles);
   return mergedDefaultStyles[className];
 };
 const getSmallStyle = (className) => {
+  console.log("getSmallStyle", mergedSmallStyles);
   return mergedSmallStyles[className];
 };
 const getMediumStyle = (className) => {
+  console.log("getMediumStyle", mergedMediumStyles);
   return mergedMediumStyles[className];
 };
 const getLargeStyle = (className) => {
+  console.log("getLargeStyle", mergedLargeStyles);
   return mergedLargeStyles[className];
 };
 const getXLargeStyle = (className) => {
+  console.log("getXLargeStyle", mergedXLargeStyles);
   return mergedXLargeStyles[className];
 };
 const getXXLargeStyle = (className) => {
+  console.log("getXXLargeStyle", mergedXXLargeStyles);
   return mergedXXLargeStyles[className];
 };
