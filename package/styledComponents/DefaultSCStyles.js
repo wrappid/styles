@@ -88,7 +88,10 @@ export const defaultSCStyles = {
   /**************************************************
    * LAYOUTS
    *************************************************/
-  scLayoutsAppDiv: {},
+  scLayoutsAppDiv: {
+    height: "100vh",
+    width: "100vw",
+  },
   scLayoutsBox: {},
   scLayoutsContainer: {},
   scLayoutsGrid: {},

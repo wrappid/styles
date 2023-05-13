@@ -71,6 +71,12 @@ export function addFlavor(styleObject) {
         key = "flex";
         val = 1;
       }
+      if (key === "height" && val === "100vh") {
+        continue;
+      }
+      if (key === "width" && val === "100vw") {
+        continue;
+      }
       if (key === "position" && (val === "fixed" || val === "fixed ")) {
         val = "absolute";
       }
