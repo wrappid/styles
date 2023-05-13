@@ -35,44 +35,6 @@ const EXCEPTIONS = [
   "right",
 ];
 
-let mergedDefaultStyles = {
-  ...defaultUtilityStyles,
-  ...defaultSCStyles,
-  ...coreStyles?.styles?.default,
-  ...appStyles?.styles?.default,
-};
-
-let mergedSmallStyles = {
-  ...smallUtilityStyles,
-  ...smallSCStyles,
-  ...coreStyles?.styles?.small,
-  ...appStyles?.styles?.small,
-};
-let mergedMediumStyles = {
-  ...mediumUtilityStyles,
-  ...mediumSCStyles,
-  ...coreStyles?.styles?.medium,
-  ...appStyles?.styles?.medium,
-};
-let mergedLargeStyles = {
-  ...largeUtilityStyles,
-  ...largeSCStyles,
-  ...coreStyles?.styles?.large,
-  ...appStyles?.styles?.large,
-};
-let mergedXLargeStyles = {
-  ...xLargeUtilityStyles,
-  ...xLargeSCStyles,
-  ...coreStyles?.styles?.xLarge,
-  ...appStyles?.styles?.xLarge,
-};
-let mergedXXLargeStyles = {
-  ...xXLargeUtilityStyles,
-  ...xXLargeSCStyles,
-  ...coreStyles?.styles?.xxLarge,
-  ...appStyles?.styles?.xxLarge,
-};
-
 const sanitizeClassNames = (classNames) => {
   // using set() method to create collections of unique values,
   // hence remove duplicates
@@ -132,6 +94,44 @@ export function getEffectiveStyle(classNames) {
    * Step 2: Get all styles object filter by classNames and window.width
    */
 
+  let mergedDefaultStyles = {
+    ...defaultUtilityStyles,
+    ...defaultSCStyles,
+    ...coreStyles?.styles?.default,
+    ...appStyles?.styles?.default,
+  };
+
+  let mergedSmallStyles = {
+    ...smallUtilityStyles,
+    ...smallSCStyles,
+    ...coreStyles?.styles?.small,
+    ...appStyles?.styles?.small,
+  };
+  let mergedMediumStyles = {
+    ...mediumUtilityStyles,
+    ...mediumSCStyles,
+    ...coreStyles?.styles?.medium,
+    ...appStyles?.styles?.medium,
+  };
+  let mergedLargeStyles = {
+    ...largeUtilityStyles,
+    ...largeSCStyles,
+    ...coreStyles?.styles?.large,
+    ...appStyles?.styles?.large,
+  };
+  let mergedXLargeStyles = {
+    ...xLargeUtilityStyles,
+    ...xLargeSCStyles,
+    ...coreStyles?.styles?.xLarge,
+    ...appStyles?.styles?.xLarge,
+  };
+  let mergedXXLargeStyles = {
+    ...xXLargeUtilityStyles,
+    ...xXLargeSCStyles,
+    ...coreStyles?.styles?.xxLarge,
+    ...appStyles?.styles?.xxLarge,
+  };
+
   console.log(
     "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\nAPP STYLES\n&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&",
     appStyles,
@@ -161,8 +161,11 @@ export function getEffectiveStyle(classNames) {
     // console.log(`Looking for className = ${className}`);
 
     // Get default styles
-    if (getDefaultStyle(className)) {
-      styleObject = { ...styleObject, ...getDefaultStyle(className) };
+    if (getDefaultStyle(className, mergedDefaultStyles)) {
+      styleObject = {
+        ...styleObject,
+        ...getDefaultStyle(className, mergedDefaultStyles),
+      };
       // console.log(`Found any class in default for ${className}`);
       // // console.log(`IN SM ${className} ==`);
       // // console.log(styleObject);
@@ -171,8 +174,11 @@ export function getEffectiveStyle(classNames) {
     }
     // Get windowWidth specific styles
     if (windowWidth >= SMALL_WINDOW_WIDTH) {
-      if (getSmallStyle(className)) {
-        styleObject = { ...styleObject, ...getSmallStyle(className) };
+      if (getSmallStyle(className, mergedSmallStyles)) {
+        styleObject = {
+          ...styleObject,
+          ...getSmallStyle(className, mergedSmallStyles),
+        };
         // console.log(`Found any class in SM for ${className}`);
         // // console.log(`IN SM ${className} ==`);
         // // console.log(styleObject);
@@ -181,8 +187,11 @@ export function getEffectiveStyle(classNames) {
       }
     }
     if (windowWidth >= MEDIUM_WINDOW_WIDTH) {
-      if (getMediumStyle(className)) {
-        styleObject = { ...styleObject, ...getMediumStyle(className) };
+      if (getMediumStyle(className, mergedMediumStyles)) {
+        styleObject = {
+          ...styleObject,
+          ...getMediumStyle(className, mergedMediumStyles),
+        };
         // console.log(`Found any class in MD for ${className}`);
         // // console.log(`IN MD ${className} ==`);
         // // console.log(styleObject);
@@ -191,8 +200,11 @@ export function getEffectiveStyle(classNames) {
       }
     }
     if (windowWidth >= LARGE_WINDOW_WIDTH) {
-      if (getLargeStyle(className)) {
-        styleObject = { ...styleObject, ...getLargeStyle(className) };
+      if (getLargeStyle(className, mergedLargeStyles)) {
+        styleObject = {
+          ...styleObject,
+          ...getLargeStyle(className, mergedLargeStyles),
+        };
         // console.log(`Found any class in LG for ${className}`);
         // // console.log(`IN LG ${className} ==`);
         // // console.log(styleObject);
@@ -201,8 +213,11 @@ export function getEffectiveStyle(classNames) {
       }
     }
     if (windowWidth >= X_LARGE_WINDOW_WIDTH) {
-      if (getXLargeStyle(className)) {
-        styleObject = { ...styleObject, ...getXLargeStyle(className) };
+      if (getXLargeStyle(className, mergedXLargeStyles)) {
+        styleObject = {
+          ...styleObject,
+          ...getXLargeStyle(className, mergedXLargeStyles),
+        };
         // console.log(`Found any class in XL for ${className}`);
         // // console.log(`IN XL ${className} ==`);
         // // console.log(styleObject);
@@ -211,8 +226,11 @@ export function getEffectiveStyle(classNames) {
       }
     }
     if (windowWidth >= XX_LARGE_WINDOW_WIDTH) {
-      if (getXXLargeStyle(className)) {
-        styleObject = { ...styleObject, ...getXXLargeStyle(className) };
+      if (getXXLargeStyle(className, mergedXXLargeStyles)) {
+        styleObject = {
+          ...styleObject,
+          ...getXXLargeStyle(className, mergedXXLargeStyles),
+        };
         // console.log(`Found any class in XXL for ${className}`);
         // // console.log(`IN XXL ${className} ==`);
         // // console.log(styleObject);
@@ -235,27 +253,27 @@ export function getEffectiveStyle(classNames) {
   return ob;
 }
 
-const getDefaultStyle = (className) => {
-  console.log("getDefaultStyle", mergedDefaultStyles);
-  return mergedDefaultStyles[className];
+const getDefaultStyle = (className, mergedStyles) => {
+  console.log("getDefaultStyle", mergedStyles);
+  return mergedStyles[className];
 };
-const getSmallStyle = (className) => {
-  console.log("getSmallStyle", mergedSmallStyles);
-  return mergedSmallStyles[className];
+const getSmallStyle = (className, mergedStyles) => {
+  console.log("getSmallStyle", mergedStyles);
+  return mergedStyles[className];
 };
-const getMediumStyle = (className) => {
-  console.log("getMediumStyle", mergedMediumStyles);
-  return mergedMediumStyles[className];
+const getMediumStyle = (className, mergedStyles) => {
+  console.log("getMediumStyle", mergedStyles);
+  return mergedStyles[className];
 };
-const getLargeStyle = (className) => {
-  console.log("getLargeStyle", mergedLargeStyles);
-  return mergedLargeStyles[className];
+const getLargeStyle = (className, mergedStyles) => {
+  console.log("getLargeStyle", mergedStyles);
+  return mergedStyles[className];
 };
-const getXLargeStyle = (className) => {
-  console.log("getXLargeStyle", mergedXLargeStyles);
-  return mergedXLargeStyles[className];
+const getXLargeStyle = (className, mergedStyles) => {
+  console.log("getXLargeStyle", mergedStyles);
+  return mergedStyles[className];
 };
-const getXXLargeStyle = (className) => {
-  console.log("getXXLargeStyle", mergedXXLargeStyles);
-  return mergedXXLargeStyles[className];
+const getXXLargeStyle = (className, mergedStyles) => {
+  console.log("getXXLargeStyle", mergedStyles);
+  return mergedStyles[className];
 };
