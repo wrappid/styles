@@ -36,41 +36,41 @@ const EXCEPTIONS = [
 ];
 
 let mergedDefaultStyles = {
-  ...appStyles?.styles?.default,
-  ...coreStyles?.styles?.default,
   ...defaultUtilityStyles,
   ...defaultSCStyles,
+  ...coreStyles?.styles?.default,
+  ...appStyles?.styles?.default,
 };
 
 let mergedSmallStyles = {
-  ...appStyles?.styles?.small,
-  ...coreStyles?.styles?.small,
   ...smallUtilityStyles,
   ...smallSCStyles,
+  ...coreStyles?.styles?.small,
+  ...appStyles?.styles?.small,
 };
 let mergedMediumStyles = {
-  ...appStyles?.styles?.medium,
-  ...coreStyles?.styles?.medium,
   ...mediumUtilityStyles,
   ...mediumSCStyles,
+  ...coreStyles?.styles?.medium,
+  ...appStyles?.styles?.medium,
 };
 let mergedLargeStyles = {
-  ...appStyles?.styles?.large,
-  ...coreStyles?.styles?.large,
   ...largeUtilityStyles,
   ...largeSCStyles,
+  ...coreStyles?.styles?.large,
+  ...appStyles?.styles?.large,
 };
 let mergedXLargeStyles = {
-  ...appStyles?.styles?.xLarge,
-  ...coreStyles?.styles?.xLarge,
   ...xLargeUtilityStyles,
   ...xLargeSCStyles,
+  ...coreStyles?.styles?.xLarge,
+  ...appStyles?.styles?.xLarge,
 };
 let mergedXXLargeStyles = {
-  ...appStyles?.styles?.xxLarge,
-  ...coreStyles?.styles?.xxLarge,
   ...xXLargeUtilityStyles,
   ...xXLargeSCStyles,
+  ...coreStyles?.styles?.xxLarge,
+  ...appStyles?.styles?.xxLarge,
 };
 
 const sanitizeClassNames = (classNames) => {
@@ -226,7 +226,11 @@ export function getEffectiveStyle(classNames) {
   // console.log(styleObject);
   let ob = addFlavor(styleObject);
 
-  // console.log("&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\nAPP STYLES\n&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&", ob, classNames);
+  console.log(
+    "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\nAPP STYLES\n&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&",
+    ob,
+    classNames
+  );
 
   return ob;
 }
