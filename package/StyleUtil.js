@@ -47,7 +47,7 @@ const sanitizeClassNames = (classNames) => {
 
 export function addFlavor(styleObject) {
   let config = getConfigurationObject();
-  console.log("BEFORE FLAVOUR", styleObject, ", PLATFORM: ", config.wrappid.platform);
+  // console.log("BEFORE FLAVOUR", styleObject, ", PLATFORM: ", config.wrappid.platform);
 
   if (config.wrappid.platform === "mobile") {
     var newStyleObject = {};
@@ -87,7 +87,7 @@ export function addFlavor(styleObject) {
       console.log("KEY:", key, "VAL:", val);
       newStyleObject[key] = val;
     }
-    console.log("AFTER FLAVOUR", newStyleObject);
+    // console.log("AFTER FLAVOUR", newStyleObject);
     return newStyleObject;
   } else {
     return styleObject;
@@ -138,11 +138,11 @@ export function getEffectiveStyle(classNames) {
     ...appStyles?.styles?.xxLarge,
   };
 
-  console.log(
-    "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\nAPP STYLES\n&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&",
-    appStyles,
-    coreStyles
-  );
+  // console.log(
+  //   "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\nAPP STYLES\n&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&",
+  //   appStyles,
+  //   coreStyles
+  // );
 
   let config = getConfigurationObject();
 
@@ -250,36 +250,36 @@ export function getEffectiveStyle(classNames) {
   // console.log(styleObject);
   let ob = addFlavor(styleObject);
 
-  console.log(
-    "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\nAPP STYLES\n&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&",
-    ob,
-    classNames
-  );
+  // console.log(
+  //   "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\nAPP STYLES\n&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&",
+  //   ob,
+  //   classNames
+  // );
 
   return ob;
 }
 
 const getDefaultStyle = (className, mergedStyles) => {
-  console.log("getDefaultStyle", mergedStyles);
+  // console.log("getDefaultStyle", mergedStyles);
   return mergedStyles[className];
 };
 const getSmallStyle = (className, mergedStyles) => {
-  console.log("getSmallStyle", mergedStyles);
+  // console.log("getSmallStyle", mergedStyles);
   return mergedStyles[className];
 };
 const getMediumStyle = (className, mergedStyles) => {
-  console.log("getMediumStyle", mergedStyles);
+  // console.log("getMediumStyle", mergedStyles);
   return mergedStyles[className];
 };
 const getLargeStyle = (className, mergedStyles) => {
-  console.log("getLargeStyle", mergedStyles);
+  // console.log("getLargeStyle", mergedStyles);
   return mergedStyles[className];
 };
 const getXLargeStyle = (className, mergedStyles) => {
-  console.log("getXLargeStyle", mergedStyles);
+  // console.log("getXLargeStyle", mergedStyles);
   return mergedStyles[className];
 };
 const getXXLargeStyle = (className, mergedStyles) => {
-  console.log("getXXLargeStyle", mergedStyles);
+  // console.log("getXXLargeStyle", mergedStyles);
   return mergedStyles[className];
 };
