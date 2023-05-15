@@ -47,7 +47,7 @@ const sanitizeClassNames = (classNames) => {
 
 export function addFlavor(styleObject) {
   let config = getConfigurationObject();
-  console.log("BEFORE FLAVOUR", styleObject, ", PLATFORM: " config.wrappid.platform);
+  console.log("BEFORE FLAVOUR", styleObject, ", PLATFORM: ", config.wrappid.platform);
 
   if (config.wrappid.platform === "mobile") {
     var newStyleObject = {};
