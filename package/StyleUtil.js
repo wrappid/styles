@@ -47,7 +47,9 @@ const sanitizeClassNames = (classNames) => {
 
 export function addFlavor(styleObject) {
   let config = getConfigurationObject();
+  console.log("BEFORE FLAVOUR", styleObject);
 
+  var newStyleObject = {};
   if (config.wrappid.platform === "mobile") {
     let keys = Object.keys(styleObject);
 
@@ -67,14 +69,14 @@ export function addFlavor(styleObject) {
         val = val + "px";
       }
 
-      if (key === "display" && (val === "flex" || val === "flex ")) {
+      if (key === "display" && val?.includes("flex")) {
         key = "flex";
         val = 1;
       }
-      if (key === "height" && val === "100vh") {
+      if (key === "height" && val?.includes("100vh")) {
         continue;
       }
-      if (key === "width" && val === "100vw") {
+      if (key === "width" && val?.includes("100vw")) {
         continue;
       }
       if (key === "position" && (val === "fixed" || val === "fixed ")) {
@@ -87,11 +89,12 @@ export function addFlavor(styleObject) {
 
       // eslint-disable-next-line no-console
       console.log("KEY:", key, "VAL:", val);
-      styleObject[key] = val;
+      newStyleObject[key] = val;
     }
   }
+  console.log("AFTER FLAVOUR", newStyleObject);
 
-  return styleObject;
+  return newStyleObject;
 }
 
 export function getEffectiveStyle(classNames) {
@@ -148,7 +151,7 @@ export function getEffectiveStyle(classNames) {
 
   classNames = sanitizeClassNames(classNames);
 
-  if (config.wrappid.environment === "development") {
+  if (config?.wrappid?.environment === "development") {
     classNames.push(UtilityClasses.DEV_BORDER);
   }
 
