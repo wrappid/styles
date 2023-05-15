@@ -47,10 +47,10 @@ const sanitizeClassNames = (classNames) => {
 
 export function addFlavor(styleObject) {
   let config = getConfigurationObject();
-  console.log("BEFORE FLAVOUR", styleObject);
+  console.log("BEFORE FLAVOUR", styleObject, ", PLATFORM: " config.wrappid.platform);
 
-  var newStyleObject = {};
   if (config.wrappid.platform === "mobile") {
+    var newStyleObject = {};
     let keys = Object.keys(styleObject);
 
     for (let i = 0; i < keys.length; i++) {
@@ -72,17 +72,13 @@ export function addFlavor(styleObject) {
       if (key === "display" && val?.includes("flex")) {
         key = "flex";
         val = 1;
-      }
-      if (key === "height" && val?.includes("100vh")) {
+      } else if (key === "height" && val?.includes("100vh")) {
         continue;
-      }
-      if (key === "width" && val?.includes("100vw")) {
+      } else if (key === "width" && val?.includes("100vw")) {
         continue;
-      }
-      if (key === "position" && (val === "fixed" || val === "fixed ")) {
+      } else if (key === "position" && (val === "fixed" || val === "fixed ")) {
         val = "absolute";
-      }
-      if (key === "border" && (val === "unset" || val === "unset ")) {
+      } else if (key === "border" && (val === "unset" || val === "unset ")) {
         key = "border";
         val = "0px";
       }
@@ -91,10 +87,11 @@ export function addFlavor(styleObject) {
       console.log("KEY:", key, "VAL:", val);
       newStyleObject[key] = val;
     }
+    console.log("AFTER FLAVOUR", newStyleObject);
+    return newStyleObject;
+  } else {
+    return styleObject;
   }
-  console.log("AFTER FLAVOUR", newStyleObject);
-
-  return newStyleObject;
 }
 
 export function getEffectiveStyle(classNames) {
