@@ -208,11 +208,11 @@ export function getEffectiveStyle(classNames) {
 	let finalStyleObject = addFlavor(styleObject);
 
 	// eslint-disable-next-line no-console
-	console.log(
-		"&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\nAPP STYLES\n&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&",
-		finalStyleObject,
-		classNames
-	);
+	// console.log(
+	// 	"&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\nAPP STYLES\n&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&",
+	// 	finalStyleObject,
+	// 	classNames
+	// );
 
 	return finalStyleObject;
 }
