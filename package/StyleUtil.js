@@ -94,49 +94,50 @@ export function addFlavor(styleObject) {
   }
 }
 
+let mergedDefaultStyles = {
+  ...defaultUtilityStyles,
+  ...defaultSCStyles,
+  ...coreStyles?.styles?.default,
+  ...appStyles?.styles?.default,
+};
+
+let mergedSmallStyles = {
+  ...smallUtilityStyles,
+  ...smallSCStyles,
+  ...coreStyles?.styles?.small,
+  ...appStyles?.styles?.small,
+};
+let mergedMediumStyles = {
+  ...mediumUtilityStyles,
+  ...mediumSCStyles,
+  ...coreStyles?.styles?.medium,
+  ...appStyles?.styles?.medium,
+};
+let mergedLargeStyles = {
+  ...largeUtilityStyles,
+  ...largeSCStyles,
+  ...coreStyles?.styles?.large,
+  ...appStyles?.styles?.large,
+};
+let mergedXLargeStyles = {
+  ...xLargeUtilityStyles,
+  ...xLargeSCStyles,
+  ...coreStyles?.styles?.xLarge,
+  ...appStyles?.styles?.xLarge,
+};
+let mergedXXLargeStyles = {
+  ...xXLargeUtilityStyles,
+  ...xXLargeSCStyles,
+  ...coreStyles?.styles?.xxLarge,
+  ...appStyles?.styles?.xxLarge,
+};
+
 export function getEffectiveStyle(classNames) {
   /**
    * Step 1: Get default styles(xs) for className
    * Step 2: Get all styles object filter by classNames and window.width
    */
 
-  let mergedDefaultStyles = {
-    ...defaultUtilityStyles,
-    ...defaultSCStyles,
-    ...coreStyles?.styles?.default,
-    ...appStyles?.styles?.default,
-  };
-
-  let mergedSmallStyles = {
-    ...smallUtilityStyles,
-    ...smallSCStyles,
-    ...coreStyles?.styles?.small,
-    ...appStyles?.styles?.small,
-  };
-  let mergedMediumStyles = {
-    ...mediumUtilityStyles,
-    ...mediumSCStyles,
-    ...coreStyles?.styles?.medium,
-    ...appStyles?.styles?.medium,
-  };
-  let mergedLargeStyles = {
-    ...largeUtilityStyles,
-    ...largeSCStyles,
-    ...coreStyles?.styles?.large,
-    ...appStyles?.styles?.large,
-  };
-  let mergedXLargeStyles = {
-    ...xLargeUtilityStyles,
-    ...xLargeSCStyles,
-    ...coreStyles?.styles?.xLarge,
-    ...appStyles?.styles?.xLarge,
-  };
-  let mergedXXLargeStyles = {
-    ...xXLargeUtilityStyles,
-    ...xXLargeSCStyles,
-    ...coreStyles?.styles?.xxLarge,
-    ...appStyles?.styles?.xxLarge,
-  };
 
   // console.log(
   //   "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\nAPP STYLES\n&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&",
@@ -250,11 +251,11 @@ export function getEffectiveStyle(classNames) {
   // console.log(styleObject);
   let ob = addFlavor(styleObject);
 
-  // console.log(
-  //   "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\nAPP STYLES\n&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&",
-  //   ob,
-  //   classNames
-  // );
+  console.log(
+    "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\nAPP STYLES\n&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&",
+    ob,
+    classNames
+  );
 
   return ob;
 }
