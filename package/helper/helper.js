@@ -1,6 +1,8 @@
 /* eslint-disable no-console */
 /* eslint-disable no-undef */
-const NODE_ENV = process?.env?.NODE_ENV;
+// const NODE_ENV = process?.env?.NODE_ENV;
+const NODE_ENV = "production";
+
 
 import customConfig from "../../../../src/config.json";
 
