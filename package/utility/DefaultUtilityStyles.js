@@ -1,3 +1,4 @@
+import { getConfigurationObject } from "../helper/helper";
 import { theme } from "../theme/theme";
 
 const DEFAULT_BORDER_WIDTH = 1;
@@ -9,11 +10,13 @@ const DEFAULT_BORDER =
 // -- const DEFAULT_SHADOW_COLOR = "black";
 const DEFAULT_SHADOW_COLOR_RGB = "0,0,0";
 
-export const IMPORTANT = " !important";
-export const PX_TAG = "px";
+export const IMPORTANT = (configuration?.wrappid?.platform === "web") ? " !important" : "";
+export const PX_TAG = (configuration?.wrappid?.platform === "web") ? "px" : "";
 export const DEFAULT_MARGIN = 8;
 export const DEFAULT_PADDING = 8;
 export const DEFAULT_SPACING = 8;
+
+const configuration = getConfigurationObject();
 
 export const defaultUtilityStyles = {
     
