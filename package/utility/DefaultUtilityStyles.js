@@ -10,13 +10,14 @@ const DEFAULT_BORDER =
 // -- const DEFAULT_SHADOW_COLOR = "black";
 const DEFAULT_SHADOW_COLOR_RGB = "0,0,0";
 
+const configuration = getConfigurationObject();
+
 export const IMPORTANT = (configuration?.wrappid?.platform === "web") ? " !important" : "";
 export const PX_TAG = (configuration?.wrappid?.platform === "web") ? "px" : "";
 export const DEFAULT_MARGIN = 8;
 export const DEFAULT_PADDING = 8;
 export const DEFAULT_SPACING = 8;
 
-const configuration = getConfigurationObject();
 
 export const defaultUtilityStyles = {
     
