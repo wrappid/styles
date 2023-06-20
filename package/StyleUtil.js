@@ -54,7 +54,7 @@ export function addFlavor(styleObject) {
 
 			for (let j = 0; j < UNITS.length; j++) {
 				// eslint-disable-next-line no-console
-				console.log("UNIT", UNITS[j]);
+				//console.log("UNIT", UNITS[j]);
 				if (val && typeof val === "string") {
 					val = val.replace(UNITS[j], "");
 				}
@@ -79,7 +79,7 @@ export function addFlavor(styleObject) {
 			}
 
 			// eslint-disable-next-line no-console
-			console.log("KEY:", key, "VAL:", val);
+			//console.log("KEY:", key, "VAL:", val);
 			newStyleObject[key] = val;
 		}
 		// console.log("AFTER FLAVOUR", newStyleObject);
