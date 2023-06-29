@@ -64,18 +64,30 @@ export function addFlavor(styleObject) {
 				val = val + "px";
 			}
 
-			if (key === "display" && val?.includes("flex")) {
-				key = "flex";
-				val = 1;
-			} else if (key === "height" && val?.includes("100vh")) {
+			if (key === "display") {
+				if (val?.includes("flex")) {
+					key = "flex";
+					val = 1;
+				} else {
+					continue;
+				}
+			} else if (
+				(key === "height" || key === "minHeight" || key === "maxHeight") &&
+				val?.includes("vh")
+			) {
 				continue;
-			} else if (key === "width" && val?.includes("100vw")) {
+			} else if (
+				(key === "width" || key === "minWidth" || key === "maxWidth") &&
+				val?.includes("vw")
+			) {
 				continue;
 			} else if (key === "position" && (val === "fixed" || val === "fixed ")) {
 				val = "absolute";
 			} else if (key === "border" && (val === "unset" || val === "unset ")) {
 				key = "border";
 				val = "0px";
+			} else if (key === "overflowY" || key === "overflowX") {
+				continue;
 			}
 
 			// eslint-disable-next-line no-console
