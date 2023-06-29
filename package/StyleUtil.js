@@ -27,7 +27,8 @@ const EXCEPTIONS = [
 	"top",
 	"bottom",
 	"left",
-	"right"
+	"right",
+	"zIndex"
 ];
 
 const sanitizeClassNames = (classNames) => {
