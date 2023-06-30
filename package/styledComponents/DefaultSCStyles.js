@@ -59,6 +59,7 @@ export const defaultSCStyles = {
 	scFeedbackLinearProgress  : {},
 	scFeedbackSkeleton        : {},
 	scFeedbackSnackbar        : {},
+	scFeedbackDialog          : { minWidth: "60%" },
 	/**************************************************
 	 * SURFACES
 	 *************************************************/

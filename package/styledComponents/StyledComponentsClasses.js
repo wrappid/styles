@@ -22,15 +22,15 @@ const StyledComponentsClasses = {
 		SELECT            : "scinputsSelect",
 		SWITCH            : "scInputsSwitch",
 		TIME_PICKER       : "scInputsTimePicker",
-		CUSTOM            : { RICH_TEXT_EDITOR: "scInputsCustomRichTextEditor" },
+		CUSTOM            : { RICH_TEXT_EDITOR: "scInputsCustomRichTextEditor" }
 	},
 	NAVIGATION: {
-		TAB      : "scNavigationTab",
-		TABS     : "scNavigationTabs",
-		LINK     : "scNavigationLink",
-		MENU_ITEM: "scNavigationMenuItem",
-		MENU_LIST: "scNavigationMenuList",
-    APP_DRAWER_TEXT: "appDrawerText"
+		TAB            : "scNavigationTab",
+		TABS           : "scNavigationTabs",
+		LINK           : "scNavigationLink",
+		MENU_ITEM      : "scNavigationMenuItem",
+		MENU_LIST      : "scNavigationMenuList",
+		APP_DRAWER_TEXT: "appDrawerText"
 	},
 	DATA_DISPLAY: {
 		AVATAR          : "scDataDisplayAvatar",
@@ -51,7 +51,7 @@ const StyledComponentsClasses = {
 		TABLE_ROW       : "scDataDisplayTableRow",
 		TABLE_SORT_LABEL: "scDataDisplayTableSortLabel",
 		TOOLTIP         : "scDataDisplayTooltip",
-		TYPOGRAPHY      : "scDataDisplayTypography",
+		TYPOGRAPHY      : "scDataDisplayTypography"
 	},
 	FEEDBACK: {
 		ALERT            : "scFeedbackAlert",
@@ -60,10 +60,11 @@ const StyledComponentsClasses = {
 		LINEAR_PROGRESS  : "scFeedbackLinearProgress",
 		SKELETON         : "scFeedbackSkeleton",
 		SNACKBAR         : "scFeedbackSnackbar",
+		DIALOG           : "scFeedbackDialog"
 	},
 	FORM: {
 		FORM_CONTROL_LABEL: "scFormFormControlLabel",
-		FORM_GROUP        : "scFormFormGroup",
+		FORM_GROUP        : "scFormFormGroup"
 	},
 	LAYOUTS: {
 		APP_DIV  : "scLayoutsAppDiv",
@@ -73,7 +74,7 @@ const StyledComponentsClasses = {
 		GRID_ITEM: "scLayoutsGridItem",
 		LIST     : "scLayoutsList",
 		LIST_ITEM: "scLayoutsListItem",
-		STACK    : "scLayoutsStack",
+		STACK    : "scLayoutsStack"
 	},
 	SURFACES: {
 		ACCORDION        : "scSurfacesAccordion",
@@ -87,25 +88,25 @@ const StyledComponentsClasses = {
 		CARD_HEADER      : "scSurfacesCardHeader",
 		CARD_MEDIA       : "scSurfacesCardMedia",
 		PAPER            : "scSurfacesPaper",
-		TOOLBAR          : "scSurfacesToolbar",
+		TOOLBAR          : "scSurfacesToolbar"
 	},
 
 	/**
-   * Moved from core
-   */
+	 * Moved from core
+	 */
 	UTILS  : { FADE: "", MODAL: "", POPOVER: "" },
 	APP_BAR: { HEIGHT: "appbarHeight", APP_BAR_LOGO: "appBarLogo" },
 	DRAWER : { PAPER_HEIGHT: "appDrawerPaperHeight" },
 	MODAL  : {
 		MODAL_CONTAINER: "modalContainer",
 		MODAL_HEADER   : "modalHeader",
-		MODAL_BODY     : "modalBody",
+		MODAL_BODY     : "modalBody"
 	},
 
 	/**
-   * @todo Have to remove this. This is here as it is used in menuUtil
-   * when we creae seperae component for menu items this should be replaced
-   */
+	 * @todo Have to remove this. This is here as it is used in menuUtil
+	 * when we creae seperae component for menu items this should be replaced
+	 */
 
 	MENU: {
 		MINI_DRAWER_LIST_ITEM_BUTTON: "miniDrawerListItemButton",
@@ -133,9 +134,8 @@ const StyledComponentsClasses = {
 		MENU_ITEM_BUTTON_ITEM: "menuItemButtonItem",
 		MENU_ITEM_ICON_ITEM  : "menuItemIconItem",
 		MENU_ITEM_TEXT_ITEM  : "menuItemTextItem",
-		MENU_ITEM            : "menuItem",
-	},
-
+		MENU_ITEM            : "menuItem"
+	}
 };
 
 export default StyledComponentsClasses;
