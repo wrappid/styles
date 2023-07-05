@@ -23,7 +23,7 @@
     "url": "https://github.com/wrappid/styles/issues"
   },
   "homepage": "https://github.com/wrappid/styles#readme",
-  "dependencies": {
+  "peerDependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "@mui/material": "^5.10.2"
