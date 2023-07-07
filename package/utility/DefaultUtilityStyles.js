@@ -18,145 +18,144 @@ export const DEFAULT_MARGIN = 8;
 export const DEFAULT_PADDING = 8;
 export const DEFAULT_SPACING = 8;
 
-
 export const defaultUtilityStyles = {
     
-	alignContentAround: { alignContent: "space-around" + IMPORTANT, display: "flex" },
+	alignContentAround: { alignContent: "space-around" + IMPORTANT, display: "flex" + IMPORTANT },
     
-	alignContentBetween: { alignContent: "space-between" + IMPORTANT, display: "flex" },
+	alignContentBetween: { alignContent: "space-between" + IMPORTANT, display: "flex" + IMPORTANT },
     
-	alignContentCenter: { alignContent: "center" + IMPORTANT, display: "flex" },
+	alignContentCenter: { alignContent: "center" + IMPORTANT, display: "flex" + IMPORTANT },
     
-	alignContentEnd: { alignContent: "flex-end" + IMPORTANT, display: "flex" },
+	alignContentEnd: { alignContent: "flex-end" + IMPORTANT, display: "flex" + IMPORTANT },
     
-	alignContentStart: { alignContent: "flex-start" + IMPORTANT, display: "flex" },
+	alignContentStart: { alignContent: "flex-start" + IMPORTANT, display: "flex" + IMPORTANT },
     
-	alignContentStretch: { alignContent: "stretch" + IMPORTANT, display: "flex" },
+	alignContentStretch: { alignContent: "stretch" + IMPORTANT, display: "flex" + IMPORTANT },
     
-	alignItemsBaseline: { alignItems: "baseline" + IMPORTANT, display: "flex" },
+	alignItemsBaseline: { alignItems: "baseline" + IMPORTANT, display: "flex" + IMPORTANT },
     
-	alignItemsCenter: { alignItems: "center" + IMPORTANT, display: "flex" },
+	alignItemsCenter: { alignItems: "center" + IMPORTANT, display: "flex" + IMPORTANT },
     
-	alignItemsEnd    : { alignItems: "flex-end" + IMPORTANT, display: "flex" },
+	alignItemsEnd    : { alignItems: "flex-end" + IMPORTANT, display: "flex" + IMPORTANT },
 	/**************************************************
    * Alignment
    *************************************************/
-	alignItemsStart  : { alignItems: "flex-start" + IMPORTANT, display: "flex" },
-	alignItemsStretch: { alignItems: "stretch" + IMPORTANT, display: "flex" },
+	alignItemsStart  : { alignItems: "flex-start" + IMPORTANT, display: "flex" + IMPORTANT },
+	alignItemsStretch: { alignItems: "stretch" + IMPORTANT, display: "flex" + IMPORTANT },
 
-	alignSelfAuto    : { alignSelf: "auto" + IMPORTANT, display: "flex" },
-	alignSelfBaseline: { alignSelf: "baseline" + IMPORTANT, display: "flex" },
-	alignSelfCenter  : { alignSelf: "center" + IMPORTANT, display: "flex" },
-	alignSelfEnd     : { alignSelf: "flex-end" + IMPORTANT, display: "flex" },
-	alignSelfStart   : { alignSelf: "flex-start" + IMPORTANT, display: "flex" },
-	alignSelfStretch : { alignSelf: "stretch" + IMPORTANT, display: "flex" },
+	alignSelfAuto    : { alignSelf: "auto" + IMPORTANT, display: "flex" + IMPORTANT },
+	alignSelfBaseline: { alignSelf: "baseline" + IMPORTANT, display: "flex" + IMPORTANT },
+	alignSelfCenter  : { alignSelf: "center" + IMPORTANT, display: "flex" + IMPORTANT },
+	alignSelfEnd     : { alignSelf: "flex-end" + IMPORTANT, display: "flex" + IMPORTANT },
+	alignSelfStart   : { alignSelf: "flex-start" + IMPORTANT, display: "flex" + IMPORTANT },
+	alignSelfStretch : { alignSelf: "stretch" + IMPORTANT, display: "flex" + IMPORTANT },
     
-	bgBlack: { backgroundColor: "black" },
-	bgDefault: { backgroundColor: theme.palette.background.default},
+	bgBlack  : { backgroundColor: "black" + IMPORTANT },
+	bgDefault: { backgroundColor: theme.palette.background.default + IMPORTANT },
     
-	bgError: { backgroundColor: theme.palette.error.main },
+	bgError: { backgroundColor: theme.palette.error.main + IMPORTANT },
     
-	bgErrorDark: { backgroundColor: theme.palette.error.dark },
+	bgErrorDark: { backgroundColor: theme.palette.error.dark + IMPORTANT },
     
-	bgErrorLight: { backgroundColor: theme.palette.error.light },
+	bgErrorLight: { backgroundColor: theme.palette.error.light + IMPORTANT },
     
-	bgInfo: { backgroundColor: theme.palette.info.main },
+	bgInfo: { backgroundColor: theme.palette.info.main + IMPORTANT },
     
-	bgInfoDark: { backgroundColor: theme.palette.info.dark },
+	bgInfoDark: { backgroundColor: theme.palette.info.dark + IMPORTANT },
     
-	bgInfoLight  : { backgroundColor: theme.palette.info.light },
+	bgInfoLight  : { backgroundColor: theme.palette.info.light + IMPORTANT },
 	/**************************************************
    * Background
    *************************************************/
-	bgPrimary    : { backgroundColor: theme.palette.primary.main },
-	bgPrimaryDark: { backgroundColor: theme.palette.primary.dark },
+	bgPrimary    : { backgroundColor: theme.palette.primary.main + IMPORTANT },
+	bgPrimaryDark: { backgroundColor: theme.palette.primary.dark + IMPORTANT },
 
-	bgPrimaryLight : { backgroundColor: theme.palette.primary.light },
-	bgSecondary    : { backgroundColor: theme.palette.secondary.main },
-	bgSecondaryDark: { backgroundColor: theme.palette.secondary.dark },
+	bgPrimaryLight : { backgroundColor: theme.palette.primary.light + IMPORTANT },
+	bgSecondary    : { backgroundColor: theme.palette.secondary.main + IMPORTANT },
+	bgSecondaryDark: { backgroundColor: theme.palette.secondary.dark + IMPORTANT },
 
-	bgSecondaryLight: { backgroundColor: theme.palette.secondary.light },
-	bgSuccess       : { backgroundColor: theme.palette.success.main },
-	bgSuccessDark   : { backgroundColor: theme.palette.success.dark },
+	bgSecondaryLight: { backgroundColor: theme.palette.secondary.light + IMPORTANT },
+	bgSuccess       : { backgroundColor: theme.palette.success.main + IMPORTANT },
+	bgSuccessDark   : { backgroundColor: theme.palette.success.dark + IMPORTANT },
 
-	bgSuccessLight: { backgroundColor: theme.palette.success.light },
-	bgTransparent : { backgroundColor: "transparent" },
-	bgWarning     : { backgroundColor: theme.palette.warning.main },
+	bgSuccessLight: { backgroundColor: theme.palette.success.light + IMPORTANT },
+	bgTransparent : { backgroundColor: "transparent" + IMPORTANT },
+	bgWarning     : { backgroundColor: theme.palette.warning.main + IMPORTANT },
 
-	bgWarningDark : { backgroundColor: theme.palette.warning.dark },
-	bgWarningLight: { backgroundColor: theme.palette.warning.light },
-	bgWhite       : { backgroundColor: "white" + IMPORTANT },
+	bgWarningDark : { backgroundColor: theme.palette.warning.dark + IMPORTANT },
+	bgWarningLight: { backgroundColor: theme.palette.warning.light + IMPORTANT },
+	bgWhite       : { backgroundColor: "white" + IMPORTANT + IMPORTANT },
 
 	/**************************************************
    * Border
    *************************************************/
-	border: { border: DEFAULT_BORDER },
+	border: { border: DEFAULT_BORDER + IMPORTANT },
     
-	border0: { border: "none" },
+	border0: { border: "none" + IMPORTANT },
     
-	border1: { borderWidth: DEFAULT_BORDER_WIDTH },
+	border1: { borderWidth: DEFAULT_BORDER_WIDTH + IMPORTANT },
     
-	border2: { borderWidth: DEFAULT_BORDER_WIDTH * 2 },
+	border2: { borderWidth: DEFAULT_BORDER_WIDTH * 2 + IMPORTANT },
     
-	border3: { borderWidth: DEFAULT_BORDER_WIDTH * 3 },
+	border3: { borderWidth: DEFAULT_BORDER_WIDTH * 3 + IMPORTANT },
     
-	border4: { borderWidth: DEFAULT_BORDER_WIDTH * 4 },
+	border4: { borderWidth: DEFAULT_BORDER_WIDTH * 4 + IMPORTANT },
     
-	border5    : { borderWidth: DEFAULT_BORDER_WIDTH * 5 },
-	borderBlack: { borderColor: "black" },
+	border5    : { borderWidth: DEFAULT_BORDER_WIDTH * 5 + IMPORTANT },
+	borderBlack: { borderColor: "black" + IMPORTANT },
 
-	borderBottom : { border: "unset", borderBottom: DEFAULT_BORDER },
-	borderBottom0: { borderBottom: "none" },
+	borderBottom : { border: "unset", borderBottom: DEFAULT_BORDER + IMPORTANT },
+	borderBottom0: { borderBottom: "none" + IMPORTANT },
 
-	borderDashed: { borderStyle: "dashed" },
-	borderDotted: { borderStyle: "dotted" },
-	borderDouble: { borderStyle: "double" },
-	borderEnd   : { border: "unset", borderRight: DEFAULT_BORDER },
+	borderDashed: { borderStyle: "dashed" + IMPORTANT },
+	borderDotted: { borderStyle: "dotted" + IMPORTANT },
+	borderDouble: { borderStyle: "double" + IMPORTANT },
+	borderEnd   : { border: "unset", borderRight: DEFAULT_BORDER + IMPORTANT },
 
-	borderEnd0 : { borderRight: "none" },
-	borderError: { borderColor: theme.palette.error.main },
+	borderEnd0 : { borderRight: "none" + IMPORTANT },
+	borderError: { borderColor: theme.palette.error.main + IMPORTANT },
 
-	borderErrorDark : { borderColor: theme.palette.error.dark },
-	borderErrorLight: { borderColor: theme.palette.error.light },
-	borderGroove    : { borderStyle: "groove" },
-	borderHidden    : { borderStyle: "hidden" },
+	borderErrorDark : { borderColor: theme.palette.error.dark + IMPORTANT },
+	borderErrorLight: { borderColor: theme.palette.error.light + IMPORTANT },
+	borderGroove    : { borderStyle: "groove" + IMPORTANT },
+	borderHidden    : { borderStyle: "hidden" + IMPORTANT },
 
-	borderInfo     : { borderColor: theme.palette.info.main },
-	borderInfoDark : { borderColor: theme.palette.info.dark },
-	borderInfoLight: { borderColor: theme.palette.info.light },
+	borderInfo     : { borderColor: theme.palette.info.main + IMPORTANT },
+	borderInfoDark : { borderColor: theme.palette.info.dark + IMPORTANT },
+	borderInfoLight: { borderColor: theme.palette.info.light + IMPORTANT },
 
-	borderInset: { borderStyle: "inset" },
-	borderLeft : { border: "unset", borderLeft: DEFAULT_BORDER },
-	borderLeft0: { borderLeft: "none" },
+	borderInset: { borderStyle: "inset" + IMPORTANT },
+	borderLeft : { border: "unset", borderLeft: DEFAULT_BORDER + IMPORTANT },
+	borderLeft0: { borderLeft: "none" + IMPORTANT },
 
-	borderNone   : { borderStyle: "none" },
-	borderOutset : { borderStyle: "outset" },
-	borderPrimary: { borderColor: theme.palette.primary.main },
+	borderNone   : { borderStyle: "none" + IMPORTANT },
+	borderOutset : { borderStyle: "outset" + IMPORTANT },
+	borderPrimary: { borderColor: theme.palette.primary.main + IMPORTANT },
 
-	borderPrimaryDark : { borderColor: theme.palette.primary.dark },
-	borderPrimaryLight: { borderColor: theme.palette.primary.light },
-	borderRidge       : { borderStyle: "ridge" },
+	borderPrimaryDark : { borderColor: theme.palette.primary.dark + IMPORTANT },
+	borderPrimaryLight: { borderColor: theme.palette.primary.light + IMPORTANT },
+	borderRidge       : { borderStyle: "ridge" + IMPORTANT },
 
-	borderRight    : { border: "unset", borderRight: DEFAULT_BORDER },
-	borderRight0   : { borderRight: "none" },
-	borderSecondary: { borderColor: theme.palette.secondary.main },
+	borderRight    : { border: "unset", borderRight: DEFAULT_BORDER + IMPORTANT },
+	borderRight0   : { borderRight: "none" + IMPORTANT },
+	borderSecondary: { borderColor: theme.palette.secondary.main + IMPORTANT },
 
-	borderSecondaryDark : { borderColor: theme.palette.secondary.dark },
-	borderSecondaryLight: { borderColor: theme.palette.secondary.light },
-	borderSolid         : { borderStyle: "solid" },
+	borderSecondaryDark : { borderColor: theme.palette.secondary.dark + IMPORTANT },
+	borderSecondaryLight: { borderColor: theme.palette.secondary.light + IMPORTANT },
+	borderSolid         : { borderStyle: "solid" + IMPORTANT },
 
-	borderStart : { border: "unset", borderLeft: DEFAULT_BORDER },
-	borderStart0: { borderLeft: "none" },
+	borderStart : { border: "unset", borderLeft: DEFAULT_BORDER + IMPORTANT },
+	borderStart0: { borderLeft: "none" + IMPORTANT },
 
-	borderSuccess     : { borderColor: theme.palette.success.main },
-	borderSuccessDark : { borderColor: theme.palette.success.dark },
-	borderSuccessLight: { borderColor: theme.palette.success.light },
-	borderTop         : { border: "unset", borderTop: DEFAULT_BORDER },
-	borderTop0        : { borderTop: "none" },
-	borderWarning     : { borderColor: theme.palette.warning.main },
-	borderWarningDark : { borderColor: theme.palette.warning.dark },
-	borderWarningLight: { borderColor: theme.palette.warning.light },
-	borderWhite       : { borderColor: "white" },
+	borderSuccess     : { borderColor: theme.palette.success.main + IMPORTANT },
+	borderSuccessDark : { borderColor: theme.palette.success.dark + IMPORTANT },
+	borderSuccessLight: { borderColor: theme.palette.success.light + IMPORTANT },
+	borderTop         : { border: "unset", borderTop: DEFAULT_BORDER + IMPORTANT },
+	borderTop0        : { borderTop: "none" + IMPORTANT },
+	borderWarning     : { borderColor: theme.palette.warning.main + IMPORTANT },
+	borderWarningDark : { borderColor: theme.palette.warning.dark + IMPORTANT },
+	borderWarningLight: { borderColor: theme.palette.warning.light + IMPORTANT },
+	borderWhite       : { borderColor: "white" + IMPORTANT },
 	bottom0           : { bottom: "0" + IMPORTANT },
 
 	bottom100: { bottom: "100%" + IMPORTANT },
@@ -211,19 +210,19 @@ export const defaultUtilityStyles = {
 	end50: { right: "50%" + IMPORTANT },
     
 	fixedBottom: {
-		bottom  : "0",
-		left    : "0",
-		position: "fixed",
-		right   : "0",
-		zIndex  : "1030",
+		bottom  : "0" + IMPORTANT,
+		left    : "0" + IMPORTANT,
+		position: "fixed" + IMPORTANT,
+		right   : "0" + IMPORTANT,
+		zIndex  : "1030" + IMPORTANT,
 	},
     
 	fixedTop: {
-		left    : "0",
-		position: "fixed",
-		right   : "0",
-		top     : "0",
-		zIndex  : "1030",
+		left    : "0" + IMPORTANT,
+		position: "fixed" + IMPORTANT,
+		right   : "0" + IMPORTANT,
+		top     : "0" + IMPORTANT,
+		zIndex  : "1030" + IMPORTANT,
 	},
     
 	flexDirectionColumn: { flexDirection: "column" + IMPORTANT },
@@ -275,17 +274,17 @@ export const defaultUtilityStyles = {
     
 	hAuto: { height: "auto" + IMPORTANT },
     
-	justifyContentCenter: { display: "flex", justifyContent: "center" + IMPORTANT },
+	justifyContentCenter: { display: "flex" + IMPORTANT, justifyContent: "center" + IMPORTANT },
     
-	justifyContentFlexEnd: { display: "flex", justifyContent: "flex-end" + IMPORTANT },
+	justifyContentFlexEnd: { display: "flex" + IMPORTANT, justifyContent: "flex-end" + IMPORTANT },
     
-	justifyContentFlexStart: { display: "flex", justifyContent: "flex-start" + IMPORTANT },
+	justifyContentFlexStart: { display: "flex" + IMPORTANT, justifyContent: "flex-start" + IMPORTANT },
     
-	justifyContentSpaceAround: { display: "flex", justifyContent: "space-around" + IMPORTANT },
+	justifyContentSpaceAround: { display: "flex" + IMPORTANT, justifyContent: "space-around" + IMPORTANT },
     
-	justifyContentSpaceBetween: { display: "flex", justifyContent: "space-between" + IMPORTANT },
+	justifyContentSpaceBetween: { display: "flex" + IMPORTANT, justifyContent: "space-between" + IMPORTANT },
     
-	justifyContentSpaceEvenly: { display: "flex", justifyContent: "space-evenly" + IMPORTANT },
+	justifyContentSpaceEvenly: { display: "flex" + IMPORTANT, justifyContent: "space-evenly" + IMPORTANT },
     
 	/*-------------------------------------------------
    * Margin
@@ -422,159 +421,159 @@ export const defaultUtilityStyles = {
     
 	minH100: { minHeight: "100%" + IMPORTANT },
     
-	cursorAllScroll: { cursor: "all-scroll " },
+	cursorAllScroll: { cursor: "all-scroll " + IMPORTANT },
     
 	minH25: { minHeight: "25%" + IMPORTANT },
     
-	cursorAuto: { cursor: "auto" },
+	cursorAuto: { cursor: "auto" + IMPORTANT },
     
 	minH50: { minHeight: "50%" + IMPORTANT },
     
-	cursorCell: { cursor: "cell " },
+	cursorCell: { cursor: "cell " + IMPORTANT },
     
 	minH75: { minHeight: "75%" + IMPORTANT },
     
-	cursorColResize: { cursor: "col-resize " },
+	cursorColResize: { cursor: "col-resize " + IMPORTANT },
     
 	minVh100: { minHeight: "100vh" + IMPORTANT },
     
 	minVh25: { minHeight: "25vh" + IMPORTANT },
     
-	cursorContextMenu: { cursor: "context-menu" },
+	cursorContextMenu: { cursor: "context-menu" + IMPORTANT },
     
 	minVh50: { minHeight: "50vh" + IMPORTANT },
     
 	minVh75: { minHeight: "75vh" + IMPORTANT },
     
-	cursorCopy: { cursor: "copy " },
+	cursorCopy: { cursor: "copy " + IMPORTANT },
     
 	minVw100: { minWidth: "100vw" + IMPORTANT },
     
-	cursorCrosshair: { cursor: "crosshair " },
+	cursorCrosshair: { cursor: "crosshair " + IMPORTANT },
     
 	minVw25: { minWidth: "25vw" + IMPORTANT },
     
-	cursorDefault: { cursor: "default " },
+	cursorDefault: { cursor: "default " + IMPORTANT },
     
 	minVw50: { minWidth: "50vw" + IMPORTANT },
     
-	cursorEResize: { cursor: "e-resize " },
+	cursorEResize: { cursor: "e-resize " + IMPORTANT },
     
 	minVw75: { minWidth: "75vw" + IMPORTANT },
     
-	cursorEwResize: { cursor: "ew-resize " },
+	cursorEwResize: { cursor: "ew-resize " + IMPORTANT },
     
 	minW100: { minWidth: "100%" + IMPORTANT },
     
-	cursorGrab: { cursor: "grab " },
+	cursorGrab: { cursor: "grab " + IMPORTANT },
     
 	minW25: { minWidth: "25%" + IMPORTANT },
     
-	cursorGrabbing: { cursor: "grabbing " },
+	cursorGrabbing: { cursor: "grabbing " + IMPORTANT },
     
 	minW50: { minWidth: "50%" + IMPORTANT },
     
-	cursorHelp: { cursor: "help " },
+	cursorHelp: { cursor: "help " + IMPORTANT },
     
 	minW75: { minWidth: "75%" + IMPORTANT },
     
-	cursorMove: { cursor: "move " },
+	cursorMove: { cursor: "move " + IMPORTANT },
     
 	ml0: { marginLeft: 0 + IMPORTANT },
     
-	cursorNResize: { cursor: "n-resize " },
+	cursorNResize: { cursor: "n-resize " + IMPORTANT },
     
 	ml1: { marginLeft: DEFAULT_MARGIN + PX_TAG + IMPORTANT },
     
-	cursorNeResize: { cursor: "ne-resize " },
+	cursorNeResize: { cursor: "ne-resize " + IMPORTANT },
     
 	ml2: { marginLeft: DEFAULT_MARGIN * 2 + PX_TAG + IMPORTANT },
     
-	cursorNeswResize: { cursor: "nesw-resize" },
+	cursorNeswResize: { cursor: "nesw-resize" + IMPORTANT },
     
 	ml3: { marginLeft: DEFAULT_MARGIN * 3 + PX_TAG + IMPORTANT },
     
-	cursorInitial: { cursor: "initial " },
+	cursorInitial: { cursor: "initial " + IMPORTANT },
     
 	ml4: { marginLeft: DEFAULT_MARGIN * 4 + PX_TAG + IMPORTANT },
     
-	cursorNoDrop: { cursor: "no-drop " },
+	cursorNoDrop: { cursor: "no-drop " + IMPORTANT },
     
 	ml5: { marginLeft: DEFAULT_MARGIN * 5 + PX_TAG + IMPORTANT },
     
-	cursorInherit: { cursor: "inherit" },
+	cursorInherit: { cursor: "inherit" + IMPORTANT },
     
 	mlAuto: { marginLeft: "auto" + IMPORTANT },
     
-	cursorNone: { cursor: "none " },
+	cursorNone: { cursor: "none " + IMPORTANT },
     
 	mlN1: { marginLeft: DEFAULT_MARGIN * -1 + PX_TAG + IMPORTANT },
     
-	cursorNotAllowed: { cursor: "not-allowed " },
+	cursorNotAllowed: { cursor: "not-allowed " + IMPORTANT },
     
 	mlN2: { marginLeft: DEFAULT_MARGIN * -2 + PX_TAG + IMPORTANT },
     
-	cursorNsResize: { cursor: "ns-resize " },
+	cursorNsResize: { cursor: "ns-resize " + IMPORTANT },
     
 	mlN3: { marginLeft: DEFAULT_MARGIN * -3 + PX_TAG + IMPORTANT },
     
-	cursorNwResize: { cursor: "nw-resize " },
+	cursorNwResize: { cursor: "nw-resize " + IMPORTANT },
     
 	mlN4: { marginLeft: DEFAULT_MARGIN * -4 + PX_TAG + IMPORTANT },
     
-	cursorNwseResize: { cursor: "nwse-resize" },
+	cursorNwseResize: { cursor: "nwse-resize" + IMPORTANT },
     
 	mlN5: { marginLeft: DEFAULT_MARGIN * -5 + PX_TAG + IMPORTANT },
     
-	cursorPointer: { cursor: "pointer " },
+	cursorPointer: { cursor: "pointer " + IMPORTANT },
     
 	mr0: { marginRight: 0 + IMPORTANT },
     
-	cursorProgress: { cursor: "progress " },
+	cursorProgress: { cursor: "progress " + IMPORTANT },
     
 	mr1: { marginRight: DEFAULT_MARGIN + PX_TAG + IMPORTANT },
     
-	cursorRowResize: { cursor: "row-resize " },
+	cursorRowResize: { cursor: "row-resize " + IMPORTANT },
     
 	mr2: { marginRight: DEFAULT_MARGIN * 2 + PX_TAG + IMPORTANT },
     
-	cursorSResize: { cursor: "s-resize " },
+	cursorSResize: { cursor: "s-resize " + IMPORTANT },
     
 	mr3: { marginRight: DEFAULT_MARGIN * 3 + PX_TAG + IMPORTANT },
     
-	cursorSeResize: { cursor: "se-resize " },
+	cursorSeResize: { cursor: "se-resize " + IMPORTANT },
     
 	mr4: { marginRight: DEFAULT_MARGIN * 4 + PX_TAG + IMPORTANT },
     
-	cursorSwResize: { cursor: "sw-resize " },
+	cursorSwResize: { cursor: "sw-resize " + IMPORTANT },
     
 	mr5: { marginRight: DEFAULT_MARGIN * 5 + PX_TAG + IMPORTANT },
     
-	cursorText: { cursor: "text " },
+	cursorText: { cursor: "text " + IMPORTANT },
     
 	mrAuto: { marginRight: "auto" + IMPORTANT },
     
-	cursorURL: { cursor: "URL " },
+	cursorURL: { cursor: "URL " + IMPORTANT },
     
 	mrN1: { marginRight: DEFAULT_MARGIN * -1 + PX_TAG + IMPORTANT },
     
-	cursorVerticalText: { cursor: "vertical-text" },
+	cursorVerticalText: { cursor: "vertical-text" + IMPORTANT },
     
 	mrN2: { marginRight: DEFAULT_MARGIN * -2 + PX_TAG + IMPORTANT },
     
-	cursorWResize: { cursor: "w-resize " },
+	cursorWResize: { cursor: "w-resize " + IMPORTANT },
     
 	mrN3: { marginRight: DEFAULT_MARGIN * -3 + PX_TAG + IMPORTANT },
     
-	cursorWait: { cursor: "wait " },
+	cursorWait: { cursor: "wait " + IMPORTANT },
     
 	mrN4: { marginRight: DEFAULT_MARGIN * -4 + PX_TAG + IMPORTANT },
     
-	cursorZoomIn: { cursor: "zoom-in" },
+	cursorZoomIn: { cursor: "zoom-in" + IMPORTANT },
     
 	mrN5: { marginRight: DEFAULT_MARGIN * -5 + PX_TAG + IMPORTANT },
     
-	cursorZoomOut: { cursor: "zoom-out" },
+	cursorZoomOut: { cursor: "zoom-out" + IMPORTANT },
     
 	mt0: { marginTop: 0 + IMPORTANT },
     
@@ -802,19 +801,19 @@ export const defaultUtilityStyles = {
     
 	overflowYAuto: { overflowY: "auto" + IMPORTANT },
     
-	textBlack: { color: "#000000" },
+	textBlack: { color: "#000000" + IMPORTANT },
     
 	overflowYHidden: { overflowY: "hidden" + IMPORTANT },
     
-	textBlack50: { color: "#00000077" },
+	textBlack50: { color: "#00000077" + IMPORTANT },
     
 	overflowYScroll: { overflowY: "scroll" + IMPORTANT },
     
-	textError: { color: theme.palette.error.main },
+	textError: { color: theme.palette.error.main + IMPORTANT },
     
 	overflowYVisible: { overflowY: "visible" + IMPORTANT },
     
-	textErrorDark: { color: theme.palette.error.dark },
+	textErrorDark: { color: theme.palette.error.dark + IMPORTANT },
     
 	/**************************************************
    * Spacing
@@ -824,27 +823,27 @@ export const defaultUtilityStyles = {
    *-----------------------------------------------*/
 	p0: { padding: 0 + PX_TAG + IMPORTANT },
 
-	textErrorLight: { color: theme.palette.error.light },
+	textErrorLight: { color: theme.palette.error.light + IMPORTANT },
 
-	textInfo: { color: theme.palette.info.main },
+	textInfo: { color: theme.palette.info.main + IMPORTANT },
 
 	p1: { padding: DEFAULT_PADDING + PX_TAG + IMPORTANT },
 
-	textInfoDark: { color: theme.palette.info.dark },
+	textInfoDark: { color: theme.palette.info.dark + IMPORTANT },
     
 	p2: { padding: DEFAULT_PADDING * 2 + PX_TAG + IMPORTANT },
     
-	textInfoLight: { color: theme.palette.info.light },
+	textInfoLight: { color: theme.palette.info.light + IMPORTANT },
     
 	p3: { padding: DEFAULT_PADDING * 3 + PX_TAG + IMPORTANT },
     
 	p4: { padding: DEFAULT_PADDING * 4 + PX_TAG + IMPORTANT },
     
-	textOpacity100: { opacity: "1" },
+	textOpacity100: { opacity: "1" + IMPORTANT },
     
 	p5: { padding: DEFAULT_PADDING * 5 + PX_TAG + IMPORTANT },
     
-	textOpacity25: { opacity: "0.25" },
+	textOpacity25: { opacity: "0.25" + IMPORTANT },
     
 	pb0: { paddingBottom: 0 + PX_TAG + IMPORTANT },
     
@@ -853,51 +852,51 @@ export const defaultUtilityStyles = {
 	/**************************************************
    * Color
    *************************************************/
-	textPrimary: { color: theme.palette.primary.main },
+	textPrimary: { color: theme.palette.primary.main + IMPORTANT },
     
 	pb2: { paddingBottom: DEFAULT_PADDING * 2 + PX_TAG + IMPORTANT },
     
-	textPrimaryDark: { color: theme.palette.primary.dark },
+	textPrimaryDark: { color: theme.palette.primary.dark + IMPORTANT },
 
 	pb3: { paddingBottom: DEFAULT_PADDING * 3 + PX_TAG + IMPORTANT },
     
 	pb4: { paddingBottom: DEFAULT_PADDING * 4 + PX_TAG + IMPORTANT },
 
-	textPrimaryLight: { color: theme.palette.primary.light },
+	textPrimaryLight: { color: theme.palette.primary.light + IMPORTANT },
 
 	pb5: { paddingBottom: DEFAULT_PADDING * 5 + PX_TAG + IMPORTANT },
 
 	peAuto: { pointerEvents: "auto" + IMPORTANT },
 
-	textSecondary: { color: theme.palette.secondary.main },
+	textSecondary: { color: theme.palette.secondary.main + IMPORTANT },
 
 	peNone: { pointerEvents: "none" + IMPORTANT },
 
 	pl0: { paddingLeft: 0 + PX_TAG + IMPORTANT },
 
-	textSecondaryDark: { color: theme.palette.secondary.dark },
+	textSecondaryDark: { color: theme.palette.secondary.dark + IMPORTANT },
 
 	pl1: { paddingLeft: DEFAULT_PADDING + PX_TAG + IMPORTANT },
 
 	pl2: { paddingLeft: DEFAULT_PADDING * 2 + PX_TAG + IMPORTANT },
 
-	textSecondaryLight: { color: theme.palette.secondary.light },
+	textSecondaryLight: { color: theme.palette.secondary.light + IMPORTANT },
 
 	pl3: { paddingLeft: DEFAULT_PADDING * 3 + PX_TAG + IMPORTANT },
 
 	pl4: { paddingLeft: DEFAULT_PADDING * 4 + PX_TAG + IMPORTANT },
 
-	textSuccess: { color: theme.palette.success.main },
+	textSuccess: { color: theme.palette.success.main + IMPORTANT },
 
 	pl5: { paddingLeft: DEFAULT_PADDING * 5 + PX_TAG + IMPORTANT },
 
-	textSuccessDark: { color: theme.palette.success.dark },
+	textSuccessDark: { color: theme.palette.success.dark + IMPORTANT },
 
 	positionAbsolute: { position: "absolute" + IMPORTANT },
 
 	positionFixed: { position: "fixed" + IMPORTANT },
 
-	textSuccessLight: { color: theme.palette.success.light },
+	textSuccessLight: { color: theme.palette.success.light + IMPORTANT },
 
 	positionRelative: { position: "relative" + IMPORTANT },
 
@@ -906,7 +905,7 @@ export const defaultUtilityStyles = {
    *************************************************/
 	positionStatic: { position: "static" + IMPORTANT },
     
-	textWarning: { color: theme.palette.warning.main },
+	textWarning: { color: theme.palette.warning.main + IMPORTANT },
     
 	/**
    * @todo multiple value for same property
@@ -916,11 +915,11 @@ export const defaultUtilityStyles = {
 		position: "sticky" + IMPORTANT
 	},
     
-	textWarningDark: { color: theme.palette.warning.dark },
+	textWarningDark: { color: theme.palette.warning.dark + IMPORTANT },
     
 	pr0: { paddingRight: 0 + PX_TAG + IMPORTANT },
     
-	textWarningLight: { color: theme.palette.warning.light },
+	textWarningLight: { color: theme.palette.warning.light + IMPORTANT },
 
 	pr1: { paddingRight: DEFAULT_PADDING + PX_TAG + IMPORTANT },
     
@@ -935,19 +934,19 @@ export const defaultUtilityStyles = {
     
 	pr2: { paddingRight: DEFAULT_PADDING * 2 + PX_TAG + IMPORTANT },
     
-	textWhite: { color: "#ffffff" },
+	textWhite: { color: "#ffffff" + IMPORTANT },
     
 	pr3: { paddingRight: DEFAULT_PADDING * 3 + PX_TAG + IMPORTANT },
     
 	pr4: { paddingRight: DEFAULT_PADDING * 4 + PX_TAG + IMPORTANT },
     
-	textWhite50: { color: "#ffffff77" },
+	textWhite50: { color: "#ffffff77" + IMPORTANT },
     
 	pr5: { paddingRight: DEFAULT_PADDING * 5 + PX_TAG + IMPORTANT },
     
 	pt0: { paddingTop: 0 + PX_TAG + IMPORTANT },
     
-	textOpacity50: { opacity: "0.5" },
+	textOpacity50: { opacity: "0.5" + IMPORTANT },
     
 	pt1: { paddingTop: DEFAULT_PADDING + PX_TAG + IMPORTANT },
     
@@ -1068,16 +1067,16 @@ export const defaultUtilityStyles = {
     
 	stickyBottom: {
 		bottom  : "0",
-		// -- position: "-webkit-sticky",
-		position: "sticky",
-		zIndex  : "1020",
+		// -- position: "-webkit-sticky" + IMPORTANT,
+		position: "sticky" + IMPORTANT,
+		zIndex  : "1020" + IMPORTANT,
 	},
     
 	stickyTop: {
-		// -- position: "-webkit-sticky",
-		position: "sticky",
-		top     : "0",
-		zIndex  : "1020",
+		// -- position: "-webkit-sticky" + IMPORTANT,
+		position: "sticky" + IMPORTANT,
+		top     : "0" + IMPORTANT,
+		zIndex  : "1020" + IMPORTANT,
 	},
     
 	textBreak: { wordBreak: "break-word" + IMPORTANT, wordWrap: "break-word" + IMPORTANT },
@@ -1105,15 +1104,15 @@ export const defaultUtilityStyles = {
    *************************************************/
 	textStart: { textAlign: "left" + IMPORTANT },
     
-	textTruncate: { overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" },
+	textTruncate: { overflow: "hidden", textOverflow: "ellipsis" + IMPORTANT, whiteSpace: "nowrap" + IMPORTANT },
     
 	textUppercase: { textTransform: "uppercase" + IMPORTANT },
     
-	textWeightBold: { fontWeight: "bold" },
+	textWeightBold: { fontWeight: "bold" + IMPORTANT },
     
-	textWeightLight: { fontWeight: "lighter" },
+	textWeightLight: { fontWeight: "lighter" + IMPORTANT },
     
-	textWeightNormal: { fontWeight: "normal" },
+	textWeightNormal: { fontWeight: "normal" + IMPORTANT },
     
 	textWrap: { whiteSpace: "normal" + IMPORTANT },
     

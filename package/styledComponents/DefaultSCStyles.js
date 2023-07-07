@@ -1,5 +1,5 @@
 import { theme } from "../theme/theme";
-import { defaultUtilityStyles } from "../utility/DefaultUtilityStyles";
+import { IMPORTANT, defaultUtilityStyles } from "../utility/DefaultUtilityStyles";
 
 const HEADING_TOP_MARGIN = "56px";
 
@@ -20,7 +20,7 @@ export const defaultSCStyles = {
 	scInputIconButton           : {},
 	scInputsInputAdornment      : {},
 	scInputsInputLabel          : {},
-	scInputsItemButton          : { width: "100%", marginBottom: 16 },
+	scInputsItemButton          : { width: "100%" + IMPORTANT, marginBottom: 16 + IMPORTANT },
 	scInputsMenuItem            : {},
 	scinputsSelect              : {},
 	scInputsSwitch              : {},
@@ -52,14 +52,14 @@ export const defaultSCStyles = {
 	 *************************************************/
 	scFeedbackAlert             : {},
 	scFeedbackBackdrop          : {
-		zIndex         : 1202,
-		backgroundColor: theme.palette.secondary.transparentDark
+		zIndex         : 1202 + IMPORTANT,
+		backgroundColor: theme.palette.secondary.transparentDark + IMPORTANT,
 	},
 	scFeedbackCircularProgress: {},
 	scFeedbackLinearProgress  : {},
 	scFeedbackSkeleton        : {},
 	scFeedbackSnackbar        : {},
-	scFeedbackDialog          : { minWidth: "60%" },
+	scFeedbackDialog          : { minWidth: "60%" + IMPORTANT },
 	/**************************************************
 	 * SURFACES
 	 *************************************************/
@@ -90,8 +90,8 @@ export const defaultSCStyles = {
 	 * LAYOUTS
 	 *************************************************/
 	scLayoutsAppDiv         : {
-		height: "100vh",
-		width : "100vw"
+		height: "100vh" + IMPORTANT,
+		width : "100vw" + IMPORTANT,
 	},
 	scLayoutsBox          : {},
 	scLayoutsContainer    : {},
@@ -115,9 +115,9 @@ export const defaultSCStyles = {
 	/**
 	 * Core App Bar Styles
 	 */
-	appbarHeight        : { top: HEADING_TOP_MARGIN },
-	appDrawerPaperHeight: { height: `calc(100% - ${HEADING_TOP_MARGIN})` },
-	appBarLogo          : { height: "30px" },
+	appbarHeight        : { top: HEADING_TOP_MARGIN + IMPORTANT },
+	appDrawerPaperHeight: { height: `calc(100% - ${HEADING_TOP_MARGIN})` + IMPORTANT },
+	appBarLogo          : { height: "30px" + IMPORTANT },
 
 	/**
 	 * @todo Have to remove this. This is here as it is used in menuUtil
@@ -129,7 +129,7 @@ export const defaultSCStyles = {
 		// paddingTop: 2,
 		// paddingBottom: 2,
 	},
-	miniDrawerListItemIcon: { minWidth: 0 },
+	miniDrawerListItemIcon: { minWidth: 0 + IMPORTANT },
 
 	listItem      : {},
 	listItemButton: {
@@ -140,7 +140,7 @@ export const defaultSCStyles = {
 	listItemText: {},
 
 	headerItem: {
-		padding: 0
+		padding: 0 + IMPORTANT,
 		// backgroundColor: theme.palette.secondary.light,
 	},
 	headerButtonItem: {},
@@ -148,7 +148,7 @@ export const defaultSCStyles = {
 	headerTextItem  : {},
 
 	parentItem: {
-		padding: 0
+		padding: 0 + IMPORTANT
 		// backgroundColor: theme.palette.secondary.light,
 	},
 	parentButtonItem: {},
@@ -156,28 +156,28 @@ export const defaultSCStyles = {
 	parentTextItem  : {},
 
 	seperatorItem: {
-		padding: 0
+		padding: 0 + IMPORTANT,
 		// backgroundColor: theme.palette.secondary.light,
 	},
 	seperatorButtonItem: {
-		height   : 0,
-		minHeight: 0
+		height   : 0 + IMPORTANT,
+		minHeight: 0 + IMPORTANT,
 		// backgroundColor: "gray"
 	},
-	seperatorIconItem: { height: 0, minHeight: 0, display: "none" },
-	seperatorTextItem: { height: 0, minHeight: 0 },
+	seperatorIconItem: { height: 0 + IMPORTANT, minHeight: 0 + IMPORTANT, display: "none" + IMPORTANT },
+	seperatorTextItem: { height: 0 + IMPORTANT, minHeight: 0 + IMPORTANT },
 
 	menuItem: {
-		padding: 0
+		padding: 0 + IMPORTANT
 		// backgroundColor: theme.palette.secondary.light,
 	},
 	menuItemButtonItem: {},
 	menuItemTextItem  : {},
 	menuItemIconItem  : {},
 	appDrawerText     : {
-		color       : "rgb(88, 88, 88) !important",
-		overflow    : "hidden",
-		textOverflow: "ellipsis",
-		whiteSpace  : "nowrap"
+		color       : "rgb(88, 88, 88)" + IMPORTANT,
+		overflow    : "hidden" + IMPORTANT,
+		textOverflow: "ellipsis" + IMPORTANT,
+		whiteSpace  : "nowrap" + IMPORTANT,
 	}
 };

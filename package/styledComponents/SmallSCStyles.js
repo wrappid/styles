@@ -1,3 +1,5 @@
+import { IMPORTANT } from "../utility/DefaultUtilityStyles";
+
 export const smallSCStyles = {
 	/**************************************************
 	 * INPUTS
@@ -10,7 +12,7 @@ export const smallSCStyles = {
 	/**************************************************
 	 * FEEDBACK
 	 *************************************************/
-	scFeedbackDialog : { minWidth: "20%", minHeight: "30%" },
+	scFeedbackDialog : { minWidth: "20%" + IMPORTANT, minHeight: "30%" + IMPORTANT },
 	/**************************************************
 	 * SURFACES
 	 *************************************************/
