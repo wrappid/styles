@@ -14,6 +14,7 @@ import StylesProvider from "./StylesProvider";
 import {
 	IMPORTANT,
 	DEFAULT_PADDING,
+	PX_TAG,
 	defaultUtilityStyles
 } from "./utility/DefaultUtilityStyles";
 import { smallUtilityStyles } from "./utility/SmallUtilityStyles";
@@ -53,5 +54,6 @@ export {
 	StylesProvider,
 	getConfigurationObject,
 	DEFAULT_PADDING,
+	PX_TAG,
 	IMPORTANT
 };
