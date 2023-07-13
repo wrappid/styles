@@ -135,7 +135,8 @@ const StyledComponentsClasses = {
 		MENU_ITEM_ICON_ITEM  : "menuItemIconItem",
 		MENU_ITEM_TEXT_ITEM  : "menuItemTextItem",
 		MENU_ITEM            : "menuItem"
-	}
+	},
+	WEB: { FILE_PICKER: "webFilePicker" }
 };
 
 export default StyledComponentsClasses;

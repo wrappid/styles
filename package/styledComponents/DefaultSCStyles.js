@@ -1,5 +1,8 @@
 import { theme } from "../theme/theme";
-import { IMPORTANT, defaultUtilityStyles } from "../utility/DefaultUtilityStyles";
+import {
+	IMPORTANT,
+	defaultUtilityStyles
+} from "../utility/DefaultUtilityStyles";
 
 const HEADING_TOP_MARGIN = "56px";
 
@@ -7,20 +10,23 @@ export const defaultSCStyles = {
 	/**************************************************
 	 * INPUTS
 	 *************************************************/
-	scInputsButton              : { ...defaultUtilityStyles?.ml1 },
-	scInputsTextField           : {},
-	scInputsDatePicker          : {},
-	scInputAutoComplete         : {},
-	scInputCheckbox             : {},
-	scInputDateTimePicker       : {},
-	scInputFab                  : {},
-	scInputFormControl          : {},
-	scInputFormControlLabel     : {},
-	scInputFormHelperText       : {},
-	scInputIconButton           : {},
-	scInputsInputAdornment      : {},
-	scInputsInputLabel          : {},
-	scInputsItemButton          : { width: "100%" + IMPORTANT, marginBottom: 16 + IMPORTANT },
+	scInputsButton         : { ...defaultUtilityStyles?.ml1 },
+	scInputsTextField      : {},
+	scInputsDatePicker     : {},
+	scInputAutoComplete    : {},
+	scInputCheckbox        : {},
+	scInputDateTimePicker  : {},
+	scInputFab             : {},
+	scInputFormControl     : {},
+	scInputFormControlLabel: {},
+	scInputFormHelperText  : {},
+	scInputIconButton      : {},
+	scInputsInputAdornment : {},
+	scInputsInputLabel     : {},
+	scInputsItemButton     : {
+		width       : "100%" + IMPORTANT,
+		marginBottom: 16 + IMPORTANT
+	},
 	scInputsMenuItem            : {},
 	scinputsSelect              : {},
 	scInputsSwitch              : {},
@@ -53,7 +59,7 @@ export const defaultSCStyles = {
 	scFeedbackAlert             : {},
 	scFeedbackBackdrop          : {
 		zIndex         : 1202 + IMPORTANT,
-		backgroundColor: theme.palette.secondary.transparentDark + IMPORTANT,
+		backgroundColor: theme.palette.secondary.transparentDark + IMPORTANT
 	},
 	scFeedbackCircularProgress: {},
 	scFeedbackLinearProgress  : {},
@@ -91,7 +97,7 @@ export const defaultSCStyles = {
 	 *************************************************/
 	scLayoutsAppDiv         : {
 		height: "100vh" + IMPORTANT,
-		width : "100vw" + IMPORTANT,
+		width : "100vw" + IMPORTANT
 	},
 	scLayoutsBox          : {},
 	scLayoutsContainer    : {},
@@ -116,8 +122,10 @@ export const defaultSCStyles = {
 	 * Core App Bar Styles
 	 */
 	appbarHeight        : { top: HEADING_TOP_MARGIN + IMPORTANT },
-	appDrawerPaperHeight: { height: `calc(100% - ${HEADING_TOP_MARGIN})` + IMPORTANT },
-	appBarLogo          : { height: "30px" + IMPORTANT },
+	appDrawerPaperHeight: {
+		height: `calc(100% - ${HEADING_TOP_MARGIN})` + IMPORTANT
+	},
+	appBarLogo: { height: "30px" + IMPORTANT },
 
 	/**
 	 * @todo Have to remove this. This is here as it is used in menuUtil
@@ -140,7 +148,7 @@ export const defaultSCStyles = {
 	listItemText: {},
 
 	headerItem: {
-		padding: 0 + IMPORTANT,
+		padding: 0 + IMPORTANT
 		// backgroundColor: theme.palette.secondary.light,
 	},
 	headerButtonItem: {},
@@ -156,15 +164,19 @@ export const defaultSCStyles = {
 	parentTextItem  : {},
 
 	seperatorItem: {
-		padding: 0 + IMPORTANT,
+		padding: 0 + IMPORTANT
 		// backgroundColor: theme.palette.secondary.light,
 	},
 	seperatorButtonItem: {
 		height   : 0 + IMPORTANT,
-		minHeight: 0 + IMPORTANT,
+		minHeight: 0 + IMPORTANT
 		// backgroundColor: "gray"
 	},
-	seperatorIconItem: { height: 0 + IMPORTANT, minHeight: 0 + IMPORTANT, display: "none" + IMPORTANT },
+	seperatorIconItem: {
+		height   : 0 + IMPORTANT,
+		minHeight: 0 + IMPORTANT,
+		display  : "none" + IMPORTANT
+	},
 	seperatorTextItem: { height: 0 + IMPORTANT, minHeight: 0 + IMPORTANT },
 
 	menuItem: {
@@ -178,6 +190,12 @@ export const defaultSCStyles = {
 		color       : "rgb(88, 88, 88)" + IMPORTANT,
 		overflow    : "hidden" + IMPORTANT,
 		textOverflow: "ellipsis" + IMPORTANT,
-		whiteSpace  : "nowrap" + IMPORTANT,
+		whiteSpace  : "nowrap" + IMPORTANT
+	},
+	webFilePicker: {
+		justifyContent: "flex-end",
+		display       : "flex",
+		color         : "rgb(0,0,0,0.54)",
+		borderBottom  : "1px solid rgba(0, 0, 0, 0.42)"
 	}
 };
