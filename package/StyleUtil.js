@@ -28,7 +28,8 @@ const EXCEPTIONS = [
 	"bottom",
 	"left",
 	"right",
-	"zIndex"
+	"zIndex",
+	"fontWeight"
 ];
 
 const sanitizeClassNames = (classNames) => {
