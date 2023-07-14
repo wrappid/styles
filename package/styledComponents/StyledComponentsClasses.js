@@ -98,9 +98,10 @@ const StyledComponentsClasses = {
 	APP_BAR: { HEIGHT: "appbarHeight", APP_BAR_LOGO: "appBarLogo" },
 	DRAWER : { PAPER_HEIGHT: "appDrawerPaperHeight" },
 	MODAL  : {
-		MODAL_CONTAINER: "modalContainer",
-		MODAL_HEADER   : "modalHeader",
-		MODAL_BODY     : "modalBody"
+		MODAL_CONTAINER    : "modalContainer",
+		MODAL_WEB_CONTAINER: "modalWebContainer",
+		MODAL_HEADER       : "modalHeader",
+		MODAL_BODY         : "modalBody"
 	},
 
 	/**
@@ -136,7 +137,7 @@ const StyledComponentsClasses = {
 		MENU_ITEM_TEXT_ITEM  : "menuItemTextItem",
 		MENU_ITEM            : "menuItem"
 	},
-	WEB: { FILE_PICKER: "webFilePicker" }
+	WEB: { FILE_PICKER: "webFilePicker", TAB_HEAD: "webTabHead" }
 };
 
 export default StyledComponentsClasses;

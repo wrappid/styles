@@ -73,7 +73,7 @@ export const defaultSCStyles = {
 	scSurfacesAccordionDetails: {},
 	scSurfacesAccordionSummery: {},
 	scSurfacesAppBar          : {
-		...defaultUtilityStyles.bgWhite,
+		...defaultUtilityStyles.bgPrimary,
 		...defaultUtilityStyles.shadowNone
 	},
 	scSurfacesCard          : {},
@@ -122,10 +122,8 @@ export const defaultSCStyles = {
 	 * Core App Bar Styles
 	 */
 	appbarHeight        : { top: HEADING_TOP_MARGIN + IMPORTANT },
-	appDrawerPaperHeight: {
-		height: `calc(100% - ${HEADING_TOP_MARGIN})` + IMPORTANT
-	},
-	appBarLogo: { height: "30px" + IMPORTANT },
+	appDrawerPaperHeight: { height: `calc(100% - ${HEADING_TOP_MARGIN})` + IMPORTANT },
+	appBarLogo          : { height: "30px" + IMPORTANT },
 
 	/**
 	 * @todo Have to remove this. This is here as it is used in menuUtil
@@ -197,5 +195,14 @@ export const defaultSCStyles = {
 		display       : "flex",
 		color         : "rgb(0,0,0,0.54)",
 		borderBottom  : "1px solid rgba(0, 0, 0, 0.42)"
+	},
+	webTabHead: {
+		...defaultUtilityStyles.mb1,
+		...defaultUtilityStyles.stickyTop,
+		...defaultUtilityStyles.bgWhite,
+		...defaultUtilityStyles.overflowXScroll,
+		...defaultUtilityStyles.w100,
+		marginLeft: "-8px" + IMPORTANT,
+		marginTop : "-8px" + IMPORTANT
 	}
 };
