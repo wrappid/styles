@@ -92,6 +92,14 @@ export function addFlavor(styleObject) {
 				continue;
 			}
 
+			// for rem
+			// for fontSize
+			if (key === "fontSize") {
+				if (val.includes("rem")) {
+					val = remToPx(val);
+				}
+			}
+
 			// eslint-disable-next-line no-console
 			//console.log("KEY:", key, "VAL:", val);
 			newStyleObject[key] = val;
@@ -254,4 +262,13 @@ const getXLargeStyle = (className, mergedStyles) => {
 const getXXLargeStyle = (className, mergedStyles) => {
 	// console.log("getXXLargeStyle", mergedStyles);
 	return mergedStyles[className];
+};
+
+// rem to px util
+const remToPx = (remVal) => {
+	const __root_Font_Size = 16;
+
+	remVal = Number(remVal.substr(0, remVal.indexOf("rem")));
+
+	return __root_Font_Size * remVal;
 };
