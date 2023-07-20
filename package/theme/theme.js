@@ -87,7 +87,7 @@ export function overrideThemeConfiguration() {
 		finalTheme.palette.primary.main = configuration.theme.primaryMainColor;
 	}
 	if (configuration.theme.primaryLightColor) {
-		finalTheme.palette.primary.light = configuration.theme.primarylightColor;
+		finalTheme.palette.primary.light = configuration.theme.primaryLightColor;
 	}
 	if (configuration.theme.primaryDarkColor) {
 		finalTheme.palette.primary.dark = configuration.theme.primaryDarkColor;
@@ -101,7 +101,7 @@ export function overrideThemeConfiguration() {
 		finalTheme.palette.secondary.main = configuration.theme.secondaryMainColor;
 	}
 	if (configuration.theme.secondaryLightColor) {
-		finalTheme.palette.secondary.light = configuration.theme.secondarylightColor;
+		finalTheme.palette.secondary.light = configuration.theme.secondaryLightColor;
 	}
 	if (configuration.theme.secondaryDarkColor) {
 		finalTheme.palette.secondary.dark = configuration.theme.secondaryDarkColor;
