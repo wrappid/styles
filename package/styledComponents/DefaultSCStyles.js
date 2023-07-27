@@ -52,7 +52,7 @@ export const defaultSCStyles = {
 	scDataDisplayTableRow       : {},
 	scDataDisplayTableSortLabel : {},
 	scDataDisplayTooltip        : {},
-	scDataDisplayTypography     : {},
+	scDataDisplayTypography     : { color: theme.palette.secondary.transparentDark + IMPORTANT },
 	/**************************************************
 	 * FEEDBACK
 	 *************************************************/
