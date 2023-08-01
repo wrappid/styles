@@ -31,6 +31,7 @@ export const defaultSCStyles = {
 	scinputsSelect              : {},
 	scInputsSwitch              : {},
 	scInputsTimePicker          : {},
+	scInputsFormHelperText      : { paddingLeft: 0 },
 	/**************************************************
 	 * DATA DISPLAY
 	 *************************************************/
