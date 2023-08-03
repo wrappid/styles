@@ -27,15 +27,20 @@ export const defaultSCStyles = {
 		width       : "100%" + IMPORTANT,
 		marginBottom: 16 + IMPORTANT
 	},
-	scInputsMenuItem            : {},
-	scinputsSelect              : {},
-	scInputsSwitch              : {},
-	scInputsTimePicker          : {},
-	scInputsFormHelperText      : { paddingLeft: 0 },
+	scInputsMenuItem      : {},
+	scinputsSelect        : {},
+	scInputsSwitch        : {},
+	scInputsTimePicker    : {},
+	scInputsFormHelperText: { paddingLeft: 0 + IMPORTANT },
 	/**************************************************
 	 * DATA DISPLAY
 	 *************************************************/
-	scDataDisplayAvatar         : {},
+	scDataDisplayAvatar   : {
+		backgroundColor: theme.palette.secondary.light + IMPORTANT,
+		borderWidth    : "1px" + IMPORTANT,
+		borderStyle    : "solid" + IMPORTANT,
+		borderColor    : theme.palette.secondary.main + IMPORTANT 
+	},
 	scDataDisplayBadge          : {},
 	scDataDisplayChip           : {},
 	scDataDisplayDivider        : { ...defaultUtilityStyles.m1 },
@@ -192,10 +197,10 @@ export const defaultSCStyles = {
 		whiteSpace  : "nowrap" + IMPORTANT
 	},
 	webFilePicker: {
-		justifyContent: "flex-end",
-		display       : "flex",
-		color         : "rgb(0,0,0,0.54)",
-		borderBottom  : "1px solid rgba(0, 0, 0, 0.42)"
+		justifyContent: "flex-end" + IMPORTANT,
+		display       : "flex" + IMPORTANT,
+		color         : "rgb(0,0,0,0.54)" + IMPORTANT,
+		borderBottom  : "1px solid rgba(0, 0, 0, 0.42)" + IMPORTANT
 	},
 	webTabHead: {
 		...defaultUtilityStyles.mb1,
