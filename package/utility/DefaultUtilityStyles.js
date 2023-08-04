@@ -1269,16 +1269,6 @@ export const defaultUtilityStyles = {
 	 *************************************************/
 	zN1: { zIndex: "-1" + IMPORTANT },
 
-	/**
-	 * May have to be moved
-	 */
-
-	muiLink: {
-		color     : theme.palette.primary.main + IMPORTANT,
-		fontWeight: 500 + IMPORTANT,
-		fontSize  : "0.812rem" + IMPORTANT
-	},
-
 	phoneEmailLink: {
 		color     : theme.palette.primary.main + IMPORTANT,
 		fontWeight: 500 + IMPORTANT,

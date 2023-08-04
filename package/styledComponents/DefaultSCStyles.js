@@ -90,13 +90,17 @@ export const defaultSCStyles = {
 	 *************************************************/
 	scNavigationTab         : {},
 	scNavigationTabs        : {},
-	scNavigationLink        : {},
-	scNavigationMenuItem    : {},
-	scNavigationMenuList    : {},
+	scNavigationLink        : {
+		color     : theme.palette.primary.main + IMPORTANT,
+		fontWeight: 500 + IMPORTANT,
+		fontSize  : "0.812rem" + IMPORTANT
+	},
+	scNavigationMenuItem: {},
+	scNavigationMenuList: {},
 	/**************************************************
 	 * LAYOUTS
 	 *************************************************/
-	scLayoutsAppDiv         : {
+	scLayoutsAppDiv     : {
 		height: "100vh" + IMPORTANT,
 		width : "100vw" + IMPORTANT
 	},

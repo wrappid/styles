@@ -1186,10 +1186,7 @@ const UtilityClasses = {
 		z_2 : "z2",
 		z_3 : "z3"
 	},
-	LINK: {
-		MUI             : "muiLink",
-		PHONE_EMAIL_LINK: "phoneEmailLink"
-	}
+	LINK: { PHONE_EMAIL_LINK: "phoneEmailLink" }
 };
 
 export default UtilityClasses;
