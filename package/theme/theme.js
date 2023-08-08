@@ -20,14 +20,15 @@ export const DEFAULT_THEME = {
 	},
 	palette: {
 		type      : "light",
-		background: {
-			default: "#FAFAFA",
-			// default: "#F00",
+		background: { default: "#FAFAFA" },
+		common    : {
+			black: "#000000",
+			white: "#FFFFFF",
 		},
 		primary: {
-			main        : "#FB607F",
-			light       : "#FC7595",
-			dark        : "#FA385F",
+			main        : "#1F5296",
+			light       : "#6295D9",
+			dark        : "#003377",
 			contrastText: "#FFFFFF",
 		},
 		secondary: {
@@ -61,6 +62,16 @@ export const DEFAULT_THEME = {
 			dark        : "#0288d1",
 			contrastText: "rgba(0, 0, 0, 0.87)",
 		},
+		text: {
+			primary  : "#000000",
+			secondary: "#FFFFFF"
+		},
+		action: {
+			active  : "rgba(0, 0, 0, 0.54)",
+			hover   : "rgba(0, 0, 0, 0.04)",
+			disabled: "rgba(0, 0, 0, 0.26)",
+			focus   : "rgba(0, 0, 0, 0.12)",
+		}
 	},
 };
 
