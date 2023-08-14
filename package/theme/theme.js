@@ -63,8 +63,8 @@ export const DEFAULT_THEME = {
 			contrastText: "rgba(0, 0, 0, 0.87)",
 		},
 		text: {
-			primary  : "#000000",
-			secondary: "#FFFFFF"
+			primary  : "rgba(0, 0, 0, 0.87)",
+			secondary: "rgba(0, 0, 0, 0.6)"
 		},
 		action: {
 			active  : "rgba(0, 0, 0, 0.54)",
