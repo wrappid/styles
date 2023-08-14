@@ -29,7 +29,7 @@ const EXCEPTIONS = [
 	"left",
 	"right",
 	"zIndex",
-	"fontWeight"
+	"fontWeight",
 ];
 
 const sanitizeClassNames = (classNames) => {
@@ -38,7 +38,7 @@ const sanitizeClassNames = (classNames) => {
 	return [
 		...new Set(
 			classNames && Array.isArray(classNames) ? classNames : [classNames]
-		)
+		),
 	];
 };
 
@@ -75,15 +75,21 @@ export function addFlavor(styleObject) {
 				}
 			} else if (
 				(key === "height" || key === "minHeight" || key === "maxHeight") &&
-				val?.includes("vh")
+        val?.includes("vh")
 			) {
 				continue;
 			} else if (
 				(key === "width" || key === "minWidth" || key === "maxWidth") &&
-				val?.includes("vw")
+        val?.includes("vw")
 			) {
 				continue;
-			} else if (key === "position" && (val === "fixed" || val === "fixed ")) {
+			} else if (
+				key === "position" &&
+        (val === "fixed" ||
+          val === "fixed " ||
+          val === "sticky" ||
+          val === "sticky ")
+			) {
 				val = "absolute";
 			} else if (key === "border" && (val === "unset" || val === "unset ")) {
 				key = "border";
@@ -113,9 +119,9 @@ export function addFlavor(styleObject) {
 
 export function getEffectiveStyle(classNames) {
 	/**
-	 * Step 1: Get default styles(xs) for className
-	 * Step 2: Get all styles object filter by classNames and window.width
-	 */
+   * Step 1: Get default styles(xs) for className
+   * Step 2: Get all styles object filter by classNames and window.width
+   */
 
 	// console.log(
 	//   "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\nAPP STYLES\n&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&",
@@ -135,13 +141,13 @@ export function getEffectiveStyle(classNames) {
 
 	classNames.forEach((className) => {
 		/**
-		 * TODO: Framework related discussion needed
-		 *
-		 * 1. condition must have range
-		 * 2. only one condition will apply based on windowWidth
-		 *    a. we can have else if statements
-		 *    b. we can return if any one satisfied
-		 */
+     * TODO: Framework related discussion needed
+     *
+     * 1. condition must have range
+     * 2. only one condition will apply based on windowWidth
+     *    a. we can have else if statements
+     *    b. we can return if any one satisfied
+     */
 
 		// console.log(`Looking for className = ${className}`);
 
@@ -149,7 +155,7 @@ export function getEffectiveStyle(classNames) {
 		if (getDefaultStyle(className, mergedDefaultStyles)) {
 			styleObject = {
 				...styleObject,
-				...getDefaultStyle(className, mergedDefaultStyles)
+				...getDefaultStyle(className, mergedDefaultStyles),
 			};
 			// console.log(`Found any class in default for ${className}`);
 			// // console.log(`IN SM ${className} ==`);
@@ -162,7 +168,7 @@ export function getEffectiveStyle(classNames) {
 			if (getSmallStyle(className, mergedSmallStyles)) {
 				styleObject = {
 					...styleObject,
-					...getSmallStyle(className, mergedSmallStyles)
+					...getSmallStyle(className, mergedSmallStyles),
 				};
 				// console.log(`Found any class in SM for ${className}`);
 				// // console.log(`IN SM ${className} ==`);
@@ -175,7 +181,7 @@ export function getEffectiveStyle(classNames) {
 			if (getMediumStyle(className, mergedMediumStyles)) {
 				styleObject = {
 					...styleObject,
-					...getMediumStyle(className, mergedMediumStyles)
+					...getMediumStyle(className, mergedMediumStyles),
 				};
 				// console.log(`Found any class in MD for ${className}`);
 				// // console.log(`IN MD ${className} ==`);
@@ -188,7 +194,7 @@ export function getEffectiveStyle(classNames) {
 			if (getLargeStyle(className, mergedLargeStyles)) {
 				styleObject = {
 					...styleObject,
-					...getLargeStyle(className, mergedLargeStyles)
+					...getLargeStyle(className, mergedLargeStyles),
 				};
 				// console.log(`Found any class in LG for ${className}`);
 				// // console.log(`IN LG ${className} ==`);
@@ -201,7 +207,7 @@ export function getEffectiveStyle(classNames) {
 			if (getXLargeStyle(className, mergedXLargeStyles)) {
 				styleObject = {
 					...styleObject,
-					...getXLargeStyle(className, mergedXLargeStyles)
+					...getXLargeStyle(className, mergedXLargeStyles),
 				};
 				// console.log(`Found any class in XL for ${className}`);
 				// // console.log(`IN XL ${className} ==`);
@@ -214,7 +220,7 @@ export function getEffectiveStyle(classNames) {
 			if (getXXLargeStyle(className, mergedXXLargeStyles)) {
 				styleObject = {
 					...styleObject,
-					...getXXLargeStyle(className, mergedXXLargeStyles)
+					...getXXLargeStyle(className, mergedXXLargeStyles),
 				};
 				// console.log(`Found any class in XXL for ${className}`);
 				// // console.log(`IN XXL ${className} ==`);
