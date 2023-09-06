@@ -142,20 +142,13 @@ export const defaultSCStyles = {
 	 * when we creae seperae component for menu items this should be replaced
 	 */
 
-	miniDrawerListItemButton: {
-		// minHeight: 48,
-		// paddingTop: 2,
-		// paddingBottom: 2,
-	},
-	miniDrawerListItemIcon: { minWidth: 0 + IMPORTANT },
+	miniDrawerListItemButton: { /* minHeight: 48, paddingTop: 2, paddingBottom: 2 */ },
+	miniDrawerListItemIcon  : { minWidth: 0 + IMPORTANT },
 
 	listItem      : {},
-	listItemButton: {
-		// paddingTop: 2,
-		// paddingBottom: 2,
-	},
-	listItemIcon: {},
-	listItemText: {},
+	listItemButton: { /* paddingTop: 2, paddingBottom: 2, */ },
+	listItemIcon  : {},
+	listItemText  : {},
 
 	headerItem: {
 		padding: 0 + IMPORTANT
