@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { defaultUtilityStyles } from "./utility/DefaultUtilityStyles";
 import { smallUtilityStyles } from "./utility/SmallUtilityStyles";
 import { defaultSCStyles } from "./styledComponents/DefaultSCStyles";
@@ -11,6 +11,7 @@ import { xLargeUtilityStyles } from "./utility/XLargeUtilityStyles";
 import { xLargeSCStyles } from "./styledComponents/XLargeSCStyles";
 import { xXLargeUtilityStyles } from "./utility/XXLargeUtilityStyles";
 import { xXLargeSCStyles } from "./styledComponents/XXLargeSCStyles";
+import { AppStylesContext } from "./config/contextHandler";
 
 export let mergedDefaultStyles = {
 	...defaultUtilityStyles,
@@ -39,10 +40,9 @@ export let mergedXXLargeStyles = {
 };
 
 export default function StylesProvider(props) {
-	const StyleContext = createContext({});
 	const [styleFiles, setStyles] = useState({});
 
-	React.useEffect(() => {
+	useEffect(() => {
 		mergedDefaultStyles = {
 			...defaultUtilityStyles,
 			...defaultSCStyles,
@@ -90,7 +90,7 @@ export default function StylesProvider(props) {
 		});
 	}, []);
 
-	return <StyleContext.Provider value={styleFiles}>
+	return <AppStylesContext.Provider value={styleFiles}>
 		{props.children}
-	</StyleContext.Provider>;
+	</AppStylesContext.Provider>;
 }
