@@ -8,8 +8,8 @@ const HEADING_TOP_MARGIN = "56px";
 
 export const defaultSCStyles = {
 	/**************************************************
-	 * INPUTS
-	 *************************************************/
+   * INPUTS
+   *************************************************/
 	scInputsButton         : { ...defaultUtilityStyles?.ml1 },
 	scInputsTextField      : {},
 	scInputsDatePicker     : {},
@@ -25,7 +25,7 @@ export const defaultSCStyles = {
 	scInputsInputLabel     : {},
 	scInputsItemButton     : {
 		width       : "100%" + IMPORTANT,
-		marginBottom: 16 + IMPORTANT
+		marginBottom: 16 + IMPORTANT,
 	},
 	scInputsMenuItem      : {},
 	scinputsSelect        : {},
@@ -33,13 +33,13 @@ export const defaultSCStyles = {
 	scInputsTimePicker    : {},
 	scInputsFormHelperText: { paddingLeft: 0 + IMPORTANT },
 	/**************************************************
-	 * DATA DISPLAY
-	 *************************************************/
+   * DATA DISPLAY
+   *************************************************/
 	scDataDisplayAvatar   : {
 		backgroundColor: theme.palette.secondary.light + IMPORTANT,
 		borderWidth    : "1px" + IMPORTANT,
 		borderStyle    : "solid" + IMPORTANT,
-		borderColor    : theme.palette.secondary.main + IMPORTANT 
+		borderColor    : theme.palette.secondary.main + IMPORTANT,
 	},
 	scDataDisplayBadge            : {},
 	scDataDisplayChip             : {},
@@ -58,16 +58,21 @@ export const defaultSCStyles = {
 	scDataDisplayTableHead        : {},
 	scDataDisplayTablePagination  : {},
 	scDataDisplayTableRow         : {},
-	scDataDisplayTableSortLabel   : {},
-	scDataDisplayTooltip          : {},
-	scDataDisplayTypography       : {},
+	scDataDisplayMobileTableRow   : {
+		padding          : 0,
+		borderBottomWidth: 1,
+		borderBottomColor: defaultUtilityStyles?.borderSecondary?.borderColor,
+	},
+	scDataDisplayTableSortLabel: {},
+	scDataDisplayTooltip       : {},
+	scDataDisplayTypography    : {},
 	/**************************************************
-	 * FEEDBACK
-	 *************************************************/
-	scFeedbackAlert               : {},
-	scFeedbackBackdrop            : {
+   * FEEDBACK
+   *************************************************/
+	scFeedbackAlert            : {},
+	scFeedbackBackdrop         : {
 		zIndex         : 1202 + IMPORTANT,
-		backgroundColor: theme.palette.secondary.transparentDark + IMPORTANT
+		backgroundColor: theme.palette.secondary.transparentDark + IMPORTANT,
 	},
 	scFeedbackCircularProgress: {},
 	scFeedbackLinearProgress  : {},
@@ -75,14 +80,14 @@ export const defaultSCStyles = {
 	scFeedbackSnackbar        : {},
 	scFeedbackDialog          : { minWidth: "60%" + IMPORTANT },
 	/**************************************************
-	 * SURFACES
-	 *************************************************/
+   * SURFACES
+   *************************************************/
 	scSurfacesAccordion       : {},
 	scSurfacesAccordionDetails: {},
 	scSurfacesAccordionSummery: {},
 	scSurfacesAppBar          : {
 		...defaultUtilityStyles.bgPrimary,
-		...defaultUtilityStyles.shadowNone
+		...defaultUtilityStyles.shadowNone,
 	},
 	scSurfacesCard          : {},
 	scSurfacesCardActionArea: {},
@@ -93,23 +98,48 @@ export const defaultSCStyles = {
 	scSurfacesPaper         : {},
 	scSurfacesToolbar       : {},
 	/**************************************************
-	 * NAVIGATION
-	 *************************************************/
+   * NAVIGATION
+   *************************************************/
 	scNavigationTab         : {},
-	scNavigationTabs        : {},
-	scNavigationLink        : {
+	scNavigationTabMobile   : {
+		minHeight     : 48,
+		minWidth      : 100,
+		alignItems    : "center",
+		justifyContent: "center",
+		textAlign     : "center",
+		paddingLeft   : 16,
+		paddingRight  : 16,
+		paddingTop    : 12,
+		paddingBottom : 12,
+	},
+	scNavigationTabActive: {
+		minHeight        : 48,
+		minWidth         : 100,
+		alignItems       : "center",
+		justifyContent   : "center",
+		textAlign        : "center",
+		paddingLeft      : 16,
+		paddingRight     : 16,
+		paddingTop       : 12,
+		paddingBottom    : 12,
+		...defaultUtilityStyles?.textPrimary,
+		borderBottomColor: defaultUtilityStyles?.borderPrimary?.borderColor,
+		borderBottomWidth: 2,
+	},
+	scNavigationTabs: {},
+	scNavigationLink: {
 		color     : theme.palette.primary.main + IMPORTANT,
 		fontWeight: 500 + IMPORTANT,
-		fontSize  : "0.812rem" + IMPORTANT
+		fontSize  : "0.812rem" + IMPORTANT,
 	},
 	scNavigationMenuItem: {},
 	scNavigationMenuList: {},
 	/**************************************************
-	 * LAYOUTS
-	 *************************************************/
+   * LAYOUTS
+   *************************************************/
 	scLayoutsAppDiv     : {
 		height: "100vh" + IMPORTANT,
-		width : "100vw" + IMPORTANT
+		width : "100vw" + IMPORTANT,
 	},
 	scLayoutsBox          : {},
 	scLayoutsContainer    : {},
@@ -118,40 +148,44 @@ export const defaultSCStyles = {
 	scLayoutsListItem     : {},
 	scLayoutsStack        : {},
 	/**************************************************
-	 * UTILS
-	 *************************************************/
+   * UTILS
+   *************************************************/
 	/**************************************************
-	 * FORM
-	 *************************************************/
+   * FORM
+   *************************************************/
 	scFormFormControlLabel: {},
 	scFormFormGroup       : {},
 
 	/**
-	 * Moved from core
-	 */
+   * Moved from core
+   */
 
 	/**
-	 * Core App Bar Styles
-	 */
+   * Core App Bar Styles
+   */
 	appbarHeight        : { top: HEADING_TOP_MARGIN + IMPORTANT },
 	appDrawerPaperHeight: { height: `calc(100% - ${HEADING_TOP_MARGIN})` + IMPORTANT },
 	appBarLogo          : { height: "30px" + IMPORTANT },
 
 	/**
-	 * @todo Have to remove this. This is here as it is used in menuUtil
-	 * when we creae seperae component for menu items this should be replaced
-	 */
+   * @todo Have to remove this. This is here as it is used in menuUtil
+   * when we creae seperae component for menu items this should be replaced
+   */
 
-	miniDrawerListItemButton: { /* minHeight: 48, paddingTop: 2, paddingBottom: 2 */ },
-	miniDrawerListItemIcon  : { minWidth: 0 + IMPORTANT },
+	miniDrawerListItemButton: {
+		/* minHeight: 48, paddingTop: 2, paddingBottom: 2 */
+	},
+	miniDrawerListItemIcon: { minWidth: 0 + IMPORTANT },
 
 	listItem      : {},
-	listItemButton: { /* paddingTop: 2, paddingBottom: 2, */ },
-	listItemIcon  : {},
-	listItemText  : {},
+	listItemButton: {
+		/* paddingTop: 2, paddingBottom: 2, */
+	},
+	listItemIcon: {},
+	listItemText: {},
 
 	headerItem: {
-		padding: 0 + IMPORTANT
+		padding: 0 + IMPORTANT,
 		// backgroundColor: theme.palette.secondary.light,
 	},
 	headerButtonItem: {},
@@ -159,7 +193,7 @@ export const defaultSCStyles = {
 	headerTextItem  : {},
 
 	parentItem: {
-		padding: 0 + IMPORTANT
+		padding: 0 + IMPORTANT,
 		// backgroundColor: theme.palette.secondary.light,
 	},
 	parentButtonItem: {},
@@ -167,23 +201,23 @@ export const defaultSCStyles = {
 	parentTextItem  : {},
 
 	seperatorItem: {
-		padding: 0 + IMPORTANT
+		padding: 0 + IMPORTANT,
 		// backgroundColor: theme.palette.secondary.light,
 	},
 	seperatorButtonItem: {
 		height   : 0 + IMPORTANT,
-		minHeight: 0 + IMPORTANT
+		minHeight: 0 + IMPORTANT,
 		// backgroundColor: "gray"
 	},
 	seperatorIconItem: {
 		height   : 0 + IMPORTANT,
 		minHeight: 0 + IMPORTANT,
-		display  : "none" + IMPORTANT
+		display  : "none" + IMPORTANT,
 	},
 	seperatorTextItem: { height: 0 + IMPORTANT, minHeight: 0 + IMPORTANT },
 
 	menuItem: {
-		padding: 0 + IMPORTANT
+		padding: 0 + IMPORTANT,
 		// backgroundColor: theme.palette.secondary.light,
 	},
 	menuItemButtonItem: {},
@@ -193,13 +227,13 @@ export const defaultSCStyles = {
 		color       : "rgb(88, 88, 88)" + IMPORTANT,
 		overflow    : "hidden" + IMPORTANT,
 		textOverflow: "ellipsis" + IMPORTANT,
-		whiteSpace  : "nowrap" + IMPORTANT
+		whiteSpace  : "nowrap" + IMPORTANT,
 	},
 	webFilePicker: {
 		justifyContent: "flex-end" + IMPORTANT,
 		display       : "flex" + IMPORTANT,
 		color         : "rgb(0,0,0,0.54)" + IMPORTANT,
-		borderBottom  : "1px solid rgba(0, 0, 0, 0.42)" + IMPORTANT
+		borderBottom  : "1px solid rgba(0, 0, 0, 0.42)" + IMPORTANT,
 	},
 	webTabHead: {
 		...defaultUtilityStyles.mb1,
@@ -208,6 +242,6 @@ export const defaultSCStyles = {
 		...defaultUtilityStyles.overflowXScroll,
 		...defaultUtilityStyles.w100,
 		marginLeft: "-8px" + IMPORTANT,
-		marginTop : "-8px" + IMPORTANT
-	}
+		marginTop : "-8px" + IMPORTANT,
+	},
 };

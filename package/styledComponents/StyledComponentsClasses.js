@@ -25,12 +25,14 @@ const StyledComponentsClasses = {
 		CUSTOM            : { RICH_TEXT_EDITOR: "scInputsCustomRichTextEditor" }
 	},
 	NAVIGATION: {
-		TAB            : "scNavigationTab",
-		TABS           : "scNavigationTabs",
-		LINK           : "scNavigationLink",
-		MENU_ITEM      : "scNavigationMenuItem",
-		MENU_LIST      : "scNavigationMenuList",
-		APP_DRAWER_TEXT: "appDrawerText"
+		TAB              : "scNavigationTab",
+		TAB_MOBILE       : "scNavigationTabMobile",
+		TAB_MOBILE_ACTIVE: "scNavigationTabActive",
+		TABS             : "scNavigationTabs",
+		LINK             : "scNavigationLink",
+		MENU_ITEM        : "scNavigationMenuItem",
+		MENU_LIST        : "scNavigationMenuList",
+		APP_DRAWER_TEXT  : "appDrawerText"
 	},
 	DATA_DISPLAY: {
 		AVATAR             : "scDataDisplayAvatar",
@@ -51,6 +53,7 @@ const StyledComponentsClasses = {
 		TABLE_HEAD         : "scDataDisplayTableHead",
 		TABLE_PAGINATION   : "scDataDisplayTablePagination",
 		TABLE_ROW          : "scDataDisplayTableRow",
+		MOBILE_TABLE_ROW   : "scDataDisplayMobileTableRow",
 		TABLE_SORT_LABEL   : "scDataDisplayTableSortLabel",
 		TOOLTIP            : "scDataDisplayTooltip",
 		TYPOGRAPHY         : "scDataDisplayTypography"
