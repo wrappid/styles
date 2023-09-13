@@ -63,6 +63,11 @@ export const defaultSCStyles = {
 		borderBottomWidth: 1,
 		borderBottomColor: defaultUtilityStyles?.borderSecondary?.borderColor,
 	},
+	scDataDisplayMobileToolbar: {
+		borderBottomWidth: 1,
+		borderBottomColor: defaultUtilityStyles?.borderPrimary?.borderColor,
+		marginTop        : "-" + defaultUtilityStyles?.m1?.margin
+	},
 	scDataDisplayTableSortLabel: {},
 	scDataDisplayTooltip       : {},
 	scDataDisplayTypography    : {},
