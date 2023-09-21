@@ -58,12 +58,8 @@ export const defaultSCStyles = {
 	scDataDisplayTableHead        : {},
 	scDataDisplayTablePagination  : {},
 	scDataDisplayTableRow         : {},
-	scDataDisplayMobileTableRow   : {
-		padding          : 0,
-		borderBottomWidth: 1,
-		borderBottomColor: defaultUtilityStyles?.borderSecondary?.borderColor,
-	},
-	scDataDisplayMobileToolbar: {
+	scDataDisplayMobileTableRow   : { padding: 0 },
+	scDataDisplayMobileToolbar    : {
 		borderBottomWidth: 1,
 		borderBottomColor: defaultUtilityStyles?.borderPrimary?.borderColor,
 		marginTop        : "-" + defaultUtilityStyles?.m1?.margin
