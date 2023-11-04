@@ -36,6 +36,7 @@ const StyledComponentsClasses = {
 	},
 	DATA_DISPLAY: {
 		AVATAR              : "scDataDisplayAvatar",
+		AVATAR_GROUP        : "scDataDisplayAvatarGroup",
 		BADGE               : "scDataDisplayBadge",
 		CHIP                : "scDataDisplayChip",
 		DIVIDER             : "scDataDisplayDivider",

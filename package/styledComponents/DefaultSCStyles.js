@@ -43,7 +43,7 @@ export const defaultSCStyles = {
 	},
 	scDataDisplayBadge            : {},
 	scDataDisplayChip             : {},
-	scDataDisplayDivider          : {},
+	scDataDisplayDivider          : { ...defaultUtilityStyles.my1 },
 	scDataDisplayIcon             : {},
 	scDataDisplayImage            : {},
 	scDataDisplayListItemAvatar   : {},
