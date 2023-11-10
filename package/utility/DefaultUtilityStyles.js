@@ -1,1279 +1,1416 @@
+import { remToPx } from "../StyleUtil";
 import { getConfigurationObject } from "../helper/helper";
 import { theme } from "../theme/theme";
 
 const DEFAULT_BORDER_WIDTH = 1;
+const DEFAULT_BORDER_RADIUS = 4;
 const DEFAULT_BORDER_STYLE = "solid";
 const DEFAULT_BORDER_COLOR = "black";
 const DEFAULT_BORDER =
-	DEFAULT_BORDER_WIDTH +
-	"px " +
-	DEFAULT_BORDER_STYLE +
-	" " +
-	DEFAULT_BORDER_COLOR;
+  DEFAULT_BORDER_WIDTH + "px " + DEFAULT_BORDER_STYLE + " " + DEFAULT_BORDER_COLOR;
 
 // -- const DEFAULT_SHADOW_COLOR = "black";
 const DEFAULT_SHADOW_COLOR_RGB = "0,0,0";
 
 const configuration = getConfigurationObject();
 
-export const IMPORTANT =
-	configuration?.wrappid?.platform === "web" ? " !important" : "";
+export const IMPORTANT = configuration?.wrappid?.platform === "web" ? " !important" : "";
 export const PX_TAG = configuration?.wrappid?.platform === "web" ? "px" : "";
 export const DEFAULT_MARGIN = 8;
 export const DEFAULT_PADDING = 8;
 export const DEFAULT_SPACING = 8;
 
 export const defaultUtilityStyles = {
-	alignContentAround: {
-		alignContent: "space-around",
-		display     : "flex"
-	},
-
-	alignContentBetween: {
-		alignContent: "space-between",
-		display     : "flex"
-	},
-
-	alignContentCenter: {
-		alignContent: "center",
-		display     : "flex"
-	},
-
-	alignContentEnd: {
-		alignContent: "flex-end",
-		display     : "flex"
-	},
-
-	alignContentStart: {
-		alignContent: "flex-start",
-		display     : "flex"
-	},
-
-	alignContentStretch: {
-		alignContent: "stretch",
-		display     : "flex"
-	},
-
-	alignItemsBaseline: {
-		alignItems: "baseline",
-		display   : "flex"
-	},
-
-	alignItemsCenter: {
-		alignItems: "center",
-		display   : "flex"
-	},
-
-	alignItemsEnd: {
-		alignItems: "flex-end",
-		display   : "flex"
-	},
-	/**************************************************
-	 * Alignment
-	 *************************************************/
-	alignItemsStart: {
-		alignItems: "flex-start",
-		display   : "flex"
-	},
-	alignItemsStretch: {
-		alignItems: "stretch",
-		display   : "flex"
-	},
-
-	alignSelfAuto    : { alignSelf: "auto", display: "flex" },
-	alignSelfBaseline: {
-		alignSelf: "baseline",
-		display  : "flex"
-	},
-	alignSelfCenter: {
-		alignSelf: "center",
-		display  : "flex"
-	},
-	alignSelfEnd: {
-		alignSelf: "flex-end",
-		display  : "flex"
-	},
-	alignSelfStart: {
-		alignSelf: "flex-start",
-		display  : "flex"
-	},
-	alignSelfStretch: {
-		alignSelf: "stretch",
-		display  : "flex"
-	},
-
-	bgBlack  : { backgroundColor: "black" },
-	bgDefault: { backgroundColor: theme.palette.background.default },
-
-	bgError: { backgroundColor: theme.palette.error.main },
-
-	bgErrorDark: { backgroundColor: theme.palette.error.dark },
-
-	bgErrorLight: { backgroundColor: theme.palette.error.light },
-
-	bgInfo: { backgroundColor: theme.palette.info.main },
-
-	bgInfoDark: { backgroundColor: theme.palette.info.dark },
-
-	bgInfoLight  : { backgroundColor: theme.palette.info.light },
-	/**************************************************
-	 * Background
-	 *************************************************/
-	bgPrimary    : { backgroundColor: theme.palette.primary.main },
-	bgPrimaryDark: { backgroundColor: theme.palette.primary.dark },
-
-	bgPrimaryLight : { backgroundColor: theme.palette.primary.light },
-	bgSecondary    : { backgroundColor: theme.palette.secondary.main },
-	bgSecondaryDark: { backgroundColor: theme.palette.secondary.dark },
+  alignContentAround: {
+    alignContent: "space-around",
+    display: "flex",
+  },
+
+  alignContentBetween: {
+    alignContent: "space-between",
+    display: "flex",
+  },
+
+  alignContentCenter: {
+    alignContent: "center",
+    display: "flex",
+  },
+
+  alignContentEnd: {
+    alignContent: "flex-end",
+    display: "flex",
+  },
+
+  alignContentStart: {
+    alignContent: "flex-start",
+    display: "flex",
+  },
+
+  alignContentStretch: {
+    alignContent: "stretch",
+    display: "flex",
+  },
+
+  alignItemsBaseline: {
+    alignItems: "baseline",
+    display: "flex",
+  },
+
+  alignItemsCenter: {
+    alignItems: "center",
+    display: "flex",
+  },
+
+  alignItemsEnd: {
+    alignItems: "flex-end",
+    display: "flex",
+  },
+  /**************************************************
+   * Alignment
+   *************************************************/
+  alignItemsStart: {
+    alignItems: "flex-start",
+    display: "flex",
+  },
+  alignItemsStretch: {
+    alignItems: "stretch",
+    display: "flex",
+  },
+
+  alignSelfAuto: { alignSelf: "auto", display: "flex" },
+  alignSelfBaseline: {
+    alignSelf: "baseline",
+    display: "flex",
+  },
+  alignSelfCenter: {
+    alignSelf: "center",
+    display: "flex",
+  },
+  alignSelfEnd: {
+    alignSelf: "flex-end",
+    display: "flex",
+  },
+  alignSelfStart: {
+    alignSelf: "flex-start",
+    display: "flex",
+  },
+  alignSelfStretch: {
+    alignSelf: "stretch",
+    display: "flex",
+  },
+
+  bgBlack: { backgroundColor: "black" },
+  bgDefault: { backgroundColor: theme.palette.background.default },
+
+  bgError: { backgroundColor: theme.palette.error.main },
+
+  bgErrorDark: { backgroundColor: theme.palette.error.dark },
+
+  bgErrorLight: { backgroundColor: theme.palette.error.light },
+
+  bgInfo: { backgroundColor: theme.palette.info.main },
+
+  bgInfoDark: { backgroundColor: theme.palette.info.dark },
+
+  bgInfoLight: { backgroundColor: theme.palette.info.light },
+  /**************************************************
+   * Background
+   *************************************************/
+  bgPrimary: { backgroundColor: theme.palette.primary.main },
+  bgPrimaryDark: { backgroundColor: theme.palette.primary.dark },
+
+  bgPrimaryLight: { backgroundColor: theme.palette.primary.light },
+  bgSecondary: { backgroundColor: theme.palette.secondary.main },
+  bgSecondaryDark: { backgroundColor: theme.palette.secondary.dark },
+
+  bgSecondaryLight: { backgroundColor: theme.palette.secondary.light },
+  bgSuccess: { backgroundColor: theme.palette.success.main },
+  bgSuccessDark: { backgroundColor: theme.palette.success.dark },
+
+  bgSuccessLight: { backgroundColor: theme.palette.success.light },
+  bgTransparent: { backgroundColor: "transparent" },
+  bgWarning: { backgroundColor: theme.palette.warning.main },
+
+  bgWarningDark: { backgroundColor: theme.palette.warning.dark },
+  bgWarningLight: { backgroundColor: theme.palette.warning.light },
+  bgWhite: { backgroundColor: "white" },
+
+  /**************************************************
+   * Border
+   *************************************************/
+  border: { border: DEFAULT_BORDER },
+  border0: { border: "none" },
+
+  borderTop: { border: "unset", borderTop: DEFAULT_BORDER },
+  borderTop0: { borderTop: "none" },
+
+  borderEnd: { border: "unset", borderRight: DEFAULT_BORDER },
+  borderEnd0: { borderRight: "none" },
+  borderRight: { border: "unset", borderRight: DEFAULT_BORDER },
+  borderRight0: { borderRight: "none" },
+
+  borderBottom: { border: "unset", borderBottom: DEFAULT_BORDER },
+  borderBottom0: { borderBottom: "none" },
+
+  borderStart: { border: "unset", borderLeft: DEFAULT_BORDER },
+  borderStart0: { borderLeft: "none" },
+  borderLeft: { border: "unset", borderLeft: DEFAULT_BORDER },
+  borderLeft0: { borderLeft: "none" },
+
+  borderPrimary: { borderColor: theme.palette.primary.main },
+  borderPrimaryLight: { borderColor: theme.palette.primary.light },
+  borderPrimaryDark: { borderColor: theme.palette.primary.dark },
+
+  borderSecondary: { borderColor: theme.palette.secondary.main },
+  borderSecondaryLight: { borderColor: theme.palette.secondary.light },
+  borderSecondaryDark: { borderColor: theme.palette.secondary.dark },
+
+  borderSuccess: { borderColor: theme.palette.success.main },
+  borderSuccessLight: { borderColor: theme.palette.success.light },
+  borderSuccessDark: { borderColor: theme.palette.success.dark },
+
+  borderError: { borderColor: theme.palette.error.main },
+  borderErrorLight: { borderColor: theme.palette.error.light },
+  borderErrorDark: { borderColor: theme.palette.error.dark },
+
+  borderWarning: { borderColor: theme.palette.warning.main },
+  borderWarningLight: { borderColor: theme.palette.warning.light },
+  borderWarningDark: { borderColor: theme.palette.warning.dark },
+
+  borderInfo: { borderColor: theme.palette.info.main },
+  borderInfoDark: { borderColor: theme.palette.info.dark },
+  borderInfoLight: { borderColor: theme.palette.info.light },
+
+  borderBlack: { borderColor: "black" },
+  borderWhite: { borderColor: "white" },
+
+  border1: { borderWidth: DEFAULT_BORDER_WIDTH + PX_TAG },
+  border2: { borderWidth: DEFAULT_BORDER_WIDTH * 2 + PX_TAG },
+  border3: { borderWidth: DEFAULT_BORDER_WIDTH * 3 + PX_TAG },
+  border4: { borderWidth: DEFAULT_BORDER_WIDTH * 4 + PX_TAG },
+  border5: { borderWidth: DEFAULT_BORDER_WIDTH * 5 + PX_TAG },
+
+  borderNone: { borderStyle: "none" },
+  borderDashed: { borderStyle: "dashed" },
+  borderDotted: { borderStyle: "dotted" },
+  borderDouble: { borderStyle: "double" },
+  borderGroove: { borderStyle: "groove" },
+  borderHidden: { borderStyle: "hidden" },
+  borderInset: { borderStyle: "inset" },
+  borderOutset: { borderStyle: "outset" },
+  borderRidge: { borderStyle: "ridge" },
+  borderSolid: { borderStyle: "solid" },
+
+  bottom0: { bottom: "0" },
+  bottom100: { bottom: "100%" },
+  bottom50: { bottom: "50%" },
+
+  borderRounded: { borderRadius: DEFAULT_BORDER_RADIUS * 2 + PX_TAG + IMPORTANT },
+  borderRounded0: { borderRadius: 0 + IMPORTANT },
+  borderRounded1: { borderRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT },
+  borderRounded2: { borderRadius: DEFAULT_BORDER_RADIUS * 2 + PX_TAG + IMPORTANT },
+  borderRounded3: { borderRadius: DEFAULT_BORDER_RADIUS * 3 + PX_TAG + IMPORTANT },
+  borderRounded4: { borderRadius: DEFAULT_BORDER_RADIUS * 4 + PX_TAG + IMPORTANT },
+  borderRounded5: { borderRadius: DEFAULT_BORDER_RADIUS * 5 + PX_TAG + IMPORTANT },
+  borderRoundedCircle: { borderRadius: "50%" + IMPORTANT },
+  borderRoundedPill: { borderRadius: "50rem" + IMPORTANT },
+
+  borderRoundedTop: {
+    borderTopLeftRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
+    borderTopRightRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
+  },
+  borderRoundedTop0: { borderTopLeftRadius: 0 + IMPORTANT, borderTopRightRadius: 0 + IMPORTANT },
+  borderRoundedTop1: {
+    borderTopLeftRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
+    borderTopRightRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
+  },
+  borderRoundedTop2: {
+    borderTopLeftRadius: DEFAULT_BORDER_RADIUS * 2 + PX_TAG + IMPORTANT,
+    borderTopRightRadius: DEFAULT_BORDER_RADIUS * 2 + PX_TAG + IMPORTANT,
+  },
+  borderRoundedTop3: {
+    borderTopLeftRadius: DEFAULT_BORDER_RADIUS * 3 + PX_TAG + IMPORTANT,
+    borderTopRightRadius: DEFAULT_BORDER_RADIUS * 3 + PX_TAG + IMPORTANT,
+  },
+  borderRoundedTop4: {
+    borderTopLeftRadius: DEFAULT_BORDER_RADIUS * 4 + PX_TAG + IMPORTANT,
+    borderTopRightRadius: DEFAULT_BORDER_RADIUS * 4 + PX_TAG + IMPORTANT,
+  },
+  borderRoundedTop5: {
+    borderTopLeftRadius: DEFAULT_BORDER_RADIUS * 5 + PX_TAG + IMPORTANT,
+    borderTopRightRadius: DEFAULT_BORDER_RADIUS * 5 + PX_TAG + IMPORTANT,
+  },
+  borderRoundedTopCircle: {
+    borderTopLeftRadius: "50%" + IMPORTANT,
+    borderTopRightRadius: "50%" + IMPORTANT,
+  },
+  borderRoundedTopPill: {
+    borderTopLeftRadius: "50rem" + IMPORTANT,
+    borderTopRightRadius: "50rem" + IMPORTANT,
+  },
+
+  borderRoundedEnd: {
+    borderTopRightRadius: DEFAULT_BORDER_RADIUS + IMPORTANT,
+    borderBottomRightRadius: DEFAULT_BORDER_RADIUS + IMPORTANT,
+  },
+  borderRoundedEnd0: {
+    borderTopRightRadius: 0 + IMPORTANT,
+    borderBottomRightRadius: 0 + IMPORTANT,
+  },
+  borderRoundedEnd1: {
+    borderTopRightRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
+    borderBottomRightRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
+  },
+  borderRoundedEnd2: {
+    borderTopRightRadius: DEFAULT_BORDER_RADIUS * 2 + PX_TAG + IMPORTANT,
+    borderBottomRightRadius: DEFAULT_BORDER_RADIUS * 2 + PX_TAG + IMPORTANT,
+  },
+  borderRoundedEnd3: {
+    borderTopRightRadius: DEFAULT_BORDER_RADIUS * 3 + PX_TAG + IMPORTANT,
+    borderBottomRightRadius: DEFAULT_BORDER_RADIUS * 3 + PX_TAG + IMPORTANT,
+  },
+  borderRoundedEnd4: {
+    borderTopRightRadius: DEFAULT_BORDER_RADIUS * 4 + PX_TAG + IMPORTANT,
+    borderBottomRightRadius: DEFAULT_BORDER_RADIUS * 4 + PX_TAG + IMPORTANT,
+  },
+  borderRoundedEnd5: {
+    borderTopRightRadius: DEFAULT_BORDER_RADIUS * 5 + PX_TAG + IMPORTANT,
+    borderBottomRightRadius: DEFAULT_BORDER_RADIUS * 5 + PX_TAG + IMPORTANT,
+  },
+  borderRoundedEndCircle: {
+    borderTopRightRadius: "50%" + IMPORTANT,
+    borderBottomRightRadius: "50%" + IMPORTANT,
+  },
+  borderRoundedEndPill: {
+    borderTopRightRadius: "50rem" + IMPORTANT,
+    borderBottomRightRadius: "50rem" + IMPORTANT,
+  },
+
+  borderRoundedBottom: {
+    borderBottomRightRadius: DEFAULT_BORDER_RADIUS + IMPORTANT,
+    borderBottomLeftRadius: DEFAULT_BORDER_RADIUS + IMPORTANT,
+  },
+  borderRoundedBottom0: {
+    borderBottomRightRadius: 0 + IMPORTANT,
+    borderBottomLeftRadius: 0 + IMPORTANT,
+  },
+  borderRoundedBottom1: {
+    borderBottomRightRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
+    borderBottomLeftRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
+  },
+  borderRoundedBottom2: {
+    borderBottomRightRadius: DEFAULT_BORDER_RADIUS * 2 + PX_TAG + IMPORTANT,
+    borderBottomLeftRadius: DEFAULT_BORDER_RADIUS * 2 + PX_TAG + IMPORTANT,
+  },
+  borderRoundedBottom3: {
+    borderBottomRightRadius: DEFAULT_BORDER_RADIUS * 3 + PX_TAG + IMPORTANT,
+    borderBottomLeftRadius: DEFAULT_BORDER_RADIUS * 3 + PX_TAG + IMPORTANT,
+  },
+  borderRoundedBottom4: {
+    borderBottomRightRadius: DEFAULT_BORDER_RADIUS * 4 + PX_TAG + IMPORTANT,
+    borderBottomLeftRadius: DEFAULT_BORDER_RADIUS * 4 + PX_TAG + IMPORTANT,
+  },
+  borderRoundedBottom5: {
+    borderBottomRightRadius: DEFAULT_BORDER_RADIUS * 5 + PX_TAG + IMPORTANT,
+    borderBottomLeftRadius: DEFAULT_BORDER_RADIUS * 5 + PX_TAG + IMPORTANT,
+  },
+  borderRoundedBottomCircle: {
+    borderBottomRightRadius: "50%" + IMPORTANT,
+    borderBottomLeftRadius: "50%" + IMPORTANT,
+  },
+  borderRoundedBottomPill: {
+    borderBottomRightRadius: "50rem" + IMPORTANT,
+    borderBottomLeftRadius: "50rem" + IMPORTANT,
+  },
+
+  borderRoundedStart: {
+    borderBottomLeftRadius: DEFAULT_BORDER_RADIUS + IMPORTANT,
+    borderTopLeftRadius: DEFAULT_BORDER_RADIUS + IMPORTANT,
+  },
+  borderRoundedStart0: {
+    borderBottomLeftRadius: 0 + IMPORTANT,
+    borderTopLeftRadius: 0 + IMPORTANT,
+  },
+  borderRoundedStart1: {
+    borderBottomLeftRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
+    borderTopLeftRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
+  },
+  borderRoundedStart2: {
+    borderBottomLeftRadius: DEFAULT_BORDER_RADIUS * 2 + PX_TAG + IMPORTANT,
+    borderTopLeftRadius: DEFAULT_BORDER_RADIUS * 2 + PX_TAG + IMPORTANT,
+  },
+  borderRoundedStart3: {
+    borderBottomLeftRadius: DEFAULT_BORDER_RADIUS * 3 + PX_TAG + IMPORTANT,
+    borderTopLeftRadius: DEFAULT_BORDER_RADIUS * 3 + PX_TAG + IMPORTANT,
+  },
+  borderRoundedStart4: {
+    borderBottomLeftRadius: DEFAULT_BORDER_RADIUS * 4 + PX_TAG + IMPORTANT,
+    borderTopLeftRadius: DEFAULT_BORDER_RADIUS * 4 + PX_TAG + IMPORTANT,
+  },
+  borderRoundedStart5: {
+    borderBottomLeftRadius: DEFAULT_BORDER_RADIUS * 5 + PX_TAG + IMPORTANT,
+    borderTopLeftRadius: DEFAULT_BORDER_RADIUS * 5 + PX_TAG + IMPORTANT,
+  },
+  borderRoundedStartCircle: {
+    borderBottomLeftRadius: "50%" + IMPORTANT,
+    borderTopLeftRadius: "50%" + IMPORTANT,
+  },
+  borderRoundedStartPill: {
+    borderBottomLeftRadius: "50rem" + IMPORTANT,
+    borderTopLeftRadius: "50rem" + IMPORTANT,
+  },
+
+  boxSizingBorderBox: { boxSizing: "border-box" },
+
+  /**************************************************
+   * Sizing
+   *************************************************/
+  boxSizingContentBox: { boxSizing: "content-box" },
+
+  boxSizingInherit: { boxSizing: "inherit" },
+
+  boxSizingInitial: { boxSizing: "initial" },
+
+  displayBlock: { display: "block" },
+
+  displayFlex: { display: "flex" },
+
+  displayGrid: { display: "grid" },
+
+  // -- textPrimaryEmphasis: {},
+  // -- textSecondaryEmphasis: {},
+  // -- textSuccessEmphasis: {},
+  // -- textInfoEmphasis: {},
+  // -- textWarningEmphasis: {},
+  // -- textDangerEmphasis: {},
+  // -- textLightEmphasis: {},
+  // -- textDarkEmphasis: {},
+  /**************************************************
+   * Display
+   *************************************************/
+  displayInline: { display: "inline" },
+
+  displayInlineBlock: { display: "inline-block" },
+
+  displayInlineFlex: { display: "inline-flex" },
+
+  displayNone: { display: "none" },
+
+  displayTable: { display: "table" },
+
+  displayTableCell: { display: "table-cell" },
+
+  displayTableRow: { display: "table-row" },
+
+  end0: { right: "0" },
+
+  end100: { right: "100%" },
+
+  end50: { right: "50%" },
+
+  fixedBottom: {
+    bottom: "0",
+    left: "0",
+    position: "fixed",
+    right: "0",
+    zIndex: "1030",
+  },
+
+  fixedTop: {
+    left: "0",
+    position: "fixed",
+    right: "0",
+    top: "0",
+    zIndex: "1030",
+  },
+
+  flexDirectionColumn: { flexDirection: "column" },
+
+  flexDirectionColumnReverse: { flexDirection: "column-reverse" },
+
+  /**************************************************
+   * Flex
+   *************************************************/
+  flexDirectionRow: { flexDirection: "row" },
+
+  flexDirectionRowReverse: { flexDirection: "row-reverse" },
+
+  flexFill: { flex: "1 1 auto" },
+
+  flexGrow0: { flexGrow: "0" },
+
+  flexGrow1: { flexGrow: "1" },
+
+  flexShrink0: { flexShrink: "0" },
+
+  flexShrink1: { flexShrink: "1" },
+
+  flexWrapNoWrap: { flexWrap: "nowrap" },
+
+  flexWrapWrap: { flexWrap: "wrap" },
+
+  flexWrapWrapReverse: { flexWrap: "wrap-reverse" },
+
+  floatEnd: { float: "right" },
+
+  floatNone: { float: "none" },
+
+  /**************************************************
+   * Float
+   *************************************************/
+  floatStart: { float: "left" },
+
+  h100: { height: "100%" },
+
+  /*-------------------------------------------------
+   * Height
+   *-----------------------------------------------*/
+  h25: { height: "25%" },
+
+  h50: { height: "50%" },
+
+  h75: { height: "75%" },
+
+  hAuto: { height: "auto" },
+
+  justifyContentCenter: {
+    display: "flex",
+    justifyContent: "center",
+  },
+
+  justifyContentFlexEnd: {
+    display: "flex",
+    justifyContent: "flex-end",
+  },
+
+  justifyContentFlexStart: {
+    display: "flex",
+    justifyContent: "flex-start",
+  },
+
+  justifyContentSpaceAround: {
+    display: "flex",
+    justifyContent: "space-around",
+  },
+
+  justifyContentSpaceBetween: {
+    display: "flex",
+    justifyContent: "space-between",
+  },
+
+  justifyContentSpaceEvenly: {
+    display: "flex",
+    justifyContent: "space-evenly",
+  },
+
+  /*-------------------------------------------------
+   * Margin
+   *-----------------------------------------------*/
+  m0: { margin: 0 },
+
+  m1: { margin: DEFAULT_MARGIN + PX_TAG },
+
+  m2: { margin: DEFAULT_MARGIN * 2 + PX_TAG },
+
+  m3: { margin: DEFAULT_MARGIN * 3 + PX_TAG },
+
+  /*-------------------------------------------------
+   * Gap
+   *-----------------------------------------------*/
+  gap0: { gap: "0" },
+
+  m4: { margin: DEFAULT_MARGIN * 4 + PX_TAG },
+
+  m5: { margin: DEFAULT_MARGIN * 5 + PX_TAG },
+
+  mAuto: { margin: "auto" },
+
+  gap1: { gap: DEFAULT_SPACING * 1 },
+
+  mN1: { margin: DEFAULT_MARGIN * -1 + PX_TAG },
+
+  gap2: { gap: DEFAULT_SPACING * 2 },
+
+  mN2: { margin: DEFAULT_MARGIN * -2 + PX_TAG },
+
+  gap3: { gap: DEFAULT_SPACING * 3 },
+
+  mN3: { margin: DEFAULT_MARGIN * -3 + PX_TAG },
 
-	bgSecondaryLight: { backgroundColor: theme.palette.secondary.light },
-	bgSuccess       : { backgroundColor: theme.palette.success.main },
-	bgSuccessDark   : { backgroundColor: theme.palette.success.dark },
+  gap4: { gap: DEFAULT_SPACING * 4 },
 
-	bgSuccessLight: { backgroundColor: theme.palette.success.light },
-	bgTransparent : { backgroundColor: "transparent" },
-	bgWarning     : { backgroundColor: theme.palette.warning.main },
+  mN4: { margin: DEFAULT_MARGIN * -4 + PX_TAG },
 
-	bgWarningDark : { backgroundColor: theme.palette.warning.dark },
-	bgWarningLight: { backgroundColor: theme.palette.warning.light },
-	bgWhite       : { backgroundColor: "white" },
+  gap5: { gap: DEFAULT_SPACING * 5 },
 
-	/**************************************************
-	 * Border
-	 *************************************************/
-	border: { border: DEFAULT_BORDER },
+  mN5: { margin: DEFAULT_MARGIN * -5 + PX_TAG },
 
-	border0: { border: "none" },
+  // -moz-column-gap: 0 !important;
+  colGap0: { columnGap: "0" },
 
-	border1: { borderWidth: DEFAULT_BORDER_WIDTH + PX_TAG },
+  maxH100: { maxHeight: "100%" },
 
-	border2: { borderWidth: DEFAULT_BORDER_WIDTH * 2 + PX_TAG },
+  maxH25: { maxHeight: "25%" },
 
-	border3: { borderWidth: DEFAULT_BORDER_WIDTH * 3 + PX_TAG },
+  colGap1: { columnGap: DEFAULT_SPACING * 1 },
 
-	border4: { borderWidth: DEFAULT_BORDER_WIDTH * 4 + PX_TAG },
+  maxH50: { maxHeight: "50%" },
 
-	border5    : { borderWidth: DEFAULT_BORDER_WIDTH * 5 + PX_TAG },
-	borderBlack: { borderColor: "black" },
+  colGap2: { columnGap: DEFAULT_SPACING * 2 },
 
-	borderBottom : { border: "unset", borderBottom: DEFAULT_BORDER },
-	borderBottom0: { borderBottom: "none" },
+  maxH75: { maxHeight: "75%" },
 
-	borderDashed: { borderStyle: "dashed" },
-	borderDotted: { borderStyle: "dotted" },
-	borderDouble: { borderStyle: "double" },
-	borderEnd   : { border: "unset", borderRight: DEFAULT_BORDER },
+  colGap3: { columnGap: DEFAULT_SPACING * 3 },
 
-	borderEnd0 : { borderRight: "none" },
-	borderError: { borderColor: theme.palette.error.main },
+  maxVh100: { maxHeight: "100vh" },
 
-	borderErrorDark : { borderColor: theme.palette.error.dark },
-	borderErrorLight: { borderColor: theme.palette.error.light },
-	borderGroove    : { borderStyle: "groove" },
-	borderHidden    : { borderStyle: "hidden" },
+  colGap4: { columnGap: DEFAULT_SPACING * 4 },
 
-	borderInfo     : { borderColor: theme.palette.info.main },
-	borderInfoDark : { borderColor: theme.palette.info.dark },
-	borderInfoLight: { borderColor: theme.palette.info.light },
+  maxVh25: { maxHeight: "25vh" },
 
-	borderInset: { borderStyle: "inset" },
-	borderLeft : { border: "unset", borderLeft: DEFAULT_BORDER },
-	borderLeft0: { borderLeft: "none" },
+  colGap5: { columnGap: DEFAULT_SPACING * 5 },
 
-	borderNone   : { borderStyle: "none" },
-	borderOutset : { borderStyle: "outset" },
-	borderPrimary: { borderColor: theme.palette.primary.main },
+  maxVh50: { maxHeight: "50vh" },
 
-	borderPrimaryDark : { borderColor: theme.palette.primary.dark },
-	borderPrimaryLight: { borderColor: theme.palette.primary.light },
-	borderRidge       : { borderStyle: "ridge" },
+  maxVh75: { maxHeight: "75vh" },
 
-	borderRight    : { border: "unset", borderRight: DEFAULT_BORDER },
-	borderRight0   : { borderRight: "none" },
-	borderSecondary: { borderColor: theme.palette.secondary.main },
+  maxVw100: { maxWidth: "100vw" },
 
-	borderSecondaryDark : { borderColor: theme.palette.secondary.dark },
-	borderSecondaryLight: { borderColor: theme.palette.secondary.light },
-	borderSolid         : { borderStyle: "solid" },
+  maxVw25: { maxWidth: "25vw" },
 
-	borderStart : { border: "unset", borderLeft: DEFAULT_BORDER },
-	borderStart0: { borderLeft: "none" },
+  maxVw50: { maxWidth: "50vw" },
 
-	borderSuccess     : { borderColor: theme.palette.success.main },
-	borderSuccessDark : { borderColor: theme.palette.success.dark },
-	borderSuccessLight: { borderColor: theme.palette.success.light },
-	borderTop         : { border: "unset", borderTop: DEFAULT_BORDER },
-	borderTop0        : { borderTop: "none" },
-	borderWarning     : { borderColor: theme.palette.warning.main },
-	borderWarningDark : { borderColor: theme.palette.warning.dark },
-	borderWarningLight: { borderColor: theme.palette.warning.light },
-	borderWhite       : { borderColor: "white" },
-	bottom0           : { bottom: "0" },
+  maxVw75: { maxWidth: "75vw" },
 
-	bottom100: { bottom: "100%" },
-	bottom50 : { bottom: "50%" },
+  maxW100: { maxWidth: "100%" },
 
-	boxSizingBorderBox: { boxSizing: "border-box" },
+  maxW25: { maxWidth: "25%" },
 
-	/**************************************************
-	 * Sizing
-	 *************************************************/
-	boxSizingContentBox: { boxSizing: "content-box" },
+  maxW50: { maxWidth: "50%" },
 
-	boxSizingInherit: { boxSizing: "inherit" },
+  maxW75: { maxWidth: "75%" },
 
-	boxSizingInitial: { boxSizing: "initial" },
+  mb0: { marginBottom: 0 },
 
-	displayBlock: { display: "block" },
+  mb1: { marginBottom: DEFAULT_MARGIN + PX_TAG },
 
-	displayFlex: { display: "flex" },
+  /**************************************************
+   * Vertical Align
+   *************************************************/
+  alignBaseline: { verticalAlign: "baseline" },
 
-	displayGrid: { display: "grid" },
+  mb2: { marginBottom: DEFAULT_MARGIN * 2 + PX_TAG },
 
-	// -- textPrimaryEmphasis: {},
-	// -- textSecondaryEmphasis: {},
-	// -- textSuccessEmphasis: {},
-	// -- textInfoEmphasis: {},
-	// -- textWarningEmphasis: {},
-	// -- textDangerEmphasis: {},
-	// -- textLightEmphasis: {},
-	// -- textDarkEmphasis: {},
-	/**************************************************
-	 * Display
-	 *************************************************/
-	displayInline: { display: "inline" },
+  mb3: { marginBottom: DEFAULT_MARGIN * 3 + PX_TAG },
 
-	displayInlineBlock: { display: "inline-block" },
+  alignMiddle: { verticalAlign: "middle" },
 
-	displayInlineFlex: { display: "inline-flex" },
+  mb4: { marginBottom: DEFAULT_MARGIN * 4 + PX_TAG },
 
-	displayNone: { display: "none" },
+  alignBottom: { verticalAlign: "bottom" },
 
-	displayTable: { display: "table" },
+  mb5: { marginBottom: DEFAULT_MARGIN * 5 + PX_TAG },
 
-	displayTableCell: { display: "table-cell" },
+  mbAuto: { marginBottom: "auto" },
 
-	displayTableRow: { display: "table-row" },
+  alignTextBottom: { verticalAlign: "text-bottom" },
 
-	end0: { right: "0" },
+  mbN1: { marginBottom: DEFAULT_MARGIN * -1 + PX_TAG },
 
-	end100: { right: "100%" },
+  alignTextTop: { verticalAlign: "text-top" },
 
-	end50: { right: "50%" },
+  mbN2: { marginBottom: DEFAULT_MARGIN * -2 + PX_TAG },
 
-	fixedBottom: {
-		bottom  : "0",
-		left    : "0",
-		position: "fixed",
-		right   : "0",
-		zIndex  : "1030"
-	},
+  alignTop: { verticalAlign: "top" },
 
-	fixedTop: {
-		left    : "0",
-		position: "fixed",
-		right   : "0",
-		top     : "0",
-		zIndex  : "1030"
-	},
+  mbN3: { marginBottom: DEFAULT_MARGIN * -3 + PX_TAG },
 
-	flexDirectionColumn: { flexDirection: "column" },
+  invisible: { visibility: "hidden" },
 
-	flexDirectionColumnReverse: { flexDirection: "column-reverse" },
+  mbN4: { marginBottom: DEFAULT_MARGIN * -4 + PX_TAG },
 
-	/**************************************************
-	 * Flex
-	 *************************************************/
-	flexDirectionRow: { flexDirection: "row" },
+  /**************************************************
+   * cursor
+   *************************************************/
+  cursorAlias: { cursor: "alias " },
 
-	flexDirectionRowReverse: { flexDirection: "row-reverse" },
+  mbN5: { marginBottom: DEFAULT_MARGIN * -5 + PX_TAG },
 
-	flexFill: { flex: "1 1 auto" },
+  minH100: { minHeight: "100%" },
 
-	flexGrow0: { flexGrow: "0" },
+  cursorAllScroll: { cursor: "all-scroll " },
 
-	flexGrow1: { flexGrow: "1" },
+  minH25: { minHeight: "25%" },
 
-	flexShrink0: { flexShrink: "0" },
+  cursorAuto: { cursor: "auto" },
 
-	flexShrink1: { flexShrink: "1" },
+  minH50: { minHeight: "50%" },
 
-	flexWrapNoWrap: { flexWrap: "nowrap" },
+  cursorCell: { cursor: "cell " },
 
-	flexWrapWrap: { flexWrap: "wrap" },
+  minH75: { minHeight: "75%" },
 
-	flexWrapWrapReverse: { flexWrap: "wrap-reverse" },
+  cursorColResize: { cursor: "col-resize " },
 
-	floatEnd: { float: "right" },
+  minVh100: { minHeight: "100vh" },
 
-	floatNone: { float: "none" },
+  minVh25: { minHeight: "25vh" },
 
-	/**************************************************
-	 * Float
-	 *************************************************/
-	floatStart: { float: "left" },
+  cursorContextMenu: { cursor: "context-menu" },
 
-	h100: { height: "100%" },
+  minVh50: { minHeight: "50vh" },
 
-	/*-------------------------------------------------
-	 * Height
-	 *-----------------------------------------------*/
-	h25: { height: "25%" },
+  minVh75: { minHeight: "75vh" },
 
-	h50: { height: "50%" },
+  cursorCopy: { cursor: "copy " },
 
-	h75: { height: "75%" },
+  minVw100: { minWidth: "100vw" },
 
-	hAuto: { height: "auto" },
+  cursorCrosshair: { cursor: "crosshair " },
 
-	justifyContentCenter: {
-		display       : "flex",
-		justifyContent: "center"
-	},
+  minVw25: { minWidth: "25vw" },
 
-	justifyContentFlexEnd: {
-		display       : "flex",
-		justifyContent: "flex-end"
-	},
+  cursorDefault: { cursor: "default " },
 
-	justifyContentFlexStart: {
-		display       : "flex",
-		justifyContent: "flex-start"
-	},
+  minVw50: { minWidth: "50vw" },
 
-	justifyContentSpaceAround: {
-		display       : "flex",
-		justifyContent: "space-around"
-	},
+  cursorEResize: { cursor: "e-resize " },
 
-	justifyContentSpaceBetween: {
-		display       : "flex",
-		justifyContent: "space-between"
-	},
+  minVw75: { minWidth: "75vw" },
 
-	justifyContentSpaceEvenly: {
-		display       : "flex",
-		justifyContent: "space-evenly"
-	},
+  cursorEwResize: { cursor: "ew-resize " },
 
-	/*-------------------------------------------------
-	 * Margin
-	 *-----------------------------------------------*/
-	m0: { margin: 0 },
+  minW100: { minWidth: "100%" },
 
-	m1: { margin: DEFAULT_MARGIN + PX_TAG },
+  cursorGrab: { cursor: "grab " },
 
-	m2: { margin: DEFAULT_MARGIN * 2 + PX_TAG },
+  minW25: { minWidth: "25%" },
 
-	m3: { margin: DEFAULT_MARGIN * 3 + PX_TAG },
+  cursorGrabbing: { cursor: "grabbing " },
 
-	/*-------------------------------------------------
-	 * Gap
-	 *-----------------------------------------------*/
-	gap0: { gap: "0" },
+  minW50: { minWidth: "50%" },
 
-	m4: { margin: DEFAULT_MARGIN * 4 + PX_TAG },
+  cursorHelp: { cursor: "help " },
 
-	m5: { margin: DEFAULT_MARGIN * 5 + PX_TAG },
+  minW75: { minWidth: "75%" },
 
-	mAuto: { margin: "auto" },
+  cursorMove: { cursor: "move " },
 
-	gap1: { gap: DEFAULT_SPACING * 1 },
+  ml0: { marginLeft: 0 },
 
-	mN1: { margin: DEFAULT_MARGIN * -1 + PX_TAG },
+  cursorNResize: { cursor: "n-resize " },
 
-	gap2: { gap: DEFAULT_SPACING * 2 },
+  ml1: { marginLeft: DEFAULT_MARGIN + PX_TAG },
 
-	mN2: { margin: DEFAULT_MARGIN * -2 + PX_TAG },
+  cursorNeResize: { cursor: "ne-resize " },
 
-	gap3: { gap: DEFAULT_SPACING * 3 },
+  ml2: { marginLeft: DEFAULT_MARGIN * 2 + PX_TAG },
 
-	mN3: { margin: DEFAULT_MARGIN * -3 + PX_TAG },
+  cursorNeswResize: { cursor: "nesw-resize" },
 
-	gap4: { gap: DEFAULT_SPACING * 4 },
+  ml3: { marginLeft: DEFAULT_MARGIN * 3 + PX_TAG },
 
-	mN4: { margin: DEFAULT_MARGIN * -4 + PX_TAG },
+  cursorInitial: { cursor: "initial " },
 
-	gap5: { gap: DEFAULT_SPACING * 5 },
+  ml4: { marginLeft: DEFAULT_MARGIN * 4 + PX_TAG },
 
-	mN5: { margin: DEFAULT_MARGIN * -5 + PX_TAG },
+  cursorNoDrop: { cursor: "no-drop " },
 
-	// -moz-column-gap: 0 !important;
-	colGap0: { columnGap: "0" },
+  ml5: { marginLeft: DEFAULT_MARGIN * 5 + PX_TAG },
 
-	maxH100: { maxHeight: "100%" },
+  cursorInherit: { cursor: "inherit" },
 
-	maxH25: { maxHeight: "25%" },
+  mlAuto: { marginLeft: "auto" },
 
-	colGap1: { columnGap: DEFAULT_SPACING * 1 },
+  cursorNone: { cursor: "none " },
 
-	maxH50: { maxHeight: "50%" },
+  mlN1: { marginLeft: DEFAULT_MARGIN * -1 + PX_TAG },
 
-	colGap2: { columnGap: DEFAULT_SPACING * 2 },
+  cursorNotAllowed: { cursor: "not-allowed " },
 
-	maxH75: { maxHeight: "75%" },
+  mlN2: { marginLeft: DEFAULT_MARGIN * -2 + PX_TAG },
 
-	colGap3: { columnGap: DEFAULT_SPACING * 3 },
+  cursorNsResize: { cursor: "ns-resize " },
 
-	maxVh100: { maxHeight: "100vh" },
+  mlN3: { marginLeft: DEFAULT_MARGIN * -3 + PX_TAG },
 
-	colGap4: { columnGap: DEFAULT_SPACING * 4 },
+  cursorNwResize: { cursor: "nw-resize " },
 
-	maxVh25: { maxHeight: "25vh" },
+  mlN4: { marginLeft: DEFAULT_MARGIN * -4 + PX_TAG },
 
-	colGap5: { columnGap: DEFAULT_SPACING * 5 },
+  cursorNwseResize: { cursor: "nwse-resize" },
 
-	maxVh50: { maxHeight: "50vh" },
+  mlN5: { marginLeft: DEFAULT_MARGIN * -5 + PX_TAG },
 
-	maxVh75: { maxHeight: "75vh" },
+  cursorPointer: { cursor: "pointer " },
 
-	maxVw100: { maxWidth: "100vw" },
+  mr0: { marginRight: 0 },
 
-	maxVw25: { maxWidth: "25vw" },
+  cursorProgress: { cursor: "progress " },
 
-	maxVw50: { maxWidth: "50vw" },
+  mr1: { marginRight: DEFAULT_MARGIN + PX_TAG },
 
-	maxVw75: { maxWidth: "75vw" },
+  cursorRowResize: { cursor: "row-resize " },
 
-	maxW100: { maxWidth: "100%" },
+  mr2: { marginRight: DEFAULT_MARGIN * 2 + PX_TAG },
 
-	maxW25: { maxWidth: "25%" },
+  cursorSResize: { cursor: "s-resize " },
 
-	maxW50: { maxWidth: "50%" },
+  mr3: { marginRight: DEFAULT_MARGIN * 3 + PX_TAG },
 
-	maxW75: { maxWidth: "75%" },
+  cursorSeResize: { cursor: "se-resize " },
 
-	mb0: { marginBottom: 0 },
+  mr4: { marginRight: DEFAULT_MARGIN * 4 + PX_TAG },
 
-	mb1: { marginBottom: DEFAULT_MARGIN + PX_TAG },
+  cursorSwResize: { cursor: "sw-resize " },
 
-	/**************************************************
-	 * Vertical Align
-	 *************************************************/
-	alignBaseline: { verticalAlign: "baseline" },
+  mr5: { marginRight: DEFAULT_MARGIN * 5 + PX_TAG },
 
-	mb2: { marginBottom: DEFAULT_MARGIN * 2 + PX_TAG },
+  cursorText: { cursor: "text " },
 
-	mb3: { marginBottom: DEFAULT_MARGIN * 3 + PX_TAG },
+  mrAuto: { marginRight: "auto" },
 
-	alignMiddle: { verticalAlign: "middle" },
+  cursorURL: { cursor: "URL " },
 
-	mb4: { marginBottom: DEFAULT_MARGIN * 4 + PX_TAG },
+  mrN1: { marginRight: DEFAULT_MARGIN * -1 + PX_TAG },
 
-	alignBottom: { verticalAlign: "bottom" },
+  cursorVerticalText: { cursor: "vertical-text" },
 
-	mb5: { marginBottom: DEFAULT_MARGIN * 5 + PX_TAG },
+  mrN2: { marginRight: DEFAULT_MARGIN * -2 + PX_TAG },
 
-	mbAuto: { marginBottom: "auto" },
+  cursorWResize: { cursor: "w-resize " },
 
-	alignTextBottom: { verticalAlign: "text-bottom" },
+  mrN3: { marginRight: DEFAULT_MARGIN * -3 + PX_TAG },
 
-	mbN1: { marginBottom: DEFAULT_MARGIN * -1 + PX_TAG },
+  cursorWait: { cursor: "wait " },
 
-	alignTextTop: { verticalAlign: "text-top" },
+  mrN4: { marginRight: DEFAULT_MARGIN * -4 + PX_TAG },
 
-	mbN2: { marginBottom: DEFAULT_MARGIN * -2 + PX_TAG },
+  cursorZoomIn: { cursor: "zoom-in" },
 
-	alignTop: { verticalAlign: "top" },
+  mrN5: { marginRight: DEFAULT_MARGIN * -5 + PX_TAG },
 
-	mbN3: { marginBottom: DEFAULT_MARGIN * -3 + PX_TAG },
+  cursorZoomOut: { cursor: "zoom-out" },
 
-	invisible: { visibility: "hidden" },
+  mt0: { marginTop: 0 },
 
-	mbN4: { marginBottom: DEFAULT_MARGIN * -4 + PX_TAG },
+  mt1: { marginTop: DEFAULT_MARGIN + PX_TAG },
 
-	/**************************************************
-	 * cursor
-	 *************************************************/
-	cursorAlias: { cursor: "alias " },
+  mt2: { marginTop: DEFAULT_MARGIN * 2 + PX_TAG },
 
-	mbN5: { marginBottom: DEFAULT_MARGIN * -5 + PX_TAG },
+  mt3: { marginTop: DEFAULT_MARGIN * 3 + PX_TAG },
 
-	minH100: { minHeight: "100%" },
+  mt4: { marginTop: DEFAULT_MARGIN * 4 + PX_TAG },
 
-	cursorAllScroll: { cursor: "all-scroll " },
+  /**************************************************
+   * Object Fit
+   *************************************************/
+  objectFitContain: {
+    // -o-object-fit: contain !important;
+    objectFit: "contain",
+  },
 
-	minH25: { minHeight: "25%" },
+  mt5: { marginTop: DEFAULT_MARGIN * 5 + PX_TAG },
 
-	cursorAuto: { cursor: "auto" },
+  objectFitCover: {
+    // -o-object-fit: cover !important;
+    objectFit: "cover",
+  },
 
-	minH50: { minHeight: "50%" },
+  mtAuto: { marginTop: "auto" },
 
-	cursorCell: { cursor: "cell " },
+  objectFitFill: {
+    // -o-object-fit: fill !important;
+    objectFit: "fill",
+  },
 
-	minH75: { minHeight: "75%" },
+  mtN1: { marginTop: DEFAULT_MARGIN * -1 + PX_TAG },
 
-	cursorColResize: { cursor: "col-resize " },
+  objectFitNone: {
+    // -o-object-fit: none !important;
+    objectFit: "none",
+  },
 
-	minVh100: { minHeight: "100vh" },
+  mtN2: { marginTop: DEFAULT_MARGIN * -2 + PX_TAG },
 
-	minVh25: { minHeight: "25vh" },
+  objectFitScale: {
+    // -o-object-fit: scale-down !important;
+    objectFit: "scale-down",
+  },
 
-	cursorContextMenu: { cursor: "context-menu" },
+  mtN3: { marginTop: DEFAULT_MARGIN * -3 + PX_TAG },
 
-	minVh50: { minHeight: "50vh" },
+  mtN4: { marginTop: DEFAULT_MARGIN * -4 + PX_TAG },
 
-	minVh75: { minHeight: "75vh" },
+  /**************************************************
+   * Opacity
+   *************************************************/
+  opacity0: { opacity: "0.00" },
 
-	cursorCopy: { cursor: "copy " },
+  mtN5: { marginTop: DEFAULT_MARGIN * -5 + PX_TAG },
 
-	minVw100: { minWidth: "100vw" },
+  opacity10: { opacity: "0.10" },
 
-	cursorCrosshair: { cursor: "crosshair " },
+  mx0: { marginLeft: 0, marginRight: 0 },
 
-	minVw25: { minWidth: "25vw" },
+  opacity100: { opacity: "1.00" },
 
-	cursorDefault: { cursor: "default " },
+  mx1: {
+    marginLeft: DEFAULT_MARGIN * 1 + PX_TAG,
+    marginRight: DEFAULT_MARGIN * 1 + PX_TAG,
+  },
 
-	minVw50: { minWidth: "50vw" },
+  opacity15: { opacity: "0.15" },
 
-	cursorEResize: { cursor: "e-resize " },
+  mx2: {
+    marginLeft: DEFAULT_MARGIN * 2 + PX_TAG,
+    marginRight: DEFAULT_MARGIN * 2 + PX_TAG,
+  },
 
-	minVw75: { minWidth: "75vw" },
+  opacity20: { opacity: "0.20" },
 
-	cursorEwResize: { cursor: "ew-resize " },
+  mx3: {
+    marginLeft: DEFAULT_MARGIN * 3 + PX_TAG,
+    marginRight: DEFAULT_MARGIN * 3 + PX_TAG,
+  },
 
-	minW100: { minWidth: "100%" },
+  opacity25: { opacity: "0.25" },
 
-	cursorGrab: { cursor: "grab " },
+  mx4: {
+    marginLeft: DEFAULT_MARGIN * 4 + PX_TAG,
+    marginRight: DEFAULT_MARGIN * 4 + PX_TAG,
+  },
 
-	minW25: { minWidth: "25%" },
+  opacity30: { opacity: "0.30" },
 
-	cursorGrabbing: { cursor: "grabbing " },
+  mx5: {
+    marginLeft: DEFAULT_MARGIN * 5 + PX_TAG,
+    marginRight: DEFAULT_MARGIN * 5 + PX_TAG,
+  },
 
-	minW50: { minWidth: "50%" },
+  opacity35: { opacity: "0.35" },
 
-	cursorHelp: { cursor: "help " },
+  mxAuto: { marginLeft: "auto", marginRight: "auto" },
 
-	minW75: { minWidth: "75%" },
+  opacity40: { opacity: "0.40" },
 
-	cursorMove: { cursor: "move " },
+  mxN1: {
+    marginLeft: DEFAULT_MARGIN * -1 + PX_TAG,
+    marginRight: DEFAULT_MARGIN * -1 + PX_TAG,
+  },
 
-	ml0: { marginLeft: 0 },
+  opacity45: { opacity: "0.45" },
 
-	cursorNResize: { cursor: "n-resize " },
+  mxN2: {
+    marginLeft: DEFAULT_MARGIN * -2 + PX_TAG,
+    marginRight: DEFAULT_MARGIN * -2 + PX_TAG,
+  },
 
-	ml1: { marginLeft: DEFAULT_MARGIN + PX_TAG },
+  opacity5: { opacity: "0.05" },
 
-	cursorNeResize: { cursor: "ne-resize " },
+  mxN3: {
+    marginLeft: DEFAULT_MARGIN * -3 + PX_TAG,
+    marginRight: DEFAULT_MARGIN * -3 + PX_TAG,
+  },
 
-	ml2: { marginLeft: DEFAULT_MARGIN * 2 + PX_TAG },
+  opacity50: { opacity: "0.50" },
 
-	cursorNeswResize: { cursor: "nesw-resize" },
+  mxN4: {
+    marginLeft: DEFAULT_MARGIN * -4 + PX_TAG,
+    marginRight: DEFAULT_MARGIN * -4 + PX_TAG,
+  },
 
-	ml3: { marginLeft: DEFAULT_MARGIN * 3 + PX_TAG },
+  opacity55: { opacity: "0.55" },
 
-	cursorInitial: { cursor: "initial " },
+  mxN5: {
+    marginLeft: DEFAULT_MARGIN * -5 + PX_TAG,
+    marginRight: DEFAULT_MARGIN * -5 + PX_TAG,
+  },
 
-	ml4: { marginLeft: DEFAULT_MARGIN * 4 + PX_TAG },
+  opacity60: { opacity: "0.60" },
 
-	cursorNoDrop: { cursor: "no-drop " },
+  my0: { marginBottom: 0, marginTop: 0 },
 
-	ml5: { marginLeft: DEFAULT_MARGIN * 5 + PX_TAG },
+  opacity65: { opacity: "0.65" },
 
-	cursorInherit: { cursor: "inherit" },
+  my1: {
+    marginBottom: DEFAULT_MARGIN * 1 + PX_TAG,
+    marginTop: DEFAULT_MARGIN * 1 + PX_TAG,
+  },
 
-	mlAuto: { marginLeft: "auto" },
+  opacity70: { opacity: "0.70" },
 
-	cursorNone: { cursor: "none " },
+  my2: {
+    marginBottom: DEFAULT_MARGIN * 2 + PX_TAG,
+    marginTop: DEFAULT_MARGIN * 2 + PX_TAG,
+  },
 
-	mlN1: { marginLeft: DEFAULT_MARGIN * -1 + PX_TAG },
+  opacity75: { opacity: "0.75" },
 
-	cursorNotAllowed: { cursor: "not-allowed " },
+  my3: {
+    marginBottom: DEFAULT_MARGIN * 3 + PX_TAG,
+    marginTop: DEFAULT_MARGIN * 3 + PX_TAG,
+  },
 
-	mlN2: { marginLeft: DEFAULT_MARGIN * -2 + PX_TAG },
+  opacity80: { opacity: "0.80" },
 
-	cursorNsResize: { cursor: "ns-resize " },
+  my4: {
+    marginBottom: DEFAULT_MARGIN * 4 + PX_TAG,
+    marginTop: DEFAULT_MARGIN * 4 + PX_TAG,
+  },
 
-	mlN3: { marginLeft: DEFAULT_MARGIN * -3 + PX_TAG },
+  opacity85: { opacity: "0.85" },
 
-	cursorNwResize: { cursor: "nw-resize " },
+  my5: {
+    marginBottom: DEFAULT_MARGIN * 5 + PX_TAG,
+    marginTop: DEFAULT_MARGIN * 5 + PX_TAG,
+  },
 
-	mlN4: { marginLeft: DEFAULT_MARGIN * -4 + PX_TAG },
+  opacity90: { opacity: "0.90" },
 
-	cursorNwseResize: { cursor: "nwse-resize" },
+  myAuto: { marginBottom: "auto", marginTop: "auto" },
 
-	mlN5: { marginLeft: DEFAULT_MARGIN * -5 + PX_TAG },
+  opacity95: { opacity: "0.95" },
 
-	cursorPointer: { cursor: "pointer " },
+  myN1: {
+    marginBottom: DEFAULT_MARGIN * -1 + PX_TAG,
+    marginTop: DEFAULT_MARGIN * -1 + PX_TAG,
+  },
 
-	mr0: { marginRight: 0 },
+  myN2: {
+    marginBottom: DEFAULT_MARGIN * -2 + PX_TAG,
+    marginTop: DEFAULT_MARGIN * -2 + PX_TAG,
+  },
 
-	cursorProgress: { cursor: "progress " },
+  /**************************************************
+   * Overflow
+   *************************************************/
+  overflowAuto: { overflow: "auto" },
 
-	mr1: { marginRight: DEFAULT_MARGIN + PX_TAG },
+  myN3: {
+    marginBottom: DEFAULT_MARGIN * -3 + PX_TAG,
+    marginTop: DEFAULT_MARGIN * -3 + PX_TAG,
+  },
 
-	cursorRowResize: { cursor: "row-resize " },
+  overflowHidden: { overflow: "hidden" },
 
-	mr2: { marginRight: DEFAULT_MARGIN * 2 + PX_TAG },
+  myN4: {
+    marginBottom: DEFAULT_MARGIN * -4 + PX_TAG,
+    marginTop: DEFAULT_MARGIN * -4 + PX_TAG,
+  },
 
-	cursorSResize: { cursor: "s-resize " },
+  overflowScroll: { overflow: "scroll" },
 
-	mr3: { marginRight: DEFAULT_MARGIN * 3 + PX_TAG },
+  myN5: {
+    marginBottom: DEFAULT_MARGIN * -5 + PX_TAG,
+    marginTop: DEFAULT_MARGIN * -5 + PX_TAG,
+  },
 
-	cursorSeResize: { cursor: "se-resize " },
+  overflowVisible: { overflow: "visible" },
 
-	mr4: { marginRight: DEFAULT_MARGIN * 4 + PX_TAG },
+  overflowXAuto: { overflowX: "auto" },
 
-	cursorSwResize: { cursor: "sw-resize " },
+  overflowXHidden: { overflowX: "hidden" },
 
-	mr5: { marginRight: DEFAULT_MARGIN * 5 + PX_TAG },
+  overflowXScroll: { overflowX: "scroll" },
 
-	cursorText: { cursor: "text " },
+  overflowXVisible: { overflowX: "visible" },
 
-	mrAuto: { marginRight: "auto" },
+  overflowYAuto: { overflowY: "auto" },
 
-	cursorURL: { cursor: "URL " },
+  textBlack: { color: "#000000" },
 
-	mrN1: { marginRight: DEFAULT_MARGIN * -1 + PX_TAG },
+  overflowYHidden: { overflowY: "hidden" },
 
-	cursorVerticalText: { cursor: "vertical-text" },
+  textBlack50: { color: "#00000077" },
 
-	mrN2: { marginRight: DEFAULT_MARGIN * -2 + PX_TAG },
+  overflowYScroll: { overflowY: "scroll" },
 
-	cursorWResize: { cursor: "w-resize " },
+  textError: { color: theme.palette.error.main },
 
-	mrN3: { marginRight: DEFAULT_MARGIN * -3 + PX_TAG },
+  overflowYVisible: { overflowY: "visible" },
 
-	cursorWait: { cursor: "wait " },
+  textErrorDark: { color: theme.palette.error.dark },
 
-	mrN4: { marginRight: DEFAULT_MARGIN * -4 + PX_TAG },
+  /**************************************************
+   * Spacing
+   *************************************************/
+  /*-------------------------------------------------
+   * Padding
+   *-----------------------------------------------*/
+  p0: { padding: 0 + PX_TAG },
 
-	cursorZoomIn: { cursor: "zoom-in" },
+  textErrorLight: { color: theme.palette.error.light },
 
-	mrN5: { marginRight: DEFAULT_MARGIN * -5 + PX_TAG },
+  textInfo: { color: theme.palette.info.main },
 
-	cursorZoomOut: { cursor: "zoom-out" },
+  p1: { padding: DEFAULT_PADDING + PX_TAG },
 
-	mt0: { marginTop: 0 },
+  textInfoDark: { color: theme.palette.info.dark },
 
-	mt1: { marginTop: DEFAULT_MARGIN + PX_TAG },
+  p2: { padding: DEFAULT_PADDING * 2 + PX_TAG },
 
-	mt2: { marginTop: DEFAULT_MARGIN * 2 + PX_TAG },
+  textInfoLight: { color: theme.palette.info.light },
 
-	mt3: { marginTop: DEFAULT_MARGIN * 3 + PX_TAG },
+  p3: { padding: DEFAULT_PADDING * 3 + PX_TAG },
 
-	mt4: { marginTop: DEFAULT_MARGIN * 4 + PX_TAG },
+  p4: { padding: DEFAULT_PADDING * 4 + PX_TAG },
 
-	/**************************************************
-	 * Object Fit
-	 *************************************************/
-	objectFitContain: {
-		// -o-object-fit: contain !important;
-		objectFit: "contain"
-	},
+  textOpacity100: { opacity: "1" },
 
-	mt5: { marginTop: DEFAULT_MARGIN * 5 + PX_TAG },
+  p5: { padding: DEFAULT_PADDING * 5 + PX_TAG },
 
-	objectFitCover: {
-		// -o-object-fit: cover !important;
-		objectFit: "cover"
-	},
+  textOpacity25: { opacity: "0.25" },
 
-	mtAuto: { marginTop: "auto" },
+  pb0: { paddingBottom: 0 + PX_TAG },
 
-	objectFitFill: {
-		// -o-object-fit: fill !important;
-		objectFit: "fill"
-	},
+  pb1: { paddingBottom: DEFAULT_PADDING + PX_TAG },
 
-	mtN1: { marginTop: DEFAULT_MARGIN * -1 + PX_TAG },
+  /**************************************************
+   * Color
+   *************************************************/
+  textPrimary: { color: theme.palette.primary.main },
 
-	objectFitNone: {
-		// -o-object-fit: none !important;
-		objectFit: "none"
-	},
+  pb2: { paddingBottom: DEFAULT_PADDING * 2 + PX_TAG },
 
-	mtN2: { marginTop: DEFAULT_MARGIN * -2 + PX_TAG },
+  textPrimaryDark: { color: theme.palette.primary.dark },
 
-	objectFitScale: {
-		// -o-object-fit: scale-down !important;
-		objectFit: "scale-down"
-	},
+  pb3: { paddingBottom: DEFAULT_PADDING * 3 + PX_TAG },
 
-	mtN3: { marginTop: DEFAULT_MARGIN * -3 + PX_TAG },
+  pb4: { paddingBottom: DEFAULT_PADDING * 4 + PX_TAG },
 
-	mtN4: { marginTop: DEFAULT_MARGIN * -4 + PX_TAG },
+  textPrimaryLight: { color: theme.palette.primary.light },
 
-	/**************************************************
-	 * Opacity
-	 *************************************************/
-	opacity0: { opacity: "0.00" },
+  pb5: { paddingBottom: DEFAULT_PADDING * 5 + PX_TAG },
 
-	mtN5: { marginTop: DEFAULT_MARGIN * -5 + PX_TAG },
+  peAuto: { pointerEvents: "auto" },
 
-	opacity10: { opacity: "0.10" },
+  textSecondary: { color: theme.palette.secondary.main },
 
-	mx0: { marginLeft: 0, marginRight: 0 },
+  peNone: { pointerEvents: "none" },
 
-	opacity100: { opacity: "1.00" },
+  pl0: { paddingLeft: 0 + PX_TAG },
 
-	mx1: {
-		marginLeft : DEFAULT_MARGIN * 1 + PX_TAG,
-		marginRight: DEFAULT_MARGIN * 1 + PX_TAG
-	},
+  textSecondaryDark: { color: theme.palette.secondary.dark },
 
-	opacity15: { opacity: "0.15" },
+  pl1: { paddingLeft: DEFAULT_PADDING + PX_TAG },
 
-	mx2: {
-		marginLeft : DEFAULT_MARGIN * 2 + PX_TAG,
-		marginRight: DEFAULT_MARGIN * 2 + PX_TAG
-	},
+  pl2: { paddingLeft: DEFAULT_PADDING * 2 + PX_TAG },
 
-	opacity20: { opacity: "0.20" },
+  textSecondaryLight: { color: theme.palette.secondary.light },
 
-	mx3: {
-		marginLeft : DEFAULT_MARGIN * 3 + PX_TAG,
-		marginRight: DEFAULT_MARGIN * 3 + PX_TAG
-	},
+  pl3: { paddingLeft: DEFAULT_PADDING * 3 + PX_TAG },
 
-	opacity25: { opacity: "0.25" },
+  pl4: { paddingLeft: DEFAULT_PADDING * 4 + PX_TAG },
 
-	mx4: {
-		marginLeft : DEFAULT_MARGIN * 4 + PX_TAG,
-		marginRight: DEFAULT_MARGIN * 4 + PX_TAG
-	},
+  textSuccess: { color: theme.palette.success.main },
 
-	opacity30: { opacity: "0.30" },
+  pl5: { paddingLeft: DEFAULT_PADDING * 5 + PX_TAG },
 
-	mx5: {
-		marginLeft : DEFAULT_MARGIN * 5 + PX_TAG,
-		marginRight: DEFAULT_MARGIN * 5 + PX_TAG
-	},
+  textSuccessDark: { color: theme.palette.success.dark },
 
-	opacity35: { opacity: "0.35" },
+  positionAbsolute: { position: "absolute" },
 
-	mxAuto: { marginLeft: "auto", marginRight: "auto" },
+  positionFixed: { position: "fixed" },
 
-	opacity40: { opacity: "0.40" },
+  textSuccessLight: { color: theme.palette.success.light },
 
-	mxN1: {
-		marginLeft : DEFAULT_MARGIN * -1 + PX_TAG,
-		marginRight: DEFAULT_MARGIN * -1 + PX_TAG
-	},
+  positionRelative: { position: "relative" },
 
-	opacity45: { opacity: "0.45" },
+  /**************************************************
+   * Position
+   *************************************************/
+  positionStatic: { position: "static" },
 
-	mxN2: {
-		marginLeft : DEFAULT_MARGIN * -2 + PX_TAG,
-		marginRight: DEFAULT_MARGIN * -2 + PX_TAG
-	},
+  textWarning: { color: theme.palette.warning.main },
 
-	opacity5: { opacity: "0.05" },
+  /**
+   * @todo multiple value for same property
+   */
+  positionSticky: {
+    // -- position: "-webkit-sticky",
+    position: "sticky",
+  },
 
-	mxN3: {
-		marginLeft : DEFAULT_MARGIN * -3 + PX_TAG,
-		marginRight: DEFAULT_MARGIN * -3 + PX_TAG
-	},
+  textWarningDark: { color: theme.palette.warning.dark },
 
-	opacity50: { opacity: "0.50" },
+  pr0: { paddingRight: 0 + PX_TAG },
 
-	mxN4: {
-		marginLeft : DEFAULT_MARGIN * -4 + PX_TAG,
-		marginRight: DEFAULT_MARGIN * -4 + PX_TAG
-	},
+  textWarningLight: { color: theme.palette.warning.light },
 
-	opacity55: { opacity: "0.55" },
+  pr1: { paddingRight: DEFAULT_PADDING + PX_TAG },
 
-	mxN5: {
-		marginLeft : DEFAULT_MARGIN * -5 + PX_TAG,
-		marginRight: DEFAULT_MARGIN * -5 + PX_TAG
-	},
+  // -- textLight: {},
+  // -- textDark: {},
+  // -- textBody: {},
+  // -- textMuted: {},
+  // -- textBodySecondary: {},
+  // -- textBodyTertiary: {},
+  // -- textBodyEmphasis: {},
+  textReset: { color: "inherit" },
 
-	opacity60: { opacity: "0.60" },
+  pr2: { paddingRight: DEFAULT_PADDING * 2 + PX_TAG },
 
-	my0: { marginBottom: 0, marginTop: 0 },
+  textWhite: { color: "#ffffff" },
 
-	opacity65: { opacity: "0.65" },
+  pr3: { paddingRight: DEFAULT_PADDING * 3 + PX_TAG },
 
-	my1: {
-		marginBottom: DEFAULT_MARGIN * 1 + PX_TAG,
-		marginTop   : DEFAULT_MARGIN * 1 + PX_TAG
-	},
+  pr4: { paddingRight: DEFAULT_PADDING * 4 + PX_TAG },
 
-	opacity70: { opacity: "0.70" },
+  textWhite50: { color: "#ffffff77" },
 
-	my2: {
-		marginBottom: DEFAULT_MARGIN * 2 + PX_TAG,
-		marginTop   : DEFAULT_MARGIN * 2 + PX_TAG
-	},
+  pr5: { paddingRight: DEFAULT_PADDING * 5 + PX_TAG },
 
-	opacity75: { opacity: "0.75" },
+  pt0: { paddingTop: 0 + PX_TAG },
 
-	my3: {
-		marginBottom: DEFAULT_MARGIN * 3 + PX_TAG,
-		marginTop   : DEFAULT_MARGIN * 3 + PX_TAG
-	},
+  textOpacity50: { opacity: "0.5" },
 
-	opacity80: { opacity: "0.80" },
+  pt1: { paddingTop: DEFAULT_PADDING + PX_TAG },
 
-	my4: {
-		marginBottom: DEFAULT_MARGIN * 4 + PX_TAG,
-		marginTop   : DEFAULT_MARGIN * 4 + PX_TAG
-	},
+  pt2: { paddingTop: DEFAULT_PADDING * 2 + PX_TAG },
 
-	opacity85: { opacity: "0.85" },
+  textOpacity75: { opacity: "0.75" },
 
-	my5: {
-		marginBottom: DEFAULT_MARGIN * 5 + PX_TAG,
-		marginTop   : DEFAULT_MARGIN * 5 + PX_TAG
-	},
+  pt3: { paddingTop: DEFAULT_PADDING * 3 + PX_TAG },
 
-	opacity90: { opacity: "0.90" },
+  pt4: { paddingTop: DEFAULT_PADDING * 4 + PX_TAG },
 
-	myAuto: { marginBottom: "auto", marginTop: "auto" },
+  pt5: { paddingTop: DEFAULT_PADDING * 5 + PX_TAG },
 
-	opacity95: { opacity: "0.95" },
+  px0: {
+    paddingLeft: 0 + PX_TAG,
+    paddingRight: 0 + PX_TAG,
+  },
 
-	myN1: {
-		marginBottom: DEFAULT_MARGIN * -1 + PX_TAG,
-		marginTop   : DEFAULT_MARGIN * -1 + PX_TAG
-	},
+  px1: {
+    paddingLeft: DEFAULT_PADDING * 1 + PX_TAG,
+    paddingRight: DEFAULT_PADDING * 1 + PX_TAG,
+  },
 
-	myN2: {
-		marginBottom: DEFAULT_MARGIN * -2 + PX_TAG,
-		marginTop   : DEFAULT_MARGIN * -2 + PX_TAG
-	},
+  px2: {
+    paddingLeft: DEFAULT_PADDING * 2 + PX_TAG,
+    paddingRight: DEFAULT_PADDING * 2 + PX_TAG,
+  },
 
-	/**************************************************
-	 * Overflow
-	 *************************************************/
-	overflowAuto: { overflow: "auto" },
+  px3: {
+    paddingLeft: DEFAULT_PADDING * 3 + PX_TAG,
+    paddingRight: DEFAULT_PADDING * 3 + PX_TAG,
+  },
 
-	myN3: {
-		marginBottom: DEFAULT_MARGIN * -3 + PX_TAG,
-		marginTop   : DEFAULT_MARGIN * -3 + PX_TAG
-	},
+  px4: {
+    paddingLeft: DEFAULT_PADDING * 4 + PX_TAG,
+    paddingRight: DEFAULT_PADDING * 4 + PX_TAG,
+  },
 
-	overflowHidden: { overflow: "hidden" },
+  px5: {
+    paddingLeft: DEFAULT_PADDING * 5 + PX_TAG,
+    paddingRight: DEFAULT_PADDING * 5 + PX_TAG,
+  },
 
-	myN4: {
-		marginBottom: DEFAULT_MARGIN * -4 + PX_TAG,
-		marginTop   : DEFAULT_MARGIN * -4 + PX_TAG
-	},
+  py0: {
+    paddingBottom: 0 + PX_TAG,
+    paddingTop: 0 + PX_TAG,
+  },
 
-	overflowScroll: { overflow: "scroll" },
+  py1: {
+    paddingBottom: DEFAULT_PADDING * 1 + PX_TAG,
+    paddingTop: DEFAULT_PADDING * 1 + PX_TAG,
+  },
 
-	myN5: {
-		marginBottom: DEFAULT_MARGIN * -5 + PX_TAG,
-		marginTop   : DEFAULT_MARGIN * -5 + PX_TAG
-	},
+  py2: {
+    paddingBottom: DEFAULT_PADDING * 2 + PX_TAG,
+    paddingTop: DEFAULT_PADDING * 2 + PX_TAG,
+  },
 
-	overflowVisible: { overflow: "visible" },
+  py3: {
+    paddingBottom: DEFAULT_PADDING * 3 + PX_TAG,
+    paddingTop: DEFAULT_PADDING * 3 + PX_TAG,
+  },
 
-	overflowXAuto: { overflowX: "auto" },
+  py4: {
+    paddingBottom: DEFAULT_PADDING * 4 + PX_TAG,
+    paddingTop: DEFAULT_PADDING * 4 + PX_TAG,
+  },
 
-	overflowXHidden: { overflowX: "hidden" },
+  py5: {
+    paddingBottom: DEFAULT_PADDING * 5 + PX_TAG,
+    paddingTop: DEFAULT_PADDING * 5 + PX_TAG,
+  },
 
-	overflowXScroll: { overflowX: "scroll" },
+  rowGap0: { rowGap: "0" },
 
-	overflowXVisible: { overflowX: "visible" },
+  rowGap1: { rowGap: DEFAULT_SPACING * 1 },
 
-	overflowYAuto: { overflowY: "auto" },
+  rowGap2: { rowGap: DEFAULT_SPACING * 2 },
 
-	textBlack: { color: "#000000" },
+  rowGap3: { rowGap: DEFAULT_SPACING * 3 },
 
-	overflowYHidden: { overflowY: "hidden" },
+  rowGap4: { rowGap: DEFAULT_SPACING * 4 },
 
-	textBlack50: { color: "#00000077" },
+  rowGap5: { rowGap: DEFAULT_SPACING * 5 },
 
-	overflowYScroll: { overflowY: "scroll" },
+  /**************************************************
+   * Shadows
+   * @todo change color using theme
+   *************************************************/
+  shadow: { boxShadow: "0 0.5rem 1rem rgba(" + DEFAULT_SHADOW_COLOR_RGB + ", 0.15)" },
 
-	textError: { color: theme.palette.error.main },
+  /**************************************************
+   * Interactions
+   *************************************************/
+  userSelectAll: {
+    // -webkit-user-select: all !important;
+    // -moz-user-select: all !important;
+    userSelect: "all",
+  },
 
-	overflowYVisible: { overflowY: "visible" },
+  shadowLg: { boxShadow: "0 1rem 3rem rgba(" + DEFAULT_SHADOW_COLOR_RGB + ", 0.175)" },
 
-	textErrorDark: { color: theme.palette.error.dark },
+  shadowNone: { boxShadow: "none" },
 
-	/**************************************************
-	 * Spacing
-	 *************************************************/
-	/*-------------------------------------------------
-	 * Padding
-	 *-----------------------------------------------*/
-	p0: { padding: 0 + PX_TAG },
+  userSelectAuto: {
+    // -webkit-user-select: auto !important;
+    // -moz-user-select: auto !important;
+    userSelect: "auto",
+  },
 
-	textErrorLight: { color: theme.palette.error.light },
+  shadowSm: {
+    boxShadow: "0 0.125rem 0.25rem rgba(" + DEFAULT_SHADOW_COLOR_RGB + ", 0.075)" + IMPORTANT,
+  },
 
-	textInfo: { color: theme.palette.info.main },
+  start0: { left: "0" },
 
-	p1: { padding: DEFAULT_PADDING + PX_TAG },
+  userSelectNone: {
+    // -webkit-user-select: none !important;
+    // -moz-user-select: none !important;
+    userSelect: "none",
+  },
 
-	textInfoDark: { color: theme.palette.info.dark },
+  start100: { left: "100%" },
 
-	p2: { padding: DEFAULT_PADDING * 2 + PX_TAG },
+  start50: { left: "50%" },
 
-	textInfoLight: { color: theme.palette.info.light },
+  stickyBottom: {
+    bottom: "0",
+    // -- position: "-webkit-sticky",
+    position: "sticky",
+    zIndex: "1020",
+  },
 
-	p3: { padding: DEFAULT_PADDING * 3 + PX_TAG },
+  stickyTop: {
+    // -- position: "-webkit-sticky",
+    position: "sticky",
+    top: "0",
+    zIndex: "1020",
+  },
 
-	p4: { padding: DEFAULT_PADDING * 4 + PX_TAG },
+  textBreak: {
+    wordBreak: "break-word",
+    wordWrap: "break-word",
+  },
 
-	textOpacity100: { opacity: "1" },
+  textCapitalize: { textTransform: "capitalize" },
 
-	p5: { padding: DEFAULT_PADDING * 5 + PX_TAG },
+  textCenter: { textAlign: "center" },
 
-	textOpacity25: { opacity: "0.25" },
+  textDecorationLineThrough: { textDecoration: "line-through" },
 
-	pb0: { paddingBottom: 0 + PX_TAG },
+  textDecorationNone: { textDecoration: "none" },
 
-	pb1: { paddingBottom: DEFAULT_PADDING + PX_TAG },
+  textDecorationUnderline: { textDecoration: "underline" },
 
-	/**************************************************
-	 * Color
-	 *************************************************/
-	textPrimary: { color: theme.palette.primary.main },
+  textEnd: { textAlign: "right" },
 
-	pb2: { paddingBottom: DEFAULT_PADDING * 2 + PX_TAG },
+  textJustify: { textAlign: "justify" },
 
-	textPrimaryDark: { color: theme.palette.primary.dark },
+  textLowercase: { textTransform: "lowercase" },
 
-	pb3: { paddingBottom: DEFAULT_PADDING * 3 + PX_TAG },
+  textNowrap: { whiteSpace: "nowrap" },
 
-	pb4: { paddingBottom: DEFAULT_PADDING * 4 + PX_TAG },
+  /**************************************************
+   * Text
+   *************************************************/
+  textStart: { textAlign: "left" },
 
-	textPrimaryLight: { color: theme.palette.primary.light },
+  textTruncate: {
+    overflow: "hidden",
+    textOverflow: "ellipsis",
+    whiteSpace: "nowrap",
+  },
 
-	pb5: { paddingBottom: DEFAULT_PADDING * 5 + PX_TAG },
+  textUppercase: { textTransform: "uppercase" },
 
-	peAuto: { pointerEvents: "auto" },
+  textWeightBold: { fontWeight: "bold" },
 
-	textSecondary: { color: theme.palette.secondary.main },
+  textWeightLight: { fontWeight: "lighter" },
 
-	peNone: { pointerEvents: "none" },
+  textWeightNormal: { fontWeight: "normal" },
 
-	pl0: { paddingLeft: 0 + PX_TAG },
+  textWrap: { whiteSpace: "normal" },
 
-	textSecondaryDark: { color: theme.palette.secondary.dark },
+  top0: { top: "0" },
 
-	pl1: { paddingLeft: DEFAULT_PADDING + PX_TAG },
+  top100: { top: "100%" },
 
-	pl2: { paddingLeft: DEFAULT_PADDING * 2 + PX_TAG },
+  top50: { top: "50%" },
 
-	textSecondaryLight: { color: theme.palette.secondary.light },
+  translateMiddle: { transform: "translate(-50%, -50%)" },
 
-	pl3: { paddingLeft: DEFAULT_PADDING * 3 + PX_TAG },
+  translateMiddleX: { transform: "translateX(-50%)" },
 
-	pl4: { paddingLeft: DEFAULT_PADDING * 4 + PX_TAG },
+  translateMiddleY: { transform: "translateY(-50%)" },
 
-	textSuccess: { color: theme.palette.success.main },
+  vh100: { height: "100vh" },
 
-	pl5: { paddingLeft: DEFAULT_PADDING * 5 + PX_TAG },
+  vh25: { height: "25vh" },
 
-	textSuccessDark: { color: theme.palette.success.dark },
+  vh50: { height: "50vh" },
 
-	positionAbsolute: { position: "absolute" },
+  vh75: { height: "75vh" },
 
-	positionFixed: { position: "fixed" },
+  /**************************************************
+   * Visibility
+   *************************************************/
+  visible: { visibility: "visible" },
 
-	textSuccessLight: { color: theme.palette.success.light },
+  vw100: { width: "100vw" },
 
-	positionRelative: { position: "relative" },
+  vw25: { width: "25vw" },
 
-	/**************************************************
-	 * Position
-	 *************************************************/
-	positionStatic: { position: "static" },
+  vw50: { width: "50vw" },
 
-	textWarning: { color: theme.palette.warning.main },
+  vw75: { width: "75vw" },
 
-	/**
-	 * @todo multiple value for same property
-	 */
-	positionSticky: {
-		// -- position: "-webkit-sticky",
-		position: "sticky"
-	},
+  w100: { width: "100%" },
 
-	textWarningDark: { color: theme.palette.warning.dark },
+  /*-------------------------------------------------
+   * Width
+   *-----------------------------------------------*/
+  w25: { width: "25%" },
 
-	pr0: { paddingRight: 0 + PX_TAG },
+  w50: { width: "50%" },
 
-	textWarningLight: { color: theme.palette.warning.light },
+  w75: { width: "75%" },
 
-	pr1: { paddingRight: DEFAULT_PADDING + PX_TAG },
+  wAuto: { width: "auto" },
 
-	// -- textLight: {},
-	// -- textDark: {},
-	// -- textBody: {},
-	// -- textMuted: {},
-	// -- textBodySecondary: {},
-	// -- textBodyTertiary: {},
-	// -- textBodyEmphasis: {},
-	textReset: { color: "inherit" },
+  z0: { zIndex: "0" },
 
-	pr2: { paddingRight: DEFAULT_PADDING * 2 + PX_TAG },
+  z1: { zIndex: "1" },
 
-	textWhite: { color: "#ffffff" },
+  z2: { zIndex: "2" },
 
-	pr3: { paddingRight: DEFAULT_PADDING * 3 + PX_TAG },
+  z3: { zIndex: "3" },
+  /**************************************************
+   * zindex
+   *************************************************/
+  zN1: { zIndex: "-1" },
 
-	pr4: { paddingRight: DEFAULT_PADDING * 4 + PX_TAG },
-
-	textWhite50: { color: "#ffffff77" },
-
-	pr5: { paddingRight: DEFAULT_PADDING * 5 + PX_TAG },
-
-	pt0: { paddingTop: 0 + PX_TAG },
-
-	textOpacity50: { opacity: "0.5" },
-
-	pt1: { paddingTop: DEFAULT_PADDING + PX_TAG },
-
-	pt2: { paddingTop: DEFAULT_PADDING * 2 + PX_TAG },
-
-	textOpacity75: { opacity: "0.75" },
-
-	pt3: { paddingTop: DEFAULT_PADDING * 3 + PX_TAG },
-
-	pt4: { paddingTop: DEFAULT_PADDING * 4 + PX_TAG },
-
-	pt5: { paddingTop: DEFAULT_PADDING * 5 + PX_TAG },
-
-	px0: {
-		paddingLeft : 0 + PX_TAG,
-		paddingRight: 0 + PX_TAG
-	},
-
-	px1: {
-		paddingLeft : DEFAULT_PADDING * 1 + PX_TAG,
-		paddingRight: DEFAULT_PADDING * 1 + PX_TAG
-	},
-
-	px2: {
-		paddingLeft : DEFAULT_PADDING * 2 + PX_TAG,
-		paddingRight: DEFAULT_PADDING * 2 + PX_TAG
-	},
-
-	px3: {
-		paddingLeft : DEFAULT_PADDING * 3 + PX_TAG,
-		paddingRight: DEFAULT_PADDING * 3 + PX_TAG
-	},
-
-	px4: {
-		paddingLeft : DEFAULT_PADDING * 4 + PX_TAG,
-		paddingRight: DEFAULT_PADDING * 4 + PX_TAG
-	},
-
-	px5: {
-		paddingLeft : DEFAULT_PADDING * 5 + PX_TAG,
-		paddingRight: DEFAULT_PADDING * 5 + PX_TAG
-	},
-
-	py0: {
-		paddingBottom: 0 + PX_TAG,
-		paddingTop   : 0 + PX_TAG
-	},
-
-	py1: {
-		paddingBottom: DEFAULT_PADDING * 1 + PX_TAG,
-		paddingTop   : DEFAULT_PADDING * 1 + PX_TAG
-	},
-
-	py2: {
-		paddingBottom: DEFAULT_PADDING * 2 + PX_TAG,
-		paddingTop   : DEFAULT_PADDING * 2 + PX_TAG
-	},
-
-	py3: {
-		paddingBottom: DEFAULT_PADDING * 3 + PX_TAG,
-		paddingTop   : DEFAULT_PADDING * 3 + PX_TAG
-	},
-
-	py4: {
-		paddingBottom: DEFAULT_PADDING * 4 + PX_TAG,
-		paddingTop   : DEFAULT_PADDING * 4 + PX_TAG
-	},
-
-	py5: {
-		paddingBottom: DEFAULT_PADDING * 5 + PX_TAG,
-		paddingTop   : DEFAULT_PADDING * 5 + PX_TAG
-	},
-
-	rowGap0: { rowGap: "0" },
-
-	rowGap1: { rowGap: DEFAULT_SPACING * 1 },
-
-	rowGap2: { rowGap: DEFAULT_SPACING * 2 },
-
-	rowGap3: { rowGap: DEFAULT_SPACING * 3 },
-
-	rowGap4: { rowGap: DEFAULT_SPACING * 4 },
-
-	rowGap5: { rowGap: DEFAULT_SPACING * 5 },
-
-	/**************************************************
-	 * Shadows
-	 * @todo change color using theme
-	 *************************************************/
-	shadow: {
-		boxShadow:
-			"0 0.5rem 1rem rgba(" + DEFAULT_SHADOW_COLOR_RGB + ", 0.15)"
-	},
-
-	/**************************************************
-	 * Interactions
-	 *************************************************/
-	userSelectAll: {
-		// -webkit-user-select: all !important;
-		// -moz-user-select: all !important;
-		userSelect: "all"
-	},
-
-	shadowLg: {
-		boxShadow:
-			"0 1rem 3rem rgba(" + DEFAULT_SHADOW_COLOR_RGB + ", 0.175)"
-	},
-
-	shadowNone: { boxShadow: "none" },
-
-	userSelectAuto: {
-		// -webkit-user-select: auto !important;
-		// -moz-user-select: auto !important;
-		userSelect: "auto"
-	},
-
-	shadowSm: {
-		boxShadow:
-			"0 0.125rem 0.25rem rgba(" +
-			DEFAULT_SHADOW_COLOR_RGB +
-			", 0.075)" +
-			IMPORTANT
-	},
-
-	start0: { left: "0" },
-
-	userSelectNone: {
-		// -webkit-user-select: none !important;
-		// -moz-user-select: none !important;
-		userSelect: "none"
-	},
-
-	start100: { left: "100%" },
-
-	start50: { left: "50%" },
-
-	stickyBottom: {
-		bottom  : "0",
-		// -- position: "-webkit-sticky",
-		position: "sticky",
-		zIndex  : "1020"
-	},
-
-	stickyTop: {
-		// -- position: "-webkit-sticky",
-		position: "sticky",
-		top     : "0",
-		zIndex  : "1020"
-	},
-
-	textBreak: {
-		wordBreak: "break-word",
-		wordWrap : "break-word"
-	},
-
-	textCapitalize: { textTransform: "capitalize" },
-
-	textCenter: { textAlign: "center" },
-
-	textDecorationLineThrough: { textDecoration: "line-through" },
-
-	textDecorationNone: { textDecoration: "none" },
-
-	textDecorationUnderline: { textDecoration: "underline" },
-
-	textEnd: { textAlign: "right" },
-
-	textJustify: { textAlign: "justify" },
-
-	textLowercase: { textTransform: "lowercase" },
-
-	textNowrap: { whiteSpace: "nowrap" },
-
-	/**************************************************
-	 * Text
-	 *************************************************/
-	textStart: { textAlign: "left" },
-
-	textTruncate: {
-		overflow    : "hidden",
-		textOverflow: "ellipsis",
-		whiteSpace  : "nowrap"
-	},
-
-	textUppercase: { textTransform: "uppercase" },
-
-	textWeightBold: { fontWeight: "bold" },
-
-	textWeightLight: { fontWeight: "lighter" },
-
-	textWeightNormal: { fontWeight: "normal" },
-
-	textWrap: { whiteSpace: "normal" },
-
-	top0: { top: "0" },
-
-	top100: { top: "100%" },
-
-	top50: { top: "50%" },
-
-	translateMiddle: { transform: "translate(-50%, -50%)" },
-
-	translateMiddleX: { transform: "translateX(-50%)" },
-
-	translateMiddleY: { transform: "translateY(-50%)" },
-
-	vh100: { height: "100vh" },
-
-	vh25: { height: "25vh" },
-
-	vh50: { height: "50vh" },
-
-	vh75: { height: "75vh" },
-
-	/**************************************************
-	 * Visibility
-	 *************************************************/
-	visible: { visibility: "visible" },
-
-	vw100: { width: "100vw" },
-
-	vw25: { width: "25vw" },
-
-	vw50: { width: "50vw" },
-
-	vw75: { width: "75vw" },
-
-	w100: { width: "100%" },
-
-	/*-------------------------------------------------
-	 * Width
-	 *-----------------------------------------------*/
-	w25: { width: "25%" },
-
-	w50: { width: "50%" },
-
-	w75: { width: "75%" },
-
-	wAuto: { width: "auto" },
-
-	z0: { zIndex: "0" },
-
-	z1: { zIndex: "1" },
-
-	z2: { zIndex: "2" },
-
-	z3 : { zIndex: "3" },
-	/**************************************************
-	 * zindex
-	 *************************************************/
-	zN1: { zIndex: "-1" },
-
-	phoneEmailLink: {
-		color     : theme.palette.primary.main,
-		fontWeight: 500,
-		fontSize  : "0.812rem",
-		alignItems: "center",
-		display   : "flex"
-	}
+  phoneEmailLink: {
+    color: theme.palette.primary.main,
+    fontWeight: 500,
+    fontSize: "0.812rem",
+    alignItems: "center",
+    display: "flex",
+  },
 };
