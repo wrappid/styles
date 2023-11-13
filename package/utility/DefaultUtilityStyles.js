@@ -1,4 +1,4 @@
-import { remToPx } from "../StyleUtil";
+/* eslint-disable */
 import { getConfigurationObject } from "../helper/helper";
 import { theme } from "../theme/theme";
 
@@ -506,24 +506,18 @@ export const defaultUtilityStyles = {
   /*-------------------------------------------------
    * Margin
    *-----------------------------------------------*/
-  m0: { margin: 0 },
-
-  m1: { margin: DEFAULT_MARGIN + PX_TAG },
-
-  m2: { margin: DEFAULT_MARGIN * 2 + PX_TAG },
-
-  m3: { margin: DEFAULT_MARGIN * 3 + PX_TAG },
+  m0: { margin: 0 + IMPORTANT },
+  m1: { margin: DEFAULT_MARGIN + PX_TAG + IMPORTANT },
+  m2: { margin: DEFAULT_MARGIN * 2 + PX_TAG + IMPORTANT },
+  m3: { margin: DEFAULT_MARGIN * 3 + PX_TAG + IMPORTANT },
+  m4: { margin: DEFAULT_MARGIN * 4 + PX_TAG + IMPORTANT },
+  m5: { margin: DEFAULT_MARGIN * 5 + PX_TAG + IMPORTANT },
+  mAuto: { margin: "auto" + IMPORTANT },
 
   /*-------------------------------------------------
    * Gap
    *-----------------------------------------------*/
   gap0: { gap: "0" },
-
-  m4: { margin: DEFAULT_MARGIN * 4 + PX_TAG },
-
-  m5: { margin: DEFAULT_MARGIN * 5 + PX_TAG },
-
-  mAuto: { margin: "auto" },
 
   gap1: { gap: DEFAULT_SPACING * 1 },
 
@@ -1394,23 +1388,12 @@ export const defaultUtilityStyles = {
 
   wAuto: { width: "auto" },
 
-  z0: { zIndex: "0" },
-
-  z1: { zIndex: "1" },
-
-  z2: { zIndex: "2" },
-
-  z3: { zIndex: "3" },
   /**************************************************
    * zindex
    *************************************************/
   zN1: { zIndex: "-1" },
-
-  phoneEmailLink: {
-    color: theme.palette.primary.main,
-    fontWeight: 500,
-    fontSize: "0.812rem",
-    alignItems: "center",
-    display: "flex",
-  },
+  z0: { zIndex: "0" },
+  z1: { zIndex: "1" },
+  z2: { zIndex: "2" },
+  z3: { zIndex: "3" },
 };
