@@ -1,5 +1,10 @@
 /* eslint-disable */
-import { DEFAULT_MARGIN, DEFAULT_PADDING, DEFAULT_SPACING } from "./DefaultUtilityStyles";
+import {
+  DEFAULT_MARGIN,
+  DEFAULT_PADDING,
+  DEFAULT_SPACING,
+  IMPORTANT,
+} from "./DefaultUtilityStyles";
 
 export const XX_LARGE_MARGIN = DEFAULT_MARGIN;
 export const XX_LARGE_PADDING = DEFAULT_PADDING;
@@ -419,10 +424,10 @@ export const xXLargeUtilityStyles = {
   /**************************************************
    * Text
    *************************************************/
-  xxlTextStart: { textAlign: "left" },
-  xxlTextEnd: { textAlign: "right" },
-  xxlTextCenter: { textAlign: "center" },
-  xxlTextJustify: { textAlign: "justify" },
+  xxlTextStart: { textAlign: "left" + IMPORTANT },
+  xxlTextEnd: { textAlign: "right" + IMPORTANT },
+  xxlTextCenter: { textAlign: "center" + IMPORTANT },
+  xxlTextJustify: { textAlign: "justify" + IMPORTANT },
 
   //NO OTHER SCREEN SIZE SPECIFIC STYLE NEEDED
 

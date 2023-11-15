@@ -1690,17 +1690,24 @@ const UtilityClasses = {
     TEXT_CENTER: "textCenter",
     TEXT_JUSTIFY: "textJustify",
 
-    TEXT_WEIGHT_BOLD: "textWeightBold",
+    TEXT_WEIGHT_LIGHTER: "textWeightLighter",
     TEXT_WEIGHT_LIGHT: "textWeightLight",
     TEXT_WEIGHT_NORMAL: "textWeightNormal",
+    TEXT_WEIGHT_MEDIUM: "textWeightMedium",
+    TEXT_WEIGHT_SEMIBOLD: "textWeightSemibold",
+    TEXT_WEIGHT_BOLD: "textWeightBold",
+    TEXT_WEIGHT_BOLDER: "textWeightBolder",
+
+    TEXT_STYLE_ITALIC: "textStyleItalic",
+    TEXT_STYLE_NORMAL: "textStyleNormal",
 
     TEXT_DECORATION_NONE: "textDecorationNone",
     TEXT_DECORATION_UNDERLINE: "textDecorationUnderline",
     TEXT_DECORATION_LINE_THROUGH: "textDecorationLineThrough",
 
-    TEXT_LOWERCASE: "textLowercase",
-    TEXT_UPPERCASE: "textUppercase",
-    TEXT_CAPITALIZE: "textCapitalize",
+    TEXT_TRANSFORM_LOWERCASE: "textLowercase",
+    TEXT_TRANSFORM_UPPERCASE: "textUppercase",
+    TEXT_TRANSFORM_CAPITALIZE: "textCapitalize",
 
     TEXT_WRAP: "textWrap",
     TEXT_NOWRAP: "textNowrap",

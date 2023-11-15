@@ -1,5 +1,10 @@
 /* eslint-disable */
-import { DEFAULT_MARGIN, DEFAULT_PADDING, DEFAULT_SPACING } from "./DefaultUtilityStyles";
+import {
+  DEFAULT_MARGIN,
+  DEFAULT_PADDING,
+  DEFAULT_SPACING,
+  IMPORTANT,
+} from "./DefaultUtilityStyles";
 
 export const MEDIUM_MARGIN = DEFAULT_MARGIN;
 export const MEDIUM_PADDING = DEFAULT_PADDING;
@@ -389,10 +394,10 @@ export const mediumUtilityStyles = {
   /**************************************************
    * Text
    *************************************************/
-  mdTextStart: { textAlign: "left" },
-  mdTextEnd: { textAlign: "right" },
-  mdTextCenter: { textAlign: "center" },
-  mdTextJustify: { textAlign: "justify" },
+  mdTextStart: { textAlign: "left" + IMPORTANT },
+  mdTextEnd: { textAlign: "right" + IMPORTANT },
+  mdTextCenter: { textAlign: "center" + IMPORTANT },
+  mdTextJustify: { textAlign: "justify" + IMPORTANT },
 
   //NO OTHER SCREEN SIZE SPECIFIC STYLE NEEDED
 

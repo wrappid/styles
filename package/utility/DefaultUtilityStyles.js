@@ -99,41 +99,36 @@ export const defaultUtilityStyles = {
     display: "flex",
   },
 
-  bgBlack: { backgroundColor: "black" },
-  bgDefault: { backgroundColor: theme.palette.background.default },
-
-  bgError: { backgroundColor: theme.palette.error.main },
-
-  bgErrorDark: { backgroundColor: theme.palette.error.dark },
-
-  bgErrorLight: { backgroundColor: theme.palette.error.light },
-
-  bgInfo: { backgroundColor: theme.palette.info.main },
-
-  bgInfoDark: { backgroundColor: theme.palette.info.dark },
-
-  bgInfoLight: { backgroundColor: theme.palette.info.light },
   /**************************************************
    * Background
    *************************************************/
   bgPrimary: { backgroundColor: theme.palette.primary.main },
   bgPrimaryDark: { backgroundColor: theme.palette.primary.dark },
-
   bgPrimaryLight: { backgroundColor: theme.palette.primary.light },
+
   bgSecondary: { backgroundColor: theme.palette.secondary.main },
   bgSecondaryDark: { backgroundColor: theme.palette.secondary.dark },
-
   bgSecondaryLight: { backgroundColor: theme.palette.secondary.light },
+
   bgSuccess: { backgroundColor: theme.palette.success.main },
   bgSuccessDark: { backgroundColor: theme.palette.success.dark },
-
   bgSuccessLight: { backgroundColor: theme.palette.success.light },
-  bgTransparent: { backgroundColor: "transparent" },
-  bgWarning: { backgroundColor: theme.palette.warning.main },
 
-  bgWarningDark: { backgroundColor: theme.palette.warning.dark },
+  bgError: { backgroundColor: theme.palette.error.main },
+  bgErrorLight: { backgroundColor: theme.palette.error.light },
+  bgErrorDark: { backgroundColor: theme.palette.error.dark },
+
+  bgWarning: { backgroundColor: theme.palette.warning.main },
   bgWarningLight: { backgroundColor: theme.palette.warning.light },
+  bgWarningDark: { backgroundColor: theme.palette.warning.dark },
+
+  bgInfo: { backgroundColor: theme.palette.info.main },
+  bgInfoLight: { backgroundColor: theme.palette.info.light },
+  bgInfoDark: { backgroundColor: theme.palette.info.dark },
+
+  bgBlack: { backgroundColor: "black" },
   bgWhite: { backgroundColor: "white" },
+  bgTransparent: { backgroundColor: "transparent" },
 
   /**************************************************
    * Border
@@ -1298,49 +1293,44 @@ export const defaultUtilityStyles = {
     zIndex: "1020",
   },
 
-  textBreak: {
-    wordBreak: "break-word",
-    wordWrap: "break-word",
-  },
-
-  textCapitalize: { textTransform: "capitalize" },
-
-  textCenter: { textAlign: "center" },
-
-  textDecorationLineThrough: { textDecoration: "line-through" },
-
-  textDecorationNone: { textDecoration: "none" },
-
-  textDecorationUnderline: { textDecoration: "underline" },
-
-  textEnd: { textAlign: "right" },
-
-  textJustify: { textAlign: "justify" },
-
-  textLowercase: { textTransform: "lowercase" },
-
-  textNowrap: { whiteSpace: "nowrap" },
-
   /**************************************************
    * Text
    *************************************************/
-  textStart: { textAlign: "left" },
+  textStart: { textAlign: "left" + IMPORTANT },
+  textEnd: { textAlign: "right" + IMPORTANT },
+  textCenter: { textAlign: "center" + IMPORTANT },
+  textJustify: { textAlign: "justify" + IMPORTANT },
 
+  textWeightLighter: { fontWeight: "lighter" + IMPORTANT },
+  textWeightLight: { fontWeight: "300" + IMPORTANT },
+  textWeightNormal: { fontWeight: "400" + IMPORTANT },
+  textWeightMedium: { fontWeight: "500" + IMPORTANT },
+  textWeightSemibold: { fontWeight: "600" + IMPORTANT },
+  textWeightBold: { fontWeight: "700" + IMPORTANT },
+  textWeightBolder: { fontWeight: "bolder" + IMPORTANT },
+
+  textStyleItalic: { fontStyle: "italic" + IMPORTANT },
+  textStyleNormal: { fontStyle: "normal" + IMPORTANT },
+
+  textDecorationNone: { textDecoration: "none" + IMPORTANT },
+  textDecorationUnderline: { textDecoration: "underline" + IMPORTANT },
+  textDecorationLineThrough: { textDecoration: "line-through" + IMPORTANT },
+
+  textLowercase: { textTransform: "lowercase" + IMPORTANT },
+  textUppercase: { textTransform: "uppercase" + IMPORTANT },
+  textCapitalize: { textTransform: "capitalize" + IMPORTANT },
+
+  textWrap: { whiteSpace: "normal" + IMPORTANT },
+  textNowrap: { whiteSpace: "nowrap" + IMPORTANT },
+  textBreak: {
+    wordBreak: "break-word" + IMPORTANT,
+    wordWrap: "break-word" + IMPORTANT,
+  },
   textTruncate: {
     overflow: "hidden",
     textOverflow: "ellipsis",
     whiteSpace: "nowrap",
   },
-
-  textUppercase: { textTransform: "uppercase" },
-
-  textWeightBold: { fontWeight: "bold" },
-
-  textWeightLight: { fontWeight: "lighter" },
-
-  textWeightNormal: { fontWeight: "normal" },
-
-  textWrap: { whiteSpace: "normal" },
 
   top0: { top: "0" },
 
