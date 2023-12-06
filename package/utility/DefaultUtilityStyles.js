@@ -7,14 +7,19 @@ const DEFAULT_BORDER_RADIUS = 4;
 const DEFAULT_BORDER_STYLE = "solid";
 const DEFAULT_BORDER_COLOR = "black";
 const DEFAULT_BORDER =
-  DEFAULT_BORDER_WIDTH + "px " + DEFAULT_BORDER_STYLE + " " + DEFAULT_BORDER_COLOR;
+  DEFAULT_BORDER_WIDTH +
+  "px " +
+  DEFAULT_BORDER_STYLE +
+  " " +
+  DEFAULT_BORDER_COLOR;
 
 // -- const DEFAULT_SHADOW_COLOR = "black";
 const DEFAULT_SHADOW_COLOR_RGB = "0,0,0";
 
 const configuration = getConfigurationObject();
 
-export const IMPORTANT = configuration?.wrappid?.platform === "web" ? " !important" : "";
+export const IMPORTANT =
+  configuration?.wrappid?.platform === "web" ? " !important" : "";
 export const PX_TAG = configuration?.wrappid?.platform === "web" ? "px" : "";
 export const DEFAULT_MARGIN = 8;
 export const DEFAULT_PADDING = 8;
@@ -200,13 +205,23 @@ export const defaultUtilityStyles = {
   bottom100: { bottom: "100%" },
   bottom50: { bottom: "50%" },
 
-  borderRounded: { borderRadius: DEFAULT_BORDER_RADIUS * 2 + PX_TAG + IMPORTANT },
+  borderRounded: {
+    borderRadius: DEFAULT_BORDER_RADIUS * 2 + PX_TAG + IMPORTANT,
+  },
   borderRounded0: { borderRadius: 0 + IMPORTANT },
   borderRounded1: { borderRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT },
-  borderRounded2: { borderRadius: DEFAULT_BORDER_RADIUS * 2 + PX_TAG + IMPORTANT },
-  borderRounded3: { borderRadius: DEFAULT_BORDER_RADIUS * 3 + PX_TAG + IMPORTANT },
-  borderRounded4: { borderRadius: DEFAULT_BORDER_RADIUS * 4 + PX_TAG + IMPORTANT },
-  borderRounded5: { borderRadius: DEFAULT_BORDER_RADIUS * 5 + PX_TAG + IMPORTANT },
+  borderRounded2: {
+    borderRadius: DEFAULT_BORDER_RADIUS * 2 + PX_TAG + IMPORTANT,
+  },
+  borderRounded3: {
+    borderRadius: DEFAULT_BORDER_RADIUS * 3 + PX_TAG + IMPORTANT,
+  },
+  borderRounded4: {
+    borderRadius: DEFAULT_BORDER_RADIUS * 4 + PX_TAG + IMPORTANT,
+  },
+  borderRounded5: {
+    borderRadius: DEFAULT_BORDER_RADIUS * 5 + PX_TAG + IMPORTANT,
+  },
   borderRoundedCircle: { borderRadius: "50%" + IMPORTANT },
   borderRoundedPill: { borderRadius: "50rem" + IMPORTANT },
 
@@ -214,7 +229,10 @@ export const defaultUtilityStyles = {
     borderTopLeftRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
     borderTopRightRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
   },
-  borderRoundedTop0: { borderTopLeftRadius: 0 + IMPORTANT, borderTopRightRadius: 0 + IMPORTANT },
+  borderRoundedTop0: {
+    borderTopLeftRadius: 0 + IMPORTANT,
+    borderTopRightRadius: 0 + IMPORTANT,
+  },
   borderRoundedTop1: {
     borderTopLeftRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
     borderTopRightRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
@@ -509,288 +527,282 @@ export const defaultUtilityStyles = {
   m5: { margin: DEFAULT_MARGIN * 5 + PX_TAG + IMPORTANT },
   mAuto: { margin: "auto" + IMPORTANT },
 
+  mt0: { marginTop: 0 + IMPORTANT },
+  mt1: { marginTop: DEFAULT_MARGIN + PX_TAG + IMPORTANT },
+  mt2: { marginTop: DEFAULT_MARGIN * 2 + PX_TAG + IMPORTANT },
+  mt3: { marginTop: DEFAULT_MARGIN * 3 + PX_TAG + IMPORTANT },
+  mt4: { marginTop: DEFAULT_MARGIN * 4 + PX_TAG + IMPORTANT },
+  mt5: { marginTop: DEFAULT_MARGIN * 5 + PX_TAG + IMPORTANT },
+  mtAuto: { marginTop: "auto" + IMPORTANT },
+
+  mr0: { marginRight: 0 + IMPORTANT },
+  mr1: { marginRight: DEFAULT_MARGIN + PX_TAG + IMPORTANT },
+  mr2: { marginRight: DEFAULT_MARGIN * 2 + PX_TAG + IMPORTANT },
+  mr3: { marginRight: DEFAULT_MARGIN * 3 + PX_TAG + IMPORTANT },
+  mr4: { marginRight: DEFAULT_MARGIN * 4 + PX_TAG + IMPORTANT },
+  mr5: { marginRight: DEFAULT_MARGIN * 5 + PX_TAG + IMPORTANT },
+  mrAuto: { marginRight: "auto"  + IMPORTANT},
+
+  mb0: { marginBottom: 0 + IMPORTANT },
+  mb1: { marginBottom: DEFAULT_MARGIN + PX_TAG + IMPORTANT },
+  mb2: { marginBottom: DEFAULT_MARGIN * 2 + PX_TAG + IMPORTANT },
+  mb3: { marginBottom: DEFAULT_MARGIN * 3 + PX_TAG + IMPORTANT },
+  mb4: { marginBottom: DEFAULT_MARGIN * 4 + PX_TAG + IMPORTANT },
+  mb5: { marginBottom: DEFAULT_MARGIN * 5 + PX_TAG + IMPORTANT },
+  mbAuto: { marginBottom: "auto"  + IMPORTANT},
+
+  ml0: { marginLeft: 0 + IMPORTANT },
+  ml1: { marginLeft: DEFAULT_MARGIN + PX_TAG + IMPORTANT },
+  ml2: { marginLeft: DEFAULT_MARGIN * 2 + PX_TAG + IMPORTANT },
+  ml3: { marginLeft: DEFAULT_MARGIN * 3 + PX_TAG + IMPORTANT },
+  ml4: { marginLeft: DEFAULT_MARGIN * 4 + PX_TAG + IMPORTANT },
+  ml5: { marginLeft: DEFAULT_MARGIN * 5 + PX_TAG + IMPORTANT },
+  mlAuto: { marginLeft: "auto"  + IMPORTANT},
+
+  mx0: { marginLeft: 0, marginRight: 0 + IMPORTANT },
+  mx1: {
+    marginLeft: DEFAULT_MARGIN * 1 + PX_TAG + IMPORTANT,
+    marginRight: DEFAULT_MARGIN * 1 + PX_TAG + IMPORTANT,
+  },
+  mx2: {
+    marginLeft: DEFAULT_MARGIN * 2 + PX_TAG + IMPORTANT,
+    marginRight: DEFAULT_MARGIN * 2 + PX_TAG + IMPORTANT,
+  },
+  mx3: {
+    marginLeft: DEFAULT_MARGIN * 3 + PX_TAG + IMPORTANT,
+    marginRight: DEFAULT_MARGIN * 3 + PX_TAG + IMPORTANT,
+  },
+  mx4: {
+    marginLeft: DEFAULT_MARGIN * 4 + PX_TAG + IMPORTANT,
+    marginRight: DEFAULT_MARGIN * 4 + PX_TAG + IMPORTANT,
+  },
+  mx5: {
+    marginLeft: DEFAULT_MARGIN * 5 + PX_TAG + IMPORTANT,
+    marginRight: DEFAULT_MARGIN * 5 + PX_TAG + IMPORTANT,
+  },
+  mxAuto: { marginLeft: "auto", marginRight: "auto"  + IMPORTANT},
+
+  
+  my0: { marginBottom: 0, marginTop: 0 + IMPORTANT },
+  my1: {
+    marginBottom: DEFAULT_MARGIN * 1 + PX_TAG + IMPORTANT,
+    marginTop: DEFAULT_MARGIN * 1 + PX_TAG + IMPORTANT,
+  },
+  my2: {
+    marginBottom: DEFAULT_MARGIN * 2 + PX_TAG + IMPORTANT,
+    marginTop: DEFAULT_MARGIN * 2 + PX_TAG + IMPORTANT,
+  },
+  my3: {
+    marginBottom: DEFAULT_MARGIN * 3 + PX_TAG + IMPORTANT,
+    marginTop: DEFAULT_MARGIN * 3 + PX_TAG + IMPORTANT,
+  },
+  my4: {
+    marginBottom: DEFAULT_MARGIN * 4 + PX_TAG + IMPORTANT,
+    marginTop: DEFAULT_MARGIN * 4 + PX_TAG + IMPORTANT,
+  },
+  my5: {
+    marginBottom: DEFAULT_MARGIN * 5 + PX_TAG + IMPORTANT,
+    marginTop: DEFAULT_MARGIN * 5 + PX_TAG + IMPORTANT,
+  },
+  myAuto: { marginBottom: "auto", marginTop: "auto"  + IMPORTANT},
+
+  mN1: { margin: DEFAULT_MARGIN * -1 + PX_TAG + IMPORTANT },
+  mN2: { margin: DEFAULT_MARGIN * -2 + PX_TAG + IMPORTANT },
+  mN3: { margin: DEFAULT_MARGIN * -3 + PX_TAG + IMPORTANT },
+  mN4: { margin: DEFAULT_MARGIN * -4 + PX_TAG + IMPORTANT },
+  mN5: { margin: DEFAULT_MARGIN * -5 + PX_TAG + IMPORTANT },
+
+  mtN1: { marginTop: DEFAULT_MARGIN * -1 + PX_TAG + IMPORTANT },
+  mtN2: { marginTop: DEFAULT_MARGIN * -2 + PX_TAG + IMPORTANT },
+  mtN3: { marginTop: DEFAULT_MARGIN * -3 + PX_TAG + IMPORTANT },
+  mtN4: { marginTop: DEFAULT_MARGIN * -4 + PX_TAG + IMPORTANT },
+  mtN5: { marginTop: DEFAULT_MARGIN * -5 + PX_TAG + IMPORTANT },
+
+
+  mrN1: { marginRight: DEFAULT_MARGIN * -1 + PX_TAG + IMPORTANT },
+  mrN2: { marginRight: DEFAULT_MARGIN * -2 + PX_TAG + IMPORTANT },
+  mrN3: { marginRight: DEFAULT_MARGIN * -3 + PX_TAG + IMPORTANT },
+  mrN4: { marginRight: DEFAULT_MARGIN * -4 + PX_TAG + IMPORTANT },
+  mrN5: { marginRight: DEFAULT_MARGIN * -5 + PX_TAG + IMPORTANT },
+
+  mbN1: { marginBottom: DEFAULT_MARGIN * -1 + PX_TAG + IMPORTANT },
+  mbN2: { marginBottom: DEFAULT_MARGIN * -2 + PX_TAG + IMPORTANT },
+  mbN3: { marginBottom: DEFAULT_MARGIN * -3 + PX_TAG + IMPORTANT },
+  mbN4: { marginBottom: DEFAULT_MARGIN * -4 + PX_TAG + IMPORTANT },
+  mbN5: { marginBottom: DEFAULT_MARGIN * -5 + PX_TAG + IMPORTANT },
+  
+  mlN1: { marginLeft: DEFAULT_MARGIN * -1 + PX_TAG + IMPORTANT },
+  mlN2: { marginLeft: DEFAULT_MARGIN * -2 + PX_TAG + IMPORTANT },
+  mlN3: { marginLeft: DEFAULT_MARGIN * -3 + PX_TAG + IMPORTANT },
+  mlN4: { marginLeft: DEFAULT_MARGIN * -4 + PX_TAG + IMPORTANT },
+  mlN5: { marginLeft: DEFAULT_MARGIN * -5 + PX_TAG + IMPORTANT },
+
+  mxN1: {
+    marginLeft: DEFAULT_MARGIN * -1 + PX_TAG + IMPORTANT,
+    marginRight: DEFAULT_MARGIN * -1 + PX_TAG + IMPORTANT,
+  },
+  mxN2: {
+    marginLeft: DEFAULT_MARGIN * -2 + PX_TAG + IMPORTANT,
+    marginRight: DEFAULT_MARGIN * -2 + PX_TAG + IMPORTANT,
+  },
+  mxN3: {
+    marginLeft: DEFAULT_MARGIN * -3 + PX_TAG + IMPORTANT,
+    marginRight: DEFAULT_MARGIN * -3 + PX_TAG + IMPORTANT,
+  },
+  mxN4: {
+    marginLeft: DEFAULT_MARGIN * -4 + PX_TAG + IMPORTANT,
+    marginRight: DEFAULT_MARGIN * -4 + PX_TAG + IMPORTANT,
+  },
+  
+  mxN5: {
+    marginLeft: DEFAULT_MARGIN * -5 + PX_TAG + IMPORTANT,
+    marginRight: DEFAULT_MARGIN * -5 + PX_TAG + IMPORTANT,
+  },
+
+  myN1: {
+    marginBottom: DEFAULT_MARGIN * -1 + PX_TAG + IMPORTANT,
+    marginTop: DEFAULT_MARGIN * -1 + PX_TAG + IMPORTANT,
+  },
+  myN2: {
+    marginBottom: DEFAULT_MARGIN * -2 + PX_TAG + IMPORTANT,
+    marginTop: DEFAULT_MARGIN * -2 + PX_TAG + IMPORTANT,
+  },
+  myN3: {
+    marginBottom: DEFAULT_MARGIN * -3 + PX_TAG + IMPORTANT,
+    marginTop: DEFAULT_MARGIN * -3 + PX_TAG + IMPORTANT,
+  },
+  myN4: {
+    marginBottom: DEFAULT_MARGIN * -4 + PX_TAG + IMPORTANT,
+    marginTop: DEFAULT_MARGIN * -4 + PX_TAG + IMPORTANT,
+  },
+  myN5: {
+    marginBottom: DEFAULT_MARGIN * -5 + PX_TAG + IMPORTANT,
+    marginTop: DEFAULT_MARGIN * -5 + PX_TAG + IMPORTANT,
+  },
+
+
   /*-------------------------------------------------
    * Gap
    *-----------------------------------------------*/
   gap0: { gap: "0" },
-
   gap1: { gap: DEFAULT_SPACING * 1 },
-
-  mN1: { margin: DEFAULT_MARGIN * -1 + PX_TAG },
-
   gap2: { gap: DEFAULT_SPACING * 2 },
-
-  mN2: { margin: DEFAULT_MARGIN * -2 + PX_TAG },
-
   gap3: { gap: DEFAULT_SPACING * 3 },
-
-  mN3: { margin: DEFAULT_MARGIN * -3 + PX_TAG },
-
   gap4: { gap: DEFAULT_SPACING * 4 },
-
-  mN4: { margin: DEFAULT_MARGIN * -4 + PX_TAG },
-
   gap5: { gap: DEFAULT_SPACING * 5 },
 
-  mN5: { margin: DEFAULT_MARGIN * -5 + PX_TAG },
 
   // -moz-column-gap: 0 !important;
   colGap0: { columnGap: "0" },
-
-  maxH100: { maxHeight: "100%" },
-
-  maxH25: { maxHeight: "25%" },
-
   colGap1: { columnGap: DEFAULT_SPACING * 1 },
-
-  maxH50: { maxHeight: "50%" },
-
   colGap2: { columnGap: DEFAULT_SPACING * 2 },
-
-  maxH75: { maxHeight: "75%" },
-
   colGap3: { columnGap: DEFAULT_SPACING * 3 },
-
-  maxVh100: { maxHeight: "100vh" },
-
   colGap4: { columnGap: DEFAULT_SPACING * 4 },
-
-  maxVh25: { maxHeight: "25vh" },
-
   colGap5: { columnGap: DEFAULT_SPACING * 5 },
 
+  maxH25: { maxHeight: "25%" },
+  maxH50: { maxHeight: "50%" },
+  maxH75: { maxHeight: "75%" },
+  maxH100: { maxHeight: "100%" },
+
+  maxVh25: { maxHeight: "25vh" },
   maxVh50: { maxHeight: "50vh" },
-
   maxVh75: { maxHeight: "75vh" },
-
-  maxVw100: { maxWidth: "100vw" },
+  maxVh100: { maxHeight: "100vh" },
 
   maxVw25: { maxWidth: "25vw" },
-
   maxVw50: { maxWidth: "50vw" },
-
   maxVw75: { maxWidth: "75vw" },
-
-  maxW100: { maxWidth: "100%" },
+  maxVw100: { maxWidth: "100vw" },
 
   maxW25: { maxWidth: "25%" },
-
   maxW50: { maxWidth: "50%" },
-
   maxW75: { maxWidth: "75%" },
-
-  mb0: { marginBottom: 0 },
-
-  mb1: { marginBottom: DEFAULT_MARGIN + PX_TAG },
-
+  maxW100: { maxWidth: "100%" },
+  
+  minH25: { minHeight: "25%" },
+  minH50: { minHeight: "50%" },
+  minH75: { minHeight: "75%" },
+  minH100: { minHeight: "100%" },
+  
+  minVh25: { minHeight: "25vh" },
+  minVh50: { minHeight: "50vh" },
+  minVh75: { minHeight: "75vh" },
+  minVh100: { minHeight: "100vh" },
   /**************************************************
    * Vertical Align
    *************************************************/
   alignBaseline: { verticalAlign: "baseline" },
-
-  mb2: { marginBottom: DEFAULT_MARGIN * 2 + PX_TAG },
-
-  mb3: { marginBottom: DEFAULT_MARGIN * 3 + PX_TAG },
-
   alignMiddle: { verticalAlign: "middle" },
-
-  mb4: { marginBottom: DEFAULT_MARGIN * 4 + PX_TAG },
-
   alignBottom: { verticalAlign: "bottom" },
-
-  mb5: { marginBottom: DEFAULT_MARGIN * 5 + PX_TAG },
-
-  mbAuto: { marginBottom: "auto" },
-
   alignTextBottom: { verticalAlign: "text-bottom" },
-
-  mbN1: { marginBottom: DEFAULT_MARGIN * -1 + PX_TAG },
-
   alignTextTop: { verticalAlign: "text-top" },
-
-  mbN2: { marginBottom: DEFAULT_MARGIN * -2 + PX_TAG },
-
   alignTop: { verticalAlign: "top" },
-
-  mbN3: { marginBottom: DEFAULT_MARGIN * -3 + PX_TAG },
-
   invisible: { visibility: "hidden" },
-
-  mbN4: { marginBottom: DEFAULT_MARGIN * -4 + PX_TAG },
 
   /**************************************************
    * cursor
    *************************************************/
+
   cursorAlias: { cursor: "alias " },
-
-  mbN5: { marginBottom: DEFAULT_MARGIN * -5 + PX_TAG },
-
-  minH100: { minHeight: "100%" },
-
   cursorAllScroll: { cursor: "all-scroll " },
-
-  minH25: { minHeight: "25%" },
-
   cursorAuto: { cursor: "auto" },
-
-  minH50: { minHeight: "50%" },
-
   cursorCell: { cursor: "cell " },
-
-  minH75: { minHeight: "75%" },
-
   cursorColResize: { cursor: "col-resize " },
-
-  minVh100: { minHeight: "100vh" },
-
-  minVh25: { minHeight: "25vh" },
-
   cursorContextMenu: { cursor: "context-menu" },
-
-  minVh50: { minHeight: "50vh" },
-
-  minVh75: { minHeight: "75vh" },
-
   cursorCopy: { cursor: "copy " },
-
+  cursorCrosshair: { cursor: "crosshair " },
+  cursorDefault: { cursor: "default " },
+  cursorEwResize: { cursor: "ew-resize " },
+  cursorEResize: { cursor: "e-resize " },
+  cursorGrab: { cursor: "grab " },
+  cursorGrabbing: { cursor: "grabbing " },
+  cursorHelp: { cursor: "help " },
+  cursorMove: { cursor: "move " },
+  cursorNResize: { cursor: "n-resize " },
+  cursorNeResize: { cursor: "ne-resize " },
+  cursorNeswResize: { cursor: "nesw-resize" },
+  cursorInitial: { cursor: "initial " },
+  cursorNoDrop: { cursor: "no-drop " },
+  cursorInherit: { cursor: "inherit" },
+  cursorNone: { cursor: "none " },
+  cursorNotAllowed: { cursor: "not-allowed " },
+  cursorNsResize: { cursor: "ns-resize " },
+  cursorNwResize: { cursor: "nw-resize " },
+  cursorNwseResize: { cursor: "nwse-resize" },
+  cursorPointer: { cursor: "pointer " },
+  cursorProgress: { cursor: "progress " },
+  cursorRowResize: { cursor: "row-resize " },
+  cursorSResize: { cursor: "s-resize " },
+  cursorSeResize: { cursor: "se-resize " },
+  cursorSwResize: { cursor: "sw-resize " },
+  cursorText: { cursor: "text " },
+  cursorURL: { cursor: "URL " },
+  cursorVerticalText: { cursor: "vertical-text" },
+  cursorWResize: { cursor: "w-resize " },
+  cursorWait: { cursor: "wait " },
+  cursorZoomIn: { cursor: "zoom-in" },
+  cursorZoomOut: { cursor: "zoom-out" },
+  
+  
+  
+  minVw25: { minWidth: "25vw" },
+  minVw50: { minWidth: "50vw" },
+  minVw75: { minWidth: "75vw" },
   minVw100: { minWidth: "100vw" },
 
-  cursorCrosshair: { cursor: "crosshair " },
-
-  minVw25: { minWidth: "25vw" },
-
-  cursorDefault: { cursor: "default " },
-
-  minVw50: { minWidth: "50vw" },
-
-  cursorEResize: { cursor: "e-resize " },
-
-  minVw75: { minWidth: "75vw" },
-
-  cursorEwResize: { cursor: "ew-resize " },
-
+  minW25: { minWidth: "25%" },
+  minW50: { minWidth: "50%" },
+  minW75: { minWidth: "75%" },
   minW100: { minWidth: "100%" },
 
-  cursorGrab: { cursor: "grab " },
 
-  minW25: { minWidth: "25%" },
+  
+  
 
-  cursorGrabbing: { cursor: "grabbing " },
-
-  minW50: { minWidth: "50%" },
-
-  cursorHelp: { cursor: "help " },
-
-  minW75: { minWidth: "75%" },
-
-  cursorMove: { cursor: "move " },
-
-  ml0: { marginLeft: 0 },
-
-  cursorNResize: { cursor: "n-resize " },
-
-  ml1: { marginLeft: DEFAULT_MARGIN + PX_TAG },
-
-  cursorNeResize: { cursor: "ne-resize " },
-
-  ml2: { marginLeft: DEFAULT_MARGIN * 2 + PX_TAG },
-
-  cursorNeswResize: { cursor: "nesw-resize" },
-
-  ml3: { marginLeft: DEFAULT_MARGIN * 3 + PX_TAG },
-
-  cursorInitial: { cursor: "initial " },
-
-  ml4: { marginLeft: DEFAULT_MARGIN * 4 + PX_TAG },
-
-  cursorNoDrop: { cursor: "no-drop " },
-
-  ml5: { marginLeft: DEFAULT_MARGIN * 5 + PX_TAG },
-
-  cursorInherit: { cursor: "inherit" },
-
-  mlAuto: { marginLeft: "auto" },
-
-  cursorNone: { cursor: "none " },
-
-  mlN1: { marginLeft: DEFAULT_MARGIN * -1 + PX_TAG },
-
-  cursorNotAllowed: { cursor: "not-allowed " },
-
-  mlN2: { marginLeft: DEFAULT_MARGIN * -2 + PX_TAG },
-
-  cursorNsResize: { cursor: "ns-resize " },
-
-  mlN3: { marginLeft: DEFAULT_MARGIN * -3 + PX_TAG },
-
-  cursorNwResize: { cursor: "nw-resize " },
-
-  mlN4: { marginLeft: DEFAULT_MARGIN * -4 + PX_TAG },
-
-  cursorNwseResize: { cursor: "nwse-resize" },
-
-  mlN5: { marginLeft: DEFAULT_MARGIN * -5 + PX_TAG },
-
-  cursorPointer: { cursor: "pointer " },
-
-  mr0: { marginRight: 0 },
-
-  cursorProgress: { cursor: "progress " },
-
-  mr1: { marginRight: DEFAULT_MARGIN + PX_TAG },
-
-  cursorRowResize: { cursor: "row-resize " },
-
-  mr2: { marginRight: DEFAULT_MARGIN * 2 + PX_TAG },
-
-  cursorSResize: { cursor: "s-resize " },
-
-  mr3: { marginRight: DEFAULT_MARGIN * 3 + PX_TAG },
-
-  cursorSeResize: { cursor: "se-resize " },
-
-  mr4: { marginRight: DEFAULT_MARGIN * 4 + PX_TAG },
-
-  cursorSwResize: { cursor: "sw-resize " },
-
-  mr5: { marginRight: DEFAULT_MARGIN * 5 + PX_TAG },
-
-  cursorText: { cursor: "text " },
-
-  mrAuto: { marginRight: "auto" },
-
-  cursorURL: { cursor: "URL " },
-
-  mrN1: { marginRight: DEFAULT_MARGIN * -1 + PX_TAG },
-
-  cursorVerticalText: { cursor: "vertical-text" },
-
-  mrN2: { marginRight: DEFAULT_MARGIN * -2 + PX_TAG },
-
-  cursorWResize: { cursor: "w-resize " },
-
-  mrN3: { marginRight: DEFAULT_MARGIN * -3 + PX_TAG },
-
-  cursorWait: { cursor: "wait " },
-
-  mrN4: { marginRight: DEFAULT_MARGIN * -4 + PX_TAG },
-
-  cursorZoomIn: { cursor: "zoom-in" },
-
-  mrN5: { marginRight: DEFAULT_MARGIN * -5 + PX_TAG },
-
-  cursorZoomOut: { cursor: "zoom-out" },
-
-  mt0: { marginTop: 0 },
-
-  mt1: { marginTop: DEFAULT_MARGIN + PX_TAG },
-
-  mt2: { marginTop: DEFAULT_MARGIN * 2 + PX_TAG },
-
-  mt3: { marginTop: DEFAULT_MARGIN * 3 + PX_TAG },
-
-  mt4: { marginTop: DEFAULT_MARGIN * 4 + PX_TAG },
-
+  
+  
+ 
   /**************************************************
    * Object Fit
    *************************************************/
@@ -799,208 +811,62 @@ export const defaultUtilityStyles = {
     objectFit: "contain",
   },
 
-  mt5: { marginTop: DEFAULT_MARGIN * 5 + PX_TAG },
-
   objectFitCover: {
     // -o-object-fit: cover !important;
     objectFit: "cover",
   },
-
-  mtAuto: { marginTop: "auto" },
 
   objectFitFill: {
     // -o-object-fit: fill !important;
     objectFit: "fill",
   },
 
-  mtN1: { marginTop: DEFAULT_MARGIN * -1 + PX_TAG },
-
   objectFitNone: {
     // -o-object-fit: none !important;
     objectFit: "none",
   },
-
-  mtN2: { marginTop: DEFAULT_MARGIN * -2 + PX_TAG },
 
   objectFitScale: {
     // -o-object-fit: scale-down !important;
     objectFit: "scale-down",
   },
 
-  mtN3: { marginTop: DEFAULT_MARGIN * -3 + PX_TAG },
-
-  mtN4: { marginTop: DEFAULT_MARGIN * -4 + PX_TAG },
-
   /**************************************************
    * Opacity
    *************************************************/
   opacity0: { opacity: "0.00" },
-
-  mtN5: { marginTop: DEFAULT_MARGIN * -5 + PX_TAG },
-
-  opacity10: { opacity: "0.10" },
-
-  mx0: { marginLeft: 0, marginRight: 0 },
-
-  opacity100: { opacity: "1.00" },
-
-  mx1: {
-    marginLeft: DEFAULT_MARGIN * 1 + PX_TAG,
-    marginRight: DEFAULT_MARGIN * 1 + PX_TAG,
-  },
-
-  opacity15: { opacity: "0.15" },
-
-  mx2: {
-    marginLeft: DEFAULT_MARGIN * 2 + PX_TAG,
-    marginRight: DEFAULT_MARGIN * 2 + PX_TAG,
-  },
-
-  opacity20: { opacity: "0.20" },
-
-  mx3: {
-    marginLeft: DEFAULT_MARGIN * 3 + PX_TAG,
-    marginRight: DEFAULT_MARGIN * 3 + PX_TAG,
-  },
-
-  opacity25: { opacity: "0.25" },
-
-  mx4: {
-    marginLeft: DEFAULT_MARGIN * 4 + PX_TAG,
-    marginRight: DEFAULT_MARGIN * 4 + PX_TAG,
-  },
-
-  opacity30: { opacity: "0.30" },
-
-  mx5: {
-    marginLeft: DEFAULT_MARGIN * 5 + PX_TAG,
-    marginRight: DEFAULT_MARGIN * 5 + PX_TAG,
-  },
-
-  opacity35: { opacity: "0.35" },
-
-  mxAuto: { marginLeft: "auto", marginRight: "auto" },
-
-  opacity40: { opacity: "0.40" },
-
-  mxN1: {
-    marginLeft: DEFAULT_MARGIN * -1 + PX_TAG,
-    marginRight: DEFAULT_MARGIN * -1 + PX_TAG,
-  },
-
-  opacity45: { opacity: "0.45" },
-
-  mxN2: {
-    marginLeft: DEFAULT_MARGIN * -2 + PX_TAG,
-    marginRight: DEFAULT_MARGIN * -2 + PX_TAG,
-  },
-
   opacity5: { opacity: "0.05" },
-
-  mxN3: {
-    marginLeft: DEFAULT_MARGIN * -3 + PX_TAG,
-    marginRight: DEFAULT_MARGIN * -3 + PX_TAG,
-  },
-
+  opacity10: { opacity: "0.10" },
+  opacity15: { opacity: "0.15" },
+  opacity20: { opacity: "0.20" },
+  opacity25: { opacity: "0.25" },
+  opacity30: { opacity: "0.30" },
+  opacity35: { opacity: "0.35" },
+  opacity40: { opacity: "0.40" },
+  opacity45: { opacity: "0.45" },
   opacity50: { opacity: "0.50" },
-
-  mxN4: {
-    marginLeft: DEFAULT_MARGIN * -4 + PX_TAG,
-    marginRight: DEFAULT_MARGIN * -4 + PX_TAG,
-  },
-
   opacity55: { opacity: "0.55" },
-
-  mxN5: {
-    marginLeft: DEFAULT_MARGIN * -5 + PX_TAG,
-    marginRight: DEFAULT_MARGIN * -5 + PX_TAG,
-  },
-
   opacity60: { opacity: "0.60" },
-
-  my0: { marginBottom: 0, marginTop: 0 },
-
   opacity65: { opacity: "0.65" },
-
-  my1: {
-    marginBottom: DEFAULT_MARGIN * 1 + PX_TAG,
-    marginTop: DEFAULT_MARGIN * 1 + PX_TAG,
-  },
-
   opacity70: { opacity: "0.70" },
-
-  my2: {
-    marginBottom: DEFAULT_MARGIN * 2 + PX_TAG,
-    marginTop: DEFAULT_MARGIN * 2 + PX_TAG,
-  },
-
   opacity75: { opacity: "0.75" },
-
-  my3: {
-    marginBottom: DEFAULT_MARGIN * 3 + PX_TAG,
-    marginTop: DEFAULT_MARGIN * 3 + PX_TAG,
-  },
-
   opacity80: { opacity: "0.80" },
-
-  my4: {
-    marginBottom: DEFAULT_MARGIN * 4 + PX_TAG,
-    marginTop: DEFAULT_MARGIN * 4 + PX_TAG,
-  },
-
   opacity85: { opacity: "0.85" },
-
-  my5: {
-    marginBottom: DEFAULT_MARGIN * 5 + PX_TAG,
-    marginTop: DEFAULT_MARGIN * 5 + PX_TAG,
-  },
-
   opacity90: { opacity: "0.90" },
-
-  myAuto: { marginBottom: "auto", marginTop: "auto" },
-
   opacity95: { opacity: "0.95" },
-
-  myN1: {
-    marginBottom: DEFAULT_MARGIN * -1 + PX_TAG,
-    marginTop: DEFAULT_MARGIN * -1 + PX_TAG,
-  },
-
-  myN2: {
-    marginBottom: DEFAULT_MARGIN * -2 + PX_TAG,
-    marginTop: DEFAULT_MARGIN * -2 + PX_TAG,
-  },
+  opacity100: { opacity: "1.00" },
+  
 
   /**************************************************
    * Overflow
    *************************************************/
+  
   overflowAuto: { overflow: "auto" },
-
-  myN3: {
-    marginBottom: DEFAULT_MARGIN * -3 + PX_TAG,
-    marginTop: DEFAULT_MARGIN * -3 + PX_TAG,
-  },
-
   overflowHidden: { overflow: "hidden" },
-
-  myN4: {
-    marginBottom: DEFAULT_MARGIN * -4 + PX_TAG,
-    marginTop: DEFAULT_MARGIN * -4 + PX_TAG,
-  },
-
   overflowScroll: { overflow: "scroll" },
-
-  myN5: {
-    marginBottom: DEFAULT_MARGIN * -5 + PX_TAG,
-    marginTop: DEFAULT_MARGIN * -5 + PX_TAG,
-  },
-
   overflowVisible: { overflow: "visible" },
-
   overflowXAuto: { overflowX: "auto" },
-
   overflowXHidden: { overflowX: "hidden" },
-
   overflowXScroll: { overflowX: "scroll" },
 
   overflowXVisible: { overflowX: "visible" },
@@ -1059,22 +925,22 @@ export const defaultUtilityStyles = {
    * Color
    *************************************************/
   textPrimary: { color: theme.palette.primary.main },
+  textPrimaryDark: { color: theme.palette.primary.dark },
+  textPrimaryLight: { color: theme.palette.primary.light },
+  textSecondary: { color: theme.palette.secondary.main },
 
   pb2: { paddingBottom: DEFAULT_PADDING * 2 + PX_TAG },
 
-  textPrimaryDark: { color: theme.palette.primary.dark },
 
   pb3: { paddingBottom: DEFAULT_PADDING * 3 + PX_TAG },
 
   pb4: { paddingBottom: DEFAULT_PADDING * 4 + PX_TAG },
 
-  textPrimaryLight: { color: theme.palette.primary.light },
 
   pb5: { paddingBottom: DEFAULT_PADDING * 5 + PX_TAG },
 
   peAuto: { pointerEvents: "auto" },
 
-  textSecondary: { color: theme.palette.secondary.main },
 
   peNone: { pointerEvents: "none" },
 
@@ -1242,7 +1108,9 @@ export const defaultUtilityStyles = {
    * Shadows
    * @todo change color using theme
    *************************************************/
-  shadow: { boxShadow: "0 0.5rem 1rem rgba(" + DEFAULT_SHADOW_COLOR_RGB + ", 0.15)" },
+  shadow: {
+    boxShadow: "0 0.5rem 1rem rgba(" + DEFAULT_SHADOW_COLOR_RGB + ", 0.15)",
+  },
 
   /**************************************************
    * Interactions
@@ -1253,7 +1121,9 @@ export const defaultUtilityStyles = {
     userSelect: "all",
   },
 
-  shadowLg: { boxShadow: "0 1rem 3rem rgba(" + DEFAULT_SHADOW_COLOR_RGB + ", 0.175)" },
+  shadowLg: {
+    boxShadow: "0 1rem 3rem rgba(" + DEFAULT_SHADOW_COLOR_RGB + ", 0.175)",
+  },
 
   shadowNone: { boxShadow: "none" },
 
@@ -1264,7 +1134,11 @@ export const defaultUtilityStyles = {
   },
 
   shadowSm: {
-    boxShadow: "0 0.125rem 0.25rem rgba(" + DEFAULT_SHADOW_COLOR_RGB + ", 0.075)" + IMPORTANT,
+    boxShadow:
+      "0 0.125rem 0.25rem rgba(" +
+      DEFAULT_SHADOW_COLOR_RGB +
+      ", 0.075)" +
+      IMPORTANT,
   },
 
   start0: { left: "0" },
