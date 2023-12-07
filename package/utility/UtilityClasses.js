@@ -385,6 +385,51 @@ const UtilityClasses = {
   },
 
   /**************************************************
+   * Cursor
+   *************************************************/
+  CURSOR: {
+    CURSOR_ALIAS: "cursorAlias",
+    CURSOR_ALL_SCROLL: "cursorAllScroll",
+    CURSOR_AUTO: "cursorAuto",
+    CURSOR_CELL: "cursorCell",
+    CURSOR_COL_RESIZE: "cursorColResize",
+    CURSOR_CONTEXT_MENU: "cursorContextMenu",
+    CURSOR_COPY: "cursorCopy",
+    CURSOR_CROSSHAIR: "cursorCrosshair",
+    CURSOR_DEFAULT: "cursorDefault",
+    CURSOR_EW_RESIZE: "cursorEwResize",
+    CURSOR_E_RESIZE: "cursorEResize",
+    CURSOR_GRAB: "cursorGrab",
+    CURSOR_GRABBING: "cursorGrabbing",
+    CURSOR_HELP: "cursorHelp",
+    CURSOR_MOVE: "cursorMove",
+    CURSOR_N_RESIZE: "cursorNResize",
+    CURSOR_NE_RESIZE: "cursorNeResize",
+    CURSOR_NESW_RESIZE: "cursorNeswResize",
+    CURSOR_INITIAL: "cursorInitial",
+    CURSOR_NO_DROP: "cursorNoDrop",
+    CURSOR_INHERIT: "cursorInherit",
+    CURSOR_NONE: "cursorNone",
+    CURSOR_NOT_ALLOWED: "cursorNotAllowed",
+    CURSOR_NS_RESIZE: "cursorNsResize",
+    CURSOR_NW_RESIZE: "cursorNwResize",
+    CURSOR_NWSE_RESIZE: "cursorNwseResize",
+    CURSOR_POINTER: "cursorPointer",
+    CURSOR_PROGRESS: "cursorProgress",
+    CURSOR_ROW_RESIZE: "cursorRowResize",
+    CURSOR_S_RESIZE: "cursorSResize",
+    CURSOR_SE_RESIZE: "cursorSeResize",
+    CURSOR_SW_RESIZE: "cursorSwResize",
+    CURSOR_TEXT: "cursorText",
+    CURSOR_URL: "cursorURL",
+    CURSOR_VERTICAL_TEXT: "cursorVerticalText",
+    CURSOR_W_RESIZE: "cursorWResize",
+    CURSOR_WAIT: "cursorWait",
+    CURSOR_ZOOM_IN: "cursorZoomIn",
+    CURSOR_ZOOM_OUT: "cursorZoomOut",
+  },
+
+  /**************************************************
    * Display
    *************************************************/
   DISPLAY: {

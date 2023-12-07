@@ -37,24 +37,45 @@ export const defaultUtilityStyles = {
   /**************************************************
    * Alignment
    *************************************************/
-  alignContentAround: {
-    alignContent: "space-around",
+  alignItemsStart: {
+    alignItems: "flex-start",
     display: "flex",
   },
-  alignContentBetween: {
-    alignContent: "space-between",
+  alignItemsEnd: {
+    alignItems: "flex-end",
     display: "flex",
   },
-  alignContentCenter: {
-    alignContent: "center",
+  alignItemsCenter: {
+    alignItems: "center",
+    display: "flex",
+  },
+  alignItemsBaseline: {
+    alignItems: "baseline",
+    display: "flex",
+  },
+alignItemsStretch: {
+    alignItems: "stretch",
+    display: "flex",
+  },
+
+  alignContentStart: {
+    alignContent: "flex-start",
     display: "flex",
   },
   alignContentEnd: {
     alignContent: "flex-end",
     display: "flex",
   },
-  alignContentStart: {
-    alignContent: "flex-start",
+alignContentCenter: {
+    alignContent: "center",
+    display: "flex",
+  },
+  alignContentBetween: {
+    alignContent: "space-between",
+    display: "flex",
+  },
+alignContentAround: {
+    alignContent: "space-around",
     display: "flex",
   },
   alignContentStretch: {
@@ -62,43 +83,21 @@ export const defaultUtilityStyles = {
     display: "flex",
   },
 
-  alignItemsBaseline: {
-    alignItems: "baseline",
-    display: "flex",
-  },
-  alignItemsCenter: {
-    alignItems: "center",
-    display: "flex",
-  },
-
-  alignItemsEnd: {
-    alignItems: "flex-end",
-    display: "flex",
-  },
-  alignItemsStart: {
-    alignItems: "flex-start",
-    display: "flex",
-  },
-  alignItemsStretch: {
-    alignItems: "stretch",
-    display: "flex",
-  },
-
   alignSelfAuto: { alignSelf: "auto", display: "flex" },
-  alignSelfBaseline: {
-    alignSelf: "baseline",
-    display: "flex",
-  },
-  alignSelfCenter: {
-    alignSelf: "center",
+  alignSelfStart: {
+    alignSelf: "flex-start",
     display: "flex",
   },
   alignSelfEnd: {
     alignSelf: "flex-end",
     display: "flex",
   },
-  alignSelfStart: {
-    alignSelf: "flex-start",
+  alignSelfCenter: {
+    alignSelf: "center",
+    display: "flex",
+  },
+  alignSelfBaseline: {
+    alignSelf: "baseline",
     display: "flex",
   },
   alignSelfStretch: {
@@ -110,23 +109,23 @@ export const defaultUtilityStyles = {
     display: "flex",
     justifyContent: "center",
   },
-  justifyContentFlexEnd: {
-    display: "flex",
-    justifyContent: "flex-end",
-  },
-  justifyContentFlexStart: {
+justifyContentFlexStart: {
     display: "flex",
     justifyContent: "flex-start",
   },
-  justifyContentSpaceAround: {
+  justifyContentFlexEnd: {
     display: "flex",
-    justifyContent: "space-around",
+    justifyContent: "flex-end",
   },
   justifyContentSpaceBetween: {
     display: "flex",
     justifyContent: "space-between",
   },
-  justifyContentSpaceEvenly: {
+  justifyContentSpaceAround: {
+    display: "flex",
+    justifyContent: "space-around",
+  },
+    justifyContentSpaceEvenly: {
     display: "flex",
     justifyContent: "space-evenly",
   },
@@ -142,42 +141,45 @@ export const defaultUtilityStyles = {
     backgroundColor: theme.palette.primary.main,
     color: theme.palette.primary.contrastText,
   },
+bgPrimaryLight: {
+    backgroundColor: theme.palette.primary.light,
+    color: theme.palette.primary.contrastText,
+  },
   bgPrimaryDark: {
     backgroundColor: theme.palette.primary.dark,
     color: theme.palette.primary.contrastText,
   },
-  bgPrimaryLight: {
-    backgroundColor: theme.palette.primary.light,
-    color: theme.palette.primary.contrastText,
-  },
-
+  
   bgSecondary: {
     backgroundColor: theme.palette.secondary.main,
+    color: theme.palette.secondary.contrastText,
+  },
+bgSecondaryLight: {
+    backgroundColor: theme.palette.secondary.light,
     color: theme.palette.secondary.contrastText,
   },
   bgSecondaryDark: {
     backgroundColor: theme.palette.secondary.dark,
     color: theme.palette.secondary.contrastText,
   },
-  bgSecondaryLight: {
-    backgroundColor: theme.palette.secondary.light,
-    color: theme.palette.secondary.contrastText,
-  },
-
+  
   bgSuccess: {
     backgroundColor: theme.palette.success.main,
+    color: theme.palette.success.contrastText,
+  },
+bgSuccessLight: {
+    backgroundColor: theme.palette.success.light,
     color: theme.palette.success.contrastText,
   },
   bgSuccessDark: {
     backgroundColor: theme.palette.success.dark,
     color: theme.palette.success.contrastText,
   },
-  bgSuccessLight: {
-    backgroundColor: theme.palette.success.light,
-    color: theme.palette.success.contrastText,
+  
+  bgError: {
+    backgroundColor: theme.palette.error.main,
+    color: theme.palette.error.contrastText,
   },
-
-  bgError: { backgroundColor: theme.palette.error.main, color: theme.palette.error.contrastText },
   bgErrorLight: {
     backgroundColor: theme.palette.error.light,
     color: theme.palette.error.contrastText,
@@ -200,7 +202,10 @@ export const defaultUtilityStyles = {
     color: theme.palette.warning.contrastText,
   },
 
-  bgInfo: { backgroundColor: theme.palette.info.main, color: theme.palette.info.contrastText },
+  bgInfo: {
+    backgroundColor: theme.palette.info.main,
+    color: theme.palette.info.contrastText,
+  },
   bgInfoLight: {
     backgroundColor: theme.palette.info.light,
     color: theme.palette.info.contrastText,
@@ -268,9 +273,9 @@ export const defaultUtilityStyles = {
   borderWarningDark: { borderColor: theme.palette.warning.dark },
 
   borderInfo: { borderColor: theme.palette.info.main },
+borderInfoLight: { borderColor: theme.palette.info.light },
   borderInfoDark: { borderColor: theme.palette.info.dark },
-  borderInfoLight: { borderColor: theme.palette.info.light },
-
+  
   borderBlack: { borderColor: "black" },
   borderWhite: { borderColor: "white" },
 
@@ -459,33 +464,44 @@ export const defaultUtilityStyles = {
     borderTopLeftRadius: "50rem" + IMPORTANT,
   },
 
+  borderNone: { borderStyle: "none" },
+  borderDashed: { borderStyle: "dashed" },
+  borderDotted: { borderStyle: "dotted" },
+  borderDouble: { borderStyle: "double" },
+  borderGroove: { borderStyle: "groove" },
+  borderHidden: { borderStyle: "hidden" },
+  borderInset: { borderStyle: "inset" },
+  borderOutset: { borderStyle: "outset" },
+  borderRidge: { borderStyle: "ridge" },
+  borderSolid: { borderStyle: "solid" },
+
   /**************************************************
    * Color
    *************************************************/
   textPrimary: { color: theme.palette.primary.main },
+textPrimaryLight: { color: theme.palette.primary.light },
   textPrimaryDark: { color: theme.palette.primary.dark },
-  textPrimaryLight: { color: theme.palette.primary.light },
-
+  
   textSecondary: { color: theme.palette.secondary.main },
+textSecondaryLight: { color: theme.palette.secondary.light },
   textSecondaryDark: { color: theme.palette.secondary.dark },
-  textSecondaryLight: { color: theme.palette.secondary.light },
-
+  
   textSuccess: { color: theme.palette.success.main },
+textSuccessLight: { color: theme.palette.success.light },
   textSuccessDark: { color: theme.palette.success.dark },
-  textSuccessLight: { color: theme.palette.success.light },
-
+  
   textError: { color: theme.palette.error.main },
+textErrorLight: { color: theme.palette.error.light },
   textErrorDark: { color: theme.palette.error.dark },
-  textErrorLight: { color: theme.palette.error.light },
-
+  
   textWarning: { color: theme.palette.warning.main },
+textWarningLight: { color: theme.palette.warning.light },
   textWarningDark: { color: theme.palette.warning.dark },
-  textWarningLight: { color: theme.palette.warning.light },
-
+  
   textInfo: { color: theme.palette.info.main },
+textInfoLight: { color: theme.palette.info.light },
   textInfoDark: { color: theme.palette.info.dark },
-  textInfoLight: { color: theme.palette.info.light },
-
+  
   textBlack: { color: "#000000" },
   textBlack50: { color: "#00000077" },
   textWhite: { color: "#ffffff" },
@@ -513,6 +529,49 @@ export const defaultUtilityStyles = {
   // -- textDangerEmphasis: {},
   // -- textLightEmphasis: {},
   // -- textDarkEmphasis: {},
+
+  /**************************************************
+   * Cursor
+   *************************************************/
+  cursorAlias: { cursor: "alias " },
+  cursorAllScroll: { cursor: "all-scroll " },
+  cursorAuto: { cursor: "auto" },
+  cursorCell: { cursor: "cell " },
+  cursorColResize: { cursor: "col-resize " },
+  cursorContextMenu: { cursor: "context-menu" },
+  cursorCopy: { cursor: "copy " },
+  cursorCrosshair: { cursor: "crosshair " },
+  cursorDefault: { cursor: "default " },
+  cursorEwResize: { cursor: "ew-resize " },
+  cursorEResize: { cursor: "e-resize " },
+  cursorGrab: { cursor: "grab " },
+  cursorGrabbing: { cursor: "grabbing " },
+  cursorHelp: { cursor: "help " },
+  cursorMove: { cursor: "move " },
+  cursorNResize: { cursor: "n-resize " },
+  cursorNeResize: { cursor: "ne-resize " },
+  cursorNeswResize: { cursor: "nesw-resize" },
+  cursorInitial: { cursor: "initial " },
+  cursorNoDrop: { cursor: "no-drop " },
+  cursorInherit: { cursor: "inherit" },
+  cursorNone: { cursor: "none " },
+  cursorNotAllowed: { cursor: "not-allowed " },
+  cursorNsResize: { cursor: "ns-resize " },
+  cursorNwResize: { cursor: "nw-resize " },
+  cursorNwseResize: { cursor: "nwse-resize" },
+  cursorPointer: { cursor: "pointer " },
+  cursorProgress: { cursor: "progress " },
+  cursorRowResize: { cursor: "row-resize " },
+  cursorSResize: { cursor: "s-resize " },
+  cursorSeResize: { cursor: "se-resize " },
+  cursorSwResize: { cursor: "sw-resize " },
+  cursorText: { cursor: "text " },
+  cursorURL: { cursor: "URL " },
+  cursorVerticalText: { cursor: "vertical-text" },
+  cursorWResize: { cursor: "w-resize " },
+  cursorWait: { cursor: "wait " },
+  cursorZoomIn: { cursor: "zoom-in" },
+  cursorZoomOut: { cursor: "zoom-out" },
 
   /**************************************************
    * Display
@@ -724,6 +783,35 @@ export const defaultUtilityStyles = {
   boxSizingInitial: { boxSizing: "initial" },
 
   /*-------------------------------------------------
+   * Width
+   *-----------------------------------------------*/
+  w25: { width: "25%" },
+  w50: { width: "50%" },
+  w75: { width: "75%" },
+  w100: { width: "100%" },
+  wAuto: { width: "auto" },
+  maxW25: { maxWidth: "25%" },
+  maxW50: { maxWidth: "50%" },
+  maxW75: { maxWidth: "75%" },
+  maxW100: { maxWidth: "100%" },
+  minW25: { minWidth: "25%" },
+  minW50: { minWidth: "50%" },
+  minW75: { minWidth: "75%" },
+  minW100: { minWidth: "100%" },
+  vw25: { width: "25vw" },
+  vw50: { width: "50vw" },
+  vw75: { width: "75vw" },
+  vw100: { width: "100vw" },
+  maxVw25: { maxWidth: "25vw" },
+  maxVw50: { maxWidth: "50vw" },
+  maxVw75: { maxWidth: "75vw" },
+  maxVw100: { maxWidth: "100vw" },
+  minVw25: { minWidth: "25vw" },
+  minVw50: { minWidth: "50vw" },
+  minVw75: { minWidth: "75vw" },
+  minVw100: { minWidth: "100vw" },
+
+  /*-------------------------------------------------
    * Height
    *-----------------------------------------------*/
   h25: { height: "25%" },
@@ -731,131 +819,26 @@ export const defaultUtilityStyles = {
   h75: { height: "75%" },
   h100: { height: "100%" },
   hAuto: { height: "auto" },
-
-  vh25: { height: "25vh" },
-  vh50: { height: "50vh" },
-  vh75: { height: "75vh" },
-  vh100: { height: "100vh" },
-
-  maxH25: { maxHeight: "25%" },
+maxH25: { maxHeight: "25%" },
   maxH50: { maxHeight: "50%" },
   maxH75: { maxHeight: "75%" },
   maxH100: { maxHeight: "100%" },
-
-  maxVh25: { maxHeight: "25vh" },
-  maxVh50: { maxHeight: "50vh" },
-  maxVh75: { maxHeight: "75vh" },
-  maxVh100: { maxHeight: "100vh" },
-
   minH25: { minHeight: "25%" },
   minH50: { minHeight: "50%" },
   minH75: { minHeight: "75%" },
   minH100: { minHeight: "100%" },
-
+  vh25: { height: "25vh" },
+  vh50: { height: "50vh" },
+  vh75: { height: "75vh" },
+  vh100: { height: "100vh" },
+  maxVh25: { maxHeight: "25vh" },
+  maxVh50: { maxHeight: "50vh" },
+  maxVh75: { maxHeight: "75vh" },
+  maxVh100: { maxHeight: "100vh" },
   minVh25: { minHeight: "25vh" },
   minVh50: { minHeight: "50vh" },
   minVh75: { minHeight: "75vh" },
   minVh100: { minHeight: "100vh" },
-
-  maxVw25: { maxWidth: "25vw" },
-  maxVw50: { maxWidth: "50vw" },
-  maxVw75: { maxWidth: "75vw" },
-  maxVw100: { maxWidth: "100vw" },
-
-  maxW25: { maxWidth: "25%" },
-  maxW50: { maxWidth: "50%" },
-  maxW75: { maxWidth: "75%" },
-  maxW100: { maxWidth: "100%" },
-
-  /*-------------------------------------------------
-   * Gap
-   *-----------------------------------------------*/
-  gap0: { gap: "0" },
-  gap1: { gap: DEFAULT_SPACING * 1 },
-  gap2: { gap: DEFAULT_SPACING * 2 },
-  gap3: { gap: DEFAULT_SPACING * 3 },
-  gap4: { gap: DEFAULT_SPACING * 4 },
-  gap5: { gap: DEFAULT_SPACING * 5 },
-
-  rowGap0: { rowGap: "0" },
-  rowGap1: { rowGap: DEFAULT_SPACING * 1 },
-  rowGap2: { rowGap: DEFAULT_SPACING * 2 },
-  rowGap3: { rowGap: DEFAULT_SPACING * 3 },
-  rowGap4: { rowGap: DEFAULT_SPACING * 4 },
-  rowGap5: { rowGap: DEFAULT_SPACING * 5 },
-
-  // -moz-column-gap: 0 !important;
-  colGap0: { columnGap: "0" },
-  colGap1: { columnGap: DEFAULT_SPACING * 1 },
-  colGap2: { columnGap: DEFAULT_SPACING * 2 },
-  colGap3: { columnGap: DEFAULT_SPACING * 3 },
-  colGap4: { columnGap: DEFAULT_SPACING * 4 },
-  colGap5: { columnGap: DEFAULT_SPACING * 5 },
-
-  /**************************************************
-   * Vertical Align
-   *************************************************/
-  alignBaseline: { verticalAlign: "baseline" },
-  alignMiddle: { verticalAlign: "middle" },
-  alignBottom: { verticalAlign: "bottom" },
-  alignTextBottom: { verticalAlign: "text-bottom" },
-  alignTextTop: { verticalAlign: "text-top" },
-  alignTop: { verticalAlign: "top" },
-  invisible: { visibility: "hidden" },
-
-  /**************************************************
-   * cursor
-   *************************************************/
-
-  cursorAlias: { cursor: "alias " },
-  cursorAllScroll: { cursor: "all-scroll " },
-  cursorAuto: { cursor: "auto" },
-  cursorCell: { cursor: "cell " },
-  cursorColResize: { cursor: "col-resize " },
-  cursorContextMenu: { cursor: "context-menu" },
-  cursorCopy: { cursor: "copy " },
-  cursorCrosshair: { cursor: "crosshair " },
-  cursorDefault: { cursor: "default " },
-  cursorEwResize: { cursor: "ew-resize " },
-  cursorEResize: { cursor: "e-resize " },
-  cursorGrab: { cursor: "grab " },
-  cursorGrabbing: { cursor: "grabbing " },
-  cursorHelp: { cursor: "help " },
-  cursorMove: { cursor: "move " },
-  cursorNResize: { cursor: "n-resize " },
-  cursorNeResize: { cursor: "ne-resize " },
-  cursorNeswResize: { cursor: "nesw-resize" },
-  cursorInitial: { cursor: "initial " },
-  cursorNoDrop: { cursor: "no-drop " },
-  cursorInherit: { cursor: "inherit" },
-  cursorNone: { cursor: "none " },
-  cursorNotAllowed: { cursor: "not-allowed " },
-  cursorNsResize: { cursor: "ns-resize " },
-  cursorNwResize: { cursor: "nw-resize " },
-  cursorNwseResize: { cursor: "nwse-resize" },
-  cursorPointer: { cursor: "pointer " },
-  cursorProgress: { cursor: "progress " },
-  cursorRowResize: { cursor: "row-resize " },
-  cursorSResize: { cursor: "s-resize " },
-  cursorSeResize: { cursor: "se-resize " },
-  cursorSwResize: { cursor: "sw-resize " },
-  cursorText: { cursor: "text " },
-  cursorURL: { cursor: "URL " },
-  cursorVerticalText: { cursor: "vertical-text" },
-  cursorWResize: { cursor: "w-resize " },
-  cursorWait: { cursor: "wait " },
-  cursorZoomIn: { cursor: "zoom-in" },
-  cursorZoomOut: { cursor: "zoom-out" },
-
-  minVw25: { minWidth: "25vw" },
-  minVw50: { minWidth: "50vw" },
-  minVw75: { minWidth: "75vw" },
-  minVw100: { minWidth: "100vw" },
-
-  minW25: { minWidth: "25%" },
-  minW50: { minWidth: "50%" },
-  minW75: { minWidth: "75%" },
-  minW100: { minWidth: "100%" },
 
   /**************************************************
    * Spacing
@@ -1111,6 +1094,31 @@ export const defaultUtilityStyles = {
     marginTop: DEFAULT_MARGIN * -5 + PX + IMPORTANT,
   },
 
+  /*-------------------------------------------------
+   * Gap
+   *-----------------------------------------------*/
+  gap0: { gap: "0" },
+  gap1: { gap: DEFAULT_SPACING * 1 },
+  gap2: { gap: DEFAULT_SPACING * 2 },
+  gap3: { gap: DEFAULT_SPACING * 3 },
+  gap4: { gap: DEFAULT_SPACING * 4 },
+  gap5: { gap: DEFAULT_SPACING * 5 },
+
+  rowGap0: { rowGap: "0" },
+  rowGap1: { rowGap: DEFAULT_SPACING * 1 },
+  rowGap2: { rowGap: DEFAULT_SPACING * 2 },
+  rowGap3: { rowGap: DEFAULT_SPACING * 3 },
+  rowGap4: { rowGap: DEFAULT_SPACING * 4 },
+  rowGap5: { rowGap: DEFAULT_SPACING * 5 },
+
+  // -moz-column-gap: 0 !important;
+  colGap0: { columnGap: "0" },
+  colGap1: { columnGap: DEFAULT_SPACING * 1 },
+  colGap2: { columnGap: DEFAULT_SPACING * 2 },
+  colGap3: { columnGap: DEFAULT_SPACING * 3 },
+  colGap4: { columnGap: DEFAULT_SPACING * 4 },
+  colGap5: { columnGap: DEFAULT_SPACING * 5 },
+
   /**************************************************
    * Text
    *************************************************/
@@ -1151,30 +1159,20 @@ export const defaultUtilityStyles = {
   },
 
   /**************************************************
+   * Vertical Align
+   *************************************************/
+  alignBaseline: { verticalAlign: "baseline" },
+  alignTop: { verticalAlign: "top" },
+  alignMiddle: { verticalAlign: "middle" },
+  alignBottom: { verticalAlign: "bottom" },
+  alignTextBottom: { verticalAlign: "text-bottom" },
+  alignTextTop: { verticalAlign: "text-top" },
+
+  /**************************************************
    * Visibility
    *************************************************/
   visible: { visibility: "visible" },
-
-  vw100: { width: "100vw" },
-
-  vw25: { width: "25vw" },
-
-  vw50: { width: "50vw" },
-
-  vw75: { width: "75vw" },
-
-  w100: { width: "100%" },
-
-  /*-------------------------------------------------
-   * Width
-   *-----------------------------------------------*/
-  w25: { width: "25%" },
-
-  w50: { width: "50%" },
-
-  w75: { width: "75%" },
-
-  wAuto: { width: "auto" },
+invisible: { visibility: "hidden" },
 
   /**************************************************
    * zindex
