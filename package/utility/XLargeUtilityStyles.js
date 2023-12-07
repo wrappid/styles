@@ -57,6 +57,11 @@ export const xLargeUtilityStyles = {
   //NO SCREEN SIZE SPECIFIC STYLE AVAILABLE
 
   /**************************************************
+   * Cursor
+   *************************************************/
+  //NO SCREEN SIZE SPECIFIC STYLE AVAILABLE
+
+  /**************************************************
    * Display
    *************************************************/
   xlDisplayInline: { display: "inline" },

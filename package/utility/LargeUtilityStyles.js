@@ -57,6 +57,11 @@ export const largeUtilityStyles = {
   //NO SCREEN SIZE SPECIFIC STYLE AVAILABLE
 
   /**************************************************
+   * Cursor
+   *************************************************/
+  //NO SCREEN SIZE SPECIFIC STYLE AVAILABLE
+
+  /**************************************************
    * Display
    *************************************************/
   lgDisplayInline: { display: "inline" },

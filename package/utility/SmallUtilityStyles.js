@@ -4,6 +4,7 @@ import {
   DEFAULT_PADDING,
   DEFAULT_SPACING,
   IMPORTANT,
+  PX_TAG,
 } from "./DefaultUtilityStyles";
 
 export const SMALL_MARGIN = DEFAULT_MARGIN;
@@ -53,6 +54,11 @@ export const smallUtilityStyles = {
 
   /**************************************************
    * Color
+   *************************************************/
+  //NO SCREEN SIZE SPECIFIC STYLE AVAILABLE
+
+  /**************************************************
+   * Cursor
    *************************************************/
   //NO SCREEN SIZE SPECIFIC STYLE AVAILABLE
 

@@ -57,6 +57,11 @@ export const mediumUtilityStyles = {
   //NO SCREEN SIZE SPECIFIC STYLE AVAILABLE
 
   /**************************************************
+   * Cursor
+   *************************************************/
+  //NO SCREEN SIZE SPECIFIC STYLE AVAILABLE
+
+  /**************************************************
    * Display
    *************************************************/
   mdDisplayInline: { display: "inline" },
