@@ -181,6 +181,10 @@ const UtilityClasses = {
    * Background
    *************************************************/
   BG: {
+    BG_BLACK: "bgBlack",
+    BG_WHITE: "bgWhite",
+    BG_TRANSPARENT: "bgTransparent",
+
     BG_PRIMARY: "bgPrimary",
     BG_PRIMARY_LIGHT: "bgPrimaryLight",
     BG_PRIMARY_DARK: "bgPrimaryDark",
@@ -205,9 +209,20 @@ const UtilityClasses = {
     BG_INFO_LIGHT: "bgInfoLight",
     BG_INFO_DARK: "bgInfoDark",
 
-    BG_BLACK: "bgBlack",
-    BG_WHITE: "bgWhite",
-    BG_TRANSPARENT: "bgTransparent",
+    BG_GREY_50: "bgGrey50",
+    BG_GREY_100: "bgGrey100",
+    BG_GREY_200: "bgGrey200",
+    BG_GREY_300: "bgGrey300",
+    BG_GREY_400: "bgGrey400",
+    BG_GREY_500: "bgGrey500",
+    BG_GREY_600: "bgGrey600",
+    BG_GREY_700: "bgGrey700",
+    BG_GREY_800: "bgGrey800",
+    BG_GREY_900: "bgGrey900",
+    BG_GREY_A100: "bgGreyA100",
+    BG_GREY_A200: "bgGreyA200",
+    BG_GREY_A400: "bgGreyA400",
+    BG_GREY_A700: "bgGreyA700",
   },
 
   /**************************************************

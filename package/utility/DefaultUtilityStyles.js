@@ -2,29 +2,37 @@
 import { getConfigurationObject } from "../helper/helper";
 import { theme } from "../theme/theme";
 
-const DEFAULT_BORDER_WIDTH = 1;
-const DEFAULT_BORDER_RADIUS = 4;
-const DEFAULT_BORDER_STYLE = "solid";
-const DEFAULT_BORDER_COLOR = "black";
-const DEFAULT_BORDER =
-  DEFAULT_BORDER_WIDTH +
-  "px " +
-  DEFAULT_BORDER_STYLE +
-  " " +
-  DEFAULT_BORDER_COLOR;
-
-// -- const DEFAULT_SHADOW_COLOR = "black";
-const DEFAULT_SHADOW_COLOR_RGB = "0,0,0";
-
 const configuration = getConfigurationObject();
 
-export const IMPORTANT =
-  configuration?.wrappid?.platform === "web" ? " !important" : "";
-export const PX_TAG = configuration?.wrappid?.platform === "web" ? "px" : "";
+export const PX_TAG = configuration?.wrappid?.platform === "web" ? "px " : "";
+export const IMPORTANT = configuration?.wrappid?.platform === "web" ? " !important" : "";
+
+/**
+ * Spacing related defaults
+ */
 export const DEFAULT_MARGIN = 8;
 export const DEFAULT_PADDING = 8;
 export const DEFAULT_SPACING = 8;
 
+/**
+ * Border related defaults
+ */
+const DEFAULT_BORDER_WIDTH = 1;
+const DEFAULT_BORDER_STYLE = "solid";
+const DEFAULT_BORDER_COLOR = "black";
+const DEFAULT_BORDER_RADIUS = 4;
+const DEFAULT_BORDER =
+  DEFAULT_BORDER_WIDTH + PX_TAG + DEFAULT_BORDER_STYLE + " " + DEFAULT_BORDER_COLOR;
+
+/**
+ * Shadow related defaults
+ */
+// -- const DEFAULT_SHADOW_COLOR = "black";
+const DEFAULT_SHADOW_COLOR_RGB = "0,0,0";
+
+/**
+ *
+ */
 export const defaultUtilityStyles = {
   /**************************************************
    * Alignment
@@ -33,27 +41,22 @@ export const defaultUtilityStyles = {
     alignContent: "space-around",
     display: "flex",
   },
-
   alignContentBetween: {
     alignContent: "space-between",
     display: "flex",
   },
-
   alignContentCenter: {
     alignContent: "center",
     display: "flex",
   },
-
   alignContentEnd: {
     alignContent: "flex-end",
     display: "flex",
   },
-
   alignContentStart: {
     alignContent: "flex-start",
     display: "flex",
   },
-
   alignContentStretch: {
     alignContent: "stretch",
     display: "flex",
@@ -63,7 +66,6 @@ export const defaultUtilityStyles = {
     alignItems: "baseline",
     display: "flex",
   },
-
   alignItemsCenter: {
     alignItems: "center",
     display: "flex",
@@ -108,27 +110,22 @@ export const defaultUtilityStyles = {
     display: "flex",
     justifyContent: "center",
   },
-
   justifyContentFlexEnd: {
     display: "flex",
     justifyContent: "flex-end",
   },
-
   justifyContentFlexStart: {
     display: "flex",
     justifyContent: "flex-start",
   },
-
   justifyContentSpaceAround: {
     display: "flex",
     justifyContent: "space-around",
   },
-
   justifyContentSpaceBetween: {
     display: "flex",
     justifyContent: "space-between",
   },
-
   justifyContentSpaceEvenly: {
     display: "flex",
     justifyContent: "space-evenly",
@@ -137,33 +134,96 @@ export const defaultUtilityStyles = {
   /**************************************************
    * Background
    *************************************************/
-  bgPrimary: { backgroundColor: theme.palette.primary.main },
-  bgPrimaryDark: { backgroundColor: theme.palette.primary.dark },
-  bgPrimaryLight: { backgroundColor: theme.palette.primary.light },
-
-  bgSecondary: { backgroundColor: theme.palette.secondary.main },
-  bgSecondaryDark: { backgroundColor: theme.palette.secondary.dark },
-  bgSecondaryLight: { backgroundColor: theme.palette.secondary.light },
-
-  bgSuccess: { backgroundColor: theme.palette.success.main },
-  bgSuccessDark: { backgroundColor: theme.palette.success.dark },
-  bgSuccessLight: { backgroundColor: theme.palette.success.light },
-
-  bgError: { backgroundColor: theme.palette.error.main },
-  bgErrorLight: { backgroundColor: theme.palette.error.light },
-  bgErrorDark: { backgroundColor: theme.palette.error.dark },
-
-  bgWarning: { backgroundColor: theme.palette.warning.main },
-  bgWarningLight: { backgroundColor: theme.palette.warning.light },
-  bgWarningDark: { backgroundColor: theme.palette.warning.dark },
-
-  bgInfo: { backgroundColor: theme.palette.info.main },
-  bgInfoLight: { backgroundColor: theme.palette.info.light },
-  bgInfoDark: { backgroundColor: theme.palette.info.dark },
-
-  bgBlack: { backgroundColor: "black" },
-  bgWhite: { backgroundColor: "white" },
+  bgBlack: { backgroundColor: "black", color: "white" },
+  bgWhite: { backgroundColor: "white", color: "black" },
   bgTransparent: { backgroundColor: "transparent" },
+
+  bgPrimary: {
+    backgroundColor: theme.palette.primary.main,
+    color: theme.palette.primary.contrastText,
+  },
+  bgPrimaryDark: {
+    backgroundColor: theme.palette.primary.dark,
+    color: theme.palette.primary.contrastText,
+  },
+  bgPrimaryLight: {
+    backgroundColor: theme.palette.primary.light,
+    color: theme.palette.primary.contrastText,
+  },
+
+  bgSecondary: {
+    backgroundColor: theme.palette.secondary.main,
+    color: theme.palette.secondary.contrastText,
+  },
+  bgSecondaryDark: {
+    backgroundColor: theme.palette.secondary.dark,
+    color: theme.palette.secondary.contrastText,
+  },
+  bgSecondaryLight: {
+    backgroundColor: theme.palette.secondary.light,
+    color: theme.palette.secondary.contrastText,
+  },
+
+  bgSuccess: {
+    backgroundColor: theme.palette.success.main,
+    color: theme.palette.success.contrastText,
+  },
+  bgSuccessDark: {
+    backgroundColor: theme.palette.success.dark,
+    color: theme.palette.success.contrastText,
+  },
+  bgSuccessLight: {
+    backgroundColor: theme.palette.success.light,
+    color: theme.palette.success.contrastText,
+  },
+
+  bgError: { backgroundColor: theme.palette.error.main, color: theme.palette.error.contrastText },
+  bgErrorLight: {
+    backgroundColor: theme.palette.error.light,
+    color: theme.palette.error.contrastText,
+  },
+  bgErrorDark: {
+    backgroundColor: theme.palette.error.dark,
+    color: theme.palette.error.contrastText,
+  },
+
+  bgWarning: {
+    backgroundColor: theme.palette.warning.main,
+    color: theme.palette.warning.contrastText,
+  },
+  bgWarningLight: {
+    backgroundColor: theme.palette.warning.light,
+    color: theme.palette.warning.contrastText,
+  },
+  bgWarningDark: {
+    backgroundColor: theme.palette.warning.dark,
+    color: theme.palette.warning.contrastText,
+  },
+
+  bgInfo: { backgroundColor: theme.palette.info.main, color: theme.palette.info.contrastText },
+  bgInfoLight: {
+    backgroundColor: theme.palette.info.light,
+    color: theme.palette.info.contrastText,
+  },
+  bgInfoDark: {
+    backgroundColor: theme.palette.info.dark,
+    color: theme.palette.info.contrastText,
+  },
+
+  // bgGrey50: { backgroundColor: theme.palette.grey["50"] },
+  // bgGrey100: { backgroundColor: theme.palette.grey["100"] },
+  // bgGrey200: { backgroundColor: theme.palette.grey["200"] },
+  // bgGrey300: { backgroundColor: theme.palette.grey["300"] },
+  // bgGrey400: { backgroundColor: theme.palette.grey["400"] },
+  // bgGrey500: { backgroundColor: theme.palette.grey["500"] },
+  // bgGrey600: { backgroundColor: theme.palette.grey["600"] },
+  // bgGrey700: { backgroundColor: theme.palette.grey["700"] },
+  // bgGrey800: { backgroundColor: theme.palette.grey["800"] },
+  // bgGrey900: { backgroundColor: theme.palette.grey["900"] },
+  // bgGreyA100: { backgroundColor: theme.palette.grey.A100 },
+  // bgGreyA200: { backgroundColor: theme.palette.grey.A200 },
+  // bgGreyA400: { backgroundColor: theme.palette.grey.A400 },
+  // bgGreyA700: { backgroundColor: theme.palette.grey.A700 },
 
   /**************************************************
    * Border
@@ -230,10 +290,6 @@ export const defaultUtilityStyles = {
   borderOutset: { borderStyle: "outset" },
   borderRidge: { borderStyle: "ridge" },
   borderSolid: { borderStyle: "solid" },
-
-  bottom0: { bottom: "0" },
-  bottom100: { bottom: "100%" },
-  bottom50: { bottom: "50%" },
 
   borderRounded: {
     borderRadius: DEFAULT_BORDER_RADIUS * 2 + PX_TAG + IMPORTANT,
@@ -403,16 +459,52 @@ export const defaultUtilityStyles = {
     borderTopLeftRadius: "50rem" + IMPORTANT,
   },
 
-  
   /**************************************************
-   * Sizing
-  *************************************************/
-  boxSizingBorderBox: { boxSizing: "border-box" },
-  boxSizingContentBox: { boxSizing: "content-box" },
-  boxSizingInherit: { boxSizing: "inherit" },
-  boxSizingInitial: { boxSizing: "initial" },
+   * Color
+   *************************************************/
+  textPrimary: { color: theme.palette.primary.main },
+  textPrimaryDark: { color: theme.palette.primary.dark },
+  textPrimaryLight: { color: theme.palette.primary.light },
 
-  
+  textSecondary: { color: theme.palette.secondary.main },
+  textSecondaryDark: { color: theme.palette.secondary.dark },
+  textSecondaryLight: { color: theme.palette.secondary.light },
+
+  textSuccess: { color: theme.palette.success.main },
+  textSuccessDark: { color: theme.palette.success.dark },
+  textSuccessLight: { color: theme.palette.success.light },
+
+  textError: { color: theme.palette.error.main },
+  textErrorDark: { color: theme.palette.error.dark },
+  textErrorLight: { color: theme.palette.error.light },
+
+  textWarning: { color: theme.palette.warning.main },
+  textWarningDark: { color: theme.palette.warning.dark },
+  textWarningLight: { color: theme.palette.warning.light },
+
+  textInfo: { color: theme.palette.info.main },
+  textInfoDark: { color: theme.palette.info.dark },
+  textInfoLight: { color: theme.palette.info.light },
+
+  textBlack: { color: "#000000" },
+  textBlack50: { color: "#00000077" },
+  textWhite: { color: "#ffffff" },
+  textWhite50: { color: "#ffffff77" },
+
+  textReset: { color: "inherit" },
+
+  textOpacity25: { opacity: "0.25" },
+  textOpacity50: { opacity: "0.5" },
+  textOpacity75: { opacity: "0.75" },
+  textOpacity100: { opacity: "1" },
+
+  // -- textLight: {},
+  // -- textDark: {},
+  // -- textBody: {},
+  // -- textMuted: {},
+  // -- textBodySecondary: {},
+  // -- textBodyTertiary: {},
+  // -- textBodyEmphasis: {},
   // -- textPrimaryEmphasis: {},
   // -- textSecondaryEmphasis: {},
   // -- textSuccessEmphasis: {},
@@ -421,25 +513,24 @@ export const defaultUtilityStyles = {
   // -- textDangerEmphasis: {},
   // -- textLightEmphasis: {},
   // -- textDarkEmphasis: {},
+
   /**************************************************
    * Display
-  *************************************************/
-  displayBlock: { display: "block" },
-  displayFlex: { display: "flex" },
-  displayGrid: { display: "grid" },
+   *************************************************/
   displayInline: { display: "inline" },
   displayInlineBlock: { display: "inline-block" },
+  displayBlock: { display: "block" },
+  displayGrid: { display: "grid" },
+  displayTable: { display: "table" },
+  displayTableRow: { display: "table-row" },
+  displayTableCell: { display: "table-cell" },
+  displayFlex: { display: "flex" },
   displayInlineFlex: { display: "inline-flex" },
   displayNone: { display: "none" },
-  displayTable: { display: "table" },
-  displayTableCell: { display: "table-cell" },
-  displayTableRow: { display: "table-row" },
 
   /**************************************************
    * Flex
-  *************************************************/
-
-  
+   *************************************************/
   flexDirectionRow: { flexDirection: "row" },
   flexDirectionColumn: { flexDirection: "column" },
   flexDirectionRowReverse: { flexDirection: "row-reverse" },
@@ -452,18 +543,189 @@ export const defaultUtilityStyles = {
   flexWrapWrap: { flexWrap: "wrap" },
   flexWrapNoWrap: { flexWrap: "nowrap" },
   flexWrapWrapReverse: { flexWrap: "wrap-reverse" },
-  
-  
+
   /**************************************************
    * Float
-  *************************************************/
+   *************************************************/
   floatStart: { float: "left" },
   floatEnd: { float: "right" },
   floatNone: { float: "none" },
 
+  /**************************************************
+   * Interactions
+   *************************************************/
+  userSelectAll: {
+    // -webkit-user-select: all !important;
+    // -moz-user-select: all !important;
+    userSelect: "all",
+  },
+  userSelectAuto: {
+    // -webkit-user-select: auto !important;
+    // -moz-user-select: auto !important;
+    userSelect: "auto",
+  },
+  userSelectNone: {
+    // -webkit-user-select: none !important;
+    // -moz-user-select: none !important;
+    userSelect: "none",
+  },
+
+  peNone: { pointerEvents: "none" },
+  peAuto: { pointerEvents: "auto" },
+
+  /**************************************************
+   * Object Fit
+   *************************************************/
+  objectFitContain: {
+    // -o-object-fit: contain !important;
+    objectFit: "contain",
+  },
+  objectFitCover: {
+    // -o-object-fit: cover !important;
+    objectFit: "cover",
+  },
+  objectFitFill: {
+    // -o-object-fit: fill !important;
+    objectFit: "fill",
+  },
+  objectFitScale: {
+    // -o-object-fit: scale-down !important;
+    objectFit: "scale-down",
+  },
+  objectFitNone: {
+    // -o-object-fit: none !important;
+    objectFit: "none",
+  },
+
+  /**************************************************
+   * Opacity
+   *************************************************/
+  opacity0: { opacity: "0.00" },
+  opacity5: { opacity: "0.05" },
+  opacity10: { opacity: "0.10" },
+  opacity15: { opacity: "0.15" },
+  opacity20: { opacity: "0.20" },
+  opacity25: { opacity: "0.25" },
+  opacity30: { opacity: "0.30" },
+  opacity35: { opacity: "0.35" },
+  opacity40: { opacity: "0.40" },
+  opacity45: { opacity: "0.45" },
+  opacity50: { opacity: "0.50" },
+  opacity55: { opacity: "0.55" },
+  opacity60: { opacity: "0.60" },
+  opacity65: { opacity: "0.65" },
+  opacity70: { opacity: "0.70" },
+  opacity75: { opacity: "0.75" },
+  opacity80: { opacity: "0.80" },
+  opacity85: { opacity: "0.85" },
+  opacity90: { opacity: "0.90" },
+  opacity95: { opacity: "0.95" },
+  opacity100: { opacity: "1.00" },
+
+  /**************************************************
+   * Overflow
+   *************************************************/
+  overflowAuto: { overflow: "auto" },
+  overflowHidden: { overflow: "hidden" },
+  overflowVisible: { overflow: "visible" },
+  overflowScroll: { overflow: "scroll" },
+  overflowXAuto: { overflowX: "auto" },
+  overflowXHidden: { overflowX: "hidden" },
+  overflowXVisible: { overflowX: "visible" },
+  overflowXScroll: { overflowX: "scroll" },
+  overflowYAuto: { overflowY: "auto" },
+  overflowYHidden: { overflowY: "hidden" },
+  overflowYVisible: { overflowY: "visible" },
+  overflowYScroll: { overflowY: "scroll" },
+
+  /**************************************************
+   * Position
+   *************************************************/
+  positionStatic: { position: "static" },
+  positionRelative: { position: "relative" },
+  positionAbsolute: { position: "absolute" },
+  positionFixed: { position: "fixed" },
+  positionSticky: {
+    // -- position: "-webkit-sticky",
+    position: "sticky",
+  },
+
+  /**
+   * @todo multiple value for same property
+   */
+  top0: { top: "0" },
+  top50: { top: "50%" },
+  top100: { top: "100%" },
+
+  bottom0: { bottom: "0" },
+  bottom50: { bottom: "50%" },
+  bottom100: { bottom: "100%" },
+
+  start0: { left: "0" },
+  start50: { left: "50%" },
+  start100: { left: "100%" },
+
+  end0: { right: "0" },
+  end50: { right: "50%" },
+  end100: { right: "100%" },
+
+  translateMiddle: { transform: "translate(-50%, -50%)" },
+  translateMiddleX: { transform: "translateX(-50%)" },
+  translateMiddleY: { transform: "translateY(-50%)" },
+
+  fixedTop: {
+    left: "0",
+    position: "fixed",
+    right: "0",
+    top: "0",
+    zIndex: "1030",
+  },
+  fixedBottom: {
+    bottom: "0",
+    left: "0",
+    position: "fixed",
+    right: "0",
+    zIndex: "1030",
+  },
+  stickyTop: {
+    // -- position: "-webkit-sticky",
+    position: "sticky",
+    top: "0",
+    zIndex: "1020",
+  },
+  stickyBottom: {
+    bottom: "0",
+    // -- position: "-webkit-sticky",
+    position: "sticky",
+    zIndex: "1020",
+  },
+
+  /**************************************************
+   * Shadows
+   * @todo change color using theme
+   *************************************************/
+  shadow: {
+    boxShadow: "0 0.5rem 1rem rgba(" + DEFAULT_SHADOW_COLOR_RGB + ", 0.15)" + IMPORTANT,
+  },
+  shadowSm: {
+    boxShadow: "0 0.125rem 0.25rem rgba(" + DEFAULT_SHADOW_COLOR_RGB + ", 0.075)" + IMPORTANT,
+  },
+  shadowLg: {
+    boxShadow: "0 1rem 3rem rgba(" + DEFAULT_SHADOW_COLOR_RGB + ", 0.175)" + IMPORTANT,
+  },
+  shadowNone: { boxShadow: "none" + IMPORTANT },
+
+  /**************************************************
+   * Sizing
+   *************************************************/
+  boxSizingBorderBox: { boxSizing: "border-box" },
+  boxSizingContentBox: { boxSizing: "content-box" },
+  boxSizingInherit: { boxSizing: "inherit" },
+  boxSizingInitial: { boxSizing: "initial" },
+
   /*-------------------------------------------------
-  * Height
-  *-----------------------------------------------*/
+   * Height
+   *-----------------------------------------------*/
   h25: { height: "25%" },
   h50: { height: "50%" },
   h75: { height: "75%" },
@@ -489,7 +751,7 @@ export const defaultUtilityStyles = {
   minH50: { minHeight: "50%" },
   minH75: { minHeight: "75%" },
   minH100: { minHeight: "100%" },
-  
+
   minVh25: { minHeight: "25vh" },
   minVh50: { minHeight: "50vh" },
   minVh75: { minHeight: "75vh" },
@@ -505,8 +767,6 @@ export const defaultUtilityStyles = {
   maxW75: { maxWidth: "75%" },
   maxW100: { maxWidth: "100%" },
 
-
-
   /*-------------------------------------------------
    * Gap
    *-----------------------------------------------*/
@@ -516,7 +776,7 @@ export const defaultUtilityStyles = {
   gap3: { gap: DEFAULT_SPACING * 3 },
   gap4: { gap: DEFAULT_SPACING * 4 },
   gap5: { gap: DEFAULT_SPACING * 5 },
-  
+
   rowGap0: { rowGap: "0" },
   rowGap1: { rowGap: DEFAULT_SPACING * 1 },
   rowGap2: { rowGap: DEFAULT_SPACING * 2 },
@@ -532,8 +792,6 @@ export const defaultUtilityStyles = {
   colGap4: { columnGap: DEFAULT_SPACING * 4 },
   colGap5: { columnGap: DEFAULT_SPACING * 5 },
 
-
-  
   /**************************************************
    * Vertical Align
    *************************************************/
@@ -588,9 +846,7 @@ export const defaultUtilityStyles = {
   cursorWait: { cursor: "wait " },
   cursorZoomIn: { cursor: "zoom-in" },
   cursorZoomOut: { cursor: "zoom-out" },
-  
-  
-  
+
   minVw25: { minWidth: "25vw" },
   minVw50: { minWidth: "50vw" },
   minVw75: { minWidth: "75vw" },
@@ -601,107 +857,27 @@ export const defaultUtilityStyles = {
   minW75: { minWidth: "75%" },
   minW100: { minWidth: "100%" },
 
-
-  
-  
-
-  
-  
- 
-  /**************************************************
-   * Object Fit
-   *************************************************/
-  objectFitContain: {
-    // -o-object-fit: contain !important;
-    objectFit: "contain",
-  },
-
-  objectFitCover: {
-    // -o-object-fit: cover !important;
-    objectFit: "cover",
-  },
-
-  objectFitFill: {
-    // -o-object-fit: fill !important;
-    objectFit: "fill",
-  },
-
-  objectFitNone: {
-    // -o-object-fit: none !important;
-    objectFit: "none",
-  },
-
-  objectFitScale: {
-    // -o-object-fit: scale-down !important;
-    objectFit: "scale-down",
-  },
-
-  /**************************************************
-   * Opacity
-   *************************************************/
-  opacity0: { opacity: "0.00" },
-  opacity5: { opacity: "0.05" },
-  opacity10: { opacity: "0.10" },
-  opacity15: { opacity: "0.15" },
-  opacity20: { opacity: "0.20" },
-  opacity25: { opacity: "0.25" },
-  opacity30: { opacity: "0.30" },
-  opacity35: { opacity: "0.35" },
-  opacity40: { opacity: "0.40" },
-  opacity45: { opacity: "0.45" },
-  opacity50: { opacity: "0.50" },
-  opacity55: { opacity: "0.55" },
-  opacity60: { opacity: "0.60" },
-  opacity65: { opacity: "0.65" },
-  opacity70: { opacity: "0.70" },
-  opacity75: { opacity: "0.75" },
-  opacity80: { opacity: "0.80" },
-  opacity85: { opacity: "0.85" },
-  opacity90: { opacity: "0.90" },
-  opacity95: { opacity: "0.95" },
-  opacity100: { opacity: "1.00" },
-  
-
-  /**************************************************
-   * Overflow
-   *************************************************/
-  
-  overflowAuto: { overflow: "auto" },
-  overflowHidden: { overflow: "hidden" },
-  overflowScroll: { overflow: "scroll" },
-  overflowVisible: { overflow: "visible" },
-  overflowXAuto: { overflowX: "auto" },
-  overflowXHidden: { overflowX: "hidden" },
-  overflowXScroll: { overflowX: "scroll" },
-  overflowXVisible: { overflowX: "visible" },
-  overflowYAuto: { overflowY: "auto" },
-  overflowYHidden: { overflowY: "hidden" },
-  overflowYScroll: { overflowY: "scroll" },
-  overflowYVisible: { overflowY: "visible" },
-  
-
-
   /**************************************************
    * Spacing
    *************************************************/
   /*-------------------------------------------------
    * Padding
    *-----------------------------------------------*/
-  
+
   p0: { padding: 0 + PX_TAG },
   p1: { padding: DEFAULT_PADDING + PX_TAG },
   p2: { padding: DEFAULT_PADDING * 2 + PX_TAG },
   p3: { padding: DEFAULT_PADDING * 3 + PX_TAG },
   p4: { padding: DEFAULT_PADDING * 4 + PX_TAG },
   p5: { padding: DEFAULT_PADDING * 5 + PX_TAG },
-  
+
   pt0: { paddingTop: 0 + PX_TAG },
   pt1: { paddingTop: DEFAULT_PADDING + PX_TAG },
   pt2: { paddingTop: DEFAULT_PADDING * 2 + PX_TAG },
   pt3: { paddingTop: DEFAULT_PADDING * 3 + PX_TAG },
   pt4: { paddingTop: DEFAULT_PADDING * 4 + PX_TAG },
   pt5: { paddingTop: DEFAULT_PADDING * 5 + PX_TAG },
-  
+
   pr0: { paddingRight: 0 + PX_TAG },
   pr1: { paddingRight: DEFAULT_PADDING + PX_TAG },
   pr2: { paddingRight: DEFAULT_PADDING * 2 + PX_TAG },
@@ -798,7 +974,7 @@ export const defaultUtilityStyles = {
   mr3: { marginRight: DEFAULT_MARGIN * 3 + PX_TAG + IMPORTANT },
   mr4: { marginRight: DEFAULT_MARGIN * 4 + PX_TAG + IMPORTANT },
   mr5: { marginRight: DEFAULT_MARGIN * 5 + PX_TAG + IMPORTANT },
-  mrAuto: { marginRight: "auto"  + IMPORTANT},
+  mrAuto: { marginRight: "auto" + IMPORTANT },
 
   mb0: { marginBottom: 0 + IMPORTANT },
   mb1: { marginBottom: DEFAULT_MARGIN + PX_TAG + IMPORTANT },
@@ -806,7 +982,7 @@ export const defaultUtilityStyles = {
   mb3: { marginBottom: DEFAULT_MARGIN * 3 + PX_TAG + IMPORTANT },
   mb4: { marginBottom: DEFAULT_MARGIN * 4 + PX_TAG + IMPORTANT },
   mb5: { marginBottom: DEFAULT_MARGIN * 5 + PX_TAG + IMPORTANT },
-  mbAuto: { marginBottom: "auto"  + IMPORTANT},
+  mbAuto: { marginBottom: "auto" + IMPORTANT },
 
   ml0: { marginLeft: 0 + IMPORTANT },
   ml1: { marginLeft: DEFAULT_MARGIN + PX_TAG + IMPORTANT },
@@ -814,7 +990,7 @@ export const defaultUtilityStyles = {
   ml3: { marginLeft: DEFAULT_MARGIN * 3 + PX_TAG + IMPORTANT },
   ml4: { marginLeft: DEFAULT_MARGIN * 4 + PX_TAG + IMPORTANT },
   ml5: { marginLeft: DEFAULT_MARGIN * 5 + PX_TAG + IMPORTANT },
-  mlAuto: { marginLeft: "auto"  + IMPORTANT},
+  mlAuto: { marginLeft: "auto" + IMPORTANT },
 
   mx0: { marginLeft: 0, marginRight: 0 + IMPORTANT },
   mx1: {
@@ -837,9 +1013,8 @@ export const defaultUtilityStyles = {
     marginLeft: DEFAULT_MARGIN * 5 + PX_TAG + IMPORTANT,
     marginRight: DEFAULT_MARGIN * 5 + PX_TAG + IMPORTANT,
   },
-  mxAuto: { marginLeft: "auto", marginRight: "auto"  + IMPORTANT},
+  mxAuto: { marginLeft: "auto", marginRight: "auto" + IMPORTANT },
 
-  
   my0: { marginBottom: 0, marginTop: 0 + IMPORTANT },
   my1: {
     marginBottom: DEFAULT_MARGIN * 1 + PX_TAG + IMPORTANT,
@@ -861,7 +1036,7 @@ export const defaultUtilityStyles = {
     marginBottom: DEFAULT_MARGIN * 5 + PX_TAG + IMPORTANT,
     marginTop: DEFAULT_MARGIN * 5 + PX_TAG + IMPORTANT,
   },
-  myAuto: { marginBottom: "auto" + IMPORTANT, marginTop: "auto"  + IMPORTANT},
+  myAuto: { marginBottom: "auto" + IMPORTANT, marginTop: "auto" + IMPORTANT },
 
   mN1: { margin: DEFAULT_MARGIN * -1 + PX_TAG + IMPORTANT },
   mN2: { margin: DEFAULT_MARGIN * -2 + PX_TAG + IMPORTANT },
@@ -875,7 +1050,6 @@ export const defaultUtilityStyles = {
   mtN4: { marginTop: DEFAULT_MARGIN * -4 + PX_TAG + IMPORTANT },
   mtN5: { marginTop: DEFAULT_MARGIN * -5 + PX_TAG + IMPORTANT },
 
-
   mrN1: { marginRight: DEFAULT_MARGIN * -1 + PX_TAG + IMPORTANT },
   mrN2: { marginRight: DEFAULT_MARGIN * -2 + PX_TAG + IMPORTANT },
   mrN3: { marginRight: DEFAULT_MARGIN * -3 + PX_TAG + IMPORTANT },
@@ -887,7 +1061,7 @@ export const defaultUtilityStyles = {
   mbN3: { marginBottom: DEFAULT_MARGIN * -3 + PX_TAG + IMPORTANT },
   mbN4: { marginBottom: DEFAULT_MARGIN * -4 + PX_TAG + IMPORTANT },
   mbN5: { marginBottom: DEFAULT_MARGIN * -5 + PX_TAG + IMPORTANT },
-  
+
   mlN1: { marginLeft: DEFAULT_MARGIN * -1 + PX_TAG + IMPORTANT },
   mlN2: { marginLeft: DEFAULT_MARGIN * -2 + PX_TAG + IMPORTANT },
   mlN3: { marginLeft: DEFAULT_MARGIN * -3 + PX_TAG + IMPORTANT },
@@ -910,7 +1084,7 @@ export const defaultUtilityStyles = {
     marginLeft: DEFAULT_MARGIN * -4 + PX_TAG + IMPORTANT,
     marginRight: DEFAULT_MARGIN * -4 + PX_TAG + IMPORTANT,
   },
-  
+
   mxN5: {
     marginLeft: DEFAULT_MARGIN * -5 + PX_TAG + IMPORTANT,
     marginRight: DEFAULT_MARGIN * -5 + PX_TAG + IMPORTANT,
@@ -936,152 +1110,6 @@ export const defaultUtilityStyles = {
     marginBottom: DEFAULT_MARGIN * -5 + PX_TAG + IMPORTANT,
     marginTop: DEFAULT_MARGIN * -5 + PX_TAG + IMPORTANT,
   },
-  /**************************************************
-   * Color
-  *************************************************/
-  textReset: { color: "inherit" },
-
-  textBlack: { color: "#000000" },
-  textBlack50: { color: "#00000077" },
-  textWhite: { color: "#ffffff" },
-  textWhite50: { color: "#ffffff77" },
-
-  textError: { color: theme.palette.error.main },
-  textErrorDark: { color: theme.palette.error.dark },
-  textErrorLight: { color: theme.palette.error.light },
-
-  textInfo: { color: theme.palette.info.main },
-  textInfoDark: { color: theme.palette.info.dark },
-  textInfoLight: { color: theme.palette.info.light },
-
-  textOpacity25: { opacity: "0.25" },
-  textOpacity50: { opacity: "0.5" },
-  textOpacity75: { opacity: "0.75" },
-  textOpacity100: { opacity: "1" },
-  
-  textPrimary: { color: theme.palette.primary.main },
-  textPrimaryDark: { color: theme.palette.primary.dark },
-  textPrimaryLight: { color: theme.palette.primary.light },
-  
-  textSecondary: { color: theme.palette.secondary.main },
-  textSecondaryDark: { color: theme.palette.secondary.dark },
-  textSecondaryLight: { color: theme.palette.secondary.light },
-  
-  textSuccess: { color: theme.palette.success.main },
-  textSuccessDark: { color: theme.palette.success.dark },
-  textSuccessLight: { color: theme.palette.success.light },
-  
-  textWarning: { color: theme.palette.warning.main },
-  textWarningDark: { color: theme.palette.warning.dark },
-  textWarningLight: { color: theme.palette.warning.light },
-  
-  // -- textLight: {},
-  // -- textDark: {},
-  // -- textBody: {},
-  // -- textMuted: {},
-  // -- textBodySecondary: {},
-  // -- textBodyTertiary: {},
-  // -- textBodyEmphasis: {},
-  /**************************************************
-   * Position
-  *************************************************/
- 
-  peAuto: { pointerEvents: "auto" },
-  peNone: { pointerEvents: "none" },
-  positionAbsolute: { position: "absolute" },
-  positionFixed: { position: "fixed" },
-  positionRelative: { position: "relative" },
-  positionStatic: { position: "static" },
-  positionSticky: {
-   // -- position: "-webkit-sticky",
-   position: "sticky",
- },
- 
-  /**
-   * @todo multiple value for same property
-   */
-  start0: { left: "0" },
-  start50: { left: "50%" },
-  start100: { left: "100%" },
-  
-  top0: { top: "0" },
-  top50: { top: "50%" },
-  top100: { top: "100%" },
-  
-  end0: { right: "0" },
-  end50: { right: "50%" },
-  end100: { right: "100%" },
-  
-
-  fixedBottom: {
-    bottom: "0",
-    left: "0",
-    position: "fixed",
-    right: "0",
-    zIndex: "1030",
-  },
-
-  fixedTop: {
-    left: "0",
-    position: "fixed",
-    right: "0",
-    top: "0",
-    zIndex: "1030",
-  },
-  
-
-
-  /**************************************************
-   * Shadows
-   * @todo change color using theme
-   *************************************************/
-  shadow: {
-    boxShadow: "0 0.5rem 1rem rgba(" + DEFAULT_SHADOW_COLOR_RGB + ", 0.15)",
-  },
-  shadowLg: {
-    boxShadow: "0 1rem 3rem rgba(" + DEFAULT_SHADOW_COLOR_RGB + ", 0.175)",
-  },
-  shadowNone: { boxShadow: "none" },
-  shadowSm: {
-    boxShadow:
-      "0 0.125rem 0.25rem rgba(" +
-      DEFAULT_SHADOW_COLOR_RGB +
-      ", 0.075)" +
-      IMPORTANT,
-  },
-
-  /**************************************************
-   * Interactions
-   *************************************************/
-  userSelectAll: {
-    // -webkit-user-select: all !important;
-    // -moz-user-select: all !important;
-    userSelect: "all",
-  },
-  userSelectAuto: {
-    // -webkit-user-select: auto !important;
-    // -moz-user-select: auto !important;
-    userSelect: "auto",
-  },
-  userSelectNone: {
-    // -webkit-user-select: none !important;
-    // -moz-user-select: none !important;
-    userSelect: "none",
-  },
-  stickyBottom: {
-    bottom: "0",
-    // -- position: "-webkit-sticky",
-    position: "sticky",
-    zIndex: "1020",
-  },
-
-  stickyTop: {
-    // -- position: "-webkit-sticky",
-    position: "sticky",
-    top: "0",
-    zIndex: "1020",
-  },
-  
 
   /**************************************************
    * Text
@@ -1121,17 +1149,6 @@ export const defaultUtilityStyles = {
     textOverflow: "ellipsis",
     whiteSpace: "nowrap",
   },
-
-
-
-
-  translateMiddle: { transform: "translate(-50%, -50%)" },
-
-  translateMiddleX: { transform: "translateX(-50%)" },
-
-  translateMiddleY: { transform: "translateY(-50%)" },
-
- 
 
   /**************************************************
    * Visibility
