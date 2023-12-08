@@ -5,7 +5,8 @@ import { getConfigurationObject } from "../helper/helper";
 const configuration = getConfigurationObject();
 
 export const PX = configuration?.wrappid?.platform === "web" ? "px " : "";
-export const IMPORTANT = configuration?.wrappid?.platform === "web" ? " !important" : "";
+export const IMPORTANT =
+  configuration?.wrappid?.platform === "web" ? " !important" : "";
 
 /**
  * Spacing related defaults
@@ -53,7 +54,7 @@ export const defaultUtilityStyles = {
     alignItems: "baseline",
     display: "flex",
   },
-alignItemsStretch: {
+  alignItemsStretch: {
     alignItems: "stretch",
     display: "flex",
   },
@@ -66,7 +67,7 @@ alignItemsStretch: {
     alignContent: "flex-end",
     display: "flex",
   },
-alignContentCenter: {
+  alignContentCenter: {
     alignContent: "center",
     display: "flex",
   },
@@ -74,7 +75,7 @@ alignContentCenter: {
     alignContent: "space-between",
     display: "flex",
   },
-alignContentAround: {
+  alignContentAround: {
     alignContent: "space-around",
     display: "flex",
   },
@@ -109,7 +110,7 @@ alignContentAround: {
     display: "flex",
     justifyContent: "center",
   },
-justifyContentFlexStart: {
+  justifyContentFlexStart: {
     display: "flex",
     justifyContent: "flex-start",
   },
@@ -125,7 +126,7 @@ justifyContentFlexStart: {
     display: "flex",
     justifyContent: "space-around",
   },
-    justifyContentSpaceEvenly: {
+  justifyContentSpaceEvenly: {
     display: "flex",
     justifyContent: "space-evenly",
   },
@@ -138,81 +139,81 @@ justifyContentFlexStart: {
   bgTransparent: { backgroundColor: "transparent" },
 
   bgPrimary: {
-    backgroundColor: theme.palette.primary.main,
-    color: theme.palette.primary.contrastText,
+    backgroundColor: theme?.palette?.primary?.main,
+    color: theme?.palette?.primary?.contrastText,
   },
-bgPrimaryLight: {
-    backgroundColor: theme.palette.primary.light,
-    color: theme.palette.primary.contrastText,
+  bgPrimaryLight: {
+    backgroundColor: theme?.palette?.primary?.light,
+    color: theme?.palette?.primary?.contrastText,
   },
   bgPrimaryDark: {
-    backgroundColor: theme.palette.primary.dark,
-    color: theme.palette.primary.contrastText,
+    backgroundColor: theme?.palette?.primary?.dark,
+    color: theme?.palette?.primary?.contrastText,
   },
-  
+
   bgSecondary: {
-    backgroundColor: theme.palette.secondary.main,
-    color: theme.palette.secondary.contrastText,
+    backgroundColor: theme?.palette?.secondary?.main,
+    color: theme?.palette?.secondary?.contrastText,
   },
-bgSecondaryLight: {
-    backgroundColor: theme.palette.secondary.light,
-    color: theme.palette.secondary.contrastText,
+  bgSecondaryLight: {
+    backgroundColor: theme?.palette?.secondary?.light,
+    color: theme?.palette?.secondary?.contrastText,
   },
   bgSecondaryDark: {
-    backgroundColor: theme.palette.secondary.dark,
-    color: theme.palette.secondary.contrastText,
+    backgroundColor: theme?.palette?.secondary?.dark,
+    color: theme?.palette?.secondary?.contrastText,
   },
-  
+
   bgSuccess: {
-    backgroundColor: theme.palette.success.main,
-    color: theme.palette.success.contrastText,
+    backgroundColor: theme?.palette?.success?.main,
+    color: theme?.palette?.success?.contrastText,
   },
-bgSuccessLight: {
-    backgroundColor: theme.palette.success.light,
-    color: theme.palette.success.contrastText,
+  bgSuccessLight: {
+    backgroundColor: theme?.palette?.success?.light,
+    color: theme?.palette?.success?.contrastText,
   },
   bgSuccessDark: {
-    backgroundColor: theme.palette.success.dark,
-    color: theme.palette.success.contrastText,
+    backgroundColor: theme?.palette?.success?.dark,
+    color: theme?.palette?.success?.contrastText,
   },
-  
+
   bgError: {
-    backgroundColor: theme.palette.error.main,
-    color: theme.palette.error.contrastText,
+    backgroundColor: theme?.palette?.error?.main,
+    color: theme?.palette?.error?.contrastText,
   },
   bgErrorLight: {
-    backgroundColor: theme.palette.error.light,
-    color: theme.palette.error.contrastText,
+    backgroundColor: theme?.palette?.error?.light,
+    color: theme?.palette?.error?.contrastText,
   },
   bgErrorDark: {
-    backgroundColor: theme.palette.error.dark,
-    color: theme.palette.error.contrastText,
+    backgroundColor: theme?.palette?.error?.dark,
+    color: theme?.palette?.error?.contrastText,
   },
 
   bgWarning: {
-    backgroundColor: theme.palette.warning.main,
-    color: theme.palette.warning.contrastText,
+    backgroundColor: theme?.palette?.warning?.main,
+    color: theme?.palette?.warning?.contrastText,
   },
   bgWarningLight: {
-    backgroundColor: theme.palette.warning.light,
-    color: theme.palette.warning.contrastText,
+    backgroundColor: theme?.palette?.warning?.light,
+    color: theme?.palette?.warning?.contrastText,
   },
   bgWarningDark: {
-    backgroundColor: theme.palette.warning.dark,
-    color: theme.palette.warning.contrastText,
+    backgroundColor: theme?.palette?.warning?.dark,
+    color: theme?.palette?.warning?.contrastText,
   },
 
   bgInfo: {
-    backgroundColor: theme.palette.info.main,
-    color: theme.palette.info.contrastText,
+    backgroundColor: theme?.palette?.info?.main,
+    color: theme?.palette?.info?.contrastText,
   },
   bgInfoLight: {
-    backgroundColor: theme.palette.info.light,
-    color: theme.palette.info.contrastText,
+    backgroundColor: theme?.palette?.info?.light,
+    color: theme?.palette?.info?.contrastText,
   },
   bgInfoDark: {
-    backgroundColor: theme.palette.info.dark,
-    color: theme.palette.info.contrastText,
+    backgroundColor: theme?.palette?.info?.dark,
+    color: theme?.palette?.info?.contrastText,
   },
 
   // bgGrey50: { backgroundColor: theme.palette.grey["50"] },
@@ -272,10 +273,10 @@ bgSuccessLight: {
   borderWarningLight: { borderColor: theme?.palette?.warning?.light },
   borderWarningDark: { borderColor: theme?.palette?.warning?.dark },
 
-  borderInfo: { borderColor: theme.palette.info.main },
-  borderInfoLight: { borderColor: theme.palette.info.light },
-  borderInfoDark: { borderColor: theme.palette.info.dark },
-  
+  borderInfo: { borderColor: theme?.palette?.info?.main },
+  borderInfoLight: { borderColor: theme?.palette?.info?.light },
+  borderInfoDark: { borderColor: theme?.palette?.info?.dark },
+
   borderBlack: { borderColor: "black" },
   borderWhite: { borderColor: "white" },
 
@@ -478,30 +479,30 @@ bgSuccessLight: {
   /**************************************************
    * Color
    *************************************************/
-  textPrimary: { color: theme.palette.primary.main },
-textPrimaryLight: { color: theme.palette.primary.light },
-  textPrimaryDark: { color: theme.palette.primary.dark },
-  
-  textSecondary: { color: theme.palette.secondary.main },
-textSecondaryLight: { color: theme.palette.secondary.light },
-  textSecondaryDark: { color: theme.palette.secondary.dark },
-  
-  textSuccess: { color: theme.palette.success.main },
-textSuccessLight: { color: theme.palette.success.light },
-  textSuccessDark: { color: theme.palette.success.dark },
-  
-  textError: { color: theme.palette.error.main },
-textErrorLight: { color: theme.palette.error.light },
-  textErrorDark: { color: theme.palette.error.dark },
-  
-  textWarning: { color: theme.palette.warning.main },
-textWarningLight: { color: theme.palette.warning.light },
-  textWarningDark: { color: theme.palette.warning.dark },
-  
-  textInfo: { color: theme.palette.info.main },
-textInfoLight: { color: theme.palette.info.light },
-  textInfoDark: { color: theme.palette.info.dark },
-  
+  textPrimary: { color: theme?.palette?.primary?.main },
+  textPrimaryLight: { color: theme?.palette?.primary?.light },
+  textPrimaryDark: { color: theme?.palette?.primary?.dark },
+
+  textSecondary: { color: theme?.palette?.secondary?.main },
+  textSecondaryLight: { color: theme?.palette?.secondary?.light },
+  textSecondaryDark: { color: theme?.palette?.secondary?.dark },
+
+  textSuccess: { color: theme?.palette?.success?.main },
+  textSuccessLight: { color: theme?.palette?.success?.light },
+  textSuccessDark: { color: theme?.palette?.success?.dark },
+
+  textError: { color: theme?.palette?.error?.main },
+  textErrorLight: { color: theme?.palette?.error?.light },
+  textErrorDark: { color: theme?.palette?.error?.dark },
+
+  textWarning: { color: theme?.palette?.warning?.main },
+  textWarningLight: { color: theme?.palette?.warning?.light },
+  textWarningDark: { color: theme?.palette?.warning?.dark },
+
+  textInfo: { color: theme?.palette?.info?.main },
+  textInfoLight: { color: theme?.palette?.info?.light },
+  textInfoDark: { color: theme?.palette?.info?.dark },
+
   textBlack: { color: "#000000" },
   textBlack50: { color: "#00000077" },
   textWhite: { color: "#ffffff" },
@@ -764,13 +765,19 @@ textInfoLight: { color: theme.palette.info.light },
    * @todo change color using theme
    *************************************************/
   shadow: {
-    boxShadow: "0 0.5rem 1rem rgba(" + DEFAULT_SHADOW_COLOR_RGB + ", 0.15)" + IMPORTANT,
+    boxShadow:
+      "0 0.5rem 1rem rgba(" + DEFAULT_SHADOW_COLOR_RGB + ", 0.15)" + IMPORTANT,
   },
   shadowSm: {
-    boxShadow: "0 0.125rem 0.25rem rgba(" + DEFAULT_SHADOW_COLOR_RGB + ", 0.075)" + IMPORTANT,
+    boxShadow:
+      "0 0.125rem 0.25rem rgba(" +
+      DEFAULT_SHADOW_COLOR_RGB +
+      ", 0.075)" +
+      IMPORTANT,
   },
   shadowLg: {
-    boxShadow: "0 1rem 3rem rgba(" + DEFAULT_SHADOW_COLOR_RGB + ", 0.175)" + IMPORTANT,
+    boxShadow:
+      "0 1rem 3rem rgba(" + DEFAULT_SHADOW_COLOR_RGB + ", 0.175)" + IMPORTANT,
   },
   shadowNone: { boxShadow: "none" + IMPORTANT },
 
@@ -819,7 +826,7 @@ textInfoLight: { color: theme.palette.info.light },
   h75: { height: "75%" },
   h100: { height: "100%" },
   hAuto: { height: "auto" },
-maxH25: { maxHeight: "25%" },
+  maxH25: { maxHeight: "25%" },
   maxH50: { maxHeight: "50%" },
   maxH75: { maxHeight: "75%" },
   maxH100: { maxHeight: "100%" },
@@ -1172,7 +1179,7 @@ maxH25: { maxHeight: "25%" },
    * Visibility
    *************************************************/
   visible: { visibility: "visible" },
-invisible: { visibility: "hidden" },
+  invisible: { visibility: "hidden" },
 
   /**************************************************
    * zindex
