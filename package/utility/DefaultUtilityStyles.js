@@ -1,6 +1,6 @@
 /* eslint-disable */
+import { theme } from "../StylesProvider";
 import { getConfigurationObject } from "../helper/helper";
-import { theme } from "../theme/theme";
 
 const DEFAULT_BORDER_WIDTH = 1;
 const DEFAULT_BORDER_RADIUS = 4;
@@ -102,29 +102,29 @@ export const defaultUtilityStyles = {
   /**************************************************
    * Background
    *************************************************/
-  bgPrimary: { backgroundColor: theme.palette.primary.main },
-  bgPrimaryDark: { backgroundColor: theme.palette.primary.dark },
-  bgPrimaryLight: { backgroundColor: theme.palette.primary.light },
+  bgPrimary: { backgroundColor: theme?.palette?.primary?.main },
+  bgPrimaryDark: { backgroundColor: theme?.palette?.primary?.dark },
+  bgPrimaryLight: { backgroundColor: theme?.palette?.primary?.light },
 
-  bgSecondary: { backgroundColor: theme.palette.secondary.main },
-  bgSecondaryDark: { backgroundColor: theme.palette.secondary.dark },
-  bgSecondaryLight: { backgroundColor: theme.palette.secondary.light },
+  bgSecondary: { backgroundColor: theme?.palette?.secondary?.main },
+  bgSecondaryDark: { backgroundColor: theme?.palette?.secondary?.dark },
+  bgSecondaryLight: { backgroundColor: theme?.palette?.secondary?.light },
 
-  bgSuccess: { backgroundColor: theme.palette.success.main },
-  bgSuccessDark: { backgroundColor: theme.palette.success.dark },
-  bgSuccessLight: { backgroundColor: theme.palette.success.light },
+  bgSuccess: { backgroundColor: theme?.palette?.success?.main },
+  bgSuccessDark: { backgroundColor: theme?.palette?.success?.dark },
+  bgSuccessLight: { backgroundColor: theme?.palette?.success?.light },
 
-  bgError: { backgroundColor: theme.palette.error.main },
-  bgErrorLight: { backgroundColor: theme.palette.error.light },
-  bgErrorDark: { backgroundColor: theme.palette.error.dark },
+  bgError: { backgroundColor: theme?.palette?.error?.main },
+  bgErrorLight: { backgroundColor: theme?.palette?.error?.light },
+  bgErrorDark: { backgroundColor: theme?.palette?.error?.dark },
 
-  bgWarning: { backgroundColor: theme.palette.warning.main },
-  bgWarningLight: { backgroundColor: theme.palette.warning.light },
-  bgWarningDark: { backgroundColor: theme.palette.warning.dark },
+  bgWarning: { backgroundColor: theme?.palette?.warning?.main },
+  bgWarningLight: { backgroundColor: theme?.palette?.warning?.light },
+  bgWarningDark: { backgroundColor: theme?.palette?.warning?.dark },
 
-  bgInfo: { backgroundColor: theme.palette.info.main },
-  bgInfoLight: { backgroundColor: theme.palette.info.light },
-  bgInfoDark: { backgroundColor: theme.palette.info.dark },
+  bgInfo: { backgroundColor: theme?.palette?.info?.main },
+  bgInfoLight: { backgroundColor: theme?.palette?.info?.light },
+  bgInfoDark: { backgroundColor: theme?.palette?.info?.dark },
 
   bgBlack: { backgroundColor: "black" },
   bgWhite: { backgroundColor: "white" },
@@ -152,29 +152,29 @@ export const defaultUtilityStyles = {
   borderLeft: { border: "unset", borderLeft: DEFAULT_BORDER },
   borderLeft0: { borderLeft: "none" },
 
-  borderPrimary: { borderColor: theme.palette.primary.main },
-  borderPrimaryLight: { borderColor: theme.palette.primary.light },
-  borderPrimaryDark: { borderColor: theme.palette.primary.dark },
+  borderPrimary: { borderColor: theme?.palette?.primary?.main },
+  borderPrimaryLight: { borderColor: theme?.palette?.primary?.light },
+  borderPrimaryDark: { borderColor: theme?.palette?.primary?.dark },
 
-  borderSecondary: { borderColor: theme.palette.secondary.main },
-  borderSecondaryLight: { borderColor: theme.palette.secondary.light },
-  borderSecondaryDark: { borderColor: theme.palette.secondary.dark },
+  borderSecondary: { borderColor: theme?.palette?.secondary?.main },
+  borderSecondaryLight: { borderColor: theme?.palette?.secondary?.light },
+  borderSecondaryDark: { borderColor: theme?.palette?.secondary?.dark },
 
-  borderSuccess: { borderColor: theme.palette.success.main },
-  borderSuccessLight: { borderColor: theme.palette.success.light },
-  borderSuccessDark: { borderColor: theme.palette.success.dark },
+  borderSuccess: { borderColor: theme?.palette?.success?.main },
+  borderSuccessLight: { borderColor: theme?.palette?.success?.light },
+  borderSuccessDark: { borderColor: theme?.palette?.success?.dark },
 
-  borderError: { borderColor: theme.palette.error.main },
-  borderErrorLight: { borderColor: theme.palette.error.light },
-  borderErrorDark: { borderColor: theme.palette.error.dark },
+  borderError: { borderColor: theme?.palette?.error?.main },
+  borderErrorLight: { borderColor: theme?.palette?.error?.light },
+  borderErrorDark: { borderColor: theme?.palette?.error?.dark },
 
-  borderWarning: { borderColor: theme.palette.warning.main },
-  borderWarningLight: { borderColor: theme.palette.warning.light },
-  borderWarningDark: { borderColor: theme.palette.warning.dark },
+  borderWarning: { borderColor: theme?.palette?.warning?.main },
+  borderWarningLight: { borderColor: theme?.palette?.warning?.light },
+  borderWarningDark: { borderColor: theme?.palette?.warning?.dark },
 
-  borderInfo: { borderColor: theme.palette.info.main },
-  borderInfoDark: { borderColor: theme.palette.info.dark },
-  borderInfoLight: { borderColor: theme.palette.info.light },
+  borderInfo: { borderColor: theme?.palette?.info?.main },
+  borderInfoDark: { borderColor: theme?.palette?.info?.dark },
+  borderInfoLight: { borderColor: theme?.palette?.info?.light },
 
   borderBlack: { borderColor: "black" },
   borderWhite: { borderColor: "white" },
@@ -1015,11 +1015,11 @@ export const defaultUtilityStyles = {
 
   overflowYScroll: { overflowY: "scroll" },
 
-  textError: { color: theme.palette.error.main },
+  textError: { color: theme?.palette?.error?.main },
 
   overflowYVisible: { overflowY: "visible" },
 
-  textErrorDark: { color: theme.palette.error.dark },
+  textErrorDark: { color: theme?.palette?.error?.dark },
 
   /**************************************************
    * Spacing
@@ -1029,17 +1029,17 @@ export const defaultUtilityStyles = {
    *-----------------------------------------------*/
   p0: { padding: 0 + PX_TAG },
 
-  textErrorLight: { color: theme.palette.error.light },
+  textErrorLight: { color: theme?.palette?.error?.light },
 
-  textInfo: { color: theme.palette.info.main },
+  textInfo: { color: theme?.palette?.info?.main },
 
   p1: { padding: DEFAULT_PADDING + PX_TAG },
 
-  textInfoDark: { color: theme.palette.info.dark },
+  textInfoDark: { color: theme?.palette?.info?.dark },
 
   p2: { padding: DEFAULT_PADDING * 2 + PX_TAG },
 
-  textInfoLight: { color: theme.palette.info.light },
+  textInfoLight: { color: theme?.palette?.info?.light },
 
   p3: { padding: DEFAULT_PADDING * 3 + PX_TAG },
 
@@ -1058,51 +1058,51 @@ export const defaultUtilityStyles = {
   /**************************************************
    * Color
    *************************************************/
-  textPrimary: { color: theme.palette.primary.main },
+  textPrimary: { color: theme?.palette?.primary?.main },
 
   pb2: { paddingBottom: DEFAULT_PADDING * 2 + PX_TAG },
 
-  textPrimaryDark: { color: theme.palette.primary.dark },
+  textPrimaryDark: { color: theme?.palette?.primary?.dark },
 
   pb3: { paddingBottom: DEFAULT_PADDING * 3 + PX_TAG },
 
   pb4: { paddingBottom: DEFAULT_PADDING * 4 + PX_TAG },
 
-  textPrimaryLight: { color: theme.palette.primary.light },
+  textPrimaryLight: { color: theme?.palette?.primary?.light },
 
   pb5: { paddingBottom: DEFAULT_PADDING * 5 + PX_TAG },
 
   peAuto: { pointerEvents: "auto" },
 
-  textSecondary: { color: theme.palette.secondary.main },
+  textSecondary: { color: theme?.palette?.secondary?.main },
 
   peNone: { pointerEvents: "none" },
 
   pl0: { paddingLeft: 0 + PX_TAG },
 
-  textSecondaryDark: { color: theme.palette.secondary.dark },
+  textSecondaryDark: { color: theme?.palette?.secondary?.dark },
 
   pl1: { paddingLeft: DEFAULT_PADDING + PX_TAG },
 
   pl2: { paddingLeft: DEFAULT_PADDING * 2 + PX_TAG },
 
-  textSecondaryLight: { color: theme.palette.secondary.light },
+  textSecondaryLight: { color: theme?.palette?.secondary?.light },
 
   pl3: { paddingLeft: DEFAULT_PADDING * 3 + PX_TAG },
 
   pl4: { paddingLeft: DEFAULT_PADDING * 4 + PX_TAG },
 
-  textSuccess: { color: theme.palette.success.main },
+  textSuccess: { color: theme?.palette?.success?.main },
 
   pl5: { paddingLeft: DEFAULT_PADDING * 5 + PX_TAG },
 
-  textSuccessDark: { color: theme.palette.success.dark },
+  textSuccessDark: { color: theme?.palette?.success?.dark },
 
   positionAbsolute: { position: "absolute" },
 
   positionFixed: { position: "fixed" },
 
-  textSuccessLight: { color: theme.palette.success.light },
+  textSuccessLight: { color: theme?.palette?.success?.light },
 
   positionRelative: { position: "relative" },
 
@@ -1111,7 +1111,7 @@ export const defaultUtilityStyles = {
    *************************************************/
   positionStatic: { position: "static" },
 
-  textWarning: { color: theme.palette.warning.main },
+  textWarning: { color: theme?.palette?.warning?.main },
 
   /**
    * @todo multiple value for same property
@@ -1121,11 +1121,11 @@ export const defaultUtilityStyles = {
     position: "sticky",
   },
 
-  textWarningDark: { color: theme.palette.warning.dark },
+  textWarningDark: { color: theme?.palette?.warning?.dark },
 
   pr0: { paddingRight: 0 + PX_TAG },
 
-  textWarningLight: { color: theme.palette.warning.light },
+  textWarningLight: { color: theme?.palette?.warning?.light },
 
   pr1: { paddingRight: DEFAULT_PADDING + PX_TAG },
 

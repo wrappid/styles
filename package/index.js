@@ -8,9 +8,10 @@ import {
 	X_LARGE_WINDOW_WIDTH,
 	XX_LARGE_WINDOW_WIDTH
 } from "./config/constants";
-import { overrideThemeConfiguration } from "./theme/theme";
+import { overrideThemeConfiguration } from "./theme/themeUtil";
 import { getConfigurationObject } from "./helper/helper";
-import StylesProvider from "./StylesProvider";
+import StylesProvider, { theme } from "./StylesProvider";
+import { ThemeContext, UserThemeContext } from "./config/contextHandler";
 import {
 	IMPORTANT,
 	DEFAULT_PADDING,
@@ -55,5 +56,8 @@ export {
 	getConfigurationObject,
 	DEFAULT_PADDING,
 	PX_TAG,
-	IMPORTANT
+	IMPORTANT,
+	theme,
+	ThemeContext,
+	UserThemeContext
 };

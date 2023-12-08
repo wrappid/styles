@@ -1,3 +1,4 @@
+import { getMergedStyles } from "./StylesProvider";
 import {
 	LARGE_WINDOW_WIDTH,
 	MEDIUM_WINDOW_WIDTH,
@@ -7,14 +8,7 @@ import {
 } from "./config/constants";
 
 import { getConfigurationObject } from "./helper/helper";
-import {
-	mergedDefaultStyles,
-	mergedLargeStyles,
-	mergedMediumStyles,
-	mergedSmallStyles,
-	mergedXLargeStyles,
-	mergedXXLargeStyles
-} from "./StylesProvider";
+
 import UtilityClasses from "./utility/UtilityClasses";
 
 const { innerWidth: windowWidth, innerHeight: windowHeight } = window;
@@ -128,6 +122,14 @@ export function getEffectiveStyle(classNames) {
 	//   appStyles,
 	//   coreStyles
 	// );
+
+	let styles = getMergedStyles();
+	let mergedDefaultStyles = styles?.mergedDefaultStyles;
+	let mergedLargeStyles = styles?.mergedLargeStyles;
+	let mergedMediumStyles = styles?.mergedMediumStyles;
+	let mergedSmallStyles = styles?.mergedSmallStyles;
+	let mergedXLargeStyles = styles?.mergedXLargeStyles;
+	let mergedXXLargeStyles = styles?.mergedXXLargeStyles;
 
 	let config = getConfigurationObject();
 

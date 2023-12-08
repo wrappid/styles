@@ -1,4 +1,4 @@
-import { theme } from "../theme/theme";
+import { theme } from "../StylesProvider";
 import {
 	IMPORTANT,
 	defaultUtilityStyles
@@ -36,10 +36,10 @@ export const defaultSCStyles = {
    * DATA DISPLAY
    *************************************************/
 	scDataDisplayAvatar   : {
-		backgroundColor: theme.palette.secondary.light,
+		backgroundColor: theme?.palette?.secondary?.light,
 		borderWidth    : "1px" + IMPORTANT,
 		borderStyle    : "solid" + IMPORTANT,
-		borderColor    : theme.palette.secondary.main,
+		borderColor    : theme?.palette?.secondary?.main,
 	},
 	scDataDisplayBadge            : {},
 	scDataDisplayChip             : {},
@@ -73,7 +73,7 @@ export const defaultSCStyles = {
 	scFeedbackAlert            : {},
 	scFeedbackBackdrop         : {
 		zIndex         : 1202 + IMPORTANT,
-		backgroundColor: theme.palette.secondary.transparentDark + IMPORTANT,
+		backgroundColor: theme?.palette?.secondary?.transparentDark + IMPORTANT,
 	},
 	scFeedbackCircularProgress: {},
 	scFeedbackLinearProgress  : {},
@@ -129,7 +129,7 @@ export const defaultSCStyles = {
 	},
 	scNavigationTabs: {},
 	scNavigationLink: {
-		color     : theme.palette.primary.main + IMPORTANT,
+		color     : theme?.palette?.primary?.main + IMPORTANT,
 		fontWeight: 500 + IMPORTANT,
 		fontSize  : "0.812rem" + IMPORTANT,
 	},
