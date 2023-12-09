@@ -12,12 +12,9 @@ import { overrideThemeConfiguration } from "./theme/themeUtil";
 import { getConfigurationObject } from "./helper/helper";
 import StylesProvider, { theme } from "./StylesProvider";
 import { ThemeContext, UserThemeContext } from "./config/contextHandler";
-import {
-	IMPORTANT,
-	DEFAULT_PADDING,
-	PX_TAG,
-	defaultUtilityStyles
-} from "./utility/DefaultUtilityStyles";
+import { IMPORTANT, PX_TAG, DEFAULT_PADDING } from "./base/contants";
+import { BaseStyle } from "./base/BaseStyle";
+import { DefaultUtilityStyles } from "./utility/DefaultUtilityStyles";
 import { smallUtilityStyles } from "./utility/SmallUtilityStyles";
 import { mediumUtilityStyles } from "./utility/MediumUtilityStyles";
 import { largeUtilityStyles } from "./utility/LargeUtilityStyles";
@@ -29,7 +26,8 @@ export {
 	 * Utility styles
 	 */
 	UtilityClasses,
-	defaultUtilityStyles,
+	BaseStyle,
+	DefaultUtilityStyles,
 	smallUtilityStyles,
 	mediumUtilityStyles,
 	largeUtilityStyles,

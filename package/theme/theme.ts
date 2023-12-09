@@ -41,6 +41,7 @@ export const DEFAULT_THEME = {
 			main        : "#f50057",
 			dark        : "#c51162",
 			contrastText: "#fff",
+			transparentDark: ""
 		},
 		error: {
 			light       : "#e57373",

@@ -1,6 +1,6 @@
-import { IMPORTANT } from "../utility/DefaultUtilityStyles";
+import { IMPORTANT, PX_TAG } from "../utility/DefaultUtilityStyles";
 
-const HEADING_TOP_MARGIN = "64px";
+const HEADING_TOP_MARGIN = "64" + PX_TAG;
 
 export const mediumSCStyles = {
 	appbarHeight     : { top: HEADING_TOP_MARGIN + IMPORTANT },
