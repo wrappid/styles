@@ -1,7 +1,8 @@
+import { DEFAULT_THEME_TYPES } from "../theme/themeType";
 import { BaseStyle } from "./BaseStyle";
 
-export class ThemeManager extends BaseStyle{
-    refreshTheme(newTheme){
-        this.theme = newTheme
-    }
+export class ThemeManager extends BaseStyle {
+  refreshTheme(newTheme: DEFAULT_THEME_TYPES) {
+    this.theme = newTheme;
+  }
 }

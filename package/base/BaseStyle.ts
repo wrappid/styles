@@ -3,7 +3,7 @@ import { DEFAULT_THEME_TYPES } from "../theme/themeType";
 
 let baseTheme: DEFAULT_THEME_TYPES = DEFAULT_THEME;
 
-export function updateTheme(newTheme) {
+export function updateTheme(newTheme: DEFAULT_THEME_TYPES) {
   baseTheme = { ...newTheme };
 }
 
@@ -31,5 +31,9 @@ export abstract class BaseStyle {
 
   get theme() {
     return this._theme;
+  }
+
+  set theme(themeObj: DEFAULT_THEME_TYPES) {
+    this._theme = themeObj;
   }
 }

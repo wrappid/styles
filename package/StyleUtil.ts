@@ -11,7 +11,7 @@ import { getConfigurationObject } from "./helper/helper";
 
 import UtilityClasses from "./utility/UtilityClasses";
 
-const { innerWidth: windowWidth, innerHeight: windowHeight } = window;
+const { innerWidth: windowWidth } = window;
 
 const UNITS = ["!important"];
 const EXCEPTIONS = [
