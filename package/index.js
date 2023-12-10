@@ -11,7 +11,7 @@ import {
 import { overrideThemeConfiguration } from "./theme/themeUtil";
 import { getConfigurationObject } from "./helper/helper";
 import StylesProvider, { theme } from "./StylesProvider";
-import { ThemeContext, UserThemeContext } from "./config/contextHandler";
+import { StylesThemesContext, ThemeContext, UserThemeContext } from "./config/contextHandler";
 import { IMPORTANT, PX_TAG, DEFAULT_PADDING } from "./base/contants";
 import { BaseStyle } from "./base/BaseStyle";
 import { DefaultUtilityStyles } from "./utility/DefaultUtilityStyles";
@@ -56,6 +56,7 @@ export {
 	PX_TAG,
 	IMPORTANT,
 	theme,
+	StylesThemesContext,
 	ThemeContext,
 	UserThemeContext
 };

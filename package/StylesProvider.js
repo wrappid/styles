@@ -19,8 +19,8 @@ import { updateTheme } from "./base/BaseStyle";
 import { ThemeManager } from "./base/ThemeManager";
 
 export let mergedDefaultStyles = {
-	...new DefaultUtilityStyles().getStyle(),
-	...new DefaultSCStyles().getStyle(),
+	...new DefaultUtilityStyles().style,
+	...new DefaultSCStyles().style,
 };
 
 export let mergedSmallStyles = {
@@ -67,10 +67,10 @@ export default function StylesProvider(props) {
 		theme = { ...DEFAULT_THEME, ...(userTheme || {}) };
 		updateTheme(theme);
 		new ThemeManager().refreshTheme(theme);
-		let defStyle = new DefaultUtilityStyles().getStyle();
-		let defScStyle = new DefaultSCStyles().getStyle();
-		let defCoreStyle = new props.coreStyles.styles.default().getStyle();
-		let defAppStyle = new props.appStyles.styles.default().getStyle();
+		let defStyle = new DefaultUtilityStyles().style;
+		let defScStyle = new DefaultSCStyles().style;
+		let defCoreStyle = new props.coreStyles.styles.default().style;
+		let defAppStyle = new props.appStyles.styles.default().style;
 
 		// console.log(
 		// 	"THEME UPDATE",
@@ -132,10 +132,10 @@ export default function StylesProvider(props) {
 		theme = { ...DEFAULT_THEME, ...(userTheme || {}) };
 		updateTheme(theme);
 		new ThemeManager().refreshTheme(theme);
-		let defStyle = new DefaultUtilityStyles().getStyle();
-		let defScStyle = new DefaultSCStyles().getStyle();
-		let defCoreStyle = new props.coreStyles.styles.default().getStyle();
-		let defAppStyle = new props.appStyles.styles.default().getStyle();
+		let defStyle = new DefaultUtilityStyles().style;
+		let defScStyle = new DefaultSCStyles().style;
+		let defCoreStyle = new props.coreStyles.styles.default().style;
+		let defAppStyle = new props.appStyles.styles.default().style;
 
 		mergedDefaultStyles = {
 			...defStyle,
