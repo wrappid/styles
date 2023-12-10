@@ -15,11 +15,11 @@ import { StylesThemesContext, ThemeContext, UserThemeContext } from "./config/co
 import { IMPORTANT, PX_TAG, DEFAULT_PADDING } from "./base/contants";
 import { BaseStyle } from "./base/BaseStyle";
 import { DefaultUtilityStyles } from "./utility/DefaultUtilityStyles";
-import { smallUtilityStyles } from "./utility/SmallUtilityStyles";
-import { mediumUtilityStyles } from "./utility/MediumUtilityStyles";
-import { largeUtilityStyles } from "./utility/LargeUtilityStyles";
-import { xLargeUtilityStyles } from "./utility/XLargeUtilityStyles";
-import { xXLargeUtilityStyles } from "./utility/XXLargeUtilityStyles";
+import { SmallUtilityStyles } from "./utility/SmallUtilityStyles";
+import { MediumUtilityStyles } from "./utility/MediumUtilityStyles";
+import { LargeUtilityStyles } from "./utility/LargeUtilityStyles";
+import { XLargeUtilityStyles } from "./utility/XLargeUtilityStyles";
+import { XXLargeUtilityStyles } from "./utility/XXLargeUtilityStyles";
 
 export {
 	/**
@@ -28,11 +28,11 @@ export {
 	UtilityClasses,
 	BaseStyle,
 	DefaultUtilityStyles,
-	smallUtilityStyles,
-	mediumUtilityStyles,
-	largeUtilityStyles,
-	xLargeUtilityStyles,
-	xXLargeUtilityStyles,
+	SmallUtilityStyles,
+	MediumUtilityStyles,
+	LargeUtilityStyles,
+	XLargeUtilityStyles,
+	XXLargeUtilityStyles,
 	/**
 	 * Style Classes Constants
 	 */
