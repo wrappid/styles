@@ -87,13 +87,13 @@ export default function StylesProvider(props: any) {
 		let xxLgStyle = new XXLargeUtilityStyles().style;
 		let xxLgScStyle = new XXLargeSCStyles().style;
 
-		// console.log(
-		// 	"THEME UPDATE",
-		// 	defStyle,
-		// 	defScStyle,
-		// 	defCoreStyle,
-		// 	defAppStyle
-		// );
+		console.log(
+			"THEME UPDATE",
+			defStyle,
+			defScStyle,
+			defCoreStyle,
+			defAppStyle
+		);
 
 		mergedDefaultStyles = {
 			...defStyle,

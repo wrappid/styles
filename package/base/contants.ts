@@ -1,11 +1,5 @@
-/* eslint-disable */
-import { getConfigurationObject } from "../helper/helper";
-
-const configuration = getConfigurationObject();
-
-export const PX_TAG = configuration?.wrappid?.platform === "web" ? "px " : "";
-export const IMPORTANT =
-  configuration?.wrappid?.platform === "web" ? " !important" : "";
+export const PX_TAG = "px ";
+export const IMPORTANT = " !important";
 
 /**
  * Spacing related defaults
