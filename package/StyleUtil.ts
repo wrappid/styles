@@ -43,7 +43,10 @@ export function addFlavor(styleObject: any) {
   let config = getConfigurationObject();
   // console.log("BEFORE FLAVOUR", styleObject, ", PLATFORM: ", config.wrappid.platform);
 
-  if (config.wrappid.platform === "mobile") {
+  /**
+   * @todo web cannot be go in else block
+   */
+  if (config?.wrappid?.platform === "mobile") {
     let newStyleObject = <any>{};
     let keys = Object.keys(styleObject);
 

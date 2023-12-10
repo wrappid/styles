@@ -19,210 +19,220 @@ import { updateTheme } from "./base/BaseStyle";
 import { ThemeManager } from "./base/ThemeManager";
 
 export let mergedDefaultStyles = {
-	...new DefaultUtilityStyles().style,
-	...new DefaultSCStyles().style,
+  ...new DefaultUtilityStyles().style,
+  ...new DefaultSCStyles().style,
 };
 
 export let mergedSmallStyles = {
-	...new SmallUtilityStyles().style,
-	...new SmallSCStyles().style,
+  ...new SmallUtilityStyles().style,
+  ...new SmallSCStyles().style,
 };
 export let mergedMediumStyles = {
-	...new MediumUtilityStyles().style,
-	...new MediumSCStyles().style,
+  ...new MediumUtilityStyles().style,
+  ...new MediumSCStyles().style,
 };
 export let mergedLargeStyles = {
-	...new LargeUtilityStyles().style,
-	...new LargeSCStyles().style,
+  ...new LargeUtilityStyles().style,
+  ...new LargeSCStyles().style,
 };
 export let mergedXLargeStyles = {
-	...new XLargeUtilityStyles().style,
-	...new XLargeSCStyles().style,
+  ...new XLargeUtilityStyles().style,
+  ...new XLargeSCStyles().style,
 };
 export let mergedXXLargeStyles = {
-	...new XXLargeUtilityStyles().style,
-	...new XXLargeSCStyles().style,
+  ...new XXLargeUtilityStyles().style,
+  ...new XXLargeSCStyles().style,
 };
 
 export let theme = DEFAULT_THEME;
 
 export const getMergedStyles = () => {
-	return {
-		mergedDefaultStyles,
-		mergedSmallStyles,
-		mergedMediumStyles,
-		mergedLargeStyles,
-		mergedXLargeStyles,
-		mergedXXLargeStyles,
-	};
+  return {
+    mergedDefaultStyles,
+    mergedSmallStyles,
+    mergedMediumStyles,
+    mergedLargeStyles,
+    mergedXLargeStyles,
+    mergedXXLargeStyles,
+  };
 };
 
-export default function StylesProvider(props: any) {
-	const [styleFiles, setStyles] = useState<any>({});
-	const [providerId, setProviderId] = useState<any>(null);
+export default function StylesProvider(props: {
+  appStyles: any;
+  coreStyles: any;
+  children: any;
+}) {
+  const { appStyles, coreStyles, children } = props;
+  const [styleFiles, setStyles] = useState<any>({});
+  const [providerId, setProviderId] = useState<any>(null);
 
-	const userTheme = useSelector((state: any) => state?.app?.userTheme);
+  const userTheme = useSelector((state: any) => state?.app?.userTheme);
 
-	useEffect(() => {
-		theme = { ...DEFAULT_THEME, ...(userTheme || {}) };
-		updateTheme(theme);
-		new ThemeManager().refreshTheme(theme);
-		let defStyle = new DefaultUtilityStyles().style;
-		let defScStyle = new DefaultSCStyles().style;
-		let defCoreStyle = new props.coreStyles.styles.default().style;
-		let defAppStyle = new props.appStyles.styles.default().style;
+  useEffect(() => {
+    theme = { ...DEFAULT_THEME, ...(userTheme || {}) };
+    updateTheme(theme);
+    new ThemeManager().refreshTheme(theme);
+    let defaultStyles = new DefaultUtilityStyles().style;
+    let defaultSCStyles = new DefaultSCStyles().style;
+    let defaultCoreStyles = new coreStyles.styles.default().style;
 
-		let smStyle = new SmallUtilityStyles().style;
-		let smScStyle = new SmallSCStyles().style;
-		
-		let mdStyle = new MediumUtilityStyles().style;
-		let mdScStyle = new MediumSCStyles().style;
+    console.log(`appStyles=${appStyles}`);
 
-		let lgStyle = new LargeUtilityStyles().style;
-		let lgScStyle = new LargeSCStyles().style;
+    let defaultAppStyles = appStyles.styles.default;
 
-		let xLgStyle = new XLargeUtilityStyles().style;
-		let xLgScStyle = new XLargeSCStyles().style;
-		
-		let xxLgStyle = new XXLargeUtilityStyles().style;
-		let xxLgScStyle = new XXLargeSCStyles().style;
+    let smStyle = new SmallUtilityStyles().style;
+    let smScStyle = new SmallSCStyles().style;
 
-		console.log(
-			"THEME UPDATE",
-			defStyle,
-			defScStyle,
-			defCoreStyle,
-			defAppStyle
-		);
+    let mdStyle = new MediumUtilityStyles().style;
+    let mdScStyle = new MediumSCStyles().style;
 
-		mergedDefaultStyles = {
-			...defStyle,
-			...defScStyle,
-			...defCoreStyle,
-			...defAppStyle,
-		};
+    let lgStyle = new LargeUtilityStyles().style;
+    let lgScStyle = new LargeSCStyles().style;
 
-		mergedSmallStyles = {
-			...smStyle,
-			...smScStyle,
-			...props.coreStyles?.styles?.small,
-			...props.appStyles?.styles?.small,
-		};
-		mergedMediumStyles = {
-			...mdStyle,
-			...mdScStyle,
-			...props.coreStyles?.styles?.medium,
-			...props.appStyles?.styles?.medium,
-		};
-		mergedLargeStyles = {
-			...lgStyle,
-			...lgScStyle,
-			...props.coreStyles?.styles?.large,
-			...props.appStyles?.styles?.large,
-		};
-		mergedXLargeStyles = {
-			...xLgStyle,
-			...xLgScStyle,
-			...props.coreStyles?.styles?.xLarge,
-			...props.appStyles?.styles?.xLarge,
-		};
-		mergedXXLargeStyles = {
-			...xxLgStyle,
-			...xxLgScStyle,
-			...props.coreStyles?.styles?.xxLarge,
-			...props.appStyles?.styles?.xxLarge,
-		};
-		setStyles({
-			mergedDefaultStyles,
-			mergedSmallStyles,
-			mergedMediumStyles,
-			mergedLargeStyles,
-			mergedXLargeStyles,
-			mergedXXLargeStyles,
-		});
+    let xLgStyle = new XLargeUtilityStyles().style;
+    let xLgScStyle = new XLargeSCStyles().style;
 
-		setProviderId("style-provider" + new Date());
-	}, []);
+    let xxLgStyle = new XXLargeUtilityStyles().style;
+    let xxLgScStyle = new XXLargeSCStyles().style;
 
-	useEffect(() => {
-		theme = { ...DEFAULT_THEME, ...(userTheme || {}) };
-		updateTheme(theme);
-		new ThemeManager().refreshTheme(theme);
-		let defStyle = new DefaultUtilityStyles().style;
-		let defScStyle = new DefaultSCStyles().style;
-		let defCoreStyle = new props.coreStyles.styles.default().style;
-		let defAppStyle = new props.appStyles.styles.default().style;
+    console.log(
+      "THEME UPDATE",
+      defaultStyles,
+      defaultSCStyles,
+      defaultCoreStyles,
+      defaultAppStyles
+    );
 
-		let smStyle = new SmallUtilityStyles().style;
-		let smScStyle = new SmallSCStyles().style;
-		
-		let mdStyle = new MediumUtilityStyles().style;
-		let mdScStyle = new MediumSCStyles().style;
+    mergedDefaultStyles = {
+      ...defaultStyles,
+      ...defaultSCStyles,
+      ...defaultCoreStyles,
+      ...defaultAppStyles,
+    };
 
-		let lgStyle = new LargeUtilityStyles().style;
-		let lgScStyle = new LargeSCStyles().style;
+    mergedSmallStyles = {
+      ...smStyle,
+      ...smScStyle,
+      ...coreStyles?.styles?.small,
+      ...appStyles?.styles?.small,
+    };
+    mergedMediumStyles = {
+      ...mdStyle,
+      ...mdScStyle,
+      ...coreStyles?.styles?.medium,
+      ...appStyles?.styles?.medium,
+    };
+    mergedLargeStyles = {
+      ...lgStyle,
+      ...lgScStyle,
+      ...coreStyles?.styles?.large,
+      ...appStyles?.styles?.large,
+    };
+    mergedXLargeStyles = {
+      ...xLgStyle,
+      ...xLgScStyle,
+      ...coreStyles?.styles?.xLarge,
+      ...appStyles?.styles?.xLarge,
+    };
+    mergedXXLargeStyles = {
+      ...xxLgStyle,
+      ...xxLgScStyle,
+      ...coreStyles?.styles?.xxLarge,
+      ...appStyles?.styles?.xxLarge,
+    };
+    setStyles({
+      mergedDefaultStyles,
+      mergedSmallStyles,
+      mergedMediumStyles,
+      mergedLargeStyles,
+      mergedXLargeStyles,
+      mergedXXLargeStyles,
+    });
 
-		let xLgStyle = new XLargeUtilityStyles().style;
-		let xLgScStyle = new XLargeSCStyles().style;
-		
-		let xxLgStyle = new XXLargeUtilityStyles().style;
-		let xxLgScStyle = new XXLargeSCStyles().style;
+    setProviderId("style-provider" + new Date());
+  }, []);
 
-		mergedDefaultStyles = {
-			...defStyle,
-			...defScStyle,
-			...defCoreStyle,
-			...defAppStyle,
-		};
+  useEffect(() => {
+    theme = { ...DEFAULT_THEME, ...(userTheme || {}) };
+    updateTheme(theme);
+    new ThemeManager().refreshTheme(theme);
+    let defaultStyles = new DefaultUtilityStyles().style;
+    let defaultSCStyles = new DefaultSCStyles().style;
+    let defaultCoreStyles = new coreStyles.styles.default().style;
 
-		mergedSmallStyles = {
-			...smStyle,
-			...smScStyle,
-			...props.coreStyles?.styles?.small,
-			...props.appStyles?.styles?.small,
-		};
-		mergedMediumStyles = {
-			...mdStyle,
-			...mdScStyle,
-			...props.coreStyles?.styles?.medium,
-			...props.appStyles?.styles?.medium,
-		};
-		mergedLargeStyles = {
-			...lgStyle,
-			...lgScStyle,
-			...props.coreStyles?.styles?.large,
-			...props.appStyles?.styles?.large,
-		};
-		mergedXLargeStyles = {
-			...xLgStyle,
-			...xLgScStyle,
-			...props.coreStyles?.styles?.xLarge,
-			...props.appStyles?.styles?.xLarge,
-		};
-		mergedXXLargeStyles = {
-			...xxLgStyle,
-			...xxLgScStyle,
-			...props.coreStyles?.styles?.xxLarge,
-			...props.appStyles?.styles?.xxLarge,
-		};
-		setStyles({
-			mergedDefaultStyles,
-			mergedSmallStyles,
-			mergedMediumStyles,
-			mergedLargeStyles,
-			mergedXLargeStyles,
-			mergedXXLargeStyles,
-		});
-		setProviderId("style-provider" + new Date());
-	}, [userTheme]);
+    console.log(`appStyles=${appStyles}`);
 
-	return theme && providerId ? (
-		<AppStylesContext.Provider
-			key={providerId}
-			value={{ ...styleFiles, ...(theme || {}) }}>
-			<ThemeContext.Provider value={theme}>
-				{props.children}
-			</ThemeContext.Provider>
-		</AppStylesContext.Provider>
-	) : null;
+    let defaultAppStyles = appStyles.styles.default;
+
+    let smStyle = new SmallUtilityStyles().style;
+    let smScStyle = new SmallSCStyles().style;
+
+    let mdStyle = new MediumUtilityStyles().style;
+    let mdScStyle = new MediumSCStyles().style;
+
+    let lgStyle = new LargeUtilityStyles().style;
+    let lgScStyle = new LargeSCStyles().style;
+
+    let xLgStyle = new XLargeUtilityStyles().style;
+    let xLgScStyle = new XLargeSCStyles().style;
+
+    let xxLgStyle = new XXLargeUtilityStyles().style;
+    let xxLgScStyle = new XXLargeSCStyles().style;
+
+    mergedDefaultStyles = {
+      ...defaultStyles,
+      ...defaultSCStyles,
+      ...defaultCoreStyles,
+      ...defaultAppStyles,
+    };
+
+    mergedSmallStyles = {
+      ...smStyle,
+      ...smScStyle,
+      ...coreStyles?.styles?.small,
+      ...appStyles?.styles?.small,
+    };
+    mergedMediumStyles = {
+      ...mdStyle,
+      ...mdScStyle,
+      ...coreStyles?.styles?.medium,
+      ...appStyles?.styles?.medium,
+    };
+    mergedLargeStyles = {
+      ...lgStyle,
+      ...lgScStyle,
+      ...coreStyles?.styles?.large,
+      ...appStyles?.styles?.large,
+    };
+    mergedXLargeStyles = {
+      ...xLgStyle,
+      ...xLgScStyle,
+      ...coreStyles?.styles?.xLarge,
+      ...appStyles?.styles?.xLarge,
+    };
+    mergedXXLargeStyles = {
+      ...xxLgStyle,
+      ...xxLgScStyle,
+      ...coreStyles?.styles?.xxLarge,
+      ...appStyles?.styles?.xxLarge,
+    };
+    setStyles({
+      mergedDefaultStyles,
+      mergedSmallStyles,
+      mergedMediumStyles,
+      mergedLargeStyles,
+      mergedXLargeStyles,
+      mergedXXLargeStyles,
+    });
+    setProviderId("style-provider" + new Date());
+  }, [userTheme]);
+
+  return theme && providerId ? (
+    <AppStylesContext.Provider
+      key={providerId}
+      value={{ ...styleFiles, ...(theme || {}) }}
+    >
+      <ThemeContext.Provider value={theme}>{children}</ThemeContext.Provider>
+    </AppStylesContext.Provider>
+  ) : null;
 }
