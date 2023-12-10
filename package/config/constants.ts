@@ -16,3 +16,7 @@ export const X_LARGE_WINDOW_WIDTH = theme?.breakpoints?.values?.xl;
 // applying same width as X_LARGE
 // so it could be supported later on
 export const XX_LARGE_WINDOW_WIDTH = theme?.breakpoints?.values?.xl;
+
+export interface CONFIG_TYPE{ 
+    wrappid: any
+}

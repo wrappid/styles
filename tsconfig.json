@@ -5,11 +5,10 @@
     "node_modules"
   ],
   "compilerOptions": {
+    "target": "ES2021",
     "module": "esnext",
     "lib": ["dom", "esnext"],
     "importHelpers": true,
-    "declaration": true,
-    "emitDeclarationOnly": true,
     "isolatedModules": true,
     "sourceMap": true,
     "rootDir": "./package",

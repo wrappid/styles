@@ -1,4 +1,3 @@
-import { theme } from "../StylesProvider";
 import { BaseStyle } from "../base/BaseStyle";
 import { IMPORTANT, PX_TAG } from "../base/contants";
 import { DefaultUtilityStyles } from "../utility/DefaultUtilityStyles";
@@ -41,10 +40,10 @@ export class DefaultSCStyles extends BaseStyle {
        * DATA DISPLAY
        *************************************************/
       scDataDisplayAvatar: {
-        backgroundColor: theme?.palette?.secondary?.light,
+        backgroundColor: this.theme?.palette?.secondary?.light,
         borderWidth: "1" + PX_TAG + IMPORTANT,
         borderStyle: "solid" + IMPORTANT,
-        borderColor: theme?.palette?.secondary?.main,
+        borderColor: this.theme?.palette?.secondary?.main,
       },
       scDataDisplayBadge: {},
       scDataDisplayChip: {},
@@ -78,7 +77,7 @@ export class DefaultSCStyles extends BaseStyle {
       scFeedbackAlert: {},
       scFeedbackBackdrop: {
         zIndex: 1202 + IMPORTANT,
-        backgroundColor: theme?.palette?.secondary?.transparentDark + IMPORTANT,
+        backgroundColor: this.theme?.palette?.secondary?.transparentDark + IMPORTANT,
       },
       scFeedbackCircularProgress: {},
       scFeedbackLinearProgress: {},
@@ -134,7 +133,7 @@ export class DefaultSCStyles extends BaseStyle {
       },
       scNavigationTabs: {},
       scNavigationLink: {
-        color: theme?.palette?.primary?.main + IMPORTANT,
+        color: this.theme?.palette?.primary?.main + IMPORTANT,
         fontWeight: 500 + IMPORTANT,
         fontSize: "0.812rem" + IMPORTANT,
       },
@@ -194,7 +193,7 @@ export class DefaultSCStyles extends BaseStyle {
 
       headerItem: {
         padding: 0 + IMPORTANT,
-        // backgroundColor: theme.palette.secondary.light,
+        // backgroundColor: this.theme.palette.secondary.light,
       },
       headerButtonItem: {},
       headerIconItem: {},
@@ -202,7 +201,7 @@ export class DefaultSCStyles extends BaseStyle {
 
       parentItem: {
         padding: 0 + IMPORTANT,
-        // backgroundColor: theme.palette.secondary.light,
+        // backgroundColor: this.theme.palette.secondary.light,
       },
       parentButtonItem: {},
       parentIconItem: {},
@@ -210,7 +209,7 @@ export class DefaultSCStyles extends BaseStyle {
 
       seperatorItem: {
         padding: 0 + IMPORTANT,
-        // backgroundColor: theme.palette.secondary.light,
+        // backgroundColor: this.theme.palette.secondary.light,
       },
       seperatorButtonItem: {
         height: 0 + IMPORTANT,
@@ -226,7 +225,7 @@ export class DefaultSCStyles extends BaseStyle {
 
       menuItem: {
         padding: 0 + IMPORTANT,
-        // backgroundColor: theme.palette.secondary.light,
+        // backgroundColor: this.theme.palette.secondary.light,
       },
       menuItemButtonItem: {},
       menuItemTextItem: {},

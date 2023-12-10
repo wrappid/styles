@@ -20,6 +20,7 @@ import { MediumUtilityStyles } from "./utility/MediumUtilityStyles";
 import { LargeUtilityStyles } from "./utility/LargeUtilityStyles";
 import { XLargeUtilityStyles } from "./utility/XLargeUtilityStyles";
 import { XXLargeUtilityStyles } from "./utility/XXLargeUtilityStyles";
+import ConfigProvider from "./ConfigProvider";
 
 export {
 	/**
@@ -51,6 +52,7 @@ export {
 	XX_LARGE_WINDOW_WIDTH,
 	overrideThemeConfiguration,
 	StylesProvider,
+	ConfigProvider,
 	getConfigurationObject,
 	DEFAULT_PADDING,
 	PX_TAG,
@@ -58,5 +60,5 @@ export {
 	theme,
 	StylesThemesContext,
 	ThemeContext,
-	UserThemeContext
+	UserThemeContext,
 };

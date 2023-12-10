@@ -7,3 +7,5 @@ export const AppStylesContext = createContext<any>({});
 export const StylesThemesContext = createContext<any>({});
 export const ThemeContext = createContext<any>({});
 export const UserThemeContext = createContext<any>(null);
+export const CoreConfigRegistry = createContext<any>(null);
+
