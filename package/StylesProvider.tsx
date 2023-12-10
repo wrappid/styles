@@ -3,16 +3,16 @@ import { useSelector } from "react-redux";
 import { DEFAULT_THEME } from "./theme/theme";
 import { DefaultUtilityStyles } from "./utility/DefaultUtilityStyles";
 import { DefaultSCStyles } from "./styledComponents/DefaultSCStyles";
-import { smallUtilityStyles } from "./utility/SmallUtilityStyles";
-import { smallSCStyles } from "./styledComponents/SmallSCStyles";
-import { mediumUtilityStyles } from "./utility/MediumUtilityStyles";
-import { mediumSCStyles } from "./styledComponents/MediumSCStyles";
-import { largeUtilityStyles } from "./utility/LargeUtilityStyles";
-import { largeSCStyles } from "./styledComponents/LargeSCStyles";
-import { xLargeUtilityStyles } from "./utility/XLargeUtilityStyles";
-import { xLargeSCStyles } from "./styledComponents/XLargeSCStyles";
-import { xXLargeUtilityStyles } from "./utility/XXLargeUtilityStyles";
-import { xXLargeSCStyles } from "./styledComponents/XXLargeSCStyles";
+import { SmallUtilityStyles } from "./utility/SmallUtilityStyles";
+import { SmallSCStyles } from "./styledComponents/SmallSCStyles";
+import { MediumUtilityStyles } from "./utility/MediumUtilityStyles";
+import { MediumSCStyles } from "./styledComponents/MediumSCStyles";
+import { LargeUtilityStyles } from "./utility/LargeUtilityStyles";
+import { LargeSCStyles } from "./styledComponents/LargeSCStyles";
+import { XLargeUtilityStyles } from "./utility/XLargeUtilityStyles";
+import { XLargeSCStyles } from "./styledComponents/XLargeSCStyles";
+import { XXLargeUtilityStyles } from "./utility/XXLargeUtilityStyles";
+import { XXLargeSCStyles } from "./styledComponents/XXLargeSCStyles";
 import { AppStylesContext } from "./config/contextHandler";
 import { ThemeContext } from "./config/contextHandler";
 import { updateTheme } from "./base/BaseStyle";
@@ -24,24 +24,24 @@ export let mergedDefaultStyles = {
 };
 
 export let mergedSmallStyles = {
-	...smallUtilityStyles,
-	...smallSCStyles,
+	...new SmallUtilityStyles().style,
+	...new SmallSCStyles().style,
 };
 export let mergedMediumStyles = {
-	...mediumUtilityStyles,
-	...mediumSCStyles,
+	...new MediumUtilityStyles().style,
+	...new MediumSCStyles().style,
 };
 export let mergedLargeStyles = {
-	...largeUtilityStyles,
-	...largeSCStyles,
+	...new LargeUtilityStyles().style,
+	...new LargeSCStyles().style,
 };
 export let mergedXLargeStyles = {
-	...xLargeUtilityStyles,
-	...xLargeSCStyles,
+	...new XLargeUtilityStyles().style,
+	...new XLargeSCStyles().style,
 };
 export let mergedXXLargeStyles = {
-	...xXLargeUtilityStyles,
-	...xXLargeSCStyles,
+	...new XXLargeUtilityStyles().style,
+	...new XXLargeSCStyles().style,
 };
 
 export let theme = DEFAULT_THEME;
@@ -57,11 +57,11 @@ export const getMergedStyles = () => {
 	};
 };
 
-export default function StylesProvider(props) {
-	const [styleFiles, setStyles] = useState({});
-	const [providerId, setProviderId] = useState(null);
+export default function StylesProvider(props: any) {
+	const [styleFiles, setStyles] = useState<any>({});
+	const [providerId, setProviderId] = useState<any>(null);
 
-	const userTheme = useSelector(state => state?.app?.userTheme);
+	const userTheme = useSelector((state: any) => state?.app?.userTheme);
 
 	useEffect(() => {
 		theme = { ...DEFAULT_THEME, ...(userTheme || {}) };
@@ -71,6 +71,21 @@ export default function StylesProvider(props) {
 		let defScStyle = new DefaultSCStyles().style;
 		let defCoreStyle = new props.coreStyles.styles.default().style;
 		let defAppStyle = new props.appStyles.styles.default().style;
+
+		let smStyle = new SmallUtilityStyles().style;
+		let smScStyle = new SmallSCStyles().style;
+		
+		let mdStyle = new MediumUtilityStyles().style;
+		let mdScStyle = new MediumSCStyles().style;
+
+		let lgStyle = new LargeUtilityStyles().style;
+		let lgScStyle = new LargeSCStyles().style;
+
+		let xLgStyle = new XLargeUtilityStyles().style;
+		let xLgScStyle = new XLargeSCStyles().style;
+		
+		let xxLgStyle = new XXLargeUtilityStyles().style;
+		let xxLgScStyle = new XXLargeSCStyles().style;
 
 		// console.log(
 		// 	"THEME UPDATE",
@@ -88,32 +103,32 @@ export default function StylesProvider(props) {
 		};
 
 		mergedSmallStyles = {
-			...smallUtilityStyles,
-			...smallSCStyles,
+			...smStyle,
+			...smScStyle,
 			...props.coreStyles?.styles?.small,
 			...props.appStyles?.styles?.small,
 		};
 		mergedMediumStyles = {
-			...mediumUtilityStyles,
-			...mediumSCStyles,
+			...mdStyle,
+			...mdScStyle,
 			...props.coreStyles?.styles?.medium,
 			...props.appStyles?.styles?.medium,
 		};
 		mergedLargeStyles = {
-			...largeUtilityStyles,
-			...largeSCStyles,
+			...lgStyle,
+			...lgScStyle,
 			...props.coreStyles?.styles?.large,
 			...props.appStyles?.styles?.large,
 		};
 		mergedXLargeStyles = {
-			...xLargeUtilityStyles,
-			...xLargeSCStyles,
+			...xLgStyle,
+			...xLgScStyle,
 			...props.coreStyles?.styles?.xLarge,
 			...props.appStyles?.styles?.xLarge,
 		};
 		mergedXXLargeStyles = {
-			...xXLargeUtilityStyles,
-			...xXLargeSCStyles,
+			...xxLgStyle,
+			...xxLgScStyle,
 			...props.coreStyles?.styles?.xxLarge,
 			...props.appStyles?.styles?.xxLarge,
 		};
@@ -125,6 +140,7 @@ export default function StylesProvider(props) {
 			mergedXLargeStyles,
 			mergedXXLargeStyles,
 		});
+
 		setProviderId("style-provider" + new Date());
 	}, []);
 
@@ -137,6 +153,21 @@ export default function StylesProvider(props) {
 		let defCoreStyle = new props.coreStyles.styles.default().style;
 		let defAppStyle = new props.appStyles.styles.default().style;
 
+		let smStyle = new SmallUtilityStyles().style;
+		let smScStyle = new SmallSCStyles().style;
+		
+		let mdStyle = new MediumUtilityStyles().style;
+		let mdScStyle = new MediumSCStyles().style;
+
+		let lgStyle = new LargeUtilityStyles().style;
+		let lgScStyle = new LargeSCStyles().style;
+
+		let xLgStyle = new XLargeUtilityStyles().style;
+		let xLgScStyle = new XLargeSCStyles().style;
+		
+		let xxLgStyle = new XXLargeUtilityStyles().style;
+		let xxLgScStyle = new XXLargeSCStyles().style;
+
 		mergedDefaultStyles = {
 			...defStyle,
 			...defScStyle,
@@ -145,32 +176,32 @@ export default function StylesProvider(props) {
 		};
 
 		mergedSmallStyles = {
-			...smallUtilityStyles,
-			...smallSCStyles,
+			...smStyle,
+			...smScStyle,
 			...props.coreStyles?.styles?.small,
 			...props.appStyles?.styles?.small,
 		};
 		mergedMediumStyles = {
-			...mediumUtilityStyles,
-			...mediumSCStyles,
+			...mdStyle,
+			...mdScStyle,
 			...props.coreStyles?.styles?.medium,
 			...props.appStyles?.styles?.medium,
 		};
 		mergedLargeStyles = {
-			...largeUtilityStyles,
-			...largeSCStyles,
+			...lgStyle,
+			...lgScStyle,
 			...props.coreStyles?.styles?.large,
 			...props.appStyles?.styles?.large,
 		};
 		mergedXLargeStyles = {
-			...xLargeUtilityStyles,
-			...xLargeSCStyles,
+			...xLgStyle,
+			...xLgScStyle,
 			...props.coreStyles?.styles?.xLarge,
 			...props.appStyles?.styles?.xLarge,
 		};
 		mergedXXLargeStyles = {
-			...xXLargeUtilityStyles,
-			...xXLargeSCStyles,
+			...xxLgStyle,
+			...xxLgScStyle,
 			...props.coreStyles?.styles?.xxLarge,
 			...props.appStyles?.styles?.xxLarge,
 		};
