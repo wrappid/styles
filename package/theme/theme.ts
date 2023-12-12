@@ -239,7 +239,7 @@ export const DEFAULT_THEME = {
 			leavingScreen : 195,
 		},
 	},
-	spacing: { unit: 8 },
+	spacing: 8,
 	zIndex : {
 		mobileStepper: 1000,
 		appBar       : 1100,

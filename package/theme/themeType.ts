@@ -207,7 +207,7 @@ export interface DEFAULT_THEME_TYPES {
 			leavingScreen : number,
 		},
 	},
-	spacing: { unit: number },
+	spacing: number,
 	zIndex : {
 		mobileStepper: number,
 		appBar       : number,
