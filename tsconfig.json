@@ -7,7 +7,6 @@
     "resolveJsonModule": true,
     "target": "ES2021",
     "sourceMap": true,
-    "rootDir": "./package",
     "outDir": "./dist",
     "lib": ["dom", "esnext"],
     "importHelpers": true,
@@ -23,5 +22,5 @@
     "esModuleInterop": true,
   },
   "include": ["package/**/*.ts", "package/**/*.tsx", "package/**/*.json"],
-  "exclude": ["node_modules", "test", "dist"],
+  "exclude": ["node_modules", "test", "dist", ".github", ".git", "temp"],
 }
