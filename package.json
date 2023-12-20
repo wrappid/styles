@@ -9,12 +9,11 @@
     "test": "echo testing not yet implemented",
     "build:old": "npx babel package --out-dir dist --copy-files",
     "build": "npx tsc",
-    "build-app": "npx babel package --out-dir ../wrappid-app/.wrappid/runtime/mobile/node_modules/@wrappid/styles --copy-files",
     "publish": "npm publish ./dist --registry=https://npm.pkg.github.com --scope=@wrappid"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://techoneel: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@github.com/wrappid/styles.git"
+    "url": "git+https://github.com/wrappid/styles.git"
   },
   "keywords": [
     "css-in-js",
