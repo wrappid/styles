@@ -455,41 +455,51 @@ export class DefaultUtilityStyles extends BaseStyle {
       /**************************************************
        * Color
        *************************************************/
-      textPrimary: { color: this.theme.palette?.primary?.main },
-      textPrimaryLight: { color: this.theme.palette?.primary?.light },
-      textPrimaryDark: { color: this.theme.palette?.primary?.dark },
+      textPrimary: { color: this.theme.palette?.primary?.main + IMPORTANT },
+      textPrimaryLight: {
+        color: this.theme.palette?.primary?.light + IMPORTANT,
+      },
+      textPrimaryDark: { color: this.theme.palette?.primary?.dark + IMPORTANT },
 
-      textSecondary: { color: this.theme.palette?.secondary?.main },
-      textSecondaryLight: { color: this.theme.palette?.secondary?.light },
-      textSecondaryDark: { color: this.theme.palette?.secondary?.dark },
+      textSecondary: { color: this.theme.palette?.secondary?.main + IMPORTANT },
+      textSecondaryLight: {
+        color: this.theme.palette?.secondary?.light + IMPORTANT,
+      },
+      textSecondaryDark: {
+        color: this.theme.palette?.secondary?.dark + IMPORTANT,
+      },
 
-      textSuccess: { color: this.theme.palette?.success?.main },
-      textSuccessLight: { color: this.theme.palette?.success?.light },
-      textSuccessDark: { color: this.theme.palette?.success?.dark },
+      textSuccess: { color: this.theme.palette?.success?.main + IMPORTANT },
+      textSuccessLight: {
+        color: this.theme.palette?.success?.light + IMPORTANT,
+      },
+      textSuccessDark: { color: this.theme.palette?.success?.dark + IMPORTANT },
 
-      textError: { color: this.theme.palette?.error?.main },
-      textErrorLight: { color: this.theme.palette?.error?.light },
-      textErrorDark: { color: this.theme.palette?.error?.dark },
+      textError: { color: this.theme.palette?.error?.main + IMPORTANT },
+      textErrorLight: { color: this.theme.palette?.error?.light + IMPORTANT },
+      textErrorDark: { color: this.theme.palette?.error?.dark + IMPORTANT },
 
-      textWarning: { color: this.theme.palette?.warning?.main },
-      textWarningLight: { color: this.theme.palette?.warning?.light },
-      textWarningDark: { color: this.theme.palette?.warning?.dark },
+      textWarning: { color: this.theme.palette?.warning?.main + IMPORTANT },
+      textWarningLight: {
+        color: this.theme.palette?.warning?.light + IMPORTANT,
+      },
+      textWarningDark: { color: this.theme.palette?.warning?.dark + IMPORTANT },
 
-      textInfo: { color: this.theme.palette?.info?.main },
-      textInfoLight: { color: this.theme.palette?.info?.light },
-      textInfoDark: { color: this.theme.palette?.info?.dark },
+      textInfo: { color: this.theme.palette?.info?.main + IMPORTANT },
+      textInfoLight: { color: this.theme.palette?.info?.light + IMPORTANT },
+      textInfoDark: { color: this.theme.palette?.info?.dark + IMPORTANT },
 
-      textBlack: { color: "#000000" },
-      textBlack50: { color: "#00000077" },
-      textWhite: { color: "#ffffff" },
-      textWhite50: { color: "#ffffff77" },
+      textBlack: { color: "#000000" + IMPORTANT },
+      textBlack50: { color: "#00000077" + IMPORTANT },
+      textWhite: { color: "#ffffff" + IMPORTANT },
+      textWhite50: { color: "#ffffff77" + IMPORTANT },
 
-      textReset: { color: "inherit" },
+      textReset: { color: "inherit" + IMPORTANT },
 
-      textOpacity25: { opacity: "0.25" },
-      textOpacity50: { opacity: "0.5" },
-      textOpacity75: { opacity: "0.75" },
-      textOpacity100: { opacity: "1" },
+      textOpacity25: { opacity: "0.25" + IMPORTANT },
+      textOpacity50: { opacity: "0.5" + IMPORTANT },
+      textOpacity75: { opacity: "0.75" + IMPORTANT },
+      textOpacity100: { opacity: "1" + IMPORTANT },
 
       // -- textLight: {},
       // -- textDark: {},
