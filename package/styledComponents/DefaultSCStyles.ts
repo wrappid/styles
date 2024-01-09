@@ -77,7 +77,8 @@ export class DefaultSCStyles extends BaseStyle {
       scFeedbackAlert: {},
       scFeedbackBackdrop: {
         zIndex: 1202 + IMPORTANT,
-        backgroundColor: this.theme?.palette?.secondary?.transparentDark + IMPORTANT,
+        backgroundColor:
+          this.theme?.palette?.secondary?.transparentDark + IMPORTANT,
       },
       scFeedbackCircularProgress: {},
       scFeedbackLinearProgress: {},
@@ -143,8 +144,8 @@ export class DefaultSCStyles extends BaseStyle {
        * LAYOUTS
        *************************************************/
       scLayoutsAppDiv: {
-        height: "100vh" + IMPORTANT,
-        width: "100vw" + IMPORTANT,
+        // height: "100vh" + IMPORTANT,
+        // width: "100vw" + IMPORTANT,
       },
       scLayoutsBox: {},
       scLayoutsContainer: {},
@@ -248,8 +249,8 @@ export class DefaultSCStyles extends BaseStyle {
         ...defaultUtilityStyles.bgWhite,
         ...defaultUtilityStyles.overflowXScroll,
         ...defaultUtilityStyles.w100,
-        marginLeft: "-8p" + PX_TAG + IMPORTANT,
-        marginTop: "-8p" + PX_TAG + IMPORTANT,
+        marginLeft: "-8" + PX_TAG + IMPORTANT,
+        marginTop: "-8" + PX_TAG + IMPORTANT,
       },
     };
   }
