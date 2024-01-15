@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prepare": "husky install",
     "code:lint": "eslint --ignore-path .gitignore .",
     "code:format": "eslint --ignore-path .gitignore . --fix",
     "test": "echo testing not yet implemented",
@@ -49,6 +50,7 @@
     "prettier": "^2.5.1",
     "source-map-support": "^0.5.21",
     "tslib": "^2.6.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "husky": "^8.0.3"
   }
 }

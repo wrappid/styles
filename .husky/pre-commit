@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+valid_branch_names_regex="^WRPD-(feature|bugfix|release|ci|enhancement|hotfix|refactor|deps|docs|experimental|security)?-[0-9]+$|^main$|^development$"
+branch="$(git rev-parse --abbrev-ref HEAD)"
+
+if [ "$branch" = "main" ] || [ "$branch" = "development" ]; then
+  echo "Committing on the $branch branch is not allowed."
+  exit 1
+fi
+
+if ! [[ $branch =~ $valid_branch_n$branames_regex ]]; then
+  echo "Invalid branch name: $branch; commit rejected"
+  echo "Please rename your branch to conform to $valid_branch_names_regex pattern."
+  exit 1
+fi
+# anable after linting config is created.
+# npx lint-staged
