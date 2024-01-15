@@ -1,0 +1,155 @@
+name    : PR Guardrails
+run-name: >
+  Validating PR #${{ github.event.pull_request.number }}, opened by ${{ github.actor }}
+
+on: pull_request
+
+jobs:
+  branchname:
+    name: Validate branch name
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Validate source branch name
+        uses: actions-ecosystem/action-regex-match@v2
+        id: branch_name_validation
+        with:
+          text: ${{ github.event.pull_request.head.ref }}
+          regex: '^WRPD-(feature|bugfix|release|ci|enhancement|hotfix|refactor|deps|docs|experimental|security)?-[0-9]+$|^main$|^development$'
+
+      - name: Print invalid branch name message
+        if: ${{ steps.branch_name_validation.outputs.match == '' }}
+        run: |
+          echo ❌ ${{ github.event.pull_request.head.ref }} is not a valid branch name.
+          exit 1
+
+      - name: Print valid branch name message
+        run: |
+          echo ✅ ${{ github.event.pull_request.head.ref }} is a valid branch name.
+
+  commitlint:
+    name: Validate commit messages
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          cache: 'npm'
+          
+      - name: Setup Wrappid npm registry
+        run: |
+          npm config set @wrappid:registry https://npm.pkg.github.com/wrappid
+          npm config set //npm.pkg.github.com/:_authToken ${{ secrets.WRAPPID_REGISTRY_TOKEN }}
+
+      - name: Install commitlint
+        run: |
+          npm install --force conventional-changelog-conventionalcommits
+          npm install --force commitlint@latest
+
+      - name: Print versions
+        run: |
+          git --version
+          node --version
+          npm --version
+          npx commitlint --version
+
+      - name: Run commitlint
+        run: >
+          npx commitlint
+          --from ${{ github.event.pull_request.head.sha }}~${{ github.event.pull_request.commits }}
+          --to ${{ github.event.pull_request.head.sha }}
+          --verbose
+
+  codelint:
+    name: Validate code style
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          cache: 'npm'
+          registry-url: https://npm.pkg.github.com/wrappid
+          token: ${{secrets.WRAPPID_REGISTRY_TOKEN}}
+
+      - name: Setup Wrappid npm registry
+        run: |
+          npm config set @wrappid:registry https://npm.pkg.github.com/wrappid
+          npm config set //npm.pkg.github.com/:_authToken ${{ secrets.WRAPPID_REGISTRY_TOKEN }}
+
+      - name: Install ESLint
+        run: |
+          npm install --force eslint
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.WRAPPID_REGISTRY_TOKEN}}
+
+      - name: Print versions
+        run: |
+          node --version
+          npm --version
+          npx eslint --version
+
+      - name: Find added/changed files
+        id: git_diff
+        run: |
+          echo Searching for files added/changed in ${{ github.event.pull_request.head.ref }}, since the last commit in ${{ github.event.pull_request.base.ref }}
+          echo "FILES_TO_LINT=$(git diff --name-only ${{ github.event.pull_request.head.sha }}..${{ github.event.pull_request.base.sha }} \*.{js,jsx,ts,tsx} | xargs)" >> $GITHUB_OUTPUT
+
+      - name: Run ESLint
+        run: |
+          npm run code:lint ${{ steps.git_diff.outputs.FILES_TO_LINT }}
+
+  unit_tests:
+    name: Run unit test cases
+    runs-on: ubuntu-latest
+    needs: [branchname, commitlint, codelint]
+
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Run unit test cases
+        run: echo "Ran unit test cases"
+
+  e2e_tests:
+    name: Run E2E test cases
+    runs-on: ubuntu-latest
+    needs: unit_tests
+
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          cache: 'npm'
+
+      - name: Setup Wrappid npm registry
+        run: |
+          npm config set @wrappid:registry https://npm.pkg.github.com/wrappid
+          npm config set //npm.pkg.github.com/:_authToken ${{ secrets.WRAPPID_REGISTRY_TOKEN }}
+
+      - name: Install node_modules
+        run: npm ci
+
+      - name: Run test cases
+        run: |
+         npm ci
+         npm test
+         echo "Ran test cases"
