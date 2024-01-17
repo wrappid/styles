@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "prepare": "husky install",
-    "code:lint": "eslint --ignore-path .gitignore .",
-    "code:format": "eslint --ignore-path .gitignore . --fix",
+    "code:lint": "eslint --ignore-path .gitignore ./package",
+    "code:format": "npm run code:lint -- --fix ./package",
     "test": "echo testing not yet implemented",
     "build:old": "npx babel package --out-dir dist --copy-files",
     "build": "npx tsc",
