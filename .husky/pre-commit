@@ -14,5 +14,5 @@ if ! [[ $branch =~ $valid_branch_n$branames_regex ]]; then
   echo "Please rename your branch to conform to $valid_branch_names_regex pattern."
   exit 1
 fi
-# anable after linting config is created.
-# npx lint-staged
+
+npx lint-staged
