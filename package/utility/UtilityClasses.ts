@@ -237,16 +237,16 @@ const UtilityClasses = {
 
     BORDER_END: "borderEnd",
     BORDER_END_0: "borderEnd0",
-    BORDER_RIGHT: "borderRight",
-    BORDER_RIGHT_0: "borderRight0",
+    // BORDER_RIGHT: "borderRight",
+    // BORDER_RIGHT_0: "borderRight0",
 
     BORDER_BOTTOM: "borderBottom",
     BORDER_BOTTOM_0: "borderBottom0",
 
     BORDER_START: "borderStart",
     BORDER_START_0: "borderStart0",
-    BORDER_LEFT: "borderLeft",
-    BORDER_LEFT_0: "borderLeft0",
+    // BORDER_LEFT: "borderLeft",
+    // BORDER_LEFT_0: "borderLeft0",
 
     BORDER_PRIMARY: "borderPrimary",
     BORDER_PRIMARY_LIGHT: "borderPrimaryLight",

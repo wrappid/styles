@@ -117,8 +117,8 @@ export class DefaultUtilityStyles extends BaseStyle {
       /**************************************************
        * Background
        *************************************************/
-      bgBlack: { backgroundColor: "black", color: "white" },
-      bgWhite: { backgroundColor: "white", color: "black" },
+      bgBlack: { backgroundColor: "black", color: "white" + IMPORTANT },
+      bgWhite: { backgroundColor: "white", color: "black" + IMPORTANT },
       bgTransparent: { backgroundColor: "transparent" },
 
       bgPrimary: {
@@ -199,20 +199,62 @@ export class DefaultUtilityStyles extends BaseStyle {
         color: this.theme.palette?.info?.contrastText,
       },
 
-      // bgGrey50: { backgroundColor: theme.palette.grey["50"] },
-      // bgGrey100: { backgroundColor: theme.palette.grey["100"] },
-      // bgGrey200: { backgroundColor: theme.palette.grey["200"] },
-      // bgGrey300: { backgroundColor: theme.palette.grey["300"] },
-      // bgGrey400: { backgroundColor: theme.palette.grey["400"] },
-      // bgGrey500: { backgroundColor: theme.palette.grey["500"] },
-      // bgGrey600: { backgroundColor: theme.palette.grey["600"] },
-      // bgGrey700: { backgroundColor: theme.palette.grey["700"] },
-      // bgGrey800: { backgroundColor: theme.palette.grey["800"] },
-      // bgGrey900: { backgroundColor: theme.palette.grey["900"] },
-      // bgGreyA100: { backgroundColor: theme.palette.grey.A100 },
-      // bgGreyA200: { backgroundColor: theme.palette.grey.A200 },
-      // bgGreyA400: { backgroundColor: theme.palette.grey.A400 },
-      // bgGreyA700: { backgroundColor: theme.palette.grey.A700 },
+      bgGrey50: {
+        backgroundColor: this.theme.palette.grey["50"],
+        // color: this.theme.palette?.grey?.contrastText,
+      },
+      bgGrey100: {
+        backgroundColor: this.theme.palette.grey["100"],
+        // color: this.theme.palette?.grey?.contrastText,
+      },
+      bgGrey200: {
+        backgroundColor: this.theme.palette.grey["200"],
+        // color: this.theme.palette?.grey?.contrastText,
+      },
+      bgGrey300: {
+        backgroundColor: this.theme.palette.grey["300"],
+        // color: this.theme.palette?.grey?.contrastText,
+      },
+      bgGrey400: {
+        backgroundColor: this.theme.palette.grey["400"],
+        // color: this.theme.palette?.grey?.contrastText,
+      },
+      bgGrey500: {
+        backgroundColor: this.theme.palette.grey["500"],
+        // color: this.theme.palette?.grey?.contrastText,
+      },
+      bgGrey600: {
+        backgroundColor: this.theme.palette.grey["600"],
+        // color: this.theme.palette?.grey?.contrastText,
+      },
+      bgGrey700: {
+        backgroundColor: this.theme.palette.grey["700"],
+        // color: this.theme.palette?.grey?.contrastText,
+      },
+      bgGrey800: {
+        backgroundColor: this.theme.palette.grey["800"],
+        // color: this.theme.palette?.grey?.contrastText,
+      },
+      bgGrey900: {
+        backgroundColor: this.theme.palette.grey["900"],
+        // color: this.theme.palette?.grey?.contrastText,
+      },
+      bgGreyA100: {
+        backgroundColor: this.theme.palette.grey.A100,
+        // color: this.theme.palette?.grey?.contrastText,
+      },
+      bgGreyA200: {
+        backgroundColor: this.theme.palette.grey.A200,
+        // color: this.theme.palette?.grey?.contrastText,
+      },
+      bgGreyA400: {
+        backgroundColor: this.theme.palette.grey.A400,
+        // color: this.theme.palette?.grey?.contrastText,
+      },
+      bgGreyA700: {
+        backgroundColor: this.theme.palette.grey.A700,
+        // color: this.theme.palette?.grey?.contrastText,
+      },
 
       /**************************************************
        * Border
