@@ -328,8 +328,8 @@ export class DefaultUtilityStyles extends BaseStyle {
       },
 
       borderRoundedEnd: {
-        borderTopRightRadius   : DEFAULT_BORDER_RADIUS + IMPORTANT,
-        borderBottomRightRadius: DEFAULT_BORDER_RADIUS + IMPORTANT,
+        borderTopRightRadius   : DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
+        borderBottomRightRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
       },
       borderRoundedEnd0: {
         borderTopRightRadius   : 0 + IMPORTANT,
@@ -365,8 +365,8 @@ export class DefaultUtilityStyles extends BaseStyle {
       },
 
       borderRoundedBottom: {
-        borderBottomRightRadius: DEFAULT_BORDER_RADIUS + IMPORTANT,
-        borderBottomLeftRadius : DEFAULT_BORDER_RADIUS + IMPORTANT,
+        borderBottomRightRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
+        borderBottomLeftRadius : DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
       },
       borderRoundedBottom0: {
         borderBottomRightRadius: 0 + IMPORTANT,
@@ -402,8 +402,8 @@ export class DefaultUtilityStyles extends BaseStyle {
       },
 
       borderRoundedStart: {
-        borderBottomLeftRadius: DEFAULT_BORDER_RADIUS + IMPORTANT,
-        borderTopLeftRadius   : DEFAULT_BORDER_RADIUS + IMPORTANT,
+        borderBottomLeftRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
+        borderTopLeftRadius   : DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
       },
       borderRoundedStart0: {
         borderBottomLeftRadius: 0 + IMPORTANT,
