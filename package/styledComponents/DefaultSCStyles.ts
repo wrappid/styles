@@ -1,3 +1,4 @@
+/* eslint-disable sort-keys-fix/sort-keys-fix */
 import { BaseStyle } from "../base/BaseStyle";
 import { IMPORTANT, PX_TAG } from "../base/contants";
 import { DefaultUtilityStyles } from "../utility/DefaultUtilityStyles";
@@ -12,225 +13,99 @@ export class DefaultSCStyles extends BaseStyle {
 
     this.style = {
       
-      appBarLogo: { height: "30" + PX_TAG + IMPORTANT },
-
-      appDrawerPaperHeight: { height: `calc(100% - ${HEADING_TOP_MARGIN})` + IMPORTANT },
-      
-      appDrawerText: {
-        color       : "rgb(88, 88, 88)" + IMPORTANT,
-        overflow    : "hidden" + IMPORTANT,
-        textOverflow: "ellipsis" + IMPORTANT,
-        whiteSpace  : "nowrap" + IMPORTANT,
-      },
-      
-      /**
-       * Moved from core
-       */
-      /**
-       * Core App Bar Styles
-       */
-      appbarHeight: { top: HEADING_TOP_MARGIN + IMPORTANT },
-      
-      headerButtonItem: {},
-      
-      headerIconItem: {},
-      
-      headerItem: {
-        padding: 0 + IMPORTANT,
-        // eslint-disable-next-line etc/no-commented-out-code
-        // backgroundColor: this.theme.palette.secondary.light,
-      },
-      
-      headerTextItem: {},
-      
-      listItem: {},
-      
-      // eslint-disable-next-line object-curly-newline
-      listItemButton: {},
-      
-      listItemIcon: {},
-      
-      listItemText: {},
-      
-      menuItem: {
-        padding: 0 + IMPORTANT,
-        // eslint-disable-next-line etc/no-commented-out-code
-        // backgroundColor: this.theme.palette.secondary.light,
-      },
-      
-      menuItemButtonItem: {},
-      
-      menuItemIconItem: {},
-      
-      menuItemTextItem: {},
-      
-      /**
-       * @todo Have to remove this. This is here as it is used in menuUtil
-       * when we creae seperae component for menu items this should be replaced
-       */
-      miniDrawerListItemButton: {},
-      
-      miniDrawerListItemIcon: { minWidth: 0 + IMPORTANT },
-      
-      parentButtonItem: {},
-      
-      parentIconItem: {},
-      
-      parentItem: {
-        padding: 0 + IMPORTANT,
-        // eslint-disable-next-line etc/no-commented-out-code
-        // backgroundColor: this.theme.palette.secondary.light,
-      },
-      
-      parentTextItem: {},
-      
       /**************************************************
        * DATA DISPLAY
        *************************************************/
       scDataDisplayAvatar: {
         backgroundColor: this.theme?.palette?.secondary?.light,
-        borderColor    : this.theme?.palette?.secondary?.main,
         borderStyle    : "solid" + IMPORTANT,
         borderWidth    : "1" + PX_TAG + IMPORTANT,
+        borderColor    : this.theme?.palette?.secondary?.main,
       },
-      
-      scDataDisplayBadge: {},
-      
-      scDataDisplayChip: {},
-      
-      scDataDisplayDivider: { ...defaultUtilityStyles.my1 },
-      
-      scDataDisplayIcon: {},
-      
-      scDataDisplayImage: {},
-      
-      scDataDisplayListItemAvatar: {},
-      
-      scDataDisplayListItemIcon: {},
-      
-      scDataDisplayListItemSubheader: {},
-      
-      scDataDisplayListItemText: {},
-      
-      scDataDisplayMobileTableRow: { padding: 0 },
-      
-      scDataDisplayMobileToolbar: {
-        borderBottomColor: defaultUtilityStyles?.borderPrimary?.borderColor,
-        borderBottomWidth: 1,
-        marginTop        : "-" + defaultUtilityStyles?.m1?.margin,
-      },
-      
-      scDataDisplayTable: {},
-      
-      scDataDisplayTableBody: {},
-      
-      scDataDisplayTableCell: {},
-      
-      scDataDisplayTableContainer: {},
-      
-      scDataDisplayTableFooter: {},
-      
-      scDataDisplayTableHead: {},
-      
-      scDataDisplayTablePagination: {},
-      
-      scDataDisplayTableRow: {},
-      
-      scDataDisplayTableSortLabel: {},
-      
-      scDataDisplayTooltip: {},
-      
-      scDataDisplayTypography: {},
-      
-      /**************************************************
-       * FEEDBACK
-       *************************************************/
-      scFeedbackAlert: {},
-      
-      scFeedbackBackdrop: {
-        backgroundColor:
-          this.theme?.palette?.secondary?.transparentDark + IMPORTANT,
-        zIndex: 1202 + IMPORTANT,
-      },
-      
-      scFeedbackCircularProgress: {},
-
-      scFeedbackDialog: { minWidth: "60%" + IMPORTANT },
-
-      scFeedbackLinearProgress: {},
-
-      scFeedbackSkeleton: {},
-
-      scFeedbackSnackbar: {},
-      
-      /**************************************************
-       * UTILS
-       *************************************************/
-      /**************************************************
-       * FORM
-       *************************************************/
-      scFormFormControlLabel: {},
-      
-      scFormFormGroup: {},
       
       scInputAutoComplete: {},
       
       scInputCheckbox: {},
       
+      scDataDisplayBadge: {},
+      
       scInputDateTimePicker: {},
+      
+      scDataDisplayChip: {},
       
       scInputFab: {},
       
       scInputFormControl: {},
+
+      scDataDisplayDivider: { ...defaultUtilityStyles.my1 },
       
       scInputFormControlLabel: {},
       
+      scDataDisplayIcon: {},
+      
       scInputFormHelperText: {},
       
+      scDataDisplayImage: {},
+      
       scInputIconButton: {},
+      
+      scDataDisplayListItemAvatar: {},
+      
+      scDataDisplayListItemIcon: {},
       
       /**************************************************
        * INPUTS
        *************************************************/
       scInputsButton: { ...defaultUtilityStyles?.ml1 },
       
+      scDataDisplayListItemSubheader: {},
+      
       scInputsDatePicker: {},
       
-      scInputsFormHelperText: { paddingLeft: 0 + IMPORTANT },
-      
+      scDataDisplayListItemText  : {},
+      scInputsTextField          : {},
+      scDataDisplayMobileTableRow: { padding: 0 },
+      scInputsFormHelperText     : { paddingLeft: 0 + IMPORTANT },
+      scDataDisplayMobileToolbar : {
+        borderBottomColor: defaultUtilityStyles?.borderPrimary?.borderColor,
+        borderBottomWidth: 1,
+        marginTop        : "-" + defaultUtilityStyles?.m1?.margin,
+      },
       scInputsInputAdornment: {},
-      
-      scInputsInputLabel: {},
-      
-      scInputsItemButton: {
+      scDataDisplayTable    : {},
+      scInputsInputLabel    : {},
+      scDataDisplayTableBody: {},
+      scInputsItemButton    : {
         marginBottom: 16 + IMPORTANT,
         width       : "100%" + IMPORTANT,
       },
-      
-      scInputsMenuItem: {},
-      
-      scInputsSwitch: {},
-      
-      scInputsTextField: {},
-      
-      scInputsTimePicker: {},
-      
+      scDataDisplayTableCell      : {},
+      scInputsMenuItem            : {},
+      scDataDisplayTableContainer : {},
+      scInputsSwitch              : {},
+      scDataDisplayTableFooter    : {},
+      scinputsSelect              : {},
+      scDataDisplayTableHead      : {},
+      scDataDisplayTablePagination: {},
+      scInputsTimePicker          : {},
+      scDataDisplayTableRow       : {},
+      scDataDisplayTableSortLabel : {},
+      scDataDisplayTooltip        : {},
+      scDataDisplayTypography     : {},
       /**************************************************
-       * LAYOUTS
+       * FEEDBACK
        *************************************************/
-      scLayoutsAppDiv: {},
-      
-      scLayoutsBox: {},
-      
-      scLayoutsContainer: {},
-      
-      scLayoutsGrid: {},
-      
-      scLayoutsList: {},
-      
-      scLayoutsListItem: {},
-      
-      scLayoutsStack: {},
+      scFeedbackAlert             : {},
+      scFeedbackBackdrop          : {
+        backgroundColor:
+          this.theme?.palette?.secondary?.transparentDark + IMPORTANT,
+        zIndex: 1202 + IMPORTANT,
+      },
+      scFeedbackCircularProgress: {},
+      scFeedbackDialog          : { minWidth: "60%" + IMPORTANT },
+      scFeedbackLinearProgress  : {},
+      scFeedbackSkeleton        : {},
+      scFeedbackSnackbar        : {},
       
       scNavigationLink: {
         color     : this.theme?.palette?.primary?.main + IMPORTANT,
@@ -240,70 +115,152 @@ export class DefaultSCStyles extends BaseStyle {
       
       scNavigationMenuItem: {},
       
-      scNavigationMenuList: {},
+      /**************************************************
+       * LAYOUTS
+       *************************************************/
+      scLayoutsAppDiv: {},
       
       /**************************************************
        * NAVIGATION
        *************************************************/
       scNavigationTab: {},
       
+      scLayoutsBox: {},
+      
       scNavigationTabActive: {
         alignItems       : "center",
         justifyContent   : "center",
         minHeight        : 48,
         minWidth         : 100,
-        paddingBottom    : 12,
         paddingLeft      : 16,
         paddingRight     : 16,
-        paddingTop       : 12,
+        paddingBottom    : 12,
         textAlign        : "center",
+        paddingTop       : 12,
         ...defaultUtilityStyles?.textPrimary,
         borderBottomColor: defaultUtilityStyles?.borderPrimary?.borderColor,
         borderBottomWidth: 2,
       },
       
-      scNavigationTabMobile: {
-        alignItems    : "center",
-        justifyContent: "center",
-        minHeight     : 48,
-        minWidth      : 100,
-        paddingBottom : 12,
-        paddingLeft   : 16,
-        paddingRight  : 16,
-        paddingTop    : 12,
-        textAlign     : "center",
-      },
-      
-      scNavigationTabs: {},
+      scLayoutsContainer: {},
       
       /**************************************************
        * SURFACES
        *************************************************/
       scSurfacesAccordion: {},
       
+      scLayoutsGrid: {},
+      
       scSurfacesAccordionDetails: {},
       
+      /**************************************************
+       * UTILS
+       *************************************************/
+      /**************************************************
+       * FORM
+       *************************************************/
+      scFormFormControlLabel: {},
+
       scSurfacesAccordionSummery: {},
-      
+
       scSurfacesAppBar: {
         ...defaultUtilityStyles.bgPrimary,
         ...defaultUtilityStyles.shadowNone,
       },
-      
+
+      /**
+       * Moved from core
+       */
+      /**
+       * Core App Bar Styles
+       */
+      appbarHeight: { top: HEADING_TOP_MARGIN + IMPORTANT },
+
       scSurfacesCard: {},
-      
+
       scSurfacesCardActionArea: {},
-      
+
+      appBarLogo: { height: "30" + PX_TAG + IMPORTANT },
+
       scSurfacesCardActions: {},
       
+      appDrawerPaperHeight: { height: `calc(100% - ${HEADING_TOP_MARGIN})` + IMPORTANT },
+
       scSurfacesCardContent: {},
 
+      listItem: {},
+      
+      listItemButton: {},
+      
       scSurfacesCardHeader: {},
-      scSurfacesCardMedia : {},
-      scSurfacesPaper     : {},
-      scSurfacesToolbar   : {},
+      
+      headerItem: { padding: 0 + IMPORTANT },
 
-      scinputsSelect     : {},
+      scSurfacesCardMedia: {},
+
+      headerButtonItem: {},
+      
+      scSurfacesPaper: {},
+
+      headerIconItem: {},
+      
+      headerTextItem   : {},
+      scSurfacesToolbar: {},
+      listItemIcon     : {},
+
+      listItemText: {},
+      
+      scNavigationTabMobile: {
+        minHeight     : 48,
+        alignItems    : "center",
+        minWidth      : 100,
+        justifyContent: "center",
+        paddingLeft   : 16,
+        textAlign     : "center",
+        paddingRight  : 16,
+        paddingBottom : 12,
+        paddingTop    : 12,
+      },
+      
+      menuItem: { padding: 0 + IMPORTANT },
+      
+      menuItemButtonItem: {},
+      
+      scNavigationTabs: {},
+      
+      menuItemIconItem: {},
+      
+      scNavigationMenuList: {},
+      
+      appDrawerText: {
+        color       : "rgb(88, 88, 88)" + IMPORTANT,
+        overflow    : "hidden" + IMPORTANT,
+        textOverflow: "ellipsis" + IMPORTANT,
+        whiteSpace  : "nowrap" + IMPORTANT,
+      },
+      
+      scLayoutsList: {},
+      
+      menuItemTextItem: {},
+      
+      /**
+       * @todo Have to remove this. This is here as it is used in menuUtil
+       * when we creae seperae component for menu items this should be replaced
+       */
+      miniDrawerListItemButton: {},
+      
+      scLayoutsListItem: {},
+      
+      scLayoutsStack: {},
+      
+      miniDrawerListItemIcon: { minWidth: 0 + IMPORTANT },
+
+      parentButtonItem: {},
+      scFormFormGroup : {},
+      parentIconItem  : {},
+      parentItem      : { padding: 0 + IMPORTANT },
+
+      parentTextItem     : {},
       seperatorButtonItem: {
         height   : 0 + IMPORTANT,
         minHeight: 0 + IMPORTANT,
