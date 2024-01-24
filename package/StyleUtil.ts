@@ -1,14 +1,12 @@
-import { getMergedStyles } from "./StylesProvider";
 import {
   LARGE_WINDOW_WIDTH,
   MEDIUM_WINDOW_WIDTH,
   SMALL_WINDOW_WIDTH,
   XX_LARGE_WINDOW_WIDTH,
-  X_LARGE_WINDOW_WIDTH,
+  X_LARGE_WINDOW_WIDTH
 } from "./config/constants";
-
 import { getConfigurationObject } from "./helper/helper";
-
+import { getMergedStyles } from "./StylesProvider";
 import UtilityClasses from "./utility/UtilityClasses";
 
 const { innerWidth: windowWidth } = window;
@@ -29,26 +27,26 @@ const EXCEPTIONS = [
 const sanitizeClassNames = (classNames: string[]): string[] => {
   // using set() method to create collections of unique values,
   // hence remove duplicates
-  let sanitizedClassNames = <string[]>(
+  const sanitizedClassNames = <string[]>(
     Array.from(
       new Set(
         classNames && Array.isArray(classNames) ? classNames : [classNames]
       )
     )
   );
+
   return [...sanitizedClassNames];
 };
 
 export function addFlavor(styleObject: any) {
-  let config = getConfigurationObject();
-  // console.log("BEFORE FLAVOUR", styleObject, ", PLATFORM: ", config.wrappid.platform);
+  const config = getConfigurationObject();
 
   /**
    * @todo web cannot be go in else block
    */
   if (config?.wrappid?.platform === "mobile") {
-    let newStyleObject = <any>{};
-    let keys = Object.keys(styleObject);
+    const newStyleObject = <any>{};
+    const keys = Object.keys(styleObject);
 
     for (let i = 0; i < keys.length; i++) {
       let key = keys[i];
@@ -110,7 +108,6 @@ export function addFlavor(styleObject: any) {
       //console.log("KEY:", key, "VAL:", val);
       newStyleObject[key] = val;
     }
-    // console.log("AFTER FLAVOUR", newStyleObject);
     return newStyleObject;
   } else {
     return styleObject;
@@ -123,21 +120,15 @@ export function getEffectiveStyle(classNames: any[]) {
    * Step 2: Get all styles object filter by classNames and window.width
    */
 
-  // console.log(
-  //   "&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\nAPP STYLES\n&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&",
-  //   appStyles,
-  //   coreStyles
-  // );
+  const styles = getMergedStyles();
+  const mergedDefaultStyles = styles?.mergedDefaultStyles;
+  const mergedLargeStyles = styles?.mergedLargeStyles;
+  const mergedMediumStyles = styles?.mergedMediumStyles;
+  const mergedSmallStyles = styles?.mergedSmallStyles;
+  const mergedXLargeStyles = styles?.mergedXLargeStyles;
+  const mergedXXLargeStyles = styles?.mergedXXLargeStyles;
 
-  let styles = getMergedStyles();
-  let mergedDefaultStyles = styles?.mergedDefaultStyles;
-  let mergedLargeStyles = styles?.mergedLargeStyles;
-  let mergedMediumStyles = styles?.mergedMediumStyles;
-  let mergedSmallStyles = styles?.mergedSmallStyles;
-  let mergedXLargeStyles = styles?.mergedXLargeStyles;
-  let mergedXXLargeStyles = styles?.mergedXXLargeStyles;
-
-  let config = getConfigurationObject();
+  const config = getConfigurationObject();
 
   classNames = sanitizeClassNames(classNames);
 
@@ -157,20 +148,15 @@ export function getEffectiveStyle(classNames: any[]) {
      *    b. we can return if any one satisfied
      */
 
-    // console.log(`Looking for className = ${className}`);
-
     // Get default styles
     if (getDefaultStyle(className, mergedDefaultStyles)) {
       styleObject = {
         ...styleObject,
         ...getDefaultStyle(className, mergedDefaultStyles),
       };
-      // console.log(`Found any class in default for ${className}`);
-      // // console.log(`IN SM ${className} ==`);
-      // // console.log(styleObject);
-    } else {
-      // console.log(`Not found any class in default for ${className}`);
-    }
+
+    // eslint-disable-next-line no-empty
+    } else {}
     // Get windowWidth specific styles
     if (windowWidth >= SMALL_WINDOW_WIDTH) {
       if (getSmallStyle(className, mergedSmallStyles)) {
@@ -178,12 +164,8 @@ export function getEffectiveStyle(classNames: any[]) {
           ...styleObject,
           ...getSmallStyle(className, mergedSmallStyles),
         };
-        // console.log(`Found any class in SM for ${className}`);
-        // // console.log(`IN SM ${className} ==`);
-        // // console.log(styleObject);
-      } else {
-        // console.log(`Not found any class in SM for ${className}`);
-      }
+      // eslint-disable-next-line no-empty
+      } else {}
     }
     if (windowWidth >= MEDIUM_WINDOW_WIDTH) {
       if (getMediumStyle(className, mergedMediumStyles)) {
@@ -191,12 +173,9 @@ export function getEffectiveStyle(classNames: any[]) {
           ...styleObject,
           ...getMediumStyle(className, mergedMediumStyles),
         };
-        // console.log(`Found any class in MD for ${className}`);
-        // // console.log(`IN MD ${className} ==`);
-        // // console.log(styleObject);
-      } else {
-        // console.log(`Not found any class in MD for ${className}`);
-      }
+        
+      // eslint-disable-next-line no-empty
+      } else {}
     }
     if (windowWidth >= LARGE_WINDOW_WIDTH) {
       if (getLargeStyle(className, mergedLargeStyles)) {
@@ -204,12 +183,8 @@ export function getEffectiveStyle(classNames: any[]) {
           ...styleObject,
           ...getLargeStyle(className, mergedLargeStyles),
         };
-        // console.log(`Found any class in LG for ${className}`);
-        // // console.log(`IN LG ${className} ==`);
-        // // console.log(styleObject);
-      } else {
-        // console.log(`Not found any class in LG for ${className}`);
-      }
+      // eslint-disable-next-line no-empty
+      } else {}
     }
     if (windowWidth >= X_LARGE_WINDOW_WIDTH) {
       if (getXLargeStyle(className, mergedXLargeStyles)) {
@@ -217,10 +192,8 @@ export function getEffectiveStyle(classNames: any[]) {
           ...styleObject,
           ...getXLargeStyle(className, mergedXLargeStyles),
         };
-        // console.log(`Found any class in XL for ${className}`);
-        // // console.log(`IN XL ${className} ==`);
-        // // console.log(styleObject);
       } else {
+        // eslint-disable-next-line etc/no-commented-out-code
         // console.log(`Not found any class in XL for ${className}`);
       }
     }
@@ -230,18 +203,14 @@ export function getEffectiveStyle(classNames: any[]) {
           ...styleObject,
           ...getXXLargeStyle(className, mergedXXLargeStyles),
         };
-        // console.log(`Found any class in XXL for ${className}`);
-        // // console.log(`IN XXL ${className} ==`);
-        // // console.log(styleObject);
       } else {
+        // eslint-disable-next-line etc/no-commented-out-code
         // console.log(`Not found any class in XXL for ${className}`);
       }
     }
   });
 
-  // console.log("Combined ==");
-  // console.log(styleObject);
-  let finalStyleObject = addFlavor(styleObject);
+  const finalStyleObject = addFlavor(styleObject);
 
   // eslint-disable-next-line no-console
   // console.log(
@@ -254,27 +223,21 @@ export function getEffectiveStyle(classNames: any[]) {
 }
 
 const getDefaultStyle = (className: string | any, mergedStyles: any) => {
-  // console.log("getDefaultStyle", mergedStyles);
   return mergedStyles[className];
 };
 const getSmallStyle = (className: string | any, mergedStyles: any) => {
-  // console.log("getSmallStyle", mergedStyles);
   return mergedStyles[className];
 };
 const getMediumStyle = (className: string | any, mergedStyles: any) => {
-  // console.log("getMediumStyle", mergedStyles);
   return mergedStyles[className];
 };
 const getLargeStyle = (className: string | any, mergedStyles: any) => {
-  // console.log("getLargeStyle", mergedStyles);
   return mergedStyles[className];
 };
 const getXLargeStyle = (className: string | any, mergedStyles: any) => {
-  // console.log("getXLargeStyle", mergedStyles);
   return mergedStyles[className];
 };
 const getXXLargeStyle = (className: string | any, mergedStyles: any) => {
-  // console.log("getXXLargeStyle", mergedStyles);
   return mergedStyles[className];
 };
 

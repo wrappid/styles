@@ -1,41 +1,41 @@
+/* eslint-disable sort-keys-fix/sort-keys-fix */
 import { BaseStyle } from "../base/BaseStyle";
 import { IMPORTANT } from "../base/contants";
-// import { DefaultUtilityStyles } from "../utility/DefaultUtilityStyles";
 
 export class SmallSCStyles extends BaseStyle {
-   constructor() {
-      super();
-     
-      // let defaultUtilityStyles = new DefaultUtilityStyles().style;
+  constructor() {
+    super();
 
-
-      this.style = {
-         /**************************************************
-          * INPUTS
-          *************************************************/
-         scInputsButton: {},
-         scInputsTextField: {},
-         /**************************************************
+    this.style = {
+      
+      /**************************************************
           * DATA DISPLAY
           *************************************************/
-         /**************************************************
+      /**************************************************
           * FEEDBACK
           *************************************************/
-         scFeedbackDialog: { minWidth: "20%" + IMPORTANT, minHeight: "30%" + IMPORTANT },
-         /**************************************************
+      scFeedbackDialog: { minHeight: "30%" + IMPORTANT, minWidth: "20%" + IMPORTANT },
+      
+      /**************************************************
+          * INPUTS
+          *************************************************/
+      scInputsButton: {},
+         
+      scInputsTextField: {},
+      /**************************************************
           * SURFACES
           *************************************************/
-         /**************************************************
+      /**************************************************
           * NAVIGATION
           *************************************************/
-         scNavigationTab: {},
-         scNavigationTabs: {}
-         /**************************************************
+      scNavigationTab  : {},
+      scNavigationTabs : {}
+      /**************************************************
           * LAYOUTS
           *************************************************/
-         /**************************************************
+      /**************************************************
           * UTILS
           *************************************************/
-      };
-   }
-};
+    };
+  }
+}
