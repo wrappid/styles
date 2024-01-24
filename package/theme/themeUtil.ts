@@ -1,9 +1,9 @@
-import { theme } from "../StylesProvider";
 import { DEFAULT_THEME } from "./theme";
+import { theme } from "../StylesProvider";
 
 export function overrideThemeConfiguration() {
-	let finalTheme = { ...DEFAULT_THEME, ...(theme || {}) };
+  const finalTheme = { ...DEFAULT_THEME, ...(theme || {}) };
 
-	return finalTheme;
+  return finalTheme;
 }
 

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { CoreConfigContext } from "./config/contextHandler";
+
 import { CONFIG_TYPE } from "./config/constants";
+import { CoreConfigContext } from "./config/contextHandler";
 
 export let customConfig: CONFIG_TYPE;
 

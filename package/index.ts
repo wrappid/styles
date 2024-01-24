@@ -1,31 +1,31 @@
-import { getEffectiveStyle } from "./StyleUtil";
-import UtilityClasses from "./utility/UtilityClasses";
-import StyledComponentsClasses from "./styledComponents/StyledComponentsClasses";
+import { BaseStyle } from "./base/BaseStyle";
+import { IMPORTANT, PX_TAG, DEFAULT_PADDING } from "./base/contants";
 import {
   SMALL_WINDOW_WIDTH,
   MEDIUM_WINDOW_WIDTH,
   LARGE_WINDOW_WIDTH,
   X_LARGE_WINDOW_WIDTH,
-  XX_LARGE_WINDOW_WIDTH,
+  XX_LARGE_WINDOW_WIDTH
 } from "./config/constants";
-import { overrideThemeConfiguration } from "./theme/themeUtil";
-import { getConfigurationObject } from "./helper/helper";
-import StylesProvider, { theme } from "./StylesProvider";
 import {
   CoreConfigContext,
   StylesThemesContext,
   ThemeContext,
-  UserThemeContext,
+  UserThemeContext
 } from "./config/contextHandler";
-import { IMPORTANT, PX_TAG, DEFAULT_PADDING } from "./base/contants";
-import { BaseStyle } from "./base/BaseStyle";
+import ConfigProvider from "./ConfigProvider";
+import { getConfigurationObject } from "./helper/helper";
+import StyledComponentsClasses from "./styledComponents/StyledComponentsClasses";
+import StylesProvider, { theme } from "./StylesProvider";
+import { getEffectiveStyle } from "./StyleUtil";
+import { overrideThemeConfiguration } from "./theme/themeUtil";
 import { DefaultUtilityStyles } from "./utility/DefaultUtilityStyles";
-import { SmallUtilityStyles } from "./utility/SmallUtilityStyles";
-import { MediumUtilityStyles } from "./utility/MediumUtilityStyles";
 import { LargeUtilityStyles } from "./utility/LargeUtilityStyles";
+import { MediumUtilityStyles } from "./utility/MediumUtilityStyles";
+import { SmallUtilityStyles } from "./utility/SmallUtilityStyles";
+import UtilityClasses from "./utility/UtilityClasses";
 import { XLargeUtilityStyles } from "./utility/XLargeUtilityStyles";
 import { XXLargeUtilityStyles } from "./utility/XXLargeUtilityStyles";
-import ConfigProvider from "./ConfigProvider";
 
 export {
   /**
@@ -66,5 +66,5 @@ export {
   theme,
   StylesThemesContext,
   ThemeContext,
-  UserThemeContext,
+  UserThemeContext
 };
