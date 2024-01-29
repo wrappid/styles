@@ -22,11 +22,16 @@
     "react",
     "react-native"
   ],
-  "author": "wrappid",
+  "license": "MIT",
+  "author": {
+		"name": "Wrappid",
+		"email": "wrappid.framework@gmail.com",
+		"url": "https://www.github.com/wrappid"
+	},
+  "homepage": "https://github.com/wrappid/styles",
   "bugs": {
     "url": "https://github.com/wrappid/styles/issues"
   },
-  "homepage": "https://github.com/wrappid/styles#readme",
   "babel": {
     "presets": [
       "@babel/preset-react"
