@@ -14,6 +14,14 @@ import {
   UserThemeContext
 } from "./config/contextHandler";
 import ConfigProvider from "./ConfigProvider";
+import WrappidContext, {
+  resetWrappidContext,
+  updateWrappidContext,
+  WrappidDataContext,
+  WrappidDispatchContext
+} from "./context/WrappidContext";
+import { UPDATE_DEFAULT_THEME } from "./context/wrappidReducer";
+import WrappidSyncer from "./context/WrappidSyncer";
 import { getConfigurationObject } from "./helper/helper";
 import StyledComponentsClasses from "./styledComponents/StyledComponentsClasses";
 import StylesProvider, { theme } from "./StylesProvider";
@@ -28,6 +36,17 @@ import { XLargeUtilityStyles } from "./utility/XLargeUtilityStyles";
 import { XXLargeUtilityStyles } from "./utility/XXLargeUtilityStyles";
 
 export {
+  /**
+   * Wrappid Context
+   */
+  WrappidContext,
+  WrappidSyncer,
+  updateWrappidContext,
+  resetWrappidContext,
+  WrappidDataContext,
+  WrappidDispatchContext,
+  UPDATE_DEFAULT_THEME,
+
   /**
    * Utility styles
    */

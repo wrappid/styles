@@ -123,80 +123,80 @@ export class DefaultUtilityStyles extends BaseStyle {
 
       bgPrimary: {
         backgroundColor: this.theme?.palette?.primary?.main,
-        color          : this.theme?.palette?.primary?.contrastText,
+        color          : this.theme?.palette?.primary?.contrastText + IMPORTANT,
       },
       bgPrimaryLight: {
         backgroundColor: this.theme.palette?.primary?.light,
-        color          : this.theme.palette?.primary?.contrastText,
+        color          : this.theme.palette?.primary?.contrastText + IMPORTANT,
       },
       bgPrimaryDark: {
         backgroundColor: this.theme.palette?.primary?.dark,
-        color          : this.theme.palette?.primary?.contrastText,
+        color          : this.theme.palette?.primary?.contrastText + IMPORTANT,
       },
 
       bgSecondary: {
         backgroundColor: this.theme.palette?.secondary?.main,
-        color          : this.theme.palette?.secondary?.contrastText,
+        color          : this.theme.palette?.secondary?.contrastText + IMPORTANT,
       },
       bgSecondaryLight: {
         backgroundColor: this.theme.palette?.secondary?.light,
-        color          : this.theme.palette?.secondary?.contrastText,
+        color          : this.theme.palette?.secondary?.contrastText + IMPORTANT,
       },
       bgSecondaryDark: {
         backgroundColor: this.theme.palette?.secondary?.dark,
-        color          : this.theme.palette?.secondary?.contrastText,
+        color          : this.theme.palette?.secondary?.contrastText + IMPORTANT,
       },
 
       bgSuccess: {
         backgroundColor: this.theme.palette?.success?.main,
-        color          : this.theme.palette?.success?.contrastText,
+        color          : this.theme.palette?.success?.contrastText + IMPORTANT,
       },
       bgSuccessLight: {
         backgroundColor: this.theme.palette?.success?.light,
-        color          : this.theme.palette?.success?.contrastText,
+        color          : this.theme.palette?.success?.contrastText + IMPORTANT,
       },
       bgSuccessDark: {
         backgroundColor: this.theme.palette?.success?.dark,
-        color          : this.theme.palette?.success?.contrastText,
+        color          : this.theme.palette?.success?.contrastText + IMPORTANT,
       },
 
       bgError: {
         backgroundColor: this.theme.palette?.error?.main,
-        color          : this.theme.palette?.error?.contrastText,
+        color          : this.theme.palette?.error?.contrastText + IMPORTANT,
       },
       bgErrorLight: {
         backgroundColor: this.theme.palette?.error?.light,
-        color          : this.theme.palette?.error?.contrastText,
+        color          : this.theme.palette?.error?.contrastText + IMPORTANT,
       },
       bgErrorDark: {
         backgroundColor: this.theme.palette?.error?.dark,
-        color          : this.theme.palette?.error?.contrastText,
+        color          : this.theme.palette?.error?.contrastText + IMPORTANT,
       },
 
       bgWarning: {
         backgroundColor: this.theme.palette?.warning?.main,
-        color          : this.theme.palette?.warning?.contrastText,
+        color          : this.theme.palette?.warning?.contrastText + IMPORTANT,
       },
       bgWarningLight: {
         backgroundColor: this.theme.palette?.warning?.light,
-        color          : this.theme.palette?.warning?.contrastText,
+        color          : this.theme.palette?.warning?.contrastText + IMPORTANT,
       },
       bgWarningDark: {
         backgroundColor: this.theme.palette?.warning?.dark,
-        color          : this.theme.palette?.warning?.contrastText,
+        color          : this.theme.palette?.warning?.contrastText + IMPORTANT,
       },
 
       bgInfo: {
         backgroundColor: this.theme.palette?.info?.main,
-        color          : this.theme.palette?.info?.contrastText,
+        color          : this.theme.palette?.info?.contrastText + IMPORTANT,
       },
       bgInfoLight: {
         backgroundColor: this.theme.palette?.info?.light,
-        color          : this.theme.palette?.info?.contrastText,
+        color          : this.theme.palette?.info?.contrastText + IMPORTANT,
       },
       bgInfoDark: {
         backgroundColor: this.theme.palette?.info?.dark,
-        color          : this.theme.palette?.info?.contrastText,
+        color          : this.theme.palette?.info?.contrastText + IMPORTANT,
       },
 
       bgGrey50  : { backgroundColor: this.theme.palette.grey["50"] },
@@ -328,8 +328,8 @@ export class DefaultUtilityStyles extends BaseStyle {
       },
 
       borderRoundedEnd: {
-        borderTopRightRadius   : DEFAULT_BORDER_RADIUS + IMPORTANT,
-        borderBottomRightRadius: DEFAULT_BORDER_RADIUS + IMPORTANT,
+        borderTopRightRadius   : DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
+        borderBottomRightRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
       },
       borderRoundedEnd0: {
         borderTopRightRadius   : 0 + IMPORTANT,
@@ -365,8 +365,8 @@ export class DefaultUtilityStyles extends BaseStyle {
       },
 
       borderRoundedBottom: {
-        borderBottomRightRadius: DEFAULT_BORDER_RADIUS + IMPORTANT,
-        borderBottomLeftRadius : DEFAULT_BORDER_RADIUS + IMPORTANT,
+        borderBottomRightRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
+        borderBottomLeftRadius : DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
       },
       borderRoundedBottom0: {
         borderBottomRightRadius: 0 + IMPORTANT,
@@ -402,8 +402,8 @@ export class DefaultUtilityStyles extends BaseStyle {
       },
 
       borderRoundedStart: {
-        borderBottomLeftRadius: DEFAULT_BORDER_RADIUS + IMPORTANT,
-        borderTopLeftRadius   : DEFAULT_BORDER_RADIUS + IMPORTANT,
+        borderBottomLeftRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
+        borderTopLeftRadius   : DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
       },
       borderRoundedStart0: {
         borderBottomLeftRadius: 0 + IMPORTANT,
@@ -857,27 +857,27 @@ export class DefaultUtilityStyles extends BaseStyle {
       pl4: { paddingLeft: DEFAULT_PADDING * 4 + PX_TAG },
       pl5: { paddingLeft: DEFAULT_PADDING * 5 + PX_TAG },
 
-      PX_TAG0: {
+      px0: {
         paddingLeft : 0 + PX_TAG,
         paddingRight: 0 + PX_TAG,
       },
-      PX_TAG1: {
+      px1: {
         paddingLeft : DEFAULT_PADDING * 1 + PX_TAG,
         paddingRight: DEFAULT_PADDING * 1 + PX_TAG,
       },
-      PX_TAG2: {
+      px2: {
         paddingLeft : DEFAULT_PADDING * 2 + PX_TAG,
         paddingRight: DEFAULT_PADDING * 2 + PX_TAG,
       },
-      PX_TAG3: {
+      px3: {
         paddingLeft : DEFAULT_PADDING * 3 + PX_TAG,
         paddingRight: DEFAULT_PADDING * 3 + PX_TAG,
       },
-      PX_TAG4: {
+      px4: {
         paddingLeft : DEFAULT_PADDING * 4 + PX_TAG,
         paddingRight: DEFAULT_PADDING * 4 + PX_TAG,
       },
-      PX_TAG5: {
+      px5: {
         paddingLeft : DEFAULT_PADDING * 5 + PX_TAG,
         paddingRight: DEFAULT_PADDING * 5 + PX_TAG,
       },
