@@ -3782,13 +3782,13 @@ This file lists the third-party libraries, frameworks, and other components used
   ```
   </details>
 <details>
-  <summary>@wrappid/styles@0.0.120</summary>
+  <summary>@wrappid/styles@0.0.121</summary>
   
   #### Basic details about the package
   >|Key|Value|
   >|:--|:--|
-  >|**Name**|@wrappid/styles@0.0.120|
-  >|**Version**|@0.0.120|
+  >|**Name**|@wrappid/styles@0.0.121|
+  >|**Version**|@0.0.121|
   >|**Repository**|https://github.com/wrappid/styles|
   >|**Licenses**|MIT|
   >|**Publisher**|Wrappid|
@@ -3797,7 +3797,7 @@ This file lists the third-party libraries, frameworks, and other components used
   
   #### Use this package in your project
   ```bash
-  npm i @wrappid/styles@0.0.120
+  npm i @wrappid/styles@0.0.121
   ```
   </details>
 <details>
