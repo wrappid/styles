@@ -1,14 +1,17 @@
 import React, { type Dispatch } from "react";
 
+import { DEFAULT_THEME } from "../theme/theme";
+import { DEFAULT_THEME_TYPES } from "../theme/themeType";
+
 export type WrapidDataType = {
   config: object;
-  themes?: { [key: string]: object };
+  themes?: { [key: string]: { name: string; theme: DEFAULT_THEME_TYPES } };
   defaultTheme?: string;
 };
 export const wrappidData: WrapidDataType = {
   config      : {},
   defaultTheme: "wrappidTheme",
-  themes      : {},
+  themes      : { wrappidTheme: { name: "Wrappid Theme", theme: DEFAULT_THEME } },
 };
 
 export const WrappidDataContext =

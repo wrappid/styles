@@ -1,3 +1,4 @@
+import WrappidContext from "../context/WrappidContext";
 import { DEFAULT_THEME } from "../theme/theme";
 import { DEFAULT_THEME_TYPES } from "../theme/themeType";
 
@@ -16,6 +17,16 @@ export abstract class BaseStyle {
 
   constructor() {
     this._theme = { ...baseTheme };
+    if (
+      WrappidContext &&
+      WrappidContext?.themes &&
+      WrappidContext?.defaultTheme
+    ) {
+      this._theme = {
+        ...DEFAULT_THEME,
+        ...(WrappidContext?.themes[WrappidContext?.defaultTheme]?.theme || {}),
+      };
+    }
   }
 
   get style() {
