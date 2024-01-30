@@ -1,3 +1,5 @@
+## ATTRIBUTIONS
+This file lists the third-party libraries, frameworks, and other components used in the styles repository,<br />along with their respective licenses. <br />It is important to comply with the licensing terms of these components when using the code. <br />
 <details>
   <summary>@ampproject/remapping@2.2.1</summary>
   
@@ -3780,22 +3782,22 @@
   ```
   </details>
 <details>
-  <summary>@wrappid/styles@0.0.119</summary>
+  <summary>@wrappid/styles@0.0.120</summary>
   
   #### Basic details about the package
   >|Key|Value|
   >|:--|:--|
-  >|**Name**|@wrappid/styles@0.0.119|
-  >|**Version**|@0.0.119|
+  >|**Name**|@wrappid/styles@0.0.120|
+  >|**Version**|@0.0.120|
   >|**Repository**|https://github.com/wrappid/styles|
-  >|**Licenses**|MIT*|
-  >|**Publisher**|wrappid|
-  >|**Contact**|NA|
-  >|**Homepage**|NA|
+  >|**Licenses**|MIT|
+  >|**Publisher**|Wrappid|
+  >|**Contact**|wrappid.framework@gmail.com|
+  >|**Homepage**|https://www.github.com/wrappid|
   
   #### Use this package in your project
   ```bash
-  npm i @wrappid/styles@0.0.119
+  npm i @wrappid/styles@0.0.120
   ```
   </details>
 <details>
