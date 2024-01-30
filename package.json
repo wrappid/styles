@@ -24,10 +24,10 @@
   ],
   "license": "MIT",
   "author": {
-		"name": "Wrappid",
-		"email": "wrappid.framework@gmail.com",
-		"url": "https://www.github.com/wrappid"
-	},
+  "name": "Wrappid",
+  "email": "wrappid.framework@gmail.com",
+  "url": "https://www.github.com/wrappid"
+  },
   "homepage": "https://github.com/wrappid/styles",
   "bugs": {
     "url": "https://github.com/wrappid/styles/issues"
