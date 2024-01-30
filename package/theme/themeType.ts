@@ -13,10 +13,10 @@ export interface DEFAULT_THEME_TYPES {
   mixins: {
     toolbar: {
       minHeight: number;
-      "@media (min-width: 0px) and (orientation: landscape)": {
+      "@media(min-width:0px)and(orientation:landscape)": {
         minHeight: number;
       };
-      "@media (min-width: 600px)": { minHeight: number };
+      "@media(min-width:600px)": { minHeight: number };
     };
   };
   overrides: object;
