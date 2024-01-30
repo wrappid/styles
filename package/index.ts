@@ -1,5 +1,5 @@
 import { BaseStyle } from "./base/BaseStyle";
-import { IMPORTANT, PX_TAG, DEFAULT_PADDING } from "./base/contants";
+import { IMPORTANT, PX_TAG, DEFAULT_PADDING } from "./base/constants";
 import {
   SMALL_WINDOW_WIDTH,
   MEDIUM_WINDOW_WIDTH,
