@@ -6,20 +6,20 @@ import {
   DEFAULT_SPACING,
   IMPORTANT,
   PX_TAG,
-} from "../base/contants";
+} from "../base/constants";
 
 export const SMALL_MARGIN = DEFAULT_MARGIN;
 export const SMALL_PADDING = DEFAULT_PADDING;
 export const SMALL_SPACING = DEFAULT_SPACING;
 
-export class SmallUtilityStyles extends BaseStyle{
-  constructor(){
-    super()
+export class SmallUtilityStyles extends BaseStyle {
+  constructor() {
+    super();
 
     this.style = {
       /**************************************************
-         * Alignment
-         *************************************************/
+       * Alignment
+       *************************************************/
       smAlignItemsStart: { display: "flex", alignItems: "flex-start" },
       smAlignItemsEnd: { display: "flex", alignItems: "flex-end" },
       smAlignItemsCenter: { display: "flex", alignItems: "center" },
@@ -41,11 +41,23 @@ export class SmallUtilityStyles extends BaseStyle{
       smAlignSelfStretch: { display: "flex", alignSelf: "stretch" },
 
       smJustifyContentCenter: { display: "flex", justifyContent: "center" },
-      smJustifyContentFlexStart: { display: "flex", justifyContent: "flex-start" },
+      smJustifyContentFlexStart: {
+        display: "flex",
+        justifyContent: "flex-start",
+      },
       smJustifyContentFlexEnd: { display: "flex", justifyContent: "flex-end" },
-      smJustifyContentSpaceBetween: { display: "flex", justifyContent: "space-between" },
-      smJustifyContentSpaceAround: { display: "flex", justifyContent: "space-around" },
-      smJustifyContentSpaceEvenly: { display: "flex", justifyContent: "space-evenly" },
+      smJustifyContentSpaceBetween: {
+        display: "flex",
+        justifyContent: "space-between",
+      },
+      smJustifyContentSpaceAround: {
+        display: "flex",
+        justifyContent: "space-around",
+      },
+      smJustifyContentSpaceEvenly: {
+        display: "flex",
+        justifyContent: "space-evenly",
+      },
 
       /**************************************************
        * Background
@@ -166,8 +178,8 @@ export class SmallUtilityStyles extends BaseStyle{
        * Spacing
        *************************************************/
       /*-------------------------------------------------
-      * Padding
-      *-----------------------------------------------*/
+       * Padding
+       *-----------------------------------------------*/
       smP0: { padding: 0 },
       smP1: { padding: SMALL_PADDING + PX_TAG },
       smP2: { padding: SMALL_PADDING * 2 + PX_TAG },
@@ -248,8 +260,8 @@ export class SmallUtilityStyles extends BaseStyle{
       },
 
       /*-------------------------------------------------
-      * Margin
-      *-----------------------------------------------*/
+       * Margin
+       *-----------------------------------------------*/
       smM0: { margin: 0 + IMPORTANT },
       smM1: { margin: SMALL_MARGIN + PX_TAG + IMPORTANT },
       smM2: { margin: SMALL_MARGIN * 2 + PX_TAG + IMPORTANT },
@@ -311,7 +323,10 @@ export class SmallUtilityStyles extends BaseStyle{
         marginLeft: SMALL_MARGIN * 5 + PX_TAG + IMPORTANT,
         marginRight: SMALL_MARGIN * 5 + PX_TAG + IMPORTANT,
       },
-      smMxAuto: { marginLeft: "auto" + IMPORTANT, marginRight: "auto" + IMPORTANT },
+      smMxAuto: {
+        marginLeft: "auto" + IMPORTANT,
+        marginRight: "auto" + IMPORTANT,
+      },
 
       smMy0: { marginTop: 0 + IMPORTANT, marginBottom: 0 + IMPORTANT },
       smMy1: {
@@ -334,7 +349,10 @@ export class SmallUtilityStyles extends BaseStyle{
         marginTop: SMALL_MARGIN * 5 + PX_TAG + IMPORTANT,
         marginBottom: SMALL_MARGIN * 5 + PX_TAG + IMPORTANT,
       },
-      smMyAuto: { marginTop: "auto" + IMPORTANT, marginBottom: "auto" + IMPORTANT },
+      smMyAuto: {
+        marginTop: "auto" + IMPORTANT,
+        marginBottom: "auto" + IMPORTANT,
+      },
 
       smMN1: { margin: SMALL_MARGIN * -1 + PX_TAG + IMPORTANT },
       smMN2: { margin: SMALL_MARGIN * -2 + PX_TAG + IMPORTANT },
@@ -409,8 +427,8 @@ export class SmallUtilityStyles extends BaseStyle{
       },
 
       /*-------------------------------------------------
-      * Gap
-      *-----------------------------------------------*/
+       * Gap
+       *-----------------------------------------------*/
       smGap0: { gap: "0" },
       smGap1: { gap: SMALL_SPACING * 1 },
       smGap2: { gap: SMALL_SPACING * 2 },
@@ -456,6 +474,6 @@ export class SmallUtilityStyles extends BaseStyle{
        * zindex
        *************************************************/
       //NO SCREEN SIZE SPECIFIC STYLE AVAILABLE
-    }
+    };
   }
-};
+}

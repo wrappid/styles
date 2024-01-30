@@ -6,20 +6,20 @@ import {
   DEFAULT_SPACING,
   IMPORTANT,
   PX_TAG,
-} from "../base/contants";
+} from "../base/constants";
 
 export const X_LARGE_MARGIN = DEFAULT_MARGIN;
 export const X_LARGE_PADDING = DEFAULT_PADDING;
 export const X_LARGE_SPACING = DEFAULT_SPACING;
 
 export class XLargeUtilityStyles extends BaseStyle {
-  constructor(){
-    super()
+  constructor() {
+    super();
 
     this.style = {
       /**************************************************
-         * Alignment
-         *************************************************/
+       * Alignment
+       *************************************************/
       xlAlignItemsStart: { display: "flex", alignItems: "flex-start" },
       xlAlignItemsEnd: { display: "flex", alignItems: "flex-end" },
       xlAlignItemsCenter: { display: "flex", alignItems: "center" },
@@ -41,11 +41,23 @@ export class XLargeUtilityStyles extends BaseStyle {
       xlAlignSelfStretch: { display: "flex", alignSelf: "stretch" },
 
       xlJustifyContentCenter: { display: "flex", justifyContent: "center" },
-      xlJustifyContentFlexStart: { display: "flex", justifyContent: "flex-start" },
+      xlJustifyContentFlexStart: {
+        display: "flex",
+        justifyContent: "flex-start",
+      },
       xlJustifyContentFlexEnd: { display: "flex", justifyContent: "flex-end" },
-      xlJustifyContentSpaceBetween: { display: "flex", justifyContent: "space-between" },
-      xlJustifyContentSpaceAround: { display: "flex", justifyContent: "space-around" },
-      xlJustifyContentSpaceEvenly: { display: "flex", justifyContent: "space-evenly" },
+      xlJustifyContentSpaceBetween: {
+        display: "flex",
+        justifyContent: "space-between",
+      },
+      xlJustifyContentSpaceAround: {
+        display: "flex",
+        justifyContent: "space-around",
+      },
+      xlJustifyContentSpaceEvenly: {
+        display: "flex",
+        justifyContent: "space-evenly",
+      },
 
       /**************************************************
        * Background
@@ -166,8 +178,8 @@ export class XLargeUtilityStyles extends BaseStyle {
        * Spacing
        *************************************************/
       /*-------------------------------------------------
-      * Padding
-      *-----------------------------------------------*/
+       * Padding
+       *-----------------------------------------------*/
       xlP0: { padding: 0 },
       xlP1: { padding: X_LARGE_PADDING + PX_TAG },
       xlP2: { padding: X_LARGE_PADDING * 2 + PX_TAG },
@@ -248,8 +260,8 @@ export class XLargeUtilityStyles extends BaseStyle {
       },
 
       /*-------------------------------------------------
-      * Margin
-      *-----------------------------------------------*/
+       * Margin
+       *-----------------------------------------------*/
       xlM0: { margin: 0 + IMPORTANT },
       xlM1: { margin: X_LARGE_MARGIN + PX_TAG + IMPORTANT },
       xlM2: { margin: X_LARGE_MARGIN * 2 + PX_TAG + IMPORTANT },
@@ -311,7 +323,10 @@ export class XLargeUtilityStyles extends BaseStyle {
         marginLeft: X_LARGE_MARGIN * 5 + PX_TAG + IMPORTANT,
         marginRight: X_LARGE_MARGIN * 5 + PX_TAG + IMPORTANT,
       },
-      xlMxAuto: { marginLeft: "auto" + IMPORTANT, marginRight: "auto" + IMPORTANT },
+      xlMxAuto: {
+        marginLeft: "auto" + IMPORTANT,
+        marginRight: "auto" + IMPORTANT,
+      },
 
       xlMy0: { marginTop: 0 + IMPORTANT, marginBottom: 0 + IMPORTANT },
       xlMy1: {
@@ -334,7 +349,10 @@ export class XLargeUtilityStyles extends BaseStyle {
         marginTop: X_LARGE_MARGIN * 5 + PX_TAG + IMPORTANT,
         marginBottom: X_LARGE_MARGIN * 5 + PX_TAG + IMPORTANT,
       },
-      xlMyAuto: { marginTop: "auto" + IMPORTANT, marginBottom: "auto" + IMPORTANT },
+      xlMyAuto: {
+        marginTop: "auto" + IMPORTANT,
+        marginBottom: "auto" + IMPORTANT,
+      },
 
       xlMN1: { margin: X_LARGE_MARGIN * -1 + PX_TAG + IMPORTANT },
       xlMN2: { margin: X_LARGE_MARGIN * -2 + PX_TAG + IMPORTANT },
@@ -409,8 +427,8 @@ export class XLargeUtilityStyles extends BaseStyle {
       },
 
       /*-------------------------------------------------
-      * Gap
-      *-----------------------------------------------*/
+       * Gap
+       *-----------------------------------------------*/
       xlGap0: { gap: "0" },
       xlGap1: { gap: X_LARGE_SPACING * 1 },
       xlGap2: { gap: X_LARGE_SPACING * 2 },
@@ -456,6 +474,6 @@ export class XLargeUtilityStyles extends BaseStyle {
        * zindex
        *************************************************/
       //NO SCREEN SIZE SPECIFIC STYLE AVAILABLE
-    }
+    };
   }
-};
+}

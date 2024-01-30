@@ -6,12 +6,11 @@ import {
   PX_TAG,
   DEFAULT_MARGIN,
   DEFAULT_SPACING,
-
   DEFAULT_BORDER,
   DEFAULT_BORDER_RADIUS,
   DEFAULT_BORDER_WIDTH,
   DEFAULT_SHADOW_COLOR_RGB
-} from "../base/contants";
+} from "../base/constants";
 
 export class DefaultUtilityStyles extends BaseStyle {
   constructor() {

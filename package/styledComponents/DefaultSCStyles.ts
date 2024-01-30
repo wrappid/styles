@@ -1,6 +1,6 @@
 /* eslint-disable sort-keys-fix/sort-keys-fix */
 import { BaseStyle } from "../base/BaseStyle";
-import { IMPORTANT, PX_TAG } from "../base/contants";
+import { IMPORTANT, PX_TAG } from "../base/constants";
 import { DefaultUtilityStyles } from "../utility/DefaultUtilityStyles";
 
 const HEADING_TOP_MARGIN = "56" + PX_TAG;
