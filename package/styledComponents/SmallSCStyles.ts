@@ -2,7 +2,7 @@
 import { BaseStyle } from "../base/BaseStyle";
 import { IMPORTANT } from "../base/constants";
 
-export class SmallSCStyles extends BaseStyle {
+export default class SmallSCStyles extends BaseStyle {
   constructor() {
     super();
 
@@ -15,7 +15,7 @@ export class SmallSCStyles extends BaseStyle {
        *************************************************/
       scFeedbackDialog: {
         minHeight: "30%" + IMPORTANT,
-        minWidth : "20%" + IMPORTANT,
+        minWidth : "20%" + IMPORTANT
       },
 
       /**************************************************
@@ -31,7 +31,7 @@ export class SmallSCStyles extends BaseStyle {
        * NAVIGATION
        *************************************************/
       scNavigationTab  : {},
-      scNavigationTabs : {},
+      scNavigationTabs : {}
       /**************************************************
        * LAYOUTS
        *************************************************/

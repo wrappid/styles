@@ -5,14 +5,14 @@ import {
   DEFAULT_PADDING,
   DEFAULT_SPACING,
   IMPORTANT,
-  PX_TAG,
+  PX_TAG
 } from "../base/constants";
 
 export const SMALL_MARGIN = DEFAULT_MARGIN;
 export const SMALL_PADDING = DEFAULT_PADDING;
 export const SMALL_SPACING = DEFAULT_SPACING;
 
-export class SmallUtilityStyles extends BaseStyle {
+export default class SmallUtilityStyles extends BaseStyle {
   constructor() {
     super();
 
@@ -43,20 +43,20 @@ export class SmallUtilityStyles extends BaseStyle {
       smJustifyContentCenter: { display: "flex", justifyContent: "center" },
       smJustifyContentFlexStart: {
         display: "flex",
-        justifyContent: "flex-start",
+        justifyContent: "flex-start"
       },
       smJustifyContentFlexEnd: { display: "flex", justifyContent: "flex-end" },
       smJustifyContentSpaceBetween: {
         display: "flex",
-        justifyContent: "space-between",
+        justifyContent: "space-between"
       },
       smJustifyContentSpaceAround: {
         display: "flex",
-        justifyContent: "space-around",
+        justifyContent: "space-around"
       },
       smJustifyContentSpaceEvenly: {
         display: "flex",
-        justifyContent: "space-evenly",
+        justifyContent: "space-evenly"
       },
 
       /**************************************************
@@ -126,27 +126,27 @@ export class SmallUtilityStyles extends BaseStyle {
        *************************************************/
       smObjectFitContain: {
         // -o-object-fit: contain !important;
-        objectFit: "contain",
+        objectFit: "contain"
       },
 
       smObjectFitCover: {
         // -o-object-fit: cover !important;
-        objectFit: "cover",
+        objectFit: "cover"
       },
 
       smObjectFitFill: {
         // -o-object-fit: fill !important;
-        objectFit: "fill",
+        objectFit: "fill"
       },
 
       smObjectFitScale: {
         // -o-object-fit: scale-down !important;
-        objectFit: "scale-down",
+        objectFit: "scale-down"
       },
 
       smObjectFitNone: {
         // -o-object-fit: none !important;
-        objectFit: "none",
+        objectFit: "none"
       },
 
       /**************************************************
@@ -218,45 +218,45 @@ export class SmallUtilityStyles extends BaseStyle {
       smPx0: { paddingLeft: 0, paddingRight: 0 },
       smPx1: {
         paddingLeft: SMALL_PADDING * 1 + PX_TAG,
-        paddingRight: SMALL_PADDING * 1 + PX_TAG,
+        paddingRight: SMALL_PADDING * 1 + PX_TAG
       },
       smPx2: {
         paddingLeft: SMALL_PADDING * 2 + PX_TAG,
-        paddingRight: SMALL_PADDING * 2 + PX_TAG,
+        paddingRight: SMALL_PADDING * 2 + PX_TAG
       },
       smPx3: {
         paddingLeft: SMALL_PADDING * 3 + PX_TAG,
-        paddingRight: SMALL_PADDING * 3 + PX_TAG,
+        paddingRight: SMALL_PADDING * 3 + PX_TAG
       },
       smPx4: {
         paddingLeft: SMALL_PADDING * 4 + PX_TAG,
-        paddingRight: SMALL_PADDING * 4 + PX_TAG,
+        paddingRight: SMALL_PADDING * 4 + PX_TAG
       },
       smPx5: {
         paddingLeft: SMALL_PADDING * 5 + PX_TAG,
-        paddingRight: SMALL_PADDING * 5 + PX_TAG,
+        paddingRight: SMALL_PADDING * 5 + PX_TAG
       },
 
       smPy0: { paddingTop: 0, paddingBottom: 0 },
       smPy1: {
         paddingTop: SMALL_PADDING * 1 + PX_TAG,
-        paddingBottom: SMALL_PADDING * 1 + PX_TAG,
+        paddingBottom: SMALL_PADDING * 1 + PX_TAG
       },
       smPy2: {
         paddingTop: SMALL_PADDING * 2 + PX_TAG,
-        paddingBottom: SMALL_PADDING * 2 + PX_TAG,
+        paddingBottom: SMALL_PADDING * 2 + PX_TAG
       },
       smPy3: {
         paddingTop: SMALL_PADDING * 3 + PX_TAG,
-        paddingBottom: SMALL_PADDING * 3 + PX_TAG,
+        paddingBottom: SMALL_PADDING * 3 + PX_TAG
       },
       smPy4: {
         paddingTop: SMALL_PADDING * 4 + PX_TAG,
-        paddingBottom: SMALL_PADDING * 4 + PX_TAG,
+        paddingBottom: SMALL_PADDING * 4 + PX_TAG
       },
       smPy5: {
         paddingTop: SMALL_PADDING * 5 + PX_TAG,
-        paddingBottom: SMALL_PADDING * 5 + PX_TAG,
+        paddingBottom: SMALL_PADDING * 5 + PX_TAG
       },
 
       /*-------------------------------------------------
@@ -305,53 +305,53 @@ export class SmallUtilityStyles extends BaseStyle {
       smMx0: { marginLeft: 0 + IMPORTANT, marginRight: 0 + IMPORTANT },
       smMx1: {
         marginLeft: SMALL_MARGIN * 1 + PX_TAG + IMPORTANT,
-        marginRight: SMALL_MARGIN * 1 + PX_TAG + IMPORTANT,
+        marginRight: SMALL_MARGIN * 1 + PX_TAG + IMPORTANT
       },
       smMx2: {
         marginLeft: SMALL_MARGIN * 2 + PX_TAG + IMPORTANT,
-        marginRight: SMALL_MARGIN * 2 + PX_TAG + IMPORTANT,
+        marginRight: SMALL_MARGIN * 2 + PX_TAG + IMPORTANT
       },
       smMx3: {
         marginLeft: SMALL_MARGIN * 3 + PX_TAG + IMPORTANT,
-        marginRight: SMALL_MARGIN * 3 + PX_TAG + IMPORTANT,
+        marginRight: SMALL_MARGIN * 3 + PX_TAG + IMPORTANT
       },
       smMx4: {
         marginLeft: SMALL_MARGIN * 4 + PX_TAG + IMPORTANT,
-        marginRight: SMALL_MARGIN * 4 + PX_TAG + IMPORTANT,
+        marginRight: SMALL_MARGIN * 4 + PX_TAG + IMPORTANT
       },
       smMx5: {
         marginLeft: SMALL_MARGIN * 5 + PX_TAG + IMPORTANT,
-        marginRight: SMALL_MARGIN * 5 + PX_TAG + IMPORTANT,
+        marginRight: SMALL_MARGIN * 5 + PX_TAG + IMPORTANT
       },
       smMxAuto: {
         marginLeft: "auto" + IMPORTANT,
-        marginRight: "auto" + IMPORTANT,
+        marginRight: "auto" + IMPORTANT
       },
 
       smMy0: { marginTop: 0 + IMPORTANT, marginBottom: 0 + IMPORTANT },
       smMy1: {
         marginTop: SMALL_MARGIN * 1 + PX_TAG + IMPORTANT,
-        marginBottom: SMALL_MARGIN * 1 + PX_TAG + IMPORTANT,
+        marginBottom: SMALL_MARGIN * 1 + PX_TAG + IMPORTANT
       },
       smMy2: {
         marginTop: SMALL_MARGIN * 2 + PX_TAG + IMPORTANT,
-        marginBottom: SMALL_MARGIN * 2 + PX_TAG + IMPORTANT,
+        marginBottom: SMALL_MARGIN * 2 + PX_TAG + IMPORTANT
       },
       smMy3: {
         marginTop: SMALL_MARGIN * 3 + PX_TAG + IMPORTANT,
-        marginBottom: SMALL_MARGIN * 3 + PX_TAG + IMPORTANT,
+        marginBottom: SMALL_MARGIN * 3 + PX_TAG + IMPORTANT
       },
       smMy4: {
         marginTop: SMALL_MARGIN * 4 + PX_TAG + IMPORTANT,
-        marginBottom: SMALL_MARGIN * 4 + PX_TAG + IMPORTANT,
+        marginBottom: SMALL_MARGIN * 4 + PX_TAG + IMPORTANT
       },
       smMy5: {
         marginTop: SMALL_MARGIN * 5 + PX_TAG + IMPORTANT,
-        marginBottom: SMALL_MARGIN * 5 + PX_TAG + IMPORTANT,
+        marginBottom: SMALL_MARGIN * 5 + PX_TAG + IMPORTANT
       },
       smMyAuto: {
         marginTop: "auto" + IMPORTANT,
-        marginBottom: "auto" + IMPORTANT,
+        marginBottom: "auto" + IMPORTANT
       },
 
       smMN1: { margin: SMALL_MARGIN * -1 + PX_TAG + IMPORTANT },
@@ -386,44 +386,44 @@ export class SmallUtilityStyles extends BaseStyle {
 
       smMxN1: {
         marginLeft: SMALL_MARGIN * -1 + PX_TAG + IMPORTANT,
-        marginRight: SMALL_MARGIN * -1 + PX_TAG + IMPORTANT,
+        marginRight: SMALL_MARGIN * -1 + PX_TAG + IMPORTANT
       },
       smMxN2: {
         marginLeft: SMALL_MARGIN * -2 + PX_TAG + IMPORTANT,
-        marginRight: SMALL_MARGIN * -2 + PX_TAG + IMPORTANT,
+        marginRight: SMALL_MARGIN * -2 + PX_TAG + IMPORTANT
       },
       smMxN3: {
         marginLeft: SMALL_MARGIN * -3 + PX_TAG + IMPORTANT,
-        marginRight: SMALL_MARGIN * -3 + PX_TAG + IMPORTANT,
+        marginRight: SMALL_MARGIN * -3 + PX_TAG + IMPORTANT
       },
       smMxN4: {
         marginLeft: SMALL_MARGIN * -4 + PX_TAG + IMPORTANT,
-        marginRight: SMALL_MARGIN * -4 + PX_TAG + IMPORTANT,
+        marginRight: SMALL_MARGIN * -4 + PX_TAG + IMPORTANT
       },
       smMxN5: {
         marginLeft: SMALL_MARGIN * -5 + PX_TAG + IMPORTANT,
-        marginRight: SMALL_MARGIN * -5 + PX_TAG + IMPORTANT,
+        marginRight: SMALL_MARGIN * -5 + PX_TAG + IMPORTANT
       },
 
       smMyN1: {
         marginTop: SMALL_MARGIN * -1 + PX_TAG + IMPORTANT,
-        marginBottom: SMALL_MARGIN * -1 + PX_TAG + IMPORTANT,
+        marginBottom: SMALL_MARGIN * -1 + PX_TAG + IMPORTANT
       },
       smMyN2: {
         marginTop: SMALL_MARGIN * -2 + PX_TAG + IMPORTANT,
-        marginBottom: SMALL_MARGIN * -2 + PX_TAG + IMPORTANT,
+        marginBottom: SMALL_MARGIN * -2 + PX_TAG + IMPORTANT
       },
       smMyN3: {
         marginTop: SMALL_MARGIN * -3 + PX_TAG + IMPORTANT,
-        marginBottom: SMALL_MARGIN * -3 + PX_TAG + IMPORTANT,
+        marginBottom: SMALL_MARGIN * -3 + PX_TAG + IMPORTANT
       },
       smMyN4: {
         marginTop: SMALL_MARGIN * -4 + PX_TAG + IMPORTANT,
-        marginBottom: SMALL_MARGIN * -4 + PX_TAG + IMPORTANT,
+        marginBottom: SMALL_MARGIN * -4 + PX_TAG + IMPORTANT
       },
       smMyN5: {
         marginTop: SMALL_MARGIN * -5 + PX_TAG + IMPORTANT,
-        marginBottom: SMALL_MARGIN * -5 + PX_TAG + IMPORTANT,
+        marginBottom: SMALL_MARGIN * -5 + PX_TAG + IMPORTANT
       },
 
       /*-------------------------------------------------
@@ -456,7 +456,7 @@ export class SmallUtilityStyles extends BaseStyle {
       smTextStart: { textAlign: "left" + IMPORTANT },
       smTextEnd: { textAlign: "right" + IMPORTANT },
       smTextCenter: { textAlign: "center" + IMPORTANT },
-      smTextJustify: { textAlign: "justify" + IMPORTANT },
+      smTextJustify: { textAlign: "justify" + IMPORTANT }
 
       //NO OTHER SCREEN SIZE SPECIFIC STYLE NEEDED
 

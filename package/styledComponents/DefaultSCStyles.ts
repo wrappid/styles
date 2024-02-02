@@ -1,11 +1,11 @@
 /* eslint-disable sort-keys-fix/sort-keys-fix */
 import { BaseStyle } from "../base/BaseStyle";
 import { IMPORTANT, PX_TAG } from "../base/constants";
-import { DefaultUtilityStyles } from "../utility/DefaultUtilityStyles";
+import DefaultUtilityStyles from "../utility/DefaultUtilityStyles";
 
 const HEADING_TOP_MARGIN = "56" + PX_TAG;
 
-export class DefaultSCStyles extends BaseStyle {
+export default class DefaultSCStyles extends BaseStyle {
   constructor() {
     super();
 
@@ -30,7 +30,7 @@ export class DefaultSCStyles extends BaseStyle {
       scInputsInputLabel     : {},
       scInputsItemButton     : {
         width       : "100%" + IMPORTANT,
-        marginBottom: 16 + IMPORTANT,
+        marginBottom: 16 + IMPORTANT
       },
       scInputsMenuItem      : {},
       scinputsSelect        : {},
@@ -41,10 +41,10 @@ export class DefaultSCStyles extends BaseStyle {
        * DATA DISPLAY
        *************************************************/
       scDataDisplayAvatar   : {
-        backgroundColor: this.theme?.palette?.secondary?.light,
+        backgroundColor: this.theme.palette?.secondary?.light,
         borderWidth    : "1" + PX_TAG + IMPORTANT,
         borderStyle    : "solid" + IMPORTANT,
-        borderColor    : this.theme?.palette?.secondary?.main,
+        borderColor    : this.theme.palette?.secondary?.main
       },
       scDataDisplayBadge            : {},
       scDataDisplayChip             : {},
@@ -67,7 +67,7 @@ export class DefaultSCStyles extends BaseStyle {
       scDataDisplayMobileToolbar    : {
         borderBottomWidth: 1,
         borderBottomColor: defaultUtilityStyles?.borderPrimary?.borderColor,
-        marginTop        : "-" + defaultUtilityStyles?.m1?.margin,
+        marginTop        : "-" + defaultUtilityStyles?.m1?.margin
       },
       scDataDisplayTableSortLabel: {},
       scDataDisplayTooltip       : {},
@@ -79,7 +79,7 @@ export class DefaultSCStyles extends BaseStyle {
       scFeedbackBackdrop         : {
         zIndex: 1202 + IMPORTANT,
         backgroundColor:
-          this.theme?.palette?.secondary?.transparentDark + IMPORTANT,
+          this.theme.palette?.secondary?.transparentDark + IMPORTANT
       },
       scFeedbackCircularProgress: {},
       scFeedbackLinearProgress  : {},
@@ -94,7 +94,7 @@ export class DefaultSCStyles extends BaseStyle {
       scSurfacesAccordionSummery: {},
       scSurfacesAppBar          : {
         ...defaultUtilityStyles.bgPrimary,
-        ...defaultUtilityStyles.shadowNone,
+        ...defaultUtilityStyles.shadowNone
       },
       scSurfacesCard          : {},
       scSurfacesCardActionArea: {},
@@ -117,7 +117,7 @@ export class DefaultSCStyles extends BaseStyle {
         paddingLeft   : 16,
         paddingRight  : 16,
         paddingTop    : 12,
-        paddingBottom : 12,
+        paddingBottom : 12
       },
       scNavigationTabActive: {
         minHeight        : 48,
@@ -131,13 +131,13 @@ export class DefaultSCStyles extends BaseStyle {
         paddingBottom    : 12,
         ...defaultUtilityStyles?.textPrimary,
         borderBottomColor: defaultUtilityStyles?.borderPrimary?.borderColor,
-        borderBottomWidth: 2,
+        borderBottomWidth: 2
       },
       scNavigationTabs: {},
       scNavigationLink: {
-        color     : this.theme?.palette?.primary?.main + IMPORTANT,
+        color     : this.theme.palette?.primary?.main + IMPORTANT,
         fontWeight: 500 + IMPORTANT,
-        fontSize  : "0.812rem" + IMPORTANT,
+        fontSize  : "0.812rem" + IMPORTANT
       },
       scNavigationMenuItem  : {},
       scNavigationMenuList  : {},
@@ -197,13 +197,13 @@ export class DefaultSCStyles extends BaseStyle {
       seperatorItem      : { padding: 0 + IMPORTANT },
       seperatorButtonItem: {
         height   : 0 + IMPORTANT,
-        minHeight: 0 + IMPORTANT,
+        minHeight: 0 + IMPORTANT
         // backgroundColor: "gray"
       },
       seperatorIconItem: {
         height   : 0 + IMPORTANT,
         minHeight: 0 + IMPORTANT,
-        display  : "none" + IMPORTANT,
+        display  : "none" + IMPORTANT
       },
       seperatorTextItem: { height: 0 + IMPORTANT, minHeight: 0 + IMPORTANT },
 
@@ -215,13 +215,13 @@ export class DefaultSCStyles extends BaseStyle {
         color       : "rgb(88, 88, 88)" + IMPORTANT,
         overflow    : "hidden" + IMPORTANT,
         textOverflow: "ellipsis" + IMPORTANT,
-        whiteSpace  : "nowrap" + IMPORTANT,
+        whiteSpace  : "nowrap" + IMPORTANT
       },
       webFilePicker: {
         justifyContent: "flex-end" + IMPORTANT,
         display       : "flex" + IMPORTANT,
         color         : "rgb(0,0,0,0.54)" + IMPORTANT,
-        borderBottom  : "1" + PX_TAG + "solid rgba(0, 0, 0, 0.42)" + IMPORTANT,
+        borderBottom  : "1" + PX_TAG + "solid rgba(0, 0, 0, 0.42)" + IMPORTANT
       },
       webTabHead: {
         ...defaultUtilityStyles.mb1,
@@ -230,8 +230,8 @@ export class DefaultSCStyles extends BaseStyle {
         ...defaultUtilityStyles.overflowXScroll,
         ...defaultUtilityStyles.w100,
         marginLeft: "-8" + PX_TAG + IMPORTANT,
-        marginTop : "-8" + PX_TAG + IMPORTANT,
-      },
+        marginTop : "-8" + PX_TAG + IMPORTANT
+      }
     };
   }
 }
