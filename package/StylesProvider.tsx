@@ -4,19 +4,19 @@ import { useSelector } from "react-redux";
 import { updateTheme } from "./base/BaseStyle";
 import { ThemeManager } from "./base/ThemeManager";
 import { AppStylesContext, ThemeContext } from "./config/contextHandler";
-import { DefaultSCStyles } from "./styledComponents/DefaultSCStyles";
-import { LargeSCStyles } from "./styledComponents/LargeSCStyles";
-import { MediumSCStyles } from "./styledComponents/MediumSCStyles";
-import { SmallSCStyles } from "./styledComponents/SmallSCStyles";
-import { XLargeSCStyles } from "./styledComponents/XLargeSCStyles";
-import { XXLargeSCStyles } from "./styledComponents/XXLargeSCStyles";
+import DefaultSCStyles from "./styledComponents/DefaultSCStyles";
+import LargeSCStyles from "./styledComponents/LargeSCStyles";
+import MediumSCStyles from "./styledComponents/MediumSCStyles";
+import SmallSCStyles from "./styledComponents/SmallSCStyles";
+import XLargeSCStyles from "./styledComponents/XLargeSCStyles";
+import XXLargeSCStyles from "./styledComponents/XXLargeSCStyles";
 import { DEFAULT_THEME } from "./theme/theme";
-import { DefaultUtilityStyles } from "./utility/DefaultUtilityStyles";
-import { LargeUtilityStyles } from "./utility/LargeUtilityStyles";
-import { MediumUtilityStyles } from "./utility/MediumUtilityStyles";
-import { SmallUtilityStyles } from "./utility/SmallUtilityStyles";
-import { XLargeUtilityStyles } from "./utility/XLargeUtilityStyles";
-import { XXLargeUtilityStyles } from "./utility/XXLargeUtilityStyles";
+import DefaultUtilityStyles from "./utility/DefaultUtilityStyles";
+import LargeUtilityStyles from "./utility/LargeUtilityStyles";
+import MediumUtilityStyles from "./utility/MediumUtilityStyles";
+import SmallUtilityStyles from "./utility/SmallUtilityStyles";
+import XLargeUtilityStyles from "./utility/XLargeUtilityStyles";
+import XXLargeUtilityStyles from "./utility/XXLargeUtilityStyles";
 
 export let mergedDefaultStyles = {
   ...new DefaultUtilityStyles().style,
