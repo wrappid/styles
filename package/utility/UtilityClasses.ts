@@ -188,6 +188,7 @@ const UtilityClasses = {
     BG_PRIMARY: "bgPrimary",
     BG_PRIMARY_LIGHT: "bgPrimaryLight",
     BG_PRIMARY_DARK: "bgPrimaryDark",
+    BG_PRIMARY_GRADIANT: "bgPrimaryGradient",
 
     BG_SECONDARY: "bgSecondary",
     BG_SECONDARY_LIGHT: "bgSecondaryLight",

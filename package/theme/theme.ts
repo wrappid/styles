@@ -49,7 +49,8 @@ export const DEFAULT_THEME = {
       light       : "#e57373",
       main        : "#f44336",
     },
-    grey: {
+    gradient: "linear-gradient(180deg, #ffffff26, #ffffff00))",
+    grey    : {
       100 : "#f5f5f5",
       200 : "#eeeeee",
       300 : "#e0e0e0",
@@ -65,18 +66,19 @@ export const DEFAULT_THEME = {
       A400: "#303030",
       A700: "#616161",
     },
+
     info: {
       contrastText: "#fff",
       dark        : "#1976d2",
       light       : "#64b5f6",
       main        : "#2196f3",
     },
-
     primary: {
       contrastText: "#fff",
       dark        : "#303f9f",
-      light       : "#7986cb",
-      main        : "#3f51b5",
+      
+      light: "#7986cb",
+      main : "#3f51b5",
     },
     secondary: {
       contrastText   : "#fff",

@@ -26,6 +26,7 @@ export interface DEFAULT_THEME_TYPES {
       white: string;
     };
     type: string;
+    gradient: string;
     primary: {
       light: string;
       main: string;
