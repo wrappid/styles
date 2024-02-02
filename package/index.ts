@@ -27,13 +27,13 @@ import StyledComponentsClasses from "./styledComponents/StyledComponentsClasses"
 import StylesProvider, { theme } from "./StylesProvider";
 import { getEffectiveStyle } from "./StyleUtil";
 import { overrideThemeConfiguration } from "./theme/themeUtil";
-import { DefaultUtilityStyles } from "./utility/DefaultUtilityStyles";
-import { LargeUtilityStyles } from "./utility/LargeUtilityStyles";
-import { MediumUtilityStyles } from "./utility/MediumUtilityStyles";
-import { SmallUtilityStyles } from "./utility/SmallUtilityStyles";
+import DefaultUtilityStyles from "./utility/DefaultUtilityStyles";
+import LargeUtilityStyles from "./utility/LargeUtilityStyles";
+import MediumUtilityStyles from "./utility/MediumUtilityStyles";
+import SmallUtilityStyles from "./utility/SmallUtilityStyles";
 import UtilityClasses from "./utility/UtilityClasses";
-import { XLargeUtilityStyles } from "./utility/XLargeUtilityStyles";
-import { XXLargeUtilityStyles } from "./utility/XXLargeUtilityStyles";
+import XLargeUtilityStyles from "./utility/XLargeUtilityStyles";
+import XXLargeUtilityStyles from "./utility/XXLargeUtilityStyles";
 
 export {
   /**

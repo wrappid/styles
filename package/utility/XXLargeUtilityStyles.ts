@@ -5,14 +5,14 @@ import {
   DEFAULT_PADDING,
   DEFAULT_SPACING,
   IMPORTANT,
-  PX_TAG,
+  PX_TAG
 } from "../base/constants";
 
 export const XX_LARGE_MARGIN = DEFAULT_MARGIN;
 export const XX_LARGE_PADDING = DEFAULT_PADDING;
 export const XX_LARGE_SPACING = DEFAULT_SPACING;
 
-export class XXLargeUtilityStyles extends BaseStyle {
+export default class XXLargeUtilityStyles extends BaseStyle {
   constructor() {
     super();
     this.style = {
@@ -30,7 +30,7 @@ export class XXLargeUtilityStyles extends BaseStyle {
       xxlAlignContentCenter: { display: "flex", alignContent: "center" },
       xxlAlignContentBetween: {
         display: "flex",
-        alignContent: "space-between",
+        alignContent: "space-between"
       },
       xxlAlignContentAround: { display: "flex", alignContent: "space-around" },
       xxlAlignContentStretch: { display: "flex", alignContent: "stretch" },
@@ -45,20 +45,20 @@ export class XXLargeUtilityStyles extends BaseStyle {
       xxlJustifyContentCenter: { display: "flex", justifyContent: "center" },
       xxlJustifyContentFlexStart: {
         display: "flex",
-        justifyContent: "flex-start",
+        justifyContent: "flex-start"
       },
       xxlJustifyContentFlexEnd: { display: "flex", justifyContent: "flex-end" },
       xxlJustifyContentSpaceBetween: {
         display: "flex",
-        justifyContent: "space-between",
+        justifyContent: "space-between"
       },
       xxlJustifyContentSpaceAround: {
         display: "flex",
-        justifyContent: "space-around",
+        justifyContent: "space-around"
       },
       xxlJustifyContentSpaceEvenly: {
         display: "flex",
-        justifyContent: "space-evenly",
+        justifyContent: "space-evenly"
       },
 
       /**************************************************
@@ -128,27 +128,27 @@ export class XXLargeUtilityStyles extends BaseStyle {
        *************************************************/
       xxlObjectFitContain: {
         // -o-object-fit: contain !important;
-        objectFit: "contain",
+        objectFit: "contain"
       },
 
       xxlObjectFitCover: {
         // -o-object-fit: cover !important;
-        objectFit: "cover",
+        objectFit: "cover"
       },
 
       xxlObjectFitFill: {
         // -o-object-fit: fill !important;
-        objectFit: "fill",
+        objectFit: "fill"
       },
 
       xxlObjectFitScale: {
         // -o-object-fit: scale-down !important;
-        objectFit: "scale-down",
+        objectFit: "scale-down"
       },
 
       xxlObjectFitNone: {
         // -o-object-fit: none !important;
-        objectFit: "none",
+        objectFit: "none"
       },
 
       /**************************************************
@@ -220,45 +220,45 @@ export class XXLargeUtilityStyles extends BaseStyle {
       xxlPx0: { paddingLeft: 0, paddingRight: 0 },
       xxlPx1: {
         paddingLeft: XX_LARGE_PADDING * 1 + PX_TAG,
-        paddingRight: XX_LARGE_PADDING * 1 + PX_TAG,
+        paddingRight: XX_LARGE_PADDING * 1 + PX_TAG
       },
       xxlPx2: {
         paddingLeft: XX_LARGE_PADDING * 2 + PX_TAG,
-        paddingRight: XX_LARGE_PADDING * 2 + PX_TAG,
+        paddingRight: XX_LARGE_PADDING * 2 + PX_TAG
       },
       xxlPx3: {
         paddingLeft: XX_LARGE_PADDING * 3 + PX_TAG,
-        paddingRight: XX_LARGE_PADDING * 3 + PX_TAG,
+        paddingRight: XX_LARGE_PADDING * 3 + PX_TAG
       },
       xxlPx4: {
         paddingLeft: XX_LARGE_PADDING * 4 + PX_TAG,
-        paddingRight: XX_LARGE_PADDING * 4 + PX_TAG,
+        paddingRight: XX_LARGE_PADDING * 4 + PX_TAG
       },
       xxlPx5: {
         paddingLeft: XX_LARGE_PADDING * 5 + PX_TAG,
-        paddingRight: XX_LARGE_PADDING * 5 + PX_TAG,
+        paddingRight: XX_LARGE_PADDING * 5 + PX_TAG
       },
 
       xxlPy0: { paddingTop: 0, paddingBottom: 0 },
       xxlPy1: {
         paddingTop: XX_LARGE_PADDING * 1 + PX_TAG,
-        paddingBottom: XX_LARGE_PADDING * 1 + PX_TAG,
+        paddingBottom: XX_LARGE_PADDING * 1 + PX_TAG
       },
       xxlPy2: {
         paddingTop: XX_LARGE_PADDING * 2 + PX_TAG,
-        paddingBottom: XX_LARGE_PADDING * 2 + PX_TAG,
+        paddingBottom: XX_LARGE_PADDING * 2 + PX_TAG
       },
       xxlPy3: {
         paddingTop: XX_LARGE_PADDING * 3 + PX_TAG,
-        paddingBottom: XX_LARGE_PADDING * 3 + PX_TAG,
+        paddingBottom: XX_LARGE_PADDING * 3 + PX_TAG
       },
       xxlPy4: {
         paddingTop: XX_LARGE_PADDING * 4 + PX_TAG,
-        paddingBottom: XX_LARGE_PADDING * 4 + PX_TAG,
+        paddingBottom: XX_LARGE_PADDING * 4 + PX_TAG
       },
       xxlPy5: {
         paddingTop: XX_LARGE_PADDING * 5 + PX_TAG,
-        paddingBottom: XX_LARGE_PADDING * 5 + PX_TAG,
+        paddingBottom: XX_LARGE_PADDING * 5 + PX_TAG
       },
 
       /*-------------------------------------------------
@@ -307,53 +307,53 @@ export class XXLargeUtilityStyles extends BaseStyle {
       xxlMx0: { marginLeft: 0 + IMPORTANT, marginRight: 0 + IMPORTANT },
       xxlMx1: {
         marginLeft: XX_LARGE_MARGIN * 1 + PX_TAG + IMPORTANT,
-        marginRight: XX_LARGE_MARGIN * 1 + PX_TAG + IMPORTANT,
+        marginRight: XX_LARGE_MARGIN * 1 + PX_TAG + IMPORTANT
       },
       xxlMx2: {
         marginLeft: XX_LARGE_MARGIN * 2 + PX_TAG + IMPORTANT,
-        marginRight: XX_LARGE_MARGIN * 2 + PX_TAG + IMPORTANT,
+        marginRight: XX_LARGE_MARGIN * 2 + PX_TAG + IMPORTANT
       },
       xxlMx3: {
         marginLeft: XX_LARGE_MARGIN * 3 + PX_TAG + IMPORTANT,
-        marginRight: XX_LARGE_MARGIN * 3 + PX_TAG + IMPORTANT,
+        marginRight: XX_LARGE_MARGIN * 3 + PX_TAG + IMPORTANT
       },
       xxlMx4: {
         marginLeft: XX_LARGE_MARGIN * 4 + PX_TAG + IMPORTANT,
-        marginRight: XX_LARGE_MARGIN * 4 + PX_TAG + IMPORTANT,
+        marginRight: XX_LARGE_MARGIN * 4 + PX_TAG + IMPORTANT
       },
       xxlMx5: {
         marginLeft: XX_LARGE_MARGIN * 5 + PX_TAG + IMPORTANT,
-        marginRight: XX_LARGE_MARGIN * 5 + PX_TAG + IMPORTANT,
+        marginRight: XX_LARGE_MARGIN * 5 + PX_TAG + IMPORTANT
       },
       xxlMxAuto: {
         marginLeft: "auto" + IMPORTANT,
-        marginRight: "auto" + IMPORTANT,
+        marginRight: "auto" + IMPORTANT
       },
 
       xxlMy0: { marginTop: 0 + IMPORTANT, marginBottom: 0 + IMPORTANT },
       xxlMy1: {
         marginTop: XX_LARGE_MARGIN * 1 + PX_TAG + IMPORTANT,
-        marginBottom: XX_LARGE_MARGIN * 1 + PX_TAG + IMPORTANT,
+        marginBottom: XX_LARGE_MARGIN * 1 + PX_TAG + IMPORTANT
       },
       xxlMy2: {
         marginTop: XX_LARGE_MARGIN * 2 + PX_TAG + IMPORTANT,
-        marginBottom: XX_LARGE_MARGIN * 2 + PX_TAG + IMPORTANT,
+        marginBottom: XX_LARGE_MARGIN * 2 + PX_TAG + IMPORTANT
       },
       xxlMy3: {
         marginTop: XX_LARGE_MARGIN * 3 + PX_TAG + IMPORTANT,
-        marginBottom: XX_LARGE_MARGIN * 3 + PX_TAG + IMPORTANT,
+        marginBottom: XX_LARGE_MARGIN * 3 + PX_TAG + IMPORTANT
       },
       xxlMy4: {
         marginTop: XX_LARGE_MARGIN * 4 + PX_TAG + IMPORTANT,
-        marginBottom: XX_LARGE_MARGIN * 4 + PX_TAG + IMPORTANT,
+        marginBottom: XX_LARGE_MARGIN * 4 + PX_TAG + IMPORTANT
       },
       xxlMy5: {
         marginTop: XX_LARGE_MARGIN * 5 + PX_TAG + IMPORTANT,
-        marginBottom: XX_LARGE_MARGIN * 5 + PX_TAG + IMPORTANT,
+        marginBottom: XX_LARGE_MARGIN * 5 + PX_TAG + IMPORTANT
       },
       xxlMyAuto: {
         marginTop: "auto" + IMPORTANT,
-        marginBottom: "auto" + IMPORTANT,
+        marginBottom: "auto" + IMPORTANT
       },
 
       xxlMN1: { margin: XX_LARGE_MARGIN * -1 + PX_TAG + IMPORTANT },
@@ -388,44 +388,44 @@ export class XXLargeUtilityStyles extends BaseStyle {
 
       xxlMxN1: {
         marginLeft: XX_LARGE_MARGIN * -1 + PX_TAG + IMPORTANT,
-        marginRight: XX_LARGE_MARGIN * -1 + PX_TAG + IMPORTANT,
+        marginRight: XX_LARGE_MARGIN * -1 + PX_TAG + IMPORTANT
       },
       xxlMxN2: {
         marginLeft: XX_LARGE_MARGIN * -2 + PX_TAG + IMPORTANT,
-        marginRight: XX_LARGE_MARGIN * -2 + PX_TAG + IMPORTANT,
+        marginRight: XX_LARGE_MARGIN * -2 + PX_TAG + IMPORTANT
       },
       xxlMxN3: {
         marginLeft: XX_LARGE_MARGIN * -3 + PX_TAG + IMPORTANT,
-        marginRight: XX_LARGE_MARGIN * -3 + PX_TAG + IMPORTANT,
+        marginRight: XX_LARGE_MARGIN * -3 + PX_TAG + IMPORTANT
       },
       xxlMxN4: {
         marginLeft: XX_LARGE_MARGIN * -4 + PX_TAG + IMPORTANT,
-        marginRight: XX_LARGE_MARGIN * -4 + PX_TAG + IMPORTANT,
+        marginRight: XX_LARGE_MARGIN * -4 + PX_TAG + IMPORTANT
       },
       xxlMxN5: {
         marginLeft: XX_LARGE_MARGIN * -5 + PX_TAG + IMPORTANT,
-        marginRight: XX_LARGE_MARGIN * -5 + PX_TAG + IMPORTANT,
+        marginRight: XX_LARGE_MARGIN * -5 + PX_TAG + IMPORTANT
       },
 
       xxlMyN1: {
         marginTop: XX_LARGE_MARGIN * -1 + PX_TAG + IMPORTANT,
-        marginBottom: XX_LARGE_MARGIN * -1 + PX_TAG + IMPORTANT,
+        marginBottom: XX_LARGE_MARGIN * -1 + PX_TAG + IMPORTANT
       },
       xxlMyN2: {
         marginTop: XX_LARGE_MARGIN * -2 + PX_TAG + IMPORTANT,
-        marginBottom: XX_LARGE_MARGIN * -2 + PX_TAG + IMPORTANT,
+        marginBottom: XX_LARGE_MARGIN * -2 + PX_TAG + IMPORTANT
       },
       xxlMyN3: {
         marginTop: XX_LARGE_MARGIN * -3 + PX_TAG + IMPORTANT,
-        marginBottom: XX_LARGE_MARGIN * -3 + PX_TAG + IMPORTANT,
+        marginBottom: XX_LARGE_MARGIN * -3 + PX_TAG + IMPORTANT
       },
       xxlMyN4: {
         marginTop: XX_LARGE_MARGIN * -4 + PX_TAG + IMPORTANT,
-        marginBottom: XX_LARGE_MARGIN * -4 + PX_TAG + IMPORTANT,
+        marginBottom: XX_LARGE_MARGIN * -4 + PX_TAG + IMPORTANT
       },
       xxlMyN5: {
         marginTop: XX_LARGE_MARGIN * -5 + PX_TAG + IMPORTANT,
-        marginBottom: XX_LARGE_MARGIN * -5 + PX_TAG + IMPORTANT,
+        marginBottom: XX_LARGE_MARGIN * -5 + PX_TAG + IMPORTANT
       },
 
       /*-------------------------------------------------
@@ -458,7 +458,7 @@ export class XXLargeUtilityStyles extends BaseStyle {
       xxlTextStart: { textAlign: "left" + IMPORTANT },
       xxlTextEnd: { textAlign: "right" + IMPORTANT },
       xxlTextCenter: { textAlign: "center" + IMPORTANT },
-      xxlTextJustify: { textAlign: "justify" + IMPORTANT },
+      xxlTextJustify: { textAlign: "justify" + IMPORTANT }
 
       //NO OTHER SCREEN SIZE SPECIFIC STYLE NEEDED
 

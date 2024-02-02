@@ -24,7 +24,7 @@ export abstract class BaseStyle {
     ) {
       this._theme = {
         ...DEFAULT_THEME,
-        ...(WrappidContext?.themes[WrappidContext?.defaultTheme]?.theme || {}),
+        ...(WrappidContext?.themes[WrappidContext?.defaultTheme]?.theme || {})
       };
     }
   }

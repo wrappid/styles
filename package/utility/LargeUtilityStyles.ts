@@ -5,14 +5,14 @@ import {
   DEFAULT_PADDING,
   DEFAULT_SPACING,
   IMPORTANT,
-  PX_TAG,
+  PX_TAG
 } from "../base/constants";
 
 export const LARGE_MARGIN = DEFAULT_MARGIN;
 export const LARGE_PADDING = DEFAULT_PADDING;
 export const LARGE_SPACING = DEFAULT_SPACING;
 
-export class LargeUtilityStyles extends BaseStyle {
+export default class LargeUtilityStyles extends BaseStyle {
   constructor() {
     super();
     this.style = {
@@ -42,20 +42,20 @@ export class LargeUtilityStyles extends BaseStyle {
       lgJustifyContentCenter: { display: "flex", justifyContent: "center" },
       lgJustifyContentFlexStart: {
         display: "flex",
-        justifyContent: "flex-start",
+        justifyContent: "flex-start"
       },
       lgJustifyContentFlexEnd: { display: "flex", justifyContent: "flex-end" },
       lgJustifyContentSpaceBetween: {
         display: "flex",
-        justifyContent: "space-between",
+        justifyContent: "space-between"
       },
       lgJustifyContentSpaceAround: {
         display: "flex",
-        justifyContent: "space-around",
+        justifyContent: "space-around"
       },
       lgJustifyContentSpaceEvenly: {
         display: "flex",
-        justifyContent: "space-evenly",
+        justifyContent: "space-evenly"
       },
 
       /**************************************************
@@ -125,27 +125,27 @@ export class LargeUtilityStyles extends BaseStyle {
        *************************************************/
       lgObjectFitContain: {
         // -o-object-fit: contain !important;
-        objectFit: "contain",
+        objectFit: "contain"
       },
 
       lgObjectFitCover: {
         // -o-object-fit: cover !important;
-        objectFit: "cover",
+        objectFit: "cover"
       },
 
       lgObjectFitFill: {
         // -o-object-fit: fill !important;
-        objectFit: "fill",
+        objectFit: "fill"
       },
 
       lgObjectFitScale: {
         // -o-object-fit: scale-down !important;
-        objectFit: "scale-down",
+        objectFit: "scale-down"
       },
 
       lgObjectFitNone: {
         // -o-object-fit: none !important;
-        objectFit: "none",
+        objectFit: "none"
       },
 
       /**************************************************
@@ -217,45 +217,45 @@ export class LargeUtilityStyles extends BaseStyle {
       lgPx0: { paddingLeft: 0, paddingRight: 0 },
       lgPx1: {
         paddingLeft: LARGE_PADDING * 1 + PX_TAG,
-        paddingRight: LARGE_PADDING * 1 + PX_TAG,
+        paddingRight: LARGE_PADDING * 1 + PX_TAG
       },
       lgPx2: {
         paddingLeft: LARGE_PADDING * 2 + PX_TAG,
-        paddingRight: LARGE_PADDING * 2 + PX_TAG,
+        paddingRight: LARGE_PADDING * 2 + PX_TAG
       },
       lgPx3: {
         paddingLeft: LARGE_PADDING * 3 + PX_TAG,
-        paddingRight: LARGE_PADDING * 3 + PX_TAG,
+        paddingRight: LARGE_PADDING * 3 + PX_TAG
       },
       lgPx4: {
         paddingLeft: LARGE_PADDING * 4 + PX_TAG,
-        paddingRight: LARGE_PADDING * 4 + PX_TAG,
+        paddingRight: LARGE_PADDING * 4 + PX_TAG
       },
       lgPx5: {
         paddingLeft: LARGE_PADDING * 5 + PX_TAG,
-        paddingRight: LARGE_PADDING * 5 + PX_TAG,
+        paddingRight: LARGE_PADDING * 5 + PX_TAG
       },
 
       lgPy0: { paddingTop: 0, paddingBottom: 0 },
       lgPy1: {
         paddingTop: LARGE_PADDING * 1 + PX_TAG,
-        paddingBottom: LARGE_PADDING * 1 + PX_TAG,
+        paddingBottom: LARGE_PADDING * 1 + PX_TAG
       },
       lgPy2: {
         paddingTop: LARGE_PADDING * 2 + PX_TAG,
-        paddingBottom: LARGE_PADDING * 2 + PX_TAG,
+        paddingBottom: LARGE_PADDING * 2 + PX_TAG
       },
       lgPy3: {
         paddingTop: LARGE_PADDING * 3 + PX_TAG,
-        paddingBottom: LARGE_PADDING * 3 + PX_TAG,
+        paddingBottom: LARGE_PADDING * 3 + PX_TAG
       },
       lgPy4: {
         paddingTop: LARGE_PADDING * 4 + PX_TAG,
-        paddingBottom: LARGE_PADDING * 4 + PX_TAG,
+        paddingBottom: LARGE_PADDING * 4 + PX_TAG
       },
       lgPy5: {
         paddingTop: LARGE_PADDING * 5 + PX_TAG,
-        paddingBottom: LARGE_PADDING * 5 + PX_TAG,
+        paddingBottom: LARGE_PADDING * 5 + PX_TAG
       },
 
       /*-------------------------------------------------
@@ -304,53 +304,53 @@ export class LargeUtilityStyles extends BaseStyle {
       lgMx0: { marginLeft: 0, marginRight: 0 + IMPORTANT },
       lgMx1: {
         marginLeft: LARGE_MARGIN * 1 + PX_TAG + IMPORTANT,
-        marginRight: LARGE_MARGIN * 1 + PX_TAG + IMPORTANT,
+        marginRight: LARGE_MARGIN * 1 + PX_TAG + IMPORTANT
       },
       lgMx2: {
         marginLeft: LARGE_MARGIN * 2 + PX_TAG + IMPORTANT,
-        marginRight: LARGE_MARGIN * 2 + PX_TAG + IMPORTANT,
+        marginRight: LARGE_MARGIN * 2 + PX_TAG + IMPORTANT
       },
       lgMx3: {
         marginLeft: LARGE_MARGIN * 3 + PX_TAG + IMPORTANT,
-        marginRight: LARGE_MARGIN * 3 + PX_TAG + IMPORTANT,
+        marginRight: LARGE_MARGIN * 3 + PX_TAG + IMPORTANT
       },
       lgMx4: {
         marginLeft: LARGE_MARGIN * 4 + PX_TAG + IMPORTANT,
-        marginRight: LARGE_MARGIN * 4 + PX_TAG + IMPORTANT,
+        marginRight: LARGE_MARGIN * 4 + PX_TAG + IMPORTANT
       },
       lgMx5: {
         marginLeft: LARGE_MARGIN * 5 + PX_TAG + IMPORTANT,
-        marginRight: LARGE_MARGIN * 5 + PX_TAG + IMPORTANT,
+        marginRight: LARGE_MARGIN * 5 + PX_TAG + IMPORTANT
       },
       lgMxAuto: {
         marginLeft: "auto" + IMPORTANT,
-        marginRight: "auto" + IMPORTANT,
+        marginRight: "auto" + IMPORTANT
       },
 
       lgMy0: { marginTop: 0, marginBottom: 0 + IMPORTANT },
       lgMy1: {
         marginTop: LARGE_MARGIN * 1 + PX_TAG + IMPORTANT,
-        marginBottom: LARGE_MARGIN * 1 + PX_TAG + IMPORTANT,
+        marginBottom: LARGE_MARGIN * 1 + PX_TAG + IMPORTANT
       },
       lgMy2: {
         marginTop: LARGE_MARGIN * 2 + PX_TAG + IMPORTANT,
-        marginBottom: LARGE_MARGIN * 2 + PX_TAG + IMPORTANT,
+        marginBottom: LARGE_MARGIN * 2 + PX_TAG + IMPORTANT
       },
       lgMy3: {
         marginTop: LARGE_MARGIN * 3 + PX_TAG + IMPORTANT,
-        marginBottom: LARGE_MARGIN * 3 + PX_TAG + IMPORTANT,
+        marginBottom: LARGE_MARGIN * 3 + PX_TAG + IMPORTANT
       },
       lgMy4: {
         marginTop: LARGE_MARGIN * 4 + PX_TAG + IMPORTANT,
-        marginBottom: LARGE_MARGIN * 4 + PX_TAG + IMPORTANT,
+        marginBottom: LARGE_MARGIN * 4 + PX_TAG + IMPORTANT
       },
       lgMy5: {
         marginTop: LARGE_MARGIN * 5 + PX_TAG + IMPORTANT,
-        marginBottom: LARGE_MARGIN * 5 + PX_TAG + IMPORTANT,
+        marginBottom: LARGE_MARGIN * 5 + PX_TAG + IMPORTANT
       },
       lgMyAuto: {
         marginTop: "auto" + IMPORTANT,
-        marginBottom: "auto" + IMPORTANT,
+        marginBottom: "auto" + IMPORTANT
       },
 
       lgMN1: { margin: LARGE_MARGIN * -1 + PX_TAG + IMPORTANT },
@@ -385,44 +385,44 @@ export class LargeUtilityStyles extends BaseStyle {
 
       lgMxN1: {
         marginLeft: LARGE_MARGIN * -1 + PX_TAG + IMPORTANT,
-        marginRight: LARGE_MARGIN * -1 + PX_TAG + IMPORTANT,
+        marginRight: LARGE_MARGIN * -1 + PX_TAG + IMPORTANT
       },
       lgMxN2: {
         marginLeft: LARGE_MARGIN * -2 + PX_TAG + IMPORTANT,
-        marginRight: LARGE_MARGIN * -2 + PX_TAG + IMPORTANT,
+        marginRight: LARGE_MARGIN * -2 + PX_TAG + IMPORTANT
       },
       lgMxN3: {
         marginLeft: LARGE_MARGIN * -3 + PX_TAG + IMPORTANT,
-        marginRight: LARGE_MARGIN * -3 + PX_TAG + IMPORTANT,
+        marginRight: LARGE_MARGIN * -3 + PX_TAG + IMPORTANT
       },
       lgMxN4: {
         marginLeft: LARGE_MARGIN * -4 + PX_TAG + IMPORTANT,
-        marginRight: LARGE_MARGIN * -4 + PX_TAG + IMPORTANT,
+        marginRight: LARGE_MARGIN * -4 + PX_TAG + IMPORTANT
       },
       lgMxN5: {
         marginLeft: LARGE_MARGIN * -5 + PX_TAG + IMPORTANT,
-        marginRight: LARGE_MARGIN * -5 + PX_TAG + IMPORTANT,
+        marginRight: LARGE_MARGIN * -5 + PX_TAG + IMPORTANT
       },
 
       lgMyN1: {
         marginTop: LARGE_MARGIN * -1 + PX_TAG + IMPORTANT,
-        marginBottom: LARGE_MARGIN * -1 + PX_TAG + IMPORTANT,
+        marginBottom: LARGE_MARGIN * -1 + PX_TAG + IMPORTANT
       },
       lgMyN2: {
         marginTop: LARGE_MARGIN * -2 + PX_TAG + IMPORTANT,
-        marginBottom: LARGE_MARGIN * -2 + PX_TAG + IMPORTANT,
+        marginBottom: LARGE_MARGIN * -2 + PX_TAG + IMPORTANT
       },
       lgMyN3: {
         marginTop: LARGE_MARGIN * -3 + PX_TAG + IMPORTANT,
-        marginBottom: LARGE_MARGIN * -3 + PX_TAG + IMPORTANT,
+        marginBottom: LARGE_MARGIN * -3 + PX_TAG + IMPORTANT
       },
       lgMyN4: {
         marginTop: LARGE_MARGIN * -4 + PX_TAG + IMPORTANT,
-        marginBottom: LARGE_MARGIN * -4 + PX_TAG + IMPORTANT,
+        marginBottom: LARGE_MARGIN * -4 + PX_TAG + IMPORTANT
       },
       lgMyN5: {
         marginTop: LARGE_MARGIN * -5 + PX_TAG + IMPORTANT,
-        marginBottom: LARGE_MARGIN * -5 + PX_TAG + IMPORTANT,
+        marginBottom: LARGE_MARGIN * -5 + PX_TAG + IMPORTANT
       },
 
       /*-------------------------------------------------
@@ -455,7 +455,7 @@ export class LargeUtilityStyles extends BaseStyle {
       lgTextStart: { textAlign: "left" + IMPORTANT },
       lgTextEnd: { textAlign: "right" + IMPORTANT },
       lgTextCenter: { textAlign: "center" + IMPORTANT },
-      lgTextJustify: { textAlign: "justify" + IMPORTANT },
+      lgTextJustify: { textAlign: "justify" + IMPORTANT }
 
       //NO OTHER SCREEN SIZE SPECIFIC STYLE NEEDED
 
