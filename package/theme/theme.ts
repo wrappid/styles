@@ -49,8 +49,7 @@ export const DEFAULT_THEME = {
       light       : "#e57373",
       main        : "#f44336",
     },
-    gradient: "linear-gradient(180deg, #ffffff26, #ffffff00))",
-    grey    : {
+    grey: {
       100 : "#f5f5f5",
       200 : "#eeeeee",
       300 : "#e0e0e0",
@@ -76,9 +75,8 @@ export const DEFAULT_THEME = {
     primary: {
       contrastText: "#fff",
       dark        : "#303f9f",
-      
-      light: "#7986cb",
-      main : "#3f51b5",
+      light       : "#7986cb",
+      main        : "#3f51b5",
     },
     secondary: {
       contrastText   : "#fff",

@@ -132,11 +132,6 @@ export default class DefaultUtilityStyles extends BaseStyle {
         backgroundColor: this.theme.palette?.primary?.dark,
         color          : this.theme.palette?.primary?.contrastText + IMPORTANT,
       },
-      bgPrimaryGradient: {
-        backgroundColor: this.theme.palette?.primary?.main,
-        color          : this.theme.palette?.primary?.contrastText + IMPORTANT,
-        backgroundImage: this.theme.palette?.gradient + IMPORTANT,
-      },
 
       bgSecondary: {
         backgroundColor: this.theme.palette?.secondary?.main,
@@ -217,6 +212,18 @@ export default class DefaultUtilityStyles extends BaseStyle {
       bgGreyA200: { backgroundColor: this.theme.palette.grey.A200 },
       bgGreyA400: { backgroundColor: this.theme.palette.grey.A400 },
       bgGreyA700: { backgroundColor: this.theme.palette.grey.A700 },
+
+      /**************************************************
+       * Gradient
+       *************************************************/
+      gradientLinearToBottom     : { backgroundImage: "linear-gradient(#ffffff26, #ffffffff)" },
+      gradientLinearToTop        : { backgroundImage: "linear-gradient(to top, #ffffff26, #ffffffff)" },
+      gradientLinearToRight      : { backgroundImage: "linear-gradient(to right, #ffffff26, #ffffffff)" },
+      gradientLinearToLeft       : { backgroundImage: "linear-gradient(to left, #ffffff26, #ffffffff)" },
+      gradientLinearToBottomRight: { backgroundImage: "linear-gradient(to bottom right, #ffffff26, #ffffffff)" },
+      gradientLinearToBottomLeft : { backgroundImage: "linear-gradient(to bottom left, #ffffff26, #ffffffff)" },
+      gradientLinearToTopRight   : { backgroundImage: "linear-gradient(to top right, #ffffff26, #ffffffff)" },
+      gradientLinearToTopLeft    : { backgroundImage: "linear-gradient(to top left, #ffffff26, #ffffffff)" },
 
       /**************************************************
        * Border
