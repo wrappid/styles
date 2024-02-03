@@ -61,7 +61,7 @@ const UtilityClasses = {
       JUSTIFY_CONTENT_FLEX_END: "smJustifyContentFlexEnd",
       JUSTIFY_CONTENT_SPACE_BETWEEN: "smJustifyContentSpaceBetween",
       JUSTIFY_CONTENT_SPACE_AROUND: "smJustifyContentSpaceAround",
-      JUSTIFY_CONTENT_SPACE_EVENLY: "smJustifyContentSpaceEvenly",
+      JUSTIFY_CONTENT_SPACE_EVENLY: "smJustifyContentSpaceEvenly"
     },
     MD: {
       ALIGN_ITEMS_START: "mdAlignItemsStart",
@@ -89,7 +89,7 @@ const UtilityClasses = {
       JUSTIFY_CONTENT_FLEX_END: "mdJustifyContentFlexEnd",
       JUSTIFY_CONTENT_SPACE_BETWEEN: "mdJustifyContentSpaceBetween",
       JUSTIFY_CONTENT_SPACE_AROUND: "mdJustifyContentSpaceAround",
-      JUSTIFY_CONTENT_SPACE_EVENLY: "mdJustifyContentSpaceEvenly",
+      JUSTIFY_CONTENT_SPACE_EVENLY: "mdJustifyContentSpaceEvenly"
     },
     LG: {
       ALIGN_ITEMS_START: "lgAlignItemsStart",
@@ -117,7 +117,7 @@ const UtilityClasses = {
       JUSTIFY_CONTENT_FLEX_END: "lgJustifyContentFlexEnd",
       JUSTIFY_CONTENT_SPACE_BETWEEN: "lgJustifyContentSpaceBetween",
       JUSTIFY_CONTENT_SPACE_AROUND: "lgJustifyContentSpaceAround",
-      JUSTIFY_CONTENT_SPACE_EVENLY: "lgJustifyContentSpaceEvenly",
+      JUSTIFY_CONTENT_SPACE_EVENLY: "lgJustifyContentSpaceEvenly"
     },
     XL: {
       ALIGN_ITEMS_START: "xlAlignItemsStart",
@@ -145,7 +145,7 @@ const UtilityClasses = {
       JUSTIFY_CONTENT_FLEX_END: "xlJustifyContentFlexEnd",
       JUSTIFY_CONTENT_SPACE_BETWEEN: "xlJustifyContentSpaceBetween",
       JUSTIFY_CONTENT_SPACE_AROUND: "xlJustifyContentSpaceAround",
-      JUSTIFY_CONTENT_SPACE_EVENLY: "xlJustifyContentSpaceEvenly",
+      JUSTIFY_CONTENT_SPACE_EVENLY: "xlJustifyContentSpaceEvenly"
     },
     XXL: {
       ALIGN_ITEMS_START: "xxlAlignItemsStart",
@@ -173,8 +173,8 @@ const UtilityClasses = {
       JUSTIFY_CONTENT_FLEX_END: "xxlJustifyContentFlexEnd",
       JUSTIFY_CONTENT_SPACE_BETWEEN: "xxlJustifyContentSpaceBetween",
       JUSTIFY_CONTENT_SPACE_AROUND: "xxlJustifyContentSpaceAround",
-      JUSTIFY_CONTENT_SPACE_EVENLY: "xxlJustifyContentSpaceEvenly",
-    },
+      JUSTIFY_CONTENT_SPACE_EVENLY: "xxlJustifyContentSpaceEvenly"
+    }
   },
 
   /**************************************************
@@ -222,7 +222,22 @@ const UtilityClasses = {
     BG_GREY_A100: "bgGreyA100",
     BG_GREY_A200: "bgGreyA200",
     BG_GREY_A400: "bgGreyA400",
-    BG_GREY_A700: "bgGreyA700",
+    BG_GREY_A700: "bgGreyA700"
+  },
+  /**************************************************
+   * Gradient
+   *************************************************/
+  GRADIENT: {
+    LINEAR: {
+      TO_BOTTOM: "gradientLinearToBottom",
+      TO_TOP: "gradientLinearToTop",
+      TO_RIGHT: "gradientLinearToRight",
+      TO_LEFT: "gradientLinearToLeft",
+      TO_BOTTOM_RIGHT: "gradientLinearToBottomRight",
+      TO_BOTTOM_LEFT: "gradientLinearToBottomLeft",
+      TO_TOP_RIGHT: "gradientLinearToTopRight",
+      TO_TOP_LEFT: "gradientLinearToTopLeft"
+    }
   },
 
   /**************************************************
@@ -340,7 +355,7 @@ const UtilityClasses = {
     BORDER_STYLE_INSET: "borderInset",
     BORDER_STYLE_OUTSET: "borderOutset",
     BORDER_STYLE_RIDGE: "borderRidge",
-    BORDER_STYLE_SOLID: "borderSolid",
+    BORDER_STYLE_SOLID: "borderSolid"
   },
 
   /**************************************************
@@ -381,7 +396,7 @@ const UtilityClasses = {
     TEXT_OPACITY_25: "textOpacity25",
     TEXT_OPACITY_50: "textOpacity50",
     TEXT_OPACITY_75: "textOpacity75",
-    TEXT_OPACITY_100: "textOpacity100",
+    TEXT_OPACITY_100: "textOpacity100"
   },
 
   /**************************************************
@@ -426,7 +441,7 @@ const UtilityClasses = {
     CURSOR_W_RESIZE: "cursorWResize",
     CURSOR_WAIT: "cursorWait",
     CURSOR_ZOOM_IN: "cursorZoomIn",
-    CURSOR_ZOOM_OUT: "cursorZoomOut",
+    CURSOR_ZOOM_OUT: "cursorZoomOut"
   },
 
   /**************************************************
@@ -454,7 +469,7 @@ const UtilityClasses = {
       TABLE_CELL: "smDisplayTableCell",
       FLEX: "smDisplayFlex",
       INLINE_FLEX: "smDisplayInlineFlex",
-      NONE: "smDisplayNone",
+      NONE: "smDisplayNone"
     },
     MD: {
       INLINE: "mdDisplayInline",
@@ -466,7 +481,7 @@ const UtilityClasses = {
       TABLE_CELL: "mdDisplayTableCell",
       FLEX: "mdDisplayFlex",
       INLINE_FLEX: "mdDisplayInlineFlex",
-      NONE: "mdDisplayNone",
+      NONE: "mdDisplayNone"
     },
     LG: {
       INLINE: "lgDisplayInline",
@@ -478,7 +493,7 @@ const UtilityClasses = {
       TABLE_CELL: "lgDisplayTableCell",
       FLEX: "lgDisplayFlex",
       INLINE_FLEX: "lgDisplayInlineFlex",
-      NONE: "lgDisplayNone",
+      NONE: "lgDisplayNone"
     },
     XL: {
       INLINE: "xlDisplayInline",
@@ -490,7 +505,7 @@ const UtilityClasses = {
       TABLE_CELL: "xlDisplayTableCell",
       FLEX: "xlDisplayFlex",
       INLINE_FLEX: "xlDisplayInlineFlex",
-      NONE: "xlDisplayNone",
+      NONE: "xlDisplayNone"
     },
     XXL: {
       INLINE: "xxlDisplayInline",
@@ -502,8 +517,8 @@ const UtilityClasses = {
       TABLE_CELL: "xxlDisplayTableCell",
       FLEX: "xxlDisplayFlex",
       INLINE_FLEX: "xxlDisplayInlineFlex",
-      NONE: "xxlDisplayNone",
-    },
+      NONE: "xxlDisplayNone"
+    }
   },
 
   /**************************************************
@@ -534,7 +549,7 @@ const UtilityClasses = {
       FLEX_SHRINK_1: "smFlexShrink1",
       FLEX_WRAP_WRAP: "smFlexWrapWrap",
       FLEX_WRAP_NO_WRAP: "smFlexWrapNoWrap",
-      FLEX_WRAP_WRAP_REVERSE: "smFlexWrapWrapReverse",
+      FLEX_WRAP_WRAP_REVERSE: "smFlexWrapWrapReverse"
     },
     MD: {
       DIRECTION_ROW: "mdFlexDirectionRow",
@@ -548,7 +563,7 @@ const UtilityClasses = {
       FLEX_SHRINK_1: "mdFlexShrink1",
       FLEX_WRAP_WRAP: "mdFlexWrapWrap",
       FLEX_WRAP_NO_WRAP: "mdFlexWrapNoWrap",
-      FLEX_WRAP_WRAP_REVERSE: "mdFlexWrapWrapReverse",
+      FLEX_WRAP_WRAP_REVERSE: "mdFlexWrapWrapReverse"
     },
     LG: {
       DIRECTION_ROW: "lgFlexDirectionRow",
@@ -562,7 +577,7 @@ const UtilityClasses = {
       FLEX_SHRINK_1: "lgFlexShrink1",
       FLEX_WRAP_WRAP: "lgFlexWrapWrap",
       FLEX_WRAP_NO_WRAP: "lgFlexWrapNoWrap",
-      FLEX_WRAP_WRAP_REVERSE: "lgFlexWrapWrapReverse",
+      FLEX_WRAP_WRAP_REVERSE: "lgFlexWrapWrapReverse"
     },
     XL: {
       DIRECTION_ROW: "xlFlexDirectionRow",
@@ -576,7 +591,7 @@ const UtilityClasses = {
       FLEX_SHRINK_1: "xlFlexShrink1",
       FLEX_WRAP_WRAP: "xlFlexWrapWrap",
       FLEX_WRAP_NO_WRAP: "xlFlexWrapNoWrap",
-      FLEX_WRAP_WRAP_REVERSE: "xlFlexWrapWrapReverse",
+      FLEX_WRAP_WRAP_REVERSE: "xlFlexWrapWrapReverse"
     },
     XXL: {
       DIRECTION_ROW: "xxlFlexDirectionRow",
@@ -590,8 +605,8 @@ const UtilityClasses = {
       FLEX_SHRINK_1: "xxlFlexShrink1",
       FLEX_WRAP_WRAP: "xxlFlexWrapWrap",
       FLEX_WRAP_NO_WRAP: "xxlFlexWrapNoWrap",
-      FLEX_WRAP_WRAP_REVERSE: "xxlFlexWrapWrapReverse",
-    },
+      FLEX_WRAP_WRAP_REVERSE: "xxlFlexWrapWrapReverse"
+    }
   },
 
   /**************************************************
@@ -605,7 +620,7 @@ const UtilityClasses = {
     MD: { START: "mdFloatStart", END: "mdFloatEnd", NONE: "mdFloatNone" },
     LG: { START: "lgFloatStart", END: "lgFloatEnd", NONE: "lgFloatNone" },
     XL: { START: "xlFloatStart", END: "xlFloatEnd", NONE: "xlFloatNone" },
-    XXL: { START: "xxlFloatStart", END: "xxlFloatEnd", NONE: "xxlFloatNone" },
+    XXL: { START: "xxlFloatStart", END: "xxlFloatEnd", NONE: "xxlFloatNone" }
   },
 
   /**************************************************
@@ -615,12 +630,12 @@ const UtilityClasses = {
     USER_SELECT: {
       ALL: "userSelectAll",
       AUTO: "userSelectAuto",
-      NONE: "userSelectNone",
+      NONE: "userSelectNone"
     },
     POINTER_EVENT: {
       NONE: "peNone",
-      AUTO: "peAuto",
-    },
+      AUTO: "peAuto"
+    }
   },
 
   /**************************************************
@@ -637,36 +652,36 @@ const UtilityClasses = {
       COVER: "smObjectFitCover",
       FILL: "smObjectFitFill",
       SCALE: "smObjectFitScale",
-      NONE: "smObjectFitNone",
+      NONE: "smObjectFitNone"
     },
     MD: {
       CONTAIN: "mdObjectFitContain",
       COVER: "mdObjectFitCover",
       FILL: "mdObjectFitFill",
       SCALE: "mdObjectFitScale",
-      NONE: "mdObjectFitNone",
+      NONE: "mdObjectFitNone"
     },
     LG: {
       CONTAIN: "lgObjectFitContain",
       COVER: "lgObjectFitCover",
       FILL: "lgObjectFitFill",
       SCALE: "lgObjectFitScale",
-      NONE: "lgObjectFitNone",
+      NONE: "lgObjectFitNone"
     },
     XL: {
       CONTAIN: "xlObjectFitContain",
       COVER: "xlObjectFitCover",
       FILL: "xlObjectFitFill",
       SCALE: "xlObjectFitScale",
-      NONE: "xlObjectFitNone",
+      NONE: "xlObjectFitNone"
     },
     XXL: {
       CONTAIN: "xxlObjectFitContain",
       COVER: "xxlObjectFitCover",
       FILL: "xxlObjectFitFill",
       SCALE: "xxlObjectFitScale",
-      NONE: "xxlObjectFitNone",
-    },
+      NONE: "xxlObjectFitNone"
+    }
   },
 
   /**************************************************
@@ -693,7 +708,7 @@ const UtilityClasses = {
     OPACITY_85: "opacity85",
     OPACITY_90: "opacity90",
     OPACITY_95: "opacity95",
-    OPACITY_100: "opacity100",
+    OPACITY_100: "opacity100"
   },
 
   /**************************************************
@@ -711,7 +726,7 @@ const UtilityClasses = {
     OVERFLOW_Y_AUTO: "overflowYAuto",
     OVERFLOW_Y_HIDDEN: "overflowYHidden",
     OVERFLOW_Y_VISIBLE: "overflowYVisible",
-    OVERFLOW_Y_SCROLL: "overflowYScroll",
+    OVERFLOW_Y_SCROLL: "overflowYScroll"
   },
 
   /**************************************************
@@ -747,7 +762,7 @@ const UtilityClasses = {
     FIXED_TOP: "fixedTop",
     FIXED_BOTTOM: "fixedBottom",
     STICKY_TOP: "stickyTop",
-    STICKY_BOTTOM: "stickyBottom",
+    STICKY_BOTTOM: "stickyBottom"
   },
 
   /**************************************************
@@ -757,7 +772,7 @@ const UtilityClasses = {
     NORMAL: "shadow",
     SMALL: "shadowSm",
     LARGE: "shadowLg",
-    NONE: "shadowNone",
+    NONE: "shadowNone"
   },
 
   /**************************************************
@@ -791,7 +806,7 @@ const UtilityClasses = {
     MIN_VW_25: "minVw25",
     MIN_VW_50: "minVw50",
     MIN_VW_75: "minVw75",
-    MIN_VW_100: "minVw100",
+    MIN_VW_100: "minVw100"
   },
 
   /*-------------------------------------------------
@@ -822,7 +837,7 @@ const UtilityClasses = {
     MIN_VH_25: "minVh25",
     MIN_VH_50: "minVh50",
     MIN_VH_75: "minVh75",
-    MIN_VH_100: "minVh100",
+    MIN_VH_100: "minVh100"
   },
 
   /**************************************************
@@ -916,7 +931,7 @@ const UtilityClasses = {
       PY2: "smPy2",
       PY3: "smPy3",
       PY4: "smPy4",
-      PY5: "smPy5",
+      PY5: "smPy5"
     },
     MD: {
       P0: "mdP0",
@@ -960,7 +975,7 @@ const UtilityClasses = {
       PY2: "mdPy2",
       PY3: "mdPy3",
       PY4: "mdPy4",
-      PY5: "mdPy5",
+      PY5: "mdPy5"
     },
     LG: {
       P0: "lgP0",
@@ -1004,7 +1019,7 @@ const UtilityClasses = {
       PY2: "lgPy2",
       PY3: "lgPy3",
       PY4: "lgPy4",
-      PY5: "lgPy5",
+      PY5: "lgPy5"
     },
     XL: {
       P0: "xlP0",
@@ -1048,7 +1063,7 @@ const UtilityClasses = {
       PY2: "xlPy2",
       PY3: "xlPy3",
       PY4: "xlPy4",
-      PY5: "xlPy5",
+      PY5: "xlPy5"
     },
     XXL: {
       P0: "xxlP0",
@@ -1092,8 +1107,8 @@ const UtilityClasses = {
       PY2: "xxlPy2",
       PY3: "xxlPy3",
       PY4: "xxlPy4",
-      PY5: "xxlPy5",
-    },
+      PY5: "xxlPy5"
+    }
   },
 
   /*-------------------------------------------------
@@ -1268,7 +1283,7 @@ const UtilityClasses = {
       MY_N2: "smMyN2",
       MY_N3: "smMyN3",
       MY_N4: "smMyN4",
-      MY_N5: "smMyN5",
+      MY_N5: "smMyN5"
     },
     MD: {
       M0: "mdM0",
@@ -1354,7 +1369,7 @@ const UtilityClasses = {
       MY_N2: "mdMyN2",
       MY_N3: "mdMyN3",
       MY_N4: "mdMyN4",
-      MY_N5: "mdMyN5",
+      MY_N5: "mdMyN5"
     },
     LG: {
       M0: "lgM0",
@@ -1440,7 +1455,7 @@ const UtilityClasses = {
       MY_N2: "lgMyN2",
       MY_N3: "lgMyN3",
       MY_N4: "lgMyN4",
-      MY_N5: "lgMyN5",
+      MY_N5: "lgMyN5"
     },
     XL: {
       M0: "xlM0",
@@ -1526,7 +1541,7 @@ const UtilityClasses = {
       MY_N2: "xlMyN2",
       MY_N3: "xlMyN3",
       MY_N4: "xlMyN4",
-      MY_N5: "xlMyN5",
+      MY_N5: "xlMyN5"
     },
     XXL: {
       M0: "xxlM0",
@@ -1612,8 +1627,8 @@ const UtilityClasses = {
       MY_N2: "xxlMyN2",
       MY_N3: "xxlMyN3",
       MY_N4: "xxlMyN4",
-      MY_N5: "xxlMyN5",
-    },
+      MY_N5: "xxlMyN5"
+    }
   },
 
   /*-------------------------------------------------
@@ -1657,7 +1672,7 @@ const UtilityClasses = {
       COL_GAP_2: "smColGap2",
       COL_GAP_3: "smColGap3",
       COL_GAP_4: "smColGap4",
-      COL_GAP_5: "smColGap5",
+      COL_GAP_5: "smColGap5"
     },
     MD: {
       GAP_0: "mdGap0",
@@ -1677,7 +1692,7 @@ const UtilityClasses = {
       COL_GAP_2: "mdColGap2",
       COL_GAP_3: "mdColGap3",
       COL_GAP_4: "mdColGap4",
-      COL_GAP_5: "mdColGap5",
+      COL_GAP_5: "mdColGap5"
     },
     LG: {
       GAP_0: "lgGap0",
@@ -1697,7 +1712,7 @@ const UtilityClasses = {
       COL_GAP_2: "lgColGap2",
       COL_GAP_3: "lgColGap3",
       COL_GAP_4: "lgColGap4",
-      COL_GAP_5: "lgColGap5",
+      COL_GAP_5: "lgColGap5"
     },
     XL: {
       GAP_0: "xlGap0",
@@ -1717,7 +1732,7 @@ const UtilityClasses = {
       COL_GAP_2: "xlColGap2",
       COL_GAP_3: "xlColGap3",
       COL_GAP_4: "xlColGap4",
-      COL_GAP_5: "xlColGap5",
+      COL_GAP_5: "xlColGap5"
     },
     XXL: {
       GAP_0: "xxlGap0",
@@ -1737,8 +1752,8 @@ const UtilityClasses = {
       COL_GAP_2: "xxlColGap2",
       COL_GAP_3: "xxlColGap3",
       COL_GAP_4: "xxlColGap4",
-      COL_GAP_5: "xxlColGap5",
-    },
+      COL_GAP_5: "xxlColGap5"
+    }
   },
 
   /**************************************************
@@ -1778,32 +1793,32 @@ const UtilityClasses = {
       TEXT_START: "smTextStart",
       TEXT_END: "smTextEnd",
       TEXT_CENTER: "smTextCenter",
-      TEXT_JUSTIFY: "smTextJustify",
+      TEXT_JUSTIFY: "smTextJustify"
     },
     MD: {
       TEXT_START: "mdTextStart",
       TEXT_END: "mdTextEnd",
       TEXT_CENTER: "mdTextCenter",
-      TEXT_JUSTIFY: "mdTextJustify",
+      TEXT_JUSTIFY: "mdTextJustify"
     },
     LG: {
       TEXT_START: "lgTextStart",
       TEXT_END: "lgTextEnd",
       TEXT_CENTER: "lgTextCenter",
-      TEXT_JUSTIFY: "lgTextJustify",
+      TEXT_JUSTIFY: "lgTextJustify"
     },
     XL: {
       TEXT_START: "xlTextStart",
       TEXT_END: "xlTextEnd",
       TEXT_CENTER: "xlTextCenter",
-      TEXT_JUSTIFY: "xlTextJustify",
+      TEXT_JUSTIFY: "xlTextJustify"
     },
     XXL: {
       TEXT_START: "xxlTextStart",
       TEXT_END: "xxlTextEnd",
       TEXT_CENTER: "xxlTextCenter",
-      TEXT_JUSTIFY: "xxlTextJustify",
-    },
+      TEXT_JUSTIFY: "xxlTextJustify"
+    }
   },
 
   /**************************************************
@@ -1815,7 +1830,7 @@ const UtilityClasses = {
     MIDDLE: "alignMiddle",
     BOTTOM: "alignBottom",
     TEXT_BOTTOM: "alignTextBottom",
-    TEXT_TOP: "alignTextTop",
+    TEXT_TOP: "alignTextTop"
   },
 
   /**************************************************
@@ -1823,7 +1838,7 @@ const UtilityClasses = {
    *************************************************/
   VISIBILITY: {
     VISIBLE: "visible",
-    INVISIBLE: "invisible",
+    INVISIBLE: "invisible"
   },
   /**************************************************
    * zindex
@@ -1833,8 +1848,8 @@ const UtilityClasses = {
     Z_0: "z0",
     Z_1: "z1",
     Z_2: "z2",
-    Z_3: "z3",
-  },
+    Z_3: "z3"
+  }
 };
 
 export default UtilityClasses;

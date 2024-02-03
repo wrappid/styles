@@ -71,7 +71,6 @@ export const DEFAULT_THEME = {
       light       : "#64b5f6",
       main        : "#2196f3",
     },
-
     primary: {
       contrastText: "#fff",
       dark        : "#303f9f",
