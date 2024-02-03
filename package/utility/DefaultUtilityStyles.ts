@@ -130,7 +130,7 @@ export default class DefaultUtilityStyles extends BaseStyle {
       },
       bgPrimaryDark: {
         backgroundColor: this.theme.palette?.primary?.dark,
-        color          : this.theme.palette?.primary?.contrastText + IMPORTANT,
+        color          : this.theme.palette?.primary?.contrastText + IMPORTANT
       },
 
       bgSecondary: {

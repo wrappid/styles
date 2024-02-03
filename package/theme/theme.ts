@@ -65,7 +65,6 @@ export const DEFAULT_THEME = {
       A400: "#303030",
       A700: "#616161",
     },
-
     info: {
       contrastText: "#fff",
       dark        : "#1976d2",
