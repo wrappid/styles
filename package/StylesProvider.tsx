@@ -189,8 +189,6 @@ export default function StylesProvider(props: {
     const xxLgStyle = new XXLargeUtilityStyles().style;
     const xxLgScStyle = new XXLargeSCStyles().style;
 
-    
-
     mergedDefaultStyles = {
       ...defaultStyles,
       ...defaultSCStyles,
