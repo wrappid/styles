@@ -75,6 +75,11 @@ export default function StylesProvider(props: {
     const defaultStyles = new DefaultUtilityStyles().style;
     const defaultSCStyles = new DefaultSCStyles().style;
     const defaultCoreStyles = new coreStyles.styles.default().style;
+    const largeCoreStyles = new coreStyles.styles.large().style;
+    const mediumCoreStyles = new coreStyles.styles.medium().style;
+    const smallCoreStyles = new coreStyles.styles.small().style;
+    const xLargeCoreStyles = new coreStyles.styles.xLarge().style;
+    const xxLargeCoreStyles = new coreStyles.styles.xxLarge().style;
 
     console.log(`appStyles=${appStyles}`);
 
@@ -113,31 +118,31 @@ export default function StylesProvider(props: {
     mergedSmallStyles = {
       ...smStyle,
       ...smScStyle,
-      ...coreStyles?.styles?.small,
+      ...smallCoreStyles,
       ...appStyles?.styles?.small,
     };
     mergedMediumStyles = {
       ...mdStyle,
       ...mdScStyle,
-      ...coreStyles?.styles?.medium,
+      ...mediumCoreStyles,
       ...appStyles?.styles?.medium,
     };
     mergedLargeStyles = {
       ...lgStyle,
       ...lgScStyle,
-      ...coreStyles?.styles?.large,
+      ...largeCoreStyles,
       ...appStyles?.styles?.large,
     };
     mergedXLargeStyles = {
       ...xLgStyle,
       ...xLgScStyle,
-      ...coreStyles?.styles?.xLarge,
+      ...xLargeCoreStyles,
       ...appStyles?.styles?.xLarge,
     };
     mergedXXLargeStyles = {
       ...xxLgStyle,
       ...xxLgScStyle,
-      ...coreStyles?.styles?.xxLarge,
+      ...xxLargeCoreStyles,
       ...appStyles?.styles?.xxLarge,
     };
     setStyles({
@@ -159,6 +164,11 @@ export default function StylesProvider(props: {
     const defaultStyles = new DefaultUtilityStyles().style;
     const defaultSCStyles = new DefaultSCStyles().style;
     const defaultCoreStyles = new coreStyles.styles.default().style;
+    const largeCoreStyles = new coreStyles.styles.large().style;
+    const mediumCoreStyles = new coreStyles.styles.medium().style;
+    const smallCoreStyles = new coreStyles.styles.small().style;
+    const xLargeCoreStyles = new coreStyles.styles.xLarge().style;
+    const xxLargeCoreStyles = new coreStyles.styles.xxLarge().style;
 
     console.log(`appStyles=${appStyles}`);
 
@@ -189,33 +199,34 @@ export default function StylesProvider(props: {
     mergedSmallStyles = {
       ...smStyle,
       ...smScStyle,
-      ...coreStyles?.styles?.small,
+      ...smallCoreStyles,
       ...appStyles?.styles?.small,
     };
     mergedMediumStyles = {
       ...mdStyle,
       ...mdScStyle,
-      ...coreStyles?.styles?.medium,
+      ...mediumCoreStyles,
       ...appStyles?.styles?.medium,
     };
     mergedLargeStyles = {
       ...lgStyle,
       ...lgScStyle,
-      ...coreStyles?.styles?.large,
+      ...largeCoreStyles,
       ...appStyles?.styles?.large,
     };
     mergedXLargeStyles = {
       ...xLgStyle,
       ...xLgScStyle,
-      ...coreStyles?.styles?.xLarge,
+      ...xLargeCoreStyles,
       ...appStyles?.styles?.xLarge,
     };
     mergedXXLargeStyles = {
       ...xxLgStyle,
       ...xxLgScStyle,
-      ...coreStyles?.styles?.xxLarge,
+      ...xxLargeCoreStyles,
       ...appStyles?.styles?.xxLarge,
     };
+
     setStyles({
       mergedDefaultStyles,
       mergedLargeStyles,
