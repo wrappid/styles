@@ -1,0 +1,33 @@
+name: Create-Tag
+
+on:
+  workflow_dispatch:
+    inputs:
+      version_type:
+        type: choice
+        description: Choose version bump type
+        options: 
+        - -r major
+        - -r minor
+        - -r patch
+        - -p alpha
+        - -p beta
+        - -p build
+        - -p dev
+        - -p hotfix
+        - -p build
+        required: true
+        default: "-p dev"
+  pull_request:
+    types:
+      - closed
+    branches:
+      - 'development'
+
+jobs:        
+  call-create-tag:
+  # runs-on: ubuntu-latest
+    permissions: write-all
+    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'development')
+    uses: wrappid/workflows/.github/workflows/util-create-tag.yml@main
+    secrets: inherit
