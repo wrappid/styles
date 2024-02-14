@@ -67,6 +67,7 @@
     "source-map-support": "^0.5.21",
     "tslib": "^2.6.2",
     "typescript": "^5.3.3",
-    "license-checker": "^25.0.1"
+    "license-checker": "^25.0.1",
+    "standard-version": "^9.5.0"
   }
 }

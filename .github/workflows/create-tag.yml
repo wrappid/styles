@@ -15,7 +15,6 @@ on:
         - -p build
         - -p dev
         - -p hotfix
-        - -p build
         required: true
         default: "-p dev"
   pull_request:
