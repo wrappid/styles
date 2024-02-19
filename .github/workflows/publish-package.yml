@@ -1,0 +1,29 @@
+name: Publish - CD
+
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Release - CI"]
+    types:
+      - completed
+jobs:
+  call-publish-package:
+      # runs-on: ubuntu-latest
+        permissions: write-all
+        if: github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch'
+        uses: wrappid/workflows/.github/workflows/util-package-publish.yml@main
+        with:
+          EMAIL_NOTIFY: ${{ vars.EMAIL_NOTIFY }}
+          EMAIL_SENDER_NAME: ${{ vars.EMAIL_SENDER_NAME }}
+        secrets:
+          WRAPPID_PUBLISH_TOKEN: ${{ secrets.WRAPPID_PUBLISH_TOKEN }}
+          PAT: ${{ secrets.PAT }}
+          EMAIL_SERVER_ADDRESS: ${{ secrets.EMAIL_SERVER_ADDRESS }}
+          EMAIL_SERVER_PORT: ${{ secrets.EMAIL_SERVER_PORT }}
+          EMAIL_USER_ID: ${{ secrets.EMAIL_USER_ID }}
+          EMAIL_USER_PASSWORD: ${{ secrets.EMAIL_USER_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          EMAIL_CC: ${{ secrets.EMAIL_CC }}       ## Optional
+          EMAIL_BCC: ${{ secrets.EMAIL_BCC }}     ## Optional
+          
+  

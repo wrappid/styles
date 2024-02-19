@@ -11,8 +11,8 @@
     "test": "echo testing not yet implemented",
     "build:old": "npx babel package --out-dir dist --copy-files",
     "build": "npx tsc",
-    "publish": "npm publish ./dist --registry=https://npm.pkg.github.com --scope=@wrappid",
-    "release": "standard-version --bumpFiles ./package.json ./package/package.json ./package-lock.json ./package/package-lock.json"
+    "release": "standard-version --bumpFiles ./package.json ./package/package.json ./package-lock.json ./package/package-lock.json",
+    "publish": "npm publish *.tgz --registry=https://npm.pkg.github.com --scope=@wrappid"
   },
   "repository": {
     "type": "git",

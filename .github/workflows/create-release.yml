@@ -1,39 +1,26 @@
-name: Create-Tag
+name: Release - CI
 
 on:
   workflow_dispatch:
     inputs:
-      version_type:
-        type: choice
-        description: Choose version bump type
-        options: 
-        - -r major
-        - -r minor
-        - -r patch
-        - -p alpha
-        - -p beta
-        - -p build
-        - -p hotfix
-        - -p dev
-        required: true
-        default: "-r patch"
-  pull_request:
-    types:
-      - closed
+      tag-name:
+        type: string
+        description: Enter tag
+    schedule:
+      - cron: "30 16 * * *"
     branches:
       - 'development'
+  repository_dispatch:
 
 jobs:        
-  call-create-tag:
-  # runs-on: ubuntu-latest
+  call-create-app-release:
     permissions: write-all
-    if: github.event_name == 'workflow_dispatch' || (github.event_name == 'pull_request' && github.event.action == 'closed' && github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'development')
-    uses: wrappid/workflows/.github/workflows/util-create-tag.yml@main
+    uses: wrappid/workflows/.github/workflows/util-create-package-release.yml@main
     with:
       GIT_USER_NAME: ${{ vars.GIT_USER_NAME }}
-      VERSION_TYPE_REPOSITORY_DEFAULT: ${{ vars.VERSION_TYPE_REPOSITORY_DEFAULT }}
       EMAIL_NOTIFY: ${{ vars.EMAIL_NOTIFY }}
       EMAIL_SENDER_NAME: ${{ vars.EMAIL_SENDER_NAME }}
+      TOOLKIT_VERSION: ${{ vars.TOOLKIT_VERSION }}
     secrets:
       PAT: ${{ secrets.PAT }}
       GIT_USER_EMAIL: ${{ secrets.GIT_USER_EMAIL }}
