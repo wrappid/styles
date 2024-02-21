@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import { updateTheme } from "./base/BaseStyle";
 import { ThemeManager } from "./base/ThemeManager";
 import { AppStylesContext, ThemeContext } from "./config/contextHandler";
+import { WrappidDataContext } from "./context/WrappidContext";
 import DefaultSCStyles from "./styledComponents/DefaultSCStyles";
 import LargeSCStyles from "./styledComponents/LargeSCStyles";
 import MediumSCStyles from "./styledComponents/MediumSCStyles";
@@ -65,11 +66,12 @@ export default function StylesProvider(props: {
   const { appStyles, coreStyles, children } = props;
   const [styleFiles, setStyles] = useState<any>({});
   const [providerId, setProviderId] = useState<any>(null);
+  const { config, themes, defaultTheme } = React.useContext(WrappidDataContext);
 
   const userTheme = useSelector((state: any) => state?.app?.userTheme);
 
   useEffect(() => {
-    theme = { ...DEFAULT_THEME, ...(userTheme || {}) };
+    theme = { ...DEFAULT_THEME, ...(userTheme || themes && themes[config?.defaultTheme || defaultTheme].theme) };
     updateTheme(theme);
     new ThemeManager().refreshTheme(theme);
     const defaultStyles = new DefaultUtilityStyles().style;
@@ -158,7 +160,7 @@ export default function StylesProvider(props: {
   }, []);
 
   useEffect(() => {
-    theme = { ...DEFAULT_THEME, ...(userTheme || {}) };
+    theme = { ...DEFAULT_THEME, ...(userTheme || themes && themes[config?.defaultTheme || defaultTheme].theme) };
     updateTheme(theme);
     new ThemeManager().refreshTheme(theme);
     const defaultStyles = new DefaultUtilityStyles().style;
