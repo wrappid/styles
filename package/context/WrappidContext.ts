@@ -4,12 +4,12 @@ import { DEFAULT_THEME } from "../theme/theme";
 import { DEFAULT_THEME_TYPES } from "../theme/themeType";
 
 export type WrapidDataType = {
-  config: object;
+  config: object | any;
   themes?: { [key: string]: { name: string; theme: DEFAULT_THEME_TYPES } };
   defaultTheme?: string;
 };
 export const wrappidData: WrapidDataType = {
-  config      : {},
+  config      : { defaultTheme: "WrappidTheme" },
   defaultTheme: "wrappidTheme",
   themes      : { wrappidTheme: { name: "Wrappid Theme", theme: DEFAULT_THEME } },
 };
