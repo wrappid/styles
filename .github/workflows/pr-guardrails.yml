@@ -49,8 +49,8 @@ jobs:
 
       - name: Install commitlint
         run: |
-          npm install --force conventional-changelog-conventionalcommits
-          npm install --force commitlint@latest
+          npm ci
+          npm i conventional-changelog-conventionalcommits@7.0.2
 
       - name: Print versions
         run: |
@@ -90,7 +90,7 @@ jobs:
 
       - name: Install ESLint
         run: |
-          npm install --force eslint
+          npm ci
         env:
           NODE_AUTH_TOKEN: ${{secrets.WRAPPID_REGISTRY_TOKEN}}
 
@@ -104,7 +104,7 @@ jobs:
         id: git_diff
         run: |
           echo Searching for files added/changed in ${{ github.event.pull_request.head.ref }}, since the last commit in ${{ github.event.pull_request.base.ref }}
-          echo "FILES_TO_LINT=$(git diff --name-only ${{ github.event.pull_request.head.sha }}..${{ github.event.pull_request.base.sha }} \*.{js,jsx,ts,tsx} | xargs)" >> $GITHUB_OUTPUT
+          echo "FILES_TO_LINT=$(git diff --name-only --diff-filter=AM ${{ github.event.pull_request.head.sha }}..${{ github.event.pull_request.base.sha }} \*.{js,jsx,ts,tsx} | xargs)" >> $GITHUB_OUTPUT
 
       - name: Run ESLint
         run: |
