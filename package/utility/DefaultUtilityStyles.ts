@@ -118,7 +118,7 @@ export default class DefaultUtilityStyles extends BaseStyle {
        *************************************************/
       bgBlack      : { backgroundColor: "black", color: "white" + IMPORTANT },
       bgWhite      : { backgroundColor: "white", color: "black" + IMPORTANT },
-      bgTransparent: { backgroundColor: "transparent" },
+      bgTransparent: { backgroundColor: "transparent" + IMPORTANT },
 
       bgPrimary: {
         backgroundColor: this.theme?.palette?.primary?.main,
