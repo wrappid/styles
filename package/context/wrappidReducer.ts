@@ -18,7 +18,7 @@ const wrappidReducer = (
     }
 
     case UPDATE_DEFAULT_THEME: {
-      if (typeof payload === "string") {
+      if (typeof payload === "string" && Object.keys(state?.themes || {})?.includes(payload)) {
         return { ...state, defaultTheme: payload };
       } else {
         return state;

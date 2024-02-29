@@ -66,12 +66,12 @@ export default function StylesProvider(props: {
   const { appStyles, coreStyles, children } = props;
   const [styleFiles, setStyles] = useState<any>({});
   const [providerId, setProviderId] = useState<any>(null);
-  const { config, themes, defaultTheme } = React.useContext(WrappidDataContext);
+  const { config, themes } = React.useContext(WrappidDataContext);
 
   const userTheme = useSelector((state: any) => state?.app?.userTheme);
 
   useEffect(() => {
-    theme = { ...DEFAULT_THEME, ...(userTheme || themes && themes[config?.defaultTheme || defaultTheme].theme) };
+    theme = { ...DEFAULT_THEME, ...(userTheme || themes && themes[config?.defaultTheme].theme) };
     updateTheme(theme);
     new ThemeManager().refreshTheme(theme);
     const defaultStyles = new DefaultUtilityStyles().style;
@@ -160,7 +160,7 @@ export default function StylesProvider(props: {
   }, []);
 
   useEffect(() => {
-    theme = { ...DEFAULT_THEME, ...(userTheme || themes && themes[config?.defaultTheme || defaultTheme].theme) };
+    theme = { ...DEFAULT_THEME, ...(userTheme || themes && themes[config?.defaultTheme].theme) };
     updateTheme(theme);
     new ThemeManager().refreshTheme(theme);
     const defaultStyles = new DefaultUtilityStyles().style;
