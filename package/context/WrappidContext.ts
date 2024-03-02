@@ -5,13 +5,15 @@ import { DEFAULT_THEME_TYPES } from "../theme/themeType";
 
 export type WrapidDataType = {
   config: object | any;
+  development: {[key: string]: any}
   pageThemeID: string | undefined;
   themes?: { [key: string]: { name: string; theme: DEFAULT_THEME_TYPES } };
 };
 export const wrappidData: WrapidDataType = {
   config     : { defaultTheme: "WrappidTheme" },
+  development: {},
   pageThemeID: undefined,
-  themes     : { wrappidTheme: { name: "Wrappid Theme", theme: DEFAULT_THEME } },
+  themes     : { wrappidTheme: { name: "Wrappid Theme", theme: DEFAULT_THEME } }
 };
 
 export const WrappidDataContext =

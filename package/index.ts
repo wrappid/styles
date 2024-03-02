@@ -20,7 +20,7 @@ import WrappidContext, {
   WrappidDataContext,
   WrappidDispatchContext
 } from "./context/WrappidContext";
-import { UPDATE_DEFAULT_THEME, UPDATE_PAGE_THEME } from "./context/wrappidReducer";
+import { UPDATE_DEFAULT_THEME, UPDATE_DEVELOPMENT_DATA, UPDATE_PAGE_THEME } from "./context/wrappidReducer";
 import WrappidSyncer from "./context/WrappidSyncer";
 import { getConfigurationObject } from "./helper/helper";
 import StyledComponentsClasses from "./styledComponents/StyledComponentsClasses";
@@ -49,7 +49,8 @@ export {
   /**
    * Style Classes Constants
    */
-  StyledComponentsClasses, StylesProvider, StylesThemesContext, theme, ThemeContext, UPDATE_DEFAULT_THEME, UPDATE_PAGE_THEME,
+  StyledComponentsClasses, StylesProvider, StylesThemesContext, theme, ThemeContext,
+  UPDATE_DEFAULT_THEME, UPDATE_DEVELOPMENT_DATA, UPDATE_PAGE_THEME,
   updateWrappidContext, UserThemeContext,
   /**
    * Utility styles

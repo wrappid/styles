@@ -1,6 +1,7 @@
 import { WrapidDataType, wrappidData } from "./WrappidContext";
 
 export const UPDATE_DATA = "UPDATE_DATA";
+export const UPDATE_DEVELOPMENT_DATA = "UPDATE_DEVELOPMENT_DATA";
 export const RESET_DATA = "RESET_DATA";
 export const UPDATE_DEFAULT_THEME = "UPDATE_DEFAULT_THEME";
 export const UPDATE_PAGE_THEME = "UPDATE_PAGE_THEME";
@@ -13,6 +14,14 @@ const wrappidReducer = (
     case UPDATE_DATA: {
       if (typeof payload === "object") {
         return { ...state, ...payload };
+      } else {
+        return state;
+      }
+    }
+      
+    case UPDATE_DEVELOPMENT_DATA: {
+      if (typeof payload === "object") {
+        return { ...state, development: { ...state.development, ...payload } };
       } else {
         return state;
       }
