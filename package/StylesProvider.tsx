@@ -66,12 +66,21 @@ export default function StylesProvider(props: {
   const { appStyles, coreStyles, children } = props;
   const [styleFiles, setStyles] = useState<any>({});
   const [providerId, setProviderId] = useState<any>(null);
-  const { config, themes, defaultTheme } = React.useContext(WrappidDataContext);
 
-  const userTheme = useSelector((state: any) => state?.app?.userTheme);
+  const [currentTheme, setCurrentTheme] = useState(theme);
+
+  const { themes = {}, pageThemeID } = React.useContext(WrappidDataContext);
+  const { userThemeID } = useSelector((state: any) => state?.app);
 
   useEffect(() => {
-    theme = { ...DEFAULT_THEME, ...(userTheme || themes && themes[config?.defaultTheme || defaultTheme].theme) };
+    if (userThemeID && Object.keys(themes).includes(userThemeID)) {      
+      setCurrentTheme({ ...currentTheme, ...(themes[userThemeID]?.theme || {}) });
+    } else if (pageThemeID && Object.keys(themes).includes(pageThemeID)) {
+      setCurrentTheme({ ...currentTheme, ...(themes[pageThemeID]?.theme || {}) });
+    }
+  }, [themes, userThemeID, pageThemeID]);
+
+  useEffect(() => {
     updateTheme(theme);
     new ThemeManager().refreshTheme(theme);
     const defaultStyles = new DefaultUtilityStyles().style;
@@ -160,7 +169,7 @@ export default function StylesProvider(props: {
   }, []);
 
   useEffect(() => {
-    theme = { ...DEFAULT_THEME, ...(userTheme || themes && themes[config?.defaultTheme || defaultTheme].theme) };
+    theme = { ...theme, ...currentTheme };
     updateTheme(theme);
     new ThemeManager().refreshTheme(theme);
     const defaultStyles = new DefaultUtilityStyles().style;
@@ -238,7 +247,7 @@ export default function StylesProvider(props: {
       mergedXXLargeStyles,
     });
     setProviderId("style-provider" + new Date());
-  }, [userTheme]);
+  }, [currentTheme]);
 
   return theme && providerId ? (
     <AppStylesContext.Provider
