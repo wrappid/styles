@@ -1166,11 +1166,24 @@ export default class DefaultUtilityStyles extends BaseStyle {
       /**************************************************
        * zindex
        *************************************************/
-      zN1: { zIndex: "-1" },
-      z0 : { zIndex: "0" },
-      z1 : { zIndex: "1" },
-      z2 : { zIndex: "2" },
-      z3 : { zIndex: "3" }
+      zN1             : { zIndex: "-1" },
+      z0              : { zIndex: "0" },
+      z1              : { zIndex: "1" },
+      z2              : { zIndex: "2" },
+      z3              : { zIndex: "3" },
+      /**************************************************
+       * Aspect Ratio
+       *************************************************/
+      aspectRatio1By1 : { aspectRatio: "1/1" },
+      aspectRatio16By9: { aspectRatio: "16/9" }, // Mob Tab Web (landscape)
+      aspectRatio9By16: { aspectRatio: "9/16" }, // Mob Tab (potrait)
+      aspectRatio20By9: { aspectRatio: "20/9" }, // Mob (landscape)
+      aspectRatio9By20: { aspectRatio: "9/20" }, // Mob (potrait)
+      aspectRatio3By2 : { aspectRatio: "3/2" }, // Mob Tab (landscape)
+      aspectRatio2By3 : { aspectRatio: "2/3" }, // Mob Tab (potrait)
+      aspectRatio4By3 : { aspectRatio: "4/3" }, // Tab Web (landscape)
+      aspectRatio3By4 : { aspectRatio: "3/4" }, // Tab Web (potrait)
+
     };
   }
 }
