@@ -21,8 +21,7 @@ import WrappidContext, {
   WrappidDispatchContext
 } from "./context/WrappidContext";
 import { UPDATE_DEFAULT_THEME, UPDATE_DEVELOPMENT_DATA, UPDATE_PAGE_THEME } from "./context/wrappidReducer";
-import WrappidSyncer from "./context/WrappidSyncer";
-import { getConfigurationObject } from "./helper/helper";
+import WrappidSyncer, { WrappidData } from "./context/WrappidSyncer";
 import StyledComponentsClasses from "./styledComponents/StyledComponentsClasses";
 import StylesProvider, { theme } from "./StylesProvider";
 import { getEffectiveStyle } from "./StyleUtil";
@@ -37,7 +36,7 @@ import XXLargeUtilityStyles from "./utility/XXLargeUtilityStyles";
 
 export {
   BaseStyle, ConfigProvider,
-  CoreConfigContext, DEFAULT_PADDING, DefaultUtilityStyles, getConfigurationObject,
+  CoreConfigContext, DEFAULT_PADDING, DefaultUtilityStyles,
   /**
    * Utility Function(s)
    */
@@ -59,7 +58,7 @@ export {
   /**
    * Wrappid Context
    */
-  WrappidContext, WrappidDataContext,
+  WrappidContext, WrappidData, WrappidDataContext,
   WrappidDispatchContext, WrappidSyncer, X_LARGE_WINDOW_WIDTH, XLargeUtilityStyles, XX_LARGE_WINDOW_WIDTH, XXLargeUtilityStyles
 };
 
