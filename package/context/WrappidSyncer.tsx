@@ -35,7 +35,6 @@ export default function WrappidSyncer({
       ...data?.themes,
       wrappidTheme: { name: "Wrappid Theme", theme: DEFAULT_THEME },
     };
-    data.defaultTheme = "wrappidTheme";
     updateWrappidContext(data);
     dispatch({ payload: data, type: UPDATE_DATA });
     WrappidData = data;

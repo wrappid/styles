@@ -683,6 +683,20 @@ const UtilityClasses = {
       NONE: "xxlObjectFitNone"
     }
   },
+  /**************************************************
+   * ASPECT_RATIO
+   *************************************************/
+  ASPECT_RATIO: {
+    ASPECT_RATIO_1_1: "aspectRatio1By1",
+    ASPECT_RATIO_16_9: "aspectRatio16By9",
+    ASPECT_RATIO_9_16: "aspectRatio9By16",
+    ASPECT_RATIO_20_9: "aspectRatio20By9",
+    ASPECT_RATIO_9_20: "aspectRatio9By20",
+    ASPECT_RATIO_3_2: "aspectRatio3By2",
+    ASPECT_RATIO_2_3: "aspectRatio2By3",
+    ASPECT_RATIO_4_3: "aspectRatio4By3",
+    ASPECT_RATIO_3_4: "aspectRatio3By4",
+  },
 
   /**************************************************
    * Opacity

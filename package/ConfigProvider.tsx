@@ -22,5 +22,7 @@ export default function ConfigProvider(props: any) {
     <CoreConfigContext.Provider key={providerId} value={customConfig}>
       {props.children}
     </CoreConfigContext.Provider>
-  ) : null;
+  ) : (
+    props.children
+  );
 }

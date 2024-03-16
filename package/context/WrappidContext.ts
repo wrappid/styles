@@ -24,7 +24,6 @@ export type WrapidDataType = {
   development: {[key: string]: any}
   pageThemeID: string | undefined;
   themes?: { [key: string]: { name: string; theme: DEFAULT_THEME_TYPES } };
-  defaultTheme?: string;
 };
 export const wrappidData: WrapidDataType = {
   config     : { defaultTheme: "WrappidTheme", environment: "devlopment", platform: "web" },
