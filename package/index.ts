@@ -1,9 +1,9 @@
 import { BaseStyle } from "./base/BaseStyle";
-import { IMPORTANT, PX_TAG, DEFAULT_PADDING } from "./base/constants";
+import { DEFAULT_PADDING, IMPORTANT, PX_TAG } from "./base/constants";
 import {
-  SMALL_WINDOW_WIDTH,
-  MEDIUM_WINDOW_WIDTH,
   LARGE_WINDOW_WIDTH,
+  MEDIUM_WINDOW_WIDTH,
+  SMALL_WINDOW_WIDTH,
   X_LARGE_WINDOW_WIDTH,
   XX_LARGE_WINDOW_WIDTH
 } from "./config/constants";
@@ -21,8 +21,7 @@ import WrappidContext, {
   WrappidDispatchContext
 } from "./context/WrappidContext";
 import { UPDATE_DEFAULT_THEME } from "./context/wrappidReducer";
-import WrappidSyncer from "./context/WrappidSyncer";
-import { getConfigurationObject } from "./helper/helper";
+import WrappidSyncer, { WrappidData } from "./context/WrappidSyncer";
 import StyledComponentsClasses from "./styledComponents/StyledComponentsClasses";
 import StylesProvider, { theme } from "./StylesProvider";
 import { getEffectiveStyle } from "./StyleUtil";
@@ -36,54 +35,27 @@ import XLargeUtilityStyles from "./utility/XLargeUtilityStyles";
 import XXLargeUtilityStyles from "./utility/XXLargeUtilityStyles";
 
 export {
+  BaseStyle, ConfigProvider,
+  CoreConfigContext, DEFAULT_PADDING, DefaultUtilityStyles,
   /**
-   * Wrappid Context
+   * Utility Function(s)
    */
-  WrappidContext,
-  WrappidSyncer,
-  updateWrappidContext,
-  resetWrappidContext,
-  WrappidDataContext,
-  WrappidDispatchContext,
-  UPDATE_DEFAULT_THEME,
-
+  getEffectiveStyle, IMPORTANT, LARGE_WINDOW_WIDTH, LargeUtilityStyles, MEDIUM_WINDOW_WIDTH, MediumUtilityStyles, overrideThemeConfiguration, PX_TAG, resetWrappidContext,
+  /**
+   * Window Width Constants
+   */
+  SMALL_WINDOW_WIDTH, SmallUtilityStyles,
+  /**
+   * Style Classes Constants
+   */
+  StyledComponentsClasses, StylesProvider, StylesThemesContext, theme, ThemeContext, UPDATE_DEFAULT_THEME, updateWrappidContext, UserThemeContext,
   /**
    * Utility styles
    */
   UtilityClasses,
-  BaseStyle,
-  DefaultUtilityStyles,
-  SmallUtilityStyles,
-  MediumUtilityStyles,
-  LargeUtilityStyles,
-  XLargeUtilityStyles,
-  XXLargeUtilityStyles,
   /**
-   * Style Classes Constants
+   * Wrappid Context
    */
-  StyledComponentsClasses,
-  /**
-   * Utility Function(s)
-   */
-  getEffectiveStyle,
-  /**
-   * Window Width Constants
-   */
-  SMALL_WINDOW_WIDTH,
-  MEDIUM_WINDOW_WIDTH,
-  LARGE_WINDOW_WIDTH,
-  X_LARGE_WINDOW_WIDTH,
-  XX_LARGE_WINDOW_WIDTH,
-  overrideThemeConfiguration,
-  StylesProvider,
-  ConfigProvider,
-  CoreConfigContext,
-  getConfigurationObject,
-  DEFAULT_PADDING,
-  PX_TAG,
-  IMPORTANT,
-  theme,
-  StylesThemesContext,
-  ThemeContext,
-  UserThemeContext
+  WrappidContext, WrappidData, WrappidDataContext, WrappidDispatchContext, WrappidSyncer, X_LARGE_WINDOW_WIDTH, XLargeUtilityStyles, XX_LARGE_WINDOW_WIDTH, XXLargeUtilityStyles
 };
+

@@ -3,15 +3,34 @@ import React, { type Dispatch } from "react";
 import { DEFAULT_THEME } from "../theme/theme";
 import { DEFAULT_THEME_TYPES } from "../theme/themeType";
 
+type WrappidConfigDatatype = {
+  environment: string;
+  platform: string;
+  defaultRoute?: string;
+  defaultAuthenticatedRoute?: string;
+  defaultLayout?: string;
+  defaultAuthenticatedLayout?: string;
+  defaultTheme?: string;
+  backendUrl?: string;
+  webUrl?: string;
+  drawerWidth?: number;
+  miniDrawerWidth?: number;
+  snackMessage?: boolean;
+  otpLength?: number;
+};
+
 export type WrapidDataType = {
-  config: object | any;
+  config: WrappidConfigDatatype;
+  development: {[key: string]: any}
+  pageThemeID: string | undefined;
   themes?: { [key: string]: { name: string; theme: DEFAULT_THEME_TYPES } };
   defaultTheme?: string;
 };
 export const wrappidData: WrapidDataType = {
-  config      : { defaultTheme: "WrappidTheme" },
-  defaultTheme: "wrappidTheme",
-  themes      : { wrappidTheme: { name: "Wrappid Theme", theme: DEFAULT_THEME } },
+  config     : { defaultTheme: "WrappidTheme", environment: "devlopment", platform: "web" },
+  development: {},
+  pageThemeID: undefined,
+  themes     : { wrappidTheme: { name: "Wrappid Theme", theme: DEFAULT_THEME } }
 };
 
 export const WrappidDataContext =
