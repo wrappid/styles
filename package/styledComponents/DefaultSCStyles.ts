@@ -136,8 +136,7 @@ export default class DefaultSCStyles extends BaseStyle {
       scNavigationTabs: {},
       scNavigationLink: {
         color     : this.theme.palette?.primary?.main + IMPORTANT,
-        fontWeight: 500 + IMPORTANT,
-        fontSize  : "0.812rem" + IMPORTANT
+        fontWeight: 500 + IMPORTANT
       },
       scNavigationMenuItem  : {},
       scNavigationMenuList  : {},
