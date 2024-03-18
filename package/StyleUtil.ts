@@ -5,7 +5,7 @@ import {
   XX_LARGE_WINDOW_WIDTH,
   X_LARGE_WINDOW_WIDTH
 } from "./config/constants";
-import { getConfigurationObject } from "./helper/helper";
+import { WrappidData } from "./context/WrappidSyncer";
 import { getMergedStyles } from "./StylesProvider";
 import UtilityClasses from "./utility/UtilityClasses";
 
@@ -39,12 +39,12 @@ const sanitizeClassNames = (classNames: string[]): string[] => {
 };
 
 export function addFlavor(styleObject: any) {
-  const config = getConfigurationObject();
+  const { config } = WrappidData;
 
   /**
    * @todo web cannot be go in else block
    */
-  if (config?.wrappid?.platform === "mobile") {
+  if (config?.platform === "mobile") {
     const newStyleObject = <any>{};
     const keys = Object.keys(styleObject);
 
@@ -128,11 +128,11 @@ export function getEffectiveStyle(classNames: any[]) {
   const mergedXLargeStyles = styles?.mergedXLargeStyles;
   const mergedXXLargeStyles = styles?.mergedXXLargeStyles;
 
-  const config = getConfigurationObject();
+  const { config } = WrappidData;
 
   classNames = sanitizeClassNames(classNames);
 
-  if (config?.wrappid?.environment === "development") {
+  if (config?.environment === "development") {
     classNames.push(UtilityClasses.DEV_BORDER);
   }
 

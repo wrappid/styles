@@ -1,130 +1,98 @@
 #!/usr/bin/env node
-/* eslint-disable import/order */
-/* eslint-disable no-console */
-// eslint-disable-next-line no-undef
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const fs = require("fs");
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const path = require("path");
 
-// eslint-disable-next-line no-undef
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const licenseChecker = require("license-checker");
 
-// eslint-disable-next-line no-undef, no-var
-const fileSystem = require("fs");
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const packageJson = require("../package.json");
 
 /**
- * @todo
- * 
- * need to use content directly without the below command
- * license-checker --json --out attributions.json
- * 
-<details>
-<summary>packageName@version</summary>
-
-#### Basic details about the package
->|Key|Value|
->|:--|:--|
->|**Name**|packageName|
->|**Version**|0.0.402|
->|**Repository**|https://github.com/wrappid/core|
->|**Licenses**|MIT|
->|**Publisher**|Wrappid Framework|
->|**Contact**|wrappid.framework@gmail.com|
->|**Homepage**|https://github.com/wrappid|
-
-#### Use this package in your project
-```bash
-npm i @wrappid/core
-```
-</details>
- */
-
-/**
- * @todo
- * 1. get license of the used package using license-checker
- * 2. convert the content to .md
+ * Generate ATTRIBUTIONS.md file listing third-party dependencies and their licenses.
  */
 
 try {
   // eslint-disable-next-line no-undef
-  let packagePath = path.join(__dirname, "./../");
+  const packagePath = path.join(__dirname, "./../");
   // eslint-disable-next-line no-undef
-  let attributionMdPath = path.join(__dirname, "./../ATTRIBUTIONS.md");
+  const attributionMdPath = path.join(__dirname, "./../ATTRIBUTIONS.md");
+
+  // Attribution header
+  const attributionHeader = `
+## ATTRIBUTIONS
+
+This file lists the third-party libraries, frameworks, and other components used in the ${packageJson?.name} repository,
+along with their respective licenses.   
+It is important to comply with the licensing terms of these components when using the code
+\n`;
 
   licenseChecker.init({ start: packagePath }, function(err, packages) {
     if (err) {
-      //Handle error
       throw err;
     } else {
-      // eslint-disable-next-line no-console
-      // console.log(packages);
-      
-      /**
-       * @todo
-       * 1. convert to markdown
-       */
-      let markdownContent = "";
+      let markdownContent = attributionHeader + generateMarkdown(packages);
 
-      markdownContent += Object.keys(packages).map((packageKey) => {
-        return convertJsonToMDFormat(packageKey, packages[packageKey]);
-      }).join("\n");
-      // eslint-disable-next-line etc/no-commented-out-code
-      console.log(markdownContent);
-      fileSystem.writeFileSync(attributionMdPath, markdownContent);
+      fs.writeFileSync(attributionMdPath, markdownContent);
+      console.log("ATTRIBUTIONS.md file generated successfully.");
     }
   });
 } catch (error) {
-  // eslint-disable-next-line no-console
-  console.error("Something went wrong, please re-run `npm run attributions:gen`");
-  // eslint-disable-next-line no-console
+  console.error("An error occurred while generating ATTRIBUTIONS.md file.");
   console.error(error);
 }
 
 /**
- * 
- * @param {*} attributionJSON 
- * @returns 
+ * Convert JSON data to markdown format.
+ * @param {object} packages - JSON object containing package information.
+ * @returns {string} Markdown content.
  */
-const convertJsonToMDFormat = (packageName, packageInfo) => {
-  let mdContent = "";
+function generateMarkdown(packages) {
+  let markdownContent = "";
 
-  let {
-    licenses,
-    repository,
-    publisher,
-    url,
-    // path,
-    licenseFile,
-    email
+  Object.keys(packages).forEach(packageName => {
+    markdownContent += convertJsonToMDFormat(packageName, packages[packageName]);
+  });
+
+  return markdownContent;
+}
+
+/**
+ * Convert package information to markdown format.
+ * @param {string} packageName - Name of the package.
+ * @param {object} packageInfo - Information about the package.
+ * @returns {string} Markdown content.
+ */
+function convertJsonToMDFormat(packageName, packageInfo) {
+  const {
+    licenses, repository, publisher, url, licenseFile, email 
   } = packageInfo;
 
-  const extractedNumbers = packageName.match(/[0-9.]+/g);
-  let packageVersion = "";
+  const packageVersion = packageName.match(/[0-9.]+/g)?.join("") || "NA";
 
-  if (extractedNumbers) {
-    packageVersion = extractedNumbers.join("");
+  const extractPackageName = packageName => packageName.substring(0, packageName.lastIndexOf("@")).replace("@", "");
 
-    // eslint-disable-next-line etc/no-commented-out-code
-    // console.log(packageVersion);
-  }
+  return `
+<details>
+<summary>${packageName}</summary>
 
-  mdContent = `<details>
-  <summary>${packageName}</summary>
-  
-  #### Basic details about the package
-  >|Key|Value|
-  >|:--|:--|
-  >|**Name**|${packageName || "NA"}|
-  >|**Version**|${"@" + packageVersion || "NA"}|
-  >|**Repository**|${repository || "NA"}|
-  >|**Licenses**|${licenses || "NA"}|
-  >|**Publisher**|${publisher || "NA"}|
-  >|**Contact**|${email || "NA"}|
-  >|**Homepage**|${url || "NA"}|
-  
-  #### Use this package in your project
-  \`\`\`bash
-  npm i ${packageName}
-  \`\`\`
-  </details>`;
+#### Basic details about the package
+>| Key | Value |
+>| --- | --- |
+>| **Name** | ${extractPackageName(packageName) || "NA"} |
+>| **Version** | ${packageVersion} |
+>| **Repository** | ${repository || "NA"} |
+>| **Licenses** | [${licenses || "NA"}](${licenseFile}) |
+>| **Publisher** | ${publisher || "NA"} |
+>| **Contact** | ${email || "NA"} |
+>| **Homepage** | ${url || "NA"} |
 
-  return mdContent;
-}; 
+#### Use this package in your project
+\`\`\`bash
+npm i ${packageName}
+\`\`\`
+</details>
+`;
+}

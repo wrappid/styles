@@ -1,5 +1,7 @@
 import React from "react";
 
+// eslint-disable-next-line import/order
+import { DEFAULT_THEME } from "../theme/theme";
 import {
   updateWrappidContext,
   WrapidDataType,
@@ -8,7 +10,8 @@ import {
   WrappidDispatchContext
 } from "./WrappidContext";
 import wrappidReducer, { UPDATE_DATA } from "./wrappidReducer";
-import { DEFAULT_THEME } from "../theme/theme";
+
+export let WrappidData: WrapidDataType = { ...wrappidData };
 
 export default function WrappidSyncer({
   children,
@@ -34,6 +37,7 @@ export default function WrappidSyncer({
     };
     updateWrappidContext(data);
     dispatch({ payload: data, type: UPDATE_DATA });
+    WrappidData = data;
   }, [data]);
 
   React.useEffect(() => {
