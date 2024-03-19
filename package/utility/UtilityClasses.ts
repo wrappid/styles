@@ -696,6 +696,10 @@ const UtilityClasses = {
     ASPECT_RATIO_2_3: "aspectRatio2By3",
     ASPECT_RATIO_4_3: "aspectRatio4By3",
     ASPECT_RATIO_3_4: "aspectRatio3By4",
+    ASPECT_RATIO_25_9: "aspectRatio25By9",
+    ASPECT_RATIO_9_25: "aspectRatio9By25",
+    ASPECT_RATIO_21_9: "aspectRatio21By9",
+    ASPECT_RATIO_9_21: "aspectRatio9By21"
   },
 
   /**************************************************

@@ -77,7 +77,7 @@ export default class DefaultSCStyles extends BaseStyle {
        *************************************************/
       scFeedbackAlert            : {},
       scFeedbackBackdrop         : {
-        zIndex: 1202 + IMPORTANT,
+        zIndex         : 1202 + IMPORTANT,
         backgroundColor:
           this.theme.palette?.secondary?.transparentDark + IMPORTANT
       },
