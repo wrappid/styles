@@ -1,15 +1,15 @@
 /* eslint-disable sort-keys-fix/sort-keys-fix */
 import { BaseStyle } from "../base/BaseStyle";
 import {
-  DEFAULT_PADDING,
-  IMPORTANT,
-  PX_TAG,
-  DEFAULT_MARGIN,
-  DEFAULT_SPACING,
   DEFAULT_BORDER,
   DEFAULT_BORDER_RADIUS,
   DEFAULT_BORDER_WIDTH,
-  DEFAULT_SHADOW_COLOR_RGB
+  DEFAULT_MARGIN,
+  DEFAULT_PADDING,
+  DEFAULT_SHADOW_COLOR_RGB,
+  DEFAULT_SPACING,
+  IMPORTANT,
+  PX_TAG
 } from "../base/constants";
 
 export default class DefaultUtilityStyles extends BaseStyle {
@@ -1183,7 +1183,10 @@ export default class DefaultUtilityStyles extends BaseStyle {
       aspectRatio2By3 : { aspectRatio: "2/3" }, // Mob Tab (potrait)
       aspectRatio4By3 : { aspectRatio: "4/3" }, // Tab Web (landscape)
       aspectRatio3By4 : { aspectRatio: "3/4" }, // Tab Web (potrait)
-
+      aspectRatio21By9: { aspectRatio: "21/9" }, // Galaxy Fold Web Folded (landscape)
+      aspectRatio9By21: { aspectRatio: "9/21" }, // Galaxy Fold Web Folded (potrait)
+      aspectRatio25By9: { aspectRatio: "25/9" }, // Galaxy Fold Web (landscape)
+      aspectRatio9By25: { aspectRatio: "9/25" }, // Galaxy Fold Web (potrait)
     };
   }
 }
