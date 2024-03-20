@@ -24,28 +24,30 @@ export type WrapidDataType = {
   development: {[key: string]: any}
   pageThemeID: string | undefined;
   themes?: { [key: string]: { name: string; theme: DEFAULT_THEME_TYPES } };
+  modules?: {[key: string]: {[key: string]: any}};
 };
-export const wrappidData: WrapidDataType = {
+export const wrappidInitialData: WrapidDataType = {
   config     : { defaultTheme: "WrappidTheme", environment: "devlopment", platform: "web" },
   development: {},
+  modules    : {},
   pageThemeID: undefined,
   themes     : { wrappidTheme: { name: "Wrappid Theme", theme: DEFAULT_THEME } }
 };
 
 export const WrappidDataContext =
-  React.createContext<WrapidDataType>(wrappidData);
+  React.createContext<WrapidDataType>(wrappidInitialData);
 
 export const WrappidDispatchContext = React.createContext<
   Dispatch<{ type: string; payload: object | string }>
 >(() => null);
 
-const WrappidContext = { ...wrappidData };
+const WrappidContext = { ...wrappidInitialData };
 
-export const updateWrappidContext = (value: object) => {
+export const updateWrappidContext = (value: WrapidDataType) => {
   Object.assign(WrappidContext, value);
 };
 export const resetWrappidContext = () => {
-  Object.assign(WrappidContext, {});
+  Object.assign(WrappidContext, wrappidInitialData);
 };
 
 export default WrappidContext;

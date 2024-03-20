@@ -48,6 +48,7 @@ export default function WrappidSyncer({
     console.log(wrappidReducerState);
 
     updateWrappidContext(wrappidReducerState);
+    WrappidData = wrappidReducerState;
   }, [wrappidReducerState]);
 
   return (
