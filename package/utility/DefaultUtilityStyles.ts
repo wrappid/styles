@@ -213,6 +213,12 @@ export default class DefaultUtilityStyles extends BaseStyle {
       bgGreyA400: { backgroundColor: this.theme.palette.grey.A400 },
       bgGreyA700: { backgroundColor: this.theme.palette.grey.A700 },
 
+      bgDottedGrid1: { backgroundSize: DEFAULT_SPACING + PX_TAG + " " + DEFAULT_SPACING + PX_TAG, backgroundImage: "radialGradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px)" },
+      bgDottedGrid2: { backgroundSize: DEFAULT_SPACING * 2 + PX_TAG + " " + DEFAULT_SPACING * 2 + PX_TAG, backgroundImage: "radialGradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px)" },
+      bgDottedGrid3: { backgroundSize: DEFAULT_SPACING * 3 + PX_TAG + " " + DEFAULT_SPACING * 3 + PX_TAG, backgroundImage: "radialGradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px)" },
+      bgDottedGrid4: { backgroundSize: DEFAULT_SPACING * 4 + PX_TAG + " " + DEFAULT_SPACING * 4 + PX_TAG, backgroundImage: "radialGradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px)" },
+      bgDottedGrid5: { backgroundSize: DEFAULT_SPACING * 5 + PX_TAG + " " + DEFAULT_SPACING * 5 + PX_TAG, backgroundImage: "radialGradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px)" },
+
       /**************************************************
        * Gradient
        *************************************************/
@@ -701,6 +707,50 @@ export default class DefaultUtilityStyles extends BaseStyle {
       end0  : { right: "0" },
       end50 : { right: "50%" },
       end100: { right: "100%" },
+      
+      rotateX15 : { transform: "rotateX(15deg)" },
+      rotateX30 : { transform: "rotateX(30deg)" },
+      rotateX45 : { transform: "rotateX(45deg)" },
+      rotateX60 : { transform: "rotateX(60deg)" },
+      rotateX75 : { transform: "rotateX(75deg)" },
+      rotateX90 : { transform: "rotateX(90deg)" },
+      rotateX120: { transform: "rotateX(120deg)" },
+      rotateX145: { transform: "rotateX(145deg)" },
+      rotateX180: { transform: "rotateX(180deg)" },
+      rotateX270: { transform: "rotateX(270deg)" },
+      
+      rotateXN15 : { transform: "rotateX(-15deg)" },
+      rotateXN30 : { transform: "rotateX(-30deg)" },
+      rotateXN45 : { transform: "rotateX(-45deg)" },
+      rotateXN60 : { transform: "rotateX(-60deg)" },
+      rotateXN75 : { transform: "rotateX(-75deg)" },
+      rotateXN90 : { transform: "rotateX(-90deg)" },
+      rotateXN120: { transform: "rotateX(-120deg)" },
+      rotateXN145: { transform: "rotateX(-145deg)" },
+      rotateXN180: { transform: "rotateX(-180deg)" },
+      rotateXN270: { transform: "rotateX(-270deg)" },
+
+      rotateY15 : { transform: "rotateY(15deg)" },
+      rotateY30 : { transform: "rotateY(30deg)" },
+      rotateY45 : { transform: "rotateY(45deg)" },
+      rotateY60 : { transform: "rotateY(60deg)" },
+      rotateY75 : { transform: "rotateY(75deg)" },
+      rotateY90 : { transform: "rotateY(90deg)" },
+      rotateY120: { transform: "rotateY(120deg)" },
+      rotateY145: { transform: "rotateY(145deg)" },
+      rotateY180: { transform: "rotateY(180deg)" },
+      rotateY270: { transform: "rotateY(270deg)" },
+    
+      rotateYN15 : { transform: "rotateY(-15deg)" },
+      rotateYN30 : { transform: "rotateY(-30deg)" },
+      rotateYN45 : { transform: "rotateY(-45deg)" },
+      rotateYN60 : { transform: "rotateY(-60deg)" },
+      rotateYN75 : { transform: "rotateY(-75deg)" },
+      rotateYN90 : { transform: "rotateY(-90deg)" },
+      rotateYN120: { transform: "rotateY(-120deg)" },
+      rotateYN145: { transform: "rotateY(-145deg)" },
+      rotateYN180: { transform: "rotateY(-180deg)" },
+      rotateYN270: { transform: "rotateY(-270deg)" },
 
       translateMiddle : { transform: "translate(-50%, -50%)" },
       translateMiddleX: { transform: "translateX(-50%)" },
