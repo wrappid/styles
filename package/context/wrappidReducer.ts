@@ -1,4 +1,4 @@
-import { WrapidDataType, wrappidData } from "./WrappidContext";
+import { WrapidDataType, wrappidInitialData } from "./WrappidContext";
 
 export const UPDATE_DATA = "UPDATE_DATA";
 export const UPDATE_DEVELOPMENT_DATA = "UPDATE_DEVELOPMENT_DATA";
@@ -10,7 +10,7 @@ export const UPDATE_MODULE_DATA = "UPDATE_MODULE_DATA";
 export type PayloadType = any;
 
 const wrappidReducer = (
-  state: WrapidDataType = wrappidData,
+  state: WrapidDataType = wrappidInitialData,
   { type, payload }: { type: string; payload: PayloadType }
 ) => {
   switch (type) {
@@ -74,7 +74,7 @@ const wrappidReducer = (
     }
 
     case RESET_DATA: {
-      return wrappidData;
+      return wrappidInitialData;
     }
 
     default: {
