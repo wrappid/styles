@@ -5,10 +5,13 @@ export const UPDATE_DEVELOPMENT_DATA = "UPDATE_DEVELOPMENT_DATA";
 export const RESET_DATA = "RESET_DATA";
 export const UPDATE_DEFAULT_THEME = "UPDATE_DEFAULT_THEME";
 export const UPDATE_PAGE_THEME = "UPDATE_PAGE_THEME";
+export const UPDATE_MODULE_DATA = "UPDATE_MODULE_DATA";
+
+export type PayloadType = any;
 
 const wrappidReducer = (
   state: WrapidDataType = wrappidData,
-  { type, payload }: { type: string; payload: object | string }
+  { type, payload }: { type: string; payload: PayloadType }
 ) => {
   switch (type) {
     case UPDATE_DATA: {
@@ -43,12 +46,40 @@ const wrappidReducer = (
       }
     }
 
+    case UPDATE_MODULE_DATA: {
+      if (typeof payload === "object"
+        && Object.prototype.hasOwnProperty.call(payload, "module")
+        && Object.prototype.hasOwnProperty.call(payload, "data")) {
+        const { module, data }: { module: string; data: { [key: string]: any; }; } = payload;
+        const modules: {[key: string]: {[key: string]: any;}}  = <{[key: string]: {[key: string]: any;}}>state.modules;
+        
+        let moduleData = { ...data };
+
+        if (Object.keys(modules).length > 0
+          && Object.prototype.hasOwnProperty.call(modules, module)
+          && Object.keys(modules[module]).length > 0) {
+          moduleData = { ...modules[module], ...moduleData };
+        }
+
+        return {
+          ...state,
+          modules: {
+            ...modules,
+            [module]: moduleData
+          }
+        };
+      } else {
+        return state;
+      }
+    }
+
     case RESET_DATA: {
       return wrappidData;
     }
 
     default: {
-      throw Error(`Unknown action type: ${type}`);
+      console.error(`Unknown action type: ${type}`);
+      return state;
     }
   }
 };
