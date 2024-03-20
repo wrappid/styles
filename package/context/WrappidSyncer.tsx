@@ -3,15 +3,15 @@ import React from "react";
 // eslint-disable-next-line import/order
 import { DEFAULT_THEME } from "../theme/theme";
 import {
-  updateWrappidContext,
   WrapidDataType,
-  wrappidData,
   WrappidDataContext,
-  WrappidDispatchContext
+  WrappidDispatchContext,
+  updateWrappidContext,
+  wrappidInitialData
 } from "./WrappidContext";
 import wrappidReducer, { UPDATE_DATA } from "./wrappidReducer";
 
-export let WrappidData: WrapidDataType = { ...wrappidData };
+export let WrappidData: WrapidDataType = { ...wrappidInitialData };
 
 export default function WrappidSyncer({
   children,
@@ -22,7 +22,7 @@ export default function WrappidSyncer({
 }) {
   const [wrappidReducerState, dispatch] = React.useReducer(
     wrappidReducer,
-    wrappidData
+    wrappidInitialData
   );
 
   React.useEffect(() => {
