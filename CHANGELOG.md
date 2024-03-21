@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.139](https://github.com/wrappid/styles/compare/v0.0.138...v0.0.139) (2024-03-21)
+
+
+### Bug Fixes
+
+* **core:** :bug: bug fixed for bg dotted background styles and a text styles css ([caec533](https://github.com/wrappid/styles/commit/caec53349348798a93ec050b912299398d5a6d9f)), closes [#72](https://github.com/wrappid/styles/issues/72)
+
 ### [0.0.138](https://github.com/wrappid/styles/compare/v0.0.137...v0.0.138) (2024-03-20)
 
 
