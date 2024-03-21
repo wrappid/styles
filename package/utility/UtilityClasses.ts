@@ -1868,6 +1868,9 @@ const UtilityClasses = {
     TEXT_TRANSFORM_LOWERCASE: "textLowercase",
     TEXT_TRANSFORM_UPPERCASE: "textUppercase",
     TEXT_TRANSFORM_CAPITALIZE: "textCapitalize",
+    
+    TEXT_WRITING_MODE_TOP_TO_BOTTOM: "textTopToBottom",
+    TEXT_WRITING_MODE_BOTTOM_TO_TOP: "textBottomToTop",
 
     TEXT_WRAP: "textWrap",
     TEXT_NOWRAP: "textNowrap",
