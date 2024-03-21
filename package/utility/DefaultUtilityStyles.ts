@@ -213,11 +213,11 @@ export default class DefaultUtilityStyles extends BaseStyle {
       bgGreyA400: { backgroundColor: this.theme.palette.grey.A400 },
       bgGreyA700: { backgroundColor: this.theme.palette.grey.A700 },
 
-      bgDottedGrid1: { backgroundSize: DEFAULT_SPACING + PX_TAG + " " + DEFAULT_SPACING + PX_TAG, backgroundImage: "radialGradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px)" },
-      bgDottedGrid2: { backgroundSize: DEFAULT_SPACING * 2 + PX_TAG + " " + DEFAULT_SPACING * 2 + PX_TAG, backgroundImage: "radialGradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px)" },
-      bgDottedGrid3: { backgroundSize: DEFAULT_SPACING * 3 + PX_TAG + " " + DEFAULT_SPACING * 3 + PX_TAG, backgroundImage: "radialGradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px)" },
-      bgDottedGrid4: { backgroundSize: DEFAULT_SPACING * 4 + PX_TAG + " " + DEFAULT_SPACING * 4 + PX_TAG, backgroundImage: "radialGradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px)" },
-      bgDottedGrid5: { backgroundSize: DEFAULT_SPACING * 5 + PX_TAG + " " + DEFAULT_SPACING * 5 + PX_TAG, backgroundImage: "radialGradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px)" },
+      bgDottedGrid1: { backgroundSize: DEFAULT_SPACING + PX_TAG + " " + DEFAULT_SPACING + PX_TAG, backgroundImage: "radial-gradient(circle, #ccc 1px, rgba(0, 0, 0, 0) 1px)" },
+      bgDottedGrid2: { backgroundSize: DEFAULT_SPACING * 2 + PX_TAG + " " + DEFAULT_SPACING * 2 + PX_TAG, backgroundImage: "radial-gradient(circle, #ccc 1px, rgba(0, 0, 0, 0) 1px)" },
+      bgDottedGrid3: { backgroundSize: DEFAULT_SPACING * 3 + PX_TAG + " " + DEFAULT_SPACING * 3 + PX_TAG, backgroundImage: "radial-gradient(circle, #ccc 1px, rgba(0, 0, 0, 0) 1px)" },
+      bgDottedGrid4: { backgroundSize: DEFAULT_SPACING * 4 + PX_TAG + " " + DEFAULT_SPACING * 4 + PX_TAG, backgroundImage: "radial-gradient(circle, #ccc 1px, rgba(0, 0, 0, 0) 1px)" },
+      bgDottedGrid5: { backgroundSize: DEFAULT_SPACING * 5 + PX_TAG + " " + DEFAULT_SPACING * 5 + PX_TAG, backgroundImage: "radial-gradient(circle, #ccc 1px, rgba(0, 0, 0, 0) 1px)" },
 
       /**************************************************
        * Gradient
@@ -1184,6 +1184,9 @@ export default class DefaultUtilityStyles extends BaseStyle {
       textLowercase : { textTransform: "lowercase" + IMPORTANT },
       textUppercase : { textTransform: "uppercase" + IMPORTANT },
       textCapitalize: { textTransform: "capitalize" + IMPORTANT },
+
+      textTopToBottom: { writingMode: "tb" },
+      textBottomToTop: { writingMode: "tb", transform: "rotate(-180deg)" },
 
       textWrap  : { whiteSpace: "normal" + IMPORTANT },
       textNowrap: { whiteSpace: "nowrap" + IMPORTANT },
