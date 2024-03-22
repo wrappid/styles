@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.140](https://github.com/wrappid/styles/compare/v0.0.139...v0.0.140) (2024-03-22)
+
+
+### Features
+
+* **global:** :sparkles: initial changes to StylesProvider.tsx ([4960ca7](https://github.com/wrappid/styles/commit/4960ca74bd02a2ff653927cf3b756fafee532687)), closes [#57](https://github.com/wrappid/styles/issues/57)
+
 ### [0.0.139](https://github.com/wrappid/styles/compare/v0.0.138...v0.0.139) (2024-03-21)
 
 
