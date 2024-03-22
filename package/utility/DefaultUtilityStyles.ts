@@ -1,15 +1,15 @@
 /* eslint-disable sort-keys-fix/sort-keys-fix */
 import { BaseStyle } from "../base/BaseStyle";
 import {
-  DEFAULT_PADDING,
-  IMPORTANT,
-  PX_TAG,
-  DEFAULT_MARGIN,
-  DEFAULT_SPACING,
   DEFAULT_BORDER,
   DEFAULT_BORDER_RADIUS,
   DEFAULT_BORDER_WIDTH,
-  DEFAULT_SHADOW_COLOR_RGB
+  DEFAULT_MARGIN,
+  DEFAULT_PADDING,
+  DEFAULT_SHADOW_COLOR_RGB,
+  DEFAULT_SPACING,
+  IMPORTANT,
+  PX_TAG
 } from "../base/constants";
 
 export default class DefaultUtilityStyles extends BaseStyle {
@@ -212,6 +212,12 @@ export default class DefaultUtilityStyles extends BaseStyle {
       bgGreyA200: { backgroundColor: this.theme.palette.grey.A200 },
       bgGreyA400: { backgroundColor: this.theme.palette.grey.A400 },
       bgGreyA700: { backgroundColor: this.theme.palette.grey.A700 },
+
+      bgDottedGrid1: { backgroundSize: DEFAULT_SPACING + PX_TAG + " " + DEFAULT_SPACING + PX_TAG, backgroundImage: "radial-gradient(circle, #ccc 1px, rgba(0, 0, 0, 0) 1px)" },
+      bgDottedGrid2: { backgroundSize: DEFAULT_SPACING * 2 + PX_TAG + " " + DEFAULT_SPACING * 2 + PX_TAG, backgroundImage: "radial-gradient(circle, #ccc 1px, rgba(0, 0, 0, 0) 1px)" },
+      bgDottedGrid3: { backgroundSize: DEFAULT_SPACING * 3 + PX_TAG + " " + DEFAULT_SPACING * 3 + PX_TAG, backgroundImage: "radial-gradient(circle, #ccc 1px, rgba(0, 0, 0, 0) 1px)" },
+      bgDottedGrid4: { backgroundSize: DEFAULT_SPACING * 4 + PX_TAG + " " + DEFAULT_SPACING * 4 + PX_TAG, backgroundImage: "radial-gradient(circle, #ccc 1px, rgba(0, 0, 0, 0) 1px)" },
+      bgDottedGrid5: { backgroundSize: DEFAULT_SPACING * 5 + PX_TAG + " " + DEFAULT_SPACING * 5 + PX_TAG, backgroundImage: "radial-gradient(circle, #ccc 1px, rgba(0, 0, 0, 0) 1px)" },
 
       /**************************************************
        * Gradient
@@ -701,6 +707,50 @@ export default class DefaultUtilityStyles extends BaseStyle {
       end0  : { right: "0" },
       end50 : { right: "50%" },
       end100: { right: "100%" },
+      
+      rotateX15 : { transform: "rotateX(15deg)" },
+      rotateX30 : { transform: "rotateX(30deg)" },
+      rotateX45 : { transform: "rotateX(45deg)" },
+      rotateX60 : { transform: "rotateX(60deg)" },
+      rotateX75 : { transform: "rotateX(75deg)" },
+      rotateX90 : { transform: "rotateX(90deg)" },
+      rotateX120: { transform: "rotateX(120deg)" },
+      rotateX145: { transform: "rotateX(145deg)" },
+      rotateX180: { transform: "rotateX(180deg)" },
+      rotateX270: { transform: "rotateX(270deg)" },
+      
+      rotateXN15 : { transform: "rotateX(-15deg)" },
+      rotateXN30 : { transform: "rotateX(-30deg)" },
+      rotateXN45 : { transform: "rotateX(-45deg)" },
+      rotateXN60 : { transform: "rotateX(-60deg)" },
+      rotateXN75 : { transform: "rotateX(-75deg)" },
+      rotateXN90 : { transform: "rotateX(-90deg)" },
+      rotateXN120: { transform: "rotateX(-120deg)" },
+      rotateXN145: { transform: "rotateX(-145deg)" },
+      rotateXN180: { transform: "rotateX(-180deg)" },
+      rotateXN270: { transform: "rotateX(-270deg)" },
+
+      rotateY15 : { transform: "rotateY(15deg)" },
+      rotateY30 : { transform: "rotateY(30deg)" },
+      rotateY45 : { transform: "rotateY(45deg)" },
+      rotateY60 : { transform: "rotateY(60deg)" },
+      rotateY75 : { transform: "rotateY(75deg)" },
+      rotateY90 : { transform: "rotateY(90deg)" },
+      rotateY120: { transform: "rotateY(120deg)" },
+      rotateY145: { transform: "rotateY(145deg)" },
+      rotateY180: { transform: "rotateY(180deg)" },
+      rotateY270: { transform: "rotateY(270deg)" },
+    
+      rotateYN15 : { transform: "rotateY(-15deg)" },
+      rotateYN30 : { transform: "rotateY(-30deg)" },
+      rotateYN45 : { transform: "rotateY(-45deg)" },
+      rotateYN60 : { transform: "rotateY(-60deg)" },
+      rotateYN75 : { transform: "rotateY(-75deg)" },
+      rotateYN90 : { transform: "rotateY(-90deg)" },
+      rotateYN120: { transform: "rotateY(-120deg)" },
+      rotateYN145: { transform: "rotateY(-145deg)" },
+      rotateYN180: { transform: "rotateY(-180deg)" },
+      rotateYN270: { transform: "rotateY(-270deg)" },
 
       translateMiddle : { transform: "translate(-50%, -50%)" },
       translateMiddleX: { transform: "translateX(-50%)" },
@@ -1135,6 +1185,9 @@ export default class DefaultUtilityStyles extends BaseStyle {
       textUppercase : { textTransform: "uppercase" + IMPORTANT },
       textCapitalize: { textTransform: "capitalize" + IMPORTANT },
 
+      textTopToBottom: { writingMode: "tb" },
+      textBottomToTop: { writingMode: "tb", transform: "rotate(-180deg)" },
+
       textWrap  : { whiteSpace: "normal" + IMPORTANT },
       textNowrap: { whiteSpace: "nowrap" + IMPORTANT },
       textBreak : {
@@ -1183,7 +1236,10 @@ export default class DefaultUtilityStyles extends BaseStyle {
       aspectRatio2By3 : { aspectRatio: "2/3" }, // Mob Tab (potrait)
       aspectRatio4By3 : { aspectRatio: "4/3" }, // Tab Web (landscape)
       aspectRatio3By4 : { aspectRatio: "3/4" }, // Tab Web (potrait)
-
+      aspectRatio21By9: { aspectRatio: "21/9" }, // Galaxy Fold Web Folded (landscape)
+      aspectRatio9By21: { aspectRatio: "9/21" }, // Galaxy Fold Web Folded (potrait)
+      aspectRatio25By9: { aspectRatio: "25/9" }, // Galaxy Fold Web (landscape)
+      aspectRatio9By25: { aspectRatio: "9/25" }, // Galaxy Fold Web (potrait)
     };
   }
 }

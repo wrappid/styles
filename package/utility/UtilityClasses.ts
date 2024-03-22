@@ -222,7 +222,13 @@ const UtilityClasses = {
     BG_GREY_A100: "bgGreyA100",
     BG_GREY_A200: "bgGreyA200",
     BG_GREY_A400: "bgGreyA400",
-    BG_GREY_A700: "bgGreyA700"
+    BG_GREY_A700: "bgGreyA700",
+
+    BG_DOTTED_GRID_1: "bgDottedGrid1",
+    BG_DOTTED_GRID_2: "bgDottedGrid2",
+    BG_DOTTED_GRID_3: "bgDottedGrid3",
+    BG_DOTTED_GRID_4: "bgDottedGrid4",
+    BG_DOTTED_GRID_5: "bgDottedGrid5"
   },
   /**************************************************
    * Gradient
@@ -696,6 +702,10 @@ const UtilityClasses = {
     ASPECT_RATIO_2_3: "aspectRatio2By3",
     ASPECT_RATIO_4_3: "aspectRatio4By3",
     ASPECT_RATIO_3_4: "aspectRatio3By4",
+    ASPECT_RATIO_25_9: "aspectRatio25By9",
+    ASPECT_RATIO_9_25: "aspectRatio9By25",
+    ASPECT_RATIO_21_9: "aspectRatio21By9",
+    ASPECT_RATIO_9_21: "aspectRatio9By21"
   },
 
   /**************************************************
@@ -779,6 +789,8 @@ const UtilityClasses = {
     STICKY_BOTTOM: "stickyBottom"
   },
 
+
+
   /**************************************************
    * Shadows
    *************************************************/
@@ -788,6 +800,65 @@ const UtilityClasses = {
     LARGE: "shadowLg",
     NONE: "shadowNone"
   },
+
+  /**************************************************
+ * Transform
+ *************************************************/
+  TRANSFORM: {
+    ROTATE: {
+      ROTATE_X_15: "rotateX15",
+      ROTATE_X_30: "rotateX30",
+      ROTATE_X_45: "rotateX45",/*  rotateX(45deg) */
+      ROTATE_X_60: "rotateX60",
+      ROTATE_X_75: "rotateX75",
+      ROTATE_X_90: "rotateX90",
+      ROTATE_X_120: "rotateX120",
+      ROTATE_X_180: "rotateX180",
+      ROTATE_X_270: "rotateX270",
+
+      ROTATE_X_N_15: "rotateXN15",
+      ROTATE_X_N_30: "rotateXN30",
+      ROTATE_X_N_45: "rotateXN45",
+      ROTATE_X_N_60: "rotateXN60",
+      ROTATE_X_N_75: "rotateXN75",
+      ROTATE_X_N_90: "rotateXN90",
+      ROTATE_X_N_120: "rotateXN120",
+      ROTATE_X_N_145: "rotateXN145",
+      ROTATE_X_N_180: "rotateXN180",
+      ROTATE_X_N_270: "rotateXN270",
+
+      ROTATE_Y_15: "rotateY15",
+      ROTATE_Y_30: "rotateY30",
+      ROTATE_Y_45: "rotateY45",
+      ROTATE_Y_60: "rotateY60",
+      ROTATE_Y_75: "rotateY75",
+      ROTATE_Y_90: "rotateY90",
+      ROTATE_Y_120: "rotateY120",
+      ROTATE_Y_145: "rotateY145",
+      ROTATE_Y_180: "rotateY180",
+      ROTATE_Y_270: "rotateY270",
+
+      ROTATE_Y_N_30: "rotateYN15",
+      ROTATE_Y_N_15: "rotateYN30",
+      ROTATE_Y_N_45: "rotateYN45",
+      ROTATE_Y_N_60: "rotateYN60",
+      ROTATE_Y_N_75: "rotateYN75",
+      ROTATE_Y_N_90: "rotateYN90",
+      ROTATE_Y_N_120: "rotateYN120",
+      ROTATE_Y_N_145: "rotateYN145",
+      ROTATE_Y_N_180: "rotateYN180",
+      ROTATE_Y_N_270: "rotateYN270",
+    },
+
+    TRANSLATE_MIDDLE: "translateMiddle",
+    TRANSLATE_MIDDLE_X: "translateMiddleX",
+    TRANSLATE_MIDDLE_Y: "translateMiddleY",
+  },
+
+  /**************************************************
+* Rotate
+*************************************************/
+
 
   /**************************************************
    * Sizing
@@ -1797,6 +1868,9 @@ const UtilityClasses = {
     TEXT_TRANSFORM_LOWERCASE: "textLowercase",
     TEXT_TRANSFORM_UPPERCASE: "textUppercase",
     TEXT_TRANSFORM_CAPITALIZE: "textCapitalize",
+    
+    TEXT_WRITING_MODE_TOP_TO_BOTTOM: "textTopToBottom",
+    TEXT_WRITING_MODE_BOTTOM_TO_TOP: "textBottomToTop",
 
     TEXT_WRAP: "textWrap",
     TEXT_NOWRAP: "textNowrap",
