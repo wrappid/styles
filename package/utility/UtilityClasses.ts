@@ -224,11 +224,20 @@ const UtilityClasses = {
     BG_GREY_A400: "bgGreyA400",
     BG_GREY_A700: "bgGreyA700",
 
-    BG_DOTTED_GRID_1: "bgDottedGrid1",
-    BG_DOTTED_GRID_2: "bgDottedGrid2",
-    BG_DOTTED_GRID_3: "bgDottedGrid3",
-    BG_DOTTED_GRID_4: "bgDottedGrid4",
-    BG_DOTTED_GRID_5: "bgDottedGrid5"
+    BG_DOT_GRID_1: "bgDotGrid1",
+    BG_DOT_GRID_2: "bgDotGrid2",
+    BG_DOT_GRID_3: "bgDotGrid3",
+    BG_DOT_GRID_4: "bgDotGrid4",
+    BG_DOT_GRID_5: "bgDotGrid5",
+
+    BG_SQUARE_GRID_1: "bgSquareGrid1",
+    BG_SQUARE_GRID_2: "bgSquareGrid2",
+    BG_SQUARE_GRID_3: "bgSquareGrid3",
+    BG_SQUARE_GRID_4: "bgSquareGrid4",
+    BG_SQUARE_GRID_5: "bgSquareGrid5",
+
+    BG_GRAPH : "bgGraph",
+    BG_ISOMETRIC_GRID: "bgIsometricGrid",
   },
   /**************************************************
    * Gradient
@@ -243,7 +252,36 @@ const UtilityClasses = {
       TO_BOTTOM_LEFT: "gradientLinearToBottomLeft",
       TO_TOP_RIGHT: "gradientLinearToTopRight",
       TO_TOP_LEFT: "gradientLinearToTopLeft"
-    }
+    },
+    RADIAL: {
+      CIRCLE: "gradientRadialCircle",
+      ELLIPSE: "gradientRadialEllipse",
+      CLOSEST_SIDE: "gradientRadialClosestSide",
+      CLOSEST_CORNER: "gradientRadialClosestCorner",
+      FARTHEST_SIDE: "gradientRadialFarthestSide",
+      FARTHEST_CORNER: "gradientRadialFarthestCorner"
+
+    },
+    REPEAT: {
+      REPEAT: "gradientRepeat",
+      REPEAT_X: "gradientRepeatX",
+      REPEAT_Y: "gradientRepeatY",
+      NO_REPEAT: "gradientNoRepeat",
+      ROUND: "gradientRound",
+      COVER: "gradientCover",
+      CONTAIN: "gradientContain"
+    },
+    CONIC: {
+      FROM_TOP: "gradientConicFromTop",
+      FROM_RIGHT: "gradientConicFromRight",
+      FROM_BOTTOM: "gradientConicFromBottom",
+      FROM_LEFT: "gradientConicFromLeft",
+      FROM_TOP_RIGHT: "gradientConicFromTopRight",
+      FROM_TOP_LEFT: "gradientConicFromTopLeft",
+      FROM_BOTTOM_RIGHT: "gradientConicFromBottomRight",
+      FROM_BOTTOM_LEFT: "gradientConicFromBottomLeft",
+      
+    },
   },
 
   /**************************************************
@@ -293,6 +331,21 @@ const UtilityClasses = {
     BORDER_INFO_LIGHT: "borderInfoLight",
     BORDER_INFO_DARK: "borderInfoDark",
 
+    BORDER_GREY_50: "borderGrey50",
+    BORDER_GREY_100: "borderGrey100",
+    BORDER_GREY_200: "borderGrey200",
+    BORDER_GREY_300: "borderGrey300",
+    BORDER_GREY_400: "borderGrey400",
+    BORDER_GREY_500: "borderGrey500",
+    BORDER_GREY_600: "borderGrey600",
+    BORDER_GREY_700: "borderGrey700",
+    BORDER_GREY_800: "borderGrey800",
+    BORDER_GREY_900: "borderGrey900",
+    BORDER_GREY_A100: "borderGreyA100",
+    BORDER_GREY_A200: "borderGreyA200",
+    BORDER_GREY_A400: "borderGreyA400",
+    BORDER_GREY_A700: "borderGreyA700",
+    
     BORDER_BLACK: "borderBlack",
     BORDER_WHITE: "borderWhite",
 
@@ -693,19 +746,19 @@ const UtilityClasses = {
    * ASPECT_RATIO
    *************************************************/
   ASPECT_RATIO: {
-    ASPECT_RATIO_1_1: "aspectRatio1By1",
-    ASPECT_RATIO_16_9: "aspectRatio16By9",
-    ASPECT_RATIO_9_16: "aspectRatio9By16",
-    ASPECT_RATIO_20_9: "aspectRatio20By9",
-    ASPECT_RATIO_9_20: "aspectRatio9By20",
-    ASPECT_RATIO_3_2: "aspectRatio3By2",
-    ASPECT_RATIO_2_3: "aspectRatio2By3",
-    ASPECT_RATIO_4_3: "aspectRatio4By3",
-    ASPECT_RATIO_3_4: "aspectRatio3By4",
-    ASPECT_RATIO_25_9: "aspectRatio25By9",
-    ASPECT_RATIO_9_25: "aspectRatio9By25",
-    ASPECT_RATIO_21_9: "aspectRatio21By9",
-    ASPECT_RATIO_9_21: "aspectRatio9By21"
+    RATIO_16_9: "aspectRatio16By9",
+    RATIO_9_16: "aspectRatio9By16",
+    RATIO_20_9: "aspectRatio20By9",
+    RATIO_9_20: "aspectRatio9By20",
+    RATIO_3_2: "aspectRatio3By2",
+    RATIO_2_3: "aspectRatio2By3",
+    RATIO_4_3: "aspectRatio4By3",
+    RATIO_3_4: "aspectRatio3By4",
+    RATIO_25_9: "aspectRatio25By9",
+    RATIO_9_25: "aspectRatio9By25",
+    RATIO_21_9: "aspectRatio21By9",
+    RATIO_9_21: "aspectRatio9By21",
+    RATIO_1_1: "aspectRatio1By1",
   },
 
   /**************************************************
