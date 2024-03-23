@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.141](https://github.com/wrappid/styles/compare/v0.0.140...v0.0.141) (2024-03-23)
+
+
+### Features
+
+* **global:** :sparkles: added different bg-grid styles ([7f3d1d6](https://github.com/wrappid/styles/commit/7f3d1d66fdbc87fa4165c00f480643e586d27d0d)), closes [#57](https://github.com/wrappid/styles/issues/57)
+
 ### [0.0.140](https://github.com/wrappid/styles/compare/v0.0.139...v0.0.140) (2024-03-22)
 
 
