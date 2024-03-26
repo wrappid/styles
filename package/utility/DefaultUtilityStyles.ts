@@ -1,15 +1,15 @@
 /* eslint-disable sort-keys-fix/sort-keys-fix */
 import { BaseStyle } from "../base/BaseStyle";
 import {
-  DEFAULT_PADDING,
-  IMPORTANT,
-  PX_TAG,
-  DEFAULT_MARGIN,
-  DEFAULT_SPACING,
   DEFAULT_BORDER,
   DEFAULT_BORDER_RADIUS,
   DEFAULT_BORDER_WIDTH,
-  DEFAULT_SHADOW_COLOR_RGB
+  DEFAULT_MARGIN,
+  DEFAULT_PADDING,
+  DEFAULT_SHADOW_COLOR_RGB,
+  DEFAULT_SPACING,
+  IMPORTANT,
+  PX_TAG
 } from "../base/constants";
 
 export default class DefaultUtilityStyles extends BaseStyle {
@@ -22,95 +22,95 @@ export default class DefaultUtilityStyles extends BaseStyle {
        *************************************************/
       alignItemsStart: {
         alignItems: "flex-start",
-        display   : "flex"
+        display   : "flex",
       },
       alignItemsEnd: {
         alignItems: "flex-end",
-        display   : "flex"
+        display   : "flex",
       },
       alignItemsCenter: {
         alignItems: "center",
-        display   : "flex"
+        display   : "flex",
       },
       alignItemsBaseline: {
         alignItems: "baseline",
-        display   : "flex"
+        display   : "flex",
       },
       alignItemsStretch: {
         alignItems: "stretch",
-        display   : "flex"
+        display   : "flex",
       },
 
       alignContentStart: {
         alignContent: "flex-start",
-        display     : "flex"
+        display     : "flex",
       },
       alignContentEnd: {
         alignContent: "flex-end",
-        display     : "flex"
+        display     : "flex",
       },
       alignContentCenter: {
         alignContent: "center",
-        display     : "flex"
+        display     : "flex",
       },
       alignContentBetween: {
         alignContent: "space-between",
-        display     : "flex"
+        display     : "flex",
       },
       alignContentAround: {
         alignContent: "space-around",
-        display     : "flex"
+        display     : "flex",
       },
       alignContentStretch: {
         alignContent: "stretch",
-        display     : "flex"
+        display     : "flex",
       },
 
       alignSelfAuto : { alignSelf: "auto", display: "flex" },
       alignSelfStart: {
         alignSelf: "flex-start",
-        display  : "flex"
+        display  : "flex",
       },
       alignSelfEnd: {
         alignSelf: "flex-end",
-        display  : "flex"
+        display  : "flex",
       },
       alignSelfCenter: {
         alignSelf: "center",
-        display  : "flex"
+        display  : "flex",
       },
       alignSelfBaseline: {
         alignSelf: "baseline",
-        display  : "flex"
+        display  : "flex",
       },
       alignSelfStretch: {
         alignSelf: "stretch",
-        display  : "flex"
+        display  : "flex",
       },
 
       justifyContentCenter: {
         display       : "flex",
-        justifyContent: "center"
+        justifyContent: "center",
       },
       justifyContentFlexStart: {
         display       : "flex",
-        justifyContent: "flex-start"
+        justifyContent: "flex-start",
       },
       justifyContentFlexEnd: {
         display       : "flex",
-        justifyContent: "flex-end"
+        justifyContent: "flex-end",
       },
       justifyContentSpaceBetween: {
         display       : "flex",
-        justifyContent: "space-between"
+        justifyContent: "space-between",
       },
       justifyContentSpaceAround: {
         display       : "flex",
-        justifyContent: "space-around"
+        justifyContent: "space-around",
       },
       justifyContentSpaceEvenly: {
         display       : "flex",
-        justifyContent: "space-evenly"
+        justifyContent: "space-evenly",
       },
 
       /**************************************************
@@ -122,80 +122,80 @@ export default class DefaultUtilityStyles extends BaseStyle {
 
       bgPrimary: {
         backgroundColor: this.theme?.palette?.primary?.main,
-        color          : this.theme?.palette?.primary?.contrastText + IMPORTANT
+        color          : this.theme?.palette?.primary?.contrastText + IMPORTANT,
       },
       bgPrimaryLight: {
         backgroundColor: this.theme.palette?.primary?.light,
-        color          : this.theme.palette?.primary?.contrastText + IMPORTANT
+        color          : this.theme.palette?.primary?.contrastText + IMPORTANT,
       },
       bgPrimaryDark: {
         backgroundColor: this.theme.palette?.primary?.dark,
-        color          : this.theme.palette?.primary?.contrastText + IMPORTANT
+        color          : this.theme.palette?.primary?.contrastText + IMPORTANT,
       },
 
       bgSecondary: {
         backgroundColor: this.theme.palette?.secondary?.main,
-        color          : this.theme.palette?.secondary?.contrastText + IMPORTANT
+        color          : this.theme.palette?.secondary?.contrastText + IMPORTANT,
       },
       bgSecondaryLight: {
         backgroundColor: this.theme.palette?.secondary?.light,
-        color          : this.theme.palette?.secondary?.contrastText + IMPORTANT
+        color          : this.theme.palette?.secondary?.contrastText + IMPORTANT,
       },
       bgSecondaryDark: {
         backgroundColor: this.theme.palette?.secondary?.dark,
-        color          : this.theme.palette?.secondary?.contrastText + IMPORTANT
+        color          : this.theme.palette?.secondary?.contrastText + IMPORTANT,
       },
 
       bgSuccess: {
         backgroundColor: this.theme.palette?.success?.main,
-        color          : this.theme.palette?.success?.contrastText + IMPORTANT
+        color          : this.theme.palette?.success?.contrastText + IMPORTANT,
       },
       bgSuccessLight: {
         backgroundColor: this.theme.palette?.success?.light,
-        color          : this.theme.palette?.success?.contrastText + IMPORTANT
+        color          : this.theme.palette?.success?.contrastText + IMPORTANT,
       },
       bgSuccessDark: {
         backgroundColor: this.theme.palette?.success?.dark,
-        color          : this.theme.palette?.success?.contrastText + IMPORTANT
+        color          : this.theme.palette?.success?.contrastText + IMPORTANT,
       },
 
       bgError: {
         backgroundColor: this.theme.palette?.error?.main,
-        color          : this.theme.palette?.error?.contrastText + IMPORTANT
+        color          : this.theme.palette?.error?.contrastText + IMPORTANT,
       },
       bgErrorLight: {
         backgroundColor: this.theme.palette?.error?.light,
-        color          : this.theme.palette?.error?.contrastText + IMPORTANT
+        color          : this.theme.palette?.error?.contrastText + IMPORTANT,
       },
       bgErrorDark: {
         backgroundColor: this.theme.palette?.error?.dark,
-        color          : this.theme.palette?.error?.contrastText + IMPORTANT
+        color          : this.theme.palette?.error?.contrastText + IMPORTANT,
       },
 
       bgWarning: {
         backgroundColor: this.theme.palette?.warning?.main,
-        color          : this.theme.palette?.warning?.contrastText + IMPORTANT
+        color          : this.theme.palette?.warning?.contrastText + IMPORTANT,
       },
       bgWarningLight: {
         backgroundColor: this.theme.palette?.warning?.light,
-        color          : this.theme.palette?.warning?.contrastText + IMPORTANT
+        color          : this.theme.palette?.warning?.contrastText + IMPORTANT,
       },
       bgWarningDark: {
         backgroundColor: this.theme.palette?.warning?.dark,
-        color          : this.theme.palette?.warning?.contrastText + IMPORTANT
+        color          : this.theme.palette?.warning?.contrastText + IMPORTANT,
       },
 
       bgInfo: {
         backgroundColor: this.theme.palette?.info?.main,
-        color          : this.theme.palette?.info?.contrastText + IMPORTANT
+        color          : this.theme.palette?.info?.contrastText + IMPORTANT,
       },
       bgInfoLight: {
         backgroundColor: this.theme.palette?.info?.light,
-        color          : this.theme.palette?.info?.contrastText + IMPORTANT
+        color          : this.theme.palette?.info?.contrastText + IMPORTANT,
       },
       bgInfoDark: {
         backgroundColor: this.theme.palette?.info?.dark,
-        color          : this.theme.palette?.info?.contrastText + IMPORTANT
+        color          : this.theme.palette?.info?.contrastText + IMPORTANT,
       },
 
       bgGrey50  : { backgroundColor: this.theme.palette.grey["50"] },
@@ -213,6 +213,87 @@ export default class DefaultUtilityStyles extends BaseStyle {
       bgGreyA400: { backgroundColor: this.theme.palette.grey.A400 },
       bgGreyA700: { backgroundColor: this.theme.palette.grey.A700 },
 
+      bgDotGrid1: {
+        backgroundSize:
+          DEFAULT_SPACING + PX_TAG + " " + DEFAULT_SPACING + PX_TAG,
+        backgroundImage:
+          "radial-gradient(circle, #ccc 1px, rgba(0, 0, 0, 0) 1px)",
+      },
+      bgDotGrid2: {
+        backgroundSize:
+          DEFAULT_SPACING * 2 + PX_TAG + " " + DEFAULT_SPACING * 2 + PX_TAG,
+        backgroundImage:
+          "radial-gradient(circle, #ccc 1px, rgba(0, 0, 0, 0) 1px)",
+      },
+      bgDotGrid3: {
+        backgroundSize:
+          DEFAULT_SPACING * 3 + PX_TAG + " " + DEFAULT_SPACING * 3 + PX_TAG,
+        backgroundImage:
+          "radial-gradient(circle, #ccc 1px, rgba(0, 0, 0, 0) 1px)",
+      },
+      bgDotGrid4: {
+        backgroundSize:
+          DEFAULT_SPACING * 4 + PX_TAG + " " + DEFAULT_SPACING * 4 + PX_TAG,
+        backgroundImage:
+          "radial-gradient(circle, #ccc 1px, rgba(0, 0, 0, 0) 1px)",
+      },
+      bgDotGrid5: {
+        backgroundSize:
+          DEFAULT_SPACING * 5 + PX_TAG + " " + DEFAULT_SPACING * 5 + PX_TAG,
+        backgroundImage:
+          "radial-gradient(circle, #ccc 1px, rgba(0, 0, 0, 0) 1px)",
+      },
+
+      bgSquareGrid1: {
+        backgroundSize:
+          DEFAULT_SPACING + PX_TAG + " " + DEFAULT_SPACING + PX_TAG,
+        backgroundImage:
+          "linear-gradient(to right, #ccc 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(to bottom, #ccc 1px, rgba(0, 0, 0, 0) 1px)",
+      },
+      bgSquareGrid2: {
+        backgroundSize:
+          DEFAULT_SPACING * 2 + PX_TAG + " " + DEFAULT_SPACING * 2 + PX_TAG,
+        backgroundImage:
+          "linear-gradient(to right, #ccc 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(to bottom, #ccc 1px, rgba(0, 0, 0, 0) 1px)",
+      },
+      bgSquareGrid3: {
+        backgroundSize:
+          DEFAULT_SPACING * 3 + PX_TAG + " " + DEFAULT_SPACING * 3 + PX_TAG,
+        backgroundImage:
+          "linear-gradient(to right, #ccc 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(to bottom, #ccc 1px, rgba(0, 0, 0, 0) 1px)",
+      },
+      bgSquareGrid4: {
+        backgroundSize:
+          DEFAULT_SPACING * 4 + PX_TAG + " " + DEFAULT_SPACING * 4 + PX_TAG,
+        backgroundImage:
+          "linear-gradient(to right, #ccc 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(to bottom, #ccc 1px, rgba(0, 0, 0, 0) 1px)",
+      },
+      bgSquareGrid5: {
+        backgroundSize:
+          DEFAULT_SPACING * 5 + PX_TAG + " " + DEFAULT_SPACING * 5 + PX_TAG,
+        backgroundImage:
+          "linear-gradient(to right, #ccc 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(to bottom, #ccc 1px, rgba(0, 0, 0, 0) 1px)",
+      },
+
+      bgGraphPaper1: {
+        backgroundSize : "20px 20px",
+        backgroundImage:
+          "linear-gradient(45deg, #ccc 25%, transparent 25%, transparent 75%, #ccc 75%, #ccc), linear-gradient(45deg, #ccc 25%, transparent 25%, transparent 75%, #ccc 75%, #ccc)",
+        backgroundColor: "#fff",
+      },
+
+      bgGraph: {
+        background    : "linear-gradient(-90deg, rgba(0,0,0,.05) 1px, transparent 1px), linear-gradient(rgba(0,0,0,.05) 1px, transparent 1px), linear-gradient(-90deg, rgba(0, 0, 0, .04) 1px, transparent 1px), inear-gradient(rgba(0,0,0,.04) 1px, transparent 1px), inear-gradient(transparent 3px, #f2f2f2 3px, #f2f2f2 78px, transparent 78px), inear-gradient(-90deg, #aaa 1px, transparent 1px), inear-gradient(-90deg, transparent 3px, #f2f2f2 3px, #f2f2f2 78px, transparent 78px), inear-gradient(#aaa 1px, transparent 1px)",
+        backgroundSize: "4px 4px, 4px 4px, 80px 80px, 80px 80px, 80px 80px, 80px 80px, 80px 80px, 80px 80px",
+      },
+
+      bgIsometricGrid: {
+        backgroundSize : "20px 20px",
+        backgroundImage:
+          "linear-gradient(45deg, #ccc 25%, transparent 25%, transparent 75%, #ccc 75%, #ccc), linear-gradient(45deg, #ccc 25%, transparent 25%, transparent 75%, #ccc 75%, #ccc)",
+        backgroundColor: "#fff",
+      },
+
       /**************************************************
        * Gradient
        *************************************************/
@@ -220,10 +301,70 @@ export default class DefaultUtilityStyles extends BaseStyle {
       gradientLinearToTop        : { backgroundImage: "linear-gradient(to top, #ffffff26, #ffffffff)" },
       gradientLinearToRight      : { backgroundImage: "linear-gradient(to right, #ffffff26, #ffffffff)" },
       gradientLinearToLeft       : { backgroundImage: "linear-gradient(to left, #ffffff26, #ffffffff)" },
-      gradientLinearToBottomRight: { backgroundImage: "linear-gradient(to bottom right, #ffffff26, #ffffffff)" },
-      gradientLinearToBottomLeft : { backgroundImage: "linear-gradient(to bottom left, #ffffff26, #ffffffff)" },
-      gradientLinearToTopRight   : { backgroundImage: "linear-gradient(to top right, #ffffff26, #ffffffff)" },
-      gradientLinearToTopLeft    : { backgroundImage: "linear-gradient(to top left, #ffffff26, #ffffffff)" },
+      gradientLinearToBottomRight: {
+        backgroundImage:
+          "linear-gradient(to bottom right, #ffffff26, #ffffffff)",
+      },
+      gradientLinearToBottomLeft: {
+        backgroundImage:
+          "linear-gradient(to bottom left, #ffffff26, #ffffffff)",
+      },
+      gradientLinearToTopRight: { backgroundImage: "linear-gradient(to top right, #ffffff26, #ffffffff)" },
+      gradientLinearToTopLeft : { backgroundImage: "linear-gradient(to top left, #ffffff26, #ffffffff)" },
+
+      gradientRadialCircle       : { backgroundImage: "radial-gradient(circle, #ffffff26, #ffffffff)" },
+      gradientRadialEllipse      : { backgroundImage: "radial-gradient(ellipse, #ffffff26, #ffffffff)" },
+      gradientRadialClosestSide  : { backgroundImage: "radial-gradient(closest-side, #ffffff26, #ffffffff)" },
+      gradientRadialClosestCorner: {
+        backgroundImage:
+          "radial-gradient(closest-corner, #ffffff26, #ffffffff)",
+      },
+      gradientRadialFarthestSide  : { backgroundImage: "radial-gradient(farthest-side, #ffffff26, #ffffffff)" },
+      gradientRadialFarthestCorner: {
+        backgroundImage:
+          "radial-gradient(farthest-corner, #ffffff26, #ffffffff)",
+      },
+
+      gradientRepeat  : { backgroundRepeat: "repeat" },
+      gradientNoRepeat: { backgroundRepeat: "no-repeat" },
+      gradientRepeatX : { backgroundRepeat: "repeat-x" },
+      gradientRepeatY : { backgroundRepeat: "repeat-y" },
+      gradientRound   : { backgroundSize: "100%" },
+      gradientCover   : { backgroundSize: "cover" },
+      gradientContain : { backgroundSize: "contain" },
+
+      gradientConicFromTop: {
+        backgroundImage:
+          "conic-gradient(from 0deg at 50% 0%, #ffffff26, #ffffffff)",
+      },
+      gradientConicFromRight: {
+        backgroundImage:
+          "conic-gradient(from 90deg at 50% 0%, #ffffff26, #ffffffff)",
+      },
+      gradientConicFromBottom: {
+        backgroundImage:
+          "conic-gradient(from 180deg at 50% 0%, #ffffff26, #ffffffff)",
+      },
+      gradientConicFromLeft: {
+        backgroundImage:
+          "conic-gradient(from 270deg at 50% 0%, #ffffff26, #ffffffff)",
+      },
+      gradientConicFromTopRight: {
+        backgroundImage:
+          "conic-gradient(from 45deg at 50% 0%, #ffffff26, #ffffffff)",
+      },
+      gradientConicFromTopLeft: {
+        backgroundImage:
+          "conic-gradient(from 135deg at 50% 0%, #ffffff26, #ffffffff)",
+      },
+      gradientConicFromBottomRight: {
+        backgroundImage:
+          "conic-gradient(from 315deg at 50% 0%, #ffffff26, #ffffffff)",
+      },
+      gradientConicFromBottomLeft: {
+        backgroundImage:
+          "conic-gradient(from 225deg at 50% 0%, #ffffff26, #ffffffff)",
+      },
 
       /**************************************************
        * Border
@@ -271,6 +412,21 @@ export default class DefaultUtilityStyles extends BaseStyle {
       borderInfoLight: { borderColor: this.theme.palette?.info?.light },
       borderInfoDark : { borderColor: this.theme.palette?.info?.dark },
 
+      borderGrey50  : { borderColor: this.theme.palette.grey["50"] },
+      borderGrey100 : { borderColor: this.theme.palette.grey["100"] },
+      borderGrey200 : { borderColor: this.theme.palette.grey["200"] },
+      borderGrey300 : { borderColor: this.theme.palette.grey["300"] },
+      borderGrey400 : { borderColor: this.theme.palette.grey["400"] },
+      borderGrey500 : { borderColor: this.theme.palette.grey["500"] },
+      borderGrey600 : { borderColor: this.theme.palette.grey["600"] },
+      borderGrey700 : { borderColor: this.theme.palette.grey["700"] },
+      borderGrey800 : { borderColor: this.theme.palette.grey["800"] },
+      borderGrey900 : { borderColor: this.theme.palette.grey["900"] },
+      borderGreyA100: { borderColor: this.theme.palette.grey.A100 },
+      borderGreyA200: { borderColor: this.theme.palette.grey.A200 },
+      borderGreyA400: { borderColor: this.theme.palette.grey.A400 },
+      borderGreyA700: { borderColor: this.theme.palette.grey.A700 },
+
       borderBlack: { borderColor: "black" },
       borderWhite: { borderColor: "white" },
 
@@ -303,150 +459,150 @@ export default class DefaultUtilityStyles extends BaseStyle {
 
       borderRoundedTop: {
         borderTopLeftRadius : DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
-        borderTopRightRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT
+        borderTopRightRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
       },
       borderRoundedTop0: {
         borderTopLeftRadius : 0 + IMPORTANT,
-        borderTopRightRadius: 0 + IMPORTANT
+        borderTopRightRadius: 0 + IMPORTANT,
       },
       borderRoundedTop1: {
         borderTopLeftRadius : DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
-        borderTopRightRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT
+        borderTopRightRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
       },
       borderRoundedTop2: {
         borderTopLeftRadius : DEFAULT_BORDER_RADIUS * 2 + PX_TAG + IMPORTANT,
-        borderTopRightRadius: DEFAULT_BORDER_RADIUS * 2 + PX_TAG + IMPORTANT
+        borderTopRightRadius: DEFAULT_BORDER_RADIUS * 2 + PX_TAG + IMPORTANT,
       },
       borderRoundedTop3: {
         borderTopLeftRadius : DEFAULT_BORDER_RADIUS * 3 + PX_TAG + IMPORTANT,
-        borderTopRightRadius: DEFAULT_BORDER_RADIUS * 3 + PX_TAG + IMPORTANT
+        borderTopRightRadius: DEFAULT_BORDER_RADIUS * 3 + PX_TAG + IMPORTANT,
       },
       borderRoundedTop4: {
         borderTopLeftRadius : DEFAULT_BORDER_RADIUS * 4 + PX_TAG + IMPORTANT,
-        borderTopRightRadius: DEFAULT_BORDER_RADIUS * 4 + PX_TAG + IMPORTANT
+        borderTopRightRadius: DEFAULT_BORDER_RADIUS * 4 + PX_TAG + IMPORTANT,
       },
       borderRoundedTop5: {
         borderTopLeftRadius : DEFAULT_BORDER_RADIUS * 5 + PX_TAG + IMPORTANT,
-        borderTopRightRadius: DEFAULT_BORDER_RADIUS * 5 + PX_TAG + IMPORTANT
+        borderTopRightRadius: DEFAULT_BORDER_RADIUS * 5 + PX_TAG + IMPORTANT,
       },
       borderRoundedTopCircle: {
         borderTopLeftRadius : "50%" + IMPORTANT,
-        borderTopRightRadius: "50%" + IMPORTANT
+        borderTopRightRadius: "50%" + IMPORTANT,
       },
       borderRoundedTopPill: {
         borderTopLeftRadius : "50rem" + IMPORTANT,
-        borderTopRightRadius: "50rem" + IMPORTANT
+        borderTopRightRadius: "50rem" + IMPORTANT,
       },
 
       borderRoundedEnd: {
         borderTopRightRadius   : DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
-        borderBottomRightRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT
+        borderBottomRightRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
       },
       borderRoundedEnd0: {
         borderTopRightRadius   : 0 + IMPORTANT,
-        borderBottomRightRadius: 0 + IMPORTANT
+        borderBottomRightRadius: 0 + IMPORTANT,
       },
       borderRoundedEnd1: {
         borderTopRightRadius   : DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
-        borderBottomRightRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT
+        borderBottomRightRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
       },
       borderRoundedEnd2: {
         borderTopRightRadius   : DEFAULT_BORDER_RADIUS * 2 + PX_TAG + IMPORTANT,
-        borderBottomRightRadius: DEFAULT_BORDER_RADIUS * 2 + PX_TAG + IMPORTANT
+        borderBottomRightRadius: DEFAULT_BORDER_RADIUS * 2 + PX_TAG + IMPORTANT,
       },
       borderRoundedEnd3: {
         borderTopRightRadius   : DEFAULT_BORDER_RADIUS * 3 + PX_TAG + IMPORTANT,
-        borderBottomRightRadius: DEFAULT_BORDER_RADIUS * 3 + PX_TAG + IMPORTANT
+        borderBottomRightRadius: DEFAULT_BORDER_RADIUS * 3 + PX_TAG + IMPORTANT,
       },
       borderRoundedEnd4: {
         borderTopRightRadius   : DEFAULT_BORDER_RADIUS * 4 + PX_TAG + IMPORTANT,
-        borderBottomRightRadius: DEFAULT_BORDER_RADIUS * 4 + PX_TAG + IMPORTANT
+        borderBottomRightRadius: DEFAULT_BORDER_RADIUS * 4 + PX_TAG + IMPORTANT,
       },
       borderRoundedEnd5: {
         borderTopRightRadius   : DEFAULT_BORDER_RADIUS * 5 + PX_TAG + IMPORTANT,
-        borderBottomRightRadius: DEFAULT_BORDER_RADIUS * 5 + PX_TAG + IMPORTANT
+        borderBottomRightRadius: DEFAULT_BORDER_RADIUS * 5 + PX_TAG + IMPORTANT,
       },
       borderRoundedEndCircle: {
         borderTopRightRadius   : "50%" + IMPORTANT,
-        borderBottomRightRadius: "50%" + IMPORTANT
+        borderBottomRightRadius: "50%" + IMPORTANT,
       },
       borderRoundedEndPill: {
         borderTopRightRadius   : "50rem" + IMPORTANT,
-        borderBottomRightRadius: "50rem" + IMPORTANT
+        borderBottomRightRadius: "50rem" + IMPORTANT,
       },
 
       borderRoundedBottom: {
         borderBottomRightRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
-        borderBottomLeftRadius : DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT
+        borderBottomLeftRadius : DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
       },
       borderRoundedBottom0: {
         borderBottomRightRadius: 0 + IMPORTANT,
-        borderBottomLeftRadius : 0 + IMPORTANT
+        borderBottomLeftRadius : 0 + IMPORTANT,
       },
       borderRoundedBottom1: {
         borderBottomRightRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
-        borderBottomLeftRadius : DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT
+        borderBottomLeftRadius : DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
       },
       borderRoundedBottom2: {
         borderBottomRightRadius: DEFAULT_BORDER_RADIUS * 2 + PX_TAG + IMPORTANT,
-        borderBottomLeftRadius : DEFAULT_BORDER_RADIUS * 2 + PX_TAG + IMPORTANT
+        borderBottomLeftRadius : DEFAULT_BORDER_RADIUS * 2 + PX_TAG + IMPORTANT,
       },
       borderRoundedBottom3: {
         borderBottomRightRadius: DEFAULT_BORDER_RADIUS * 3 + PX_TAG + IMPORTANT,
-        borderBottomLeftRadius : DEFAULT_BORDER_RADIUS * 3 + PX_TAG + IMPORTANT
+        borderBottomLeftRadius : DEFAULT_BORDER_RADIUS * 3 + PX_TAG + IMPORTANT,
       },
       borderRoundedBottom4: {
         borderBottomRightRadius: DEFAULT_BORDER_RADIUS * 4 + PX_TAG + IMPORTANT,
-        borderBottomLeftRadius : DEFAULT_BORDER_RADIUS * 4 + PX_TAG + IMPORTANT
+        borderBottomLeftRadius : DEFAULT_BORDER_RADIUS * 4 + PX_TAG + IMPORTANT,
       },
       borderRoundedBottom5: {
         borderBottomRightRadius: DEFAULT_BORDER_RADIUS * 5 + PX_TAG + IMPORTANT,
-        borderBottomLeftRadius : DEFAULT_BORDER_RADIUS * 5 + PX_TAG + IMPORTANT
+        borderBottomLeftRadius : DEFAULT_BORDER_RADIUS * 5 + PX_TAG + IMPORTANT,
       },
       borderRoundedBottomCircle: {
         borderBottomRightRadius: "50%" + IMPORTANT,
-        borderBottomLeftRadius : "50%" + IMPORTANT
+        borderBottomLeftRadius : "50%" + IMPORTANT,
       },
       borderRoundedBottomPill: {
         borderBottomRightRadius: "50rem" + IMPORTANT,
-        borderBottomLeftRadius : "50rem" + IMPORTANT
+        borderBottomLeftRadius : "50rem" + IMPORTANT,
       },
 
       borderRoundedStart: {
         borderBottomLeftRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
-        borderTopLeftRadius   : DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT
+        borderTopLeftRadius   : DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
       },
       borderRoundedStart0: {
         borderBottomLeftRadius: 0 + IMPORTANT,
-        borderTopLeftRadius   : 0 + IMPORTANT
+        borderTopLeftRadius   : 0 + IMPORTANT,
       },
       borderRoundedStart1: {
         borderBottomLeftRadius: DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
-        borderTopLeftRadius   : DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT
+        borderTopLeftRadius   : DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
       },
       borderRoundedStart2: {
         borderBottomLeftRadius: DEFAULT_BORDER_RADIUS * 2 + PX_TAG + IMPORTANT,
-        borderTopLeftRadius   : DEFAULT_BORDER_RADIUS * 2 + PX_TAG + IMPORTANT
+        borderTopLeftRadius   : DEFAULT_BORDER_RADIUS * 2 + PX_TAG + IMPORTANT,
       },
       borderRoundedStart3: {
         borderBottomLeftRadius: DEFAULT_BORDER_RADIUS * 3 + PX_TAG + IMPORTANT,
-        borderTopLeftRadius   : DEFAULT_BORDER_RADIUS * 3 + PX_TAG + IMPORTANT
+        borderTopLeftRadius   : DEFAULT_BORDER_RADIUS * 3 + PX_TAG + IMPORTANT,
       },
       borderRoundedStart4: {
         borderBottomLeftRadius: DEFAULT_BORDER_RADIUS * 4 + PX_TAG + IMPORTANT,
-        borderTopLeftRadius   : DEFAULT_BORDER_RADIUS * 4 + PX_TAG + IMPORTANT
+        borderTopLeftRadius   : DEFAULT_BORDER_RADIUS * 4 + PX_TAG + IMPORTANT,
       },
       borderRoundedStart5: {
         borderBottomLeftRadius: DEFAULT_BORDER_RADIUS * 5 + PX_TAG + IMPORTANT,
-        borderTopLeftRadius   : DEFAULT_BORDER_RADIUS * 5 + PX_TAG + IMPORTANT
+        borderTopLeftRadius   : DEFAULT_BORDER_RADIUS * 5 + PX_TAG + IMPORTANT,
       },
       borderRoundedStartCircle: {
         borderBottomLeftRadius: "50%" + IMPORTANT,
-        borderTopLeftRadius   : "50%" + IMPORTANT
+        borderTopLeftRadius   : "50%" + IMPORTANT,
       },
       borderRoundedStartPill: {
         borderBottomLeftRadius: "50rem" + IMPORTANT,
-        borderTopLeftRadius   : "50rem" + IMPORTANT
+        borderTopLeftRadius   : "50rem" + IMPORTANT,
       },
 
       /**************************************************
@@ -590,17 +746,17 @@ export default class DefaultUtilityStyles extends BaseStyle {
       userSelectAll: {
         // -webkit-user-select: all !important;
         // -moz-user-select: all !important;
-        userSelect: "all"
+        userSelect: "all",
       },
       userSelectAuto: {
         // -webkit-user-select: auto !important;
         // -moz-user-select: auto !important;
-        userSelect: "auto"
+        userSelect: "auto",
       },
       userSelectNone: {
         // -webkit-user-select: none !important;
         // -moz-user-select: none !important;
-        userSelect: "none"
+        userSelect: "none",
       },
 
       peNone: { pointerEvents: "none" },
@@ -611,23 +767,23 @@ export default class DefaultUtilityStyles extends BaseStyle {
        *************************************************/
       objectFitContain: {
         // -o-object-fit: contain !important;
-        objectFit: "contain"
+        objectFit: "contain",
       },
       objectFitCover: {
         // -o-object-fit: cover !important;
-        objectFit: "cover"
+        objectFit: "cover",
       },
       objectFitFill: {
         // -o-object-fit: fill !important;
-        objectFit: "fill"
+        objectFit: "fill",
       },
       objectFitScale: {
         // -o-object-fit: scale-down !important;
-        objectFit: "scale-down"
+        objectFit: "scale-down",
       },
       objectFitNone: {
         // -o-object-fit: none !important;
-        objectFit: "none"
+        objectFit: "none",
       },
 
       /**************************************************
@@ -680,7 +836,7 @@ export default class DefaultUtilityStyles extends BaseStyle {
       positionFixed   : { position: "fixed" },
       positionSticky  : {
         // -- position: "-webkit-sticky",
-        position: "sticky"
+        position: "sticky",
       },
 
       /**
@@ -702,6 +858,50 @@ export default class DefaultUtilityStyles extends BaseStyle {
       end50 : { right: "50%" },
       end100: { right: "100%" },
 
+      rotateX15 : { transform: "rotateX(15deg)" },
+      rotateX30 : { transform: "rotateX(30deg)" },
+      rotateX45 : { transform: "rotateX(45deg)" },
+      rotateX60 : { transform: "rotateX(60deg)" },
+      rotateX75 : { transform: "rotateX(75deg)" },
+      rotateX90 : { transform: "rotateX(90deg)" },
+      rotateX120: { transform: "rotateX(120deg)" },
+      rotateX145: { transform: "rotateX(145deg)" },
+      rotateX180: { transform: "rotateX(180deg)" },
+      rotateX270: { transform: "rotateX(270deg)" },
+
+      rotateXN15 : { transform: "rotateX(-15deg)" },
+      rotateXN30 : { transform: "rotateX(-30deg)" },
+      rotateXN45 : { transform: "rotateX(-45deg)" },
+      rotateXN60 : { transform: "rotateX(-60deg)" },
+      rotateXN75 : { transform: "rotateX(-75deg)" },
+      rotateXN90 : { transform: "rotateX(-90deg)" },
+      rotateXN120: { transform: "rotateX(-120deg)" },
+      rotateXN145: { transform: "rotateX(-145deg)" },
+      rotateXN180: { transform: "rotateX(-180deg)" },
+      rotateXN270: { transform: "rotateX(-270deg)" },
+
+      rotateY15 : { transform: "rotateY(15deg)" },
+      rotateY30 : { transform: "rotateY(30deg)" },
+      rotateY45 : { transform: "rotateY(45deg)" },
+      rotateY60 : { transform: "rotateY(60deg)" },
+      rotateY75 : { transform: "rotateY(75deg)" },
+      rotateY90 : { transform: "rotateY(90deg)" },
+      rotateY120: { transform: "rotateY(120deg)" },
+      rotateY145: { transform: "rotateY(145deg)" },
+      rotateY180: { transform: "rotateY(180deg)" },
+      rotateY270: { transform: "rotateY(270deg)" },
+
+      rotateYN15 : { transform: "rotateY(-15deg)" },
+      rotateYN30 : { transform: "rotateY(-30deg)" },
+      rotateYN45 : { transform: "rotateY(-45deg)" },
+      rotateYN60 : { transform: "rotateY(-60deg)" },
+      rotateYN75 : { transform: "rotateY(-75deg)" },
+      rotateYN90 : { transform: "rotateY(-90deg)" },
+      rotateYN120: { transform: "rotateY(-120deg)" },
+      rotateYN145: { transform: "rotateY(-145deg)" },
+      rotateYN180: { transform: "rotateY(-180deg)" },
+      rotateYN270: { transform: "rotateY(-270deg)" },
+
       translateMiddle : { transform: "translate(-50%, -50%)" },
       translateMiddleX: { transform: "translateX(-50%)" },
       translateMiddleY: { transform: "translateY(-50%)" },
@@ -711,26 +911,26 @@ export default class DefaultUtilityStyles extends BaseStyle {
         position: "fixed",
         right   : "0",
         top     : "0",
-        zIndex  : "1030"
+        zIndex  : "1030",
       },
       fixedBottom: {
         bottom  : "0",
         left    : "0",
         position: "fixed",
         right   : "0",
-        zIndex  : "1030"
+        zIndex  : "1030",
       },
       stickyTop: {
         // -- position: "-webkit-sticky",
         position: "sticky",
         top     : "0",
-        zIndex  : "1020"
+        zIndex  : "1020",
       },
       stickyBottom: {
         bottom  : "0",
         // -- position: "-webkit-sticky",
         position: "sticky",
-        zIndex  : "1020"
+        zIndex  : "1020",
       },
 
       /**************************************************
@@ -742,21 +942,21 @@ export default class DefaultUtilityStyles extends BaseStyle {
           "0 0.5rem 1rem rgba(" +
           DEFAULT_SHADOW_COLOR_RGB +
           ", 0.15)" +
-          IMPORTANT
+          IMPORTANT,
       },
       shadowSm: {
         boxShadow:
           "0 0.125rem 0.25rem rgba(" +
           DEFAULT_SHADOW_COLOR_RGB +
           ", 0.075)" +
-          IMPORTANT
+          IMPORTANT,
       },
       shadowLg: {
         boxShadow:
           "0 1rem 3rem rgba(" +
           DEFAULT_SHADOW_COLOR_RGB +
           ", 0.175)" +
-          IMPORTANT
+          IMPORTANT,
       },
       shadowNone: { boxShadow: "none" + IMPORTANT },
 
@@ -870,52 +1070,52 @@ export default class DefaultUtilityStyles extends BaseStyle {
 
       px0: {
         paddingLeft : 0 + PX_TAG,
-        paddingRight: 0 + PX_TAG
+        paddingRight: 0 + PX_TAG,
       },
       px1: {
         paddingLeft : DEFAULT_PADDING * 1 + PX_TAG,
-        paddingRight: DEFAULT_PADDING * 1 + PX_TAG
+        paddingRight: DEFAULT_PADDING * 1 + PX_TAG,
       },
       px2: {
         paddingLeft : DEFAULT_PADDING * 2 + PX_TAG,
-        paddingRight: DEFAULT_PADDING * 2 + PX_TAG
+        paddingRight: DEFAULT_PADDING * 2 + PX_TAG,
       },
       px3: {
         paddingLeft : DEFAULT_PADDING * 3 + PX_TAG,
-        paddingRight: DEFAULT_PADDING * 3 + PX_TAG
+        paddingRight: DEFAULT_PADDING * 3 + PX_TAG,
       },
       px4: {
         paddingLeft : DEFAULT_PADDING * 4 + PX_TAG,
-        paddingRight: DEFAULT_PADDING * 4 + PX_TAG
+        paddingRight: DEFAULT_PADDING * 4 + PX_TAG,
       },
       px5: {
         paddingLeft : DEFAULT_PADDING * 5 + PX_TAG,
-        paddingRight: DEFAULT_PADDING * 5 + PX_TAG
+        paddingRight: DEFAULT_PADDING * 5 + PX_TAG,
       },
 
       py0: {
         paddingBottom: 0 + PX_TAG,
-        paddingTop   : 0 + PX_TAG
+        paddingTop   : 0 + PX_TAG,
       },
       py1: {
         paddingBottom: DEFAULT_PADDING * 1 + PX_TAG,
-        paddingTop   : DEFAULT_PADDING * 1 + PX_TAG
+        paddingTop   : DEFAULT_PADDING * 1 + PX_TAG,
       },
       py2: {
         paddingBottom: DEFAULT_PADDING * 2 + PX_TAG,
-        paddingTop   : DEFAULT_PADDING * 2 + PX_TAG
+        paddingTop   : DEFAULT_PADDING * 2 + PX_TAG,
       },
       py3: {
         paddingBottom: DEFAULT_PADDING * 3 + PX_TAG,
-        paddingTop   : DEFAULT_PADDING * 3 + PX_TAG
+        paddingTop   : DEFAULT_PADDING * 3 + PX_TAG,
       },
       py4: {
         paddingBottom: DEFAULT_PADDING * 4 + PX_TAG,
-        paddingTop   : DEFAULT_PADDING * 4 + PX_TAG
+        paddingTop   : DEFAULT_PADDING * 4 + PX_TAG,
       },
       py5: {
         paddingBottom: DEFAULT_PADDING * 5 + PX_TAG,
-        paddingTop   : DEFAULT_PADDING * 5 + PX_TAG
+        paddingTop   : DEFAULT_PADDING * 5 + PX_TAG,
       },
 
       /*-------------------------------------------------
@@ -964,50 +1164,50 @@ export default class DefaultUtilityStyles extends BaseStyle {
       mx0: { marginLeft: 0, marginRight: 0 + IMPORTANT },
       mx1: {
         marginLeft : DEFAULT_MARGIN * 1 + PX_TAG + IMPORTANT,
-        marginRight: DEFAULT_MARGIN * 1 + PX_TAG + IMPORTANT
+        marginRight: DEFAULT_MARGIN * 1 + PX_TAG + IMPORTANT,
       },
       mx2: {
         marginLeft : DEFAULT_MARGIN * 2 + PX_TAG + IMPORTANT,
-        marginRight: DEFAULT_MARGIN * 2 + PX_TAG + IMPORTANT
+        marginRight: DEFAULT_MARGIN * 2 + PX_TAG + IMPORTANT,
       },
       mx3: {
         marginLeft : DEFAULT_MARGIN * 3 + PX_TAG + IMPORTANT,
-        marginRight: DEFAULT_MARGIN * 3 + PX_TAG + IMPORTANT
+        marginRight: DEFAULT_MARGIN * 3 + PX_TAG + IMPORTANT,
       },
       mx4: {
         marginLeft : DEFAULT_MARGIN * 4 + PX_TAG + IMPORTANT,
-        marginRight: DEFAULT_MARGIN * 4 + PX_TAG + IMPORTANT
+        marginRight: DEFAULT_MARGIN * 4 + PX_TAG + IMPORTANT,
       },
       mx5: {
         marginLeft : DEFAULT_MARGIN * 5 + PX_TAG + IMPORTANT,
-        marginRight: DEFAULT_MARGIN * 5 + PX_TAG + IMPORTANT
+        marginRight: DEFAULT_MARGIN * 5 + PX_TAG + IMPORTANT,
       },
       mxAuto: { marginLeft: "auto", marginRight: "auto" + IMPORTANT },
 
       my0: { marginBottom: 0, marginTop: 0 + IMPORTANT },
       my1: {
         marginBottom: DEFAULT_MARGIN * 1 + PX_TAG + IMPORTANT,
-        marginTop   : DEFAULT_MARGIN * 1 + PX_TAG + IMPORTANT
+        marginTop   : DEFAULT_MARGIN * 1 + PX_TAG + IMPORTANT,
       },
       my2: {
         marginBottom: DEFAULT_MARGIN * 2 + PX_TAG + IMPORTANT,
-        marginTop   : DEFAULT_MARGIN * 2 + PX_TAG + IMPORTANT
+        marginTop   : DEFAULT_MARGIN * 2 + PX_TAG + IMPORTANT,
       },
       my3: {
         marginBottom: DEFAULT_MARGIN * 3 + PX_TAG + IMPORTANT,
-        marginTop   : DEFAULT_MARGIN * 3 + PX_TAG + IMPORTANT
+        marginTop   : DEFAULT_MARGIN * 3 + PX_TAG + IMPORTANT,
       },
       my4: {
         marginBottom: DEFAULT_MARGIN * 4 + PX_TAG + IMPORTANT,
-        marginTop   : DEFAULT_MARGIN * 4 + PX_TAG + IMPORTANT
+        marginTop   : DEFAULT_MARGIN * 4 + PX_TAG + IMPORTANT,
       },
       my5: {
         marginBottom: DEFAULT_MARGIN * 5 + PX_TAG + IMPORTANT,
-        marginTop   : DEFAULT_MARGIN * 5 + PX_TAG + IMPORTANT
+        marginTop   : DEFAULT_MARGIN * 5 + PX_TAG + IMPORTANT,
       },
       myAuto: {
         marginBottom: "auto" + IMPORTANT,
-        marginTop   : "auto" + IMPORTANT
+        marginTop   : "auto" + IMPORTANT,
       },
 
       mN1: { margin: DEFAULT_MARGIN * -1 + PX_TAG + IMPORTANT },
@@ -1042,45 +1242,45 @@ export default class DefaultUtilityStyles extends BaseStyle {
 
       mxN1: {
         marginLeft : DEFAULT_MARGIN * -1 + PX_TAG + IMPORTANT,
-        marginRight: DEFAULT_MARGIN * -1 + PX_TAG + IMPORTANT
+        marginRight: DEFAULT_MARGIN * -1 + PX_TAG + IMPORTANT,
       },
       mxN2: {
         marginLeft : DEFAULT_MARGIN * -2 + PX_TAG + IMPORTANT,
-        marginRight: DEFAULT_MARGIN * -2 + PX_TAG + IMPORTANT
+        marginRight: DEFAULT_MARGIN * -2 + PX_TAG + IMPORTANT,
       },
       mxN3: {
         marginLeft : DEFAULT_MARGIN * -3 + PX_TAG + IMPORTANT,
-        marginRight: DEFAULT_MARGIN * -3 + PX_TAG + IMPORTANT
+        marginRight: DEFAULT_MARGIN * -3 + PX_TAG + IMPORTANT,
       },
       mxN4: {
         marginLeft : DEFAULT_MARGIN * -4 + PX_TAG + IMPORTANT,
-        marginRight: DEFAULT_MARGIN * -4 + PX_TAG + IMPORTANT
+        marginRight: DEFAULT_MARGIN * -4 + PX_TAG + IMPORTANT,
       },
 
       mxN5: {
         marginLeft : DEFAULT_MARGIN * -5 + PX_TAG + IMPORTANT,
-        marginRight: DEFAULT_MARGIN * -5 + PX_TAG + IMPORTANT
+        marginRight: DEFAULT_MARGIN * -5 + PX_TAG + IMPORTANT,
       },
 
       myN1: {
         marginBottom: DEFAULT_MARGIN * -1 + PX_TAG + IMPORTANT,
-        marginTop   : DEFAULT_MARGIN * -1 + PX_TAG + IMPORTANT
+        marginTop   : DEFAULT_MARGIN * -1 + PX_TAG + IMPORTANT,
       },
       myN2: {
         marginBottom: DEFAULT_MARGIN * -2 + PX_TAG + IMPORTANT,
-        marginTop   : DEFAULT_MARGIN * -2 + PX_TAG + IMPORTANT
+        marginTop   : DEFAULT_MARGIN * -2 + PX_TAG + IMPORTANT,
       },
       myN3: {
         marginBottom: DEFAULT_MARGIN * -3 + PX_TAG + IMPORTANT,
-        marginTop   : DEFAULT_MARGIN * -3 + PX_TAG + IMPORTANT
+        marginTop   : DEFAULT_MARGIN * -3 + PX_TAG + IMPORTANT,
       },
       myN4: {
         marginBottom: DEFAULT_MARGIN * -4 + PX_TAG + IMPORTANT,
-        marginTop   : DEFAULT_MARGIN * -4 + PX_TAG + IMPORTANT
+        marginTop   : DEFAULT_MARGIN * -4 + PX_TAG + IMPORTANT,
       },
       myN5: {
         marginBottom: DEFAULT_MARGIN * -5 + PX_TAG + IMPORTANT,
-        marginTop   : DEFAULT_MARGIN * -5 + PX_TAG + IMPORTANT
+        marginTop   : DEFAULT_MARGIN * -5 + PX_TAG + IMPORTANT,
       },
 
       /*-------------------------------------------------
@@ -1135,16 +1335,19 @@ export default class DefaultUtilityStyles extends BaseStyle {
       textUppercase : { textTransform: "uppercase" + IMPORTANT },
       textCapitalize: { textTransform: "capitalize" + IMPORTANT },
 
+      textTopToBottom: { writingMode: "tb" },
+      textBottomToTop: { writingMode: "tb", transform: "rotate(-180deg)" },
+
       textWrap  : { whiteSpace: "normal" + IMPORTANT },
       textNowrap: { whiteSpace: "nowrap" + IMPORTANT },
       textBreak : {
         wordBreak: "break-word" + IMPORTANT,
-        wordWrap : "break-word" + IMPORTANT
+        wordWrap : "break-word" + IMPORTANT,
       },
       textTruncate: {
         overflow    : "hidden",
         textOverflow: "ellipsis",
-        whiteSpace  : "nowrap"
+        whiteSpace  : "nowrap",
       },
 
       /**************************************************
@@ -1183,7 +1386,10 @@ export default class DefaultUtilityStyles extends BaseStyle {
       aspectRatio2By3 : { aspectRatio: "2/3" }, // Mob Tab (potrait)
       aspectRatio4By3 : { aspectRatio: "4/3" }, // Tab Web (landscape)
       aspectRatio3By4 : { aspectRatio: "3/4" }, // Tab Web (potrait)
-
+      aspectRatio21By9: { aspectRatio: "21/9" }, // Galaxy Fold Web Folded (landscape)
+      aspectRatio9By21: { aspectRatio: "9/21" }, // Galaxy Fold Web Folded (potrait)
+      aspectRatio25By9: { aspectRatio: "25/9" }, // Galaxy Fold Web (landscape)
+      aspectRatio9By25: { aspectRatio: "9/25" }, // Galaxy Fold Web (potrait)
     };
   }
 }

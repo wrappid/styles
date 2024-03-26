@@ -222,7 +222,22 @@ const UtilityClasses = {
     BG_GREY_A100: "bgGreyA100",
     BG_GREY_A200: "bgGreyA200",
     BG_GREY_A400: "bgGreyA400",
-    BG_GREY_A700: "bgGreyA700"
+    BG_GREY_A700: "bgGreyA700",
+
+    BG_DOT_GRID_1: "bgDotGrid1",
+    BG_DOT_GRID_2: "bgDotGrid2",
+    BG_DOT_GRID_3: "bgDotGrid3",
+    BG_DOT_GRID_4: "bgDotGrid4",
+    BG_DOT_GRID_5: "bgDotGrid5",
+
+    BG_SQUARE_GRID_1: "bgSquareGrid1",
+    BG_SQUARE_GRID_2: "bgSquareGrid2",
+    BG_SQUARE_GRID_3: "bgSquareGrid3",
+    BG_SQUARE_GRID_4: "bgSquareGrid4",
+    BG_SQUARE_GRID_5: "bgSquareGrid5",
+
+    BG_GRAPH : "bgGraph",
+    BG_ISOMETRIC_GRID: "bgIsometricGrid",
   },
   /**************************************************
    * Gradient
@@ -237,7 +252,36 @@ const UtilityClasses = {
       TO_BOTTOM_LEFT: "gradientLinearToBottomLeft",
       TO_TOP_RIGHT: "gradientLinearToTopRight",
       TO_TOP_LEFT: "gradientLinearToTopLeft"
-    }
+    },
+    RADIAL: {
+      CIRCLE: "gradientRadialCircle",
+      ELLIPSE: "gradientRadialEllipse",
+      CLOSEST_SIDE: "gradientRadialClosestSide",
+      CLOSEST_CORNER: "gradientRadialClosestCorner",
+      FARTHEST_SIDE: "gradientRadialFarthestSide",
+      FARTHEST_CORNER: "gradientRadialFarthestCorner"
+
+    },
+    REPEAT: {
+      REPEAT: "gradientRepeat",
+      REPEAT_X: "gradientRepeatX",
+      REPEAT_Y: "gradientRepeatY",
+      NO_REPEAT: "gradientNoRepeat",
+      ROUND: "gradientRound",
+      COVER: "gradientCover",
+      CONTAIN: "gradientContain"
+    },
+    CONIC: {
+      FROM_TOP: "gradientConicFromTop",
+      FROM_RIGHT: "gradientConicFromRight",
+      FROM_BOTTOM: "gradientConicFromBottom",
+      FROM_LEFT: "gradientConicFromLeft",
+      FROM_TOP_RIGHT: "gradientConicFromTopRight",
+      FROM_TOP_LEFT: "gradientConicFromTopLeft",
+      FROM_BOTTOM_RIGHT: "gradientConicFromBottomRight",
+      FROM_BOTTOM_LEFT: "gradientConicFromBottomLeft",
+      
+    },
   },
 
   /**************************************************
@@ -287,6 +331,21 @@ const UtilityClasses = {
     BORDER_INFO_LIGHT: "borderInfoLight",
     BORDER_INFO_DARK: "borderInfoDark",
 
+    BORDER_GREY_50: "borderGrey50",
+    BORDER_GREY_100: "borderGrey100",
+    BORDER_GREY_200: "borderGrey200",
+    BORDER_GREY_300: "borderGrey300",
+    BORDER_GREY_400: "borderGrey400",
+    BORDER_GREY_500: "borderGrey500",
+    BORDER_GREY_600: "borderGrey600",
+    BORDER_GREY_700: "borderGrey700",
+    BORDER_GREY_800: "borderGrey800",
+    BORDER_GREY_900: "borderGrey900",
+    BORDER_GREY_A100: "borderGreyA100",
+    BORDER_GREY_A200: "borderGreyA200",
+    BORDER_GREY_A400: "borderGreyA400",
+    BORDER_GREY_A700: "borderGreyA700",
+    
     BORDER_BLACK: "borderBlack",
     BORDER_WHITE: "borderWhite",
 
@@ -687,19 +746,19 @@ const UtilityClasses = {
    * ASPECT_RATIO
    *************************************************/
   ASPECT_RATIO: {
-    ASPECT_RATIO_1_1: "aspectRatio1By1",
-    ASPECT_RATIO_16_9: "aspectRatio16By9",
-    ASPECT_RATIO_9_16: "aspectRatio9By16",
-    ASPECT_RATIO_20_9: "aspectRatio20By9",
-    ASPECT_RATIO_9_20: "aspectRatio9By20",
-    ASPECT_RATIO_3_2: "aspectRatio3By2",
-    ASPECT_RATIO_2_3: "aspectRatio2By3",
-    ASPECT_RATIO_4_3: "aspectRatio4By3",
-    ASPECT_RATIO_3_4: "aspectRatio3By4",
-    ASPECT_RATIO_25_9: "aspectRatio25By9",
-    ASPECT_RATIO_9_25: "aspectRatio9By25",
-    ASPECT_RATIO_21_9: "aspectRatio21By9",
-    ASPECT_RATIO_9_21: "aspectRatio9By21"
+    RATIO_16_9: "aspectRatio16By9",
+    RATIO_9_16: "aspectRatio9By16",
+    RATIO_20_9: "aspectRatio20By9",
+    RATIO_9_20: "aspectRatio9By20",
+    RATIO_3_2: "aspectRatio3By2",
+    RATIO_2_3: "aspectRatio2By3",
+    RATIO_4_3: "aspectRatio4By3",
+    RATIO_3_4: "aspectRatio3By4",
+    RATIO_25_9: "aspectRatio25By9",
+    RATIO_9_25: "aspectRatio9By25",
+    RATIO_21_9: "aspectRatio21By9",
+    RATIO_9_21: "aspectRatio9By21",
+    RATIO_1_1: "aspectRatio1By1",
   },
 
   /**************************************************
@@ -783,6 +842,8 @@ const UtilityClasses = {
     STICKY_BOTTOM: "stickyBottom"
   },
 
+
+
   /**************************************************
    * Shadows
    *************************************************/
@@ -792,6 +853,65 @@ const UtilityClasses = {
     LARGE: "shadowLg",
     NONE: "shadowNone"
   },
+
+  /**************************************************
+ * Transform
+ *************************************************/
+  TRANSFORM: {
+    ROTATE: {
+      ROTATE_X_15: "rotateX15",
+      ROTATE_X_30: "rotateX30",
+      ROTATE_X_45: "rotateX45",/*  rotateX(45deg) */
+      ROTATE_X_60: "rotateX60",
+      ROTATE_X_75: "rotateX75",
+      ROTATE_X_90: "rotateX90",
+      ROTATE_X_120: "rotateX120",
+      ROTATE_X_180: "rotateX180",
+      ROTATE_X_270: "rotateX270",
+
+      ROTATE_X_N_15: "rotateXN15",
+      ROTATE_X_N_30: "rotateXN30",
+      ROTATE_X_N_45: "rotateXN45",
+      ROTATE_X_N_60: "rotateXN60",
+      ROTATE_X_N_75: "rotateXN75",
+      ROTATE_X_N_90: "rotateXN90",
+      ROTATE_X_N_120: "rotateXN120",
+      ROTATE_X_N_145: "rotateXN145",
+      ROTATE_X_N_180: "rotateXN180",
+      ROTATE_X_N_270: "rotateXN270",
+
+      ROTATE_Y_15: "rotateY15",
+      ROTATE_Y_30: "rotateY30",
+      ROTATE_Y_45: "rotateY45",
+      ROTATE_Y_60: "rotateY60",
+      ROTATE_Y_75: "rotateY75",
+      ROTATE_Y_90: "rotateY90",
+      ROTATE_Y_120: "rotateY120",
+      ROTATE_Y_145: "rotateY145",
+      ROTATE_Y_180: "rotateY180",
+      ROTATE_Y_270: "rotateY270",
+
+      ROTATE_Y_N_30: "rotateYN15",
+      ROTATE_Y_N_15: "rotateYN30",
+      ROTATE_Y_N_45: "rotateYN45",
+      ROTATE_Y_N_60: "rotateYN60",
+      ROTATE_Y_N_75: "rotateYN75",
+      ROTATE_Y_N_90: "rotateYN90",
+      ROTATE_Y_N_120: "rotateYN120",
+      ROTATE_Y_N_145: "rotateYN145",
+      ROTATE_Y_N_180: "rotateYN180",
+      ROTATE_Y_N_270: "rotateYN270",
+    },
+
+    TRANSLATE_MIDDLE: "translateMiddle",
+    TRANSLATE_MIDDLE_X: "translateMiddleX",
+    TRANSLATE_MIDDLE_Y: "translateMiddleY",
+  },
+
+  /**************************************************
+* Rotate
+*************************************************/
+
 
   /**************************************************
    * Sizing
@@ -1801,6 +1921,9 @@ const UtilityClasses = {
     TEXT_TRANSFORM_LOWERCASE: "textLowercase",
     TEXT_TRANSFORM_UPPERCASE: "textUppercase",
     TEXT_TRANSFORM_CAPITALIZE: "textCapitalize",
+    
+    TEXT_WRITING_MODE_TOP_TO_BOTTOM: "textTopToBottom",
+    TEXT_WRITING_MODE_BOTTOM_TO_TOP: "textBottomToTop",
 
     TEXT_WRAP: "textWrap",
     TEXT_NOWRAP: "textNowrap",
