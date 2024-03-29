@@ -2009,7 +2009,7 @@ const UtilityClasses = {
   /**************************************************
    * fontWeight
    *************************************************/
-  FONTWEIGHT: {
+  FONT_WEIGHT: {
     FONTWEIGHT_100: "fontWeight100", // Thin (Hairline)
     FONTWEIGHT_200: "fontWeight200", // Extra Light (Ultra Light)  
     FONTWEIGHT_300: "fontWeight300", // Light
@@ -2027,12 +2027,26 @@ const UtilityClasses = {
   /**************************************************
  * lineHeight
  *************************************************/
-  LINEHEIGHT: {
+  LINE_HEIGHT: {
     LINEHEIGHT_NORMAL: "lineHeightNormal", // default numeric value is 1.6
     LINEHEIGHT_2: "lineHeight2", // the line height will be relative and multipled to the font size.
     LINEHEIGHT_3: "lineHeight3", // // the line height will be relative and multipled to the font size.
     LINEHEIGHT_INITIAL: "lineHeightInitial", // Sets this property to its default value
     LINEHEIGHT_INHERIT: "lineHeightInherit", // Inherits this property from its parent element.
+  },
+   /**************************************************
+  * wordSpacing
+  *************************************************/
+  WORD_SPACING: {
+    WORD_SPACING_NORMAL: "wordSpacingNormal",
+    WORD_SPACING_1: "wordSpacing1",
+    WORD_SPACING_2: "wordSpacing2",
+    WORD_SPACING_3: "wordSpacing3",
+    WORD_SPACING_4: "wordSpacing4",
+    WORD_SPACING_5: "wordSpacing5",
+    WORD_SPACING_6: "wordSpacing6",
+    WORD_SPACING_7: "wordSpacing7",
+    WORD_SPACING_8: "wordSpacing8",
   },
 };
 

@@ -1436,6 +1436,19 @@ export default class DefaultUtilityStyles extends BaseStyle {
       lineHeight3      : { lineHeight: "3" },
       lineHeightInitial: { lineHeight: "initial" },
       lineHeightInherit: { lineHeight: "inherit" },
+
+      /**************************************************
+        * Aspect Ratio
+        *************************************************/
+      wordSpacingNormal: { wordSpacing: "normal" },
+      wordSpacing1     : { wordSpacing: "0.0625rem" }, // number represent px
+      wordSpacing2     : { wordSpacing: "0.125rem" },
+      wordSpacing3     : { wordSpacing: "0.188rem" },
+      wordSpacing4     : { wordSpacing: "0.25rem" },
+      wordSpacing5     : { wordSpacing: "0.313rem" },
+      wordSpacing6     : { wordSpacing: "0.375rem" },
+      wordSpacing7     : { wordSpacing: "0.438rem" },
+      wordSpacing8     : { wordSpacing: "0.5rem" },
     };
   }
 }
