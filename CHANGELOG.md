@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.142](https://github.com/wrappid/styles/compare/v0.0.141...v0.0.142) (2024-03-29)
+
+
+### Features
+
+* **core:** :memo: add styles of font-weight, line-height and word-spacing ([6d43da5](https://github.com/wrappid/styles/commit/6d43da518c069c22d37a59343a5b0541a0458e26)), closes [#72](https://github.com/wrappid/styles/issues/72)
+* **core:** :memo: added styles for roate, font-weight and line-height ([151d325](https://github.com/wrappid/styles/commit/151d325dbe3fcba2106a04cac4fc426fcc1f5703)), closes [#72](https://github.com/wrappid/styles/issues/72)
+
 ### [0.0.141](https://github.com/wrappid/styles/compare/v0.0.140...v0.0.141) (2024-03-23)
 
 
