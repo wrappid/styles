@@ -858,6 +858,26 @@ export default class DefaultUtilityStyles extends BaseStyle {
       end50 : { right: "50%" },
       end100: { right: "100%" },
 
+      ROTATE_15 : { transform: "rotate(15deg)" },
+      ROTATE_30 : { transform: "rotate(30deg)" },
+      ROTATE_45 : { transform: "rotate(45deg)" },
+      ROTATE_60 : { transform: "rotate(60deg)" },
+      ROTATE_75 : { transform: "rotate(75deg)" },
+      ROTATE_90 : { transform: "rotate(90deg)" },
+      ROTATE_120: { transform: "rotate(120deg)" },
+      ROTATE_180: { transform: "rotate(180deg)" },
+      ROTATE_270: { transform: "rotate(270deg)" },
+
+      ROTATE_N_15 : { transform: "rotate(-15deg)" },
+      ROTATE_N_30 : { transform: "rotate(-30deg)" },
+      ROTATE_N_45 : { transform: "rotate(-45deg)" },
+      ROTATE_N_60 : { transform: "rotate(-60deg)" },
+      ROTATE_N_75 : { transform: "rotate(-75deg)" },
+      ROTATE_N_90 : { transform: "rotate(-90deg)" },
+      ROTATE_N_120: { transform: "rotate(-120deg)" },
+      ROTATE_N_180: { transform: "rotate(-180deg)" },
+      ROTATE_N_270: { transform: "rotate(-270deg)" },
+
       rotateX15 : { transform: "rotateX(15deg)" },
       rotateX30 : { transform: "rotateX(30deg)" },
       rotateX45 : { transform: "rotateX(45deg)" },
@@ -1390,6 +1410,45 @@ export default class DefaultUtilityStyles extends BaseStyle {
       aspectRatio9By21: { aspectRatio: "9/21" }, // Galaxy Fold Web Folded (potrait)
       aspectRatio25By9: { aspectRatio: "25/9" }, // Galaxy Fold Web (landscape)
       aspectRatio9By25: { aspectRatio: "9/25" }, // Galaxy Fold Web (potrait)
+
+      /**************************************************
+       * Aspect Ratio
+       *************************************************/
+      fontWeight100    : { fontWeight: "100" },
+      fontWeight200    : { fontWeight: "200" },
+      fontWeight300    : { fontWeight: "300" },
+      fontWeight400    : { fontWeight: "400" },
+      fontWeight500    : { fontWeight: "500" },
+      fontWeight600    : { fontWeight: "600" },
+      fontWeight700    : { fontWeight: "700" },
+      fontWeight800    : { fontWeight: "800" },
+      fontWeight900    : { fontWeight: "900" },
+      fontWeightnormal : { fontWeight: "normal" },
+      fontWeightbold   : { fontWeight: "bold" },
+      fontWeightbolder : { fontWeight: "bolder" },
+      fontWeightlighter: { fontWeight: "lighter" },
+
+      /**************************************************
+       * Aspect Ratio
+       *************************************************/
+      lineHeightNormal : { lineHeight: "normal" },
+      lineHeight2      : { lineHeight: "2" },
+      lineHeight3      : { lineHeight: "3" },
+      lineHeightInitial: { lineHeight: "initial" },
+      lineHeightInherit: { lineHeight: "inherit" },
+
+      /**************************************************
+        * Aspect Ratio
+        *************************************************/
+      wordSpacingNormal: { wordSpacing: "normal" },
+      wordSpacing1     : { wordSpacing: "0.0625rem" }, // number represent px
+      wordSpacing2     : { wordSpacing: "0.125rem" },
+      wordSpacing3     : { wordSpacing: "0.188rem" },
+      wordSpacing4     : { wordSpacing: "0.25rem" },
+      wordSpacing5     : { wordSpacing: "0.313rem" },
+      wordSpacing6     : { wordSpacing: "0.375rem" },
+      wordSpacing7     : { wordSpacing: "0.438rem" },
+      wordSpacing8     : { wordSpacing: "0.5rem" },
     };
   }
 }

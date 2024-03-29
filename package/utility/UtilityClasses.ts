@@ -236,7 +236,7 @@ const UtilityClasses = {
     BG_SQUARE_GRID_4: "bgSquareGrid4",
     BG_SQUARE_GRID_5: "bgSquareGrid5",
 
-    BG_GRAPH : "bgGraph",
+    BG_GRAPH: "bgGraph",
     BG_ISOMETRIC_GRID: "bgIsometricGrid",
   },
   /**************************************************
@@ -280,7 +280,7 @@ const UtilityClasses = {
       FROM_TOP_LEFT: "gradientConicFromTopLeft",
       FROM_BOTTOM_RIGHT: "gradientConicFromBottomRight",
       FROM_BOTTOM_LEFT: "gradientConicFromBottomLeft",
-      
+
     },
   },
 
@@ -345,7 +345,7 @@ const UtilityClasses = {
     BORDER_GREY_A200: "borderGreyA200",
     BORDER_GREY_A400: "borderGreyA400",
     BORDER_GREY_A700: "borderGreyA700",
-    
+
     BORDER_BLACK: "borderBlack",
     BORDER_WHITE: "borderWhite",
 
@@ -859,9 +859,29 @@ const UtilityClasses = {
  *************************************************/
   TRANSFORM: {
     ROTATE: {
+      ROTATE_15: "rotate15",
+      ROTATE_30: "rotate30",
+      ROTATE_45: "rotate45",
+      ROTATE_60: "rotate60",
+      ROTATE_75: "rotate75",
+      ROTATE_90: "rotate90",
+      ROTATE_120: "rotate120",
+      ROTATE_180: "rotate180",
+      ROTATE_270: "rotate270",
+
+      ROTATE_N_15: "rotateN15",
+      ROTATE_N_30: "rotateN30",
+      ROTATE_N_45: "rotateN45",
+      ROTATE_N_60: "rotateN60",
+      ROTATE_N_75: "rotateN75",
+      ROTATE_N_90: "rotateN90",
+      ROTATE_N_120: "rotateN120",
+      ROTATE_N_180: "rotateN180",
+      ROTATE_N_270: "rotateN270",
+
       ROTATE_X_15: "rotateX15",
+      ROTATE_X_45: "rotateX45",
       ROTATE_X_30: "rotateX30",
-      ROTATE_X_45: "rotateX45",/*  rotateX(45deg) */
       ROTATE_X_60: "rotateX60",
       ROTATE_X_75: "rotateX75",
       ROTATE_X_90: "rotateX90",
@@ -907,11 +927,6 @@ const UtilityClasses = {
     TRANSLATE_MIDDLE_X: "translateMiddleX",
     TRANSLATE_MIDDLE_Y: "translateMiddleY",
   },
-
-  /**************************************************
-* Rotate
-*************************************************/
-
 
   /**************************************************
    * Sizing
@@ -1921,7 +1936,7 @@ const UtilityClasses = {
     TEXT_TRANSFORM_LOWERCASE: "textLowercase",
     TEXT_TRANSFORM_UPPERCASE: "textUppercase",
     TEXT_TRANSFORM_CAPITALIZE: "textCapitalize",
-    
+
     TEXT_WRITING_MODE_TOP_TO_BOTTOM: "textTopToBottom",
     TEXT_WRITING_MODE_BOTTOM_TO_TOP: "textBottomToTop",
 
@@ -1990,7 +2005,49 @@ const UtilityClasses = {
     Z_1: "z1",
     Z_2: "z2",
     Z_3: "z3"
-  }
+  },
+  /**************************************************
+   * fontWeight
+   *************************************************/
+  FONT_WEIGHT: {
+    FONTWEIGHT_100: "fontWeight100", // Thin (Hairline)
+    FONTWEIGHT_200: "fontWeight200", // Extra Light (Ultra Light)  
+    FONTWEIGHT_300: "fontWeight300", // Light
+    FONTWEIGHT_400: "fontWeight400", // Normal
+    FONTWEIGHT_500: "fontWeight500", // Medium 
+    FONTWEIGHT_600: "fontWeight600", // Semi Bold (Demi Bold) 
+    FONTWEIGHT_700: "fontWeight700", // Bold 
+    FONTWEIGHT_800: "fontWeight800", // Extra Bold (Ultra Bold) 
+    FONTWEIGHT_900: "fontWeight900", // Black (Heavy)
+    FONTWEIGHT_NORMAL: "fontWeightnormal", // Normal vale 400
+    FONTWEIGHT_BOLD: "fontWeightbold", // Normal vale 400
+    FONTWEIGHT_BOLDER: "fontWeightbolder", // Normal vale 400
+    FONTWEIGHT_LIGHTER: "fontWeightlighter", // Normal vale 400
+  },
+  /**************************************************
+ * lineHeight
+ *************************************************/
+  LINE_HEIGHT: {
+    LINEHEIGHT_NORMAL: "lineHeightNormal", // default numeric value is 1.6
+    LINEHEIGHT_2: "lineHeight2", // the line height will be relative and multipled to the font size.
+    LINEHEIGHT_3: "lineHeight3", // // the line height will be relative and multipled to the font size.
+    LINEHEIGHT_INITIAL: "lineHeightInitial", // Sets this property to its default value
+    LINEHEIGHT_INHERIT: "lineHeightInherit", // Inherits this property from its parent element.
+  },
+   /**************************************************
+  * wordSpacing
+  *************************************************/
+  WORD_SPACING: {
+    WORD_SPACING_NORMAL: "wordSpacingNormal",
+    WORD_SPACING_1: "wordSpacing1",
+    WORD_SPACING_2: "wordSpacing2",
+    WORD_SPACING_3: "wordSpacing3",
+    WORD_SPACING_4: "wordSpacing4",
+    WORD_SPACING_5: "wordSpacing5",
+    WORD_SPACING_6: "wordSpacing6",
+    WORD_SPACING_7: "wordSpacing7",
+    WORD_SPACING_8: "wordSpacing8",
+  },
 };
 
 export default UtilityClasses;
