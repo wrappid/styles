@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.143](https://github.com/wrappid/styles/compare/v0.0.142...v0.0.143) (2024-03-30)
+
+
+### Bug Fixes
+
+* **global:** :bug: added Important tag to background Grey ([b623c49](https://github.com/wrappid/styles/commit/b623c492980e4e8a538f60ca20bc996ead9cf895)), closes [#23](https://github.com/wrappid/styles/issues/23)
+
 ### [0.0.142](https://github.com/wrappid/styles/compare/v0.0.141...v0.0.142) (2024-03-29)
 
 
