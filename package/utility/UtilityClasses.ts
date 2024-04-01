@@ -1945,6 +1945,22 @@ const UtilityClasses = {
     TEXT_BREAK: "textBreak",
     TEXT_TRUNCATE: "textTruncate",
 
+    WORD_SPACING_NORMAL: "wordSpacingNormal",
+    WORD_SPACING_1: "wordSpacing1",
+    WORD_SPACING_2: "wordSpacing2",
+    WORD_SPACING_3: "wordSpacing3",
+    WORD_SPACING_4: "wordSpacing4",
+    WORD_SPACING_5: "wordSpacing5",
+    WORD_SPACING_6: "wordSpacing6",
+    WORD_SPACING_7: "wordSpacing7",
+    WORD_SPACING_8: "wordSpacing8",
+
+    LINEHEIGHT_NORMAL: "lineHeightNormal", // default numeric value is 1.6
+    LINEHEIGHT_2: "lineHeight2", // the line height will be relative and multipled to the font size.
+    LINEHEIGHT_3: "lineHeight3", // // the line height will be relative and multipled to the font size.
+    LINEHEIGHT_INITIAL: "lineHeightInitial", // Sets this property to its default value
+    LINEHEIGHT_INHERIT: "lineHeightInherit", // Inherits this property from its parent element.
+
     SM: {
       TEXT_START: "smTextStart",
       TEXT_END: "smTextEnd",
@@ -2005,48 +2021,6 @@ const UtilityClasses = {
     Z_1: "z1",
     Z_2: "z2",
     Z_3: "z3"
-  },
-  /**************************************************
-   * fontWeight
-   *************************************************/
-  FONT_WEIGHT: {
-    FONTWEIGHT_100: "fontWeight100", // Thin (Hairline)
-    FONTWEIGHT_200: "fontWeight200", // Extra Light (Ultra Light)  
-    FONTWEIGHT_300: "fontWeight300", // Light
-    FONTWEIGHT_400: "fontWeight400", // Normal
-    FONTWEIGHT_500: "fontWeight500", // Medium 
-    FONTWEIGHT_600: "fontWeight600", // Semi Bold (Demi Bold) 
-    FONTWEIGHT_700: "fontWeight700", // Bold 
-    FONTWEIGHT_800: "fontWeight800", // Extra Bold (Ultra Bold) 
-    FONTWEIGHT_900: "fontWeight900", // Black (Heavy)
-    FONTWEIGHT_NORMAL: "fontWeightnormal", // Normal vale 400
-    FONTWEIGHT_BOLD: "fontWeightbold", // Normal vale 400
-    FONTWEIGHT_BOLDER: "fontWeightbolder", // Normal vale 400
-    FONTWEIGHT_LIGHTER: "fontWeightlighter", // Normal vale 400
-  },
-  /**************************************************
- * lineHeight
- *************************************************/
-  LINE_HEIGHT: {
-    LINEHEIGHT_NORMAL: "lineHeightNormal", // default numeric value is 1.6
-    LINEHEIGHT_2: "lineHeight2", // the line height will be relative and multipled to the font size.
-    LINEHEIGHT_3: "lineHeight3", // // the line height will be relative and multipled to the font size.
-    LINEHEIGHT_INITIAL: "lineHeightInitial", // Sets this property to its default value
-    LINEHEIGHT_INHERIT: "lineHeightInherit", // Inherits this property from its parent element.
-  },
-   /**************************************************
-  * wordSpacing
-  *************************************************/
-  WORD_SPACING: {
-    WORD_SPACING_NORMAL: "wordSpacingNormal",
-    WORD_SPACING_1: "wordSpacing1",
-    WORD_SPACING_2: "wordSpacing2",
-    WORD_SPACING_3: "wordSpacing3",
-    WORD_SPACING_4: "wordSpacing4",
-    WORD_SPACING_5: "wordSpacing5",
-    WORD_SPACING_6: "wordSpacing6",
-    WORD_SPACING_7: "wordSpacing7",
-    WORD_SPACING_8: "wordSpacing8",
   },
 };
 
