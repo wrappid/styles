@@ -1,4 +1,5 @@
 export const PX_TAG = "px ";
+export const REM_TAG = "rem";
 export const IMPORTANT = " !important";
 
 /**
@@ -7,6 +8,7 @@ export const IMPORTANT = " !important";
 export const DEFAULT_MARGIN = 8;
 export const DEFAULT_PADDING = 8;
 export const DEFAULT_SPACING = 8;
+export const DEFAULT_WORD_SPACING = 8;
 
 /**
  * Border related defaults

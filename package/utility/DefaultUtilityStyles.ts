@@ -6,10 +6,12 @@ import {
   DEFAULT_BORDER_WIDTH,
   DEFAULT_MARGIN,
   DEFAULT_PADDING,
+  DEFAULT_WORD_SPACING,
   DEFAULT_SHADOW_COLOR_RGB,
   DEFAULT_SPACING,
   IMPORTANT,
-  PX_TAG
+  PX_TAG,
+  REM_TAG
 } from "../base/constants";
 
 export default class DefaultUtilityStyles extends BaseStyle {
@@ -1429,26 +1431,26 @@ export default class DefaultUtilityStyles extends BaseStyle {
       fontWeightlighter: { fontWeight: "lighter" },
 
       /**************************************************
-       * Aspect Ratio
+       * Line Height
        *************************************************/
       lineHeightNormal : { lineHeight: "normal" },
-      lineHeight2      : { lineHeight: "2" },
+      lineHeight2      : { lineHeight: "2" }, // number multiplied by the element's font size 
       lineHeight3      : { lineHeight: "3" },
       lineHeightInitial: { lineHeight: "initial" },
       lineHeightInherit: { lineHeight: "inherit" },
 
       /**************************************************
-        * Aspect Ratio
+        * Word  Spacing
         *************************************************/
       wordSpacingNormal: { wordSpacing: "normal" },
-      wordSpacing1     : { wordSpacing: "0.0625rem" }, // number represent px
-      wordSpacing2     : { wordSpacing: "0.125rem" },
-      wordSpacing3     : { wordSpacing: "0.188rem" },
-      wordSpacing4     : { wordSpacing: "0.25rem" },
-      wordSpacing5     : { wordSpacing: "0.313rem" },
-      wordSpacing6     : { wordSpacing: "0.375rem" },
-      wordSpacing7     : { wordSpacing: "0.438rem" },
-      wordSpacing8     : { wordSpacing: "0.5rem" },
+      wordSpacing1     : { wordSpacing: DEFAULT_WORD_SPACING * 0.125 + REM_TAG }, // spacing number represent px, calculated in rem.
+      wordSpacing2     : { wordSpacing: DEFAULT_WORD_SPACING * 0.25 + REM_TAG },
+      wordSpacing3     : { wordSpacing: DEFAULT_WORD_SPACING * 0.375 + REM_TAG },
+      wordSpacing4     : { wordSpacing: DEFAULT_WORD_SPACING * 0.5 + REM_TAG },
+      wordSpacing5     : { wordSpacing: DEFAULT_WORD_SPACING * 0.625 + REM_TAG },
+      wordSpacing6     : { wordSpacing: DEFAULT_WORD_SPACING * 0.75 + REM_TAG },
+      wordSpacing7     : { wordSpacing: DEFAULT_WORD_SPACING * 0.875 + REM_TAG },
+      wordSpacing8     : { wordSpacing: DEFAULT_WORD_SPACING + REM_TAG },
     };
   }
 }
