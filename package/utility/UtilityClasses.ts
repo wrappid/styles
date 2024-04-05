@@ -1951,9 +1951,6 @@ const UtilityClasses = {
     WORD_SPACING_3: "wordSpacing3",
     WORD_SPACING_4: "wordSpacing4",
     WORD_SPACING_5: "wordSpacing5",
-    WORD_SPACING_6: "wordSpacing6",
-    WORD_SPACING_7: "wordSpacing7",
-    WORD_SPACING_8: "wordSpacing8",
 
     LINEHEIGHT_NORMAL: "lineHeightNormal", // default numeric value is 1.6
     LINEHEIGHT_2: "lineHeight2", // the line height will be relative and multipled to the font size.

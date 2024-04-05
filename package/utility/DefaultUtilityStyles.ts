@@ -1443,14 +1443,12 @@ export default class DefaultUtilityStyles extends BaseStyle {
         * Word  Spacing
         *************************************************/
       wordSpacingNormal: { wordSpacing: "normal" },
-      wordSpacing1     : { wordSpacing: DEFAULT_WORD_SPACING * 0.125 + REM_TAG }, // spacing number represent px, calculated in rem.
-      wordSpacing2     : { wordSpacing: DEFAULT_WORD_SPACING * 0.25 + REM_TAG },
-      wordSpacing3     : { wordSpacing: DEFAULT_WORD_SPACING * 0.375 + REM_TAG },
-      wordSpacing4     : { wordSpacing: DEFAULT_WORD_SPACING * 0.5 + REM_TAG },
-      wordSpacing5     : { wordSpacing: DEFAULT_WORD_SPACING * 0.625 + REM_TAG },
-      wordSpacing6     : { wordSpacing: DEFAULT_WORD_SPACING * 0.75 + REM_TAG },
-      wordSpacing7     : { wordSpacing: DEFAULT_WORD_SPACING * 0.875 + REM_TAG },
-      wordSpacing8     : { wordSpacing: DEFAULT_WORD_SPACING + REM_TAG },
+      wordSpacing1     : { wordSpacing: DEFAULT_WORD_SPACING * 1 + REM_TAG }, // spacing number represent px, calculated in rem.
+      wordSpacing2     : { wordSpacing: DEFAULT_WORD_SPACING * 2 + REM_TAG },
+      wordSpacing3     : { wordSpacing: DEFAULT_WORD_SPACING * 3 + REM_TAG },
+      wordSpacing4     : { wordSpacing: DEFAULT_WORD_SPACING * 4 + REM_TAG },
+      wordSpacing5     : { wordSpacing: DEFAULT_WORD_SPACING * 5 + REM_TAG },
+
     };
   }
 }
