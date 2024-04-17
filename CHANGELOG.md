@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.147](https://github.com/wrappid/styles/compare/v0.0.146...v0.0.147) (2024-04-17)
+
+
+### Bug Fixes
+
+* **global:** :bug: transfor rotate not wroking issue resolved ([9fb59e7](https://github.com/wrappid/styles/commit/9fb59e710f6106ca6e37bf5781cd4ef91cae3732)), closes [#72](https://github.com/wrappid/styles/issues/72)
+
 ### [0.0.146](https://github.com/wrappid/styles/compare/v0.0.145...v0.0.146) (2024-04-06)
 
 ### [0.0.145](https://github.com/wrappid/styles/compare/v0.0.144...v0.0.145) (2024-04-02)
