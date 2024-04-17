@@ -860,25 +860,25 @@ export default class DefaultUtilityStyles extends BaseStyle {
       end50 : { right: "50%" },
       end100: { right: "100%" },
 
-      ROTATE_15 : { transform: "rotate(15deg)" },
-      ROTATE_30 : { transform: "rotate(30deg)" },
-      ROTATE_45 : { transform: "rotate(45deg)" },
-      ROTATE_60 : { transform: "rotate(60deg)" },
-      ROTATE_75 : { transform: "rotate(75deg)" },
-      ROTATE_90 : { transform: "rotate(90deg)" },
-      ROTATE_120: { transform: "rotate(120deg)" },
-      ROTATE_180: { transform: "rotate(180deg)" },
-      ROTATE_270: { transform: "rotate(270deg)" },
+      rotate15 : { transform: "rotate(15deg)" },
+      rotate30 : { transform: "rotate(30deg)" },
+      rotate45 : { transform: "rotate(45deg)" },
+      rotate60 : { transform: "rotate(60deg)" },
+      rotate75 : { transform: "rotate(75deg)" },
+      rotate90 : { transform: "rotate(90deg)" },
+      rotate120: { transform: "rotate(120deg)" },
+      rotate180: { transform: "rotate(180deg)" },
+      rotate270: { transform: "rotate(270deg)" },
 
-      ROTATE_N_15 : { transform: "rotate(-15deg)" },
-      ROTATE_N_30 : { transform: "rotate(-30deg)" },
-      ROTATE_N_45 : { transform: "rotate(-45deg)" },
-      ROTATE_N_60 : { transform: "rotate(-60deg)" },
-      ROTATE_N_75 : { transform: "rotate(-75deg)" },
-      ROTATE_N_90 : { transform: "rotate(-90deg)" },
-      ROTATE_N_120: { transform: "rotate(-120deg)" },
-      ROTATE_N_180: { transform: "rotate(-180deg)" },
-      ROTATE_N_270: { transform: "rotate(-270deg)" },
+      rotateN15 : { transform: "rotate(-15deg)" },
+      rotateN30 : { transform: "rotate(-30deg)" },
+      rotateN45 : { transform: "rotate(-45deg)" },
+      rotateN60 : { transform: "rotate(-60deg)" },
+      rotateN75 : { transform: "rotate(-75deg)" },
+      rotateN90 : { transform: "rotate(-90deg)" },
+      rotateN120: { transform: "rotate(-120deg)" },
+      rotateN180: { transform: "rotate(-180deg)" },
+      rotateN270: { transform: "rotate(-270deg)" },
 
       rotateX15 : { transform: "rotateX(15deg)" },
       rotateX30 : { transform: "rotateX(30deg)" },
@@ -1443,12 +1443,14 @@ export default class DefaultUtilityStyles extends BaseStyle {
         * Word  Spacing
         *************************************************/
       wordSpacingNormal: { wordSpacing: "normal" },
-      wordSpacing1     : { wordSpacing: DEFAULT_WORD_SPACING * 1 + REM_TAG }, // spacing number represent px, calculated in rem.
-      wordSpacing2     : { wordSpacing: DEFAULT_WORD_SPACING * 2 + REM_TAG },
-      wordSpacing3     : { wordSpacing: DEFAULT_WORD_SPACING * 3 + REM_TAG },
-      wordSpacing4     : { wordSpacing: DEFAULT_WORD_SPACING * 4 + REM_TAG },
-      wordSpacing5     : { wordSpacing: DEFAULT_WORD_SPACING * 5 + REM_TAG },
-
+      wordSpacing1     : { wordSpacing: DEFAULT_WORD_SPACING * 0.125 + REM_TAG }, // spacing number represent px, calculated in rem.
+      wordSpacing2     : { wordSpacing: DEFAULT_WORD_SPACING * 0.25 + REM_TAG },
+      wordSpacing3     : { wordSpacing: DEFAULT_WORD_SPACING * 0.375 + REM_TAG },
+      wordSpacing4     : { wordSpacing: DEFAULT_WORD_SPACING * 0.5 + REM_TAG },
+      wordSpacing5     : { wordSpacing: DEFAULT_WORD_SPACING * 0.625 + REM_TAG },
+      wordSpacing6     : { wordSpacing: DEFAULT_WORD_SPACING * 0.75 + REM_TAG },
+      wordSpacing7     : { wordSpacing: DEFAULT_WORD_SPACING * 0.875 + REM_TAG },
+      wordSpacing8     : { wordSpacing: DEFAULT_WORD_SPACING + REM_TAG },
     };
   }
 }
