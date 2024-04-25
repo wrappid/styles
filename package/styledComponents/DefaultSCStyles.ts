@@ -3,7 +3,7 @@ import { BaseStyle } from "../base/BaseStyle";
 import { IMPORTANT, PX_TAG } from "../base/constants";
 import DefaultUtilityStyles from "../utility/DefaultUtilityStyles";
 
-const HEADING_TOP_MARGIN = "56" + PX_TAG;
+const HEADING_TOP_MARGIN = "64" + PX_TAG;
 
 export default class DefaultSCStyles extends BaseStyle {
   constructor() {
