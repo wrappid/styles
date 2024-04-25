@@ -7,13 +7,7 @@ import {
   X_LARGE_WINDOW_WIDTH,
   XX_LARGE_WINDOW_WIDTH
 } from "./config/constants";
-import {
-  CoreConfigContext,
-  StylesThemesContext,
-  ThemeContext,
-  UserThemeContext
-} from "./config/contextHandler";
-import ConfigProvider from "./ConfigProvider";
+import { ThemeContext } from "./config/contextHandler";
 import { updateModuleContextData } from "./context/wrappidAction";
 import WrappidContext, {
   resetWrappidContext,
@@ -37,8 +31,7 @@ import XLargeUtilityStyles from "./utility/XLargeUtilityStyles";
 import XXLargeUtilityStyles from "./utility/XXLargeUtilityStyles";
 
 export {
-  BaseStyle, ConfigProvider,
-  CoreConfigContext, DEFAULT_PADDING, DefaultUtilityStyles,
+  BaseStyle, DEFAULT_PADDING, DEFAULT_THEME, DefaultUtilityStyles,
   /**
    * Utility Function(s)
    */
@@ -50,7 +43,7 @@ export {
   /**
    * Style Classes Constants
    */
-  StyledComponentsClasses, StylesProvider, StylesThemesContext, theme, ThemeContext, UPDATE_DEFAULT_THEME, UPDATE_DEVELOPMENT_DATA, UPDATE_MODULE_DATA, UPDATE_PAGE_THEME, updateModuleContextData, updateWrappidContext, UserThemeContext,
+  StyledComponentsClasses, StylesProvider, theme, ThemeContext, UPDATE_DEFAULT_THEME, UPDATE_DEVELOPMENT_DATA, UPDATE_MODULE_DATA, UPDATE_PAGE_THEME, updateModuleContextData, updateWrappidContext,
   /**
    * Utility styles
    */
@@ -59,7 +52,6 @@ export {
    * Wrappid Context
    */
   WrappidContext, WrappidData, WrappidDataContext,
-  WrappidDispatchContext, WrappidSyncer, X_LARGE_WINDOW_WIDTH, XLargeUtilityStyles, XX_LARGE_WINDOW_WIDTH, XXLargeUtilityStyles, 
-  DEFAULT_THEME
+  WrappidDispatchContext, WrappidSyncer, X_LARGE_WINDOW_WIDTH, XLargeUtilityStyles, XX_LARGE_WINDOW_WIDTH, XXLargeUtilityStyles
 };
 
