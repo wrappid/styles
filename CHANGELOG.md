@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.148](https://github.com/wrappid/styles/compare/v0.0.147...v0.0.148) (2024-04-26)
+
+
+### Bug Fixes
+
+* **core:** :art: fix HEADING_TOP_MARGIN default value to 64 ([69940c2](https://github.com/wrappid/styles/commit/69940c2161c3bb87ee6af16178c939e29fabf714)), closes [#57](https://github.com/wrappid/styles/issues/57)
+* **core:** :zap: code cleanup related to config and theme ([a373082](https://github.com/wrappid/styles/commit/a37308208a9364c1cd70d2cd15562988b9464042)), closes [#57](https://github.com/wrappid/styles/issues/57)
+
 ### [0.0.147](https://github.com/wrappid/styles/compare/v0.0.146...v0.0.147) (2024-04-17)
 
 
