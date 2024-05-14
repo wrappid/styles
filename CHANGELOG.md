@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.149](https://github.com/wrappid/styles/compare/v0.0.148...v0.0.149) (2024-05-14)
+
+
+### Bug Fixes
+
+* **config:** 📦 version changes in package.json file ([2281b56](https://github.com/wrappid/styles/commit/2281b56ac9323d7033092127ac97ce8520e970de)), closes [#87](https://github.com/wrappid/styles/issues/87)
+
 ### [0.0.148](https://github.com/wrappid/styles/compare/v0.0.147...v0.0.148) (2024-04-26)
 
 
