@@ -82,16 +82,16 @@ export default class SmallUtilityStyles extends BaseStyle {
       /**************************************************
        * Display
        *************************************************/
-      smDisplayInline: { display: "inline" },
-      smDisplayInlineBlock: { display: "inline-block" },
-      smDisplayBlock: { display: "block" },
-      smDisplayGrid: { display: "grid" },
-      smDisplayTable: { display: "table" },
-      smDisplayTableRow: { display: "table-row" },
-      smDisplayTableCell: { display: "table-cell" },
-      smDisplayFlex: { display: "flex" },
-      smDisplayInlineFlex: { display: "inline-flex" },
-      smDisplayNone: { display: "none" },
+      smDisplayInline: { display: "inline" + IMPORTANT},
+      smDisplayInlineBlock: { display: "inline-block" + IMPORTANT},
+      smDisplayBlock: { display: "block" + IMPORTANT },
+      smDisplayGrid: { display: "grid" + IMPORTANT},
+      smDisplayTable: { display: "table" + IMPORTANT},
+      smDisplayTableRow: { display: "table-row" + IMPORTANT},
+      smDisplayTableCell: { display: "table-cell" + IMPORTANT},
+      smDisplayFlex: { display: "flex" + IMPORTANT},
+      smDisplayInlineFlex: { display: "inline-flex" + IMPORTANT},
+      smDisplayNone: { display: "none" + IMPORTANT },
 
       /**************************************************
        * Flex
