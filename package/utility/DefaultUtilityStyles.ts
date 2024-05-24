@@ -708,15 +708,15 @@ export default class DefaultUtilityStyles extends BaseStyle {
       /**************************************************
        * Display
        *************************************************/
-      displayInline     : { display: "inline" + IMPORTANT},
-      displayInlineBlock: { display: "inline-block" + IMPORTANT},
-      displayBlock      : { display: "block" + IMPORTANT + IMPORTANT},
-      displayGrid       : { display: "grid" + IMPORTANT},
-      displayTable      : { display: "table" + IMPORTANT},
-      displayTableRow   : { display: "table-row" + IMPORTANT},
-      displayTableCell  : { display: "table-cell" + IMPORTANT},
-      displayFlex       : { display: "flex" + IMPORTANT},
-      displayInlineFlex : { display: "inline-flex" + IMPORTANT},
+      displayInline     : { display: "inline" + IMPORTANT },
+      displayInlineBlock: { display: "inline-block" + IMPORTANT },
+      displayBlock      : { display: "block" + IMPORTANT + IMPORTANT },
+      displayGrid       : { display: "grid" + IMPORTANT },
+      displayTable      : { display: "table" + IMPORTANT },
+      displayTableRow   : { display: "table-row" + IMPORTANT },
+      displayTableCell  : { display: "table-cell" + IMPORTANT },
+      displayFlex       : { display: "flex" + IMPORTANT },
+      displayInlineFlex : { display: "inline-flex" + IMPORTANT },
       displayNone       : { display: "none" + IMPORTANT },
 
       /**************************************************
