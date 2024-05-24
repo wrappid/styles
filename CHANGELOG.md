@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.150](https://github.com/wrappid/styles/compare/v0.0.149...v0.0.150) (2024-05-24)
+
+
+### Bug Fixes
+
+* :bug: use important in display property ([c53da07](https://github.com/wrappid/styles/commit/c53da0734a0fdc1f68d931a79429e8bf102bcbbb)), closes [#89](https://github.com/wrappid/styles/issues/89)
+* **global:** :recycle: linting fix ([84a9474](https://github.com/wrappid/styles/commit/84a9474d226e77d129149c1e5ef0bd0143446f8b)), closes [#89](https://github.com/wrappid/styles/issues/89)
+
 ### [0.0.149](https://github.com/wrappid/styles/compare/v0.0.148...v0.0.149) (2024-05-14)
 
 
