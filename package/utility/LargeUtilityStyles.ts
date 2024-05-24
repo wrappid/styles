@@ -81,16 +81,16 @@ export default class LargeUtilityStyles extends BaseStyle {
       /**************************************************
        * Display
        *************************************************/
-      lgDisplayInline: { display: "inline" },
-      lgDisplayInlineBlock: { display: "inline-block" },
-      lgDisplayBlock: { display: "block" },
-      lgDisplayGrid: { display: "grid" },
-      lgDisplayTable: { display: "table" },
-      lgDisplayTableRow: { display: "table-row" },
-      lgDisplayTableCell: { display: "table-cell" },
-      lgDisplayFlex: { display: "flex" },
-      lgDisplayInlineFlex: { display: "inline-flex" },
-      lgDisplayNone: { display: "none" },
+      lgDisplayInline: { display: "inline" + IMPORTANT },
+      lgDisplayInlineBlock: { display: "inline-block" + IMPORTANT },
+      lgDisplayBlock: { display: "block" + IMPORTANT },
+      lgDisplayGrid: { display: "grid" + IMPORTANT },
+      lgDisplayTable: { display: "table" + IMPORTANT },
+      lgDisplayTableRow: { display: "table-row" + IMPORTANT },
+      lgDisplayTableCell: { display: "table-cell" + IMPORTANT },
+      lgDisplayFlex: { display: "flex" + IMPORTANT },
+      lgDisplayInlineFlex: { display: "inline-flex" + IMPORTANT },
+      lgDisplayNone: { display: "none" + IMPORTANT },
 
       /**************************************************
        * Flex

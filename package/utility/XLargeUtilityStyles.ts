@@ -82,16 +82,16 @@ export default class XLargeUtilityStyles extends BaseStyle {
       /**************************************************
        * Display
        *************************************************/
-      xlDisplayInline: { display: "inline" },
-      xlDisplayInlineBlock: { display: "inline-block" },
-      xlDisplayBlock: { display: "block" },
-      xlDisplayGrid: { display: "grid" },
-      xlDisplayTable: { display: "table" },
-      xlDisplayTableRow: { display: "table-row" },
-      xlDisplayTableCell: { display: "table-cell" },
-      xlDisplayFlex: { display: "flex" },
-      xlDisplayInlineFlex: { display: "inline-flex" },
-      xlDisplayNone: { display: "none" },
+      xlDisplayInline: { display: "inline" + IMPORTANT },
+      xlDisplayInlineBlock: { display: "inline-block" + IMPORTANT },
+      xlDisplayBlock: { display: "block" + IMPORTANT },
+      xlDisplayGrid: { display: "grid" + IMPORTANT },
+      xlDisplayTable: { display: "table" + IMPORTANT },
+      xlDisplayTableRow: { display: "table-row" + IMPORTANT },
+      xlDisplayTableCell: { display: "table-cell" + IMPORTANT },
+      xlDisplayFlex: { display: "flex" + IMPORTANT },
+      xlDisplayInlineFlex: { display: "inline-flex" + IMPORTANT },
+      xlDisplayNone: { display: "none" + IMPORTANT },
 
       /**************************************************
        * Flex
