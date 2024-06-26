@@ -1055,7 +1055,7 @@ export default class DefaultUtilityStyles extends BaseStyle {
        * Padding
        *-----------------------------------------------*/
 
-      p0: { padding: 0 + PX_TAG },
+      p0: { padding: 0 + PX_TAG + IMPORTANT },
       p1: { padding: DEFAULT_PADDING + PX_TAG },
       p2: { padding: DEFAULT_PADDING * 2 + PX_TAG },
       p3: { padding: DEFAULT_PADDING * 3 + PX_TAG },
@@ -1070,7 +1070,7 @@ export default class DefaultUtilityStyles extends BaseStyle {
       pt5: { paddingTop: DEFAULT_PADDING * 5 + PX_TAG },
 
       pr0: { paddingRight: 0 + PX_TAG },
-      pr1: { paddingRight: DEFAULT_PADDING + PX_TAG },
+      pr1: { paddingRight: DEFAULT_PADDING + PX_TAG + IMPORTANT },
       pr2: { paddingRight: DEFAULT_PADDING * 2 + PX_TAG },
       pr3: { paddingRight: DEFAULT_PADDING * 3 + PX_TAG },
       pr4: { paddingRight: DEFAULT_PADDING * 4 + PX_TAG },
