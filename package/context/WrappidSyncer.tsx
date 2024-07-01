@@ -31,10 +31,7 @@ export default function WrappidSyncer({
      * update (global/store/react)context value
      */
     /* add default wrappid theme */
-    data.themes = {
-      ...data?.themes,
-      wrappidTheme: { name: "Wrappid Theme", theme: DEFAULT_THEME },
-    };
+    data.themes = [...(data?.themes || []), { id: "wrappidTheme", name: "Wrappid Theme", theme: DEFAULT_THEME }];
     updateWrappidContext(data);
     dispatch({ payload: data, type: UPDATE_DATA });
     WrappidData = data;

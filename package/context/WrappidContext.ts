@@ -19,11 +19,13 @@ type WrappidConfigDatatype = {
   otpLength?: number;
 };
 
+export type ThemeObjectType = { id: string, name: string, theme: DEFAULT_THEME_TYPES };
+
 export type WrapidDataType = {
   config: WrappidConfigDatatype;
   development: {[key: string]: any}
   pageThemeID: string | undefined;
-  themes?: { [key: string]: { name: string; theme: DEFAULT_THEME_TYPES } };
+  themes?: ThemeObjectType[];
   modules?: {[key: string]: {[key: string]: any}};
 };
 export const wrappidInitialData: WrapidDataType = {
@@ -31,7 +33,7 @@ export const wrappidInitialData: WrapidDataType = {
   development: {},
   modules    : {},
   pageThemeID: undefined,
-  themes     : { wrappidTheme: { name: "Wrappid Theme", theme: DEFAULT_THEME } }
+  themes     : [{ id: "wrappidTheme", name: "Wrappid Theme", theme: DEFAULT_THEME }]
 };
 
 export const WrappidDataContext =

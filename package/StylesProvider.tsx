@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { updateTheme } from "./base/BaseStyle";
 import { ThemeManager } from "./base/ThemeManager";
 import { AppStylesContext, ThemeContext } from "./config/contextHandler";
-import { WrappidDataContext } from "./context/WrappidContext";
+import { ThemeObjectType, WrappidDataContext } from "./context/WrappidContext";
 import DefaultSCStyles from "./styledComponents/DefaultSCStyles";
 import LargeSCStyles from "./styledComponents/LargeSCStyles";
 import MediumSCStyles from "./styledComponents/MediumSCStyles";
@@ -12,7 +12,6 @@ import SmallSCStyles from "./styledComponents/SmallSCStyles";
 import XLargeSCStyles from "./styledComponents/XLargeSCStyles";
 import XXLargeSCStyles from "./styledComponents/XXLargeSCStyles";
 import { DEFAULT_THEME } from "./theme/theme";
-import { DEFAULT_THEME_TYPES } from "./theme/themeType";
 import DefaultUtilityStyles from "./utility/DefaultUtilityStyles";
 import LargeUtilityStyles from "./utility/LargeUtilityStyles";
 import MediumUtilityStyles from "./utility/MediumUtilityStyles";
@@ -72,12 +71,29 @@ export default function StylesProvider(props: {
   const [styleFiles, setStyles] = useState<any>({});
   const [providerId, setProviderId] = useState<any>(null);
 
-  const [currentTheme, setCurrentTheme] = useState(theme);
+  const [currentTheme, setCurrentTheme] = useState(DEFAULT_THEME);
 
-  const { themes = {}, pageThemeID } = React.useContext(WrappidDataContext);
+  const { config, themes: combinedThemes, pageThemeID } = React.useContext(WrappidDataContext);
+  const { defaultTheme = "wrappidTheme" } = config || {};
   const { userThemeID } = useSelector((state: any) => state?.app);
 
-  const mergeJson = (oldJson:any = {}, newJson:any = {} ) => {
+  const getTheme = (themeID: string) => {
+    return combinedThemes?.find(theme => theme?.id === themeID);
+  };
+
+  const isThemeExist = (themeID: string) => {
+    const themeFound: ThemeObjectType | undefined = getTheme(themeID);
+
+    return themeFound ? true : false;
+  };
+  
+  const getThemeObj = (themeID: string) => {
+    const themeFound: ThemeObjectType | undefined = getTheme(themeID);
+
+    return themeFound?.theme || {};
+  };
+
+  const mergeJSON = (oldJson:any = {}, newJson:any = {} ) => {
     const convertedJSON:any = { ...oldJson };
 
     if((Array.isArray(oldJson) && !Array.isArray(newJson)) || (!Array.isArray(oldJson) && Array.isArray(newJson)) ){
@@ -94,34 +110,48 @@ export default function StylesProvider(props: {
         const keyType = typeof oldJson[key];
 
         if(keyType === "object" ){
-          convertedJSON[key] = mergeJson(oldJson[key], newJson[key]);
+          convertedJSON[key] = mergeJSON(oldJson[key], newJson[key]);
         } else {
           convertedJSON[key] = newJson[key];
         }
       } 
     }
-    
     return convertedJSON;
   };
 
   useEffect(() => {
-    const mergeTheme:DEFAULT_THEME_TYPES = { ...currentTheme };
-    let tempTheme: any = {};
+    const baseTheme = { ...DEFAULT_THEME };
+    let tempTheme = {};
 
-    if (themeID && Object.keys(themes).includes(themeID)) {
-      tempTheme = themes[themeID]?.theme || {};
-    } else if (pageThemeID && Object.keys(themes).includes(pageThemeID)) {
-      tempTheme = themes[pageThemeID]?.theme || {};
-
-    } else if (userThemeID && Object.keys(themes).includes(userThemeID)) {
-      tempTheme = themes[userThemeID]?.theme || {};
+    /* app theme added */
+    if (defaultTheme && isThemeExist(defaultTheme)) {
+      tempTheme = getThemeObj(defaultTheme);
     }
-    const mergedTheme:any  = mergeJson(mergeTheme, tempTheme);
+    if (themeID && isThemeExist(themeID)) {
+      tempTheme = getThemeObj(themeID);
+    } else if (pageThemeID && isThemeExist(pageThemeID)) {
+      /* page theme added */
+      tempTheme = getThemeObj(pageThemeID);
+    } else if (userThemeID && isThemeExist(userThemeID)) {
+      /* user theme added */
+      tempTheme = getThemeObj(userThemeID);
+    } else {
+      // do nothing
+    }
     
+    const mergedTheme = mergeJSON(tempTheme, baseTheme);
+
     setCurrentTheme(mergedTheme);
-  }, [themes, themeID, userThemeID, pageThemeID]);
+  }, [
+    combinedThemes,
+    themeID,
+    userThemeID,
+    pageThemeID,
+    defaultTheme
+  ]);
 
   useEffect(() => {
+    theme = currentTheme;
     updateTheme(theme);
     new ThemeManager().refreshTheme(theme);
 
@@ -208,7 +238,7 @@ export default function StylesProvider(props: {
   }, []);
 
   useEffect(() => {
-    theme = { ...theme, ...currentTheme };
+    theme = currentTheme;
     updateTheme(theme);
     new ThemeManager().refreshTheme(theme);
 
