@@ -32,20 +32,15 @@ export default class DefaultSCStyles extends BaseStyle {
         width       : "100%" + IMPORTANT,
         marginBottom: 16 + IMPORTANT
       },
-      scInputsMenuItem      : {},
-      scinputsSelect        : {},
-      scInputsSwitch        : {},
-      scInputsTimePicker    : {},
-      scInputsFormHelperText: { paddingLeft: 0 + IMPORTANT },
+      scInputsMenuItem              : {},
+      scinputsSelect                : {},
+      scInputsSwitch                : {},
+      scInputsTimePicker            : {},
+      scInputsFormHelperText        : { paddingLeft: 0 + IMPORTANT },
       /**************************************************
        * DATA DISPLAY
        *************************************************/
-      scDataDisplayAvatar   : {
-        backgroundColor: this.theme.palette?.secondary?.light,
-        borderWidth    : "1" + PX_TAG + IMPORTANT,
-        borderStyle    : "solid" + IMPORTANT,
-        borderColor    : this.theme.palette?.secondary?.main
-      },
+      scDataDisplayAvatar           : {},
       scDataDisplayBadge            : {},
       scDataDisplayChip             : {},
       scDataDisplayDivider          : { ...defaultUtilityStyles.my1 },

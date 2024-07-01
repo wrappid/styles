@@ -12,6 +12,7 @@ import SmallSCStyles from "./styledComponents/SmallSCStyles";
 import XLargeSCStyles from "./styledComponents/XLargeSCStyles";
 import XXLargeSCStyles from "./styledComponents/XXLargeSCStyles";
 import { DEFAULT_THEME } from "./theme/theme";
+import { DEFAULT_THEME_TYPES } from "./theme/themeType";
 import DefaultUtilityStyles from "./utility/DefaultUtilityStyles";
 import LargeUtilityStyles from "./utility/LargeUtilityStyles";
 import MediumUtilityStyles from "./utility/MediumUtilityStyles";
@@ -76,20 +77,48 @@ export default function StylesProvider(props: {
   const { themes = {}, pageThemeID } = React.useContext(WrappidDataContext);
   const { userThemeID } = useSelector((state: any) => state?.app);
 
-  useEffect(() => {
-    if (themeID && Object.keys(themes).includes(themeID)) {
-      setCurrentTheme({ ...currentTheme, ...(themes[themeID]?.theme || {}) });
-    } else if (pageThemeID && Object.keys(themes).includes(pageThemeID)) {
-      setCurrentTheme({
-        ...currentTheme,
-        ...(themes[pageThemeID]?.theme || {}),
-      });
-    } else if (userThemeID && Object.keys(themes).includes(userThemeID)) {
-      setCurrentTheme({
-        ...currentTheme,
-        ...(themes[userThemeID]?.theme || {}),
-      });
+  const mergeJson = (oldJson:any = {}, newJson:any = {} ) => {
+    const convertedJSON:any = { ...oldJson };
+
+    if((Array.isArray(oldJson) && !Array.isArray(newJson)) || (!Array.isArray(oldJson) && Array.isArray(newJson)) ){
+      throw new Error("JSON value type mismatch");
     }
+    if(Array.isArray(oldJson) && Array.isArray(newJson)){
+      return [...oldJson, ...newJson];
+    }
+    if(Object.keys(oldJson).length <= 0){
+      return newJson;
+    }
+    for (const key in oldJson) {
+      if(Object.prototype.hasOwnProperty.call(newJson, key)){
+        const keyType = typeof oldJson[key];
+
+        if(keyType === "object" ){
+          convertedJSON[key] = mergeJson(oldJson[key], newJson[key]);
+        } else {
+          convertedJSON[key] = newJson[key];
+        }
+      } 
+    }
+    
+    return convertedJSON;
+  };
+
+  useEffect(() => {
+    const mergeTheme:DEFAULT_THEME_TYPES = { ...currentTheme };
+    let tempTheme: any = {};
+
+    if (themeID && Object.keys(themes).includes(themeID)) {
+      tempTheme = themes[themeID]?.theme || {};
+    } else if (pageThemeID && Object.keys(themes).includes(pageThemeID)) {
+      tempTheme = themes[pageThemeID]?.theme || {};
+
+    } else if (userThemeID && Object.keys(themes).includes(userThemeID)) {
+      tempTheme = themes[userThemeID]?.theme || {};
+    }
+    const mergedTheme:any  = mergeJson(mergeTheme, tempTheme);
+    
+    setCurrentTheme(mergedTheme);
   }, [themes, themeID, userThemeID, pageThemeID]);
 
   useEffect(() => {
