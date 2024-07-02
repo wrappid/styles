@@ -94,8 +94,7 @@ export default function StylesProvider(props: {
   };
 
   const mergeJSON = (oldJson:any = {}, newJson:any = {} ) => {
-    const convertedJSON:any = { ...oldJson };
-
+    
     if((Array.isArray(oldJson) && !Array.isArray(newJson)) || (!Array.isArray(oldJson) && Array.isArray(newJson)) ){
       throw new Error("JSON value type mismatch");
     }
@@ -105,16 +104,20 @@ export default function StylesProvider(props: {
     if(Object.keys(oldJson).length <= 0){
       return newJson;
     }
-    for (const key in oldJson) {
-      if(Object.prototype.hasOwnProperty.call(newJson, key)){
-        const keyType = typeof oldJson[key];
+    const convertedJSON:any = { ...oldJson };
+
+    for (const key in newJson) {
+      if(Object.prototype.hasOwnProperty.call(oldJson, key)){
+        const keyType = typeof newJson[key];
 
         if(keyType === "object" ){
           convertedJSON[key] = mergeJSON(oldJson[key], newJson[key]);
         } else {
           convertedJSON[key] = newJson[key];
         }
-      } 
+      } else{
+        convertedJSON[key] = newJson[key];
+      }
     }
     return convertedJSON;
   };
@@ -139,7 +142,7 @@ export default function StylesProvider(props: {
       // do nothing
     }
     
-    const mergedTheme = mergeJSON(tempTheme, baseTheme);
+    const mergedTheme = mergeJSON(baseTheme, tempTheme);
 
     setCurrentTheme(mergedTheme);
   }, [
