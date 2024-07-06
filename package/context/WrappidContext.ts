@@ -24,7 +24,7 @@ export type ThemeObjectType = { id: string, name: string, theme: DEFAULT_THEME_T
 export type WrapidDataType = {
   config: WrappidConfigDatatype;
   development: {[key: string]: any}
-  pageThemeID: string | undefined;
+  pageThemeID?: string;
   themes?: ThemeObjectType[];
   modules?: {[key: string]: {[key: string]: any}};
 };
@@ -40,7 +40,7 @@ export const WrappidDataContext =
   React.createContext<WrapidDataType>(wrappidInitialData);
 
 export const WrappidDispatchContext = React.createContext<
-  Dispatch<{ type: string; payload: object | string }>
+  Dispatch<{ type: string; payload: object | any }>
 >(() => null);
 
 const WrappidContext = { ...wrappidInitialData };
