@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.155](https://github.com/wrappid/styles/compare/v0.0.154...v0.0.155) (2024-07-22)
+
+
+### Bug Fixes
+
+* **utils:** :lipstick: add important to bgSuccess, bgInfo, bgWarning, bgError ([5196505](https://github.com/wrappid/styles/commit/5196505c86a59b77b91ce67cf6bdb8ac002b5179)), closes [#97](https://github.com/wrappid/styles/issues/97)
+
 ### [0.0.154](https://github.com/wrappid/styles/compare/v0.0.153...v0.0.154) (2024-07-11)
 
 ### [0.0.153](https://github.com/wrappid/styles/compare/v0.0.152...v0.0.153) (2024-07-01)
