@@ -149,7 +149,7 @@ export default class DefaultUtilityStyles extends BaseStyle {
       },
 
       bgSuccess: {
-        backgroundColor: this.theme.palette?.success?.main,
+        backgroundColor: this.theme.palette?.success?.main + IMPORTANT,
         color          : this.theme.palette?.success?.contrastText + IMPORTANT,
       },
       bgSuccessLight: {
@@ -162,7 +162,7 @@ export default class DefaultUtilityStyles extends BaseStyle {
       },
 
       bgError: {
-        backgroundColor: this.theme.palette?.error?.main,
+        backgroundColor: this.theme.palette?.error?.main + IMPORTANT,
         color          : this.theme.palette?.error?.contrastText + IMPORTANT,
       },
       bgErrorLight: {
@@ -175,7 +175,7 @@ export default class DefaultUtilityStyles extends BaseStyle {
       },
 
       bgWarning: {
-        backgroundColor: this.theme.palette?.warning?.main,
+        backgroundColor: this.theme.palette?.warning?.main + IMPORTANT,
         color          : this.theme.palette?.warning?.contrastText + IMPORTANT,
       },
       bgWarningLight: {
@@ -188,7 +188,7 @@ export default class DefaultUtilityStyles extends BaseStyle {
       },
 
       bgInfo: {
-        backgroundColor: this.theme.palette?.info?.main,
+        backgroundColor: this.theme.palette?.info?.main + IMPORTANT,
         color          : this.theme.palette?.info?.contrastText + IMPORTANT,
       },
       bgInfoLight: {
@@ -1076,7 +1076,7 @@ export default class DefaultUtilityStyles extends BaseStyle {
       pr4: { paddingRight: DEFAULT_PADDING * 4 + PX_TAG },
       pr5: { paddingRight: DEFAULT_PADDING * 5 + PX_TAG },
 
-      pb0: { paddingBottom: 0 + PX_TAG },
+      pb0: { paddingBottom: 0 + PX_TAG + IMPORTANT },
       pb1: { paddingBottom: DEFAULT_PADDING + PX_TAG },
       pb2: { paddingBottom: DEFAULT_PADDING * 2 + PX_TAG },
       pb3: { paddingBottom: DEFAULT_PADDING * 3 + PX_TAG },
