@@ -61,7 +61,7 @@ const UtilityClasses = {
       JUSTIFY_CONTENT_FLEX_END: "smJustifyContentFlexEnd",
       JUSTIFY_CONTENT_SPACE_BETWEEN: "smJustifyContentSpaceBetween",
       JUSTIFY_CONTENT_SPACE_AROUND: "smJustifyContentSpaceAround",
-      JUSTIFY_CONTENT_SPACE_EVENLY: "smJustifyContentSpaceEvenly"
+      JUSTIFY_CONTENT_SPACE_EVENLY: "smJustifyContentSpaceEvenly",
     },
     MD: {
       ALIGN_ITEMS_START: "mdAlignItemsStart",
@@ -89,7 +89,7 @@ const UtilityClasses = {
       JUSTIFY_CONTENT_FLEX_END: "mdJustifyContentFlexEnd",
       JUSTIFY_CONTENT_SPACE_BETWEEN: "mdJustifyContentSpaceBetween",
       JUSTIFY_CONTENT_SPACE_AROUND: "mdJustifyContentSpaceAround",
-      JUSTIFY_CONTENT_SPACE_EVENLY: "mdJustifyContentSpaceEvenly"
+      JUSTIFY_CONTENT_SPACE_EVENLY: "mdJustifyContentSpaceEvenly",
     },
     LG: {
       ALIGN_ITEMS_START: "lgAlignItemsStart",
@@ -117,7 +117,7 @@ const UtilityClasses = {
       JUSTIFY_CONTENT_FLEX_END: "lgJustifyContentFlexEnd",
       JUSTIFY_CONTENT_SPACE_BETWEEN: "lgJustifyContentSpaceBetween",
       JUSTIFY_CONTENT_SPACE_AROUND: "lgJustifyContentSpaceAround",
-      JUSTIFY_CONTENT_SPACE_EVENLY: "lgJustifyContentSpaceEvenly"
+      JUSTIFY_CONTENT_SPACE_EVENLY: "lgJustifyContentSpaceEvenly",
     },
     XL: {
       ALIGN_ITEMS_START: "xlAlignItemsStart",
@@ -145,7 +145,7 @@ const UtilityClasses = {
       JUSTIFY_CONTENT_FLEX_END: "xlJustifyContentFlexEnd",
       JUSTIFY_CONTENT_SPACE_BETWEEN: "xlJustifyContentSpaceBetween",
       JUSTIFY_CONTENT_SPACE_AROUND: "xlJustifyContentSpaceAround",
-      JUSTIFY_CONTENT_SPACE_EVENLY: "xlJustifyContentSpaceEvenly"
+      JUSTIFY_CONTENT_SPACE_EVENLY: "xlJustifyContentSpaceEvenly",
     },
     XXL: {
       ALIGN_ITEMS_START: "xxlAlignItemsStart",
@@ -173,8 +173,8 @@ const UtilityClasses = {
       JUSTIFY_CONTENT_FLEX_END: "xxlJustifyContentFlexEnd",
       JUSTIFY_CONTENT_SPACE_BETWEEN: "xxlJustifyContentSpaceBetween",
       JUSTIFY_CONTENT_SPACE_AROUND: "xxlJustifyContentSpaceAround",
-      JUSTIFY_CONTENT_SPACE_EVENLY: "xxlJustifyContentSpaceEvenly"
-    }
+      JUSTIFY_CONTENT_SPACE_EVENLY: "xxlJustifyContentSpaceEvenly",
+    },
   },
 
   /**************************************************
@@ -251,7 +251,7 @@ const UtilityClasses = {
       TO_BOTTOM_RIGHT: "gradientLinearToBottomRight",
       TO_BOTTOM_LEFT: "gradientLinearToBottomLeft",
       TO_TOP_RIGHT: "gradientLinearToTopRight",
-      TO_TOP_LEFT: "gradientLinearToTopLeft"
+      TO_TOP_LEFT: "gradientLinearToTopLeft",
     },
     RADIAL: {
       CIRCLE: "gradientRadialCircle",
@@ -259,8 +259,7 @@ const UtilityClasses = {
       CLOSEST_SIDE: "gradientRadialClosestSide",
       CLOSEST_CORNER: "gradientRadialClosestCorner",
       FARTHEST_SIDE: "gradientRadialFarthestSide",
-      FARTHEST_CORNER: "gradientRadialFarthestCorner"
-
+      FARTHEST_CORNER: "gradientRadialFarthestCorner",
     },
     REPEAT: {
       REPEAT: "gradientRepeat",
@@ -269,7 +268,7 @@ const UtilityClasses = {
       NO_REPEAT: "gradientNoRepeat",
       ROUND: "gradientRound",
       COVER: "gradientCover",
-      CONTAIN: "gradientContain"
+      CONTAIN: "gradientContain",
     },
     CONIC: {
       FROM_TOP: "gradientConicFromTop",
@@ -280,7 +279,6 @@ const UtilityClasses = {
       FROM_TOP_LEFT: "gradientConicFromTopLeft",
       FROM_BOTTOM_RIGHT: "gradientConicFromBottomRight",
       FROM_BOTTOM_LEFT: "gradientConicFromBottomLeft",
-
     },
   },
 
@@ -414,7 +412,7 @@ const UtilityClasses = {
     BORDER_STYLE_INSET: "borderInset",
     BORDER_STYLE_OUTSET: "borderOutset",
     BORDER_STYLE_RIDGE: "borderRidge",
-    BORDER_STYLE_SOLID: "borderSolid"
+    BORDER_STYLE_SOLID: "borderSolid",
   },
 
   /**************************************************
@@ -455,7 +453,7 @@ const UtilityClasses = {
     TEXT_OPACITY_25: "textOpacity25",
     TEXT_OPACITY_50: "textOpacity50",
     TEXT_OPACITY_75: "textOpacity75",
-    TEXT_OPACITY_100: "textOpacity100"
+    TEXT_OPACITY_100: "textOpacity100",
   },
 
   /**************************************************
@@ -500,7 +498,7 @@ const UtilityClasses = {
     CURSOR_W_RESIZE: "cursorWResize",
     CURSOR_WAIT: "cursorWait",
     CURSOR_ZOOM_IN: "cursorZoomIn",
-    CURSOR_ZOOM_OUT: "cursorZoomOut"
+    CURSOR_ZOOM_OUT: "cursorZoomOut",
   },
 
   /**************************************************
@@ -516,6 +514,18 @@ const UtilityClasses = {
     TABLE_CELL: "displayTableCell",
     FLEX: "displayFlex",
     INLINE_FLEX: "displayInlineFlex",
+    LIST_ITEM: "displayListItem",
+    CONTENTS: "displayContent",
+    INLINE_GRID: "displayInlineGrid",
+    INLINE_TABLE: "displayInlineTable",
+    RUN_IN: "displayRunIn",
+    TABLE_CAPTION: "displayTableCaption",
+    TABLE_COLUMN_GROUP: "displayTableColumnGroup",
+    TABLE_Header_Group: "displayTableHeaderGroup",
+    TABLE_ROW_GROUP: "displayTableRowGroup",
+    TABLE_COLUMN: "dispalyTableColumn",
+    INITIAL: "displayInitial",
+    INHERIT: "displayInherit",
     NONE: "displayNone",
 
     SM: {
@@ -528,7 +538,19 @@ const UtilityClasses = {
       TABLE_CELL: "smDisplayTableCell",
       FLEX: "smDisplayFlex",
       INLINE_FLEX: "smDisplayInlineFlex",
-      NONE: "smDisplayNone"
+      LIST_ITEM: "smDisplayListItem",
+      CONTENTS: "smDisplayContent",
+      INLINE_GRID: "smDisplayInlineGrid",
+      INLINE_TABLE: "smDisplayInlineTable",
+      RUN_IN: "smDisplayRunIn",
+      TABLE_CAPTION: "smsmDisplayTableCaption",
+      TABLE_COLUMN_GROUP: "smDisplayTableColumnGroup",
+      TABLE_Header_Group: "smDisplayTableHeaderGroup",
+      TABLE_ROW_GROUP: "smDisplayTableRowGroup",
+      TABLE_COLUMN: "smdispalyTableColumn",
+      INITIAL: "smDisplayInitial",
+      INHERIT: "smDisplayInherit",
+      NONE: "smDisplayNone",
     },
     MD: {
       INLINE: "mdDisplayInline",
@@ -540,7 +562,19 @@ const UtilityClasses = {
       TABLE_CELL: "mdDisplayTableCell",
       FLEX: "mdDisplayFlex",
       INLINE_FLEX: "mdDisplayInlineFlex",
-      NONE: "mdDisplayNone"
+      LIST_ITEM: "mdDisplayListItem",
+      CONTENTS: "mdDisplayContent",
+      INLINE_GRID: "mdDisplayInlineGrid",
+      INLINE_TABLE: "mddisplayInlineTable",
+      RUN_IN: "mdDisplayRunIn",
+      TABLE_CAPTION: "mdDisplayTableCaption",
+      TABLE_COLUMN_GROUP: "mdDisplayTableColumnGroup",
+      TABLE_Header_Group: "mdDisplayTableHeaderGroup",
+      TABLE_ROW_GROUP: "mdDisplayTableRowGroup",
+      TABLE_COLUMN: "mddispalyTableColumn",
+      INITIAL: "mdDisplayInitial",
+      INHERIT: "mdDisplayInherit",
+      NONE: "mdDisplayNone",
     },
     LG: {
       INLINE: "lgDisplayInline",
@@ -552,10 +586,22 @@ const UtilityClasses = {
       TABLE_CELL: "lgDisplayTableCell",
       FLEX: "lgDisplayFlex",
       INLINE_FLEX: "lgDisplayInlineFlex",
-      NONE: "lgDisplayNone"
+      LIST_ITEM: "lgDisplayListItem",
+      CONTENTS: "lgDisplayContent",
+      INLINE_GRID: "lgDisplayInlineGrid",
+      INLINE_TABLE: "lgDisplayInlineTable",
+      RUN_IN: "lgDisplayRunIn",
+      TABLE_CAPTION: "lgDisplayTableCaption",
+      TABLE_COLUMN_GROUP: "lgDisplayTableColumnGroup",
+      TABLE_Header_Group: "lgDisplayTableHeaderGroup",
+      TABLE_ROW_GROUP: "lgDisplayTableRowGroup",
+      TABLE_COLUMN: "lgDispalyTableColumn",
+      INITIAL: "lgDisplayInitial",
+      INHERIT: "lgDisplayInherit",
+      NONE: "lgDisplayNone",
     },
     XL: {
-      INLINE: "xlDisplayInline",
+      INLINE: "xxlDisplayInline",
       INLINE_BLOCK: "xlDisplayInlineBlock",
       BLOCK: "xlDisplayBlock",
       GRID: "xlDisplayGrid",
@@ -564,7 +610,19 @@ const UtilityClasses = {
       TABLE_CELL: "xlDisplayTableCell",
       FLEX: "xlDisplayFlex",
       INLINE_FLEX: "xlDisplayInlineFlex",
-      NONE: "xlDisplayNone"
+      LIST_ITEM: "xlDisplayListItem",
+      CONTENTS: "xlDisplayContent",
+      INLINE_GRID: "xlDisplayInlineGrid",
+      INLINE_TABLE: "xlDisplayInlineTable",
+      RUN_IN: "xlDisplayRunIn",
+      TABLE_CAPTION: "xlDisplayTableCaption",
+      TABLE_COLUMN_GROUP: "xlDisplayTableColumnGroup",
+      TABLE_Header_Group: "xlDisplayTableHeaderGroup",
+      TABLE_ROW_GROUP: "xlDisplayTableRowGroup",
+      TABLE_COLUMN: "dispalyTableColumn",
+      INITIAL: "xlDisplayInitial",
+      INHERIT: "xlDisplayInherit",
+      NONE: "xlDisplayNone",
     },
     XXL: {
       INLINE: "xxlDisplayInline",
@@ -576,8 +634,20 @@ const UtilityClasses = {
       TABLE_CELL: "xxlDisplayTableCell",
       FLEX: "xxlDisplayFlex",
       INLINE_FLEX: "xxlDisplayInlineFlex",
-      NONE: "xxlDisplayNone"
-    }
+      LIST_ITEM: "xxldisplayListItem",
+      CONTENTS: "xxldisplayContent",
+      INLINE_GRID: "xxldisplayInlineGrid",
+      INLINE_TABLE: "xxldisplayInlineTable",
+      RUN_IN: "xxldisplayRunIn",
+      TABLE_CAPTION: "xxldisplayTableCaption",
+      TABLE_COLUMN_GROUP: "xxldisplayTableColumnGroup",
+      TABLE_Header_Group: "xxldisplayTableHeaderGroup",
+      TABLE_ROW_GROUP: "xxldisplayTableRowGroup",
+      TABLE_COLUMN: "dispalyTableColumn",
+      INITIAL: "xxldisplayInitial",
+      INHERIT: "xxldisplayInherit",
+      NONE: "xxlDisplayNone",
+    },
   },
 
   /**************************************************
@@ -608,7 +678,7 @@ const UtilityClasses = {
       FLEX_SHRINK_1: "smFlexShrink1",
       FLEX_WRAP_WRAP: "smFlexWrapWrap",
       FLEX_WRAP_NO_WRAP: "smFlexWrapNoWrap",
-      FLEX_WRAP_WRAP_REVERSE: "smFlexWrapWrapReverse"
+      FLEX_WRAP_WRAP_REVERSE: "smFlexWrapWrapReverse",
     },
     MD: {
       DIRECTION_ROW: "mdFlexDirectionRow",
@@ -622,7 +692,7 @@ const UtilityClasses = {
       FLEX_SHRINK_1: "mdFlexShrink1",
       FLEX_WRAP_WRAP: "mdFlexWrapWrap",
       FLEX_WRAP_NO_WRAP: "mdFlexWrapNoWrap",
-      FLEX_WRAP_WRAP_REVERSE: "mdFlexWrapWrapReverse"
+      FLEX_WRAP_WRAP_REVERSE: "mdFlexWrapWrapReverse",
     },
     LG: {
       DIRECTION_ROW: "lgFlexDirectionRow",
@@ -636,7 +706,7 @@ const UtilityClasses = {
       FLEX_SHRINK_1: "lgFlexShrink1",
       FLEX_WRAP_WRAP: "lgFlexWrapWrap",
       FLEX_WRAP_NO_WRAP: "lgFlexWrapNoWrap",
-      FLEX_WRAP_WRAP_REVERSE: "lgFlexWrapWrapReverse"
+      FLEX_WRAP_WRAP_REVERSE: "lgFlexWrapWrapReverse",
     },
     XL: {
       DIRECTION_ROW: "xlFlexDirectionRow",
@@ -650,7 +720,7 @@ const UtilityClasses = {
       FLEX_SHRINK_1: "xlFlexShrink1",
       FLEX_WRAP_WRAP: "xlFlexWrapWrap",
       FLEX_WRAP_NO_WRAP: "xlFlexWrapNoWrap",
-      FLEX_WRAP_WRAP_REVERSE: "xlFlexWrapWrapReverse"
+      FLEX_WRAP_WRAP_REVERSE: "xlFlexWrapWrapReverse",
     },
     XXL: {
       DIRECTION_ROW: "xxlFlexDirectionRow",
@@ -664,8 +734,8 @@ const UtilityClasses = {
       FLEX_SHRINK_1: "xxlFlexShrink1",
       FLEX_WRAP_WRAP: "xxlFlexWrapWrap",
       FLEX_WRAP_NO_WRAP: "xxlFlexWrapNoWrap",
-      FLEX_WRAP_WRAP_REVERSE: "xxlFlexWrapWrapReverse"
-    }
+      FLEX_WRAP_WRAP_REVERSE: "xxlFlexWrapWrapReverse",
+    },
   },
 
   /**************************************************
@@ -679,7 +749,7 @@ const UtilityClasses = {
     MD: { START: "mdFloatStart", END: "mdFloatEnd", NONE: "mdFloatNone" },
     LG: { START: "lgFloatStart", END: "lgFloatEnd", NONE: "lgFloatNone" },
     XL: { START: "xlFloatStart", END: "xlFloatEnd", NONE: "xlFloatNone" },
-    XXL: { START: "xxlFloatStart", END: "xxlFloatEnd", NONE: "xxlFloatNone" }
+    XXL: { START: "xxlFloatStart", END: "xxlFloatEnd", NONE: "xxlFloatNone" },
   },
 
   /**************************************************
@@ -689,12 +759,12 @@ const UtilityClasses = {
     USER_SELECT: {
       ALL: "userSelectAll",
       AUTO: "userSelectAuto",
-      NONE: "userSelectNone"
+      NONE: "userSelectNone",
     },
     POINTER_EVENT: {
       NONE: "peNone",
-      AUTO: "peAuto"
-    }
+      AUTO: "peAuto",
+    },
   },
 
   /**************************************************
@@ -711,36 +781,36 @@ const UtilityClasses = {
       COVER: "smObjectFitCover",
       FILL: "smObjectFitFill",
       SCALE: "smObjectFitScale",
-      NONE: "smObjectFitNone"
+      NONE: "smObjectFitNone",
     },
     MD: {
       CONTAIN: "mdObjectFitContain",
       COVER: "mdObjectFitCover",
       FILL: "mdObjectFitFill",
       SCALE: "mdObjectFitScale",
-      NONE: "mdObjectFitNone"
+      NONE: "mdObjectFitNone",
     },
     LG: {
       CONTAIN: "lgObjectFitContain",
       COVER: "lgObjectFitCover",
       FILL: "lgObjectFitFill",
       SCALE: "lgObjectFitScale",
-      NONE: "lgObjectFitNone"
+      NONE: "lgObjectFitNone",
     },
     XL: {
       CONTAIN: "xlObjectFitContain",
       COVER: "xlObjectFitCover",
       FILL: "xlObjectFitFill",
       SCALE: "xlObjectFitScale",
-      NONE: "xlObjectFitNone"
+      NONE: "xlObjectFitNone",
     },
     XXL: {
       CONTAIN: "xxlObjectFitContain",
       COVER: "xxlObjectFitCover",
       FILL: "xxlObjectFitFill",
       SCALE: "xxlObjectFitScale",
-      NONE: "xxlObjectFitNone"
-    }
+      NONE: "xxlObjectFitNone",
+    },
   },
   /**************************************************
    * ASPECT_RATIO
@@ -785,7 +855,7 @@ const UtilityClasses = {
     OPACITY_85: "opacity85",
     OPACITY_90: "opacity90",
     OPACITY_95: "opacity95",
-    OPACITY_100: "opacity100"
+    OPACITY_100: "opacity100",
   },
 
   /**************************************************
@@ -803,7 +873,7 @@ const UtilityClasses = {
     OVERFLOW_Y_AUTO: "overflowYAuto",
     OVERFLOW_Y_HIDDEN: "overflowYHidden",
     OVERFLOW_Y_VISIBLE: "overflowYVisible",
-    OVERFLOW_Y_SCROLL: "overflowYScroll"
+    OVERFLOW_Y_SCROLL: "overflowYScroll",
   },
 
   /**************************************************
@@ -839,10 +909,8 @@ const UtilityClasses = {
     FIXED_TOP: "fixedTop",
     FIXED_BOTTOM: "fixedBottom",
     STICKY_TOP: "stickyTop",
-    STICKY_BOTTOM: "stickyBottom"
+    STICKY_BOTTOM: "stickyBottom",
   },
-
-
 
   /**************************************************
    * Shadows
@@ -851,12 +919,12 @@ const UtilityClasses = {
     NORMAL: "shadow",
     SMALL: "shadowSm",
     LARGE: "shadowLg",
-    NONE: "shadowNone"
+    NONE: "shadowNone",
   },
 
   /**************************************************
- * Transform
- *************************************************/
+   * Transform
+   *************************************************/
   TRANSFORM: {
     ROTATE: {
       ROTATE_15: "rotate15",
@@ -959,7 +1027,7 @@ const UtilityClasses = {
     MIN_VW_25: "minVw25",
     MIN_VW_50: "minVw50",
     MIN_VW_75: "minVw75",
-    MIN_VW_100: "minVw100"
+    MIN_VW_100: "minVw100",
   },
 
   /*-------------------------------------------------
@@ -990,7 +1058,7 @@ const UtilityClasses = {
     MIN_VH_25: "minVh25",
     MIN_VH_50: "minVh50",
     MIN_VH_75: "minVh75",
-    MIN_VH_100: "minVh100"
+    MIN_VH_100: "minVh100",
   },
 
   /**************************************************
@@ -1084,7 +1152,7 @@ const UtilityClasses = {
       PY2: "smPy2",
       PY3: "smPy3",
       PY4: "smPy4",
-      PY5: "smPy5"
+      PY5: "smPy5",
     },
     MD: {
       P0: "mdP0",
@@ -1128,7 +1196,7 @@ const UtilityClasses = {
       PY2: "mdPy2",
       PY3: "mdPy3",
       PY4: "mdPy4",
-      PY5: "mdPy5"
+      PY5: "mdPy5",
     },
     LG: {
       P0: "lgP0",
@@ -1172,7 +1240,7 @@ const UtilityClasses = {
       PY2: "lgPy2",
       PY3: "lgPy3",
       PY4: "lgPy4",
-      PY5: "lgPy5"
+      PY5: "lgPy5",
     },
     XL: {
       P0: "xlP0",
@@ -1216,7 +1284,7 @@ const UtilityClasses = {
       PY2: "xlPy2",
       PY3: "xlPy3",
       PY4: "xlPy4",
-      PY5: "xlPy5"
+      PY5: "xlPy5",
     },
     XXL: {
       P0: "xxlP0",
@@ -1260,8 +1328,8 @@ const UtilityClasses = {
       PY2: "xxlPy2",
       PY3: "xxlPy3",
       PY4: "xxlPy4",
-      PY5: "xxlPy5"
-    }
+      PY5: "xxlPy5",
+    },
   },
 
   /*-------------------------------------------------
@@ -1436,7 +1504,7 @@ const UtilityClasses = {
       MY_N2: "smMyN2",
       MY_N3: "smMyN3",
       MY_N4: "smMyN4",
-      MY_N5: "smMyN5"
+      MY_N5: "smMyN5",
     },
     MD: {
       M0: "mdM0",
@@ -1522,7 +1590,7 @@ const UtilityClasses = {
       MY_N2: "mdMyN2",
       MY_N3: "mdMyN3",
       MY_N4: "mdMyN4",
-      MY_N5: "mdMyN5"
+      MY_N5: "mdMyN5",
     },
     LG: {
       M0: "lgM0",
@@ -1608,7 +1676,7 @@ const UtilityClasses = {
       MY_N2: "lgMyN2",
       MY_N3: "lgMyN3",
       MY_N4: "lgMyN4",
-      MY_N5: "lgMyN5"
+      MY_N5: "lgMyN5",
     },
     XL: {
       M0: "xlM0",
@@ -1694,7 +1762,7 @@ const UtilityClasses = {
       MY_N2: "xlMyN2",
       MY_N3: "xlMyN3",
       MY_N4: "xlMyN4",
-      MY_N5: "xlMyN5"
+      MY_N5: "xlMyN5",
     },
     XXL: {
       M0: "xxlM0",
@@ -1780,8 +1848,8 @@ const UtilityClasses = {
       MY_N2: "xxlMyN2",
       MY_N3: "xxlMyN3",
       MY_N4: "xxlMyN4",
-      MY_N5: "xxlMyN5"
-    }
+      MY_N5: "xxlMyN5",
+    },
   },
 
   /*-------------------------------------------------
@@ -1825,7 +1893,7 @@ const UtilityClasses = {
       COL_GAP_2: "smColGap2",
       COL_GAP_3: "smColGap3",
       COL_GAP_4: "smColGap4",
-      COL_GAP_5: "smColGap5"
+      COL_GAP_5: "smColGap5",
     },
     MD: {
       GAP_0: "mdGap0",
@@ -1845,7 +1913,7 @@ const UtilityClasses = {
       COL_GAP_2: "mdColGap2",
       COL_GAP_3: "mdColGap3",
       COL_GAP_4: "mdColGap4",
-      COL_GAP_5: "mdColGap5"
+      COL_GAP_5: "mdColGap5",
     },
     LG: {
       GAP_0: "lgGap0",
@@ -1865,7 +1933,7 @@ const UtilityClasses = {
       COL_GAP_2: "lgColGap2",
       COL_GAP_3: "lgColGap3",
       COL_GAP_4: "lgColGap4",
-      COL_GAP_5: "lgColGap5"
+      COL_GAP_5: "lgColGap5",
     },
     XL: {
       GAP_0: "xlGap0",
@@ -1885,7 +1953,7 @@ const UtilityClasses = {
       COL_GAP_2: "xlColGap2",
       COL_GAP_3: "xlColGap3",
       COL_GAP_4: "xlColGap4",
-      COL_GAP_5: "xlColGap5"
+      COL_GAP_5: "xlColGap5",
     },
     XXL: {
       GAP_0: "xxlGap0",
@@ -1905,8 +1973,8 @@ const UtilityClasses = {
       COL_GAP_2: "xxlColGap2",
       COL_GAP_3: "xxlColGap3",
       COL_GAP_4: "xxlColGap4",
-      COL_GAP_5: "xxlColGap5"
-    }
+      COL_GAP_5: "xxlColGap5",
+    },
   },
 
   /**************************************************
@@ -1962,32 +2030,32 @@ const UtilityClasses = {
       TEXT_START: "smTextStart",
       TEXT_END: "smTextEnd",
       TEXT_CENTER: "smTextCenter",
-      TEXT_JUSTIFY: "smTextJustify"
+      TEXT_JUSTIFY: "smTextJustify",
     },
     MD: {
       TEXT_START: "mdTextStart",
       TEXT_END: "mdTextEnd",
       TEXT_CENTER: "mdTextCenter",
-      TEXT_JUSTIFY: "mdTextJustify"
+      TEXT_JUSTIFY: "mdTextJustify",
     },
     LG: {
       TEXT_START: "lgTextStart",
       TEXT_END: "lgTextEnd",
       TEXT_CENTER: "lgTextCenter",
-      TEXT_JUSTIFY: "lgTextJustify"
+      TEXT_JUSTIFY: "lgTextJustify",
     },
     XL: {
       TEXT_START: "xlTextStart",
       TEXT_END: "xlTextEnd",
       TEXT_CENTER: "xlTextCenter",
-      TEXT_JUSTIFY: "xlTextJustify"
+      TEXT_JUSTIFY: "xlTextJustify",
     },
     XXL: {
       TEXT_START: "xxlTextStart",
       TEXT_END: "xxlTextEnd",
       TEXT_CENTER: "xxlTextCenter",
-      TEXT_JUSTIFY: "xxlTextJustify"
-    }
+      TEXT_JUSTIFY: "xxlTextJustify",
+    },
   },
 
   /**************************************************
@@ -1999,7 +2067,7 @@ const UtilityClasses = {
     MIDDLE: "alignMiddle",
     BOTTOM: "alignBottom",
     TEXT_BOTTOM: "alignTextBottom",
-    TEXT_TOP: "alignTextTop"
+    TEXT_TOP: "alignTextTop",
   },
 
   /**************************************************
@@ -2007,7 +2075,7 @@ const UtilityClasses = {
    *************************************************/
   VISIBILITY: {
     VISIBLE: "visible",
-    INVISIBLE: "invisible"
+    INVISIBLE: "invisible",
   },
   /**************************************************
    * zindex
@@ -2017,7 +2085,401 @@ const UtilityClasses = {
     Z_0: "z0",
     Z_1: "z1",
     Z_2: "z2",
-    Z_3: "z3"
+    Z_3: "z3",
+  },
+  /**************************************************
+   * listStyle
+   *************************************************/
+  LIST_STYLE: {
+    CJK_HEAVENLY_STEM: "listStyleCjkHeavenlyStem",
+    ARABIC_INDIC: "listStyleArabicIndic",
+    DISC: "listStyleDisc",
+    CIRCLE: "listStyleCircle",
+    SQUARE: "listStyleSquare",
+    DECIMAL: "listStyleDecimal",
+    DECIMAL_LEADING_ZERO: "listStyleDecimalLeadingZero",
+    ARMENIAN: "listStyleArmenian",
+    AUTO: "listStyleAuto",
+    BENGALI: "listStyleBengali",
+    CAMBODIAN: "listStyleCambodian",
+    CJK_EARTHLY_BRANCH: "listStyleCjkEarthlyBranch",
+    CJK_IDEOGRAPHIC: "listStyleCjkIdeographic",
+    DEVANAGARI: "listStyleDevanagari",
+    ETHIOPIC_HALEHAME: "listStyleEthiopicHalehame",
+    ETHIOPIC_HALEHAME_AM: "listStyleEthiopicHalehameAm",
+    ETHIOPIC_HALEHAME_TI_ER: "listStyleEthiopicHalehameTiEr",
+    ETHIOPIC_HALEHAME_TI_ET: "listStyleEthiopicHalehameTiEt",
+    GEORGIAN: "listStyleGeorgian",
+    GUJARATI: "listStyleGujarati",
+    HANGUL: "listStyleHangul",
+    HANGUL_CONSONANT: "listStyleHangulconsonantl",
+    HEBREW: "listStyleHebrew",
+    HIRAGANA: "listStyleHiragana",
+    HIRAGANAIROHA: "listStyleHiraganaIroha",
+    INSIDE: "listStyleInside",
+    KANNADA: "listStyleKannada",
+    KATAKANA: "listStyleKatakana",
+    KATAKANA_IROHA: "listStyleKatakanaIroha",
+    KHMER: "listStyleKhmer",
+    KOREAN_HANJA_FORMAL: "listStyleKoreanHanjaFormal",
+    KOREAN_HANGUL_FORMAL: "listStyleKoreanHangulFormal",
+    KOREAN_HANJA_INFORMAL: "listStyleKoreanHanjaInformal",
+    LAO: "listStyleLao",
+    LOWER_ALPHA: "listStyleLowerAlpha",
+    LOWER_ARMENIAN: "listStyleLowerArmenian",
+    LOWER_LATIN: "listStyleLowerLatin",
+    LOWER_GREEK: "listStyleLowerGreek",
+    LOWER_ROMAN: "listStyleLowerRoman",
+    MALAYALAM: "listStyleMalayalam",
+    MONGOLIAN: "listStyleMongolian",
+    MYANMAR: "listStyleMyanmar",
+    ORIYA: "listStyleOriya",
+    OUTSIDE: "listStyleOutside",
+    PERSIAN: "listStylePersian",
+    SIMP_CHINESE_FORMAL: "listStyleSimpChineseFormal",
+    SIMP_CHINESE_INFORMAL: "listStyleSimpChineseInFormal",
+    TELUGU: "listStyleTelugu",
+    Thai: "listStyleThai",
+    TIBETAN: "listStyleTibetan",
+    TRAD_CHINESE_FORMAL: "listStyleTradChineseFormal",
+    TRAD_CHINESE_INFORMAL: "listStyleTradChineseInFormal",
+    UPPER_ALPHA: "listStyleUpperAlpha",
+    UPPER_ARMENIAN: "listStyleUpperArmenian",
+    UPPER_LATIN: "listStyleUpperLatin",
+    UPPER_ROMAN: "listStyleUpperRoman",
+    URDU: "listStyleUrdu",
+    INHERIT: "listStyleInherit",
+    INITIAL: "listStyleInitial",
+    REVERT: "listStyleRevert",
+    REVERT_LAYER: "listStyleRevertLayer",
+    UNSET: "listStyleUnset",
+    NONE: "listStyleNone",
+
+    SM: {
+      CJK_HEAVENLY_STEM: "smListStyleCjkHeavenlyStem",
+      ARABIC_INDIC: "smListStyleArabicIndic",
+      DISC: "smListStyleDisc",
+      CIRCLE: "smListStyleCircle",
+      SQUARE: "smListStyleSquare",
+      DECIMAL: "smListStyleDecimal",
+      DECIMAL_LEADING_ZERO: "smListStyleDecimalLeadingZero",
+      ARMENIAN: "smListStyleArmenian",
+      AUTO: "smListStyleAuto",
+      BENGALI: "smListStyleBengali",
+      CAMBODIAN: "smListStyleCambodian",
+      CJK_EARTHLY_BRANCH: "smListStyleCjkEarthlyBranch",
+      CJK_IDEOGRAPHIC: "smListStyleCjkIdeographic",
+      DEVANAGARI: "smListStyleDevanagari",
+      ETHIOPIC_HALEHAME: "smListStyleEthiopicHalehame",
+      ETHIOPIC_HALEHAME_AM: "smListStyleEthiopicHalehameAm",
+      ETHIOPIC_HALEHAME_TI_ER: "smListStyleEthiopicHalehameTiEr",
+      ETHIOPIC_HALEHAME_TI_ET: "smListStyleEthiopicHalehameTiEt",
+      GEORGIAN: "smListStyleGeorgian",
+      GUJARATI: "smListStyleGujarati",
+      HANGUL: "smListStyleHangul",
+      HANGUL_CONSONANT: "smListStyleHangulconsonantl",
+      HEBREW: "smListStyleHebrew",
+      HIRAGANA: "smListStyleHiragana",
+      HIRAGANAIROHA: "smListStyleHiraganaIroha",
+      INSIDE: "smListStyleInside",
+      KANNADA: "smListStyleKannada",
+      KATAKANA: "smListStyleKatakana",
+      KATAKANA_IROHA: "smListStyleKatakanaIroha",
+      KHMER: "smListStyleKhmer",
+      KOREAN_HANJA_FORMAL: "smListStyleKoreanHanjaFormal",
+      KOREAN_HANGUL_FORMAL: "smListStyleKoreanHangulFormal",
+      KOREAN_HANJA_INFORMAL: "smListStyleKoreanHanjaInformal",
+      LAO: "smListStyleLao",
+      LOWER_ALPHA: "smListStyleLowerAlpha",
+      LOWER_ARMENIAN: "smListStyleLowerArmenian",
+      LOWER_LATIN: "smListStyleLowerLatin",
+      LOWER_GREEK: "smListStyleLowerGreek",
+      LOWER_ROMAN: "smListStyleLowerRoman",
+      MALAYALAM: "smListStyleMalayalam",
+      MONGOLIAN: "smListStyleMongolian",
+      MYANMAR: "smListStyleMyanmar",
+      ORIYA: "smListStyleOriya",
+      OUTSIDE: "smListStyleOutside",
+      PERSIAN: "smListStylePersian",
+      SIMP_CHINESE_FORMAL: "smListStyleSimpChineseFormal",
+      SIMP_CHINESE_INFORMAL: "smListStyleSimpChineseInFormal",
+      TELUGU: "smListStyleTelugu",
+      Thai: "smListStyleThai",
+      TIBETAN: "smListStyleTibetan",
+      TRAD_CHINESE_FORMAL: "smListStyleTradChineseFormal",
+      TRAD_CHINESE_INFORMAL: "smListStyleTradChineseInFormal",
+      UPPER_ALPHA: "smListStyleUpperAlpha",
+      UPPER_ARMENIAN: "smListStyleUpperArmenian",
+      UPPER_LATIN: "smListStyleUpperLatin",
+      UPPER_ROMAN: "smListStyleUpperRoman",
+      URDU: "smListStyleUrdu",
+      INHERIT: "smListStyleInherit",
+      INITIAL: "smListStyleInitial",
+      REVERT: "smListStyleRevert",
+      REVERT_LAYER: "smListStyleRevertLayer",
+      UNSET: "smListStyleUnset",
+      NONE: "smListStyleNone",
+    },
+    MD: {
+      CJK_HEAVENLY_STEM: "mdListStyleCjkHeavenlyStem",
+      ARABIC_INDIC: "mdListStyleArabicIndic",
+      DISC: "mdListStyleDisc",
+      CIRCLE: "mdListStyleCircle",
+      SQUARE: "mdListStyleSquare",
+      DECIMAL: "mdListStyleDecimal",
+      DECIMAL_LEADING_ZERO: "mdListStyleDecimalLeadingZero",
+      ARMENIAN: "mdListStyleArmenian",
+      AUTO: "mdListStyleAuto",
+      BENGALI: "mdListStyleBengali",
+      CAMBODIAN: "mdListStyleCambodian",
+      CJK_EARTHLY_BRANCH: "mdListStyleCjkEarthlyBranch",
+      CJK_IDEOGRAPHIC: "mdListStyleCjkIdeographic",
+      DEVANAGARI: "mdListStyleDevanagari",
+      ETHIOPIC_HALEHAME: "mdListStyleEthiopicHalehame",
+      ETHIOPIC_HALEHAME_AM: "mdListStyleEthiopicHalehameAm",
+      ETHIOPIC_HALEHAME_TI_ER: "mdListStyleEthiopicHalehameTiEr",
+      ETHIOPIC_HALEHAME_TI_ET: "mdListStyleEthiopicHalehameTiEt",
+      GEORGIAN: "mdListStyleGeorgian",
+      GUJARATI: "mdListStyleGujarati",
+      HANGUL: "mdListStyleHangul",
+      HANGUL_CONSONANT: "mdListStyleHangulconsonantl",
+      HEBREW: "mdListStyleHebrew",
+      HIRAGANA: "mdListStyleHiragana",
+      HIRAGANAIROHA: "mdListStyleHiraganaIroha",
+      INSIDE: "mdListStyleInside",
+      KANNADA: "mdListStyleKannada",
+      KATAKANA: "mdListStyleKatakana",
+      KATAKANA_IROHA: "mdListStyleKatakanaIroha",
+      KHMER: "mdListStyleKhmer",
+      KOREAN_HANJA_FORMAL: "mdListStyleKoreanHanjaFormal",
+      KOREAN_HANGUL_FORMAL: "mdListStyleKoreanHangulFormal",
+      KOREAN_HANJA_INFORMAL: "mdListStyleKoreanHanjaInformal",
+      LAO: "mdListStyleLao",
+      LOWER_ALPHA: "mdListStyleLowerAlpha",
+      LOWER_ARMENIAN: "mdListStyleLowerArmenian",
+      LOWER_LATIN: "mdListStyleLowerLatin",
+      LOWER_GREEK: "mdListStyleLowerGreek",
+      LOWER_ROMAN: "mdListStyleLowerRoman",
+      MALAYALAM: "mdListStyleMalayalam",
+      MONGOLIAN: "mdListStyleMongolian",
+      MYANMAR: "mdListStyleMyanmar",
+      ORIYA: "mdListStyleOriya",
+      OUTSIDE: "mdListStyleOutside",
+      PERSIAN: "mdListStylePersian",
+      SIMP_CHINESE_FORMAL: "mdListStyleSimpChineseFormal",
+      SIMP_CHINESE_INFORMAL: "mdListStyleSimpChineseInFormal",
+      TELUGU: "mdListStyleTelugu",
+      Thai: "mdListStyleThai",
+      TIBETAN: "mdListStyleTibetan",
+      TRAD_CHINESE_FORMAL: "mdListStyleTradChineseFormal",
+      TRAD_CHINESE_INFORMAL: "mdListStyleTradChineseInFormal",
+      UPPER_ALPHA: "mdListStyleUpperAlpha",
+      UPPER_ARMENIAN: "mdListStyleUpperArmenian",
+      UPPER_LATIN: "mdListStyleUpperLatin",
+      UPPER_ROMAN: "mdListStyleUpperRoman",
+      URDU: "mdListStyleUrdu",
+      INHERIT: "mdListStyleInherit",
+      INITIAL: "mdListStyleInitial",
+      REVERT: "mdListStyleRevert",
+      REVERT_LAYER: "mdListStyleRevertLayer",
+      UNSET: "mdListStyleUnset",
+      NONE: "mdListStyleNone",
+    },
+    LG: {
+      CJK_HEAVENLY_STEM: "lgListStyleCjkHeavenlyStem",
+      ARABIC_INDIC: "lgListStyleArabicIndic",
+      DISC: "lgListStyleDisc",
+      CIRCLE: "lgListStyleCircle",
+      SQUARE: "lgListStyleSquare",
+      DECIMAL: "lgListStyleDecimal",
+      DECIMAL_LEADING_ZERO: "lgListStyleDecimalLeadingZero",
+      ARMENIAN: "lgListStyleArmenian",
+      AUTO: "lgListStyleAuto",
+      BENGALI: "lgListStyleBengali",
+      CAMBODIAN: "lgListStyleCambodian",
+      CJK_EARTHLY_BRANCH: "lgListStyleCjkEarthlyBranch",
+      CJK_IDEOGRAPHIC: "lgListStyleCjkIdeographic",
+      DEVANAGARI: "lgListStyleDevanagari",
+      ETHIOPIC_HALEHAME: "lgListStyleEthiopicHalehame",
+      ETHIOPIC_HALEHAME_AM: "lgListStyleEthiopicHalehameAm",
+      ETHIOPIC_HALEHAME_TI_ER: "lgListStyleEthiopicHalehameTiEr",
+      ETHIOPIC_HALEHAME_TI_ET: "lgListStyleEthiopicHalehameTiEt",
+      GEORGIAN: "lgListStyleGeorgian",
+      GUJARATI: "lgListStyleGujarati",
+      HANGUL: "lgListStyleHangul",
+      HANGUL_CONSONANT: "lgListStyleHangulconsonantl",
+      HEBREW: "lgListStyleHebrew",
+      HIRAGANA: "lgListStyleHiragana",
+      HIRAGANAIROHA: "lgListStyleHiraganaIroha",
+      INSIDE: "lgListStyleInside",
+      KANNADA: "lgListStyleKannada",
+      KATAKANA: "lgListStyleKatakana",
+      KATAKANA_IROHA: "lgListStyleKatakanaIroha",
+      KHMER: "lgListStyleKhmer",
+      KOREAN_HANJA_FORMAL: "lgListStyleKoreanHanjaFormal",
+      KOREAN_HANGUL_FORMAL: "lgListStyleKoreanHangulFormal",
+      KOREAN_HANJA_INFORMAL: "lgListStyleKoreanHanjaInformal",
+      LAO: "lgListStyleLao",
+      LOWER_ALPHA: "lgListStyleLowerAlpha",
+      LOWER_ARMENIAN: "lgListStyleLowerArmenian",
+      LOWER_LATIN: "lgListStyleLowerLatin",
+      LOWER_GREEK: "lgListStyleLowerGreek",
+      LOWER_ROMAN: "lgListStyleLowerRoman",
+      MALAYALAM: "lgListStyleMalayalam",
+      MONGOLIAN: "lgListStyleMongolian",
+      MYANMAR: "lgListStyleMyanmar",
+      ORIYA: "lgListStyleOriya",
+      OUTSIDE: "lgListStyleOutside",
+      PERSIAN: "lgListStylePersian",
+      SIMP_CHINESE_FORMAL: "lgListStyleSimpChineseFormal",
+      SIMP_CHINESE_INFORMAL: "lgListStyleSimpChineseInFormal",
+      TELUGU: "lgListStyleTelugu",
+      Thai: "lgListStyleThai",
+      TIBETAN: "lgListStyleTibetan",
+      TRAD_CHINESE_FORMAL: "lgListStyleTradChineseFormal",
+      TRAD_CHINESE_INFORMAL: "lgListStyleTradChineseInFormal",
+      UPPER_ALPHA: "lgListStyleUpperAlpha",
+      UPPER_ARMENIAN: "lgListStyleUpperArmenian",
+      UPPER_LATIN: "lgListStyleUpperLatin",
+      UPPER_ROMAN: "lgListStyleUpperRoman",
+      URDU: "lgListStyleUrdu",
+      INHERIT: "lgListStyleInherit",
+      INITIAL: "lgListStyleInitial",
+      REVERT: "lgListStyleRevert",
+      REVERT_LAYER: "lgListStyleRevertLayer",
+      UNSET: "lgListStyleUnset",
+      NONE: "lgListStyleNone",
+    },
+    XL: {
+      CJK_HEAVENLY_STEM: "xlListStyleCjkHeavenlyStem",
+      ARABIC_INDIC: "xlListStyleArabicIndic",
+      DISC: "xlListStyleDisc",
+      CIRCLE: "xlListStyleCircle",
+      SQUARE: "xlListStyleSquare",
+      DECIMAL: "xlListStyleDecimal",
+      DECIMAL_LEADING_ZERO: "xlListStyleDecimalLeadingZero",
+      ARMENIAN: "xlListStyleArmenian",
+      AUTO: "xlListStyleAuto",
+      BENGALI: "xlListStyleBengali",
+      CAMBODIAN: "xlListStyleCambodian",
+      CJK_EARTHLY_BRANCH: "xlListStyleCjkEarthlyBranch",
+      CJK_IDEOGRAPHIC: "xlListStyleCjkIdeographic",
+      DEVANAGARI: "xlListStyleDevanagari",
+      ETHIOPIC_HALEHAME: "xlListStyleEthiopicHalehame",
+      ETHIOPIC_HALEHAME_AM: "xlListStyleEthiopicHalehameAm",
+      ETHIOPIC_HALEHAME_TI_ER: "xlListStyleEthiopicHalehameTiEr",
+      ETHIOPIC_HALEHAME_TI_ET: "xlListStyleEthiopicHalehameTiEt",
+      GEORGIAN: "xlListStyleGeorgian",
+      GUJARATI: "xlListStyleGujarati",
+      HANGUL: "xlListStyleHangul",
+      HANGUL_CONSONANT: "xlListStyleHangulconsonantl",
+      HEBREW: "xlListStyleHebrew",
+      HIRAGANA: "xlListStyleHiragana",
+      HIRAGANAIROHA: "xlListStyleHiraganaIroha",
+      INSIDE: "xlListStyleInside",
+      KANNADA: "xlListStyleKannada",
+      KATAKANA: "xlListStyleKatakana",
+      KATAKANA_IROHA: "xlListStyleKatakanaIroha",
+      KHMER: "xlListStyleKhmer",
+      KOREAN_HANJA_FORMAL: "xlListStyleKoreanHanjaFormal",
+      KOREAN_HANGUL_FORMAL: "xlListStyleKoreanHangulFormal",
+      KOREAN_HANJA_INFORMAL: "xlListStyleKoreanHanjaInformal",
+      LAO: "xlListStyleLao",
+      LOWER_ALPHA: "xlListStyleLowerAlpha",
+      LOWER_ARMENIAN: "xlListStyleLowerArmenian",
+      LOWER_LATIN: "xlListStyleLowerLatin",
+      LOWER_GREEK: "xlListStyleLowerGreek",
+      LOWER_ROMAN: "xlListStyleLowerRoman",
+      MALAYALAM: "xlListStyleMalayalam",
+      MONGOLIAN: "xlListStyleMongolian",
+      MYANMAR: "xlListStyleMyanmar",
+      ORIYA: "xlListStyleOriya",
+      OUTSIDE: "xlListStyleOutside",
+      PERSIAN: "xlListStylePersian",
+      SIMP_CHINESE_FORMAL: "xlListStyleSimpChineseFormal",
+      SIMP_CHINESE_INFORMAL: "xlListStyleSimpChineseInFormal",
+      TELUGU: "xlListStyleTelugu",
+      Thai: "xlListStyleThai",
+      TIBETAN: "xlListStyleTibetan",
+      TRAD_CHINESE_FORMAL: "xlListStyleTradChineseFormal",
+      TRAD_CHINESE_INFORMAL: "xlListStyleTradChineseInFormal",
+      UPPER_ALPHA: "xlListStyleUpperAlpha",
+      UPPER_ARMENIAN: "xlListStyleUpperArmenian",
+      UPPER_LATIN: "xlListStyleUpperLatin",
+      UPPER_ROMAN: "xlListStyleUpperRoman",
+      URDU: "xlListStyleUrdu",
+      INHERIT: "xlListStyleInherit",
+      INITIAL: "xlListStyleInitial",
+      REVERT: "xlListStyleRevert",
+      REVERT_LAYER: "xlListStyleRevertLayer",
+      UNSET: "xlListStyleUnset",
+      NONE: "xlListStyleNone",
+    },
+    XXL: {
+      CJK_HEAVENLY_STEM: "xxLListStyleCjkHeavenlyStem",
+      ARABIC_INDIC: "xxLListStyleArabicIndic",
+      DISC: "xxLListStyleDisc",
+      CIRCLE: "xxLListStyleCircle",
+      SQUARE: "xxLListStyleSquare",
+      DECIMAL: "xxLListStyleDecimal",
+      DECIMAL_LEADING_ZERO: "xxLListStyleDecimalLeadingZero",
+      ARMENIAN: "xxLListStyleArmenian",
+      AUTO: "xxLListStyleAuto",
+      BENGALI: "xxLListStyleBengali",
+      CAMBODIAN: "xxLListStyleCambodian",
+      CJK_EARTHLY_BRANCH: "xxLListStyleCjkEarthlyBranch",
+      CJK_IDEOGRAPHIC: "xxLListStyleCjkIdeographic",
+      DEVANAGARI: "xxLListStyleDevanagari",
+      ETHIOPIC_HALEHAME: "xxLListStyleEthiopicHalehame",
+      ETHIOPIC_HALEHAME_AM: "xxLListStyleEthiopicHalehameAm",
+      ETHIOPIC_HALEHAME_TI_ER: "xxLListStyleEthiopicHalehameTiEr",
+      ETHIOPIC_HALEHAME_TI_ET: "xxLListStyleEthiopicHalehameTiEt",
+      GEORGIAN: "xxLListStyleGeorgian",
+      GUJARATI: "xxLListStyleGujarati",
+      HANGUL: "xxLListStyleHangul",
+      HANGUL_CONSONANT: "xxLListStyleHangulconsonantl",
+      HEBREW: "xxLListStyleHebrew",
+      HIRAGANA: "xxLListStyleHiragana",
+      HIRAGANAIROHA: "xxLListStyleHiraganaIroha",
+      INSIDE: "xxLListStyleInside",
+      KANNADA: "xxLListStyleKannada",
+      KATAKANA: "xxLListStyleKatakana",
+      KATAKANA_IROHA: "xxLListStyleKatakanaIroha",
+      KHMER: "xxLListStyleKhmer",
+      KOREAN_HANJA_FORMAL: "xxLListStyleKoreanHanjaFormal",
+      KOREAN_HANGUL_FORMAL: "xxLListStyleKoreanHangulFormal",
+      KOREAN_HANJA_INFORMAL: "xxLListStyleKoreanHanjaInformal",
+      LAO: "xxLListStyleLao",
+      LOWER_ALPHA: "xxLListStyleLowerAlpha",
+      LOWER_ARMENIAN: "xxLListStyleLowerArmenian",
+      LOWER_LATIN: "xxLListStyleLowerLatin",
+      LOWER_GREEK: "xxLListStyleLowerGreek",
+      LOWER_ROMAN: "xxLListStyleLowerRoman",
+      MALAYALAM: "xxLListStyleMalayalam",
+      MONGOLIAN: "xxLListStyleMongolian",
+      MYANMAR: "xxLListStyleMyanmar",
+      ORIYA: "xxLListStyleOriya",
+      OUTSIDE: "xxLListStyleOutside",
+      PERSIAN: "xxLListStylePersian",
+      SIMP_CHINESE_FORMAL: "xxLListStyleSimpChineseFormal",
+      SIMP_CHINESE_INFORMAL: "xxLListStyleSimpChineseInFormal",
+      TELUGU: "xxLListStyleTelugu",
+      Thai: "xxLListStyleThai",
+      TIBETAN: "xxLListStyleTibetan",
+      TRAD_CHINESE_FORMAL: "xxLListStyleTradChineseFormal",
+      TRAD_CHINESE_INFORMAL: "xxLListStyleTradChineseInFormal",
+      UPPER_ALPHA: "xxLListStyleUpperAlpha",
+      UPPER_ARMENIAN: "xxLListStyleUpperArmenian",
+      UPPER_LATIN: "xxLListStyleUpperLatin",
+      UPPER_ROMAN: "xxLListStyleUpperRoman",
+      URDU: "xxLListStyleUrdu",
+      INHERIT: "xxLListStyleInherit",
+      INITIAL: "xxLListStyleInitial",
+      REVERT: "xxLListStyleRevert",
+      REVERT_LAYER: "xxLListStyleRevertLayer",
+      UNSET: "xxLListStyleUnset",
+      NONE: "xxLListStyleNone",
+    },
   },
 };
 
