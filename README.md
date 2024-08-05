@@ -1,20 +1,4 @@
-## REMOVE THIS - CREATED FOR WORKFLOW CHECK
-
-# Styles
-
-### Getting Started
-- Create a New React Project
-- Add .npmrc file with below content
-  ```
-  //registry.npmjs.org/:_authToken=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
-  //npm.pkg.github.com/:_authToken=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
-  registry=https://npm.pkg.github.com/wrappid
-  ```
-- Install any npm package such as:
-  ```
-  npm install redux
-  ```
-- Install app-magic-core
-  ```
-  npm install @rxefy/app-magic-core@1.0.0
-  ```
+## Wrappid styles package [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/wrappid/styles/blob/main/LICENSE) ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Frepos%2Fwrappid%2Fstyles%2Freleases%2Flatest&query=tag_name&label=%40wrappid%2Fstyles) [![Release - CI](https://github.com/wrappid/styles/actions/workflows/create-release.yml/badge.svg?branch=development)](https://github.com/wrappid/styles/actions/workflows/create-release.yml)   
+This package is a part of wrappid framework for wrappid-app projects, made for [wrappid/wrappid-app](https://github.com/wrappid/wrappid-app) projects created by wrappid/toolkit.
+   
+This package is used by [wrappid/core](https://github.com/wrappid/core) package, [wrappid/native-web](https://github.com/wrappid/native-web) package and [wrappid/native-mobile](https://github.com/wrappid/native-mobile) package.
