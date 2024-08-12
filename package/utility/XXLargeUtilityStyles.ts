@@ -182,83 +182,83 @@ export default class XXLargeUtilityStyles extends BaseStyle {
       /*-------------------------------------------------
        * Padding
        *-----------------------------------------------*/
-      xxlP0: { padding: 0 },
-      xxlP1: { padding: XX_LARGE_PADDING + PX_TAG },
-      xxlP2: { padding: XX_LARGE_PADDING * 2 + PX_TAG },
-      xxlP3: { padding: XX_LARGE_PADDING * 3 + PX_TAG },
-      xxlP4: { padding: XX_LARGE_PADDING * 4 + PX_TAG },
-      xxlP5: { padding: XX_LARGE_PADDING * 5 + PX_TAG },
+      xxlP0: { padding: 0 + IMPORTANT },
+      xxlP1: { padding: XX_LARGE_PADDING + PX_TAG + IMPORTANT },
+      xxlP2: { padding: XX_LARGE_PADDING * 2 + PX_TAG + IMPORTANT },
+      xxlP3: { padding: XX_LARGE_PADDING * 3 + PX_TAG + IMPORTANT },
+      xxlP4: { padding: XX_LARGE_PADDING * 4 + PX_TAG + IMPORTANT },
+      xxlP5: { padding: XX_LARGE_PADDING * 5 + PX_TAG + IMPORTANT },
 
-      xxlPt0: { paddingTop: 0 },
-      xxlPt1: { paddingTop: XX_LARGE_PADDING + PX_TAG },
-      xxlPt2: { paddingTop: XX_LARGE_PADDING * 2 + PX_TAG },
-      xxlPt3: { paddingTop: XX_LARGE_PADDING * 3 + PX_TAG },
-      xxlPt4: { paddingTop: XX_LARGE_PADDING * 4 + PX_TAG },
-      xxlPt5: { paddingTop: XX_LARGE_PADDING * 5 + PX_TAG },
+      xxlPt0: { paddingTop: 0 + IMPORTANT },
+      xxlPt1: { paddingTop: XX_LARGE_PADDING + PX_TAG + IMPORTANT },
+      xxlPt2: { paddingTop: XX_LARGE_PADDING * 2 + PX_TAG + IMPORTANT },
+      xxlPt3: { paddingTop: XX_LARGE_PADDING * 3 + PX_TAG + IMPORTANT },
+      xxlPt4: { paddingTop: XX_LARGE_PADDING * 4 + PX_TAG + IMPORTANT },
+      xxlPt5: { paddingTop: XX_LARGE_PADDING * 5 + PX_TAG + IMPORTANT },
 
-      xxlPr0: { paddingRight: 0 },
-      xxlPr1: { paddingRight: XX_LARGE_PADDING + PX_TAG },
-      xxlPr2: { paddingRight: XX_LARGE_PADDING * 2 + PX_TAG },
-      xxlPr3: { paddingRight: XX_LARGE_PADDING * 3 + PX_TAG },
-      xxlPr4: { paddingRight: XX_LARGE_PADDING * 4 + PX_TAG },
-      xxlPr5: { paddingRight: XX_LARGE_PADDING * 5 + PX_TAG },
+      xxlPr0: { paddingRight: 0 + IMPORTANT },
+      xxlPr1: { paddingRight: XX_LARGE_PADDING + PX_TAG + IMPORTANT },
+      xxlPr2: { paddingRight: XX_LARGE_PADDING * 2 + PX_TAG + IMPORTANT },
+      xxlPr3: { paddingRight: XX_LARGE_PADDING * 3 + PX_TAG + IMPORTANT },
+      xxlPr4: { paddingRight: XX_LARGE_PADDING * 4 + PX_TAG + IMPORTANT },
+      xxlPr5: { paddingRight: XX_LARGE_PADDING * 5 + PX_TAG + IMPORTANT },
 
       xxlPb0: { paddingBottom: 0 },
-      xxlPb1: { paddingBottom: XX_LARGE_PADDING + PX_TAG },
-      xxlPb2: { paddingBottom: XX_LARGE_PADDING * 2 + PX_TAG },
-      xxlPb3: { paddingBottom: XX_LARGE_PADDING * 3 + PX_TAG },
-      xxlPb4: { paddingBottom: XX_LARGE_PADDING * 4 + PX_TAG },
-      xxlPb5: { paddingBottom: XX_LARGE_PADDING * 5 + PX_TAG },
+      xxlPb1: { paddingBottom: XX_LARGE_PADDING + PX_TAG + IMPORTANT },
+      xxlPb2: { paddingBottom: XX_LARGE_PADDING * 2 + PX_TAG + IMPORTANT },
+      xxlPb3: { paddingBottom: XX_LARGE_PADDING * 3 + PX_TAG + IMPORTANT },
+      xxlPb4: { paddingBottom: XX_LARGE_PADDING * 4 + PX_TAG + IMPORTANT },
+      xxlPb5: { paddingBottom: XX_LARGE_PADDING * 5 + PX_TAG + IMPORTANT },
 
-      xxlPl0: { paddingLeft: 0 },
-      xxlPl1: { paddingLeft: XX_LARGE_PADDING + PX_TAG },
-      xxlPl2: { paddingLeft: XX_LARGE_PADDING * 2 + PX_TAG },
-      xxlPl3: { paddingLeft: XX_LARGE_PADDING * 3 + PX_TAG },
-      xxlPl4: { paddingLeft: XX_LARGE_PADDING * 4 + PX_TAG },
-      xxlPl5: { paddingLeft: XX_LARGE_PADDING * 5 + PX_TAG },
+      xxlPl0: { paddingLeft: 0 + IMPORTANT },
+      xxlPl1: { paddingLeft: XX_LARGE_PADDING + PX_TAG + IMPORTANT },
+      xxlPl2: { paddingLeft: XX_LARGE_PADDING * 2 + PX_TAG + IMPORTANT },
+      xxlPl3: { paddingLeft: XX_LARGE_PADDING * 3 + PX_TAG + IMPORTANT },
+      xxlPl4: { paddingLeft: XX_LARGE_PADDING * 4 + PX_TAG + IMPORTANT },
+      xxlPl5: { paddingLeft: XX_LARGE_PADDING * 5 + PX_TAG + IMPORTANT },
 
-      xxlPx0: { paddingLeft: 0, paddingRight: 0 },
+      xxlPx0: { paddingLeft: 0 + IMPORTANT, paddingRight: 0 + IMPORTANT },
       xxlPx1: {
-        paddingLeft: XX_LARGE_PADDING * 1 + PX_TAG,
-        paddingRight: XX_LARGE_PADDING * 1 + PX_TAG
+        paddingLeft: XX_LARGE_PADDING * 1 + PX_TAG + IMPORTANT,
+        paddingRight: XX_LARGE_PADDING * 1 + PX_TAG + IMPORTANT
       },
       xxlPx2: {
-        paddingLeft: XX_LARGE_PADDING * 2 + PX_TAG,
-        paddingRight: XX_LARGE_PADDING * 2 + PX_TAG
+        paddingLeft: XX_LARGE_PADDING * 2 + PX_TAG + IMPORTANT,
+        paddingRight: XX_LARGE_PADDING * 2 + PX_TAG + IMPORTANT
       },
       xxlPx3: {
-        paddingLeft: XX_LARGE_PADDING * 3 + PX_TAG,
-        paddingRight: XX_LARGE_PADDING * 3 + PX_TAG
+        paddingLeft: XX_LARGE_PADDING * 3 + PX_TAG + IMPORTANT,
+        paddingRight: XX_LARGE_PADDING * 3 + PX_TAG + IMPORTANT
       },
       xxlPx4: {
         paddingLeft: XX_LARGE_PADDING * 4 + PX_TAG,
-        paddingRight: XX_LARGE_PADDING * 4 + PX_TAG
+        paddingRight: XX_LARGE_PADDING * 4 + PX_TAG + IMPORTANT
       },
       xxlPx5: {
-        paddingLeft: XX_LARGE_PADDING * 5 + PX_TAG,
-        paddingRight: XX_LARGE_PADDING * 5 + PX_TAG
+        paddingLeft: XX_LARGE_PADDING * 5 + PX_TAG + IMPORTANT,
+        paddingRight: XX_LARGE_PADDING * 5 + PX_TAG + IMPORTANT
       },
 
-      xxlPy0: { paddingTop: 0, paddingBottom: 0 },
+      xxlPy0: { paddingTop: 0 + IMPORTANT, paddingBottom: 0 + IMPORTANT },
       xxlPy1: {
-        paddingTop: XX_LARGE_PADDING * 1 + PX_TAG,
-        paddingBottom: XX_LARGE_PADDING * 1 + PX_TAG
+        paddingTop: XX_LARGE_PADDING * 1 + PX_TAG + IMPORTANT,
+        paddingBottom: XX_LARGE_PADDING * 1 + PX_TAG + IMPORTANT
       },
       xxlPy2: {
-        paddingTop: XX_LARGE_PADDING * 2 + PX_TAG,
-        paddingBottom: XX_LARGE_PADDING * 2 + PX_TAG
+        paddingTop: XX_LARGE_PADDING * 2 + PX_TAG + IMPORTANT,
+        paddingBottom: XX_LARGE_PADDING * 2 + PX_TAG + IMPORTANT
       },
       xxlPy3: {
-        paddingTop: XX_LARGE_PADDING * 3 + PX_TAG,
-        paddingBottom: XX_LARGE_PADDING * 3 + PX_TAG
+        paddingTop: XX_LARGE_PADDING * 3 + PX_TAG + IMPORTANT,
+        paddingBottom: XX_LARGE_PADDING * 3 + PX_TAG + IMPORTANT
       },
       xxlPy4: {
-        paddingTop: XX_LARGE_PADDING * 4 + PX_TAG,
-        paddingBottom: XX_LARGE_PADDING * 4 + PX_TAG
+        paddingTop: XX_LARGE_PADDING * 4 + PX_TAG + IMPORTANT,
+        paddingBottom: XX_LARGE_PADDING * 4 + PX_TAG + IMPORTANT
       },
       xxlPy5: {
-        paddingTop: XX_LARGE_PADDING * 5 + PX_TAG,
-        paddingBottom: XX_LARGE_PADDING * 5 + PX_TAG
+        paddingTop: XX_LARGE_PADDING * 5 + PX_TAG + IMPORTANT,
+        paddingBottom: XX_LARGE_PADDING * 5 + PX_TAG + IMPORTANT
       },
 
       /*-------------------------------------------------

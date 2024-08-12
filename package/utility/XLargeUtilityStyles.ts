@@ -43,20 +43,20 @@ export default class XLargeUtilityStyles extends BaseStyle {
       xlJustifyContentCenter: { display: "flex", justifyContent: "center" },
       xlJustifyContentFlexStart: {
         display: "flex",
-        justifyContent: "flex-start"
+        justifyContent: "flex-start",
       },
       xlJustifyContentFlexEnd: { display: "flex", justifyContent: "flex-end" },
       xlJustifyContentSpaceBetween: {
         display: "flex",
-        justifyContent: "space-between"
+        justifyContent: "space-between",
       },
       xlJustifyContentSpaceAround: {
         display: "flex",
-        justifyContent: "space-around"
+        justifyContent: "space-around",
       },
       xlJustifyContentSpaceEvenly: {
         display: "flex",
-        justifyContent: "space-evenly"
+        justifyContent: "space-evenly",
       },
 
       /**************************************************
@@ -126,27 +126,27 @@ export default class XLargeUtilityStyles extends BaseStyle {
        *************************************************/
       xlObjectFitContain: {
         // -o-object-fit: contain !important;
-        objectFit: "contain"
+        objectFit: "contain",
       },
 
       xlObjectFitCover: {
         // -o-object-fit: cover !important;
-        objectFit: "cover"
+        objectFit: "cover",
       },
 
       xlObjectFitFill: {
         // -o-object-fit: fill !important;
-        objectFit: "fill"
+        objectFit: "fill",
       },
 
       xlObjectFitScale: {
         // -o-object-fit: scale-down !important;
-        objectFit: "scale-down"
+        objectFit: "scale-down",
       },
 
       xlObjectFitNone: {
         // -o-object-fit: none !important;
-        objectFit: "none"
+        objectFit: "none",
       },
 
       /**************************************************
@@ -180,83 +180,83 @@ export default class XLargeUtilityStyles extends BaseStyle {
       /*-------------------------------------------------
        * Padding
        *-----------------------------------------------*/
-      xlP0: { padding: 0 },
-      xlP1: { padding: X_LARGE_PADDING + PX_TAG },
-      xlP2: { padding: X_LARGE_PADDING * 2 + PX_TAG },
-      xlP3: { padding: X_LARGE_PADDING * 3 + PX_TAG },
-      xlP4: { padding: X_LARGE_PADDING * 4 + PX_TAG },
-      xlP5: { padding: X_LARGE_PADDING * 5 + PX_TAG },
+      xlP0: { padding: 0 + IMPORTANT },
+      xlP1: { padding: X_LARGE_PADDING + PX_TAG + IMPORTANT },
+      xlP2: { padding: X_LARGE_PADDING * 2 + PX_TAG + IMPORTANT },
+      xlP3: { padding: X_LARGE_PADDING * 3 + PX_TAG + IMPORTANT },
+      xlP4: { padding: X_LARGE_PADDING * 4 + PX_TAG + IMPORTANT },
+      xlP5: { padding: X_LARGE_PADDING * 5 + PX_TAG + IMPORTANT },
 
-      xlPt0: { paddingTop: 0 },
-      xlPt1: { paddingTop: X_LARGE_PADDING + PX_TAG },
-      xlPt2: { paddingTop: X_LARGE_PADDING * 2 + PX_TAG },
-      xlPt3: { paddingTop: X_LARGE_PADDING * 3 + PX_TAG },
-      xlPt4: { paddingTop: X_LARGE_PADDING * 4 + PX_TAG },
-      xlPt5: { paddingTop: X_LARGE_PADDING * 5 + PX_TAG },
+      xlPt0: { paddingTop: 0 + IMPORTANT },
+      xlPt1: { paddingTop: X_LARGE_PADDING + PX_TAG + IMPORTANT },
+      xlPt2: { paddingTop: X_LARGE_PADDING * 2 + PX_TAG + IMPORTANT },
+      xlPt3: { paddingTop: X_LARGE_PADDING * 3 + PX_TAG + IMPORTANT },
+      xlPt4: { paddingTop: X_LARGE_PADDING * 4 + PX_TAG + IMPORTANT },
+      xlPt5: { paddingTop: X_LARGE_PADDING * 5 + PX_TAG + IMPORTANT },
 
-      xlPr0: { paddingRight: 0 },
-      xlPr1: { paddingRight: X_LARGE_PADDING + PX_TAG },
-      xlPr2: { paddingRight: X_LARGE_PADDING * 2 + PX_TAG },
-      xlPr3: { paddingRight: X_LARGE_PADDING * 3 + PX_TAG },
-      xlPr4: { paddingRight: X_LARGE_PADDING * 4 + PX_TAG },
-      xlPr5: { paddingRight: X_LARGE_PADDING * 5 + PX_TAG },
+      xlPr0: { paddingRight: 0 + IMPORTANT },
+      xlPr1: { paddingRight: X_LARGE_PADDING + PX_TAG + IMPORTANT },
+      xlPr2: { paddingRight: X_LARGE_PADDING * 2 + PX_TAG + IMPORTANT },
+      xlPr3: { paddingRight: X_LARGE_PADDING * 3 + PX_TAG + IMPORTANT },
+      xlPr4: { paddingRight: X_LARGE_PADDING * 4 + PX_TAG + IMPORTANT },
+      xlPr5: { paddingRight: X_LARGE_PADDING * 5 + PX_TAG + IMPORTANT },
 
-      xlPb0: { paddingBottom: 0 },
-      xlPb1: { paddingBottom: X_LARGE_PADDING + PX_TAG },
-      xlPb2: { paddingBottom: X_LARGE_PADDING * 2 + PX_TAG },
-      xlPb3: { paddingBottom: X_LARGE_PADDING * 3 + PX_TAG },
-      xlPb4: { paddingBottom: X_LARGE_PADDING * 4 + PX_TAG },
-      xlPb5: { paddingBottom: X_LARGE_PADDING * 5 + PX_TAG },
+      xlPb0: { paddingBottom: 0 + IMPORTANT },
+      xlPb1: { paddingBottom: X_LARGE_PADDING + PX_TAG + IMPORTANT },
+      xlPb2: { paddingBottom: X_LARGE_PADDING * 2 + PX_TAG + IMPORTANT },
+      xlPb3: { paddingBottom: X_LARGE_PADDING * 3 + PX_TAG + IMPORTANT },
+      xlPb4: { paddingBottom: X_LARGE_PADDING * 4 + PX_TAG + IMPORTANT },
+      xlPb5: { paddingBottom: X_LARGE_PADDING * 5 + PX_TAG + IMPORTANT },
 
-      xlPl0: { paddingLeft: 0 },
-      xlPl1: { paddingLeft: X_LARGE_PADDING + PX_TAG },
-      xlPl2: { paddingLeft: X_LARGE_PADDING * 2 + PX_TAG },
-      xlPl3: { paddingLeft: X_LARGE_PADDING * 3 + PX_TAG },
-      xlPl4: { paddingLeft: X_LARGE_PADDING * 4 + PX_TAG },
-      xlPl5: { paddingLeft: X_LARGE_PADDING * 5 + PX_TAG },
+      xlPl0: { paddingLeft: 0 + IMPORTANT },
+      xlPl1: { paddingLeft: X_LARGE_PADDING + PX_TAG + IMPORTANT },
+      xlPl2: { paddingLeft: X_LARGE_PADDING * 2 + PX_TAG + IMPORTANT },
+      xlPl3: { paddingLeft: X_LARGE_PADDING * 3 + PX_TAG + IMPORTANT },
+      xlPl4: { paddingLeft: X_LARGE_PADDING * 4 + PX_TAG + IMPORTANT },
+      xlPl5: { paddingLeft: X_LARGE_PADDING * 5 + PX_TAG + IMPORTANT },
 
-      xlPx0: { paddingLeft: 0, paddingRight: 0 },
+      xlPx0: { paddingLeft: 0 + IMPORTANT, paddingRight: 0 + IMPORTANT },
       xlPx1: {
-        paddingLeft: X_LARGE_PADDING * 1 + PX_TAG,
-        paddingRight: X_LARGE_PADDING * 1 + PX_TAG
+        paddingLeft: X_LARGE_PADDING * 1 + PX_TAG + IMPORTANT,
+        paddingRight: X_LARGE_PADDING * 1 + PX_TAG + IMPORTANT,
       },
       xlPx2: {
-        paddingLeft: X_LARGE_PADDING * 2 + PX_TAG,
-        paddingRight: X_LARGE_PADDING * 2 + PX_TAG
+        paddingLeft: X_LARGE_PADDING * 2 + PX_TAG + IMPORTANT,
+        paddingRight: X_LARGE_PADDING * 2 + PX_TAG + IMPORTANT,
       },
       xlPx3: {
-        paddingLeft: X_LARGE_PADDING * 3 + PX_TAG,
-        paddingRight: X_LARGE_PADDING * 3 + PX_TAG
+        paddingLeft: X_LARGE_PADDING * 3 + PX_TAG + IMPORTANT,
+        paddingRight: X_LARGE_PADDING * 3 + PX_TAG + IMPORTANT,
       },
       xlPx4: {
-        paddingLeft: X_LARGE_PADDING * 4 + PX_TAG,
-        paddingRight: X_LARGE_PADDING * 4 + PX_TAG
+        paddingLeft: X_LARGE_PADDING * 4 + PX_TAG + IMPORTANT,
+        paddingRight: X_LARGE_PADDING * 4 + PX_TAG + IMPORTANT,
       },
       xlPx5: {
-        paddingLeft: X_LARGE_PADDING * 5 + PX_TAG,
-        paddingRight: X_LARGE_PADDING * 5 + PX_TAG
+        paddingLeft: X_LARGE_PADDING * 5 + PX_TAG + IMPORTANT,
+        paddingRight: X_LARGE_PADDING * 5 + PX_TAG + IMPORTANT,
       },
 
-      xlPy0: { paddingTop: 0, paddingBottom: 0 },
+      xlPy0: { paddingTop: 0 + IMPORTANT, paddingBottom: 0 + IMPORTANT },
       xlPy1: {
-        paddingTop: X_LARGE_PADDING * 1 + PX_TAG,
-        paddingBottom: X_LARGE_PADDING * 1 + PX_TAG
+        paddingTop: X_LARGE_PADDING * 1 + PX_TAG + IMPORTANT,
+        paddingBottom: X_LARGE_PADDING * 1 + PX_TAG + IMPORTANT,
       },
       xlPy2: {
-        paddingTop: X_LARGE_PADDING * 2 + PX_TAG,
-        paddingBottom: X_LARGE_PADDING * 2 + PX_TAG
+        paddingTop: X_LARGE_PADDING * 2 + PX_TAG + IMPORTANT,
+        paddingBottom: X_LARGE_PADDING * 2 + PX_TAG + IMPORTANT,
       },
       xlPy3: {
-        paddingTop: X_LARGE_PADDING * 3 + PX_TAG,
-        paddingBottom: X_LARGE_PADDING * 3 + PX_TAG
+        paddingTop: X_LARGE_PADDING * 3 + PX_TAG + IMPORTANT,
+        paddingBottom: X_LARGE_PADDING * 3 + PX_TAG + IMPORTANT,
       },
       xlPy4: {
-        paddingTop: X_LARGE_PADDING * 4 + PX_TAG,
-        paddingBottom: X_LARGE_PADDING * 4 + PX_TAG
+        paddingTop: X_LARGE_PADDING * 4 + PX_TAG + IMPORTANT,
+        paddingBottom: X_LARGE_PADDING * 4 + PX_TAG + IMPORTANT,
       },
       xlPy5: {
-        paddingTop: X_LARGE_PADDING * 5 + PX_TAG,
-        paddingBottom: X_LARGE_PADDING * 5 + PX_TAG
+        paddingTop: X_LARGE_PADDING * 5 + PX_TAG + IMPORTANT,
+        paddingBottom: X_LARGE_PADDING * 5 + PX_TAG + IMPORTANT,
       },
 
       /*-------------------------------------------------
@@ -305,53 +305,53 @@ export default class XLargeUtilityStyles extends BaseStyle {
       xlMx0: { marginLeft: 0 + IMPORTANT, marginRight: 0 + IMPORTANT },
       xlMx1: {
         marginLeft: X_LARGE_MARGIN * 1 + PX_TAG + IMPORTANT,
-        marginRight: X_LARGE_MARGIN * 1 + PX_TAG + IMPORTANT
+        marginRight: X_LARGE_MARGIN * 1 + PX_TAG + IMPORTANT,
       },
       xlMx2: {
         marginLeft: X_LARGE_MARGIN * 2 + PX_TAG + IMPORTANT,
-        marginRight: X_LARGE_MARGIN * 2 + PX_TAG + IMPORTANT
+        marginRight: X_LARGE_MARGIN * 2 + PX_TAG + IMPORTANT,
       },
       xlMx3: {
         marginLeft: X_LARGE_MARGIN * 3 + PX_TAG + IMPORTANT,
-        marginRight: X_LARGE_MARGIN * 3 + PX_TAG + IMPORTANT
+        marginRight: X_LARGE_MARGIN * 3 + PX_TAG + IMPORTANT,
       },
       xlMx4: {
         marginLeft: X_LARGE_MARGIN * 4 + PX_TAG + IMPORTANT,
-        marginRight: X_LARGE_MARGIN * 4 + PX_TAG + IMPORTANT
+        marginRight: X_LARGE_MARGIN * 4 + PX_TAG + IMPORTANT,
       },
       xlMx5: {
         marginLeft: X_LARGE_MARGIN * 5 + PX_TAG + IMPORTANT,
-        marginRight: X_LARGE_MARGIN * 5 + PX_TAG + IMPORTANT
+        marginRight: X_LARGE_MARGIN * 5 + PX_TAG + IMPORTANT,
       },
       xlMxAuto: {
         marginLeft: "auto" + IMPORTANT,
-        marginRight: "auto" + IMPORTANT
+        marginRight: "auto" + IMPORTANT,
       },
 
       xlMy0: { marginTop: 0 + IMPORTANT, marginBottom: 0 + IMPORTANT },
       xlMy1: {
         marginTop: X_LARGE_MARGIN * 1 + PX_TAG + IMPORTANT,
-        marginBottom: X_LARGE_MARGIN * 1 + PX_TAG + IMPORTANT
+        marginBottom: X_LARGE_MARGIN * 1 + PX_TAG + IMPORTANT,
       },
       xlMy2: {
         marginTop: X_LARGE_MARGIN * 2 + PX_TAG + IMPORTANT,
-        marginBottom: X_LARGE_MARGIN * 2 + PX_TAG + IMPORTANT
+        marginBottom: X_LARGE_MARGIN * 2 + PX_TAG + IMPORTANT,
       },
       xlMy3: {
         marginTop: X_LARGE_MARGIN * 3 + PX_TAG + IMPORTANT,
-        marginBottom: X_LARGE_MARGIN * 3 + PX_TAG + IMPORTANT
+        marginBottom: X_LARGE_MARGIN * 3 + PX_TAG + IMPORTANT,
       },
       xlMy4: {
         marginTop: X_LARGE_MARGIN * 4 + PX_TAG + IMPORTANT,
-        marginBottom: X_LARGE_MARGIN * 4 + PX_TAG + IMPORTANT
+        marginBottom: X_LARGE_MARGIN * 4 + PX_TAG + IMPORTANT,
       },
       xlMy5: {
         marginTop: X_LARGE_MARGIN * 5 + PX_TAG + IMPORTANT,
-        marginBottom: X_LARGE_MARGIN * 5 + PX_TAG + IMPORTANT
+        marginBottom: X_LARGE_MARGIN * 5 + PX_TAG + IMPORTANT,
       },
       xlMyAuto: {
         marginTop: "auto" + IMPORTANT,
-        marginBottom: "auto" + IMPORTANT
+        marginBottom: "auto" + IMPORTANT,
       },
 
       xlMN1: { margin: X_LARGE_MARGIN * -1 + PX_TAG + IMPORTANT },
@@ -386,44 +386,44 @@ export default class XLargeUtilityStyles extends BaseStyle {
 
       xlMxN1: {
         marginLeft: X_LARGE_MARGIN * -1 + PX_TAG + IMPORTANT,
-        marginRight: X_LARGE_MARGIN * -1 + PX_TAG + IMPORTANT
+        marginRight: X_LARGE_MARGIN * -1 + PX_TAG + IMPORTANT,
       },
       xlMxN2: {
         marginLeft: X_LARGE_MARGIN * -2 + PX_TAG + IMPORTANT,
-        marginRight: X_LARGE_MARGIN * -2 + PX_TAG + IMPORTANT
+        marginRight: X_LARGE_MARGIN * -2 + PX_TAG + IMPORTANT,
       },
       xlMxN3: {
         marginLeft: X_LARGE_MARGIN * -3 + PX_TAG + IMPORTANT,
-        marginRight: X_LARGE_MARGIN * -3 + PX_TAG + IMPORTANT
+        marginRight: X_LARGE_MARGIN * -3 + PX_TAG + IMPORTANT,
       },
       xlMxN4: {
         marginLeft: X_LARGE_MARGIN * -4 + PX_TAG + IMPORTANT,
-        marginRight: X_LARGE_MARGIN * -4 + PX_TAG + IMPORTANT
+        marginRight: X_LARGE_MARGIN * -4 + PX_TAG + IMPORTANT,
       },
       xlMxN5: {
         marginLeft: X_LARGE_MARGIN * -5 + PX_TAG + IMPORTANT,
-        marginRight: X_LARGE_MARGIN * -5 + PX_TAG + IMPORTANT
+        marginRight: X_LARGE_MARGIN * -5 + PX_TAG + IMPORTANT,
       },
 
       xlMyN1: {
         marginTop: X_LARGE_MARGIN * -1 + PX_TAG + IMPORTANT,
-        marginBottom: X_LARGE_MARGIN * -1 + PX_TAG + IMPORTANT
+        marginBottom: X_LARGE_MARGIN * -1 + PX_TAG + IMPORTANT,
       },
       xlMyN2: {
         marginTop: X_LARGE_MARGIN * -2 + PX_TAG + IMPORTANT,
-        marginBottom: X_LARGE_MARGIN * -2 + PX_TAG + IMPORTANT
+        marginBottom: X_LARGE_MARGIN * -2 + PX_TAG + IMPORTANT,
       },
       xlMyN3: {
         marginTop: X_LARGE_MARGIN * -3 + PX_TAG + IMPORTANT,
-        marginBottom: X_LARGE_MARGIN * -3 + PX_TAG + IMPORTANT
+        marginBottom: X_LARGE_MARGIN * -3 + PX_TAG + IMPORTANT,
       },
       xlMyN4: {
         marginTop: X_LARGE_MARGIN * -4 + PX_TAG + IMPORTANT,
-        marginBottom: X_LARGE_MARGIN * -4 + PX_TAG + IMPORTANT
+        marginBottom: X_LARGE_MARGIN * -4 + PX_TAG + IMPORTANT,
       },
       xlMyN5: {
         marginTop: X_LARGE_MARGIN * -5 + PX_TAG + IMPORTANT,
-        marginBottom: X_LARGE_MARGIN * -5 + PX_TAG + IMPORTANT
+        marginBottom: X_LARGE_MARGIN * -5 + PX_TAG + IMPORTANT,
       },
 
       /*-------------------------------------------------
@@ -456,7 +456,7 @@ export default class XLargeUtilityStyles extends BaseStyle {
       xlTextStart: { textAlign: "left" + IMPORTANT },
       xlTextEnd: { textAlign: "right" + IMPORTANT },
       xlTextCenter: { textAlign: "center" + IMPORTANT },
-      xlTextJustify: { textAlign: "justify" + IMPORTANT }
+      xlTextJustify: { textAlign: "justify" + IMPORTANT },
 
       //NO OTHER SCREEN SIZE SPECIFIC STYLE NEEDED
 

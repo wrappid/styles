@@ -42,20 +42,20 @@ export default class MediumUtilityStyles extends BaseStyle {
       mdJustifyContentCenter: { display: "flex", justifyContent: "center" },
       mdJustifyContentFlexStart: {
         display: "flex",
-        justifyContent: "flex-start"
+        justifyContent: "flex-start",
       },
       mdJustifyContentFlexEnd: { display: "flex", justifyContent: "flex-end" },
       mdJustifyContentSpaceBetween: {
         display: "flex",
-        justifyContent: "space-between"
+        justifyContent: "space-between",
       },
       mdJustifyContentSpaceAround: {
         display: "flex",
-        justifyContent: "space-around"
+        justifyContent: "space-around",
       },
       mdJustifyContentSpaceEvenly: {
         display: "flex",
-        justifyContent: "space-evenly"
+        justifyContent: "space-evenly",
       },
 
       /**************************************************
@@ -125,27 +125,27 @@ export default class MediumUtilityStyles extends BaseStyle {
        *************************************************/
       mdObjectFitContain: {
         // -o-object-fit: contain !important;
-        objectFit: "contain"
+        objectFit: "contain",
       },
 
       mdObjectFitCover: {
         // -o-object-fit: cover !important;
-        objectFit: "cover"
+        objectFit: "cover",
       },
 
       mdObjectFitFill: {
         // -o-object-fit: fill !important;
-        objectFit: "fill"
+        objectFit: "fill",
       },
 
       mdObjectFitScale: {
         // -o-object-fit: scale-down !important;
-        objectFit: "scale-down"
+        objectFit: "scale-down",
       },
 
       mdObjectFitNone: {
         // -o-object-fit: none !important;
-        objectFit: "none"
+        objectFit: "none",
       },
 
       /**************************************************
@@ -179,83 +179,83 @@ export default class MediumUtilityStyles extends BaseStyle {
       /*-------------------------------------------------
        * Padding
        *-----------------------------------------------*/
-      mdP0: { padding: 0 },
-      mdP1: { padding: MEDIUM_PADDING + PX_TAG },
-      mdP2: { padding: MEDIUM_PADDING * 2 + PX_TAG },
-      mdP3: { padding: MEDIUM_PADDING * 3 + PX_TAG },
-      mdP4: { padding: MEDIUM_PADDING * 4 + PX_TAG },
-      mdP5: { padding: MEDIUM_PADDING * 5 + PX_TAG },
+      mdP0: { padding: 0 + IMPORTANT },
+      mdP1: { padding: MEDIUM_PADDING + PX_TAG + IMPORTANT },
+      mdP2: { padding: MEDIUM_PADDING * 2 + PX_TAG + IMPORTANT },
+      mdP3: { padding: MEDIUM_PADDING * 3 + PX_TAG + IMPORTANT },
+      mdP4: { padding: MEDIUM_PADDING * 4 + PX_TAG + IMPORTANT },
+      mdP5: { padding: MEDIUM_PADDING * 5 + PX_TAG + IMPORTANT },
 
       mdPt0: { paddingTop: 0 },
       mdPt1: { paddingTop: MEDIUM_PADDING + PX_TAG },
-      mdPt2: { paddingTop: MEDIUM_PADDING * 2 + PX_TAG },
-      mdPt3: { paddingTop: MEDIUM_PADDING * 3 + PX_TAG },
-      mdPt4: { paddingTop: MEDIUM_PADDING * 4 + PX_TAG },
-      mdPt5: { paddingTop: MEDIUM_PADDING * 5 + PX_TAG },
+      mdPt2: { paddingTop: MEDIUM_PADDING * 2 + PX_TAG + IMPORTANT },
+      mdPt3: { paddingTop: MEDIUM_PADDING * 3 + PX_TAG + IMPORTANT },
+      mdPt4: { paddingTop: MEDIUM_PADDING * 4 + PX_TAG + IMPORTANT },
+      mdPt5: { paddingTop: MEDIUM_PADDING * 5 + PX_TAG + IMPORTANT },
 
       mdPr0: { paddingRight: 0 },
-      mdPr1: { paddingRight: MEDIUM_PADDING + PX_TAG },
-      mdPr2: { paddingRight: MEDIUM_PADDING * 2 + PX_TAG },
-      mdPr3: { paddingRight: MEDIUM_PADDING * 3 + PX_TAG },
-      mdPr4: { paddingRight: MEDIUM_PADDING * 4 + PX_TAG },
-      mdPr5: { paddingRight: MEDIUM_PADDING * 5 + PX_TAG },
+      mdPr1: { paddingRight: MEDIUM_PADDING + PX_TAG + IMPORTANT },
+      mdPr2: { paddingRight: MEDIUM_PADDING * 2 + PX_TAG + IMPORTANT },
+      mdPr3: { paddingRight: MEDIUM_PADDING * 3 + PX_TAG + IMPORTANT },
+      mdPr4: { paddingRight: MEDIUM_PADDING * 4 + PX_TAG + IMPORTANT },
+      mdPr5: { paddingRight: MEDIUM_PADDING * 5 + PX_TAG + IMPORTANT },
 
       mdPb0: { paddingBottom: 0 },
-      mdPb1: { paddingBottom: MEDIUM_PADDING + PX_TAG },
-      mdPb2: { paddingBottom: MEDIUM_PADDING * 2 + PX_TAG },
-      mdPb3: { paddingBottom: MEDIUM_PADDING * 3 + PX_TAG },
-      mdPb4: { paddingBottom: MEDIUM_PADDING * 4 + PX_TAG },
-      mdPb5: { paddingBottom: MEDIUM_PADDING * 5 + PX_TAG },
+      mdPb1: { paddingBottom: MEDIUM_PADDING + PX_TAG + IMPORTANT },
+      mdPb2: { paddingBottom: MEDIUM_PADDING * 2 + PX_TAG + IMPORTANT },
+      mdPb3: { paddingBottom: MEDIUM_PADDING * 3 + PX_TAG + IMPORTANT },
+      mdPb4: { paddingBottom: MEDIUM_PADDING * 4 + PX_TAG + IMPORTANT },
+      mdPb5: { paddingBottom: MEDIUM_PADDING * 5 + PX_TAG + IMPORTANT },
 
       mdPl0: { paddingLeft: 0 },
-      mdPl1: { paddingLeft: MEDIUM_PADDING + PX_TAG },
-      mdPl2: { paddingLeft: MEDIUM_PADDING * 2 + PX_TAG },
-      mdPl3: { paddingLeft: MEDIUM_PADDING * 3 + PX_TAG },
-      mdPl4: { paddingLeft: MEDIUM_PADDING * 4 + PX_TAG },
-      mdPl5: { paddingLeft: MEDIUM_PADDING * 5 + PX_TAG },
+      mdPl1: { paddingLeft: MEDIUM_PADDING + PX_TAG + IMPORTANT },
+      mdPl2: { paddingLeft: MEDIUM_PADDING * 2 + PX_TAG + IMPORTANT },
+      mdPl3: { paddingLeft: MEDIUM_PADDING * 3 + PX_TAG + IMPORTANT },
+      mdPl4: { paddingLeft: MEDIUM_PADDING * 4 + PX_TAG + IMPORTANT },
+      mdPl5: { paddingLeft: MEDIUM_PADDING * 5 + PX_TAG + IMPORTANT },
 
-      mdPx0: { paddingLeft: 0, paddingRight: 0 },
+      mdPx0: { paddingLeft: 0 + IMPORTANT, paddingRight: 0 + IMPORTANT },
       mdPx1: {
-        paddingLeft: MEDIUM_PADDING * 1 + PX_TAG,
-        paddingRight: MEDIUM_PADDING * 1 + PX_TAG
+        paddingLeft: MEDIUM_PADDING * 1 + PX_TAG + IMPORTANT,
+        paddingRight: MEDIUM_PADDING * 1 + PX_TAG + IMPORTANT,
       },
       mdPx2: {
-        paddingLeft: MEDIUM_PADDING * 2 + PX_TAG,
-        paddingRight: MEDIUM_PADDING * 2 + PX_TAG
+        paddingLeft: MEDIUM_PADDING * 2 + PX_TAG + IMPORTANT,
+        paddingRight: MEDIUM_PADDING * 2 + PX_TAG + IMPORTANT,
       },
       mdPx3: {
-        paddingLeft: MEDIUM_PADDING * 3 + PX_TAG,
-        paddingRight: MEDIUM_PADDING * 3 + PX_TAG
+        paddingLeft: MEDIUM_PADDING * 3 + PX_TAG + IMPORTANT,
+        paddingRight: MEDIUM_PADDING * 3 + PX_TAG + IMPORTANT,
       },
       mdPx4: {
-        paddingLeft: MEDIUM_PADDING * 4 + PX_TAG,
-        paddingRight: MEDIUM_PADDING * 4 + PX_TAG
+        paddingLeft: MEDIUM_PADDING * 4 + PX_TAG + IMPORTANT,
+        paddingRight: MEDIUM_PADDING * 4 + PX_TAG + IMPORTANT,
       },
       mdPx5: {
-        paddingLeft: MEDIUM_PADDING * 5 + PX_TAG,
-        paddingRight: MEDIUM_PADDING * 5 + PX_TAG
+        paddingLeft: MEDIUM_PADDING * 5 + PX_TAG + IMPORTANT,
+        paddingRight: MEDIUM_PADDING * 5 + PX_TAG + IMPORTANT,
       },
 
-      mdPy0: { paddingTop: 0, paddingBottom: 0 },
+      mdPy0: { paddingTop: 0 + IMPORTANT, paddingBottom: 0 + IMPORTANT },
       mdPy1: {
-        paddingTop: MEDIUM_PADDING * 1 + PX_TAG,
-        paddingBottom: MEDIUM_PADDING * 1 + PX_TAG
+        paddingTop: MEDIUM_PADDING * 1 + PX_TAG + IMPORTANT,
+        paddingBottom: MEDIUM_PADDING * 1 + PX_TAG + IMPORTANT,
       },
       mdPy2: {
-        paddingTop: MEDIUM_PADDING * 2 + PX_TAG,
-        paddingBottom: MEDIUM_PADDING * 2 + PX_TAG
+        paddingTop: MEDIUM_PADDING * 2 + PX_TAG + IMPORTANT,
+        paddingBottom: MEDIUM_PADDING * 2 + PX_TAG + IMPORTANT,
       },
       mdPy3: {
-        paddingTop: MEDIUM_PADDING * 3 + PX_TAG,
-        paddingBottom: MEDIUM_PADDING * 3 + PX_TAG
+        paddingTop: MEDIUM_PADDING * 3 + PX_TAG + IMPORTANT,
+        paddingBottom: MEDIUM_PADDING * 3 + PX_TAG + IMPORTANT,
       },
       mdPy4: {
-        paddingTop: MEDIUM_PADDING * 4 + PX_TAG,
-        paddingBottom: MEDIUM_PADDING * 4 + PX_TAG
+        paddingTop: MEDIUM_PADDING * 4 + PX_TAG + IMPORTANT,
+        paddingBottom: MEDIUM_PADDING * 4 + PX_TAG + IMPORTANT,
       },
       mdPy5: {
-        paddingTop: MEDIUM_PADDING * 5 + PX_TAG,
-        paddingBottom: MEDIUM_PADDING * 5 + PX_TAG
+        paddingTop: MEDIUM_PADDING * 5 + PX_TAG + IMPORTANT,
+        paddingBottom: MEDIUM_PADDING * 5 + PX_TAG + IMPORTANT,
       },
 
       /*-------------------------------------------------
@@ -304,53 +304,53 @@ export default class MediumUtilityStyles extends BaseStyle {
       mdMx0: { marginLeft: 0 + IMPORTANT, marginRight: 0 + IMPORTANT },
       mdMx1: {
         marginLeft: MEDIUM_MARGIN * 1,
-        marginRight: MEDIUM_MARGIN * 1 + PX_TAG + IMPORTANT
+        marginRight: MEDIUM_MARGIN * 1 + PX_TAG + IMPORTANT,
       },
       mdMx2: {
         marginLeft: MEDIUM_MARGIN * 2,
-        marginRight: MEDIUM_MARGIN * 2 + PX_TAG + IMPORTANT
+        marginRight: MEDIUM_MARGIN * 2 + PX_TAG + IMPORTANT,
       },
       mdMx3: {
         marginLeft: MEDIUM_MARGIN * 3,
-        marginRight: MEDIUM_MARGIN * 3 + PX_TAG + IMPORTANT
+        marginRight: MEDIUM_MARGIN * 3 + PX_TAG + IMPORTANT,
       },
       mdMx4: {
         marginLeft: MEDIUM_MARGIN * 4,
-        marginRight: MEDIUM_MARGIN * 4 + PX_TAG + IMPORTANT
+        marginRight: MEDIUM_MARGIN * 4 + PX_TAG + IMPORTANT,
       },
       mdMx5: {
         marginLeft: MEDIUM_MARGIN * 5,
-        marginRight: MEDIUM_MARGIN * 5 + PX_TAG + IMPORTANT
+        marginRight: MEDIUM_MARGIN * 5 + PX_TAG + IMPORTANT,
       },
       mdMxAuto: {
         marginLeft: "auto" + IMPORTANT,
-        marginRight: "auto" + IMPORTANT
+        marginRight: "auto" + IMPORTANT,
       },
 
       mdMy0: { marginTop: 0 + IMPORTANT, marginBottom: 0 + IMPORTANT },
       mdMy1: {
         marginTop: MEDIUM_MARGIN * 1,
-        marginBottom: MEDIUM_MARGIN * 1 + PX_TAG + IMPORTANT
+        marginBottom: MEDIUM_MARGIN * 1 + PX_TAG + IMPORTANT,
       },
       mdMy2: {
         marginTop: MEDIUM_MARGIN * 2,
-        marginBottom: MEDIUM_MARGIN * 2 + PX_TAG + IMPORTANT
+        marginBottom: MEDIUM_MARGIN * 2 + PX_TAG + IMPORTANT,
       },
       mdMy3: {
         marginTop: MEDIUM_MARGIN * 3,
-        marginBottom: MEDIUM_MARGIN * 3 + PX_TAG + IMPORTANT
+        marginBottom: MEDIUM_MARGIN * 3 + PX_TAG + IMPORTANT,
       },
       mdMy4: {
         marginTop: MEDIUM_MARGIN * 4,
-        marginBottom: MEDIUM_MARGIN * 4 + PX_TAG + IMPORTANT
+        marginBottom: MEDIUM_MARGIN * 4 + PX_TAG + IMPORTANT,
       },
       mdMy5: {
         marginTop: MEDIUM_MARGIN * 5,
-        marginBottom: MEDIUM_MARGIN * 5 + PX_TAG + IMPORTANT
+        marginBottom: MEDIUM_MARGIN * 5 + PX_TAG + IMPORTANT,
       },
       mdMyAuto: {
         marginTop: "auto" + IMPORTANT,
-        marginBottom: "auto" + IMPORTANT
+        marginBottom: "auto" + IMPORTANT,
       },
 
       mdMN1: { margin: MEDIUM_MARGIN * -1 + PX_TAG + IMPORTANT },
@@ -385,44 +385,44 @@ export default class MediumUtilityStyles extends BaseStyle {
 
       mdMxN1: {
         marginLeft: MEDIUM_MARGIN * -1 + PX_TAG + IMPORTANT,
-        marginRight: MEDIUM_MARGIN * -1 + PX_TAG + IMPORTANT
+        marginRight: MEDIUM_MARGIN * -1 + PX_TAG + IMPORTANT,
       },
       mdMxN2: {
         marginLeft: MEDIUM_MARGIN * -2 + PX_TAG + IMPORTANT,
-        marginRight: MEDIUM_MARGIN * -2 + PX_TAG + IMPORTANT
+        marginRight: MEDIUM_MARGIN * -2 + PX_TAG + IMPORTANT,
       },
       mdMxN3: {
         marginLeft: MEDIUM_MARGIN * -3 + PX_TAG + IMPORTANT,
-        marginRight: MEDIUM_MARGIN * -3 + PX_TAG + IMPORTANT
+        marginRight: MEDIUM_MARGIN * -3 + PX_TAG + IMPORTANT,
       },
       mdMxN4: {
         marginLeft: MEDIUM_MARGIN * -4 + PX_TAG + IMPORTANT,
-        marginRight: MEDIUM_MARGIN * -4 + PX_TAG + IMPORTANT
+        marginRight: MEDIUM_MARGIN * -4 + PX_TAG + IMPORTANT,
       },
       mdMxN5: {
         marginLeft: MEDIUM_MARGIN * -5 + PX_TAG + IMPORTANT,
-        marginRight: MEDIUM_MARGIN * -5 + PX_TAG + IMPORTANT
+        marginRight: MEDIUM_MARGIN * -5 + PX_TAG + IMPORTANT,
       },
 
       mdMyN1: {
         marginTop: MEDIUM_MARGIN * -1 + PX_TAG + IMPORTANT,
-        marginBottom: MEDIUM_MARGIN * -1 + PX_TAG + IMPORTANT
+        marginBottom: MEDIUM_MARGIN * -1 + PX_TAG + IMPORTANT,
       },
       mdMyN2: {
         marginTop: MEDIUM_MARGIN * -2 + PX_TAG + IMPORTANT,
-        marginBottom: MEDIUM_MARGIN * -2 + PX_TAG + IMPORTANT
+        marginBottom: MEDIUM_MARGIN * -2 + PX_TAG + IMPORTANT,
       },
       mdMyN3: {
         marginTop: MEDIUM_MARGIN * -3 + PX_TAG + IMPORTANT,
-        marginBottom: MEDIUM_MARGIN * -3 + PX_TAG + IMPORTANT
+        marginBottom: MEDIUM_MARGIN * -3 + PX_TAG + IMPORTANT,
       },
       mdMyN4: {
         marginTop: MEDIUM_MARGIN * -4 + PX_TAG + IMPORTANT,
-        marginBottom: MEDIUM_MARGIN * -4 + PX_TAG + IMPORTANT
+        marginBottom: MEDIUM_MARGIN * -4 + PX_TAG + IMPORTANT,
       },
       mdMyN5: {
         marginTop: MEDIUM_MARGIN * -5 + PX_TAG + IMPORTANT,
-        marginBottom: MEDIUM_MARGIN * -5 + PX_TAG + IMPORTANT
+        marginBottom: MEDIUM_MARGIN * -5 + PX_TAG + IMPORTANT,
       },
 
       /*-------------------------------------------------
@@ -455,7 +455,7 @@ export default class MediumUtilityStyles extends BaseStyle {
       mdTextStart: { textAlign: "left" + IMPORTANT },
       mdTextEnd: { textAlign: "right" + IMPORTANT },
       mdTextCenter: { textAlign: "center" + IMPORTANT },
-      mdTextJustify: { textAlign: "justify" + IMPORTANT }
+      mdTextJustify: { textAlign: "justify" + IMPORTANT },
 
       //NO OTHER SCREEN SIZE SPECIFIC STYLE NEEDED
 

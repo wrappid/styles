@@ -180,83 +180,83 @@ export default class SmallUtilityStyles extends BaseStyle {
       /*-------------------------------------------------
        * Padding
        *-----------------------------------------------*/
-      smP0: { padding: 0 },
-      smP1: { padding: SMALL_PADDING + PX_TAG },
-      smP2: { padding: SMALL_PADDING * 2 + PX_TAG },
-      smP3: { padding: SMALL_PADDING * 3 + PX_TAG },
-      smP4: { padding: SMALL_PADDING * 4 + PX_TAG },
-      smP5: { padding: SMALL_PADDING * 5 + PX_TAG },
+      smP0: { padding: 0 + IMPORTANT },
+      smP1: { padding: SMALL_PADDING + PX_TAG + IMPORTANT },
+      smP2: { padding: SMALL_PADDING * 2 + PX_TAG + IMPORTANT },
+      smP3: { padding: SMALL_PADDING * 3 + PX_TAG + IMPORTANT },
+      smP4: { padding: SMALL_PADDING * 4 + PX_TAG + IMPORTANT },
+      smP5: { padding: SMALL_PADDING * 5 + PX_TAG + IMPORTANT },
 
       smPt0: { paddingTop: 0 },
-      smPt1: { paddingTop: SMALL_PADDING + PX_TAG },
-      smPt2: { paddingTop: SMALL_PADDING * 2 + PX_TAG },
-      smPt3: { paddingTop: SMALL_PADDING * 3 + PX_TAG },
-      smPt4: { paddingTop: SMALL_PADDING * 4 + PX_TAG },
-      smPt5: { paddingTop: SMALL_PADDING * 5 + PX_TAG },
+      smPt1: { paddingTop: SMALL_PADDING + PX_TAG + IMPORTANT },
+      smPt2: { paddingTop: SMALL_PADDING * 2 + PX_TAG + IMPORTANT },
+      smPt3: { paddingTop: SMALL_PADDING * 3 + PX_TAG + IMPORTANT },
+      smPt4: { paddingTop: SMALL_PADDING * 4 + PX_TAG + IMPORTANT },
+      smPt5: { paddingTop: SMALL_PADDING * 5 + PX_TAG + IMPORTANT },
 
-      smPr0: { paddingRight: 0 },
-      smPr1: { paddingRight: SMALL_PADDING + PX_TAG },
-      smPr2: { paddingRight: SMALL_PADDING * 2 + PX_TAG },
-      smPr3: { paddingRight: SMALL_PADDING * 3 + PX_TAG },
-      smPr4: { paddingRight: SMALL_PADDING * 4 + PX_TAG },
-      smPr5: { paddingRight: SMALL_PADDING * 5 + PX_TAG },
+      smPr0: { paddingRight: 0 + IMPORTANT },
+      smPr1: { paddingRight: SMALL_PADDING + PX_TAG + IMPORTANT },
+      smPr2: { paddingRight: SMALL_PADDING * 2 + PX_TAG + IMPORTANT },
+      smPr3: { paddingRight: SMALL_PADDING * 3 + PX_TAG + IMPORTANT },
+      smPr4: { paddingRight: SMALL_PADDING * 4 + PX_TAG + IMPORTANT },
+      smPr5: { paddingRight: SMALL_PADDING * 5 + PX_TAG + IMPORTANT },
 
-      smPb0: { paddingBottom: 0 },
-      smPb1: { paddingBottom: SMALL_PADDING + PX_TAG },
-      smPb2: { paddingBottom: SMALL_PADDING * 2 + PX_TAG },
-      smPb3: { paddingBottom: SMALL_PADDING * 3 + PX_TAG },
-      smPb4: { paddingBottom: SMALL_PADDING * 4 + PX_TAG },
-      smPb5: { paddingBottom: SMALL_PADDING * 5 + PX_TAG },
+      smPb0: { paddingBottom: 0 + IMPORTANT },
+      smPb1: { paddingBottom: SMALL_PADDING + PX_TAG + IMPORTANT },
+      smPb2: { paddingBottom: SMALL_PADDING * 2 + PX_TAG + IMPORTANT },
+      smPb3: { paddingBottom: SMALL_PADDING * 3 + PX_TAG + IMPORTANT },
+      smPb4: { paddingBottom: SMALL_PADDING * 4 + PX_TAG + IMPORTANT },
+      smPb5: { paddingBottom: SMALL_PADDING * 5 + PX_TAG + IMPORTANT },
 
-      smPl0: { paddingLeft: 0 },
-      smPl1: { paddingLeft: SMALL_PADDING + PX_TAG },
-      smPl2: { paddingLeft: SMALL_PADDING * 2 + PX_TAG },
-      smPl3: { paddingLeft: SMALL_PADDING * 3 + PX_TAG },
-      smPl4: { paddingLeft: SMALL_PADDING * 4 + PX_TAG },
-      smPl5: { paddingLeft: SMALL_PADDING * 5 + PX_TAG },
+      smPl0: { paddingLeft: 0 + IMPORTANT },
+      smPl1: { paddingLeft: SMALL_PADDING + PX_TAG + IMPORTANT },
+      smPl2: { paddingLeft: SMALL_PADDING * 2 + PX_TAG + IMPORTANT },
+      smPl3: { paddingLeft: SMALL_PADDING * 3 + PX_TAG + IMPORTANT },
+      smPl4: { paddingLeft: SMALL_PADDING * 4 + PX_TAG + IMPORTANT },
+      smPl5: { paddingLeft: SMALL_PADDING * 5 + PX_TAG + IMPORTANT },
 
-      smPx0: { paddingLeft: 0, paddingRight: 0 },
+      smPx0: { paddingLeft: 0 + IMPORTANT, paddingRight: 0 + IMPORTANT },
       smPx1: {
-        paddingLeft: SMALL_PADDING * 1 + PX_TAG,
-        paddingRight: SMALL_PADDING * 1 + PX_TAG
+        paddingLeft: SMALL_PADDING * 1 + PX_TAG + IMPORTANT,
+        paddingRight: SMALL_PADDING * 1 + PX_TAG + IMPORTANT
       },
       smPx2: {
-        paddingLeft: SMALL_PADDING * 2 + PX_TAG,
-        paddingRight: SMALL_PADDING * 2 + PX_TAG
+        paddingLeft: SMALL_PADDING * 2 + PX_TAG + IMPORTANT,
+        paddingRight: SMALL_PADDING * 2 + PX_TAG + IMPORTANT
       },
       smPx3: {
-        paddingLeft: SMALL_PADDING * 3 + PX_TAG,
-        paddingRight: SMALL_PADDING * 3 + PX_TAG
+        paddingLeft: SMALL_PADDING * 3 + PX_TAG + IMPORTANT,
+        paddingRight: SMALL_PADDING * 3 + PX_TAG + IMPORTANT
       },
       smPx4: {
-        paddingLeft: SMALL_PADDING * 4 + PX_TAG,
-        paddingRight: SMALL_PADDING * 4 + PX_TAG
+        paddingLeft: SMALL_PADDING * 4 + PX_TAG + IMPORTANT,
+        paddingRight: SMALL_PADDING * 4 + PX_TAG + IMPORTANT
       },
       smPx5: {
-        paddingLeft: SMALL_PADDING * 5 + PX_TAG,
-        paddingRight: SMALL_PADDING * 5 + PX_TAG
+        paddingLeft: SMALL_PADDING * 5 + PX_TAG + IMPORTANT,
+        paddingRight: SMALL_PADDING * 5 + PX_TAG + IMPORTANT
       },
 
-      smPy0: { paddingTop: 0, paddingBottom: 0 },
+      smPy0: { paddingTop: 0 + IMPORTANT, paddingBottom: 0 + IMPORTANT },
       smPy1: {
-        paddingTop: SMALL_PADDING * 1 + PX_TAG,
-        paddingBottom: SMALL_PADDING * 1 + PX_TAG
+        paddingTop: SMALL_PADDING * 1 + PX_TAG + IMPORTANT,
+        paddingBottom: SMALL_PADDING * 1 + PX_TAG + IMPORTANT
       },
       smPy2: {
-        paddingTop: SMALL_PADDING * 2 + PX_TAG,
-        paddingBottom: SMALL_PADDING * 2 + PX_TAG
+        paddingTop: SMALL_PADDING * 2 + PX_TAG + IMPORTANT,
+        paddingBottom: SMALL_PADDING * 2 + PX_TAG + IMPORTANT
       },
       smPy3: {
-        paddingTop: SMALL_PADDING * 3 + PX_TAG,
-        paddingBottom: SMALL_PADDING * 3 + PX_TAG
+        paddingTop: SMALL_PADDING * 3 + PX_TAG + IMPORTANT,
+        paddingBottom: SMALL_PADDING * 3 + PX_TAG + IMPORTANT
       },
       smPy4: {
-        paddingTop: SMALL_PADDING * 4 + PX_TAG,
-        paddingBottom: SMALL_PADDING * 4 + PX_TAG
+        paddingTop: SMALL_PADDING * 4 + PX_TAG + IMPORTANT,
+        paddingBottom: SMALL_PADDING * 4 + PX_TAG + IMPORTANT
       },
       smPy5: {
-        paddingTop: SMALL_PADDING * 5 + PX_TAG,
-        paddingBottom: SMALL_PADDING * 5 + PX_TAG
+        paddingTop: SMALL_PADDING * 5 + PX_TAG + IMPORTANT,
+        paddingBottom: SMALL_PADDING * 5 + PX_TAG + IMPORTANT
       },
 
       /*-------------------------------------------------
