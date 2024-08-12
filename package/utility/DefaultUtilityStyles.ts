@@ -285,8 +285,10 @@ export default class DefaultUtilityStyles extends BaseStyle {
       },
 
       bgGraph: {
-        background    : "linear-gradient(-90deg, rgba(0,0,0,.05) 1px, transparent 1px), linear-gradient(rgba(0,0,0,.05) 1px, transparent 1px), linear-gradient(-90deg, rgba(0, 0, 0, .04) 1px, transparent 1px), inear-gradient(rgba(0,0,0,.04) 1px, transparent 1px), inear-gradient(transparent 3px, #f2f2f2 3px, #f2f2f2 78px, transparent 78px), inear-gradient(-90deg, #aaa 1px, transparent 1px), inear-gradient(-90deg, transparent 3px, #f2f2f2 3px, #f2f2f2 78px, transparent 78px), inear-gradient(#aaa 1px, transparent 1px)",
-        backgroundSize: "4px 4px, 4px 4px, 80px 80px, 80px 80px, 80px 80px, 80px 80px, 80px 80px, 80px 80px",
+        background:
+          "linear-gradient(-90deg, rgba(0,0,0,.05) 1px, transparent 1px), linear-gradient(rgba(0,0,0,.05) 1px, transparent 1px), linear-gradient(-90deg, rgba(0, 0, 0, .04) 1px, transparent 1px), inear-gradient(rgba(0,0,0,.04) 1px, transparent 1px), inear-gradient(transparent 3px, #f2f2f2 3px, #f2f2f2 78px, transparent 78px), inear-gradient(-90deg, #aaa 1px, transparent 1px), inear-gradient(-90deg, transparent 3px, #f2f2f2 3px, #f2f2f2 78px, transparent 78px), inear-gradient(#aaa 1px, transparent 1px)",
+        backgroundSize:
+          "4px 4px, 4px 4px, 80px 80px, 80px 80px, 80px 80px, 80px 80px, 80px 80px, 80px 80px",
       },
 
       bgIsometricGrid: {
@@ -717,6 +719,7 @@ export default class DefaultUtilityStyles extends BaseStyle {
       displayTableCell  : { display: "table-cell" + IMPORTANT },
       displayFlex       : { display: "flex" + IMPORTANT },
       displayInlineFlex : { display: "inline-flex" + IMPORTANT },
+      displayListItem   : { display: "list-item" + IMPORTANT },
       displayNone       : { display: "none" + IMPORTANT },
 
       /**************************************************
@@ -1434,14 +1437,14 @@ export default class DefaultUtilityStyles extends BaseStyle {
        * Line Height
        *************************************************/
       lineHeightNormal : { lineHeight: "normal" },
-      lineHeight2      : { lineHeight: "2" }, // number multiplied by the element's font size 
+      lineHeight2      : { lineHeight: "2" }, // number multiplied by the element's font size
       lineHeight3      : { lineHeight: "3" },
       lineHeightInitial: { lineHeight: "initial" },
       lineHeightInherit: { lineHeight: "inherit" },
 
       /**************************************************
-        * Word  Spacing
-        *************************************************/
+       * Word  Spacing
+       *************************************************/
       wordSpacingNormal: { wordSpacing: "normal" },
       wordSpacing1     : { wordSpacing: DEFAULT_WORD_SPACING * 0.125 + REM_TAG }, // spacing number represent px, calculated in rem.
       wordSpacing2     : { wordSpacing: DEFAULT_WORD_SPACING * 0.25 + REM_TAG },
@@ -1451,6 +1454,72 @@ export default class DefaultUtilityStyles extends BaseStyle {
       wordSpacing6     : { wordSpacing: DEFAULT_WORD_SPACING * 0.75 + REM_TAG },
       wordSpacing7     : { wordSpacing: DEFAULT_WORD_SPACING * 0.875 + REM_TAG },
       wordSpacing8     : { wordSpacing: DEFAULT_WORD_SPACING + REM_TAG },
+
+      /****************
+       * List Style
+       */
+      listStyleAuto                : { listStyle: "auto" + IMPORTANT }, 
+      listStyleCjkHeavenlyStem     : { listStyle: "cjk-heavenly-stem" + IMPORTANT },
+      listStyleArabicIndic         : { listStyle: "arabic-indic" + IMPORTANT },
+      listStyleDisc                : { listStyle: "disc" + IMPORTANT },
+      listStyleCircle              : { listStyle: "circle" + IMPORTANT },
+      listStyleSquare              : { listStyle: "square" + IMPORTANT },
+      listStyleDecimal             : { listStyle: "decimal" + IMPORTANT },
+      listStyleDecimalLeadingZero  : { listStyle: "decimal-leading-zero" + IMPORTANT },
+      listStyleArmenian            : { listStyle: "armenian" + IMPORTANT },
+      listStyleBengali             : { listStyle: "bengali" + IMPORTANT },
+      listStyleCambodian           : { listStyle: "cambodian" + IMPORTANT },
+      listStyleCjkEarthlyBranch    : { listStyle: "cjk-earthly-branch" + IMPORTANT },
+      listStyleCjkIdeographic      : { listStyle: "cjk-ideo-graphic" + IMPORTANT },
+      listStyleDevanagari          : { listStyle: "devanagaric" + IMPORTANT },
+      listStyleEthiopicHalehame    : { listStyle: "ethiopic-halehame" + IMPORTANT },
+      listStyleEthiopicHalehameAm  : { listStyle: "ethiopic-halehame-am" + IMPORTANT },
+      listStyleEthiopicHalehameTiEr: { listStyle: "ethiopic-halehame-ti-er" + IMPORTANT },
+      listStyleEthiopicHalehameTiEt: { listStyle: "ethiopic-halehame-ti-et" + IMPORTANT },
+      listStyleGeorgian            : { listStyle: "georgian" + IMPORTANT },
+      listStyleGujarati            : { listStyle: "gujarati" + IMPORTANT },
+      listStyleHangul              : { listStyle: "hangul" + IMPORTANT },
+      listStyleHangulConsonant     : { listStyle: "hangul-consonant" + IMPORTANT },
+      listStyleHebrew              : { listStyle: "hebrew" + IMPORTANT },
+      listStyleHiraganaIroha       : { listStyle: "hiragana-iroha" + IMPORTANT },
+      listStyleInside              : { listStyle: "inside" + IMPORTANT },
+      listStyleKannada             : { listStyle: "kannada" + IMPORTANT },
+      listStyleKatakana            : { listStyle: "katakana" + IMPORTANT },
+      listStyleKatakanaIroha       : { listStyle: "katakana-iroha" + IMPORTANT },
+      listStyleKhmer               : { listStyle: "khmer" + IMPORTANT },
+      listStyleKoreanHanjaFormal   : { listStyle: "korean-hanja-formal" + IMPORTANT },
+      listStyleKoreanHangulFormal  : { listStyle: "korean-hangul-formal" + IMPORTANT },
+      listStyleKoreanHanjaInformal : { listStyle: "korean-hanja-informal" + IMPORTANT },
+      listStyleLao                 : { listStyle: "lao" + IMPORTANT },
+      listStyleLowerAlpha          : { listStyle: "lower-alpha" + IMPORTANT },
+      listStyleLowerArmenian       : { listStyle: "lower-armenian" + IMPORTANT },
+      listStyleLowerLatin          : { listStyle: "lower-latin" + IMPORTANT },
+      listStyleLowerGreek          : { listStyle: "lower-greek" + IMPORTANT },
+      listStyleLowerRoman          : { listStyle: "lower-roman" + IMPORTANT },
+      listStyleMalayalam           : { listStyle: "lower-malayalam" + IMPORTANT },
+      listStyleMongolian           : { listStyle: "lower-mongolian" + IMPORTANT },
+      listStyleMyanmar             : { listStyle: "lower-myanmar" + IMPORTANT },
+      listStyleOriya               : { listStyle: "lower-oriya" + IMPORTANT },
+      listStyleOutside             : { listStyle: "lower-outside" + IMPORTANT },
+      listStylePersian             : { listStyle: "persian" + IMPORTANT },
+      listStyleSimpChineseFormal   : { listStyle: "simp-chinese-formal" + IMPORTANT },
+      listStyleSimpChineseInFormal : { listStyle: "simp-chinese-informal" + IMPORTANT },
+      listStyleTelugu              : { listStyle: "telugu" + IMPORTANT },
+      listStyleThai                : { listStyle: "thai" + IMPORTANT },
+      listStyleTibetan             : { listStyle: "tibetan" + IMPORTANT },
+      listStyleTradChineseFormal   : { listStyle: "trad-chinese-formal" + IMPORTANT },
+      listStyleTradChineseInformal : { listStyle: "trad-chinese-informal" + IMPORTANT },
+      listStyleUpperAlpha          : { listStyle: "upper-alpha" + IMPORTANT },
+      listStyleUpperArmenian       : { listStyle: "upper-armenian" + IMPORTANT },
+      listStyleUpperLatin          : { listStyle: "upper-latin" + IMPORTANT },
+      listStyleUpperRoman          : { listStyle: "upper-roman" + IMPORTANT },
+      listStyleUrdu                : { listStyle: "urdu" + IMPORTANT },
+      listStyleInherit             : { listStyle: "inherit" + IMPORTANT },
+      listStyleInitial             : { listStyle: "initial" + IMPORTANT },
+      listStyleRevert              : { listStyle: "revert" + IMPORTANT },
+      listStyleRevertLayer         : { listStyle: "revert-layer" + IMPORTANT },
+      listStyleUnset               : { listStyle: "unset" + IMPORTANT },
+      listStyleNone                : { listStyle: "none" + IMPORTANT },
     };
   }
 }
