@@ -710,17 +710,28 @@ export default class DefaultUtilityStyles extends BaseStyle {
       /**************************************************
        * Display
        *************************************************/
-      displayInline     : { display: "inline" + IMPORTANT },
-      displayInlineBlock: { display: "inline-block" + IMPORTANT },
-      displayBlock      : { display: "block" + IMPORTANT + IMPORTANT },
-      displayGrid       : { display: "grid" + IMPORTANT },
-      displayTable      : { display: "table" + IMPORTANT },
-      displayTableRow   : { display: "table-row" + IMPORTANT },
-      displayTableCell  : { display: "table-cell" + IMPORTANT },
-      displayFlex       : { display: "flex" + IMPORTANT },
-      displayInlineFlex : { display: "inline-flex" + IMPORTANT },
-      displayListItem   : { display: "list-item" + IMPORTANT },
-      displayNone       : { display: "none" + IMPORTANT },
+      displayInline          : { display: "inline" + IMPORTANT },
+      displayInlineBlock     : { display: "inline-block" + IMPORTANT },
+      displayBlock           : { display: "block" + IMPORTANT + IMPORTANT },
+      displayGrid            : { display: "grid" + IMPORTANT },
+      displayTable           : { display: "table" + IMPORTANT },
+      displayTableRow        : { display: "table-row" + IMPORTANT },
+      displayTableCell       : { display: "table-cell" + IMPORTANT },
+      displayFlex            : { display: "flex" + IMPORTANT },
+      displayInlineFlex      : { display: "inline-flex" + IMPORTANT },
+      displayListItem        : { display: "list-item" + IMPORTANT },
+      displayContent         : { display: "content" + IMPORTANT },
+      displayInlineGrid      : { display: "inline-grid" + IMPORTANT },
+      displayInlineTable     : { display: "inline-table" + IMPORTANT },
+      displayRunIn           : { display: "run-in" + IMPORTANT },
+      displayTableCaption    : { display: "table-caption" + IMPORTANT },
+      displayTableColumnGroup: { display: "table-column-group" + IMPORTANT },
+      displayTableHeaderGroup: { display: "table-header-group" + IMPORTANT },
+      displayTableRowGroup   : { display: "table-row-group" + IMPORTANT },
+      dispalyTableColumn     : { display: "table-column" + IMPORTANT },
+      displayInitial         : { display: "initial" + IMPORTANT },
+      displayInherit         : { display: "inherit" + IMPORTANT },
+      displayNone            : { display: "none" + IMPORTANT },
 
       /**************************************************
        * Flex
@@ -1458,7 +1469,7 @@ export default class DefaultUtilityStyles extends BaseStyle {
       /****************
        * List Style
        */
-      listStyleAuto                : { listStyle: "auto" + IMPORTANT }, 
+      listStyleAuto                : { listStyle: "auto" + IMPORTANT },
       listStyleCjkHeavenlyStem     : { listStyle: "cjk-heavenly-stem" + IMPORTANT },
       listStyleArabicIndic         : { listStyle: "arabic-indic" + IMPORTANT },
       listStyleDisc                : { listStyle: "disc" + IMPORTANT },
