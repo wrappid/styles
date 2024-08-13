@@ -123,28 +123,28 @@ export default class DefaultUtilityStyles extends BaseStyle {
       bgTransparent: { backgroundColor: "transparent" + IMPORTANT },
 
       bgPrimary: {
-        backgroundColor: this.theme?.palette?.primary?.main,
+        backgroundColor: this.theme?.palette?.primary?.main + IMPORTANT,
         color          : this.theme?.palette?.primary?.contrastText + IMPORTANT,
       },
       bgPrimaryLight: {
-        backgroundColor: this.theme.palette?.primary?.light,
+        backgroundColor: this.theme.palette?.primary?.light + IMPORTANT,
         color          : this.theme.palette?.primary?.contrastText + IMPORTANT,
       },
       bgPrimaryDark: {
-        backgroundColor: this.theme.palette?.primary?.dark,
+        backgroundColor: this.theme.palette?.primary?.dark + IMPORTANT,
         color          : this.theme.palette?.primary?.contrastText + IMPORTANT,
       },
 
       bgSecondary: {
-        backgroundColor: this.theme.palette?.secondary?.main,
+        backgroundColor: this.theme.palette?.secondary?.main + IMPORTANT,
         color          : this.theme.palette?.secondary?.contrastText + IMPORTANT,
       },
       bgSecondaryLight: {
-        backgroundColor: this.theme.palette?.secondary?.light,
+        backgroundColor: this.theme.palette?.secondary?.light + IMPORTANT,
         color          : this.theme.palette?.secondary?.contrastText + IMPORTANT,
       },
       bgSecondaryDark: {
-        backgroundColor: this.theme.palette?.secondary?.dark,
+        backgroundColor: this.theme.palette?.secondary?.dark + IMPORTANT,
         color          : this.theme.palette?.secondary?.contrastText + IMPORTANT,
       },
 
@@ -153,11 +153,11 @@ export default class DefaultUtilityStyles extends BaseStyle {
         color          : this.theme.palette?.success?.contrastText + IMPORTANT,
       },
       bgSuccessLight: {
-        backgroundColor: this.theme.palette?.success?.light,
+        backgroundColor: this.theme.palette?.success?.light + IMPORTANT,
         color          : this.theme.palette?.success?.contrastText + IMPORTANT,
       },
       bgSuccessDark: {
-        backgroundColor: this.theme.palette?.success?.dark,
+        backgroundColor: this.theme.palette?.success?.dark + IMPORTANT,
         color          : this.theme.palette?.success?.contrastText + IMPORTANT,
       },
 
@@ -166,11 +166,11 @@ export default class DefaultUtilityStyles extends BaseStyle {
         color          : this.theme.palette?.error?.contrastText + IMPORTANT,
       },
       bgErrorLight: {
-        backgroundColor: this.theme.palette?.error?.light,
+        backgroundColor: this.theme.palette?.error?.light + IMPORTANT,
         color          : this.theme.palette?.error?.contrastText + IMPORTANT,
       },
       bgErrorDark: {
-        backgroundColor: this.theme.palette?.error?.dark,
+        backgroundColor: this.theme.palette?.error?.dark + IMPORTANT,
         color          : this.theme.palette?.error?.contrastText + IMPORTANT,
       },
 
@@ -179,11 +179,11 @@ export default class DefaultUtilityStyles extends BaseStyle {
         color          : this.theme.palette?.warning?.contrastText + IMPORTANT,
       },
       bgWarningLight: {
-        backgroundColor: this.theme.palette?.warning?.light,
+        backgroundColor: this.theme.palette?.warning?.light + IMPORTANT,
         color          : this.theme.palette?.warning?.contrastText + IMPORTANT,
       },
       bgWarningDark: {
-        backgroundColor: this.theme.palette?.warning?.dark,
+        backgroundColor: this.theme.palette?.warning?.dark + IMPORTANT,
         color          : this.theme.palette?.warning?.contrastText + IMPORTANT,
       },
 
@@ -192,11 +192,11 @@ export default class DefaultUtilityStyles extends BaseStyle {
         color          : this.theme.palette?.info?.contrastText + IMPORTANT,
       },
       bgInfoLight: {
-        backgroundColor: this.theme.palette?.info?.light,
+        backgroundColor: this.theme.palette?.info?.light + IMPORTANT,
         color          : this.theme.palette?.info?.contrastText + IMPORTANT,
       },
       bgInfoDark: {
-        backgroundColor: this.theme.palette?.info?.dark,
+        backgroundColor: this.theme.palette?.info?.dark + IMPORTANT,
         color          : this.theme.palette?.info?.contrastText + IMPORTANT,
       },
 
