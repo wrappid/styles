@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.157](https://github.com/wrappid/styles/compare/v0.0.156...v0.0.157) (2024-08-13)
+
+
+### Features
+
+* **core:** :sparkles: added the remaining style property in display ([5e93a26](https://github.com/wrappid/styles/commit/5e93a26d38cd96ca7fa065d7499de394247a30f4)), closes [#101](https://github.com/wrappid/styles/issues/101)
+* **global:** :sparkles: adding liststyles in style package ([cd2ddef](https://github.com/wrappid/styles/commit/cd2ddefda6f51d2316f47031af4407551571392e)), closes [#101](https://github.com/wrappid/styles/issues/101)
+* **utils:** :sparkles: the css in js is added in the file ([d202bd9](https://github.com/wrappid/styles/commit/d202bd9af223401d50dc2d312e8b98487c36d558)), closes [#101](https://github.com/wrappid/styles/issues/101)
+
 ### [0.0.156](https://github.com/wrappid/styles/compare/v0.0.155...v0.0.156) (2024-08-05)
 
 ### [0.0.155](https://github.com/wrappid/styles/compare/v0.0.154...v0.0.155) (2024-07-22)
