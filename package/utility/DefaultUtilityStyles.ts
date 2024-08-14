@@ -1466,9 +1466,9 @@ export default class DefaultUtilityStyles extends BaseStyle {
       wordSpacing7     : { wordSpacing: DEFAULT_WORD_SPACING * 0.875 + REM_TAG },
       wordSpacing8     : { wordSpacing: DEFAULT_WORD_SPACING + REM_TAG },
 
-      /*************************************************
+      /****************
        * List Style
-       *************************************************/
+       */
       listStyleAuto                : { listStyle: "auto" + IMPORTANT },
       listStyleCjkHeavenlyStem     : { listStyle: "cjk-heavenly-stem" + IMPORTANT },
       listStyleArabicIndic         : { listStyle: "arabic-indic" + IMPORTANT },
