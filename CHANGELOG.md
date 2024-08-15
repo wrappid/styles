@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.158](https://github.com/wrappid/styles/compare/v0.0.157...v0.0.158) (2024-08-15)
+
+
+### Bug Fixes
+
+* **core:** :bug: adding important in padding ([4fca2f0](https://github.com/wrappid/styles/commit/4fca2f034cc9b8ecd578b270a02a667e13856d2c)), closes [#102](https://github.com/wrappid/styles/issues/102)
+* **core:** :bug: fix the merge conflict ([e080456](https://github.com/wrappid/styles/commit/e080456ae3c49e655ba86bc67bdd91151560465a)), closes [#102](https://github.com/wrappid/styles/issues/102)
+* **core:** :bug: solve the conflicting error ([caf66c1](https://github.com/wrappid/styles/commit/caf66c13d853681375900cd43b8419c66d36ce4a)), closes [#102](https://github.com/wrappid/styles/issues/102)
+
 ### [0.0.157](https://github.com/wrappid/styles/compare/v0.0.156...v0.0.157) (2024-08-13)
 
 
