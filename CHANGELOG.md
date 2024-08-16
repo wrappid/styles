@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.159](https://github.com/wrappid/styles/compare/v0.0.158...v0.0.159) (2024-08-16)
+
+
+### Bug Fixes
+
+* **core:** :bug: add important to backgound in DefaultUtilityStyles ([0ba108f](https://github.com/wrappid/styles/commit/0ba108fef77d9e9b052ebcc9595938718943d71b)), closes [#105](https://github.com/wrappid/styles/issues/105)
+
 ### [0.0.158](https://github.com/wrappid/styles/compare/v0.0.157...v0.0.158) (2024-08-15)
 
 
