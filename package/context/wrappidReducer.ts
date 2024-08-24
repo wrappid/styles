@@ -78,7 +78,6 @@ const wrappidReducer = (
     }
 
     default: {
-      console.error(`Unknown action type: ${type}`);
       return state;
     }
   }
