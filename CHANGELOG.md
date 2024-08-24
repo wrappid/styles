@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.162](https://github.com/wrappid/styles/compare/v0.0.161...v0.0.162) (2024-08-24)
+
+
+### Bug Fixes
+
+* **core:** :bug: unnecessary console log remove ([8dfc331](https://github.com/wrappid/styles/commit/8dfc33159eac04ba89d18f04afad76c3b24e3a95)), closes [#87](https://github.com/wrappid/styles/issues/87)
+
 ### [0.0.161](https://github.com/wrappid/styles/compare/v0.0.160...v0.0.161) (2024-08-23)
 
 ### [0.0.160](https://github.com/wrappid/styles/compare/v0.0.159...v0.0.160) (2024-08-23)
