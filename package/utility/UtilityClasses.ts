@@ -887,19 +887,27 @@ const UtilityClasses = {
     POSITION_STICKY: "positionSticky",
 
     TOP_0: "top0",
+    TOP_25: "top25",
     TOP_50: "top50",
+    TOP_75: "top75",
     TOP_100: "top100",
 
     BOTTOM_0: "bottom0",
+    BOTTOM_25: "bottom25",
     BOTTOM_50: "bottom50",
+    BOTTOM_75: "bottom75",
     BOTTOM_100: "bottom100",
 
     START_0: "start0",
+    START_25: "start25",
     START_50: "start50",
+    START_75: "start75",
     START_100: "start100",
 
     END_0: "end0",
+    END_25: "end25",
     END_50: "end50",
+    END_75: "end75",
     END_100: "end100",
 
     TRANSLATE_MIDDLE: "translateMiddle",
@@ -2154,8 +2162,6 @@ const UtilityClasses = {
     REVERT_LAYER: "listStyleRevertLayer",
     UNSET: "listStyleUnset",
     NONE: "listStyleNone",
-
-    
   },
 };
 

@@ -846,32 +846,40 @@ export default class DefaultUtilityStyles extends BaseStyle {
       /**************************************************
        * Position
        *************************************************/
-      positionStatic  : { position: "static" },
-      positionRelative: { position: "relative" },
-      positionAbsolute: { position: "absolute" },
-      positionFixed   : { position: "fixed" },
+      positionStatic  : { position: "static" + IMPORTANT },
+      positionRelative: { position: "relative" + IMPORTANT },
+      positionAbsolute: { position: "absolute" + IMPORTANT },
+      positionFixed   : { position: "fixed" + IMPORTANT },
       positionSticky  : {
         // -- position: "-webkit-sticky",
-        position: "sticky",
+        position: "sticky" + IMPORTANT,
       },
 
       /**
        * @todo multiple value for same property
        */
       top0  : { top: "0" },
+      top25 : { top: "25%" },
       top50 : { top: "50%" },
+      top75 : { top: "75%" },
       top100: { top: "100%" },
 
       bottom0  : { bottom: "0" },
+      bottom25 : { bottom: "25%" },
       bottom50 : { bottom: "50%" },
+      bottom75 : { bottom: "75%" },
       bottom100: { bottom: "100%" },
 
       start0  : { left: "0" },
+      start25 : { left: "25%" },
       start50 : { left: "50%" },
+      start75 : { left: "75%" },
       start100: { left: "100%" },
 
       end0  : { right: "0" },
+      end25 : { right: "25%" },
       end50 : { right: "50%" },
+      end75 : { right: "75%" },
       end100: { right: "100%" },
 
       rotate15 : { transform: "rotate(15deg)" },
