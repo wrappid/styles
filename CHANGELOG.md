@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.163](https://github.com/wrappid/styles/compare/v0.0.162...v0.0.163) (2024-09-04)
+
+
+### Bug Fixes
+
+* **global:** :bug: add important in position ([33e13e4](https://github.com/wrappid/styles/commit/33e13e4ec095e0e674fc6896101a7fbb6e1d42f3)), closes [#112](https://github.com/wrappid/styles/issues/112)
+
 ### [0.0.162](https://github.com/wrappid/styles/compare/v0.0.161...v0.0.162) (2024-08-24)
 
 
