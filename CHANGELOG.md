@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.164](https://github.com/wrappid/styles/compare/v0.0.163...v0.0.164) (2024-09-12)
+
+
+### Bug Fixes
+
+* **core:** :bug: scNavigationLink remove important ([9d558b5](https://github.com/wrappid/styles/commit/9d558b5ee6916b58c2357ae25efe2a1e22de69fb)), closes [#114](https://github.com/wrappid/styles/issues/114)
+
 ### [0.0.163](https://github.com/wrappid/styles/compare/v0.0.162...v0.0.163) (2024-09-04)
 
 
