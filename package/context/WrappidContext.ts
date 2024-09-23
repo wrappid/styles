@@ -21,17 +21,23 @@ type WrappidConfigDatatype = {
 
 export type WrapidDataType = {
   config: WrappidConfigDatatype;
-  development: {[key: string]: any}
+  development: { [key: string]: any };
   pageThemeID: string | undefined;
+  currentTheme?: DEFAULT_THEME_TYPES;
   themes?: { [key: string]: { name: string; theme: DEFAULT_THEME_TYPES } };
-  modules?: {[key: string]: {[key: string]: any}};
+  modules?: { [key: string]: { [key: string]: any } };
 };
 export const wrappidInitialData: WrapidDataType = {
-  config     : { defaultTheme: "WrappidTheme", environment: "devlopment", platform: "web" },
-  development: {},
-  modules    : {},
-  pageThemeID: undefined,
-  themes     : { wrappidTheme: { name: "Wrappid Theme", theme: DEFAULT_THEME } }
+  config: {
+    defaultTheme: "WrappidTheme",
+    environment : "devlopment",
+    platform    : "web",
+  },
+  currentTheme: DEFAULT_THEME,
+  development : {},
+  modules     : {},
+  pageThemeID : undefined,
+  themes      : { wrappidTheme: { name: "Wrappid Theme", theme: DEFAULT_THEME } },
 };
 
 export const WrappidDataContext =
