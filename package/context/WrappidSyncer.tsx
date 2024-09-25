@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 // eslint-disable-next-line import/order
 import { DEFAULT_THEME } from "../theme/theme";
@@ -20,6 +20,8 @@ export default function WrappidSyncer({
   children: any;
   data: WrapidDataType;
 }) {
+  const [syncerId, setSyncerId] = useState("wrappid-syncer-" + new Date());
+
   const [wrappidReducerState, dispatch] = React.useReducer(
     wrappidReducer,
     wrappidInitialData
@@ -38,6 +40,7 @@ export default function WrappidSyncer({
     updateWrappidContext(data);
     dispatch({ payload: data, type: UPDATE_DATA });
     WrappidData = data;
+    setSyncerId("wrappid-syncer-" + new Date());
   }, [data]);
 
   React.useEffect(() => {
@@ -49,10 +52,11 @@ export default function WrappidSyncer({
 
     updateWrappidContext(wrappidReducerState);
     WrappidData = wrappidReducerState;
+    setSyncerId("wrappid-syncer-" + new Date());
   }, [wrappidReducerState]);
 
   return (
-    <WrappidDataContext.Provider value={wrappidReducerState}>
+    <WrappidDataContext.Provider value={wrappidReducerState} key={syncerId}>
       <WrappidDispatchContext.Provider value={dispatch}>
         {children}
       </WrappidDispatchContext.Provider>

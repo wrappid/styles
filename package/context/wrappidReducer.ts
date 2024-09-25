@@ -6,6 +6,7 @@ export const RESET_DATA = "RESET_DATA";
 export const UPDATE_DEFAULT_THEME = "UPDATE_DEFAULT_THEME";
 export const UPDATE_PAGE_THEME = "UPDATE_PAGE_THEME";
 export const UPDATE_MODULE_DATA = "UPDATE_MODULE_DATA";
+export const UPDATE_THEME = "UPDATE_THEME";
 
 export type PayloadType = any;
 
@@ -37,6 +38,12 @@ const wrappidReducer = (
         return state;
       }
     }
+    
+    case UPDATE_THEME: 
+      return {
+        ...state,
+        currentTheme: { ...payload || {} }
+      };
 
     case UPDATE_PAGE_THEME: {
       if (typeof payload === "string" && Object.keys(state?.themes || {})?.includes(payload)) {
