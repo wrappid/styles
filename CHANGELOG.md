@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.165](https://github.com/wrappid/styles/compare/v0.0.164...v0.0.165) (2024-09-25)
+
+
+### Bug Fixes
+
+* **core:** :bug: theme reflection from styles and theme both ([66f8ea9](https://github.com/wrappid/styles/commit/66f8ea9364a9b28c25fb53f51d4766357c5d5afe)), closes [#45](https://github.com/wrappid/styles/issues/45)
+
 ### [0.0.164](https://github.com/wrappid/styles/compare/v0.0.163...v0.0.164) (2024-09-12)
 
 
