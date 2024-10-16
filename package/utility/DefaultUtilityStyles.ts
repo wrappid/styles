@@ -742,7 +742,7 @@ export default class DefaultUtilityStyles extends BaseStyle {
       flexDirectionColumnReverse: { flexDirection: "column-reverse" },
       flexFill                  : { flex: "1 1 auto" },
       flexGrow0                 : { flexGrow: "0" },
-      flexGrow1                 : { flexGrow: "1" },
+      flexGrow1                 : { flexGrow: 1 },
       flexShrink0               : { flexShrink: "0" },
       flexShrink1               : { flexShrink: "1" },
       flexWrapWrap              : { flexWrap: "wrap" },
@@ -830,7 +830,7 @@ export default class DefaultUtilityStyles extends BaseStyle {
       /**************************************************
        * Overflow
        *************************************************/
-      overflowAuto    : { overflow: "auto" },
+      overflowAuto    : { overflow: "auto" + IMPORTANT },
       overflowHidden  : { overflow: "hidden" },
       overflowVisible : { overflow: "visible" },
       overflowScroll  : { overflow: "scroll" },
@@ -863,6 +863,9 @@ export default class DefaultUtilityStyles extends BaseStyle {
       top50 : { top: "50%" },
       top75 : { top: "75%" },
       top100: { top: "100%" },
+
+      top2r: { top: 2 + REM_TAG },
+      top4r: { top: 4 + REM_TAG },
 
       bottom0  : { bottom: "0" },
       bottom25 : { bottom: "25%" },

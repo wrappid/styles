@@ -892,6 +892,9 @@ const UtilityClasses = {
     TOP_75: "top75",
     TOP_100: "top100",
 
+    TOP_2R: "top2r",
+    TOP_4R: "top4r",
+
     BOTTOM_0: "bottom0",
     BOTTOM_25: "bottom25",
     BOTTOM_50: "bottom50",
