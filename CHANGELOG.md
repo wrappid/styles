@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.167](https://github.com/wrappid/styles/compare/v0.0.166...v0.0.167) (2024-10-17)
+
+
+### Features
+
+* **global:** :sparkles: add some style property ([6e23340](https://github.com/wrappid/styles/commit/6e23340ddc8dc42fe0c907753b2a7737e421d488)), closes [#118](https://github.com/wrappid/styles/issues/118)
+* **global:** :sparkles: added styles that needed for pagebuilder UI ([bcdd64f](https://github.com/wrappid/styles/commit/bcdd64f1cdbe0342164b81e760b6866f45294112)), closes [#118](https://github.com/wrappid/styles/issues/118)
+
 ### [0.0.166](https://github.com/wrappid/styles/compare/v0.0.165...v0.0.166) (2024-09-26)
 
 ### [0.0.165](https://github.com/wrappid/styles/compare/v0.0.164...v0.0.165) (2024-09-25)
