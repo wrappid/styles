@@ -19,6 +19,10 @@ export default class DefaultUtilityStyles extends BaseStyle {
     super();
 
     this.style = {
+      scrollBarHide: {
+        msOverflowStyle: "none", // For IE and Edge
+        scrollbarWidth : "none", // For Firefox
+      },
       /**************************************************
        * Alignment
        *************************************************/
@@ -742,7 +746,7 @@ export default class DefaultUtilityStyles extends BaseStyle {
       flexDirectionColumnReverse: { flexDirection: "column-reverse" },
       flexFill                  : { flex: "1 1 auto" },
       flexGrow0                 : { flexGrow: "0" },
-      flexGrow1                 : { flexGrow: "1" },
+      flexGrow1                 : { flexGrow: 1 },
       flexShrink0               : { flexShrink: "0" },
       flexShrink1               : { flexShrink: "1" },
       flexWrapWrap              : { flexWrap: "wrap" },
@@ -830,7 +834,7 @@ export default class DefaultUtilityStyles extends BaseStyle {
       /**************************************************
        * Overflow
        *************************************************/
-      overflowAuto    : { overflow: "auto" },
+      overflowAuto    : { overflow: "auto" + IMPORTANT },
       overflowHidden  : { overflow: "hidden" },
       overflowVisible : { overflow: "visible" },
       overflowScroll  : { overflow: "scroll" },
@@ -863,6 +867,9 @@ export default class DefaultUtilityStyles extends BaseStyle {
       top50 : { top: "50%" },
       top75 : { top: "75%" },
       top100: { top: "100%" },
+
+      top2r: { top: 2 + REM_TAG },
+      top4r: { top: 4 + REM_TAG },
 
       bottom0  : { bottom: "0" },
       bottom25 : { bottom: "25%" },
@@ -1057,9 +1064,12 @@ export default class DefaultUtilityStyles extends BaseStyle {
       minH50  : { minHeight: "50%" },
       minH75  : { minHeight: "75%" },
       minH100 : { minHeight: "100%" },
+      vh8     : { height: "8vh" },
       vh25    : { height: "25vh" },
       vh50    : { height: "50vh" },
       vh75    : { height: "75vh" },
+      vh92    : { height: "92vh" },
+      vh95    : { height: "95vh" },
       vh100   : { height: "100vh" },
       maxVh25 : { maxHeight: "25vh" },
       maxVh50 : { maxHeight: "50vh" },
@@ -1077,12 +1087,13 @@ export default class DefaultUtilityStyles extends BaseStyle {
        * Padding
        *-----------------------------------------------*/
 
-      p0: { padding: 0 + PX_TAG + IMPORTANT },
-      p1: { padding: DEFAULT_PADDING + PX_TAG + IMPORTANT },
-      p2: { padding: DEFAULT_PADDING * 2 + PX_TAG + IMPORTANT },
-      p3: { padding: DEFAULT_PADDING * 3 + PX_TAG + IMPORTANT },
-      p4: { padding: DEFAULT_PADDING * 4 + PX_TAG + IMPORTANT },
-      p5: { padding: DEFAULT_PADDING * 5 + PX_TAG + IMPORTANT },
+      p0  : { padding: 0 + PX_TAG + IMPORTANT },
+      p0_5: { padding: DEFAULT_PADDING / 2 + PX_TAG + IMPORTANT },
+      p1  : { padding: DEFAULT_PADDING + PX_TAG + IMPORTANT },
+      p2  : { padding: DEFAULT_PADDING * 2 + PX_TAG + IMPORTANT },
+      p3  : { padding: DEFAULT_PADDING * 3 + PX_TAG + IMPORTANT },
+      p4  : { padding: DEFAULT_PADDING * 4 + PX_TAG + IMPORTANT },
+      p5  : { padding: DEFAULT_PADDING * 5 + PX_TAG + IMPORTANT },
 
       pt0: { paddingTop: 0 + PX_TAG + IMPORTANT },
       pt1: { paddingTop: DEFAULT_PADDING + PX_TAG + IMPORTANT },

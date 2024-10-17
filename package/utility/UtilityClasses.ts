@@ -4,6 +4,7 @@
  *************************************************/
 const UtilityClasses = {
   DEV_BORDER: "devBorder",
+  SCROLL_BAR_HIDE: "scrollBarHide",
 
   /**************************************************
    * Alignment
@@ -892,6 +893,9 @@ const UtilityClasses = {
     TOP_75: "top75",
     TOP_100: "top100",
 
+    TOP_2R: "top2r",
+    TOP_4R: "top4r",
+
     BOTTOM_0: "bottom0",
     BOTTOM_25: "bottom25",
     BOTTOM_50: "bottom50",
@@ -1055,9 +1059,12 @@ const UtilityClasses = {
     MIN_H_50: "minH50",
     MIN_H_75: "minH75",
     MIN_H_100: "minH100",
+    VH_8: "vh8",
     VH_25: "vh25",
     VH_50: "vh50",
     VH_75: "vh75",
+    VH_92: "vh92",
+    VH_95: "vh95",
     VH_100: "vh100",
     MAX_VH_25: "maxVh25",
     MAX_VH_50: "maxVh50",
@@ -1077,6 +1084,7 @@ const UtilityClasses = {
    *-----------------------------------------------*/
   PADDING: {
     P0: "p0",
+    P0_5: "p0_5",
     P1: "p1",
     P2: "p2",
     P3: "p3",
