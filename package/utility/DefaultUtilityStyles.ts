@@ -19,6 +19,10 @@ export default class DefaultUtilityStyles extends BaseStyle {
     super();
 
     this.style = {
+      scrollBarHide: {
+        msOverflowStyle: "none", // For IE and Edge
+        scrollbarWidth : "none", // For Firefox
+      },
       /**************************************************
        * Alignment
        *************************************************/
@@ -1060,9 +1064,12 @@ export default class DefaultUtilityStyles extends BaseStyle {
       minH50  : { minHeight: "50%" },
       minH75  : { minHeight: "75%" },
       minH100 : { minHeight: "100%" },
+      vh5     : { height: "5vh" },
       vh25    : { height: "25vh" },
       vh50    : { height: "50vh" },
       vh75    : { height: "75vh" },
+      vh90    : { height: "90vh" },
+      vh95    : { height: "95vh" },
       vh100   : { height: "100vh" },
       maxVh25 : { maxHeight: "25vh" },
       maxVh50 : { maxHeight: "50vh" },
@@ -1080,12 +1087,13 @@ export default class DefaultUtilityStyles extends BaseStyle {
        * Padding
        *-----------------------------------------------*/
 
-      p0: { padding: 0 + PX_TAG + IMPORTANT },
-      p1: { padding: DEFAULT_PADDING + PX_TAG + IMPORTANT },
-      p2: { padding: DEFAULT_PADDING * 2 + PX_TAG + IMPORTANT },
-      p3: { padding: DEFAULT_PADDING * 3 + PX_TAG + IMPORTANT },
-      p4: { padding: DEFAULT_PADDING * 4 + PX_TAG + IMPORTANT },
-      p5: { padding: DEFAULT_PADDING * 5 + PX_TAG + IMPORTANT },
+      p0  : { padding: 0 + PX_TAG + IMPORTANT },
+      p0_5: { padding: DEFAULT_PADDING / 2 + PX_TAG + IMPORTANT },
+      p1  : { padding: DEFAULT_PADDING + PX_TAG + IMPORTANT },
+      p2  : { padding: DEFAULT_PADDING * 2 + PX_TAG + IMPORTANT },
+      p3  : { padding: DEFAULT_PADDING * 3 + PX_TAG + IMPORTANT },
+      p4  : { padding: DEFAULT_PADDING * 4 + PX_TAG + IMPORTANT },
+      p5  : { padding: DEFAULT_PADDING * 5 + PX_TAG + IMPORTANT },
 
       pt0: { paddingTop: 0 + PX_TAG + IMPORTANT },
       pt1: { paddingTop: DEFAULT_PADDING + PX_TAG + IMPORTANT },
