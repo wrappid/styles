@@ -1,5 +1,5 @@
 /* eslint-disable etc/no-commented-out-code */
-export const PX_TAG = "px ";
+export const PX_TAG = "px";
 export const REM_TAG = "rem";
 export const IMPORTANT = " !important";
 

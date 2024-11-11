@@ -1,3 +1,4 @@
+/* eslint-disable etc/no-commented-out-code */
 /* eslint-disable sort-keys-fix/sort-keys-fix */
 import { BaseStyle } from "../base/BaseStyle";
 import {
@@ -484,7 +485,7 @@ export default class DefaultUtilityStyles extends BaseStyle {
       borderRounded4     : { borderRadius: DEFAULT_BORDER_RADIUS * 4 + PX_TAG + IMPORTANT },
       borderRounded5     : { borderRadius: DEFAULT_BORDER_RADIUS * 5 + PX_TAG + IMPORTANT },
       borderRoundedCircle: { borderRadius: "50%" + IMPORTANT },
-      borderRoundedPill  : { borderRadius: "50rem" + IMPORTANT },
+      // borderRoundedPill  : { borderRadius: "50rem" + IMPORTANT },
 
       borderRoundedTop: {
         borderTopLeftRadius : DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
