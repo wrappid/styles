@@ -2,6 +2,30 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.174](https://github.com/wrappid/styles/compare/v0.0.173...v0.0.174) (2024-11-08)
+
+
+### Bug Fixes
+
+* **core:** :fire: build working now ([e083d92](https://github.com/wrappid/styles/commit/e083d92506a6bb4746bca3a922bae5c429f142c2))
+
+### [0.0.173](https://github.com/wrappid/styles/compare/v0.0.172...v0.0.173) (2024-11-08)
+
+
+### Features
+
+* **global:** :sparkles: add dimension, fix styles in add flavour ([f036cc1](https://github.com/wrappid/styles/commit/f036cc1b5525756ff6842c0bd348c64bcc0464e2)), closes [#121](https://github.com/wrappid/styles/issues/121)
+* **global:** :sparkles: add dimension, fix styles in add flavour ([ee1854b](https://github.com/wrappid/styles/commit/ee1854b75bb26f7fe96ba752fbfe50885b7001f3)), closes [#121](https://github.com/wrappid/styles/issues/121)
+
+
+### Bug Fixes
+
+* :bug: resolve merge ([369c74f](https://github.com/wrappid/styles/commit/369c74f96204df14b4514425d52d776ea4fc1707)), closes [#121](https://github.com/wrappid/styles/issues/121)
+* **global:** :bug: fix the code give lint error ([52056ef](https://github.com/wrappid/styles/commit/52056ef29da67a30dbff627f53780af8356d3a68)), closes [#121](https://github.com/wrappid/styles/issues/121)
+* **global:** :bug: fix width height in add flavour ([c326c1d](https://github.com/wrappid/styles/commit/c326c1d57192fa3997d14869cf270affa6c911f6)), closes [#121](https://github.com/wrappid/styles/issues/121)
+* **global:** :bug: resolve merge ([38bb99e](https://github.com/wrappid/styles/commit/38bb99e58cc9f7fac37218a97b34c7d0924866e5)), closes [#121](https://github.com/wrappid/styles/issues/121)
+* **global:** :bug: updated ([c519681](https://github.com/wrappid/styles/commit/c51968140c4b6402b85a2a944703acb5ca38af3e)), closes [#121](https://github.com/wrappid/styles/issues/121)
+
 ### [0.0.172](https://github.com/wrappid/styles/compare/v0.0.171...v0.0.172) (2024-11-06)
 
 ### [0.0.171](https://github.com/wrappid/styles/compare/v0.0.170...v0.0.171) (2024-11-02)
