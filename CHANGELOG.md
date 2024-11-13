@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.175](https://github.com/wrappid/styles/compare/v0.0.174...v0.0.175) (2024-11-13)
+
+
+### Bug Fixes
+
+* **core:** :zap: helper text left margin removal ([c9c5e91](https://github.com/wrappid/styles/commit/c9c5e9121a4d9890b2da581f61fa49c763574c0c))
+* **global:** :bug: destructure add flavour ([12ba719](https://github.com/wrappid/styles/commit/12ba7190aee5590d716c5568f09d688cb7edbfcd)), closes [#121](https://github.com/wrappid/styles/issues/121)
+* **global:** :bug: some border is not working so update those ([6dfee3c](https://github.com/wrappid/styles/commit/6dfee3c017eeaa3816a16355f0d4010b7e0f02fe)), closes [#121](https://github.com/wrappid/styles/issues/121)
+* **global:** :bug: some border is not working so update those ([4da3a4f](https://github.com/wrappid/styles/commit/4da3a4fee3615a77bf7ddab45ac4b20ae0d79549)), closes [#121](https://github.com/wrappid/styles/issues/121)
+
 ### [0.0.174](https://github.com/wrappid/styles/compare/v0.0.173...v0.0.174) (2024-11-08)
 
 
