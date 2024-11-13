@@ -1,3 +1,4 @@
+/* eslint-disable etc/no-commented-out-code */
 /* eslint-disable sort-keys-fix/sort-keys-fix */
 import { BaseStyle } from "../base/BaseStyle";
 import {
@@ -11,7 +12,9 @@ import {
   IMPORTANT,
   PX_TAG,
   REM_TAG,
-  DEFAULT_BORDER
+  DEFAULT_BORDER,
+  DEFAULT_BORDER_COLOR,
+  DEFAULT_BORDER_STYLE
 } from "../base/constants";
 
 export default class DefaultUtilityStyles extends BaseStyle {
@@ -384,86 +387,92 @@ export default class DefaultUtilityStyles extends BaseStyle {
       border0: { border: "none" },
 
       borderTop: {
-        border        : "unset",
+        borderTopColor: DEFAULT_BORDER_COLOR,
+        borderTopStyle: DEFAULT_BORDER_STYLE,
         borderTopWidth: DEFAULT_BORDER_WIDTH + PX_TAG,
       },
       borderTop0: { ...DEFAULT_BORDER, borderTopWidth: 0 + PX_TAG },
 
       borderEnd: {
-        border          : "unset",
+        borderRightColor: DEFAULT_BORDER_COLOR,
+        borderRightStyle: DEFAULT_BORDER_STYLE,
         borderRightWidth: DEFAULT_BORDER_WIDTH + PX_TAG,
       },
       borderEnd0 : { ...DEFAULT_BORDER, borderRightWidth: 0 + PX_TAG },
       borderRight: {
-        border          : "unset",
+        borderRightColor: DEFAULT_BORDER_COLOR,
+        borderRightStyle: DEFAULT_BORDER_STYLE,
         borderRightWidth: DEFAULT_BORDER_WIDTH + PX_TAG,
       },
       borderRight0: { ...DEFAULT_BORDER, borderRightWidth: 0 + PX_TAG },
 
       borderBottom: {
-        border           : "unset",
+        borderBottomColor: DEFAULT_BORDER_COLOR,
+        borderBottomStyle: DEFAULT_BORDER_STYLE,
         borderBottomWidth: DEFAULT_BORDER_WIDTH + PX_TAG,
       },
       borderBottom0: { ...DEFAULT_BORDER, borderBottomWidth: 0 + PX_TAG },
 
       borderStart: {
-        border         : "unset",
+        borderLeftColor: DEFAULT_BORDER_COLOR,
+        borderLeftStyle: DEFAULT_BORDER_STYLE,
         borderLeftWidth: DEFAULT_BORDER_WIDTH + PX_TAG,
       },
       borderStart0: { ...DEFAULT_BORDER, borderLeftWidth: 0 + PX_TAG },
       borderLeft  : {
-        border         : "unset",
+        borderLeftColor: DEFAULT_BORDER_COLOR,
+        borderLeftStyle: DEFAULT_BORDER_STYLE,
         borderLeftWidth: DEFAULT_BORDER_WIDTH + PX_TAG,
       },
       borderLeft0: { ...DEFAULT_BORDER, borderLeftWidth: 0 + PX_TAG },
 
-      borderPrimary     : { borderColor: this.theme.palette?.primary?.main },
-      borderPrimaryLight: { borderColor: this.theme.palette?.primary?.light },
-      borderPrimaryDark : { borderColor: this.theme.palette?.primary?.dark },
+      borderColorPrimary     : { borderColor: this.theme.palette?.primary?.main },
+      borderColorPrimaryLight: { borderColor: this.theme.palette?.primary?.light },
+      borderColorPrimaryDark : { borderColor: this.theme.palette?.primary?.dark },
 
-      borderSecondary     : { borderColor: this.theme.palette?.secondary?.main },
-      borderSecondaryLight: { borderColor: this.theme.palette?.secondary?.light },
-      borderSecondaryDark : { borderColor: this.theme.palette?.secondary?.dark },
+      borderColorSecondary     : { borderColor: this.theme.palette?.secondary?.main },
+      borderColorSecondaryLight: { borderColor: this.theme.palette?.secondary?.light },
+      borderColorSecondaryDark : { borderColor: this.theme.palette?.secondary?.dark },
 
-      borderSuccess     : { borderColor: this.theme.palette?.success?.main },
-      borderSuccessLight: { borderColor: this.theme.palette?.success?.light },
-      borderSuccessDark : { borderColor: this.theme.palette?.success?.dark },
+      borderColorSuccess     : { borderColor: this.theme.palette?.success?.main },
+      borderColorSuccessLight: { borderColor: this.theme.palette?.success?.light },
+      borderColorSuccessDark : { borderColor: this.theme.palette?.success?.dark },
 
-      borderError     : { borderColor: this.theme.palette?.error?.main },
-      borderErrorLight: { borderColor: this.theme.palette?.error?.light },
-      borderErrorDark : { borderColor: this.theme.palette?.error?.dark },
+      borderColorError     : { borderColor: this.theme.palette?.error?.main },
+      borderColorErrorLight: { borderColor: this.theme.palette?.error?.light },
+      borderColorErrorDark : { borderColor: this.theme.palette?.error?.dark },
 
-      borderWarning     : { borderColor: this.theme.palette?.warning?.main },
-      borderWarningLight: { borderColor: this.theme.palette?.warning?.light },
-      borderWarningDark : { borderColor: this.theme.palette?.warning?.dark },
+      borderColorWarning     : { borderColor: this.theme.palette?.warning?.main },
+      borderColorWarningLight: { borderColor: this.theme.palette?.warning?.light },
+      borderColorWarningDark : { borderColor: this.theme.palette?.warning?.dark },
 
-      borderInfo     : { borderColor: this.theme.palette?.info?.main },
-      borderInfoLight: { borderColor: this.theme.palette?.info?.light },
-      borderInfoDark : { borderColor: this.theme.palette?.info?.dark },
+      borderColorInfo     : { borderColor: this.theme.palette?.info?.main },
+      borderColorInfoLight: { borderColor: this.theme.palette?.info?.light },
+      borderColorInfoDark : { borderColor: this.theme.palette?.info?.dark },
 
-      borderGrey50  : { borderColor: this.theme.palette.grey["50"] },
-      borderGrey100 : { borderColor: this.theme.palette.grey["100"] },
-      borderGrey200 : { borderColor: this.theme.palette.grey["200"] },
-      borderGrey300 : { borderColor: this.theme.palette.grey["300"] },
-      borderGrey400 : { borderColor: this.theme.palette.grey["400"] },
-      borderGrey500 : { borderColor: this.theme.palette.grey["500"] },
-      borderGrey600 : { borderColor: this.theme.palette.grey["600"] },
-      borderGrey700 : { borderColor: this.theme.palette.grey["700"] },
-      borderGrey800 : { borderColor: this.theme.palette.grey["800"] },
-      borderGrey900 : { borderColor: this.theme.palette.grey["900"] },
-      borderGreyA100: { borderColor: this.theme.palette.grey.A100 },
-      borderGreyA200: { borderColor: this.theme.palette.grey.A200 },
-      borderGreyA400: { borderColor: this.theme.palette.grey.A400 },
-      borderGreyA700: { borderColor: this.theme.palette.grey.A700 },
+      borderColorGrey50  : { borderColor: this.theme.palette.grey["50"] },
+      borderColorGrey100 : { borderColor: this.theme.palette.grey["100"] },
+      borderColorGrey200 : { borderColor: this.theme.palette.grey["200"] },
+      borderColorGrey300 : { borderColor: this.theme.palette.grey["300"] },
+      borderColorGrey400 : { borderColor: this.theme.palette.grey["400"] },
+      borderColorGrey500 : { borderColor: this.theme.palette.grey["500"] },
+      borderColorGrey600 : { borderColor: this.theme.palette.grey["600"] },
+      borderColorGrey700 : { borderColor: this.theme.palette.grey["700"] },
+      borderColorGrey800 : { borderColor: this.theme.palette.grey["800"] },
+      borderColorGrey900 : { borderColor: this.theme.palette.grey["900"] },
+      borderColorGreyA100: { borderColor: this.theme.palette.grey.A100 },
+      borderColorGreyA200: { borderColor: this.theme.palette.grey.A200 },
+      borderColorGreyA400: { borderColor: this.theme.palette.grey.A400 },
+      borderColorGreyA700: { borderColor: this.theme.palette.grey.A700 },
 
-      borderBlack: { borderColor: "black" },
-      borderWhite: { borderColor: "white" },
+      borderColorBlack: { borderColor: "black" },
+      borderColorWhite: { borderColor: "white" },
 
-      border1: { borderWidth: DEFAULT_BORDER_WIDTH + PX_TAG },
-      border2: { borderWidth: DEFAULT_BORDER_WIDTH * 2 + PX_TAG },
-      border3: { borderWidth: DEFAULT_BORDER_WIDTH * 3 + PX_TAG },
-      border4: { borderWidth: DEFAULT_BORDER_WIDTH * 4 + PX_TAG },
-      border5: { borderWidth: DEFAULT_BORDER_WIDTH * 5 + PX_TAG },
+      borderWidth1: { borderWidth: DEFAULT_BORDER_WIDTH + PX_TAG },
+      borderWidth2: { borderWidth: DEFAULT_BORDER_WIDTH * 2 + PX_TAG },
+      borderWidth3: { borderWidth: DEFAULT_BORDER_WIDTH * 3 + PX_TAG },
+      borderWidth4: { borderWidth: DEFAULT_BORDER_WIDTH * 4 + PX_TAG },
+      borderWidth5: { borderWidth: DEFAULT_BORDER_WIDTH * 5 + PX_TAG },
 
       borderNone  : { borderStyle: "none" },
       borderDashed: { borderStyle: "dashed" },
@@ -484,7 +493,7 @@ export default class DefaultUtilityStyles extends BaseStyle {
       borderRounded4     : { borderRadius: DEFAULT_BORDER_RADIUS * 4 + PX_TAG + IMPORTANT },
       borderRounded5     : { borderRadius: DEFAULT_BORDER_RADIUS * 5 + PX_TAG + IMPORTANT },
       borderRoundedCircle: { borderRadius: "50%" + IMPORTANT },
-      borderRoundedPill  : { borderRadius: "50rem" + IMPORTANT },
+      // borderRoundedPill  : { borderRadius: "50rem" + IMPORTANT },
 
       borderRoundedTop: {
         borderTopLeftRadius : DEFAULT_BORDER_RADIUS + PX_TAG + IMPORTANT,
