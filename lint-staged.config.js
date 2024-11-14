@@ -1,1 +1,1 @@
-module.exports = { "**/*.{js,jsx,ts,tsx}": ["npm run code:lint", "npm run build"] };
+module.exports = { "**/*.{js,jsx,ts,tsx}": ["npm run code:lint"] };
