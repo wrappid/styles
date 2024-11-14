@@ -267,7 +267,8 @@ export default class StyleReactNativeFlavour extends StyleFlavour {
 
   removeNotSupportedCssProps(flavouredStyles: any): any {
 
-    Object.keys(flavouredStyles)?.forEach((cssProp, index) => {
+    // Object.keys(flavouredStyles)?.forEach((cssProp, index) => { //command as failed compilation error
+    Object.keys(flavouredStyles)?.forEach((cssProp) => {
 
       const cssValue = flavouredStyles[cssProp];
 
