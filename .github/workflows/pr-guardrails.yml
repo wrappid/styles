@@ -110,10 +110,39 @@ jobs:
         run: |
           npm run code:lint ${{ steps.git_diff.outputs.FILES_TO_LINT }}
 
+  codecompile: 
+    name: Compile code
+    runs-on: ubuntu-latest
+    needs: [branchname, commitlint, codelint]
+
+    steps:
+      - name: Check out branch
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          cache: 'npm'
+          registry-url: https://npm.pkg.github.com/wrappid
+          token: ${{secrets.WRAPPID_REGISTRY_TOKEN}}
+
+      - name: Setup Wrappid npm registry
+        run: |
+          npm config set @wrappid:registry https://npm.pkg.github.com/wrappid
+          npm config set //npm.pkg.github.com/:_authToken ${{ secrets.WRAPPID_REGISTRY_TOKEN }}
+
+      - name: Install node_modules
+        run: npm ci
+
+      - name: Compile code
+        run: npm run build
+
   unit_tests:
     name: Run unit test cases
     runs-on: ubuntu-latest
-    needs: [branchname, commitlint, codelint]
+    needs: [branchname, commitlint, codelint, codecompile]
 
     steps:
       - name: Check out branch
