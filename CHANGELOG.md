@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.176](https://github.com/wrappid/styles/compare/v0.0.175...v0.0.176) (2024-11-14)
+
+
+### Bug Fixes
+
+* **global:** :bug: changes to fix compilation error ([db33017](https://github.com/wrappid/styles/commit/db330176b644233386e8ce5fe86b4deaae6bba06)), closes [#121](https://github.com/wrappid/styles/issues/121)
+
 ### [0.0.175](https://github.com/wrappid/styles/compare/v0.0.174...v0.0.175) (2024-11-13)
 
 
