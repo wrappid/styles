@@ -37,19 +37,19 @@ function updateDimensions() {
 // Run updateDimensions immediately to set initial values
 // updateDimensions();
 
-const UNITS = ["!important"];
-const EXCEPTIONS = [
-  "flexGrow",
-  "flexShrink",
-  "opacity",
-  "top",
-  "bottom",
-  "left",
-  "right",
-  "zIndex",
-  "fontWeight",
-  "minWidth",
-];
+// const UNITS = ["!important"];
+// const EXCEPTIONS = [
+//   "flexGrow",
+//   "flexShrink",
+//   "opacity",
+//   "top",
+//   "bottom",
+//   "left",
+//   "right",
+//   "zIndex",
+//   "fontWeight",
+//   "minWidth",
+// ];
 
 const sanitizeClassNames = (classNames: string[]): string[] => {
   // using set() method to create collections of unique values,
@@ -506,10 +506,10 @@ const getXXLargeStyle = (className: string | any, mergedStyles: any) => {
 };
 
 // rem to px util
-const remToPx = (remVal: any) => {
-  const __root_Font_Size = 16;
+// const remToPx = (remVal: any) => {
+//   const __root_Font_Size = 16;
 
-  remVal = Number(remVal.substr(0, remVal.indexOf("rem")));
+//   remVal = Number(remVal.substr(0, remVal.indexOf("rem")));
 
-  return __root_Font_Size * remVal;
-};
+//   return __root_Font_Size * remVal;
+// };

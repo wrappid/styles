@@ -92,29 +92,32 @@ export abstract class StyleFlavour {
     this._dimensions = WrappidData.dimensions;
   }
 
-  protected handleBorderProperties(
-    key: string,
-    value: any
-  ) {
-    throw new Error("Method 'handleBorderProperties' must be implemented.");
-  }
+  // eslint-disable-next-line etc/no-commented-out-code
+  // protected handleBorderProperties(
+  //   key: string,
+  //   value: any
+  // ) {
+  //   throw new Error("Method 'handleBorderProperties' must be implemented.");
+  // }
 
-  protected handlePositionProperties(
-    key: string,
-    value: any,
-    newStyleObject: any
-  ) {
-    throw new Error("Method 'handlePositionProperties' must be implemented.");
-  }
+  // eslint-disable-next-line etc/no-commented-out-code
+  // protected handlePositionProperties(
+  //   key: string,
+  //   value: any,
+  //   newStyleObject: any
+  // ) {
+  //   throw new Error("Method 'handlePositionProperties' must be implemented.");
+  // }
   
   /**
    * Adds platform specific flavour to styles by changing and/or updating cssValues of cssProps
    * @param styles an object containing cssProps:values
    * @returns { any{cssProp1:value,cssProp2:value,...} an object containing cssProps:values in the platform specific flavour
    */
-  public addFlavour(styles: any): any {
-    throw new Error("Method 'addFlavour' must be implemented.");
-  }
+  // eslint-disable-next-line etc/no-commented-out-code
+  // public addFlavour(styles: any): any {
+  //   throw new Error("Method 'addFlavour' must be implemented.");
+  // }
 
   // unit to number util
   protected unitToNumber = (unitVal: string) => {
