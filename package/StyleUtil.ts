@@ -18,6 +18,7 @@ import UtilityClasses from "./utility/UtilityClasses";
 
 // Define module-level variables for dimensions
 let windowWidth: number = 0;
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 let windowHeight: number = 0;
 
 // Function to update dimensions from WrappidData

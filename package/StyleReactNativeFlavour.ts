@@ -17,7 +17,7 @@ export default class StyleReactNativeFlavour extends StyleFlavour {
     const { config } = WrappidData;
 
     if (config?.platform === "mobile") { // no constant for mobile available at config level
-      console.log("styles" + JSON.stringify(styles, null, 2));
+      // console.log("styles" + JSON.stringify(styles, null, 2));
 
       // setting all styles into flavouredStyles,
       // to make sure that cssProps not processed are also returned at last
@@ -27,7 +27,8 @@ export default class StyleReactNativeFlavour extends StyleFlavour {
 
         let cssValue = styles[cssProp];
 
-        console.log("processing #" + index + ": " + cssProp + ": " + cssValue + "| ");
+        // eslint-disable-next-line etc/no-commented-out-code
+        // console.log("processing #" + index + ": " + cssProp + ": " + cssValue + "| ");
 
         let processedStyles = { [cssProp]: cssValue };
 
@@ -92,7 +93,7 @@ export default class StyleReactNativeFlavour extends StyleFlavour {
       flavouredStyles = { ...this.removeNotSupportedCssProps(flavouredStyles) };
 
       // Return flavoured style object
-      console.log("flavouredStyles" + JSON.stringify(flavouredStyles, null, 2));
+      // console.log("flavouredStyles" + JSON.stringify(flavouredStyles, null, 2));
       return flavouredStyles;
     } else {
       // Return original style object if not a mobile platform

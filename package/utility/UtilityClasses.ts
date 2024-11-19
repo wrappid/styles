@@ -508,28 +508,28 @@ const UtilityClasses = {
    * Display
    *************************************************/
   DISPLAY: {
-    INLINE: "displayInline",
+    INLINE: "displayInline", // 15 times 3 repo (guide, profile, rxprofile)
     INLINE_BLOCK: "displayInlineBlock", //2 times profile module(commented previously), 3 times in guide module
-    BLOCK: "displayBlock",
-    GRID: "displayGrid",
-    TABLE: "displayTable",
-    TABLE_ROW: "displayTableRow",
-    TABLE_CELL: "displayTableCell",
+    BLOCK: "displayBlock", // 1 time in core
+    GRID: "displayGrid", // 3 times in guide-module
+    // TABLE: "displayTable", //no usage
+    // TABLE_ROW: "displayTableRow", //no usage
+    // TABLE_CELL: "displayTableCell", //no usage
     FLEX: "displayFlex",
     INLINE_FLEX: "displayInlineFlex", //3 times profile module, 2 times in guide module
-    LIST_ITEM: "displayListItem",
-    CONTENTS: "displayContent",
-    INLINE_GRID: "displayInlineGrid", //no useage
-    INLINE_TABLE: "displayInlineTable", //no useage
-    RUN_IN: "displayRunIn",
-    TABLE_CAPTION: "displayTableCaption",
-    TABLE_COLUMN_GROUP: "displayTableColumnGroup",
-    TABLE_Header_Group: "displayTableHeaderGroup",
-    TABLE_ROW_GROUP: "displayTableRowGroup",
-    TABLE_COLUMN: "dispalyTableColumn",
-    INITIAL: "displayInitial",
-    INHERIT: "displayInherit",
-    NONE: "displayNone",
+    LIST_ITEM: "displayListItem", // 1 times in native-web
+    // CONTENTS: "displayContent", //no usage
+    // INLINE_GRID: "displayInlineGrid", //no useage
+    // INLINE_TABLE: "displayInlineTable", //no useage
+    // RUN_IN: "displayRunIn", //no usage
+    // TABLE_CAPTION: "displayTableCaption", //no usage
+    // TABLE_COLUMN_GROUP: "displayTableColumnGroup", //no usage
+    // TABLE_Header_Group: "displayTableHeaderGroup", //no usage
+    // TABLE_ROW_GROUP: "displayTableRowGroup", //no usage
+    // TABLE_COLUMN: "dispalyTableColumn", //no usage
+    // INITIAL: "displayInitial", //no usage
+    // INHERIT: "displayInherit", //no usage
+    NONE: "displayNone", // 11 times 2 repo (core, guide)
 
     SM: {
       INLINE: "smDisplayInline",

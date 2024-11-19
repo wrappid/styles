@@ -122,6 +122,10 @@ export abstract class StyleFlavour {
   // unit to number util
   protected unitToNumber = (unitVal: string) => {
     unitVal?.trim();
+    // Handle `calc` expressions
+    if (unitVal.includes("calc")) {
+      return this.evaluateCalcExpression(unitVal);
+    }
     const numericValue = parseFloat(unitVal);
     
     switch (true) {
@@ -146,6 +150,25 @@ export abstract class StyleFlavour {
       default:
         return numericValue; // Return the original value(only changed to number format) if no recognized unit is found
     }
+  };
+
+  // Function to evaluate calc expressions
+  protected evaluateCalcExpression = (calcValue: string) => {
+    const calcRegex = /calc\((\d+vh)\s*-\s*(\d+)px\)/;
+    const match = calcValue.match(calcRegex);
+
+    if (match) {
+      const vhValue = parseFloat(match[1].replace(this.__VH, ""));
+      const pxValue = parseFloat(match[2]);
+
+      // Convert `vh` to pixels using viewport height
+      const vhInPx = this.viewportToNumber(`${vhValue}${this.__VH}`, this.__VH);
+
+      return vhInPx - pxValue; // Subtract the pixel value
+    }
+
+    console.warn(`Unsupported calc expression: ${calcValue}`);
+    return calcValue; // Return original value if not a recognized `calc` expression
   };
 
   // view port to number calculation util
