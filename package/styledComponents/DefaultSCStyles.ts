@@ -141,7 +141,7 @@ export default class DefaultSCStyles extends BaseStyle {
       scLayoutsGrid         : {},
       scLayoutsList         : {},
       scLayoutsListItem     : {},
-      scLayoutsStack        : {},
+      scLayoutsStack        : { alignItems: "center" },
       /**************************************************
        * UTILS
        *************************************************/
