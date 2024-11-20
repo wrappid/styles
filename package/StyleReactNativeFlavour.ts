@@ -23,7 +23,7 @@ export default class StyleReactNativeFlavour extends StyleFlavour {
       // to make sure that cssProps not processed are also returned at last
       let flavouredStyles = { ...styles };
 
-      Object.keys(styles)?.forEach((cssProp, index) => {
+      Object.keys(styles)?.forEach((cssProp) => {
 
         let cssValue = styles[cssProp];
 
