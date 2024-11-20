@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.177](https://github.com/wrappid/styles/compare/v0.0.176...v0.0.177) (2024-11-20)
+
+
+### Bug Fixes
+
+* **core:** :bug: mobile related changes ([2d90194](https://github.com/wrappid/styles/commit/2d90194140313042fe7025b1f9ab098824992b39)), closes [#121](https://github.com/wrappid/styles/issues/121)
+* **global:** :bug: fix issue related to linting ([6fb6857](https://github.com/wrappid/styles/commit/6fb68574173ac42fb4f9b55e71cb461ac9399c1b)), closes [#121](https://github.com/wrappid/styles/issues/121)
+
 ### [0.0.176](https://github.com/wrappid/styles/compare/v0.0.175...v0.0.176) (2024-11-14)
 
 
