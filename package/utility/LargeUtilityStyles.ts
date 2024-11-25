@@ -19,42 +19,99 @@ export default class LargeUtilityStyles extends BaseStyle {
       /**************************************************
        * Alignment
        *************************************************/
-      lgAlignItemsStart: { display: "flex", alignItems: "flex-start" },
-      lgAlignItemsEnd: { display: "flex", alignItems: "flex-end" },
-      lgAlignItemsCenter: { display: "flex", alignItems: "center" },
-      lgAlignItemsBaseline: { display: "flex", alignItems: "baseline" },
-      lgAlignItemsStretch: { display: "flex", alignItems: "stretch" },
+      lgAlignItemsStart: {
+        //  display: "flex", 
+         alignItems: "flex-start" 
+      },
+      lgAlignItemsEnd: {
+        //  display: "flex", 
+         alignItems: "flex-end" 
+      },
+      lgAlignItemsCenter: {
+        //  display: "flex", 
+         alignItems: "center" 
+      },
+      lgAlignItemsBaseline: {
+        //  display: "flex", 
+         alignItems: "baseline" 
+      },
+      lgAlignItemsStretch: {
+        //  display: "flex", 
+         alignItems: "stretch" 
+      },
 
-      lgAlignContentStart: { display: "flex", alignContent: "flex-start" },
-      lgAlignContentEnd: { display: "flex", alignContent: "flex-end" },
-      lgAlignContentCenter: { display: "flex", alignContent: "center" },
-      lgAlignContentBetween: { display: "flex", alignContent: "space-between" },
-      lgAlignContentAround: { display: "flex", alignContent: "space-around" },
-      lgAlignContentStretch: { display: "flex", alignContent: "stretch" },
+      lgAlignContentStart: {
+        //  display: "flex", 
+         alignContent: "flex-start" 
+      },
+      lgAlignContentEnd: {
+        //  display: "flex", 
+         alignContent: "flex-end" 
+      },
+      lgAlignContentCenter: {
+        //  display: "flex", 
+         alignContent: "center" 
+      },
+      lgAlignContentBetween: {
+        //  display: "flex", 
+         alignContent: "space-between" 
+      },
+      lgAlignContentAround: {
+        //  display: "flex", 
+         alignContent: "space-around" 
+      },
+      lgAlignContentStretch: {
+        //  display: "flex", 
+         alignContent: "stretch" 
+      },
 
-      lgAlignSelfAuto: { display: "flex", alignSelf: "auto" },
-      lgAlignSelfStart: { display: "flex", alignSelf: "flex-start" },
-      lgAlignSelfEnd: { display: "flex", alignSelf: "flex-end" },
-      lgAlignSelfCenter: { display: "flex", alignSelf: "center" },
-      lgAlignSelfBaseline: { display: "flex", alignSelf: "baseline" },
-      lgAlignSelfStretch: { display: "flex", alignSelf: "stretch" },
+      lgAlignSelfAuto: { 
+        // display: "flex", 
+        alignSelf: "auto" 
+      },
+      lgAlignSelfStart: { 
+        // display: "flex", 
+        alignSelf: "flex-start"
+      },
+      lgAlignSelfEnd: { 
+        // display: "flex", 
+        alignSelf: "flex-end"
+      },
+      lgAlignSelfCenter: { 
+        // display: "flex", 
+        alignSelf: "center" 
+      },
+      lgAlignSelfBaseline: { 
+        // display: "flex", 
+        alignSelf: "baseline" 
+      },
+      lgAlignSelfStretch: { 
+        // display: "flex", 
+        alignSelf: "stretch" 
+      },
 
-      lgJustifyContentCenter: { display: "flex", justifyContent: "center" },
+      lgJustifyContentCenter: { 
+        // display: "flex", 
+        justifyContent: "center" 
+      },
       lgJustifyContentFlexStart: {
-        display: "flex",
+        // display: "flex",
         justifyContent: "flex-start",
       },
-      lgJustifyContentFlexEnd: { display: "flex", justifyContent: "flex-end" },
+      lgJustifyContentFlexEnd: { 
+        // display: "flex", 
+        justifyContent: "flex-end" 
+      },
       lgJustifyContentSpaceBetween: {
-        display: "flex",
+        // display: "flex",
         justifyContent: "space-between",
       },
       lgJustifyContentSpaceAround: {
-        display: "flex",
+        // display: "flex",
         justifyContent: "space-around",
       },
       lgJustifyContentSpaceEvenly: {
-        display: "flex",
+        // display: "flex",
         justifyContent: "space-evenly",
       },
 

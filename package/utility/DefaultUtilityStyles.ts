@@ -33,94 +33,97 @@ export default class DefaultUtilityStyles extends BaseStyle {
        *************************************************/
       alignItemsStart: {
         alignItems: "flex-start",
-        display   : "flex",
+        // display   : "flex",
       },
       alignItemsEnd: {
         alignItems: "flex-end",
-        display   : "flex",
+        // display   : "flex",
       },
       alignItemsCenter: {
         alignItems: "center",
-        display   : "flex",
+        // display   : "flex",
       },
       alignItemsBaseline: {
         alignItems: "baseline",
-        display   : "flex",
+        // display   : "flex",
       },
       alignItemsStretch: {
         alignItems: "stretch",
-        display   : "flex",
+        // display   : "flex",
       },
 
       alignContentStart: {
         alignContent: "flex-start",
-        display     : "flex",
+        // display     : "flex",
       },
       alignContentEnd: {
         alignContent: "flex-end",
-        display     : "flex",
+        // display     : "flex",
       },
       alignContentCenter: {
         alignContent: "center",
-        display     : "flex",
+        // display     : "flex",
       },
       alignContentBetween: {
         alignContent: "space-between",
-        display     : "flex",
+        // display     : "flex",
       },
       alignContentAround: {
         alignContent: "space-around",
-        display     : "flex",
+        // display     : "flex",
       },
       alignContentStretch: {
         alignContent: "stretch",
-        display     : "flex",
+        // display     : "flex",
       },
 
-      alignSelfAuto : { alignSelf: "auto", display: "flex" },
+      alignSelfAuto: { 
+        alignSelf: "auto", 
+        // display  : "flex",
+      },
       alignSelfStart: {
         alignSelf: "flex-start",
-        display  : "flex",
+        // display  : "flex",
       },
       alignSelfEnd: {
         alignSelf: "flex-end",
-        display  : "flex",
+        // display  : "flex",
       },
       alignSelfCenter: {
         alignSelf: "center",
-        display  : "flex",
+        // display  : "flex",
       },
       alignSelfBaseline: {
         alignSelf: "baseline",
-        display  : "flex",
+        // display  : "flex",
       },
       alignSelfStretch: {
         alignSelf: "stretch",
-        display  : "flex",
+        // display  : "flex",
       },
 
       justifyContentCenter: {
-        display       : "flex",
+        // display       : "flex",
         justifyContent: "center",
       },
       justifyContentFlexStart: {
-        display       : "flex",
+        // display       : "flex",
         justifyContent: "flex-start",
       },
       justifyContentFlexEnd: {
-        display       : "flex",
+        // display       : "flex",
         justifyContent: "flex-end",
       },
       justifyContentSpaceBetween: {
-        display       : "flex",
+        // display       : "flex",
         justifyContent: "space-between",
       },
       justifyContentSpaceAround: {
-        display       : "flex",
+        // display       : "flex",
         justifyContent: "space-around",
       },
       justifyContentSpaceEvenly: {
-        display       : "flex",
+        // display       : "flex",
         justifyContent: "space-evenly",
       },
 
