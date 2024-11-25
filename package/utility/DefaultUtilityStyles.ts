@@ -2,19 +2,19 @@
 /* eslint-disable sort-keys-fix/sort-keys-fix */
 import { BaseStyle } from "../base/BaseStyle";
 import {
+  DEFAULT_BORDER,
+  DEFAULT_BORDER_COLOR,
   DEFAULT_BORDER_RADIUS,
+  DEFAULT_BORDER_STYLE,
   DEFAULT_BORDER_WIDTH,
   DEFAULT_MARGIN,
   DEFAULT_PADDING,
-  DEFAULT_WORD_SPACING,
   DEFAULT_SHADOW_COLOR_RGB,
   DEFAULT_SPACING,
+  DEFAULT_WORD_SPACING,
   IMPORTANT,
   PX_TAG,
-  REM_TAG,
-  DEFAULT_BORDER,
-  DEFAULT_BORDER_COLOR,
-  DEFAULT_BORDER_STYLE
+  REM_TAG
 } from "../base/constants";
 
 export default class DefaultUtilityStyles extends BaseStyle {
@@ -865,6 +865,7 @@ export default class DefaultUtilityStyles extends BaseStyle {
        * Overflow
        *************************************************/
       overflowAuto    : { overflow: "auto" + IMPORTANT },
+      overflowUnset   : { overflow: "unset" + IMPORTANT },
       overflowHidden  : { overflow: "hidden" },
       overflowVisible : { overflow: "visible" },
       overflowScroll  : { overflow: "scroll" },

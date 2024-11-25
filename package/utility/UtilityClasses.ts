@@ -868,6 +868,7 @@ const UtilityClasses = {
    *************************************************/
   OVERFLOW: {
     OVERFLOW_AUTO: "overflowAuto",
+    OVERFLOW_UNSET: "overflowUnset",
     OVERFLOW_HIDDEN: "overflowHidden",
     OVERFLOW_VISIBLE: "overflowVisible",
     OVERFLOW_SCROLL: "overflowScroll",
