@@ -20,42 +20,99 @@ export default class SmallUtilityStyles extends BaseStyle {
       /**************************************************
        * Alignment
        *************************************************/
-      smAlignItemsStart: { display: "flex", alignItems: "flex-start" },
-      smAlignItemsEnd: { display: "flex", alignItems: "flex-end" },
-      smAlignItemsCenter: { display: "flex", alignItems: "center" },
-      smAlignItemsBaseline: { display: "flex", alignItems: "baseline" },
-      smAlignItemsStretch: { display: "flex", alignItems: "stretch" },
+      smAlignItemsStart: { 
+        // display: "flex", 
+        alignItems: "flex-start" 
+      },
+      smAlignItemsEnd: { 
+        // display: "flex", 
+        alignItems: "flex-end" 
+      },
+      smAlignItemsCenter: { 
+        // display: "flex", 
+        alignItems: "center" 
+      },
+      smAlignItemsBaseline: { 
+        // display: "flex", 
+        alignItems: "baseline" 
+      },
+      smAlignItemsStretch: { 
+        // display: "flex", 
+        alignItems: "stretch" 
+      },
 
-      smAlignContentStart: { display: "flex", alignContent: "flex-start" },
-      smAlignContentEnd: { display: "flex", alignContent: "flex-end" },
-      smAlignContentCenter: { display: "flex", alignContent: "center" },
-      smAlignContentBetween: { display: "flex", alignContent: "space-between" },
-      smAlignContentAround: { display: "flex", alignContent: "space-around" },
-      smAlignContentStretch: { display: "flex", alignContent: "stretch" },
+      smAlignContentStart: { 
+        // display: "flex", 
+        alignContent: "flex-start" 
+      },
+      smAlignContentEnd: { 
+        // display: "flex", 
+        alignContent: "flex-end" 
+      },
+      smAlignContentCenter: { 
+        // display: "flex", 
+        alignContent: "center" 
+      },
+      smAlignContentBetween: { 
+        // display: "flex", 
+        alignContent: "space-between" 
+      },
+      smAlignContentAround: { 
+        // display: "flex", 
+        alignContent: "space-around" 
+      },
+      smAlignContentStretch: { 
+        // display: "flex", 
+        alignContent: "stretch" 
+      },
 
-      smAlignSelfAuto: { display: "flex", alignSelf: "auto" },
-      smAlignSelfStart: { display: "flex", alignSelf: "flex-start" },
-      smAlignSelfEnd: { display: "flex", alignSelf: "flex-end" },
-      smAlignSelfCenter: { display: "flex", alignSelf: "center" },
-      smAlignSelfBaseline: { display: "flex", alignSelf: "baseline" },
-      smAlignSelfStretch: { display: "flex", alignSelf: "stretch" },
+      smAlignSelfAuto: { 
+        // display: "flex", 
+        alignSelf: "auto" 
+      },
+      smAlignSelfStart: { 
+        // display: "flex", 
+        alignSelf: "flex-start" 
+      },
+      smAlignSelfEnd: { 
+        // display: "flex", 
+        alignSelf: "flex-end" 
+      },
+      smAlignSelfCenter: { 
+        // display: "flex", 
+        alignSelf: "center" 
+      },
+      smAlignSelfBaseline: { 
+        // display: "flex", 
+        alignSelf: "baseline" 
+      },
+      smAlignSelfStretch: { 
+        // display: "flex", 
+        alignSelf: "stretch" 
+      },
 
-      smJustifyContentCenter: { display: "flex", justifyContent: "center" },
+      smJustifyContentCenter: { 
+        // display: "flex", 
+        justifyContent: "center" 
+      },
       smJustifyContentFlexStart: {
-        display: "flex",
+        // display: "flex",
         justifyContent: "flex-start"
       },
-      smJustifyContentFlexEnd: { display: "flex", justifyContent: "flex-end" },
+      smJustifyContentFlexEnd: { 
+        // display: "flex", 
+        justifyContent: "flex-end" 
+      },
       smJustifyContentSpaceBetween: {
-        display: "flex",
+        // display: "flex",
         justifyContent: "space-between"
       },
       smJustifyContentSpaceAround: {
-        display: "flex",
+        // display: "flex",
         justifyContent: "space-around"
       },
       smJustifyContentSpaceEvenly: {
-        display: "flex",
+        // display: "flex",
         justifyContent: "space-evenly"
       },
 
