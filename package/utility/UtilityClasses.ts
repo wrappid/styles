@@ -1120,6 +1120,7 @@ const UtilityClasses = {
     PL4: "pl4",
     PL5: "pl5",
     PX0: "px0",
+    PX0_5: "px0_5",
     PX1: "px1",
     PX2: "px2",
     PX3: "px3",
