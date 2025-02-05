@@ -19,45 +19,99 @@ export default class XXLargeUtilityStyles extends BaseStyle {
       /**************************************************
        * Alignment
        *************************************************/
-      xxlAlignItemsStart: { display: "flex", alignItems: "flex-start" },
-      xxlAlignItemsEnd: { display: "flex", alignItems: "flex-end" },
-      xxlAlignItemsCenter: { display: "flex", alignItems: "center" },
-      xxlAlignItemsBaseline: { display: "flex", alignItems: "baseline" },
-      xxlAlignItemsStretch: { display: "flex", alignItems: "stretch" },
+      xxlAlignItemsStart: { 
+        // display: "flex", 
+        alignItems: "flex-start" 
+      },
+      xxlAlignItemsEnd: { 
+        // display: "flex", 
+        alignItems: "flex-end" 
+      },
+      xxlAlignItemsCenter: { 
+        // display: "flex", 
+        alignItems: "center" 
+      },
+      xxlAlignItemsBaseline: { 
+        // display: "flex", 
+        alignItems: "baseline" 
+      },
+      xxlAlignItemsStretch: { 
+        // display: "flex", 
+        alignItems: "stretch" 
+      },
 
-      xxlAlignContentStart: { display: "flex", alignContent: "flex-start" },
-      xxlAlignContentEnd: { display: "flex", alignContent: "flex-end" },
-      xxlAlignContentCenter: { display: "flex", alignContent: "center" },
+      xxlAlignContentStart: { 
+        // display: "flex", 
+        alignContent: "flex-start" 
+      },
+      xxlAlignContentEnd: { 
+        // display: "flex", 
+        alignContent: "flex-end" 
+      },
+      xxlAlignContentCenter: { 
+        // display: "flex", 
+        alignContent: "center" 
+      },
       xxlAlignContentBetween: {
-        display: "flex",
+        // display: "flex",
         alignContent: "space-between"
       },
-      xxlAlignContentAround: { display: "flex", alignContent: "space-around" },
-      xxlAlignContentStretch: { display: "flex", alignContent: "stretch" },
+      xxlAlignContentAround: { 
+        // display: "flex", 
+        alignContent: "space-around" 
+      },
+      xxlAlignContentStretch: { 
+        // display: "flex", 
+        alignContent: "stretch" 
+      },
 
-      xxlAlignSelfAuto: { display: "flex", alignSelf: "auto" },
-      xxlAlignSelfStart: { display: "flex", alignSelf: "flex-start" },
-      xxlAlignSelfEnd: { display: "flex", alignSelf: "flex-end" },
-      xxlAlignSelfCenter: { display: "flex", alignSelf: "center" },
-      xxlAlignSelfBaseline: { display: "flex", alignSelf: "baseline" },
-      xxlAlignSelfStretch: { display: "flex", alignSelf: "stretch" },
+      xxlAlignSelfAuto: { 
+        // display: "flex", 
+        alignSelf: "auto" 
+      },
+      xxlAlignSelfStart: { 
+        // display: "flex", 
+        alignSelf: "flex-start" 
+      },
+      xxlAlignSelfEnd: { 
+        // display: "flex", 
+        alignSelf: "flex-end" 
+      },
+      xxlAlignSelfCenter: { 
+        // display: "flex", 
+        alignSelf: "center" 
+      },
+      xxlAlignSelfBaseline: { 
+        // display: "flex", 
+        alignSelf: "baseline" 
+      },
+      xxlAlignSelfStretch: { 
+        // display: "flex", 
+        alignSelf: "stretch" 
+      },
 
-      xxlJustifyContentCenter: { display: "flex", justifyContent: "center" },
+      xxlJustifyContentCenter: { 
+        // display: "flex", 
+        justifyContent: "center" 
+      },
       xxlJustifyContentFlexStart: {
-        display: "flex",
+        // display: "flex",
         justifyContent: "flex-start"
       },
-      xxlJustifyContentFlexEnd: { display: "flex", justifyContent: "flex-end" },
+      xxlJustifyContentFlexEnd: { 
+        // display: "flex", 
+        justifyContent: "flex-end" 
+      },
       xxlJustifyContentSpaceBetween: {
-        display: "flex",
+        // display: "flex",
         justifyContent: "space-between"
       },
       xxlJustifyContentSpaceAround: {
-        display: "flex",
+        // display: "flex",
         justifyContent: "space-around"
       },
       xxlJustifyContentSpaceEvenly: {
-        display: "flex",
+        // display: "flex",
         justifyContent: "space-evenly"
       },
 

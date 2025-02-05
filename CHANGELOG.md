@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.178](https://github.com/wrappid/styles/compare/v0.0.177...v0.0.178) (2024-11-26)
+
+
+### Bug Fixes
+
+* **core:** :sparkles: code cleanup and new OVERFLOW UNSET added ([0bb60c9](https://github.com/wrappid/styles/commit/0bb60c99749d402aebf4ebd8e2f20844ea6f7409))
+* **global:** :bug: destructure style package ([1ab120c](https://github.com/wrappid/styles/commit/1ab120c3e129a23b4f4f30eb2c501709237f3e1f)), closes [#129](https://github.com/wrappid/styles/issues/129)
+
 ### [0.0.177](https://github.com/wrappid/styles/compare/v0.0.176...v0.0.177) (2024-11-20)
 
 
