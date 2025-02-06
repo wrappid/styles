@@ -26,6 +26,7 @@ export default class DefaultSCStyles extends BaseStyle {
       scInputFormControlLabel: {},
       scInputFormHelperText  : { ...defaultUtilityStyles.ml0 },
       scInputIconButton      : {},
+      scInputsInput          : { ...defaultUtilityStyles.px0_5 },
       scInputsInputAdornment : {},
       scInputsInputLabel     : {},
       scInputsItemButton     : {

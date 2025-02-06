@@ -1161,6 +1161,10 @@ export default class DefaultUtilityStyles extends BaseStyle {
         paddingLeft : 0 + PX_TAG + IMPORTANT,
         paddingRight: 0 + PX_TAG + IMPORTANT,
       },
+      px0_5: {
+        paddingLeft : DEFAULT_PADDING * .5 + PX_TAG + IMPORTANT,
+        paddingRight: DEFAULT_PADDING * .5 + PX_TAG,
+      },
       px1: {
         paddingLeft : DEFAULT_PADDING * 1 + PX_TAG + IMPORTANT,
         paddingRight: DEFAULT_PADDING * 1 + PX_TAG,
