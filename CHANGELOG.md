@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.179](https://github.com/wrappid/styles/compare/v0.0.178...v0.0.179) (2025-02-06)
+
+
+### Bug Fixes
+
+* **global:** :bug: add some padding in to input box ([b0ea6d8](https://github.com/wrappid/styles/commit/b0ea6d84ff7571b5d6647ef74f0e470ce153fcf4)), closes [#121](https://github.com/wrappid/styles/issues/121)
+
 ### [0.0.178](https://github.com/wrappid/styles/compare/v0.0.177...v0.0.178) (2024-11-26)
 
 
