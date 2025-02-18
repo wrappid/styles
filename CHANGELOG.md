@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.180](https://github.com/wrappid/styles/compare/v0.0.179...v0.0.180) (2025-02-18)
+
+
+### Features
+
+* **global:** :sparkles: add 4px padding and gap for consistent structure ([a69f8d5](https://github.com/wrappid/styles/commit/a69f8d55d94d5db9f3b004cc2de13de17c4c8f98)), closes [#132](https://github.com/wrappid/styles/issues/132)
+
 ### [0.0.179](https://github.com/wrappid/styles/compare/v0.0.178...v0.0.179) (2025-02-06)
 
 
