@@ -22,11 +22,10 @@ export default class DefaultUtilityStyles extends BaseStyle {
     super();
 
     this.style = {
-      //deleted in last as no needed
-      // scrollBarHide: {
-      //   msOverflowStyle: "none",
-      //   scrollbarWidth : "none",
-      // },
+      scrollBarHide: {
+        msOverflowStyle: "none",
+        scrollbarWidth : "none",
+      },
 
       /**************************************************
        * Alignment
@@ -387,7 +386,7 @@ export default class DefaultUtilityStyles extends BaseStyle {
        * Border
        *************************************************/
       border : { ...DEFAULT_BORDER },
-      border0: { border: "none" },
+      border0: { border: "none" + IMPORTANT },
 
       borderTop: {
         borderTopColor: DEFAULT_BORDER_COLOR,
@@ -706,7 +705,7 @@ export default class DefaultUtilityStyles extends BaseStyle {
        *************************************************/
       cursorAlias       : { cursor: "alias " },
       cursorAllScroll   : { cursor: "all-scroll " },
-      cursorAuto        : { cursor: "auto" },
+      cursorAuto        : { cursor: "auto" + IMPORTANT },
       cursorCell        : { cursor: "cell " },
       cursorColResize   : { cursor: "col-resize " },
       cursorContextMenu : { cursor: "context-menu" },
@@ -1121,47 +1120,51 @@ export default class DefaultUtilityStyles extends BaseStyle {
        * Padding
        *-----------------------------------------------*/
 
-      p0  : { padding: 0 + PX_TAG + IMPORTANT },
-      p0_5: { padding: DEFAULT_PADDING / 2 + PX_TAG + IMPORTANT },
-      p1  : { padding: DEFAULT_PADDING + PX_TAG + IMPORTANT },
-      p2  : { padding: DEFAULT_PADDING * 2 + PX_TAG + IMPORTANT },
-      p3  : { padding: DEFAULT_PADDING * 3 + PX_TAG + IMPORTANT },
-      p4  : { padding: DEFAULT_PADDING * 4 + PX_TAG + IMPORTANT },
-      p5  : { padding: DEFAULT_PADDING * 5 + PX_TAG + IMPORTANT },
+      p0 : { padding: 0 + PX_TAG + IMPORTANT },
+      p05: { padding: DEFAULT_PADDING / 2 + PX_TAG + IMPORTANT },
+      p1 : { padding: DEFAULT_PADDING + PX_TAG + IMPORTANT },
+      p2 : { padding: DEFAULT_PADDING * 2 + PX_TAG + IMPORTANT },
+      p3 : { padding: DEFAULT_PADDING * 3 + PX_TAG + IMPORTANT },
+      p4 : { padding: DEFAULT_PADDING * 4 + PX_TAG + IMPORTANT },
+      p5 : { padding: DEFAULT_PADDING * 5 + PX_TAG + IMPORTANT },
 
-      pt0: { paddingTop: 0 + PX_TAG + IMPORTANT },
-      pt1: { paddingTop: DEFAULT_PADDING + PX_TAG + IMPORTANT },
-      pt2: { paddingTop: DEFAULT_PADDING * 2 + PX_TAG + IMPORTANT },
-      pt3: { paddingTop: DEFAULT_PADDING * 3 + PX_TAG + IMPORTANT },
-      pt4: { paddingTop: DEFAULT_PADDING * 4 + PX_TAG + IMPORTANT },
-      pt5: { paddingTop: DEFAULT_PADDING * 5 + PX_TAG + IMPORTANT },
+      pt0 : { paddingTop: 0 + PX_TAG + IMPORTANT },
+      pt05: { paddingTop: DEFAULT_PADDING / 2 + PX_TAG + IMPORTANT },
+      pt1 : { paddingTop: DEFAULT_PADDING + PX_TAG + IMPORTANT },
+      pt2 : { paddingTop: DEFAULT_PADDING * 2 + PX_TAG + IMPORTANT },
+      pt3 : { paddingTop: DEFAULT_PADDING * 3 + PX_TAG + IMPORTANT },
+      pt4 : { paddingTop: DEFAULT_PADDING * 4 + PX_TAG + IMPORTANT },
+      pt5 : { paddingTop: DEFAULT_PADDING * 5 + PX_TAG + IMPORTANT },
 
-      pr0: { paddingRight: 0 + PX_TAG + IMPORTANT },
-      pr1: { paddingRight: DEFAULT_PADDING + PX_TAG + IMPORTANT },
-      pr2: { paddingRight: DEFAULT_PADDING * 2 + PX_TAG + IMPORTANT },
-      pr3: { paddingRight: DEFAULT_PADDING * 3 + PX_TAG + IMPORTANT },
-      pr4: { paddingRight: DEFAULT_PADDING * 4 + PX_TAG + IMPORTANT },
-      pr5: { paddingRight: DEFAULT_PADDING * 5 + PX_TAG + IMPORTANT },
+      pr0 : { paddingRight: 0 + PX_TAG + IMPORTANT },
+      pr05: { paddingRight: DEFAULT_PADDING / 2 + PX_TAG + IMPORTANT },
+      pr1 : { paddingRight: DEFAULT_PADDING + PX_TAG + IMPORTANT },
+      pr2 : { paddingRight: DEFAULT_PADDING * 2 + PX_TAG + IMPORTANT },
+      pr3 : { paddingRight: DEFAULT_PADDING * 3 + PX_TAG + IMPORTANT },
+      pr4 : { paddingRight: DEFAULT_PADDING * 4 + PX_TAG + IMPORTANT },
+      pr5 : { paddingRight: DEFAULT_PADDING * 5 + PX_TAG + IMPORTANT },
 
-      pb0: { paddingBottom: 0 + PX_TAG + IMPORTANT },
-      pb1: { paddingBottom: DEFAULT_PADDING + PX_TAG + IMPORTANT },
-      pb2: { paddingBottom: DEFAULT_PADDING * 2 + PX_TAG + IMPORTANT },
-      pb3: { paddingBottom: DEFAULT_PADDING * 3 + PX_TAG + IMPORTANT },
-      pb4: { paddingBottom: DEFAULT_PADDING * 4 + PX_TAG + IMPORTANT },
-      pb5: { paddingBottom: DEFAULT_PADDING * 5 + PX_TAG + IMPORTANT },
+      pb0 : { paddingBottom: 0 + PX_TAG + IMPORTANT },
+      pb05: { paddingBottom: DEFAULT_PADDING / 2 + PX_TAG + IMPORTANT },
+      pb1 : { paddingBottom: DEFAULT_PADDING + PX_TAG + IMPORTANT },
+      pb2 : { paddingBottom: DEFAULT_PADDING * 2 + PX_TAG + IMPORTANT },
+      pb3 : { paddingBottom: DEFAULT_PADDING * 3 + PX_TAG + IMPORTANT },
+      pb4 : { paddingBottom: DEFAULT_PADDING * 4 + PX_TAG + IMPORTANT },
+      pb5 : { paddingBottom: DEFAULT_PADDING * 5 + PX_TAG + IMPORTANT },
 
-      pl0: { paddingLeft: 0 + PX_TAG + IMPORTANT },
-      pl1: { paddingLeft: DEFAULT_PADDING + PX_TAG + IMPORTANT },
-      pl2: { paddingLeft: DEFAULT_PADDING * 2 + PX_TAG + IMPORTANT },
-      pl3: { paddingLeft: DEFAULT_PADDING * 3 + PX_TAG + IMPORTANT },
-      pl4: { paddingLeft: DEFAULT_PADDING * 4 + PX_TAG + IMPORTANT },
-      pl5: { paddingLeft: DEFAULT_PADDING * 5 + PX_TAG + IMPORTANT },
+      pl0 : { paddingLeft: 0 + PX_TAG + IMPORTANT },
+      pl05: { paddingLeft: DEFAULT_PADDING / 2 + PX_TAG + IMPORTANT },
+      pl1 : { paddingLeft: DEFAULT_PADDING + PX_TAG + IMPORTANT },
+      pl2 : { paddingLeft: DEFAULT_PADDING * 2 + PX_TAG + IMPORTANT },
+      pl3 : { paddingLeft: DEFAULT_PADDING * 3 + PX_TAG + IMPORTANT },
+      pl4 : { paddingLeft: DEFAULT_PADDING * 4 + PX_TAG + IMPORTANT },
+      pl5 : { paddingLeft: DEFAULT_PADDING * 5 + PX_TAG + IMPORTANT },
 
       px0: {
         paddingLeft : 0 + PX_TAG + IMPORTANT,
         paddingRight: 0 + PX_TAG + IMPORTANT,
       },
-      px0_5: {
+      px05: {
         paddingLeft : DEFAULT_PADDING * .5 + PX_TAG + IMPORTANT,
         paddingRight: DEFAULT_PADDING * .5 + PX_TAG,
       },
@@ -1189,6 +1192,10 @@ export default class DefaultUtilityStyles extends BaseStyle {
       py0: {
         paddingBottom: 0 + PX_TAG + IMPORTANT,
         paddingTop   : 0 + PX_TAG + IMPORTANT,
+      },
+      py05: {
+        paddingBottom: DEFAULT_PADDING * .5 + PX_TAG + IMPORTANT,
+        paddingTop   : DEFAULT_PADDING * .5 + PX_TAG + IMPORTANT,
       },
       py1: {
         paddingBottom: DEFAULT_PADDING * 1 + PX_TAG + IMPORTANT,
@@ -1379,27 +1386,33 @@ export default class DefaultUtilityStyles extends BaseStyle {
       /*-------------------------------------------------
        * Gap
        *-----------------------------------------------*/
-      gap0: { gap: "0" },
-      gap1: { gap: DEFAULT_SPACING * 1 },
-      gap2: { gap: DEFAULT_SPACING * 2 },
-      gap3: { gap: DEFAULT_SPACING * 3 },
-      gap4: { gap: DEFAULT_SPACING * 4 },
-      gap5: { gap: DEFAULT_SPACING * 5 },
+      gap0  : { gap: "0" },
+      gap025: { gap: DEFAULT_SPACING * .25 },
+      gap05 : { gap: DEFAULT_SPACING * .5 },
+      gap1  : { gap: DEFAULT_SPACING * 1 },
+      gap2  : { gap: DEFAULT_SPACING * 2 },
+      gap3  : { gap: DEFAULT_SPACING * 3 },
+      gap4  : { gap: DEFAULT_SPACING * 4 },
+      gap5  : { gap: DEFAULT_SPACING * 5 },
 
-      rowGap0: { rowGap: "0" },
-      rowGap1: { rowGap: DEFAULT_SPACING * 1 },
-      rowGap2: { rowGap: DEFAULT_SPACING * 2 },
-      rowGap3: { rowGap: DEFAULT_SPACING * 3 },
-      rowGap4: { rowGap: DEFAULT_SPACING * 4 },
-      rowGap5: { rowGap: DEFAULT_SPACING * 5 },
+      rowGap0  : { rowGap: "0" },
+      rowGap025: { rowGap: DEFAULT_SPACING * .25 },
+      rowGap05 : { rowGap: DEFAULT_SPACING * .5 },
+      rowGap1  : { rowGap: DEFAULT_SPACING * 1 },
+      rowGap2  : { rowGap: DEFAULT_SPACING * 2 },
+      rowGap3  : { rowGap: DEFAULT_SPACING * 3 },
+      rowGap4  : { rowGap: DEFAULT_SPACING * 4 },
+      rowGap5  : { rowGap: DEFAULT_SPACING * 5 },
 
       // -moz-column-gap: 0 !important;
-      colGap0: { columnGap: "0" },
-      colGap1: { columnGap: DEFAULT_SPACING * 1 },
-      colGap2: { columnGap: DEFAULT_SPACING * 2 },
-      colGap3: { columnGap: DEFAULT_SPACING * 3 },
-      colGap4: { columnGap: DEFAULT_SPACING * 4 },
-      colGap5: { columnGap: DEFAULT_SPACING * 5 },
+      colGap0  : { columnGap: "0" },
+      colGap025: { columnGap: DEFAULT_SPACING * .25 },
+      colGap05 : { columnGap: DEFAULT_SPACING * .5 },
+      colGap1  : { columnGap: DEFAULT_SPACING * 1 },
+      colGap2  : { columnGap: DEFAULT_SPACING * 2 },
+      colGap3  : { columnGap: DEFAULT_SPACING * 3 },
+      colGap4  : { columnGap: DEFAULT_SPACING * 4 },
+      colGap5  : { columnGap: DEFAULT_SPACING * 5 },
 
       /**************************************************
        * Text
@@ -1442,6 +1455,16 @@ export default class DefaultUtilityStyles extends BaseStyle {
         textOverflow: "ellipsis",
         whiteSpace  : "nowrap",
       },
+
+      fs1: { fontSize: "2.5rem" + IMPORTANT },
+      fs2: { fontSize: "2rem" + IMPORTANT },
+      fs3: { fontSize: "1.75rem" + IMPORTANT },
+      fs4: { fontSize: "1.5rem" + IMPORTANT },
+      fs5: { fontSize: "1.25rem" + IMPORTANT },
+      fs6: { fontSize: "1rem" + IMPORTANT },
+      fs7: { fontSize: "0.75rem" + IMPORTANT },
+      fs8: { fontSize: "0.5rem" + IMPORTANT },
+      fs9: { fontSize: "0.25rem" + IMPORTANT },
 
       /**************************************************
        * Vertical Align
