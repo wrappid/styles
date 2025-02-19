@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.181](https://github.com/wrappid/styles/compare/v0.0.180...v0.0.181) (2025-02-19)
+
+
+### Features
+
+* **global:** :sparkles: add constant for the classes which is added previously ([5491ede](https://github.com/wrappid/styles/commit/5491edebe65705ac63b894d2653156390c8db401)), closes [#132](https://github.com/wrappid/styles/issues/132)
+
 ### [0.0.180](https://github.com/wrappid/styles/compare/v0.0.179...v0.0.180) (2025-02-18)
 
 
