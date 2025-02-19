@@ -4,7 +4,7 @@
  *************************************************/
 const UtilityClasses = {
   DEV_BORDER: "devBorder",
-  // SCROLL_BAR_HIDE: "scrollBarHide", 
+  SCROLL_BAR_HIDE: "scrollBarHide", 
 
   /**************************************************
    * Alignment
@@ -1089,44 +1089,49 @@ const UtilityClasses = {
    *-----------------------------------------------*/
   PADDING: {
     P0: "p0",
-    P0_5: "p0_5",
+    P0_5: "p05",
     P1: "p1",
     P2: "p2",
     P3: "p3",
     P4: "p4",
     P5: "p5",
     PT0: "pt0",
+    PT05: "pt05",
     PT1: "pt1",
     PT2: "pt2",
     PT3: "pt3",
     PT4: "pt4",
     PT5: "pt5",
     PR0: "pr0",
+    PR05: "pr05",
     PR1: "pr1",
     PR2: "pr2",
     PR3: "pr3",
     PR4: "pr4",
     PR5: "pr5",
     PB0: "pb0",
+    PB05: "pb05",
     PB1: "pb1",
     PB2: "pb2",
     PB3: "pb3",
     PB4: "pb4",
     PB5: "pb5",
     PL0: "pl0",
+    PL05: "pl05",
     PL1: "pl1",
     PL2: "pl2",
     PL3: "pl3",
     PL4: "pl4",
     PL5: "pl5",
     PX0: "px0",
-    PX0_5: "px0_5",
+    PX05: "px05",
     PX1: "px1",
     PX2: "px2",
     PX3: "px3",
     PX4: "px4",
     PX5: "px5",
     PY0: "py0",
+    PY05: "py05",
     PY1: "py1",
     PY2: "py2",
     PY3: "py3",
@@ -1879,18 +1884,24 @@ const UtilityClasses = {
    *-----------------------------------------------*/
   GAP: {
     GAP_0: "gap0",
+    GAP_025: "gap025",
+    GAP_05: "gap05",
     GAP_1: "gap1",
     GAP_2: "gap2",
     GAP_3: "gap3",
     GAP_4: "gap4",
     GAP_5: "gap5",
     ROW_GAP_0: "rowGap0",
+    ROW_GAP_025: "rowGap025",
+    ROW_GAP_05: "rowGap05",
     ROW_GAP_1: "rowGap1",
     ROW_GAP_2: "rowGap2",
     ROW_GAP_3: "rowGap3",
     ROW_GAP_4: "rowGap4",
     ROW_GAP_5: "rowGap5",
     COL_GAP_0: "colGap0",
+    COL_GAP_025: "colGap025",
+    COL_GAP_05: "colGap05",
     COL_GAP_1: "colGap1",
     COL_GAP_2: "colGap2",
     COL_GAP_3: "colGap3",
@@ -2034,6 +2045,23 @@ const UtilityClasses = {
     TEXT_NOWRAP: "textNowrap",
     TEXT_BREAK: "textBreak",
     TEXT_TRUNCATE: "textTruncate",
+
+    FS_1: "fs1",
+    FS_2: "fs2",
+    FS_3: "fs3",
+    FS_4: "fs4",
+    FS_5: "fs5",
+    FS_6: "fs6",
+    FS_7: "fs7",
+    FS_8: "fs8",
+    FS_9: "fs9",
+
+    LETTER_SPACING_NORMAL: "letterSpacingNormal", // default numeric value is 0
+    LETTER_SPACING_1: "letterSpacing1", // the letter spacing will be relative and multipled to the font size.
+    LETTER_SPACING_2: "letterSpacing2", // the letter spacing will be relative and multipled to the font size.
+    LETTER_SPACING_3: "letterSpacing3", // the letter spacing will be relative and multipled to the font size.
+    LETTER_SPACING_4: "letterSpacing4", // the letter spacing will be relative and multipled to the font size.
+    LETTER_SPACING_5: "letterSpacing5", // the letter spacing will be relative and multipled to the font size.
 
     WORD_SPACING_NORMAL: "wordSpacingNormal",
     WORD_SPACING_1: "wordSpacing1",
