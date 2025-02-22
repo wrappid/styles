@@ -37,6 +37,7 @@ export type WrapidDataType = {
   pageThemeID: string | undefined;
   themes?: { [key: string]: { name: string; theme: DEFAULT_THEME_TYPES } };
   modules?: {[key: string]: {[key: string]: any}};
+  dynamic?: {[key: string]: boolean};
 };
 export const wrappidInitialData: WrapidDataType = {
   config     : { defaultTheme: "WrappidTheme", environment: "devlopment", platform: "web" },
